@@ -1,0 +1,11 @@
+{
+  "unit_tests_passed": 2,
+  "formal_preflight_passed": true,
+  "formal_training_started": false,
+  "smoke_case_count": 9,
+  "smoke_relation_comparisons": 14976,
+  "smoke_mismatches": 0,
+  "resume_preserved_case_count": 9,
+  "unchanged_core_source_files": 13,
+  "unchanged_formal_result_json_hashes": 25
+}

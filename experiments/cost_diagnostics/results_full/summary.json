@@ -1,0 +1,104 @@
+{
+  "m4096_d1": {
+    "E": {
+      "plain_generation_seconds": 3.347145000079763,
+      "instrumented_generation_seconds": 3.3871722000621958,
+      "observed_instrumented_over_plain": 1.0076050547170623,
+      "unassigned_seconds": 0.0967592012748355,
+      "selected_endpoints": 655645,
+      "bootstrap_plain_seconds": 0.10488899999472778,
+      "advance_seconds": 0.4644468998594675,
+      "candidates_seconds": 0.31327709977631457,
+      "bitsets_seconds": 0.0,
+      "certification_seconds": 0.1128627998259617,
+      "endpoints_seconds": 0.015424399811308831,
+      "teacher_seconds": 2.2382879996876,
+      "cache_seconds": 0.10401730010926258,
+      "finalize_seconds": 0.04209649971744511
+    },
+    "D": {
+      "plain_generation_seconds": 2.567573599953903,
+      "instrumented_generation_seconds": 2.6116484002850484,
+      "observed_instrumented_over_plain": 1.0133493455031142,
+      "unassigned_seconds": 0.10353180012316443,
+      "selected_endpoints": 388454,
+      "bootstrap_plain_seconds": 0.10558930001570843,
+      "advance_seconds": 0.4696451001364039,
+      "candidates_seconds": 0.3091851000790484,
+      "bitsets_seconds": 0.18683470011455938,
+      "certification_seconds": 0.04620350003824569,
+      "endpoints_seconds": 0.032571400166489184,
+      "teacher_seconds": 1.2861468000337481,
+      "cache_seconds": 0.06710739973641466,
+      "finalize_seconds": 0.11042259985697456
+    }
+  },
+  "m4096_d4": {
+    "E": {
+      "plain_generation_seconds": 3.32550119998632,
+      "instrumented_generation_seconds": 3.378113199942163,
+      "observed_instrumented_over_plain": 1.0108148510857013,
+      "unassigned_seconds": 0.11333850065420847,
+      "selected_endpoints": 654874,
+      "bootstrap_plain_seconds": 0.10525740000593942,
+      "advance_seconds": 0.46150379985920154,
+      "candidates_seconds": 0.3124533002410317,
+      "bitsets_seconds": 0.0,
+      "certification_seconds": 0.14053780004906002,
+      "endpoints_seconds": 0.015315600161557086,
+      "teacher_seconds": 2.164659900008701,
+      "cache_seconds": 0.10263860017585102,
+      "finalize_seconds": 0.0884101999545237
+    },
+    "D": {
+      "plain_generation_seconds": 3.3287235999596305,
+      "instrumented_generation_seconds": 3.381615399805014,
+      "observed_instrumented_over_plain": 1.015889513880343,
+      "unassigned_seconds": 0.11106169947015587,
+      "selected_endpoints": 561544,
+      "bootstrap_plain_seconds": 0.10414480001782067,
+      "advance_seconds": 0.45661469995684456,
+      "candidates_seconds": 0.3182492999767419,
+      "bitsets_seconds": 0.19240499987790827,
+      "certification_seconds": 0.13865340006304905,
+      "endpoints_seconds": 0.05266520046279766,
+      "teacher_seconds": 1.8135803999030031,
+      "cache_seconds": 0.09037350000289734,
+      "finalize_seconds": 0.21957989991642535
+    }
+  },
+  "m4096_d8": {
+    "E": {
+      "plain_generation_seconds": 3.7720055998215685,
+      "instrumented_generation_seconds": 3.8277813002932817,
+      "observed_instrumented_over_plain": 1.0107654007759197,
+      "unassigned_seconds": 0.10113030081265606,
+      "selected_endpoints": 652768,
+      "bootstrap_plain_seconds": 0.12578970000322443,
+      "advance_seconds": 0.48075860032986384,
+      "candidates_seconds": 0.3286377996264491,
+      "bitsets_seconds": 0.0,
+      "certification_seconds": 0.18730179997510277,
+      "endpoints_seconds": 0.016695200392859988,
+      "teacher_seconds": 2.451298699423205,
+      "cache_seconds": 0.11037009947176557,
+      "finalize_seconds": 0.15158880026137922
+    },
+    "D": {
+      "plain_generation_seconds": 4.259324400336482,
+      "instrumented_generation_seconds": 4.323004900244996,
+      "observed_instrumented_over_plain": 1.0149508452334561,
+      "unassigned_seconds": 0.11857790013891645,
+      "selected_endpoints": 624736,
+      "bootstrap_plain_seconds": 0.1262540000025183,
+      "advance_seconds": 0.48553319994243793,
+      "candidates_seconds": 0.3318585001688916,
+      "bitsets_seconds": 0.20599749976827297,
+      "certification_seconds": 0.2702726003190037,
+      "endpoints_seconds": 0.0894767000572756,
+      "teacher_seconds": 2.344221999970614,
+      "cache_seconds": 0.10502929979702458,
+      "finalize_seconds": 0.37203720008255914
+    }
+  }
+}

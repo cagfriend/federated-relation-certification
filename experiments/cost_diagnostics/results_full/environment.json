@@ -1,0 +1,26 @@
+{
+  "reference": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\graph_density\\results_graph",
+  "reference_completion_sha256": "858b1bfff319333f06951318c77cd6d6aa187f0f56a6cabb5c213c8ae4ad074f",
+  "source_hashes": {
+    "__init__.py": "a6eba6b4ca66518d8b42a5e5e1efa30681deb3f5aacdf195c384c9213c76be84",
+    "profiler.py": "61d101a53266f0a89f1f850acc19923a3547381c3ebaaebdce65f52a96e0bbdb",
+    "run.py": "0f738fdff02344ecdd68b5ea845fed9a045015f4bfe449b8c68d8f28b31796d5",
+    "test_diagnostics.py": "ff7ec2fad8b3c694ad6b5fac2c0ca07e34de8a304915bd2efde771250a7655db"
+  },
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "preset": "full"
+}

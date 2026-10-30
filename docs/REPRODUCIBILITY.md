@@ -76,3 +76,15 @@ python -m experiments.graph_density.analyze --output experiments/graph_density/r
 ```
 
 它检查原始结果与当前核心版本/环境，不会重跑训练，但原机器准备目录记录仍限制跨机核验；离线可直接读取CSV、JSON和审阅报告。新包包含3项测试与缩小真实数据路径验证记录；正式结果检查见[审计](../outputs/graph_density_results_20261030/audit.json)。
+
+## 成本诊断入口与限制
+
+```powershell
+python -m experiments.cost_diagnostics.run --check-only
+python -m experiments.cost_diagnostics.run
+python -m experiments.cost_diagnostics.run --resume
+```
+
+默认来源为原机器的 `experiments/graph_density/results_graph`，依赖未上传的准备缓存、相同源码与环境；新克隆机器不能直接恢复这些原机器路径。需要先在新机器生成自己的完整三seed graph参考结果，再用 `--reference` 指向它。可直接读取汇总与审阅；无损解压归档后可核对原始文件摘要，但这不等于重做训练。
+
+诊断独立冻结四个新增源码文件，保持原训练核心13个源码不变。两项针对性测试及缩小路径/恢复验证记录随包保存。计时边界、运行命令和输出见 [成本诊断README](../experiments/cost_diagnostics/README.md)。原始计时记录保留字节不变，不用插桩墙钟宣布完整训练加速。

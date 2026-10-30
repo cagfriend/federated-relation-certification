@@ -12,7 +12,7 @@
 
 - [方法与每轮流程](docs/METHOD.md)：聚合什么、如何认证、基线区别和实现限制。
 - [已经完成的实验](docs/EXPERIMENTS.md)：配置、结果、证明范围与未解决问题。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：图密度已完成，优先定位D/E适用边界，再处理编码器更新和数据异构。
+- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：图密度与成本诊断已完成，下一步验证低成本E/D选择，再处理编码器更新和数据异构。
 - [运行与证据说明](docs/REPRODUCIBILITY.md)：当前代码运行方式、结果核验及历史脚本删除说明。
 - [最新公共库规模审阅](outputs/public_scaling_results_20261030/RESULTS_REVIEW.md)。
 
@@ -70,3 +70,17 @@ python -m experiments.public_scaling.run --preset smoke --suite all --download -
 负数代表D更慢。图变密没有扩大收益；度8时D的关系生成比E慢9.13%，三个种子一致。各配置内B/E/D逐轮模型、消息及已记录评估一致。这项实验明确了当前方法的适用边界；不能宣称D在密图中持续优于E。固定M=4096，增加degree也增加公共训练预算。
 
 [完整审阅](outputs/graph_density_results_20261030/RESULTS_REVIEW.md) · [图密度运行说明](experiments/graph_density/README.md)
+
+## 新完成：E/D成本分解诊断
+
+固定公共库4096，degree=1/4/8，各三个seed；每组重走一条真实E训练轨迹，以四条独立的普通/插桩E/D缓存消费相同教师快照。阶段排除首次全量初始化，所有差值先按同seed配对再取中位数。
+
+|degree|D节省的教师阶段秒数|D额外非教师成本秒数（含未分段）|D插桩生成净省时秒数|
+|---:|---:|---:|---:|
+|1|0.9521|0.1766|0.7755|
+|4|0.3511|0.3507|-0.0035|
+|8|0.0977|0.6023|-0.4952|
+
+负数表示D更慢；各列分别取配对中位数，不要求跨列精确相加。密图中教师节省收窄，位集合、端点处理及最终关系检查仍有成本，解释了上一轮密图优势消失。此表是插桩机制诊断，不能替代上一轮正式完整训练加速结果，也不证明自适应选择有效。
+
+[成本诊断审阅](outputs/cost_diagnostics_results_20261030/RESULTS_REVIEW.md) · [诊断运行说明](experiments/cost_diagnostics/README.md)

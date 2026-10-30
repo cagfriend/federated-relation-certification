@@ -1,0 +1,372 @@
+{
+  "case_count": 9,
+  "records": 21600,
+  "post_bootstrap_records": 21492,
+  "validated_result_hashes": 13,
+  "validated_reference_hashes": 25,
+  "validated_prepared_files": 132,
+  "validated_diagnostic_sources": 4,
+  "validated_core_sources": 13,
+  "oracle_comparisons_recorded": 383385600,
+  "mismatches": 0,
+  "groups": {
+    "1": {
+      "teacher_seconds_saved": 0.9521411996538518,
+      "extra_non_teacher_seconds": 0.17661739987670444,
+      "profiled_seconds_saved": 0.7755237997771474,
+      "plain_seconds_saved": 0.7795714001258602,
+      "plain_D_over_E": 0.767093627522177,
+      "profiled_D_over_E": 0.771040929137613,
+      "recompute_E": 0.13406162485605108,
+      "recompute_D": 0.07942831017064489,
+      "phase_D_minus_E": {
+        "advance": 0.006597700106794946,
+        "candidates": 0.0027979001606581733,
+        "bitsets": 0.18683470011455938,
+        "certification": -0.06665929978771601,
+        "endpoints": 0.017147000355180353,
+        "teacher": -0.9521411996538518,
+        "cache": -0.036909900372847915,
+        "finalize": 0.06832610013952944
+      },
+      "instrumented_over_plain": {
+        "E": 1.0076050547170623,
+        "D": 1.0133493455031142
+      }
+    },
+    "4": {
+      "teacher_seconds_saved": 0.35107950010569766,
+      "extra_non_teacher_seconds": 0.3507453995553078,
+      "profiled_seconds_saved": -0.00350219986285083,
+      "plain_seconds_saved": -0.012318199878791347,
+      "plain_D_over_E": 1.0037143227056895,
+      "profiled_D_over_E": 1.0010367325354612,
+      "recompute_E": 0.1339039762615159,
+      "recompute_D": 0.1148205218802345,
+      "phase_D_minus_E": {
+        "advance": -1.0400122846476734e-05,
+        "candidates": 0.005795999735710211,
+        "bitsets": 0.19240499987790827,
+        "certification": -0.0018843999860109761,
+        "endpoints": 0.0376815999916289,
+        "teacher": -0.35107950010569766,
+        "cache": -0.01336900016758591,
+        "finalize": 0.13116969996190164
+      },
+      "instrumented_over_plain": {
+        "E": 1.0108148510857013,
+        "D": 1.015889513880343
+      }
+    },
+    "8": {
+      "teacher_seconds_saved": 0.09770309989107773,
+      "extra_non_teacher_seconds": 0.6023002994043054,
+      "profiled_seconds_saved": -0.4952235999517143,
+      "plain_seconds_saved": -0.48731880051491316,
+      "plain_D_over_E": 1.1291935517110487,
+      "profiled_D_over_E": 1.1293761479825848,
+      "recompute_E": 0.13347335636515914,
+      "recompute_D": 0.12774157244556114,
+      "phase_D_minus_E": {
+        "advance": 0.001606000034371391,
+        "candidates": 0.002152299741283059,
+        "bitsets": 0.20599749976827297,
+        "certification": 0.08297080034390092,
+        "endpoints": 0.0727814996644156,
+        "teacher": -0.09770309989107773,
+        "cache": -0.0036757997004315257,
+        "finalize": 0.22044839982117992
+      },
+      "instrumented_over_plain": {
+        "E": 1.0107654007759197,
+        "D": 1.0149508452334561
+      }
+    }
+  },
+  "raw_pairs": [
+    {
+      "degree": 1,
+      "seed": 404,
+      "teacher_seconds_saved": 1.0233757996174973,
+      "extra_non_teacher_seconds": 0.20257959981972817,
+      "profiled_seconds_saved": 0.8207961997977691,
+      "plain_seconds_saved": 0.8304717998107662,
+      "plain_D_over_E": 0.7702290326226615,
+      "profiled_D_over_E": 0.7746200581683664,
+      "phases_D_minus_E": {
+        "advance": 0.0072826004470698535,
+        "candidates": 0.0027979001606581733,
+        "bitsets": 0.20645250014786143,
+        "certification": -0.07317010013503022,
+        "endpoints": 0.019848299969453365,
+        "teacher": -1.0233757996174973,
+        "cache": -0.04080900015833322,
+        "finalize": 0.07503199958591722
+      },
+      "instrumented_over_plain": {
+        "E": 1.0076050547170623,
+        "D": 1.0133493455031142
+      },
+      "selected_E": 644814,
+      "selected_D": 383675,
+      "D_unresolved_union": 501646,
+      "recompute_E": 0.13184697903580403,
+      "recompute_D": 0.07845113425198912,
+      "candidate_size_E": 1.2066243489583333,
+      "candidate_size_D": 1.780758651656721
+    },
+    {
+      "degree": 1,
+      "seed": 505,
+      "teacher_seconds_saved": 0.8386771994701121,
+      "extra_non_teacher_seconds": 0.15124759964237455,
+      "profiled_seconds_saved": 0.6874295998277375,
+      "plain_seconds_saved": 0.7017054001189535,
+      "plain_D_over_E": 0.7618979852030573,
+      "profiled_D_over_E": 0.767375646399337,
+      "phases_D_minus_E": {
+        "advance": 0.006597700106794946,
+        "candidates": 0.0029897001950303093,
+        "bitsets": 0.15167270014353562,
+        "certification": -0.05264240010001231,
+        "endpoints": 0.014094900034251623,
+        "teacher": -0.8386771994701121,
+        "cache": -0.03205379999417346,
+        "finalize": 0.05463830022199545
+      },
+      "instrumented_over_plain": {
+        "E": 1.0027237479264495,
+        "D": 1.0099328245630559
+      },
+      "selected_E": 655645,
+      "selected_D": 388454,
+      "D_unresolved_union": 511840,
+      "recompute_E": 0.13406162485605108,
+      "recompute_D": 0.07942831017064489,
+      "candidate_size_E": 1.206298828125,
+      "candidate_size_D": 1.766933217519891
+    },
+    {
+      "degree": 1,
+      "seed": 606,
+      "teacher_seconds_saved": 0.9521411996538518,
+      "extra_non_teacher_seconds": 0.17661739987670444,
+      "profiled_seconds_saved": 0.7755237997771474,
+      "plain_seconds_saved": 0.7795714001258602,
+      "plain_D_over_E": 0.767093627522177,
+      "profiled_D_over_E": 0.771040929137613,
+      "phases_D_minus_E": {
+        "advance": 0.005198200276936404,
+        "candidates": -0.0040919996972661465,
+        "bitsets": 0.18683470011455938,
+        "certification": -0.06665929978771601,
+        "endpoints": 0.017147000355180353,
+        "teacher": -0.9521411996538518,
+        "cache": -0.036909900372847915,
+        "finalize": 0.06832610013952944
+      },
+      "instrumented_over_plain": {
+        "E": 1.011958609495997,
+        "D": 1.0171659345352113
+      },
+      "selected_E": 664225,
+      "selected_D": 394521,
+      "D_unresolved_union": 523466,
+      "recompute_E": 0.13581600221157872,
+      "recompute_D": 0.08066884716551508,
+      "candidate_size_E": 1.2105426628585636,
+      "candidate_size_D": 1.7745355193938441
+    },
+    {
+      "degree": 4,
+      "seed": 404,
+      "teacher_seconds_saved": 0.317575499866507,
+      "extra_non_teacher_seconds": 0.32107769972935785,
+      "profiled_seconds_saved": -0.00350219986285083,
+      "plain_seconds_saved": -0.012318199878791347,
+      "plain_D_over_E": 1.0037143227056895,
+      "profiled_D_over_E": 1.0010367325354612,
+      "phases_D_minus_E": {
+        "advance": -0.004889099902356975,
+        "candidates": 0.005795999735710211,
+        "bitsets": 0.19240499987790827,
+        "certification": -0.0018843999860109761,
+        "endpoints": 0.03734960030124057,
+        "teacher": -0.317575499866507,
+        "cache": -0.01219889972708188,
+        "finalize": 0.13116969996190164
+      },
+      "instrumented_over_plain": {
+        "E": 1.0186068325240998,
+        "D": 1.015889513880343
+      },
+      "selected_E": 645818,
+      "selected_D": 554101,
+      "D_unresolved_union": 951305,
+      "recompute_E": 0.13205226981260468,
+      "recompute_D": 0.11329863019524707,
+      "candidate_size_E": 1.208633908474665,
+      "candidate_size_D": 1.3583164438730109
+    },
+    {
+      "degree": 4,
+      "seed": 505,
+      "teacher_seconds_saved": 0.35862830029509496,
+      "extra_non_teacher_seconds": 0.4363420001609484,
+      "profiled_seconds_saved": -0.07771369986585341,
+      "plain_seconds_saved": -0.03140160019393079,
+      "plain_D_over_E": 1.0081507610968283,
+      "profiled_D_over_E": 1.019972973098452,
+      "phases_D_minus_E": {
+        "advance": 0.012058299922500737,
+        "candidates": 0.008732700298423879,
+        "bitsets": 0.21352969997678883,
+        "certification": -0.0016943997325142846,
+        "endpoints": 0.05484490020899102,
+        "teacher": -0.35862830029509496,
+        "cache": -0.01336900016758591,
+        "finalize": 0.14802780032914598
+      },
+      "instrumented_over_plain": {
+        "E": 1.0099532074227835,
+        "D": 1.0217965560474294
+      },
+      "selected_E": 654874,
+      "selected_D": 562779,
+      "D_unresolved_union": 981344,
+      "recompute_E": 0.1339039762615159,
+      "recompute_D": 0.11507304589353015,
+      "candidate_size_E": 1.2084729883139658,
+      "candidate_size_D": 1.3592856453491415
+    },
+    {
+      "degree": 4,
+      "seed": 606,
+      "teacher_seconds_saved": 0.35107950010569766,
+      "extra_non_teacher_seconds": 0.3507453995553078,
+      "profiled_seconds_saved": 0.00033410055038984865,
+      "plain_seconds_saved": 0.012116000187234022,
+      "plain_D_over_E": 0.9963566393579157,
+      "profiled_D_over_E": 0.9999006086777719,
+      "phases_D_minus_E": {
+        "advance": -1.0400122846476734e-05,
+        "candidates": 0.0004305994516471401,
+        "bitsets": 0.18732209992595017,
+        "certification": -0.00389730028109625,
+        "endpoints": 0.0376815999916289,
+        "teacher": -0.35107950010569766,
+        "cache": -0.014704600413097069,
+        "finalize": 0.13102389987034258
+      },
+      "instrumented_over_plain": {
+        "E": 1.0108148510857013,
+        "D": 1.0144102472308116
+      },
+      "selected_E": 663089,
+      "selected_D": 561544,
+      "D_unresolved_union": 967669,
+      "recompute_E": 0.1355837210139238,
+      "recompute_D": 0.1148205218802345,
+      "candidate_size_E": 1.2115316982045645,
+      "candidate_size_D": 1.369464305577366
+    },
+    {
+      "degree": 8,
+      "seed": 404,
+      "teacher_seconds_saved": 0.10707669945259113,
+      "extra_non_teacher_seconds": 0.6023002994043054,
+      "profiled_seconds_saved": -0.4952235999517143,
+      "plain_seconds_saved": -0.48731880051491316,
+      "plain_D_over_E": 1.1291935517110487,
+      "profiled_D_over_E": 1.1293761479825848,
+      "phases_D_minus_E": {
+        "advance": 0.004774599612574093,
+        "candidates": 0.0032207005424425006,
+        "bitsets": 0.20599749976827297,
+        "certification": 0.08297080034390092,
+        "endpoints": 0.0727814996644156,
+        "teacher": -0.10707669945259113,
+        "cache": -0.0053407996747409925,
+        "finalize": 0.22044839982117992
+      },
+      "instrumented_over_plain": {
+        "E": 1.0147867491167966,
+        "D": 1.0149508452334561
+      },
+      "selected_E": 646107,
+      "selected_D": 616046,
+      "D_unresolved_union": 1302981,
+      "recompute_E": 0.13211136247644473,
+      "recompute_D": 0.12596470307265495,
+      "candidate_size_E": 1.2083122726261515,
+      "candidate_size_D": 1.2487048687447655
+    },
+    {
+      "degree": 8,
+      "seed": 505,
+      "teacher_seconds_saved": 0.09770309989107773,
+      "extra_non_teacher_seconds": 0.6392699001735309,
+      "profiled_seconds_saved": -0.5415668002824532,
+      "plain_seconds_saved": -0.5111658997775521,
+      "plain_D_over_E": 1.1297368629859195,
+      "profiled_D_over_E": 1.1359888133578153,
+      "phases_D_minus_E": {
+        "advance": -0.0019379998702788725,
+        "candidates": 0.001296800037380308,
+        "bitsets": 0.21473540010629222,
+        "certification": 0.09162880000076257,
+        "endpoints": 0.07683170068776235,
+        "teacher": -0.09770309989107773,
+        "cache": -0.0036757997004315257,
+        "finalize": 0.24145910017250571
+      },
+      "instrumented_over_plain": {
+        "E": 1.0107654007759197,
+        "D": 1.0163589644900206
+      },
+      "selected_E": 652768,
+      "selected_D": 624736,
+      "D_unresolved_union": 1338571,
+      "recompute_E": 0.13347335636515914,
+      "recompute_D": 0.12774157244556114,
+      "candidate_size_E": 1.210974509592232,
+      "candidate_size_D": 1.2489371499424204
+    },
+    {
+      "degree": 8,
+      "seed": 606,
+      "teacher_seconds_saved": 0.07705510017694905,
+      "extra_non_teacher_seconds": 0.5017074001661967,
+      "profiled_seconds_saved": -0.4246522999892477,
+      "plain_seconds_saved": -0.4035720005776966,
+      "plain_D_over_E": 1.11532637574648,
+      "profiled_D_over_E": 1.1205407405855825,
+      "phases_D_minus_E": {
+        "advance": 0.001606000034371391,
+        "candidates": 0.002152299741283059,
+        "bitsets": 0.16936659962811973,
+        "certification": 0.06837419977819081,
+        "endpoints": 0.06293569988338277,
+        "teacher": -0.07705510017694905,
+        "cache": -0.0032054995390353724,
+        "finalize": 0.1884633002919145
+      },
+      "instrumented_over_plain": {
+        "E": 1.0067166273083235,
+        "D": 1.0114232207311347
+      },
+      "selected_E": 662858,
+      "selected_D": 629545,
+      "D_unresolved_union": 1337476,
+      "recompute_E": 0.1355364877774288,
+      "recompute_D": 0.12872488255077472,
+      "candidate_size_E": 1.2136510596602805,
+      "candidate_size_D": 1.2562542121414364
+    }
+  ],
+  "limits": [
+    "No training or oracle rerun. Cache equality and E head/message equality were runtime assertions in hashed code; full caches and head hashes are not persisted in diagnostic case files.",
+    "Profiled phase wall-clock costs are diagnostic and include instrumentation/load effects; not an end-to-end speedup or policy validation.",
+    "Each column is a median of three within-seed differences; separately reported medians need not sum."
+  ]
+}

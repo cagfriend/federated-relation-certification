@@ -116,3 +116,19 @@ Fashion-MNIST，固定冻结编码器和线性头，公共样本规模 M=4,096/8
 本实验支持：在已测条件下，D 对 B 仍有配对省时，但图变密后比例收益减小；相对 E 的额外收益主要出现在已测稀疏图中。度数 1 来自上一批次，跨批次绝对时间可能受环境波动影响，应以每个度数内部同种子配对为主要证据。三个种子、单一公共样本规模、固定特征及串行内存消息的结果，不能直接推广到其他数据、持续更新编码器或真实网络部署。本轮没有 Local 对照，不证明协作能提高聚类质量。
 
 证据：[结果审阅](../outputs/graph_density_results_20261030/RESULTS_REVIEW.md)、[审计 JSON](../outputs/graph_density_results_20261030/audit.json)、[独立复审](../outputs/graph_density_results_20261030/INDEPENDENT_REVIEW.md)、[逐种子配对汇总](../experiments/graph_density/results_graph/paired_summary.json)、[图密度诊断](../experiments/graph_density/results_graph/graph_analysis/report.md)、[内存汇总](../experiments/graph_density/results_graph/memory_summary.csv)。原始逐轮大 JSON 保存在[无损归档](../archives/README.md)中。
+
+## 新完成：E/D成本分解诊断
+
+固定公共库4096，degree=1/4/8，各三个seed；每组重走一条真实E训练轨迹，以四条独立的普通/插桩E/D缓存消费相同教师快照。阶段排除首次全量初始化，所有差值先按同seed配对再取中位数。
+
+|degree|D节省的教师阶段秒数|D额外非教师成本秒数（含未分段）|D插桩生成净省时秒数|
+|---:|---:|---:|---:|
+|1|0.9521|0.1766|0.7755|
+|4|0.3511|0.3507|-0.0035|
+|8|0.0977|0.6023|-0.4952|
+
+负数表示D更慢；各列分别取配对中位数，不要求跨列精确相加。密图中教师节省收窄，位集合、端点处理及最终关系检查仍有成本，解释了上一轮密图优势消失。此表是插桩机制诊断，不能替代上一轮正式完整训练加速结果，也不证明自适应选择有效。
+
+[完整审阅](../outputs/cost_diagnostics_results_20261030/RESULTS_REVIEW.md) · [正式诊断汇总](../experiments/cost_diagnostics/results_full/report.md)
+
+九组共21600条记录；保存的383385600次关系检查零差异。主审核验输出、来源、准备资产及源码，独立复审重算阶段成本。完整缓存数组及逐轮模型摘要未在诊断结果持久化；缓存/历史一致性是已核验代码中的运行时断言，不能只凭JSON重新计算。大JSON归档无损ZIP，清单已更新。

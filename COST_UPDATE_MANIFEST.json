@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-30",
+  "scope": "Additive cost diagnosis; historical manifests describe their original snapshots",
+  "files": [
+    {
+      "path": "archives/ARCHIVE_MANIFEST.json",
+      "bytes": 30877,
+      "sha256": "a46e041ca1a96f425e0f2e9f2f1f88914732d2a021814bafd025de942b17e90c",
+      "git_blob_sha": "6e905a0c9b52be90f6d6ce74927b8955e34c3464"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d1_seed_404.zip",
+      "bytes": 308352,
+      "sha256": "9bfc40005c8cc9a85db52559b6ea1326e16f30365d77cd5bf14cc7c954067131",
+      "git_blob_sha": "aa650171394b731dba4430b1e600d7f61abb1152"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d1_seed_505.zip",
+      "bytes": 302261,
+      "sha256": "bc497871f7dbf3b87137d94abb29529eb2cf821d91d60471b34f61f4324ddcd4",
+      "git_blob_sha": "6886c23a6eb1675b2e9ca48e58be51201a6cd6cf"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d1_seed_606.zip",
+      "bytes": 306925,
+      "sha256": "82da50279848c9ee54f0f6ef1434cfcdaee1b7f5339c2f8d60815c3d0c30897c",
+      "git_blob_sha": "5590c77e0fd33fc402a6f9c33a32c5ce2963f383"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d4_seed_404.zip",
+      "bytes": 309718,
+      "sha256": "91b0e73e3d28a4f09787da4cb3ef678848740a1c8470a70c4ed8d98647ebfac8",
+      "git_blob_sha": "3464d77ae0ec9ded31fc042c789b3c3e3e180926"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d4_seed_505.zip",
+      "bytes": 311997,
+      "sha256": "5128400bbbda087e55a78293b5eb07ce38abbdfc733357509fd9de04de56907f",
+      "git_blob_sha": "7dc39f9d9acca94d1217e6242b6c3aa4e3932faa"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d4_seed_606.zip",
+      "bytes": 309308,
+      "sha256": "c0e7faed45eecbab416b6e1c6b823fae126b712b7bf8b843112afad7d42f80e1",
+      "git_blob_sha": "ecce01fcd31094d9431bb94552e10b38a7d7681e"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d8_seed_404.zip",
+      "bytes": 311581,
+      "sha256": "7ed8d902c1dadf3afef326e53bb3ce97aa6aa9cee712922059d7f02bd0c0bfbc",
+      "git_blob_sha": "41a198b87834b8394e0d0fd103e8da6d1c349f59"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d8_seed_505.zip",
+      "bytes": 312557,
+      "sha256": "912d6287a641f7ea835cd8b8d8c203376d23249ab5f3e80223cc0fec6d2d3ed3",
+      "git_blob_sha": "33be7861ca75a395a111b444fc0f61283c09aad4"
+    },
+    {
+      "path": "archives/cost_diagnostics_raw_records_m4096_d8_seed_606.zip",
+      "bytes": 310323,
+      "sha256": "263b24c4945d1b4dc63a60977942429c7293f353c060e8c9d23d167314fbf4e1",
+      "git_blob_sha": "aab16d107e56b3a38e2479d06cc37333c3b1571f"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 16036,
+      "sha256": "a57a2fefc0c4ceb3c544d4e95324d0e0ec657473e7b8420b14c1f040661cef58",
+      "git_blob_sha": "11eee2f988206c2b463fda486fc4bdc3e36d32b9"
+    },
+    {
+      "path": "docs/NEXT_EXPERIMENTS.md",
+      "bytes": 1439,
+      "sha256": "6f0a02fea6fc3a019cafd49108fd8684810ae841658a3dbb7c5ef7a9babd8017",
+      "git_blob_sha": "b506bd6239452a0661490a707dc9392ea78bfc3c"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 7792,
+      "sha256": "962badfdd7c5dc4b2b70e11a3cd0ea3db27c52f4f38afa59eeee0818d336d440",
+      "git_blob_sha": "b9b4a43f6112c6820496443b647ddfca608ac84b"
+    },
+    {
+      "path": "experiments/cost_diagnostics/__init__.py",
+      "bytes": 80,
+      "sha256": "a6eba6b4ca66518d8b42a5e5e1efa30681deb3f5aacdf195c384c9213c76be84",
+      "git_blob_sha": "344969048c91b9f9dcaf912500871e411a1c5679"
+    },
+    {
+      "path": "experiments/cost_diagnostics/INDEPENDENT_REVIEW.md",
+      "bytes": 1562,
+      "sha256": "28eab3f8996de43ab3f5cab80b188e3115bdf89f7c5c09c33d05fbf81d54fd72",
+      "git_blob_sha": "a8579598924d3484dc210af32b5b707e4081137e"
+    },
+    {
+      "path": "experiments/cost_diagnostics/profiler.py",
+      "bytes": 4179,
+      "sha256": "61d101a53266f0a89f1f850acc19923a3547381c3ebaaebdce65f52a96e0bbdb",
+      "git_blob_sha": "a5cdd88f514d839acc0c239e5d4c8845880e219a"
+    },
+    {
+      "path": "experiments/cost_diagnostics/README.md",
+      "bytes": 4502,
+      "sha256": "ea3614cd831176cb3811f3f5e5e3eeef90392b9c87ffe4f322d69db7e0901140",
+      "git_blob_sha": "8bfdfc2cd37e1da3520d6493fdd2115c364b9266"
+    },
+    {
+      "path": "experiments/cost_diagnostics/results_full/completed.json",
+      "bytes": 1460,
+      "sha256": "5ee529415c8bdfe5f1d724d824273f4f40533c5f94081e76bc4f1704e9f43aac",
+      "git_blob_sha": "a56717280103f94966ca7a105f368704da1c34fd"
+    },
+    {
+      "path": "experiments/cost_diagnostics/results_full/environment.json",
+      "bytes": 1782,
+      "sha256": "8acc3c362059fbf4603735657b553b6d5db439438e3c615a523a922770c1ff24",
+      "git_blob_sha": "4536137177de1b6dda46920340730663ab2e750f"
+    },
+    {
+      "path": "experiments/cost_diagnostics/results_full/report.md",
+      "bytes": 2040,
+      "sha256": "2313e0982665508696defc10ba6674b5bb8c594927391d3eccd641c597fb9c65",
+      "git_blob_sha": "f0f86121890037f8ff75a0104ad6fce092c95126"
+    },
+    {
+      "path": "experiments/cost_diagnostics/results_full/summary.csv",
+      "bytes": 5218,
+      "sha256": "d25397452f377a32f34c2a96e769c6688b55b91d2bc8729375ebc7b1a8333166",
+      "git_blob_sha": "77dac4bdd09f382682725be05c805dac4d54dc6f"
+    },
+    {
+      "path": "experiments/cost_diagnostics/results_full/summary.json",
+      "bytes": 4353,
+      "sha256": "a99b4bef14493195802cb63784a000908e76153ae42640f05aaf6551fe8492a9",
+      "git_blob_sha": "dbf432d810f8c9220163416372912fcc2cc1aaf9"
+    },
+    {
+      "path": "experiments/cost_diagnostics/run.py",
+      "bytes": 14943,
+      "sha256": "0f738fdff02344ecdd68b5ea845fed9a045015f4bfe449b8c68d8f28b31796d5",
+      "git_blob_sha": "2872b3db0c5b9b46c303850e4153fbca44decf5b"
+    },
+    {
+      "path": "experiments/cost_diagnostics/SOURCE_MANIFEST.json",
+      "bytes": 620,
+      "sha256": "7b3e1a278a8e4bc73f52de6dbfb8aae7c25ba3a14e65b70676a11dc94e823606",
+      "git_blob_sha": "e963e9c5a918924a17ebdcdc47e845714b87e5fd"
+    },
+    {
+      "path": "experiments/cost_diagnostics/test_diagnostics.py",
+      "bytes": 3356,
+      "sha256": "ff7ec2fad8b3c694ad6b5fac2c0ca07e34de8a304915bd2efde771250a7655db",
+      "git_blob_sha": "a29c60ec5f714df25a7b731a78b6f1e7bfc70f14"
+    },
+    {
+      "path": "experiments/cost_diagnostics/VALIDATION.json",
+      "bytes": 316,
+      "sha256": "131434d04da56eb4f87a932fe0f18d075224d4a4c23dd99ac7760f44910411cb",
+      "git_blob_sha": "afc2cda9fb083e9e3d78001a3650ad945d5632bf"
+    },
+    {
+      "path": "outputs/cost_diagnostics_results_20261030/audit.json",
+      "bytes": 13721,
+      "sha256": "a1d001bb1846300edf02c6b7cbbca64dfda91d9e0f86ff8ad2fb212f0e68123f",
+      "git_blob_sha": "e82c9be51ee8db448e6d8b4e84c9ae6c088c8f62"
+    },
+    {
+      "path": "outputs/cost_diagnostics_results_20261030/audit_results.py",
+      "bytes": 6751,
+      "sha256": "26c2186d8b8da0287a5d1cacdd289b8fb56cda72b85cddaacf0e4b38744cdc0f",
+      "git_blob_sha": "f87630b785f60d969132b9a90875f50c6406a397"
+    },
+    {
+      "path": "outputs/cost_diagnostics_results_20261030/INDEPENDENT_REVIEW.md",
+      "bytes": 4842,
+      "sha256": "8a6a941d8ff959bffb911571829082d2c2bb30b87652da349d305470069dfda1",
+      "git_blob_sha": "eca2ec8b2311774003e97158164ad00feca78a13"
+    },
+    {
+      "path": "outputs/cost_diagnostics_results_20261030/RESULTS_REVIEW.md",
+      "bytes": 5046,
+      "sha256": "61afed6ebb7009e2831e98fc77b1ed839b726397ae7cf83757dd71b63470752e",
+      "git_blob_sha": "433e7a1c1935670eca7b7f7aa5d0c18eced4a42d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6282,
+      "sha256": "b844f73e12bf3a301d4bfb04e66dc0bea0a16058c28f9cc2eecec67742d2cf27",
+      "git_blob_sha": "b395ab68190fec642ad7d11017b5042b25bdcd10"
+    }
+  ]
+}

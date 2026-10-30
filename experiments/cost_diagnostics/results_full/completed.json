@@ -1,0 +1,22 @@
+{
+  "case_count": 9,
+  "training_trajectories": 9,
+  "mismatches": 0,
+  "relation_comparisons": 383385600,
+  "note": "Instrumented mechanism diagnosis, not an end-to-end speed benchmark",
+  "files": {
+    "environment.json": "8acc3c362059fbf4603735657b553b6d5db439438e3c615a523a922770c1ff24",
+    "m4096_d1_seed_404.json": "3bcb53a07f4bda69e6572733e607be4411188bd21b81235f8f7df39a6ffee23b",
+    "m4096_d1_seed_505.json": "e76be95f3f29d2a470dbaf63fa1108c03e0e614d948add55065084a4642b0d2c",
+    "m4096_d1_seed_606.json": "566e2bd76cb839e2d66af6de6129bdf21e981f1b99f6fcadef142c523d4c0450",
+    "m4096_d4_seed_404.json": "65b49a2303f269e19bbdb4e48bd5e97a5db81d8befb62bc37e0163adb530d0f9",
+    "m4096_d4_seed_505.json": "5acd2a4a58cfab8061f4201843e1f06ff5f211b6fb970399666e84c2f0307774",
+    "m4096_d4_seed_606.json": "af378779190730c013fd7f2fe3d512907b8edeb905167427611d86ae96a4a3b2",
+    "m4096_d8_seed_404.json": "0bdb43032a4c3b452d2542a63908825d04e8cc74d202a946e74ba07e9f62b8f7",
+    "m4096_d8_seed_505.json": "ce7813c77b713874854e9935feb324c68b8f715c1ad659aed82275d57cfff85b",
+    "m4096_d8_seed_606.json": "d275ed5413e60cb26062012bdfb7080de0ed7233c296ddd4782e5b6ef11f78e2",
+    "report.md": "2313e0982665508696defc10ba6674b5bb8c594927391d3eccd641c597fb9c65",
+    "summary.csv": "d25397452f377a32f34c2a96e769c6688b55b91d2bc8729375ebc7b1a8333166",
+    "summary.json": "a99b4bef14493195802cb63784a000908e76153ae42640f05aaf6551fe8492a9"
+  }
+}
