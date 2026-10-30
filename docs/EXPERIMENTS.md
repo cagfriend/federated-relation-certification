@@ -80,3 +80,9 @@ Fashion-MNIST，固定冻结编码器和线性头，公共样本规模 M=4,096/8
 全量运行记录检查 154,828,800 个关系及 206,438,400 个候选成员，错误数为零；这是核验已保存的审计范围，不代表本次重新执行了全部 oracle。该实验没有 Local 对照、真实网络计时或不同 M 下固定学生更新预算；公共规模、图规模和学生步数同时变化。三个种子支持本条件下的配对方向，不构成普遍性或显著性证明，也不能证明聚类质量随 M 提升。
 
 证据：[结果审阅](../outputs/public_scaling_results_20261030/RESULTS_REVIEW.md)、[审计 JSON](../outputs/public_scaling_results_20261030/audit.json)、[独立复审](../outputs/public_scaling_results_20261030/INDEPENDENT_REVIEW.md)。
+
+## 新完成：图密度
+
+固定M4096、degree=1/4/8，三个seed、200轮、B/E/D。度1从上一轮复用，新增18次方法训练及度8的9次内存回放。D/B整体省时中位数5.81%/3.06%/1.56%；D/E为1.29%/-0.28%/-0.17%。不能把密图当扩大收益的途径。
+
+详见[正式审阅](../outputs/graph_density_results_20261030/RESULTS_REVIEW.md)、[原始结果汇总](../experiments/graph_density/results_graph/report.md)。大JSON无损ZIP归档；归档清单已扩展，旧档案未变。

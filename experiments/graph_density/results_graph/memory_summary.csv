@@ -1,0 +1,4 @@
+case_id,method,profiles,persistent_method_array_bytes_median,persistent_method_array_bytes_min,persistent_method_array_bytes_max,tracemalloc_peak_bytes_median,tracemalloc_peak_bytes_min,tracemalloc_peak_bytes_max,process_peak_working_set_bytes_median,process_peak_working_set_bytes_min,process_peak_working_set_bytes_max,rounds,seeds
+m4096_d8,B,3,926176,926176,926176,264632085,264613178,264632757,912818176,911007744,912887808,[200],"[404,505,606]"
+m4096_d8,D,3,8039200,8039200,8039200,329026952,329024189,329030962,929579008,926232576,929665024,[200],"[404,505,606]"
+m4096_d8,E,3,8039200,8039200,8039200,328970551,328970259,328976998,930795520,926732288,931336192,[200],"[404,505,606]"

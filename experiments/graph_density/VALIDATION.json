@@ -1,0 +1,12 @@
+{
+  "formal_run_started": false,
+  "core_source_files_unchanged": 13,
+  "old_result_hashes_unchanged": 25,
+  "smoke_case_seed_count": 9,
+  "smoke_method_runs": 27,
+  "smoke_memory_profiles": 9,
+  "smoke_relation_checks": 11232,
+  "smoke_candidate_checks": 3456,
+  "mismatches": 0,
+  "diagnostic_csv_rows": 27
+}

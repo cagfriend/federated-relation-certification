@@ -1,0 +1,488 @@
+{
+  "m4096_d1": {
+    "B": {
+      "generation_seconds": {
+        "percent_less": 68.49828338796716,
+        "seconds_saved": 4.892189799989865,
+        "ratio_range": [
+          0.3130280485243809,
+          0.3154527601555684
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.3154527601555684,
+            "seconds_saved": 5.0807128999513225
+          },
+          {
+            "seed": 505,
+            "ratio": 0.3130280485243809,
+            "seconds_saved": 4.891485199994349
+          },
+          {
+            "seed": 606,
+            "ratio": 0.3150171661203284,
+            "seconds_saved": 4.892189799989865
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": 5.805482813953933,
+        "seconds_saved": 5.031982600099582,
+        "ratio_range": [
+          0.9378551651973459,
+          0.9446426122368754
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9378551651973459,
+            "seconds_saved": 6.078165099934267
+          },
+          {
+            "seed": 505,
+            "ratio": 0.9419451718604607,
+            "seconds_saved": 5.031982600099582
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9446426122368754,
+            "seconds_saved": 4.779078400031722
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": 4.076821247358364,
+        "seconds_saved": 5.031982600099582,
+        "ratio_range": [
+          0.9557585688752486,
+          0.9597412147757591
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9557585688752486,
+            "seconds_saved": 6.078165099934267
+          },
+          {
+            "seed": 505,
+            "ratio": 0.9592317875264164,
+            "seconds_saved": 5.031982600099582
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9597412147757591,
+            "seconds_saved": 4.779078400031722
+          }
+        ]
+      }
+    },
+    "E": {
+      "generation_seconds": {
+        "percent_less": 23.85112592355283,
+        "seconds_saved": 0.7020556000206852,
+        "ratio_range": [
+          0.7584316901548769,
+          0.7621704623663484
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.7584316901548769,
+            "seconds_saved": 0.7457255999324843
+          },
+          {
+            "seed": 505,
+            "ratio": 0.7614887407644717,
+            "seconds_saved": 0.698120499982906
+          },
+          {
+            "seed": 606,
+            "ratio": 0.7621704623663484,
+            "seconds_saved": 0.7020556000206852
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": 1.290534584155223,
+        "seconds_saved": 1.0662202999228612,
+        "ratio_range": [
+          0.9833265113621202,
+          0.994475100690528
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9833265113621202,
+            "seconds_saved": 1.5553636999684386
+          },
+          {
+            "seed": 505,
+            "ratio": 0.994475100690528,
+            "seconds_saved": 0.45358310008305125
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9870946541584478,
+            "seconds_saved": 1.0662202999228612
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": 0.9271795400450977,
+        "seconds_saved": 1.0662202999228612,
+        "ratio_range": [
+          0.9882935185775101,
+          0.9961835882490597
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9882935185775101,
+            "seconds_saved": 1.5553636999684386
+          },
+          {
+            "seed": 505,
+            "ratio": 0.9961835882490597,
+            "seconds_saved": 0.45358310008305125
+          },
+          {
+            "seed": 606,
+            "ratio": 0.990728204599549,
+            "seconds_saved": 1.0662202999228612
+          }
+        ]
+      }
+    }
+  },
+  "m4096_d4": {
+    "B": {
+      "generation_seconds": {
+        "percent_less": 56.48309463595646,
+        "seconds_saved": 4.307793100000708,
+        "ratio_range": [
+          0.40769700778662404,
+          0.44424499403991646
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.4351690536404354,
+            "seconds_saved": 4.164501899991592
+          },
+          {
+            "seed": 505,
+            "ratio": 0.40769700778662404,
+            "seconds_saved": 4.84523980011727
+          },
+          {
+            "seed": 606,
+            "ratio": 0.44424499403991646,
+            "seconds_saved": 4.307793100000708
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": 3.0614869094686026,
+        "seconds_saved": 5.191330100024061,
+        "ratio_range": [
+          0.9690789794126805,
+          0.9788505608899281
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9690789794126805,
+            "seconds_saved": 5.191330100024061
+          },
+          {
+            "seed": 505,
+            "ratio": 0.969385130905314,
+            "seconds_saved": 5.591135800059419
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9788505608899281,
+            "seconds_saved": 3.4800607999932254
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": 2.5020128452158064,
+        "seconds_saved": 5.191330100024061,
+        "ratio_range": [
+          0.9745138660705756,
+          0.982329751115367
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9749798715478419,
+            "seconds_saved": 5.191330100024061
+          },
+          {
+            "seed": 505,
+            "ratio": 0.9745138660705756,
+            "seconds_saved": 5.591135800059419
+          },
+          {
+            "seed": 606,
+            "ratio": 0.982329751115367,
+            "seconds_saved": 3.4800607999932254
+          }
+        ]
+      }
+    },
+    "E": {
+      "generation_seconds": {
+        "percent_less": 0.16854604003334606,
+        "seconds_saved": 0.005813600073452108,
+        "ratio_range": [
+          0.9907123266574124,
+          1.000023837903605
+        ],
+        "wins": 2,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9907123266574124,
+            "seconds_saved": 0.030078900068474468
+          },
+          {
+            "seed": 505,
+            "ratio": 1.000023837903605,
+            "seconds_saved": -7.949989958433434e-05
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9983145395996665,
+            "seconds_saved": 0.005813600073452108
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": -0.28139164647400516,
+        "seconds_saved": -0.4967693999496987,
+        "ratio_range": [
+          0.9919081555421548,
+          1.0118161154614642
+        ],
+        "wins": 1,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9919081555421548,
+            "seconds_saved": 1.327272400005313
+          },
+          {
+            "seed": 505,
+            "ratio": 1.00281391646474,
+            "seconds_saved": -0.4967693999496987
+          },
+          {
+            "seed": 606,
+            "ratio": 1.0118161154614642,
+            "seconds_saved": -1.8809510999781196
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": -0.23290620354550207,
+        "seconds_saved": -0.4967693999496987,
+        "ratio_range": [
+          0.9934816876129132,
+          1.0098179114863692
+        ],
+        "wins": 1,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9934816876129132,
+            "seconds_saved": 1.327272400005313
+          },
+          {
+            "seed": 505,
+            "ratio": 1.002329062035455,
+            "seconds_saved": -0.4967693999496987
+          },
+          {
+            "seed": 606,
+            "ratio": 1.0098179114863692,
+            "seconds_saved": -1.8809510999781196
+          }
+        ]
+      }
+    }
+  },
+  "m4096_d8": {
+    "B": {
+      "generation_seconds": {
+        "percent_less": 51.914696379394876,
+        "seconds_saved": 3.8142482999828644,
+        "ratio_range": [
+          0.477241424414635,
+          0.48394099695611026
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.48394099695611026,
+            "seconds_saved": 4.00808160003362
+          },
+          {
+            "seed": 505,
+            "ratio": 0.477241424414635,
+            "seconds_saved": 3.8142482999828644
+          },
+          {
+            "seed": 606,
+            "ratio": 0.4808530362060513,
+            "seconds_saved": 3.6924279000013485
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": 1.562521654187632,
+        "seconds_saved": 4.060226099842112,
+        "ratio_range": [
+          0.9820872723513542,
+          0.9920351074850824
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9920351074850824,
+            "seconds_saved": 2.224342799963779
+          },
+          {
+            "seed": 505,
+            "ratio": 0.9820872723513542,
+            "seconds_saved": 4.387858999965829
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9843747834581237,
+            "seconds_saved": 4.060226099842112
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": 1.3894094449290906,
+        "seconds_saved": 4.060226099842112,
+        "ratio_range": [
+          0.98442418973686,
+          0.9930239510482617
+        ],
+        "wins": 3,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 0.9930239510482617,
+            "seconds_saved": 2.224342799963779
+          },
+          {
+            "seed": 505,
+            "ratio": 0.98442418973686,
+            "seconds_saved": 4.387858999965829
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9861059055507091,
+            "seconds_saved": 4.060226099842112
+          }
+        ]
+      }
+    },
+    "E": {
+      "generation_seconds": {
+        "percent_less": -9.13444261348495,
+        "seconds_saved": -0.29145139992033364,
+        "ratio_range": [
+          1.0857858600655304,
+          1.1028593008918586
+        ],
+        "wins": 0,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 1.1028593008918586,
+            "seconds_saved": -0.3505524998981855
+          },
+          {
+            "seed": 505,
+            "ratio": 1.0913444261348495,
+            "seconds_saved": -0.29145139992033364
+          },
+          {
+            "seed": 606,
+            "ratio": 1.0857858600655304,
+            "seconds_saved": -0.2702125999130658
+          }
+        ]
+      },
+      "training_pipeline_seconds": {
+        "percent_less": -0.16835601140077205,
+        "seconds_saved": -0.40852030000678496,
+        "ratio_range": [
+          0.9968668377520201,
+          1.0017010251587795
+        ],
+        "wins": 1,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 1.0016835601140077,
+            "seconds_saved": -0.46563640001113527
+          },
+          {
+            "seed": 505,
+            "ratio": 1.0017010251587795,
+            "seconds_saved": -0.40852030000678496
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9968668377520201,
+            "seconds_saved": 0.803952499969455
+          }
+        ]
+      },
+      "with_shared_preparation_seconds": {
+        "percent_less": -0.1472767339466552,
+        "seconds_saved": -0.40852030000678496,
+        "ratio_range": [
+          0.9972178732477105,
+          1.0014752634292203
+        ],
+        "wins": 1,
+        "raw_pairs": [
+          {
+            "seed": 404,
+            "ratio": 1.0014727673394666,
+            "seconds_saved": -0.46563640001113527
+          },
+          {
+            "seed": 505,
+            "ratio": 1.0014752634292203,
+            "seconds_saved": -0.40852030000678496
+          },
+          {
+            "seed": 606,
+            "ratio": 0.9972178732477105,
+            "seconds_saved": 0.803952499969455
+          }
+        ]
+      }
+    }
+  }
+}

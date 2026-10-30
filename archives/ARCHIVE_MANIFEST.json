@@ -544,5 +544,71 @@
         "sha256": "71d95d98846f8de6751e8949eae443218e084105c8668d8beba08105cf5933bd"
       }
     ]
+  },
+  {
+    "archive": "archives/graph_density_raw_records_404.zip",
+    "bytes": 309825,
+    "sha256": "2af42014c90a24660f4e17bad28f985696e0932de564226f19575807e64d5581",
+    "files": [
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d1_seed_404.json",
+        "bytes": 1634931,
+        "sha256": "532ebfe1c71fae2117f28a548ff9402b614c174a78f77f07e21f3462831a5f4f"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d4_seed_404.json",
+        "bytes": 1620079,
+        "sha256": "5f968766e90c985c7db22e447a14a00364d3c49df4bfe4e82ef5bf177126f143"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d8_seed_404.json",
+        "bytes": 1624412,
+        "sha256": "0d8c7990a5a824240fd97dfb5fed59f1fbd7702d362645ccfc39d79d9c6b04dc"
+      }
+    ]
+  },
+  {
+    "archive": "archives/graph_density_raw_records_505.zip",
+    "bytes": 310589,
+    "sha256": "cb42b9769c0cf83998456fc8b3149517797d875dac630e667cee236e7411973a",
+    "files": [
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d1_seed_505.json",
+        "bytes": 1628179,
+        "sha256": "a847156be64de947edfe44b6f94972a208898f7e9de3ed69656b7e166b2c8810"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d4_seed_505.json",
+        "bytes": 1620129,
+        "sha256": "3b97480d141bb8eba3bc407d31a4432f51eb8461555790957cb2061ad4bfec0b"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d8_seed_505.json",
+        "bytes": 1626044,
+        "sha256": "45ffff544d5e3565198ee4d1bf2c6c1d4c268ef74251d73b1f515f524a322762"
+      }
+    ]
+  },
+  {
+    "archive": "archives/graph_density_raw_records_606.zip",
+    "bytes": 310995,
+    "sha256": "3869602474f5140ce3513ef90320b73da024fe528003072714f5e19d05b84bc9",
+    "files": [
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d1_seed_606.json",
+        "bytes": 1629844,
+        "sha256": "26865cbfcf25425e21c0e2391a34eca110201a1ab4f5d1370ff228b256902e30"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d4_seed_606.json",
+        "bytes": 1621256,
+        "sha256": "fe06aab7b7df4aa525e0ddf6fe4065baf8850e52e2a006d1b567added0ebd715"
+      },
+      {
+        "path": "experiments/graph_density/results_graph/m4096_d8_seed_606.json",
+        "bytes": 1624145,
+        "sha256": "7d7159b7f102801bf43407acb1a29d43a7acd492c8b558df50db69c22e440a1c"
+      }
+    ]
   }
 ]

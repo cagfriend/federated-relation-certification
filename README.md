@@ -12,7 +12,7 @@
 
 - [方法与每轮流程](docs/METHOD.md)：聚合什么、如何认证、基线区别和实现限制。
 - [已经完成的实验](docs/EXPERIMENTS.md)：配置、结果、证明范围与未解决问题。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：优先做图密度，再处理机制增量、编码器更新和数据异构。
+- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：图密度已完成，优先定位D/E适用边界，再处理编码器更新和数据异构。
 - [运行与证据说明](docs/REPRODUCIBILITY.md)：当前代码运行方式、结果核验及历史脚本删除说明。
 - [最新公共库规模审阅](outputs/public_scaling_results_20261030/RESULTS_REVIEW.md)。
 
@@ -32,7 +32,7 @@ B=全量教师计算，E=逐样本认证，D=关系认证；三者使用同一�
 
 ## 核心代码
 
-唯一当前实验入口：`python -m experiments.public_scaling.run`。
+训练核心入口：`python -m experiments.public_scaling.run`；图密度专用入口：`python -m experiments.graph_density.run`（原机器复用）。
 
 | 文件 | 作用 |
 |---|---|
@@ -58,3 +58,15 @@ python -m experiments.public_scaling.run --preset smoke --suite all --download -
 数据集、预训练模型和特征缓存未上传。首次运行可用 `--download` 获取官方Fashion-MNIST，并按代码校验摘要。正式配置与下一阶段命令见[运行说明](docs/REPRODUCIBILITY.md)。
 
 当前不宣称：新颖性已获完整文献排重证明、基础协作目标已经稳定优于Local、编码器持续更新已经验证、数据非IID已经验证、真实临时聚合者选举/掉线恢复已经实现、能耗已实测。
+
+## 新增：固定公共库的图密度实验
+
+|degree|D/B生成耗时减少|D/B头训练耗时减少|D/E头训练耗时减少|
+|---:|---:|---:|---:|
+|1|68.50%|5.81%|1.29%|
+|4|56.48%|3.06%|-0.28%|
+|8|51.91%|1.56%|-0.17%|
+
+负数代表D更慢。图变密没有扩大收益；度8时D的关系生成比E慢9.13%，三个种子一致。各配置内B/E/D逐轮模型、消息及已记录评估一致。这项实验明确了当前方法的适用边界；不能宣称D在密图中持续优于E。固定M=4096，增加degree也增加公共训练预算。
+
+[完整审阅](outputs/graph_density_results_20261030/RESULTS_REVIEW.md) · [图密度运行说明](experiments/graph_density/README.md)

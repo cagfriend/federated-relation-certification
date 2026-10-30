@@ -64,3 +64,15 @@ python -m experiments.public_scaling.run --preset full --suite graph --prepare-d
 每个正式case有载荷摘要，`completed.json`记录结果JSON和源码摘要。最新主审另核验了25个结果JSON、132个准备资产和13个源码文件，并逐轮核对全部九组B/E/D轨迹，见 [audit.json](../outputs/public_scaling_results_20261030/audit.json)。
 
 仓库不包含132个准备资产；因此引用原机器缓存的完整审计程序在新克隆后会因资产缺失而不能直接执行。可以先核验仓库内已有文件，再在原环境或自行生成的新实验上做完整缓存核验。重新生成的编码器/缓存不保证与历史GPU数值结果逐字节相同。
+
+## 图密度正式结果与新入口
+
+图密度实验现已完成。`experiments.graph_density.run`仅封装原训练核心，默认复用原机器公共库结果，源码/依赖/准备缓存必须匹配。新克隆机器不能直接复用未上传的缓存；应按上文去掉复用的核心命令完整重跑，或者先在新机器产生自己的public结果。
+
+新增诊断入口：
+
+```powershell
+python -m experiments.graph_density.analyze --output experiments/graph_density/results_graph
+```
+
+它检查原始结果与当前核心版本/环境，不会重跑训练，但原机器准备目录记录仍限制跨机核验；离线可直接读取CSV、JSON和审阅报告。新包包含3项测试与缩小真实数据路径验证记录；正式结果检查见[审计](../outputs/graph_density_results_20261030/audit.json)。

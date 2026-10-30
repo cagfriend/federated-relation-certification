@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "m4096_d1",
+    "seed": 404,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\results_public\\m4096_d1_seed_404.json",
+    "sha256": "532ebfe1c71fae2117f28a548ff9402b614c174a78f77f07e21f3462831a5f4f"
+  },
+  {
+    "case_id": "m4096_d1",
+    "seed": 505,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\results_public\\m4096_d1_seed_505.json",
+    "sha256": "a847156be64de947edfe44b6f94972a208898f7e9de3ed69656b7e166b2c8810"
+  },
+  {
+    "case_id": "m4096_d1",
+    "seed": 606,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\results_public\\m4096_d1_seed_606.json",
+    "sha256": "26865cbfcf25425e21c0e2391a34eca110201a1ab4f5d1370ff228b256902e30"
+  }
+]

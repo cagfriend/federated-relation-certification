@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-30",
+  "scope": "Additive graph experiment update; old core and archives retained",
+  "files": [
+    {
+      "path": "archives/ARCHIVE_MANIFEST.json",
+      "bytes": 26971,
+      "sha256": "0846030b40eddff3f431892c9cc2a0154b22baaebc2117b65d3a49be04ba8bde",
+      "git_blob_sha": "1053ca1fc6e73cdf9fd4d37bfc8a1099c826656b"
+    },
+    {
+      "path": "archives/graph_density_raw_records_404.zip",
+      "bytes": 309825,
+      "sha256": "2af42014c90a24660f4e17bad28f985696e0932de564226f19575807e64d5581",
+      "git_blob_sha": "3f3c2bd2507c2c8168c09b31fb27204f55e61b5a"
+    },
+    {
+      "path": "archives/graph_density_raw_records_505.zip",
+      "bytes": 310589,
+      "sha256": "cb42b9769c0cf83998456fc8b3149517797d875dac630e667cee236e7411973a",
+      "git_blob_sha": "ccdbbe1342767f5597f507f0c26461c6fa0cfb28"
+    },
+    {
+      "path": "archives/graph_density_raw_records_606.zip",
+      "bytes": 310995,
+      "sha256": "3869602474f5140ce3513ef90320b73da024fe528003072714f5e19d05b84bc9",
+      "git_blob_sha": "f4f36b9fa974f8967aeaafa73cfa19264b366d9a"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 9622,
+      "sha256": "7c78a643fa358e8a65f157af2cd720e005d8c1024a14128b419423701c06da74",
+      "git_blob_sha": "3d49dffffebc8eeefb7f54fdaab7daef390112e4"
+    },
+    {
+      "path": "docs/NEXT_EXPERIMENTS.md",
+      "bytes": 921,
+      "sha256": "eb43f1bf6e36aab4e091992c23762ad9733a4404f0999f06ad8bfcffb569a699",
+      "git_blob_sha": "f382ebdd902f4e575fb5f15bc973990d7dea15d6"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 6825,
+      "sha256": "5315d56614ec39c447336415116af5c0e085aed2adf5853f6bcc5eb96f47aa88",
+      "git_blob_sha": "ba9c991e639ec2398ad6026a1ad8ceadfdb85874"
+    },
+    {
+      "path": "experiments/graph_density/__init__.py",
+      "bytes": 84,
+      "sha256": "422250bb607117c0de5fd3ef57072b23a926f2e30516527c236c967e4ba39881",
+      "git_blob_sha": "665e01a6f02844be9fed341279437cb17f07194c"
+    },
+    {
+      "path": "experiments/graph_density/analyze.py",
+      "bytes": 7302,
+      "sha256": "7ca89784a5ec3a12a9f97253d30c9d1cf29c0f23bb7caa5336558033cc8d1517",
+      "git_blob_sha": "b4b61b4a177809d704047e888c5f304a1bb46998"
+    },
+    {
+      "path": "experiments/graph_density/INDEPENDENT_REVIEW.md",
+      "bytes": 1393,
+      "sha256": "6f86a14ec66089174e47d4c86657dc2c53a863e5a2fb9c0b2acca9415c8e6b96",
+      "git_blob_sha": "40bad4d0040bb75647fbd9e5ba815dfdb48cf8e4"
+    },
+    {
+      "path": "experiments/graph_density/README.md",
+      "bytes": 5126,
+      "sha256": "811b3a2b555c1e5dbb207245d5f01ee0bcb83638734d14b3bbd7445036e8e387",
+      "git_blob_sha": "27b0330047420e0cd81ca90e4d1a86c7a022ca1b"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/completed.json",
+      "bytes": 3954,
+      "sha256": "858b1bfff319333f06951318c77cd6d6aa187f0f56a6cabb5c213c8ae4ad074f",
+      "git_blob_sha": "830a1522b18ba67d30c6e4e16dd79458a19330b5"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/environment.json",
+      "bytes": 5492,
+      "sha256": "befd5ba66890015c68e02fba1886416f23283e5d56a3e8a776632ef4ad99e50a",
+      "git_blob_sha": "0282bae0232995e3b8bb94ca433678b0aba562a2"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/graph_analysis/diagnostics.csv",
+      "bytes": 6608,
+      "sha256": "b0b60ddaedc3ed9d3be59bd2e8006a65c3dee00f49563d7aaae0efa67ffb9c58",
+      "git_blob_sha": "a2dc26c3f0e78409afa31657acf9023907ee9883"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/graph_analysis/diagnostics.json",
+      "bytes": 13197,
+      "sha256": "b36d4ff68cf33f56830d3a7fdc8d21e898e64b589086e508bd3b7999c227715f",
+      "git_blob_sha": "902be0ef1823677f3bf925435d1642cf15016bbb"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/graph_analysis/implementation.json",
+      "bytes": 1756,
+      "sha256": "76c8e719424d7a36af11b7da63bf3efb21d2f4b9538649475e392490c8e43a31",
+      "git_blob_sha": "90b0b15d72c87479d897c4e4ab98bb7c6c7ef2e8"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/graph_analysis/report.md",
+      "bytes": 1441,
+      "sha256": "6f8e5048953d296ded99f162801c348c6c5877691aa7978ae7f6b27f5d10ee3f",
+      "git_blob_sha": "8116e7e98b15ddb1305a9d005c326dd1b3e31a51"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory.json",
+      "bytes": 4275,
+      "sha256": "e12b03ae5180ce3c1fbd6e1aca600e2bb9664c6828e39e1095067a4352fa5f31",
+      "git_blob_sha": "3eb9230ba56b6a78988bc9b3855244fcb5d3f7ca"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_B_404.json",
+      "bytes": 449,
+      "sha256": "25b7cd40497a81f65b28a3079185c08260e969679f830dc10488f021f3b89119",
+      "git_blob_sha": "b746b5cce621b8b87391ef48151d2dc386937933"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_B_505.json",
+      "bytes": 449,
+      "sha256": "53d689a30b6c0c43936fc59cc6450b6ec1c03ebefe156e00c6db3be8ee5cbd73",
+      "git_blob_sha": "2b64bc5b7c3967a2170af07ba26a3855beb8670b"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_B_606.json",
+      "bytes": 449,
+      "sha256": "09022538cab168c2a5b3dc2bf4abf16ab0681b7f0c77e07113e176b5b061d145",
+      "git_blob_sha": "4fadffd93aaf67ca880cfd969768938cd355c0e9"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_D_404.json",
+      "bytes": 450,
+      "sha256": "accc536e88bfc0effdb83b7c5201918e53cc444a7acb5e8712fa36d20e022f4d",
+      "git_blob_sha": "d42dd3814076b7bfc3382c6577bdd89c526aac2a"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_D_505.json",
+      "bytes": 450,
+      "sha256": "07a02731a4b6b5cdaf8b7f252effa46e0f7fad17dbcfce2769898ce27dc33da6",
+      "git_blob_sha": "1fb3b1ee9ec6baff1a242e0aabec8fcf3f8fcc1f"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_D_606.json",
+      "bytes": 450,
+      "sha256": "2f4bb2347a92378a6ead69b7547c40ca40bbbbdb5872cdc789707b901378726e",
+      "git_blob_sha": "0be9240766d87ce905e8c271186b72f80d0a0369"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_E_404.json",
+      "bytes": 450,
+      "sha256": "4e7c7bddc3c12cd2143da2ed14bbbb396a0388ac4f807cac38e13942137a6829",
+      "git_blob_sha": "b12969fe5770674f8bc19d3a04bb7f4e2235f91a"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_E_505.json",
+      "bytes": 450,
+      "sha256": "d269ec8ef513d02ce5dacd195df04c93d874b0bfcb314f0f1605185449c9f165",
+      "git_blob_sha": "af8067af28f098f27467436b8159670dc72bcc8e"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_m4096_d8_E_606.json",
+      "bytes": 450,
+      "sha256": "03b6e7a7b0468141367091737fd7418e5c321072cba873fd23b44c322ca10f14",
+      "git_blob_sha": "b56bc7ccb835906161ed684dfb3769f767e64534"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/memory_summary.csv",
+      "bytes": 692,
+      "sha256": "f4962de819ecae1f99b795a2189941f9490d1d4745a3560975420b756465d58b",
+      "git_blob_sha": "3c6c1bb660a721f0fcd9def29464fd341683fbff"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/paired_summary.json",
+      "bytes": 52355,
+      "sha256": "8f9055ca95b3e8c8f509623794fcc339d9d6384717ed012de45a574a9e043273",
+      "git_blob_sha": "7b767b8d432a8cbcfc3656b2a7e7cc5d36045b10"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/prepared_404.json",
+      "bytes": 228,
+      "sha256": "ade48beb0fbe146299f9bb44fbc27fadba7aa0aee8bbfc7abf00d4772480acb2",
+      "git_blob_sha": "8aead1bc0a70448623d315903cf2ea128ea147c6"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/prepared_505.json",
+      "bytes": 228,
+      "sha256": "0fb2bf7a5435ac29081b521504c8cd945553dbfe80130463ae432033ca68f401",
+      "git_blob_sha": "77736729026dadf1378cadaf7c50cec4b6d6f37a"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/prepared_606.json",
+      "bytes": 228,
+      "sha256": "0a64f36026d22b708ba58861921f1da9de3d54a4aa9171312b7a3238c13ed00c",
+      "git_blob_sha": "ca457da74ca66e2d0b081f73bdc5977e7d950ecd"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/report.md",
+      "bytes": 8630,
+      "sha256": "76238b34ecf94deecc6b3a06aedc96f26da2450308cb8e8c2320d075884596d6",
+      "git_blob_sha": "e87bc235d711b3ee82710c2ed50edd8731a9c067"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/reused_cases.json",
+      "bytes": 846,
+      "sha256": "8312f903e96573766ecbee3ce886c0df08d0c9bea42971162f325f4ea5f5e1c2",
+      "git_blob_sha": "3f53a4850612530a0622ae3cd320cb0057b859ac"
+    },
+    {
+      "path": "experiments/graph_density/results_graph/summary.csv",
+      "bytes": 44281,
+      "sha256": "4f76ac0fa4ef05a06ad42278d24000b8842b586391055acb359db6331df5b577",
+      "git_blob_sha": "a1bb08642f8e31659870f334da25038c29d7e69d"
+    },
+    {
+      "path": "experiments/graph_density/run.py",
+      "bytes": 4322,
+      "sha256": "9686c0ee59d51a54545f246742a9c14e65a69521f8638209a987883249810301",
+      "git_blob_sha": "d3dbeec28266e9f22d5f5964ba469193c3a89a82"
+    },
+    {
+      "path": "experiments/graph_density/test_orchestration.py",
+      "bytes": 1943,
+      "sha256": "98ce95544fed1f3d3e5f901ddf1764045fa8b11a2d67c6d17005bd5a2d51655d",
+      "git_blob_sha": "42b77e293a45555416070d750cb1e32c229eba92"
+    },
+    {
+      "path": "experiments/graph_density/VALIDATION.json",
+      "bytes": 321,
+      "sha256": "97af11af6ce39faa7635e9fe2eeab97265455cb6a153980e32ecf02e59ec94ef",
+      "git_blob_sha": "7fa2b1e82b1b48b1054ee42a0ce0a8fd45ebe805"
+    },
+    {
+      "path": "outputs/graph_density_results_20261030/audit.json",
+      "bytes": 13082,
+      "sha256": "6669b0ce62b68548af4fd9c5927038710d675bba030dee7f3a95791e74e40af7",
+      "git_blob_sha": "9318b4f8ffe6d8c73a1ef0fc052144fd8c1a3308"
+    },
+    {
+      "path": "outputs/graph_density_results_20261030/audit_results.py",
+      "bytes": 5899,
+      "sha256": "2ec4f41838858bae0069d05c8de47c27999e09fc77181e563828a73e665c1be4",
+      "git_blob_sha": "43e92939fa877292be0fed759ff068f103819583"
+    },
+    {
+      "path": "outputs/graph_density_results_20261030/INDEPENDENT_REVIEW.md",
+      "bytes": 6789,
+      "sha256": "c814252e689c8056bc56581465f2099c99c5f960802c75ab953b2e53d7b622f8",
+      "git_blob_sha": "c819c564e04dce6dfab5b31fb33fed8422b88a56"
+    },
+    {
+      "path": "outputs/graph_density_results_20261030/RESULTS_REVIEW.md",
+      "bytes": 4416,
+      "sha256": "fdf00a468f84bfab771ae5200c568ecef02c4af744bc7a685c5085b9914d1aa5",
+      "git_blob_sha": "770d25afa23113a6aadb3de1050e021c486d419d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5265,
+      "sha256": "d37b7292f1ce99b1da2d4f876bdc43488aff9d846995995ff08766699e39037b",
+      "git_blob_sha": "ab45c63b61803a1c47ac01d5e3d5a1ccc4b0ddad"
+    }
+  ]
+}
