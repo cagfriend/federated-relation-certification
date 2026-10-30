@@ -1,0 +1,724 @@
+{
+  "scenario": "boundary",
+  "seed": 101,
+  "scale": 2.0,
+  "config": {
+    "samples": 128,
+    "classes": 8,
+    "dimensions": [
+      32,
+      32,
+      32,
+      64,
+      64,
+      64
+    ],
+    "rounds": 4,
+    "threads": 1
+  },
+  "actual_edges": 64,
+  "scope": "synthetic relationship-generation + application-message exchange; not training or network latency",
+  "fixture_generation_seconds_excluded": 0.0009820000268518925,
+  "validation_seconds_excluded": 0.003064399934373796,
+  "shared_feature_bytes": 294912,
+  "shared_input_graph_bytes_in_this_process": 512,
+  "graph_bytes_if_stored_separately_on_every_client": 3072,
+  "initial_head_digest": "964b9ac74e782c000284ee2b4ab80688512cad3918874d949c3b8f3625d92785",
+  "final_head_digest": "ff00d19ecc65fe674cedb958d4cfc73d37bbfc8219df0962efb9ca1fc9f39dda",
+  "validation": {
+    "enabled": true,
+    "relation_comparisons": 3840,
+    "candidate_membership_comparisons": 3840,
+    "mismatches": 0
+  },
+  "summary": {
+    "A": {
+      "initialization_seconds": 0.0014833000022917986,
+      "steady_generation_seconds": 0.00048560008872300386,
+      "steady_exchange_seconds": 0.0033604998607188463,
+      "steady_measured_seconds": 0.003848099964670837,
+      "with_initialization_measured_seconds": 0.0053313999669626355,
+      "steady_forward_endpoints": 3072,
+      "steady_forward_endpoints_by_client": [
+        512,
+        512,
+        512,
+        512,
+        512,
+        512
+      ],
+      "steady_recompute_fraction": 1.0,
+      "persistent_method_array_bytes": 1216,
+      "max_persistent_method_array_bytes": 1216,
+      "traffic_with_initialization": {
+        "down_bytes": 8470,
+        "control_setup_bytes": 10190,
+        "total_bytes": 13390,
+        "messages": 160,
+        "up_bytes": 4920,
+        "vector_bytes": 3200,
+        "up_full_messages": 25,
+        "up_vector_bytes": 1400,
+        "down_full_messages": 25,
+        "down_vector_bytes": 1800
+      },
+      "steady_traffic_bytes": 7680
+    },
+    "D": {
+      "initialization_seconds": 0.001739499974064529,
+      "steady_generation_seconds": 0.003240800113417208,
+      "steady_exchange_seconds": 0.005347199970856309,
+      "steady_measured_seconds": 0.008589900098741055,
+      "with_initialization_measured_seconds": 0.010329400072805583,
+      "steady_forward_endpoints": 3062,
+      "steady_forward_endpoints_by_client": [
+        512,
+        510,
+        509,
+        512,
+        509,
+        510
+      ],
+      "steady_recompute_fraction": 0.9967447916666666,
+      "persistent_method_array_bytes": 192448,
+      "max_persistent_method_array_bytes": 192448,
+      "traffic_with_initialization": {
+        "down_bytes": 8470,
+        "control_setup_bytes": 10190,
+        "total_bytes": 13349,
+        "messages": 160,
+        "up_bytes": 4879,
+        "vector_bytes": 3159,
+        "up_full_messages": 9,
+        "up_vector_bytes": 1359,
+        "down_full_messages": 25,
+        "down_vector_bytes": 1800,
+        "up_delta_messages": 16
+      },
+      "steady_traffic_bytes": 7639
+    }
+  },
+  "comparisons": {
+    "A_over_D": {
+      "generation_speedup": 0.1498395679241602,
+      "measured_stage_speedup_with_initialization": 0.5161383942324703,
+      "communication_ratio_with_initialization": 1.0030713911154394
+    }
+  },
+  "round_records": [
+    {
+      "method": "D",
+      "round": 0,
+      "generation_seconds": 0.0004144000122323632,
+      "exchange_seconds": 0.0013240999542176723,
+      "total_measured_seconds": 0.001739499974064529,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 4470,
+        "control_setup_bytes": 5070,
+        "total_bytes": 5710,
+        "messages": 40,
+        "up_bytes": 1240,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 192448
+    },
+    {
+      "method": "A",
+      "round": 0,
+      "generation_seconds": 0.00020780006889253855,
+      "exchange_seconds": 0.0012744000414386392,
+      "total_measured_seconds": 0.0014833000022917986,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 4470,
+        "control_setup_bytes": 5070,
+        "total_bytes": 5710,
+        "messages": 40,
+        "up_bytes": 1240,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 1216
+    },
+    {
+      "method": "A",
+      "round": 1,
+      "generation_seconds": 0.0001452000578865409,
+      "exchange_seconds": 0.0010043999645859003,
+      "total_measured_seconds": 0.0011503000278025866,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1920,
+        "messages": 30,
+        "up_bytes": 920,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 1216
+    },
+    {
+      "method": "D",
+      "round": 1,
+      "generation_seconds": 0.000937200034968555,
+      "exchange_seconds": 0.0013978000497445464,
+      "total_measured_seconds": 0.002335500088520348,
+      "forward_endpoints": 766,
+      "certified_edges_before_refresh": 1,
+      "candidate_entries": 5430,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 919
+        },
+        {
+          "forward_endpoints": 126,
+          "certified_edges_before_refresh": 1,
+          "unresolved_edges_before_refresh": 63,
+          "candidate_entries": 862
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 873
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 911
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 928
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 937
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1909,
+        "messages": 30,
+        "up_bytes": 909,
+        "vector_bytes": 629,
+        "up_full_messages": 1,
+        "up_vector_bytes": 269,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360,
+        "up_delta_messages": 4
+      },
+      "persistent_method_array_bytes": 192448
+    },
+    {
+      "method": "D",
+      "round": 2,
+      "generation_seconds": 0.0007817000150680542,
+      "exchange_seconds": 0.001408600015565753,
+      "total_measured_seconds": 0.002190800034441054,
+      "forward_endpoints": 765,
+      "certified_edges_before_refresh": 1,
+      "candidate_entries": 5348,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 871
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 911
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 888
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 895
+        },
+        {
+          "forward_endpoints": 126,
+          "certified_edges_before_refresh": 1,
+          "unresolved_edges_before_refresh": 63,
+          "candidate_entries": 885
+        },
+        {
+          "forward_endpoints": 127,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 898
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1910,
+        "messages": 30,
+        "up_bytes": 910,
+        "vector_bytes": 630,
+        "up_full_messages": 1,
+        "up_vector_bytes": 270,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360,
+        "up_delta_messages": 4
+      },
+      "persistent_method_array_bytes": 192448
+    },
+    {
+      "method": "A",
+      "round": 2,
+      "generation_seconds": 0.0001113000325858593,
+      "exchange_seconds": 0.000763899995945394,
+      "total_measured_seconds": 0.0008756000315770507,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1920,
+        "messages": 30,
+        "up_bytes": 920,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 1216
+    },
+    {
+      "method": "A",
+      "round": 3,
+      "generation_seconds": 9.630003478378057e-05,
+      "exchange_seconds": 0.0007588999578729272,
+      "total_measured_seconds": 0.0008554999949410558,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1920,
+        "messages": 30,
+        "up_bytes": 920,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 1216
+    },
+    {
+      "method": "D",
+      "round": 3,
+      "generation_seconds": 0.0007816000143066049,
+      "exchange_seconds": 0.0012993999989703298,
+      "total_measured_seconds": 0.002081400016322732,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 5285,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 846
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 867
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 876
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 873
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 918
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 905
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1908,
+        "messages": 30,
+        "up_bytes": 908,
+        "vector_bytes": 628,
+        "up_full_messages": 1,
+        "up_vector_bytes": 268,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360,
+        "up_delta_messages": 4
+      },
+      "persistent_method_array_bytes": 192448
+    },
+    {
+      "method": "D",
+      "round": 4,
+      "generation_seconds": 0.0007403000490739942,
+      "exchange_seconds": 0.0012413999065756798,
+      "total_measured_seconds": 0.0019821999594569206,
+      "forward_endpoints": 763,
+      "certified_edges_before_refresh": 1,
+      "candidate_entries": 4981,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 844
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 796
+        },
+        {
+          "forward_endpoints": 125,
+          "certified_edges_before_refresh": 1,
+          "unresolved_edges_before_refresh": 63,
+          "candidate_entries": 774
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 855
+        },
+        {
+          "forward_endpoints": 127,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 862
+        },
+        {
+          "forward_endpoints": 127,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 850
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1912,
+        "messages": 30,
+        "up_bytes": 912,
+        "vector_bytes": 632,
+        "up_full_messages": 1,
+        "up_vector_bytes": 272,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360,
+        "up_delta_messages": 4
+      },
+      "persistent_method_array_bytes": 192448
+    },
+    {
+      "method": "A",
+      "round": 4,
+      "generation_seconds": 0.0001327999634668231,
+      "exchange_seconds": 0.0008332999423146248,
+      "total_measured_seconds": 0.0009666999103501439,
+      "forward_endpoints": 768,
+      "certified_edges_before_refresh": 0,
+      "candidate_entries": 6144,
+      "client_statistics": [
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        },
+        {
+          "forward_endpoints": 128,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 64,
+          "candidate_entries": 1024
+        }
+      ],
+      "traffic": {
+        "down_bytes": 1000,
+        "control_setup_bytes": 1280,
+        "total_bytes": 1920,
+        "messages": 30,
+        "up_bytes": 920,
+        "vector_bytes": 640,
+        "up_full_messages": 5,
+        "up_vector_bytes": 280,
+        "down_full_messages": 5,
+        "down_vector_bytes": 360
+      },
+      "persistent_method_array_bytes": 1216
+    }
+  ]
+}

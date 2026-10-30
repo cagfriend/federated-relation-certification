@@ -1,0 +1,319 @@
+{
+  "result_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\results_public",
+  "verified_root_json_hashes": 25,
+  "verified_prepared_files": 132,
+  "verified_source_files": 13,
+  "case_seed_count": 9,
+  "method_runs": 27,
+  "memory_profiles": 9,
+  "exact_matching_paired_rounds": 1800,
+  "matching_evaluation_triplets": 90,
+  "relation_comparisons": 154828800,
+  "candidate_membership_comparisons": 206438400,
+  "mismatches": 0,
+  "memory_mib": {
+    "B": {
+      "persistent_method_array_bytes": 0.734832763671875,
+      "tracemalloc_peak_bytes": 971.8617525100708,
+      "process_peak_working_set_bytes": 1586.140625
+    },
+    "E": {
+      "persistent_method_array_bytes": 26.080841064453125,
+      "tracemalloc_peak_bytes": 1245.1953926086426,
+      "process_peak_working_set_bytes": 1687.24609375
+    },
+    "D": {
+      "persistent_method_array_bytes": 26.080841064453125,
+      "tracemalloc_peak_bytes": 1245.2900657653809,
+      "process_peak_working_set_bytes": 1646.39453125
+    }
+  },
+  "summary": {
+    "4096": {
+      "comparisons": {
+        "B": {
+          "generation_seconds": {
+            "percent_less": 68.49828338796716,
+            "seconds_saved": 4.892189799989865,
+            "wins": 3,
+            "ratio_range": [
+              0.3130280485243809,
+              0.3154527601555684
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 5.805482813953933,
+            "seconds_saved": 5.031982600099582,
+            "wins": 3,
+            "ratio_range": [
+              0.9378551651973459,
+              0.9446426122368754
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 4.076821247358364,
+            "seconds_saved": 5.031982600099582,
+            "wins": 3,
+            "ratio_range": [
+              0.9557585688752486,
+              0.9597412147757591
+            ]
+          }
+        },
+        "E": {
+          "generation_seconds": {
+            "percent_less": 23.85112592355283,
+            "seconds_saved": 0.7020556000206852,
+            "wins": 3,
+            "ratio_range": [
+              0.7584316901548769,
+              0.7621704623663484
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 1.290534584155223,
+            "seconds_saved": 1.0662202999228612,
+            "wins": 3,
+            "ratio_range": [
+              0.9833265113621202,
+              0.994475100690528
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 0.9271795400450977,
+            "seconds_saved": 1.0662202999228612,
+            "wins": 3,
+            "ratio_range": [
+              0.9882935185775101,
+              0.9961835882490597
+            ]
+          }
+        }
+      },
+      "recompute_percent": {
+        "E": [
+          13.184697903580403,
+          13.406162485605108,
+          13.581600221157872
+        ],
+        "D": [
+          7.845113425198911,
+          7.9428310170644885,
+          8.066884716551508
+        ]
+      },
+      "B_generation_share_percent": [
+        7.588462218728167,
+        8.214874846556363,
+        8.272847962121888
+      ],
+      "final_mean_acc": [
+        0.5442666666666667,
+        0.54245,
+        0.54455
+      ],
+      "min_occupied_clusters_over_evaluations": 10,
+      "max_largest_cluster_fraction_over_evaluations": 0.2334,
+      "traffic_bytes": [
+        487101,
+        486246,
+        488369
+      ],
+      "D_persistent_mib": 7.407012939453125,
+      "D_extra_persistent_over_B_mib": 6.78350830078125
+    },
+    "8192": {
+      "comparisons": {
+        "B": {
+          "generation_seconds": {
+            "percent_less": 72.95879489074744,
+            "seconds_saved": 10.898791400170012,
+            "wins": 3,
+            "ratio_range": [
+              0.25729090498395646,
+              0.29279782996138365
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 9.502526162541702,
+            "seconds_saved": 11.114231000021391,
+            "wins": 3,
+            "ratio_range": [
+              0.9015065684715001,
+              0.9251392888414961
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 7.222826724436793,
+            "seconds_saved": 11.114231000021391,
+            "wins": 3,
+            "ratio_range": [
+              0.922748148984449,
+              0.9420819892623361
+            ]
+          }
+        },
+        "E": {
+          "generation_seconds": {
+            "percent_less": 26.68346105016837,
+            "seconds_saved": 1.484800899939728,
+            "wins": 3,
+            "ratio_range": [
+              0.7250887885412427,
+              0.7368998048236913
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 0.9336653012697926,
+            "seconds_saved": 1.0544053999474272,
+            "wins": 3,
+            "ratio_range": [
+              0.9816076511807673,
+              0.9916600508871025
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 0.7170134379722359,
+            "seconds_saved": 1.0544053999474272,
+            "wins": 3,
+            "ratio_range": [
+              0.9862984078947923,
+              0.9936508947970675
+            ]
+          }
+        }
+      },
+      "recompute_percent": {
+        "E": [
+          13.407542677580611,
+          13.273071084589617,
+          13.413860889735135
+        ],
+        "D": [
+          7.960303225109924,
+          7.865008636934673,
+          7.950468079328936
+        ]
+      },
+      "B_generation_share_percent": [
+        10.480638125954512,
+        12.772042162185159,
+        13.433090855031155
+      ],
+      "final_mean_acc": [
+        0.5443666666666668,
+        0.5425,
+        0.5444166666666667
+      ],
+      "min_occupied_clusters_over_evaluations": 10,
+      "max_largest_cluster_fraction_over_evaluations": 0.2429,
+      "traffic_bytes": [
+        627707,
+        621147,
+        624338
+      ],
+      "D_persistent_mib": 13.631622314453125,
+      "D_extra_persistent_over_B_mib": 12.97100830078125
+    },
+    "16384": {
+      "comparisons": {
+        "B": {
+          "generation_seconds": {
+            "percent_less": 66.01276812859993,
+            "seconds_saved": 20.79482559994358,
+            "wins": 3,
+            "ratio_range": [
+              0.30014046721240345,
+              0.36017072163439545
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 11.389756310110588,
+            "seconds_saved": 21.841280999979062,
+            "wins": 3,
+            "ratio_range": [
+              0.8760566566665169,
+              0.8948141599522168
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 9.731757594024515,
+            "seconds_saved": 21.841280999979062,
+            "wins": 3,
+            "ratio_range": [
+              0.8970095632805622,
+              0.912663581875654
+            ]
+          }
+        },
+        "E": {
+          "generation_seconds": {
+            "percent_less": 20.688228233759176,
+            "seconds_saved": 2.7927288999708253,
+            "wins": 3,
+            "ratio_range": [
+              0.7821626453760308,
+              0.7993284974881253
+            ]
+          },
+          "training_pipeline_seconds": {
+            "percent_less": 1.355456892870388,
+            "seconds_saved": 2.3348567999564693,
+            "wins": 3,
+            "ratio_range": [
+              0.9760924097476765,
+              0.9872309831009862
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "percent_less": 1.1393623054406499,
+            "seconds_saved": 2.3348567999564693,
+            "wins": 3,
+            "ratio_range": [
+              0.9804507158213649,
+              0.9896124613226969
+            ]
+          }
+        }
+      },
+      "recompute_percent": {
+        "E": [
+          13.541886475018321,
+          13.41288453170802,
+          13.402466638204041
+        ],
+        "D": [
+          8.04559908919598,
+          7.985126233380443,
+          7.951296194514238
+        ]
+      },
+      "B_generation_share_percent": [
+        15.279293446796855,
+        18.443199477332325,
+        16.427204505911536
+      ],
+      "final_mean_acc": [
+        0.5444833333333333,
+        0.54265,
+        0.5443333333333334
+      ],
+      "min_occupied_clusters_over_evaluations": 9,
+      "max_largest_cluster_fraction_over_evaluations": 0.2646,
+      "traffic_bytes": [
+        922854,
+        916884,
+        914995
+      ],
+      "D_persistent_mib": 26.080841064453125,
+      "D_extra_persistent_over_B_mib": 25.34600830078125
+    }
+  },
+  "limits": [
+    "Stored oracle checks inspected; training and full oracles not rerun.",
+    "Timings exclude oracle, evaluation and preparation; frozen-encoder head training only.",
+    "Three seeds; no inference of statistical significance.",
+    "Public M and matching edge count grow together; student SGD steps also grow.",
+    "Only largest M has process memory replay."
+  ]
+}

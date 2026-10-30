@@ -1,0 +1,122 @@
+[
+  {
+    "seed": 101,
+    "method": "Local",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 261355187,
+    "process_peak_working_set_bytes": 966115328,
+    "persistent_method_array_bytes": 614880,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "fe4ede8567f2fcc09a5d4ac9841f69e710b786131f314b0e41d0f24010e79d8c"
+  },
+  {
+    "seed": 101,
+    "method": "B",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 263446299,
+    "process_peak_working_set_bytes": 970215424,
+    "persistent_method_array_bytes": 653792,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "77df5e544bbff0347c7fe4a17457d7664c55135c4ada1199897aa950462b805f"
+  },
+  {
+    "seed": 101,
+    "method": "E",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328348183,
+    "process_peak_working_set_bytes": 988983296,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "e9dcdc3c43a0b1363d678d626dc536318ad6a6ed8b04aa320e57ef6a455bba53"
+  },
+  {
+    "seed": 101,
+    "method": "D",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328373255,
+    "process_peak_working_set_bytes": 980385792,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "8078f78f13d0168552cadc2287500cb19c2412b50355095aa37ee2bec718e76d"
+  },
+  {
+    "seed": 202,
+    "method": "Local",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 261352001,
+    "process_peak_working_set_bytes": 967102464,
+    "persistent_method_array_bytes": 614880,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "bd0b0483a823118f8bc0771993f40e2460ab4cd1524c6d8f23d2eba0bd2702a0"
+  },
+  {
+    "seed": 202,
+    "method": "B",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 263446753,
+    "process_peak_working_set_bytes": 969801728,
+    "persistent_method_array_bytes": 653792,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "c5b01dd484f62bf1eae24482eb0b6a6bf5a80f61c7213d9972dbe5dd8e5db9f3"
+  },
+  {
+    "seed": 202,
+    "method": "E",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328347773,
+    "process_peak_working_set_bytes": 986664960,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "10792162197b1e454514fa37bb0a9d511c227ebc763c2bbbd77fca7a89baf645"
+  },
+  {
+    "seed": 202,
+    "method": "D",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328372725,
+    "process_peak_working_set_bytes": 980574208,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "cab2f2270958ddb616bcdd4a1b4f9fe3b39eecc32e2c80021911470d2fdf58cb"
+  },
+  {
+    "seed": 303,
+    "method": "Local",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 261356308,
+    "process_peak_working_set_bytes": 966918144,
+    "persistent_method_array_bytes": 614880,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "4ca54d5a3a69cf39d8b1676f1b42067e77c714094d0224fd2365d39fd3aef2cd"
+  },
+  {
+    "seed": 303,
+    "method": "B",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 263447504,
+    "process_peak_working_set_bytes": 970526720,
+    "persistent_method_array_bytes": 653792,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "8d69b3eafc2cf68a8a61ba58c144d2f7a32f562170bb6b33e26632c358fb2499"
+  },
+  {
+    "seed": 303,
+    "method": "E",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328347340,
+    "process_peak_working_set_bytes": 988004352,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "87d3858a4c217d3646495a1d90b572fd9296ba9c658ecb901062b8dbbb10100c"
+  },
+  {
+    "seed": 303,
+    "method": "D",
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 328372508,
+    "process_peak_working_set_bytes": 981852160,
+    "persistent_method_array_bytes": 7766816,
+    "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+    "payload_sha256": "0f1dea9aa1b8ba3106e31db115986341f4435fee3323d3a53bbd602681c31f09"
+  }
+]

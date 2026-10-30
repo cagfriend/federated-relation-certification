@@ -1,0 +1,85 @@
+{
+  "seed_count": 1,
+  "paired": {
+    "D_over_B_training_pipeline_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 1.1701744066199895
+        }
+      ],
+      "median": 1.1701744066199895,
+      "min": 1.1701744066199895,
+      "max": 1.1701744066199895,
+      "wins": 0
+    },
+    "D_over_B_with_shared_preparation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 1.0003345493591993
+        }
+      ],
+      "median": 1.0003345493591993,
+      "min": 1.0003345493591993,
+      "max": 1.0003345493591993,
+      "wins": 0
+    },
+    "D_over_B_generation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 6.175422387780977
+        }
+      ],
+      "median": 6.175422387780977,
+      "min": 6.175422387780977,
+      "max": 6.175422387780977,
+      "wins": 0
+    },
+    "D_over_E_training_pipeline_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.9421280250772878
+        }
+      ],
+      "median": 0.9421280250772878,
+      "min": 0.9421280250772878,
+      "max": 0.9421280250772878,
+      "wins": 1
+    },
+    "D_over_E_with_shared_preparation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.9998587565493994
+        }
+      ],
+      "median": 0.9998587565493994,
+      "min": 0.9998587565493994,
+      "max": 0.9998587565493994,
+      "wins": 1
+    },
+    "D_over_E_generation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 1.203913752167352
+        }
+      ],
+      "median": 1.203913752167352,
+      "min": 1.203913752167352,
+      "max": 1.203913752167352,
+      "wins": 0
+    }
+  },
+  "learning_diagnostic": [
+    {
+      "seed": 101,
+      "B_minus_Local_mean_nmi": -0.011346068890934216,
+      "B_minus_Local_mean_ari": -0.0021931071334916705,
+      "B_minus_Local_mean_acc": -0.00390625
+    }
+  ]
+}

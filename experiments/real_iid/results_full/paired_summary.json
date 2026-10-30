@@ -1,0 +1,145 @@
+{
+  "seed_count": 3,
+  "paired": {
+    "D_over_B_training_pipeline_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.9513702879359847
+        },
+        {
+          "seed": 202,
+          "ratio": 0.964839365046155
+        },
+        {
+          "seed": 303,
+          "ratio": 0.9550838599225266
+        }
+      ],
+      "median": 0.9550838599225266,
+      "min": 0.9513702879359847,
+      "max": 0.964839365046155,
+      "wins": 3
+    },
+    "D_over_B_with_shared_preparation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.9664793081892112
+        },
+        {
+          "seed": 202,
+          "ratio": 0.9739448692137262
+        },
+        {
+          "seed": 303,
+          "ratio": 0.9674595555750061
+        }
+      ],
+      "median": 0.9674595555750061,
+      "min": 0.9664793081892112,
+      "max": 0.9739448692137262,
+      "wins": 3
+    },
+    "D_over_B_generation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.3112241721273888
+        },
+        {
+          "seed": 202,
+          "ratio": 0.2962622451459821
+        },
+        {
+          "seed": 303,
+          "ratio": 0.3327674621888782
+        }
+      ],
+      "median": 0.3112241721273888,
+      "min": 0.2962622451459821,
+      "max": 0.3327674621888782,
+      "wins": 3
+    },
+    "D_over_E_training_pipeline_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 1.0097592244357558
+        },
+        {
+          "seed": 202,
+          "ratio": 0.9670401313107464
+        },
+        {
+          "seed": 303,
+          "ratio": 0.9873330472227707
+        }
+      ],
+      "median": 0.9873330472227707,
+      "min": 0.9670401313107464,
+      "max": 1.0097592244357558,
+      "wins": 2
+    },
+    "D_over_E_with_shared_preparation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 1.0066012050148794
+        },
+        {
+          "seed": 202,
+          "ratio": 0.9755901247721119
+        },
+        {
+          "seed": 303,
+          "ratio": 0.9909077484576104
+        }
+      ],
+      "median": 0.9909077484576104,
+      "min": 0.9755901247721119,
+      "max": 1.0066012050148794,
+      "wins": 2
+    },
+    "D_over_E_generation_seconds": {
+      "pairs": [
+        {
+          "seed": 101,
+          "ratio": 0.7767315077214294
+        },
+        {
+          "seed": 202,
+          "ratio": 0.675186746900989
+        },
+        {
+          "seed": 303,
+          "ratio": 0.7813453116214825
+        }
+      ],
+      "median": 0.7767315077214294,
+      "min": 0.675186746900989,
+      "max": 0.7813453116214825,
+      "wins": 3
+    }
+  },
+  "learning_diagnostic": [
+    {
+      "seed": 101,
+      "B_minus_Local_mean_nmi": 0.00010980885303502053,
+      "B_minus_Local_mean_ari": 0.00020846709866584323,
+      "B_minus_Local_mean_acc": 0.00034999999999985043
+    },
+    {
+      "seed": 202,
+      "B_minus_Local_mean_nmi": 2.1870389607436813e-05,
+      "B_minus_Local_mean_ari": 2.8282674074509018e-05,
+      "B_minus_Local_mean_acc": 3.3333333333440684e-05
+    },
+    {
+      "seed": 303,
+      "B_minus_Local_mean_nmi": -0.00010990102442309801,
+      "B_minus_Local_mean_ari": -8.551239739768013e-05,
+      "B_minus_Local_mean_acc": -0.00013333333333331865
+    }
+  ]
+}

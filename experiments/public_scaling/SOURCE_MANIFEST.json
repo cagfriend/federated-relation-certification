@@ -1,0 +1,39 @@
+{
+  "files": {
+    "experiments\\public_scaling\\__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "experiments\\public_scaling\\certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "experiments\\public_scaling\\codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "experiments\\public_scaling\\config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "experiments\\public_scaling\\data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "experiments\\public_scaling\\engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "experiments\\public_scaling\\graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "experiments\\public_scaling\\head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "experiments\\public_scaling\\INDEPENDENT_REVIEW.md": "2b95254fb6c8ba41e3303fd69c06f43d93dd422e17f327fbfdc693cc12f243f2",
+    "experiments\\public_scaling\\protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "experiments\\public_scaling\\README.md": "5b94ee959b1b50c0b8c3acb6a1d50d93c28fcbfb9436c631b1911d0dfd16b3c5",
+    "experiments\\public_scaling\\report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "experiments\\public_scaling\\requirements.txt": "c1769e18856e65276b9c2dcc5454b7cb144cf4571585c95c3afa9e08e9f2f81a",
+    "experiments\\public_scaling\\run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "experiments\\public_scaling\\test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "experiments\\public_scaling\\util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d",
+    "experiments\\public_scaling\\VALIDATION.md": "bbfddf01a2edc1d40c14f91a8212a45a91bd87ee0509a19515cd97ab6caf3b5a"
+  },
+  "validation": {
+    "validation_smoke_20261029": {
+      "case_count": 5,
+      "method_runs": 15,
+      "memory_profiles": 6,
+      "relation_checks": 5472,
+      "membership_checks": 3456,
+      "mismatches": 0
+    },
+    "validation_reuse_20261029": {
+      "case_count": 3,
+      "method_runs": 9,
+      "memory_profiles": 0,
+      "relation_checks": 2016,
+      "membership_checks": 2688,
+      "mismatches": 0
+    }
+  }
+}

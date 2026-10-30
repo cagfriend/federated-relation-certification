@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+experiments/real_iid/data/
+experiments/real_iid/prepared*/
+experiments/public_scaling/prepared*/
+runs/
+*.pt
+*.pth
+*.npy
+*.npz
+*.part
+.DS_Store
+Thumbs.db

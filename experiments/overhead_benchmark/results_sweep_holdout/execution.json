@@ -1,0 +1,1249 @@
+{
+  "schedule": "seed blocks in the listed seed order; scales permuted within each seed by build_jobs; not a global random shuffle",
+  "orchestrator_sha256": "4303f22ef8163d4872d1d5ce1eac0f0804d700c6df0e242d9881442493da2804",
+  "jobs": [
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.1,
+        "seed": 404
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_404",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.1",
+        "--seeds",
+        "404",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_404"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.16,
+        "seed": 404
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_404",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.16",
+        "--seeds",
+        "404",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_404"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.05,
+        "seed": 404
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_404",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.05",
+        "--seeds",
+        "404",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_404"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.12,
+        "seed": 404
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_404",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.12",
+        "--seeds",
+        "404",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_404"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "404",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.16,
+        "seed": 505
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_505",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.16",
+        "--seeds",
+        "505",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_505"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.1,
+        "seed": 505
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_505",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.1",
+        "--seeds",
+        "505",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_505"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.05,
+        "seed": 505
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_505",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.05",
+        "--seeds",
+        "505",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_505"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.12,
+        "seed": 505
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_505",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.12",
+        "--seeds",
+        "505",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_505"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "505",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.1,
+        "seed": 606
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_606",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.1",
+        "--seeds",
+        "606",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_606"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.16,
+        "seed": 606
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_606",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.16",
+        "--seeds",
+        "606",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_606"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.12,
+        "seed": 606
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_606",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.12",
+        "--seeds",
+        "606",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_606"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.05,
+        "seed": 606
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_606",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.05",
+        "--seeds",
+        "606",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_606"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "606",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.12,
+        "seed": 707
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_707",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.12",
+        "--seeds",
+        "707",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_707"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.05,
+        "seed": 707
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_707",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.05",
+        "--seeds",
+        "707",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_707"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.1,
+        "seed": 707
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_707",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.1",
+        "--seeds",
+        "707",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_707"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.16,
+        "seed": 707
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_707",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.16",
+        "--seeds",
+        "707",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_707"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "707",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.12,
+        "seed": 808
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_808",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.12",
+        "--seeds",
+        "808",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p12_seed_808"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.12",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.16,
+        "seed": 808
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_808",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.16",
+        "--seeds",
+        "808",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p16_seed_808"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.16",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.05,
+        "seed": 808
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_808",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.05",
+        "--seeds",
+        "808",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p05_seed_808"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.05",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    },
+    {
+      "job": {
+        "scenario": "sweep",
+        "scale": 0.1,
+        "seed": 808
+      },
+      "output": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_808",
+      "timing_command": [
+        "D:\\python\\python.exe",
+        "-m",
+        "experiments.overhead_benchmark.run",
+        "--suite",
+        "sweep",
+        "--scales",
+        "0.1",
+        "--seeds",
+        "808",
+        "--output",
+        "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_holdout\\scale_0p1_seed_808"
+      ],
+      "memory_commands": [
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "B"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "E"
+        ],
+        [
+          "D:\\python\\python.exe",
+          "-m",
+          "experiments.overhead_benchmark.run",
+          "--suite",
+          "sweep",
+          "--scales",
+          "0.1",
+          "--seeds",
+          "808",
+          "--memory-worker",
+          "D"
+        ]
+      ]
+    }
+  ],
+  "expected_round_records": 12060,
+  "expected_relation_comparisons": 148193280,
+  "expected_candidate_membership_comparisons": 197591040
+}

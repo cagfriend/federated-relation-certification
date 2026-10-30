@@ -1,0 +1,18 @@
+{
+  "validation_smoke_20261029": {
+    "case_count": 5,
+    "method_runs": 15,
+    "memory_profiles": 6,
+    "relation_checks": 5472,
+    "membership_checks": 3456,
+    "mismatches": 0
+  },
+  "validation_reuse_20261029": {
+    "case_count": 3,
+    "method_runs": 9,
+    "memory_profiles": 0,
+    "relation_checks": 2016,
+    "membership_checks": 2688,
+    "mismatches": 0
+  }
+}

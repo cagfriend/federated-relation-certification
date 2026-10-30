@@ -1,0 +1,16 @@
+{
+  "source_directories": [
+    "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep",
+    "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\results_sweep_refine"
+  ],
+  "paired_cases": 27,
+  "method_runs": 81,
+  "rounds_per_method": 201,
+  "relation_comparisons": 200060928,
+  "candidate_membership_comparisons": 266747904,
+  "mismatches": 0,
+  "preserved_old_files": 24,
+  "old_file_hashes_match": true,
+  "benchmark_sources_match_recorded_hashes": true,
+  "continuation_script_sha256": "111bd48048b93fcfbe34be71348d3be7f16a718405bd03500d22f36d9c36fb3b"
+}

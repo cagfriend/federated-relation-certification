@@ -1,0 +1,1143 @@
+{
+  "formal": {
+    "folder": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\results_full",
+    "checked_output_hashes": 21,
+    "source_hashes_verified": 11,
+    "cases": [
+      {
+        "seed": 101,
+        "prepared_files_verified": 45,
+        "private_sizes": [
+          9318,
+          9318,
+          9317,
+          9317,
+          9317,
+          9317
+        ],
+        "validation": {
+          "enabled": true,
+          "mismatches": 0,
+          "relation_comparisons": 7372800,
+          "candidate_membership_comparisons": 9830400,
+          "audit_seconds_excluded": 28.078754700371064,
+          "evaluation_seconds_excluded": 9.343560200068168
+        },
+        "methods": {
+          "Local": {
+            "training_pipeline_seconds": 86.4507101001218,
+            "with_shared_preparation_seconds": 144.7448144000955,
+            "private_seconds": 86.44938240014017,
+            "generation_seconds": 0.0,
+            "public_seconds": 0.0,
+            "exchange_seconds": 0.0,
+            "teacher_recompute_fraction_after_bootstrap": null,
+            "persistent_method_array_bytes": 614880,
+            "traffic": {},
+            "mean_quality": {
+              "nmi": 0.5801217957790014,
+              "ari": 0.4004986044941214,
+              "acc": 0.5447666666666667
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1451,
+              0.2018
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.173494166530595,
+                0.19873270696502146
+              ],
+              "public_loss": [
+                null,
+                null
+              ]
+            }
+          },
+          "B": {
+            "training_pipeline_seconds": 129.33060330024455,
+            "with_shared_preparation_seconds": 187.62470760021824,
+            "private_seconds": 88.66852979979012,
+            "generation_seconds": 9.296830899314955,
+            "public_seconds": 31.006539899739437,
+            "exchange_seconds": 0.3561867013340816,
+            "teacher_recompute_fraction_after_bootstrap": 1.0,
+            "persistent_method_array_bytes": 653792,
+            "traffic": {
+              "down_bytes": 296805,
+              "control_setup_bytes": 339215,
+              "total_bytes": 482286,
+              "messages": 6010,
+              "up_bytes": 185481,
+              "vector_bytes": 143071,
+              "up_full_messages": 12,
+              "up_vector_bytes": 57161,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85910,
+              "up_delta_messages": 450,
+              "down_delta_messages": 905,
+              "up_unchanged_messages": 538,
+              "down_unchanged_messages": 80
+            },
+            "mean_quality": {
+              "nmi": 0.5802316046320364,
+              "ari": 0.40070707159278723,
+              "acc": 0.5451166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1453,
+              0.2053
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.173494166530595,
+                0.19623944483906405
+              ],
+              "public_loss": [
+                0.9654805981426224,
+                0.07742712350508801
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.0,
+            "teacher_recompute_fraction_by_width": {
+              "512": 1.0,
+              "2048": 1.0
+            }
+          },
+          "E": {
+            "training_pipeline_seconds": 121.85211119952146,
+            "with_shared_preparation_seconds": 180.14621549949516,
+            "private_seconds": 87.06171320041176,
+            "generation_seconds": 3.7250947995344177,
+            "public_seconds": 30.715878699789755,
+            "exchange_seconds": 0.3470995988463983,
+            "teacher_recompute_fraction_after_bootstrap": 0.12820756615106785,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 296805,
+              "control_setup_bytes": 339215,
+              "total_bytes": 482286,
+              "messages": 6010,
+              "up_bytes": 185481,
+              "vector_bytes": 143071,
+              "up_full_messages": 12,
+              "up_vector_bytes": 57161,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85910,
+              "up_delta_messages": 450,
+              "down_delta_messages": 905,
+              "up_unchanged_messages": 538,
+              "down_unchanged_messages": 80
+            },
+            "mean_quality": {
+              "nmi": 0.5802316046320364,
+              "ari": 0.40070707159278723,
+              "acc": 0.5451166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1453,
+              0.2053
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.173494166530595,
+                0.19623944483906405
+              ],
+              "public_loss": [
+                0.9654805981426224,
+                0.07742712350508801
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.7871600842755444,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.1340164363484087,
+              "2048": 0.12239869595372697
+            }
+          },
+          "D": {
+            "training_pipeline_seconds": 123.04129330068827,
+            "with_shared_preparation_seconds": 181.33539760066196,
+            "private_seconds": 88.3686855006963,
+            "generation_seconds": 2.893398500047624,
+            "public_seconds": 31.434861599933356,
+            "exchange_seconds": 0.34210419992450625,
+            "teacher_recompute_fraction_after_bootstrap": 0.07583674394105946,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 296805,
+              "control_setup_bytes": 339215,
+              "total_bytes": 482286,
+              "messages": 6010,
+              "up_bytes": 185481,
+              "vector_bytes": 143071,
+              "up_full_messages": 12,
+              "up_vector_bytes": 57161,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85910,
+              "up_delta_messages": 450,
+              "down_delta_messages": 905,
+              "up_unchanged_messages": 538,
+              "down_unchanged_messages": 80
+            },
+            "mean_quality": {
+              "nmi": 0.5802316046320364,
+              "ari": 0.40070707159278723,
+              "acc": 0.5451166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1453,
+              0.2053
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.173494166530595,
+                0.19623944483906405
+              ],
+              "public_loss": [
+                0.9654805981426224,
+                0.07742712350508801
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.901760184385469,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.07876336434778057,
+              "2048": 0.07291012353433836
+            }
+          }
+        },
+        "quality_differences_B_minus_Local": {
+          "nmi": 0.00010980885303502053,
+          "ari": 0.00020846709866584323,
+          "acc": 0.00034999999999985043
+        },
+        "timing_decomposition": {
+          "B_minus_D": {
+            "private": 0.29984429909382015,
+            "generation": 6.403432399267331,
+            "exchange": 0.014082501409575343,
+            "public": -0.42832170019391924
+          },
+          "E_minus_D": {
+            "private": -1.3069723002845421,
+            "generation": 0.8316962994867936,
+            "exchange": 0.004995398921892047,
+            "public": -0.718982900143601
+          }
+        }
+      },
+      {
+        "seed": 202,
+        "prepared_files_verified": 45,
+        "private_sizes": [
+          9318,
+          9318,
+          9317,
+          9317,
+          9317,
+          9317
+        ],
+        "validation": {
+          "enabled": true,
+          "mismatches": 0,
+          "relation_comparisons": 7372800,
+          "candidate_membership_comparisons": 9830400,
+          "audit_seconds_excluded": 34.16875590023119,
+          "evaluation_seconds_excluded": 11.687001499929465
+        },
+        "methods": {
+          "Local": {
+            "training_pipeline_seconds": 109.20782370015513,
+            "with_shared_preparation_seconds": 162.47905730013736,
+            "private_seconds": 109.20618189987727,
+            "generation_seconds": 0.0,
+            "public_seconds": 0.0,
+            "exchange_seconds": 0.0,
+            "teacher_recompute_fraction_after_bootstrap": null,
+            "persistent_method_array_bytes": 614880,
+            "traffic": {},
+            "mean_quality": {
+              "nmi": 0.5799278116973269,
+              "ari": 0.3993716567418286,
+              "acc": 0.5436833333333333
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1442,
+              0.1916
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1742866728120256,
+                0.20015550368592072
+              ],
+              "public_loss": [
+                null,
+                null
+              ]
+            }
+          },
+          "B": {
+            "training_pipeline_seconds": 152.43405889999121,
+            "with_shared_preparation_seconds": 205.70529249997344,
+            "private_seconds": 106.1588292013621,
+            "generation_seconds": 10.451041099615395,
+            "public_seconds": 35.36915629962459,
+            "exchange_seconds": 0.4515111012151465,
+            "teacher_recompute_fraction_after_bootstrap": 1.0,
+            "persistent_method_array_bytes": 653792,
+            "traffic": {
+              "down_bytes": 296085,
+              "control_setup_bytes": 339215,
+              "total_bytes": 481788,
+              "messages": 6010,
+              "up_bytes": 185703,
+              "vector_bytes": 142573,
+              "up_full_messages": 15,
+              "up_vector_bytes": 57383,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85190,
+              "up_delta_messages": 543,
+              "down_delta_messages": 955,
+              "up_unchanged_messages": 442,
+              "down_unchanged_messages": 30
+            },
+            "mean_quality": {
+              "nmi": 0.5799496820869343,
+              "ari": 0.3993999394159031,
+              "acc": 0.5437166666666667
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1445,
+              0.1945
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1742866728120256,
+                0.1976873925960039
+              ],
+              "public_loss": [
+                1.011032705616388,
+                0.07666007720004986
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.0,
+            "teacher_recompute_fraction_by_width": {
+              "512": 1.0,
+              "2048": 1.0
+            }
+          },
+          "E": {
+            "training_pipeline_seconds": 152.08715319924522,
+            "with_shared_preparation_seconds": 205.35838679922745,
+            "private_seconds": 110.2400096997153,
+            "generation_seconds": 4.585766700096428,
+            "public_seconds": 36.67404679895844,
+            "exchange_seconds": 0.5842038011178374,
+            "teacher_recompute_fraction_after_bootstrap": 0.12957610317211055,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 296085,
+              "control_setup_bytes": 339215,
+              "total_bytes": 481788,
+              "messages": 6010,
+              "up_bytes": 185703,
+              "vector_bytes": 142573,
+              "up_full_messages": 15,
+              "up_vector_bytes": 57383,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85190,
+              "up_delta_messages": 543,
+              "down_delta_messages": 955,
+              "up_unchanged_messages": 442,
+              "down_unchanged_messages": 30
+            },
+            "mean_quality": {
+              "nmi": 0.5799496820869343,
+              "ari": 0.3993999394159031,
+              "acc": 0.5437166666666667
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1445,
+              0.1945
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1742866728120256,
+                0.1976873925960039
+              ],
+              "public_loss": [
+                1.011032705616388,
+                0.07666007720004986
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.7845477386934674,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.13755259042608878,
+              "2048": 0.12159961591813233
+            }
+          },
+          "D": {
+            "training_pipeline_seconds": 147.0743806004757,
+            "with_shared_preparation_seconds": 200.34561420045793,
+            "private_seconds": 107.82029270019848,
+            "generation_seconds": 3.0962489002849907,
+            "public_seconds": 35.7188342011068,
+            "exchange_seconds": 0.4358867999399081,
+            "teacher_recompute_fraction_after_bootstrap": 0.07643789422372278,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 296085,
+              "control_setup_bytes": 339215,
+              "total_bytes": 481788,
+              "messages": 6010,
+              "up_bytes": 185703,
+              "vector_bytes": 142573,
+              "up_full_messages": 15,
+              "up_vector_bytes": 57383,
+              "down_full_messages": 15,
+              "down_vector_bytes": 85190,
+              "up_delta_messages": 543,
+              "down_delta_messages": 955,
+              "up_unchanged_messages": 442,
+              "down_unchanged_messages": 30
+            },
+            "mean_quality": {
+              "nmi": 0.5799496820869343,
+              "ari": 0.3993999394159031,
+              "acc": 0.5437166666666667
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1445,
+              0.1945
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1742866728120256,
+                0.1976873925960039
+              ],
+              "public_loss": [
+                1.011032705616388,
+                0.07666007720004986
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.9003501393687185,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.0804727576685511,
+              "2048": 0.07240303077889447
+            }
+          }
+        },
+        "quality_differences_B_minus_Local": {
+          "nmi": 2.1870389607436813e-05,
+          "ari": 2.8282674074509018e-05,
+          "acc": 3.3333333333440684e-05
+        },
+        "timing_decomposition": {
+          "B_minus_D": {
+            "private": -1.6614634988363832,
+            "generation": 7.354792199330404,
+            "exchange": 0.015624301275238395,
+            "public": -0.34967790148220956
+          },
+          "E_minus_D": {
+            "private": 2.4197169995168224,
+            "generation": 1.4895177998114377,
+            "exchange": 0.14831700117792934,
+            "public": 0.9552125978516415
+          }
+        }
+      },
+      {
+        "seed": 303,
+        "prepared_files_verified": 45,
+        "private_sizes": [
+          9318,
+          9318,
+          9317,
+          9317,
+          9317,
+          9317
+        ],
+        "validation": {
+          "enabled": true,
+          "mismatches": 0,
+          "relation_comparisons": 7372800,
+          "candidate_membership_comparisons": 9830400,
+          "audit_seconds_excluded": 23.44208219938446,
+          "evaluation_seconds_excluded": 8.555622899788432
+        },
+        "methods": {
+          "Local": {
+            "training_pipeline_seconds": 80.37871060008183,
+            "with_shared_preparation_seconds": 124.0899007001426,
+            "private_seconds": 80.37745310028549,
+            "generation_seconds": 0.0,
+            "public_seconds": 0.0,
+            "exchange_seconds": 0.0,
+            "teacher_recompute_fraction_after_bootstrap": null,
+            "persistent_method_array_bytes": 614880,
+            "traffic": {},
+            "mean_quality": {
+              "nmi": 0.5808391005160337,
+              "ari": 0.4005114765659532,
+              "acc": 0.5450499999999999
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1425,
+              0.2104
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1754510945785563,
+                0.19963760864032973
+              ],
+              "public_loss": [
+                null,
+                null
+              ]
+            }
+          },
+          "B": {
+            "training_pipeline_seconds": 114.9334625012707,
+            "with_shared_preparation_seconds": 158.64465260133147,
+            "private_seconds": 79.79899950057734,
+            "generation_seconds": 7.52927760023158,
+            "public_seconds": 27.265121700591408,
+            "exchange_seconds": 0.3378058009548113,
+            "teacher_recompute_fraction_after_bootstrap": 1.0,
+            "persistent_method_array_bytes": 653792,
+            "traffic": {
+              "down_bytes": 299145,
+              "control_setup_bytes": 339215,
+              "total_bytes": 485281,
+              "messages": 6010,
+              "up_bytes": 186136,
+              "vector_bytes": 146066,
+              "up_full_messages": 14,
+              "up_vector_bytes": 57816,
+              "down_full_messages": 15,
+              "down_vector_bytes": 88250,
+              "up_delta_messages": 603,
+              "down_delta_messages": 975,
+              "up_unchanged_messages": 383,
+              "down_unchanged_messages": 10
+            },
+            "mean_quality": {
+              "nmi": 0.5807291994916106,
+              "ari": 0.4004259641685555,
+              "acc": 0.5449166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1431,
+              0.2143
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1754510945785563,
+                0.1970349528060935
+              ],
+              "public_loss": [
+                1.0055541389633924,
+                0.08488011310375194
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.0,
+            "teacher_recompute_fraction_by_width": {
+              "512": 1.0,
+              "2048": 1.0
+            }
+          },
+          "E": {
+            "training_pipeline_seconds": 111.17939919943456,
+            "with_shared_preparation_seconds": 154.89058929949533,
+            "private_seconds": 80.26791420020163,
+            "generation_seconds": 3.2066469995770603,
+            "public_seconds": 27.37075769994408,
+            "exchange_seconds": 0.3318802004214376,
+            "teacher_recompute_fraction_after_bootstrap": 0.12938880600921274,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 299145,
+              "control_setup_bytes": 339215,
+              "total_bytes": 485281,
+              "messages": 6010,
+              "up_bytes": 186136,
+              "vector_bytes": 146066,
+              "up_full_messages": 14,
+              "up_vector_bytes": 57816,
+              "down_full_messages": 15,
+              "down_vector_bytes": 88250,
+              "up_delta_messages": 603,
+              "down_delta_messages": 975,
+              "up_unchanged_messages": 383,
+              "down_unchanged_messages": 10
+            },
+            "mean_quality": {
+              "nmi": 0.5807291994916106,
+              "ari": 0.4004259641685555,
+              "acc": 0.5449166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1431,
+              0.2143
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1754510945785563,
+                0.1970349528060935
+              ],
+              "public_loss": [
+                1.0055541389633924,
+                0.08488011310375194
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.7842238536432161,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.1344625961840452,
+              "2048": 0.12431501583438023
+            }
+          },
+          "D": {
+            "training_pipeline_seconds": 109.7710949999746,
+            "with_shared_preparation_seconds": 153.48228510003537,
+            "private_seconds": 79.28380040056072,
+            "generation_seconds": 2.50549859914463,
+            "public_seconds": 27.638951999833807,
+            "exchange_seconds": 0.340551599743776,
+            "teacher_recompute_fraction_after_bootstrap": 0.07811395846419598,
+            "persistent_method_array_bytes": 7766816,
+            "traffic": {
+              "down_bytes": 299145,
+              "control_setup_bytes": 339215,
+              "total_bytes": 485281,
+              "messages": 6010,
+              "up_bytes": 186136,
+              "vector_bytes": 146066,
+              "up_full_messages": 14,
+              "up_vector_bytes": 57816,
+              "down_full_messages": 15,
+              "down_vector_bytes": 88250,
+              "up_delta_messages": 603,
+              "down_delta_messages": 975,
+              "up_unchanged_messages": 383,
+              "down_unchanged_messages": 10
+            },
+            "mean_quality": {
+              "nmi": 0.5807291994916106,
+              "ari": 0.4004259641685555,
+              "acc": 0.5449166666666666
+            },
+            "cluster_occupancy_all_evaluations": [
+              10
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.1431,
+              0.2143
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.1754510945785563,
+                0.1970349528060935
+              ],
+              "public_loss": [
+                1.0055541389633924,
+                0.08488011310375194
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.8971235572393216,
+            "teacher_recompute_fraction_by_width": {
+              "512": 0.08073857241938862,
+              "2048": 0.07548934450900335
+            }
+          }
+        },
+        "quality_differences_B_minus_Local": {
+          "nmi": -0.00010990102442309801,
+          "ari": -8.551239739768013e-05,
+          "acc": -0.00013333333333331865
+        },
+        "timing_decomposition": {
+          "B_minus_D": {
+            "private": 0.5151991000166163,
+            "generation": 5.02377900108695,
+            "exchange": -0.0027457987889647484,
+            "public": -0.37383029924239963
+          },
+          "E_minus_D": {
+            "private": 0.9841137996409088,
+            "generation": 0.7011484004324302,
+            "exchange": -0.008671399322338402,
+            "public": -0.2681942998897284
+          }
+        }
+      }
+    ],
+    "paired_recomputed": {
+      "D_over_B_training_pipeline_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.9513702879359847
+          },
+          {
+            "seed": 202,
+            "ratio": 0.964839365046155
+          },
+          {
+            "seed": 303,
+            "ratio": 0.9550838599225266
+          }
+        ],
+        "median": 0.9550838599225266,
+        "min": 0.9513702879359847,
+        "max": 0.964839365046155,
+        "wins": 3
+      },
+      "D_over_B_with_shared_preparation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.9664793081892112
+          },
+          {
+            "seed": 202,
+            "ratio": 0.9739448692137262
+          },
+          {
+            "seed": 303,
+            "ratio": 0.9674595555750061
+          }
+        ],
+        "median": 0.9674595555750061,
+        "min": 0.9664793081892112,
+        "max": 0.9739448692137262,
+        "wins": 3
+      },
+      "D_over_B_generation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.3112241721273888
+          },
+          {
+            "seed": 202,
+            "ratio": 0.2962622451459821
+          },
+          {
+            "seed": 303,
+            "ratio": 0.3327674621888782
+          }
+        ],
+        "median": 0.3112241721273888,
+        "min": 0.2962622451459821,
+        "max": 0.3327674621888782,
+        "wins": 3
+      },
+      "D_over_E_training_pipeline_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 1.0097592244357558
+          },
+          {
+            "seed": 202,
+            "ratio": 0.9670401313107464
+          },
+          {
+            "seed": 303,
+            "ratio": 0.9873330472227707
+          }
+        ],
+        "median": 0.9873330472227707,
+        "min": 0.9670401313107464,
+        "max": 1.0097592244357558,
+        "wins": 2
+      },
+      "D_over_E_with_shared_preparation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 1.0066012050148794
+          },
+          {
+            "seed": 202,
+            "ratio": 0.9755901247721119
+          },
+          {
+            "seed": 303,
+            "ratio": 0.9909077484576104
+          }
+        ],
+        "median": 0.9909077484576104,
+        "min": 0.9755901247721119,
+        "max": 1.0066012050148794,
+        "wins": 2
+      },
+      "D_over_E_generation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.7767315077214294
+          },
+          {
+            "seed": 202,
+            "ratio": 0.675186746900989
+          },
+          {
+            "seed": 303,
+            "ratio": 0.7813453116214825
+          }
+        ],
+        "median": 0.7767315077214294,
+        "min": 0.675186746900989,
+        "max": 0.7813453116214825,
+        "wins": 3
+      }
+    }
+  },
+  "smoke": {
+    "folder": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\results_smoke",
+    "checked_output_hashes": 9,
+    "source_hashes_verified": 11,
+    "cases": [
+      {
+        "seed": 101,
+        "prepared_files_verified": 17,
+        "private_sizes": [
+          480,
+          480
+        ],
+        "validation": {
+          "enabled": true,
+          "mismatches": 0,
+          "relation_comparisons": 576,
+          "candidate_membership_comparisons": 768,
+          "audit_seconds_excluded": 0.0006552999839186668,
+          "evaluation_seconds_excluded": 0.022916699992492795
+        },
+        "methods": {
+          "Local": {
+            "training_pipeline_seconds": 0.002872399752959609,
+            "with_shared_preparation_seconds": 2.395712699741125,
+            "private_seconds": 0.0028165000258013606,
+            "generation_seconds": 0.0,
+            "public_seconds": 0.0,
+            "exchange_seconds": 0.0,
+            "teacher_recompute_fraction_after_bootstrap": null,
+            "persistent_method_array_bytes": 7840,
+            "traffic": {},
+            "mean_quality": {
+              "nmi": 0.12960236114292187,
+              "ari": 0.016551716382577207,
+              "acc": 0.18359375
+            },
+            "cluster_occupancy_all_evaluations": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.40625,
+              0.9765625
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.322048402759492,
+                2.256281801202851
+              ],
+              "public_loss": [
+                null,
+                null
+              ]
+            }
+          },
+          "B": {
+            "training_pipeline_seconds": 0.004713400034233928,
+            "with_shared_preparation_seconds": 2.3975537000223994,
+            "private_seconds": 0.0026298000011593103,
+            "generation_seconds": 0.00010659999679774046,
+            "public_seconds": 0.0009271999588236213,
+            "exchange_seconds": 0.000763299991376698,
+            "teacher_recompute_fraction_after_bootstrap": 1.0,
+            "persistent_method_array_bytes": 8064,
+            "traffic": {
+              "down_bytes": 974,
+              "control_setup_bytes": 1254,
+              "total_bytes": 1578,
+              "messages": 20,
+              "up_bytes": 604,
+              "vector_bytes": 324,
+              "up_full_messages": 3,
+              "up_vector_bytes": 156,
+              "down_full_messages": 3,
+              "down_vector_bytes": 168
+            },
+            "mean_quality": {
+              "nmi": 0.11825629225198765,
+              "ari": 0.014358609249085537,
+              "acc": 0.1796875
+            },
+            "cluster_occupancy_all_evaluations": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.4375,
+              0.9921875
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.322048402759492,
+                2.255691703876021
+              ],
+              "public_loss": [
+                0.7209204113956518,
+                2.0439271849642706
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.0,
+            "teacher_recompute_fraction_by_width": {
+              "32": 1.0,
+              "64": 1.0
+            }
+          },
+          "E": {
+            "training_pipeline_seconds": 0.005854299990460277,
+            "with_shared_preparation_seconds": 2.3986945999786258,
+            "private_seconds": 0.0031249000458046794,
+            "generation_seconds": 0.000546799972653389,
+            "public_seconds": 0.001052499981597066,
+            "exchange_seconds": 0.000989499967545271,
+            "teacher_recompute_fraction_after_bootstrap": 0.76953125,
+            "persistent_method_array_bytes": 53056,
+            "traffic": {
+              "down_bytes": 974,
+              "control_setup_bytes": 1254,
+              "total_bytes": 1578,
+              "messages": 20,
+              "up_bytes": 604,
+              "vector_bytes": 324,
+              "up_full_messages": 3,
+              "up_vector_bytes": 156,
+              "down_full_messages": 3,
+              "down_vector_bytes": 168
+            },
+            "mean_quality": {
+              "nmi": 0.11825629225198765,
+              "ari": 0.014358609249085537,
+              "acc": 0.1796875
+            },
+            "cluster_occupancy_all_evaluations": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.4375,
+              0.9921875
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.322048402759492,
+                2.255691703876021
+              ],
+              "public_loss": [
+                0.7209204113956518,
+                2.0439271849642706
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.0703125,
+            "teacher_recompute_fraction_by_width": {
+              "32": 0.890625,
+              "64": 0.6484375
+            }
+          },
+          "D": {
+            "training_pipeline_seconds": 0.005515500088222325,
+            "with_shared_preparation_seconds": 2.398355800076388,
+            "private_seconds": 0.0029283000621944666,
+            "generation_seconds": 0.000658300006762147,
+            "public_seconds": 0.0009852000512182713,
+            "exchange_seconds": 0.00082949991337955,
+            "teacher_recompute_fraction_after_bootstrap": 0.73046875,
+            "persistent_method_array_bytes": 53056,
+            "traffic": {
+              "down_bytes": 974,
+              "control_setup_bytes": 1254,
+              "total_bytes": 1578,
+              "messages": 20,
+              "up_bytes": 604,
+              "vector_bytes": 324,
+              "up_full_messages": 3,
+              "up_vector_bytes": 156,
+              "down_full_messages": 3,
+              "down_vector_bytes": 168
+            },
+            "mean_quality": {
+              "nmi": 0.11825629225198765,
+              "ari": 0.014358609249085537,
+              "acc": 0.1796875
+            },
+            "cluster_occupancy_all_evaluations": [
+              2,
+              6,
+              7,
+              8
+            ],
+            "largest_cluster_fraction_range_all_evaluations": [
+              0.4375,
+              0.9921875
+            ],
+            "loss_first_last": {
+              "private_loss": [
+                2.322048402759492,
+                2.255691703876021
+              ],
+              "public_loss": [
+                0.7209204113956518,
+                2.0439271849642706
+              ]
+            },
+            "certified_edge_fraction_after_bootstrap": 0.140625,
+            "teacher_recompute_fraction_by_width": {
+              "32": 0.8203125,
+              "64": 0.640625
+            }
+          }
+        },
+        "quality_differences_B_minus_Local": {
+          "nmi": -0.011346068890934216,
+          "ari": -0.0021931071334916705,
+          "acc": -0.00390625
+        },
+        "timing_decomposition": {
+          "B_minus_D": {
+            "private": -0.00029850006103515625,
+            "generation": -0.0005517000099644065,
+            "exchange": -6.619992200285196e-05,
+            "public": -5.800009239464998e-05
+          },
+          "E_minus_D": {
+            "private": 0.0001965999836102128,
+            "generation": -0.00011150003410875797,
+            "exchange": 0.00016000005416572094,
+            "public": 6.729993037879467e-05
+          }
+        }
+      }
+    ],
+    "paired_recomputed": {
+      "D_over_B_training_pipeline_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 1.1701744066199895
+          }
+        ],
+        "median": 1.1701744066199895,
+        "min": 1.1701744066199895,
+        "max": 1.1701744066199895,
+        "wins": 0
+      },
+      "D_over_B_with_shared_preparation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 1.0003345493591993
+          }
+        ],
+        "median": 1.0003345493591993,
+        "min": 1.0003345493591993,
+        "max": 1.0003345493591993,
+        "wins": 0
+      },
+      "D_over_B_generation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 6.175422387780977
+          }
+        ],
+        "median": 6.175422387780977,
+        "min": 6.175422387780977,
+        "max": 6.175422387780977,
+        "wins": 0
+      },
+      "D_over_E_training_pipeline_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.9421280250772878
+          }
+        ],
+        "median": 0.9421280250772878,
+        "min": 0.9421280250772878,
+        "max": 0.9421280250772878,
+        "wins": 1
+      },
+      "D_over_E_with_shared_preparation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 0.9998587565493994
+          }
+        ],
+        "median": 0.9998587565493994,
+        "min": 0.9998587565493994,
+        "max": 0.9998587565493994,
+        "wins": 1
+      },
+      "D_over_E_generation_seconds": {
+        "pairs": [
+          {
+            "seed": 101,
+            "ratio": 1.203913752167352
+          }
+        ],
+        "median": 1.203913752167352,
+        "min": 1.203913752167352,
+        "max": 1.203913752167352,
+        "wins": 0
+      }
+    }
+  },
+  "delivery_manifest_verified_files": 16,
+  "prior_holdout_manifest_verified_files": 221,
+  "passed": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "method": "A",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 371550,
+    "tracemalloc_current_bytes": 19377,
+    "process_peak_working_set_bytes": 38862848,
+    "persistent_method_array_bytes": 1216,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "B",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 372849,
+    "tracemalloc_current_bytes": 20775,
+    "process_peak_working_set_bytes": 38936576,
+    "persistent_method_array_bytes": 1216,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "C",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 665266,
+    "tracemalloc_current_bytes": 20616,
+    "process_peak_working_set_bytes": 39690240,
+    "persistent_method_array_bytes": 192448,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 665174,
+    "tracemalloc_current_bytes": 21528,
+    "process_peak_working_set_bytes": 39477248,
+    "persistent_method_array_bytes": 192448,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "boundary",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 371694,
+    "tracemalloc_current_bytes": 19521,
+    "process_peak_working_set_bytes": 39055360,
+    "persistent_method_array_bytes": 1216,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "boundary",
+    "seed": 101,
+    "rounds": 4,
+    "tracemalloc_peak_bytes": 665315,
+    "tracemalloc_current_bytes": 22577,
+    "process_peak_working_set_bytes": 39690240,
+    "persistent_method_array_bytes": 192448,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  }
+]

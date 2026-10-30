@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-29",
+  "purpose": "Independent new-seed replication; no retuning",
+  "jobs": [
+    {
+      "scenario": "sweep",
+      "scale": 0.1,
+      "seed": 404
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 404
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.05,
+      "seed": 404
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 404
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 505
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.1,
+      "seed": 505
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.05,
+      "seed": 505
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 505
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.1,
+      "seed": 606
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 606
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 606
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.05,
+      "seed": 606
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 707
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.05,
+      "seed": 707
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.1,
+      "seed": 707
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 707
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 808
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 808
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.05,
+      "seed": 808
+    },
+    {
+      "scenario": "sweep",
+      "scale": 0.1,
+      "seed": 808
+    }
+  ],
+  "config": {
+    "samples": 4096,
+    "classes": 8,
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "rounds": 200,
+    "threads": 1
+  },
+  "methods": [
+    "B",
+    "E",
+    "D"
+  ],
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "source_hashes": {
+    "__init__.py": "4912fa6906f3419d4a4235b1a8c0ff762925ecd0b2e1be75ce32015eabe3006f",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "run.py": "5d3386c138d172a028d46cbe90f0184db1164ebfd6faf52ac373a4a9d08b9cc8",
+    "test_benchmark.py": "1cd737a4b2ca5a6011fa38aa22177188cb1dd33c9a11644e27a1465dde931adf"
+  },
+  "previous_result_hashes": {
+    "results_all\\boundary_101.json": "add590915923b49d823dd48b250dfaefb3e492303c51bf2f84917dd287680728",
+    "results_all\\boundary_202.json": "d774fd63cad4e5dabc44ae9866cbc5f5149b77b92c37ca2afe6f085f67a37793",
+    "results_all\\boundary_303.json": "865a2165dd6a847c7d0c9d68310af1b1042280d2a25b7234d57a402e5cdd0521",
+    "results_all\\environment.json": "bc06f744869494126268cb502ee2c776e663d3ddc30bfc6437224ceb5ac0e6eb",
+    "results_all\\main_101.json": "fef271707d6c5f12484e6399218b476b7047539c211ddac34dc740d9b8a149e1",
+    "results_all\\main_202.json": "559ab9aec0417c3c55f2a3544f9256965f5cfe545489da71ff4477e774f6095c",
+    "results_all\\main_303.json": "df8951a245890e489af04ea25fd4bcd4e138d2006132cb167c74e03d71adaec5",
+    "results_all\\memory.json": "fea4429d156abe7ed96a806486dc55ba22ed391289e41caf48b842c194543586",
+    "results_all\\summary.csv": "5fa7f0b383213a1aa75a6a410f606f2d7d41074175034f47a0e523c39da5e46e",
+    "results_verified\\boundary_101.json": "bc4afe752580646b45a1a644003aa465e8e2c1f0dfe7eeee47f145e1bcda4bb2",
+    "results_verified\\boundary_202.json": "5fb0f416bf9b7d8b7ad6281122c050ff385101c3209f75752ad7bbbbe9aa2eb5",
+    "results_verified\\boundary_303.json": "596fb70240e258f67acdeda1dd335df0fcb9e5cdc95959bdf475d1ddb799f1db",
+    "results_verified\\environment.json": "bc06f744869494126268cb502ee2c776e663d3ddc30bfc6437224ceb5ac0e6eb",
+    "results_verified\\main_101.json": "739cc21d27b66e1c755da0ff352ed84c9149f3aade91828ed1a70919d54e3f90",
+    "results_verified\\main_202.json": "f2ef57647b416821b9c771a575af69b3929a29a039ce297902d35e51a9f65b28",
+    "results_verified\\main_303.json": "c73004291d85b3151cf80ed230147dbc8b99b18c545180faad50bdf49d19eba6",
+    "results_verified\\memory.json": "dc10a7d56d63b3600be5bc041aa7017a720762a64962d5a3176074c8cdfa208d",
+    "results_verified\\source_hashes.json": "8829cd8620d66c634bd94afc171105496d253fd27b3864af7e5a6c7d28449c92",
+    "results_verified\\summary.csv": "1583d81546283b6907c8ef6024d745a440cd4516f774b2221fc12d3ccd51ac97",
+    "results_smoke\\boundary_101.json": "c41e0c4cb63209bbd2f1a94aeb7ad0222eb1537e574b20d7e46afd5d56d7081e",
+    "results_smoke\\environment.json": "8b254efe0888efe8ef194dc99d09035ea0edb4678c3b8a49ddfc50b3adb3505e",
+    "results_smoke\\main_101.json": "4f0de7471506211129256597b97b2218b97f834f6bc7ddea8883ca84ad54402a",
+    "results_smoke\\memory.json": "c19d079536ddac315a26356bd01ef3d0eb53d6f369734237d2fb1ae1e5b2b3ae",
+    "results_smoke\\summary.csv": "0c9ebd87a3b7242cb69c30ce9fb94c9b56a8fee40a66b64b7b2e0ea56fbff04a",
+    "results_sweep\\environment.json": "9ee4616b15b268cd89bccb319da2e66ecf63c71eb0324f67d0bf9b616ad3b8f7",
+    "results_sweep\\source_hashes.json": "eefbf39bd8c21d8ac790e61c903e56d9593120d6e58d9cb7f0734fff2d52bfb9",
+    "results_sweep\\summary.csv": "1fbd9a459b33a71e99db3116e0a650c6f3a007172850a4903ad979143402249b",
+    "results_sweep\\sweep_scale_0p02_seed_101.json": "03ec5b951e0749a7c0a2f99d8e58b3391d20603044fe10a2e401c947c39c9521",
+    "results_sweep\\sweep_scale_0p02_seed_202.json": "f1ca2fd929b0705f56dea6b6951f64042794eaf6ad5f4a6f82cca2b034098ad8",
+    "results_sweep\\sweep_scale_0p02_seed_303.json": "a279dc9b5a9a17569f83d154a4dd65470675abaec44545a34e63c9186a64384c",
+    "results_sweep\\sweep_scale_0p05_seed_101.json": "96c6b9762d13a9778abc7e7b1a3921bdc08b70f311ca7a30c2abbb3dfadf17d3",
+    "results_sweep\\sweep_scale_0p05_seed_202.json": "b5fc9685209add5c859842013f97f8abec91a356ef1ae19ca035ffb1e7fde972",
+    "results_sweep\\sweep_scale_0p05_seed_303.json": "e348ca9678cb862a1bfbba1099431a0874724702606e9395b17342c14ed4841b",
+    "results_sweep\\sweep_scale_0p08_seed_101.json": "cea35388f01475bf40e2fd0dd5582e57ed4bc95f12dfefb1333828b45c292a55",
+    "results_sweep\\sweep_scale_0p08_seed_202.json": "1a2d3826383b05d1f411f96e5b57d8d1189c5a15d185aa1ae27dad1f4413c358",
+    "results_sweep\\sweep_scale_0p08_seed_303.json": "aea136d934f5c16d9e02d033eac8490e77e2873df673680bb60be47e7e028cd9",
+    "results_sweep\\sweep_scale_0p2_seed_101.json": "4f2bee5eb6e62e9bd26b04f393852265b6b0032b8ac1adc355e2d0012bb73550",
+    "results_sweep\\sweep_scale_0p2_seed_202.json": "4b8e8ff8c9f546386285403869de9a04882f69029639aa749df8bd2af025646d",
+    "results_sweep\\sweep_scale_0p2_seed_303.json": "b3715dddc10c2d92bfb145bc1ee6ca11df423ebd85145d3511a6bd9b962e0c86",
+    "results_sweep\\sweep_scale_0p5_seed_101.json": "4b40e3ba1a8759f96b70457207c63b4b4cd5d7db52fd9c27bf0de29ebe6ea7fa",
+    "results_sweep\\sweep_scale_0p5_seed_202.json": "6137cc778254858243e312f3efbbddf26aa54fecf856c4aef47bdc066b9c9e42",
+    "results_sweep\\sweep_scale_0p5_seed_303.json": "0d4bbfba558b7ec152e61e96f03a548f2161ce3359f7fd1bc25050fa04c33e2a",
+    "results_sweep\\sweep_scale_2p0_seed_101.json": "e8147d0a8de7917eb2559708810eed609cd31e0090956b78626df9d4ea809135",
+    "results_sweep\\sweep_scale_2p0_seed_202.json": "fdc546c53f74573703c1fc19ba7d453ca15a1198a6626bea439bc4606a2fc5bd",
+    "results_sweep\\sweep_scale_2p0_seed_303.json": "cd739f26af82e54ccff22f69e10d8cfe7fd83588cd08f94dc9773c44e196c26e",
+    "results_sweep\\sweep_summary.csv": "6dd77127e555510be2d7910154f82ac1fcc764eaf0c520b79a7ee5dc96a52f4c",
+    "results_sweep\\sweep_summary.json": "72ac965893c53cb4f66d4322fb3d400d102f1d15242fd1c138e9165a8e69f638",
+    "results_sweep_refine\\environment.json": "a5f4e65dee0c9fb6a4175c50845bad0b6fcac75406c8c7e6c9ef2c71d7b27a61",
+    "results_sweep_refine\\source_hashes.json": "eefbf39bd8c21d8ac790e61c903e56d9593120d6e58d9cb7f0734fff2d52bfb9",
+    "results_sweep_refine\\summary.csv": "d5df58f5d4dae68b0edaf2be0e9e1c6573fc49c5d9b8e464612c36c5a6352d6e",
+    "results_sweep_refine\\sweep_scale_0p12_seed_101.json": "4e95783114a409b7d3043555a5a5997787f32cb46e4b4c4c4f94180f98cf1f3e",
+    "results_sweep_refine\\sweep_scale_0p12_seed_202.json": "60fa6e126143d43541279b709a44a37be276ff137793272f5c6023280f02ec23",
+    "results_sweep_refine\\sweep_scale_0p12_seed_303.json": "e4927bbda948ed39b9539fb95005d9d2dc8fe54d2f8f27a252011ec5acdbb7ad",
+    "results_sweep_refine\\sweep_scale_0p16_seed_101.json": "143737747aca728383f247616a1e4e83204fba1126c2b0e61b15b68486270c5b",
+    "results_sweep_refine\\sweep_scale_0p16_seed_202.json": "82c8cb86a07f861799ba1c6366dbc836d20605c89378eb77fccd0c6f538c6cad",
+    "results_sweep_refine\\sweep_scale_0p16_seed_303.json": "4f223e3e8db93527438825004318c2e1b557a80082207bc07309f594b91ddab3",
+    "results_sweep_refine\\sweep_scale_0p1_seed_101.json": "c8576d89de706f6437a4733545e57d237d04c1af0f288b6e1ad9c6aa21f2b92c",
+    "results_sweep_refine\\sweep_scale_0p1_seed_202.json": "fe15268f7525153653cf6fc6b768534b7cd11615db2fc5b3b1699915d0e35f6d",
+    "results_sweep_refine\\sweep_scale_0p1_seed_303.json": "2ef8a17f3bbb77868b94e629729d9ad77da90d9b795864c4ae3bf390ace75ac3",
+    "results_sweep_refine\\sweep_summary.csv": "9d19f3ef745f877a57fd540474db5634e30a47ad5b2c33c511e241700b2808b0",
+    "results_sweep_refine\\sweep_summary.json": "b9713588b212a9d8863b97960e0f955eba90ec5d2b23341cd4da7ada515d803a",
+    "results_sweep_smoke\\environment.json": "1131b53d4c20815067595f55b47badd8dd18d5341252366ed4eb1389dc984e80",
+    "results_sweep_smoke\\memory.json": "85d4cb8ab2014a824ce7dcd180c209975f82a842a4c1cd1e4b1335d911e1b3f6",
+    "results_sweep_smoke\\source_hashes.json": "b3377a73dc38ede52afc22a271f111041db7842e77ebd0b06e28c50b9eebe5b5",
+    "results_sweep_smoke\\summary.csv": "3381c66f8c069c30d21ddd7b6965de16d920081ec6020effad1ddbc9d7f4202a",
+    "results_sweep_smoke\\sweep_scale_0p02_seed_101.json": "ea762794297e8592e0b42fd4a078eedc1d5bf38a9bea0a0a038816ca69de379a",
+    "results_sweep_smoke\\sweep_scale_0p2_seed_101.json": "0a09eccffc979dd1ab6f2efa11fef2d6a386ff5123719dd18b6d1b3cf1176019",
+    "results_sweep_smoke\\sweep_summary.csv": "0f93880b4a1d8801c7b5e724319d59f7535467322a153522dfaa8b2ec254c791",
+    "results_sweep_smoke\\sweep_summary.json": "9bf487c50d611aaaea231c89dd2cf157cf809a9f41fa80d2c54aeabb655ce4ce",
+    "results_sweep_analysis\\combined_summary.csv": "74b77d2c76147b45dcd0c2b12e9f6440d7ce94f42fc43a65c18055befa88dd09",
+    "results_sweep_analysis\\combined_summary.json": "fd5a6a2f4fdaade8e6557501a584c91d639501d02658156038d9ade963c55953",
+    "results_sweep_analysis\\provenance.json": "79b61317fde220c6476059dc2edf32b4e6e52031213ea14deaa9cbe333842c95"
+  },
+  "execution": "Original CLI, one complete paired case per process; sequential; memory replay separately checkpointed",
+  "evaluation": {
+    "primary": "Paired D/B and D/E measured-stage time ratios INCLUDING initialization; per-scale median/min/max and wins out of five",
+    "classification": "5/5 wins = all-seed replication; 4/5 = majority with one exception; <=3/5 = unstable across seeds. Report each reference and joint wins. No post-hoc exclusions or scale changes.",
+    "boundary": "0.16 is the prespecified outside-region control; report result even if prior crossover does not replicate",
+    "correctness": "Zero oracle mismatches and identical per-round B/E/D traffic required",
+    "memory": "All 60 method/configuration combinations: isolated full 200-round replay, instrumented times excluded; report persistent arrays and peak process/tracemalloc memory",
+    "scope": "Synthetic frozen-feature linear-head replay only; no real training/network or formal statistical significance claim"
+  }
+}

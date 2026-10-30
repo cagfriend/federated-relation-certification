@@ -1,0 +1,1466 @@
+{
+  "dataset": "Fashion-MNIST",
+  "seed": 101,
+  "config": {
+    "dimensions": [
+      32,
+      64
+    ],
+    "samples": 64,
+    "classes": 10,
+    "rounds": 3,
+    "train_limit": 1024,
+    "test_limit": 128,
+    "pretrain_epochs": 1,
+    "pretrain_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cpu",
+    "prepare_threads": 1,
+    "feature_batch": 256,
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "head_lr": 0.1,
+    "private_epochs": 1,
+    "private_batch": 128,
+    "public_epochs": 1,
+    "public_edge_batch": 256,
+    "public_weight": 1.0,
+    "eval_every": 1,
+    "threads": 1
+  },
+  "prepared_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\prepared\\seed_101_dbfd5bb2145d002f",
+  "common_preparation_seconds": 2.388229600037448,
+  "shared_feature_loading_seconds": 0.00461069995071739,
+  "head_threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2023.1-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "vcomp",
+      "filepath": "D:\\anaconda\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "D:\\anaconda\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "D:\\anaconda\\Lib\\site-packages\\torch\\lib\\libiomp5md.dll",
+      "version": null
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libiomp",
+      "filepath": "D:\\anaconda\\Lib\\site-packages\\torch\\lib\\libiompstubs5md.dll",
+      "version": null
+    }
+  ],
+  "common_cost_policy": "Actual common preparation performed once, NOT divided by method count. C0+T per method is a from-scratch accounting total, not four separately observed preparation runs; includes test feature preparation. Local is a quality diagnostic, not a resource-efficiency comparator.",
+  "validation": {
+    "enabled": true,
+    "mismatches": 0,
+    "relation_comparisons": 576,
+    "candidate_membership_comparisons": 768,
+    "audit_seconds_excluded": 0.0006552999839186668,
+    "evaluation_seconds_excluded": 0.022916699992492795
+  },
+  "scope": "Real private CE and public BCE SGD on private-pretrained frozen MLP features; CPU float64 heads; serial clients; in-memory application messages, no real network/election/failover",
+  "summary": {
+    "Local": {
+      "initialization_seconds": 5.439994856715202e-05,
+      "training_pipeline_seconds": 0.002872399752959609,
+      "with_shared_preparation_seconds": 2.395712699741125,
+      "private_seconds": 0.0028165000258013606,
+      "generation_seconds": 0.0,
+      "exchange_seconds": 0.0,
+      "public_seconds": 0.0,
+      "teacher_recompute_fraction_after_bootstrap": null,
+      "student_forward_endpoints": 0,
+      "traffic": {},
+      "persistent_method_array_bytes": 7840,
+      "final_metrics": {
+        "method": "Local",
+        "round": 3,
+        "clients": [
+          {
+            "client": 0,
+            "width": 32,
+            "nmi": 0.023460355283743625,
+            "ari": -0.0002615343239868759,
+            "acc": 0.140625,
+            "occupied_clusters": 2,
+            "largest_cluster_fraction": 0.9765625,
+            "cluster_counts": [
+              0,
+              0,
+              3,
+              0,
+              0,
+              125,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "client": 1,
+            "width": 64,
+            "nmi": 0.2357443670021001,
+            "ari": 0.03336496708914129,
+            "acc": 0.2265625,
+            "occupied_clusters": 6,
+            "largest_cluster_fraction": 0.828125,
+            "cluster_counts": [
+              3,
+              5,
+              2,
+              0,
+              1,
+              0,
+              11,
+              106,
+              0,
+              0
+            ]
+          }
+        ],
+        "mean": {
+          "nmi": 0.12960236114292187,
+          "ari": 0.016551716382577207,
+          "acc": 0.18359375
+        }
+      }
+    },
+    "B": {
+      "initialization_seconds": 0.0002837000647559762,
+      "training_pipeline_seconds": 0.004713400034233928,
+      "with_shared_preparation_seconds": 2.3975537000223994,
+      "private_seconds": 0.0026298000011593103,
+      "generation_seconds": 0.00010659999679774046,
+      "exchange_seconds": 0.000763299991376698,
+      "public_seconds": 0.0009271999588236213,
+      "teacher_recompute_fraction_after_bootstrap": 1.0,
+      "student_forward_endpoints": 384,
+      "traffic": {
+        "down_bytes": 974,
+        "control_setup_bytes": 1254,
+        "total_bytes": 1578,
+        "messages": 20,
+        "up_bytes": 604,
+        "vector_bytes": 324,
+        "up_full_messages": 3,
+        "up_vector_bytes": 156,
+        "down_full_messages": 3,
+        "down_vector_bytes": 168
+      },
+      "persistent_method_array_bytes": 8064,
+      "final_metrics": {
+        "method": "B",
+        "round": 3,
+        "clients": [
+          {
+            "client": 0,
+            "width": 32,
+            "nmi": 0.016119442921831786,
+            "ari": 0.0003365114974761638,
+            "acc": 0.140625,
+            "occupied_clusters": 2,
+            "largest_cluster_fraction": 0.9921875,
+            "cluster_counts": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              127,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "client": 1,
+            "width": 64,
+            "nmi": 0.22039314158214351,
+            "ari": 0.02838070700069491,
+            "acc": 0.21875,
+            "occupied_clusters": 6,
+            "largest_cluster_fraction": 0.84375,
+            "cluster_counts": [
+              2,
+              4,
+              2,
+              0,
+              1,
+              0,
+              11,
+              108,
+              0,
+              0
+            ]
+          }
+        ],
+        "mean": {
+          "nmi": 0.11825629225198765,
+          "ari": 0.014358609249085537,
+          "acc": 0.1796875
+        }
+      }
+    },
+    "E": {
+      "initialization_seconds": 0.0001365999924018979,
+      "training_pipeline_seconds": 0.005854299990460277,
+      "with_shared_preparation_seconds": 2.3986945999786258,
+      "private_seconds": 0.0031249000458046794,
+      "generation_seconds": 0.000546799972653389,
+      "exchange_seconds": 0.000989499967545271,
+      "public_seconds": 0.001052499981597066,
+      "teacher_recompute_fraction_after_bootstrap": 0.76953125,
+      "student_forward_endpoints": 384,
+      "traffic": {
+        "down_bytes": 974,
+        "control_setup_bytes": 1254,
+        "total_bytes": 1578,
+        "messages": 20,
+        "up_bytes": 604,
+        "vector_bytes": 324,
+        "up_full_messages": 3,
+        "up_vector_bytes": 156,
+        "down_full_messages": 3,
+        "down_vector_bytes": 168
+      },
+      "persistent_method_array_bytes": 53056,
+      "final_metrics": {
+        "method": "E",
+        "round": 3,
+        "clients": [
+          {
+            "client": 0,
+            "width": 32,
+            "nmi": 0.016119442921831786,
+            "ari": 0.0003365114974761638,
+            "acc": 0.140625,
+            "occupied_clusters": 2,
+            "largest_cluster_fraction": 0.9921875,
+            "cluster_counts": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              127,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "client": 1,
+            "width": 64,
+            "nmi": 0.22039314158214351,
+            "ari": 0.02838070700069491,
+            "acc": 0.21875,
+            "occupied_clusters": 6,
+            "largest_cluster_fraction": 0.84375,
+            "cluster_counts": [
+              2,
+              4,
+              2,
+              0,
+              1,
+              0,
+              11,
+              108,
+              0,
+              0
+            ]
+          }
+        ],
+        "mean": {
+          "nmi": 0.11825629225198765,
+          "ari": 0.014358609249085537,
+          "acc": 0.1796875
+        }
+      }
+    },
+    "D": {
+      "initialization_seconds": 0.00011100003030151129,
+      "training_pipeline_seconds": 0.005515500088222325,
+      "with_shared_preparation_seconds": 2.398355800076388,
+      "private_seconds": 0.0029283000621944666,
+      "generation_seconds": 0.000658300006762147,
+      "exchange_seconds": 0.00082949991337955,
+      "public_seconds": 0.0009852000512182713,
+      "teacher_recompute_fraction_after_bootstrap": 0.73046875,
+      "student_forward_endpoints": 384,
+      "traffic": {
+        "down_bytes": 974,
+        "control_setup_bytes": 1254,
+        "total_bytes": 1578,
+        "messages": 20,
+        "up_bytes": 604,
+        "vector_bytes": 324,
+        "up_full_messages": 3,
+        "up_vector_bytes": 156,
+        "down_full_messages": 3,
+        "down_vector_bytes": 168
+      },
+      "persistent_method_array_bytes": 53056,
+      "final_metrics": {
+        "method": "D",
+        "round": 3,
+        "clients": [
+          {
+            "client": 0,
+            "width": 32,
+            "nmi": 0.016119442921831786,
+            "ari": 0.0003365114974761638,
+            "acc": 0.140625,
+            "occupied_clusters": 2,
+            "largest_cluster_fraction": 0.9921875,
+            "cluster_counts": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              127,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "client": 1,
+            "width": 64,
+            "nmi": 0.22039314158214351,
+            "ari": 0.02838070700069491,
+            "acc": 0.21875,
+            "occupied_clusters": 6,
+            "largest_cluster_fraction": 0.84375,
+            "cluster_counts": [
+              2,
+              4,
+              2,
+              0,
+              1,
+              0,
+              11,
+              108,
+              0,
+              0
+            ]
+          }
+        ],
+        "mean": {
+          "nmi": 0.11825629225198765,
+          "ari": 0.014358609249085537,
+          "acc": 0.1796875
+        }
+      }
+    }
+  },
+  "round_records": [
+    {
+      "method": "E",
+      "round": 1,
+      "private_seconds": 0.0011811000294983387,
+      "generation_seconds": 0.00014699995517730713,
+      "exchange_seconds": 0.0002672000555321574,
+      "public_seconds": 0.00036399997770786285,
+      "pipeline_seconds": 0.001961000030860305,
+      "private_loss": 2.322048402759492,
+      "public_loss": 0.7209204113956518,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 128,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        },
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "27f021b6ef90574a9b5dfc5ee3a2f2aa41dcf544b69cb5cf8eb59cdd0a1d3e88",
+      "persistent_method_array_bytes": 53056
+    },
+    {
+      "method": "D",
+      "round": 1,
+      "private_seconds": 0.0009500000160187483,
+      "generation_seconds": 9.009998757392168e-05,
+      "exchange_seconds": 0.00023020000662654638,
+      "public_seconds": 0.00033660000190138817,
+      "pipeline_seconds": 0.0016081000212579966,
+      "private_loss": 2.322048402759492,
+      "public_loss": 0.7209204113956518,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 128,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        },
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "27f021b6ef90574a9b5dfc5ee3a2f2aa41dcf544b69cb5cf8eb59cdd0a1d3e88",
+      "persistent_method_array_bytes": 53056
+    },
+    {
+      "method": "Local",
+      "round": 1,
+      "private_seconds": 0.0009248999413102865,
+      "generation_seconds": 0.0,
+      "exchange_seconds": 0.0,
+      "public_seconds": 0.0,
+      "pipeline_seconds": 0.0009253999451175332,
+      "private_loss": 2.322048402759492,
+      "public_loss": null,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 0,
+      "teacher_forward_endpoints": 0,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [],
+      "traffic": {},
+      "head_digest_after_public": "786c5dcccb18f58bef6fc228fe8782b2ecb206c0e183d5ebab968160f572f6e5",
+      "persistent_method_array_bytes": 7840
+    },
+    {
+      "method": "B",
+      "round": 1,
+      "private_seconds": 0.0008648000657558441,
+      "generation_seconds": 4.630000330507755e-05,
+      "exchange_seconds": 0.0002082999562844634,
+      "public_seconds": 0.0003119999310001731,
+      "pipeline_seconds": 0.0014323999639600515,
+      "private_loss": 2.322048402759492,
+      "public_loss": 0.7209204113956518,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 128,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        },
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "candidate_entries": 640
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "27f021b6ef90574a9b5dfc5ee3a2f2aa41dcf544b69cb5cf8eb59cdd0a1d3e88",
+      "persistent_method_array_bytes": 8064
+    },
+    {
+      "method": "D",
+      "round": 2,
+      "private_seconds": 0.0010579000227153301,
+      "generation_seconds": 0.0003203999949619174,
+      "exchange_seconds": 0.0003325999714434147,
+      "public_seconds": 0.000340700033120811,
+      "pipeline_seconds": 0.002052700030617416,
+      "private_loss": 2.286786660780411,
+      "public_loss": 1.3002051300529933,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 96,
+      "certified_edges_before_refresh": 10,
+      "client_statistics": [
+        {
+          "forward_endpoints": 45,
+          "certified_edges_before_refresh": 9,
+          "unresolved_edges_before_refresh": 23,
+          "candidate_entries": 161
+        },
+        {
+          "forward_endpoints": 51,
+          "certified_edges_before_refresh": 1,
+          "unresolved_edges_before_refresh": 31,
+          "candidate_entries": 154
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "8de1daf0e918ee7ebe29e909a63ca9e3369f38291f4a982a473370875804f453",
+      "persistent_method_array_bytes": 53056
+    },
+    {
+      "method": "Local",
+      "round": 2,
+      "private_seconds": 0.0009200000204145908,
+      "generation_seconds": 0.0,
+      "exchange_seconds": 0.0,
+      "public_seconds": 0.0,
+      "pipeline_seconds": 0.0009203999070450664,
+      "private_loss": 2.2868012103396382,
+      "public_loss": null,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 0,
+      "teacher_forward_endpoints": 0,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [],
+      "traffic": {},
+      "head_digest_after_public": "e1a961cd498638069f4bfb824506d7d35d84efbb98c393371f6edabbd365594b",
+      "persistent_method_array_bytes": 7840
+    },
+    {
+      "method": "B",
+      "round": 2,
+      "private_seconds": 0.0008751999121159315,
+      "generation_seconds": 3.0800001695752144e-05,
+      "exchange_seconds": 0.00027030007913708687,
+      "public_seconds": 0.0003060000017285347,
+      "pipeline_seconds": 0.0014831000007689,
+      "private_loss": 2.286786660780411,
+      "public_loss": 1.3002051300529933,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 128,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 640
+        },
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 640
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "8de1daf0e918ee7ebe29e909a63ca9e3369f38291f4a982a473370875804f453",
+      "persistent_method_array_bytes": 8064
+    },
+    {
+      "method": "E",
+      "round": 2,
+      "private_seconds": 0.001052199979312718,
+      "generation_seconds": 0.00019679998513311148,
+      "exchange_seconds": 0.00027269998099654913,
+      "public_seconds": 0.00032160000409930944,
+      "pipeline_seconds": 0.00184449995867908,
+      "private_loss": 2.286786660780411,
+      "public_loss": 1.3002051300529933,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 107,
+      "certified_edges_before_refresh": 1,
+      "client_statistics": [
+        {
+          "forward_endpoints": 55,
+          "certified_edges_before_refresh": 1,
+          "unresolved_edges_before_refresh": 31,
+          "candidate_entries": 161
+        },
+        {
+          "forward_endpoints": 52,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 154
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "8de1daf0e918ee7ebe29e909a63ca9e3369f38291f4a982a473370875804f453",
+      "persistent_method_array_bytes": 53056
+    },
+    {
+      "method": "Local",
+      "round": 3,
+      "private_seconds": 0.0009716000640764832,
+      "generation_seconds": 0.0,
+      "exchange_seconds": 0.0,
+      "public_seconds": 0.0,
+      "pipeline_seconds": 0.0009721999522298574,
+      "private_loss": 2.256281801202851,
+      "public_loss": null,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 0,
+      "teacher_forward_endpoints": 0,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [],
+      "traffic": {},
+      "head_digest_after_public": "d219c94758c942ca1cecf639eb2863075926b77400e596f415c2ef694293364c",
+      "persistent_method_array_bytes": 7840
+    },
+    {
+      "method": "B",
+      "round": 3,
+      "private_seconds": 0.0008898000232875347,
+      "generation_seconds": 2.9499991796910763e-05,
+      "exchange_seconds": 0.00028469995595514774,
+      "public_seconds": 0.0003092000260949135,
+      "pipeline_seconds": 0.001514200004749,
+      "private_loss": 2.255691703876021,
+      "public_loss": 2.0439271849642706,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 128,
+      "certified_edges_before_refresh": 0,
+      "client_statistics": [
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 640
+        },
+        {
+          "forward_endpoints": 64,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 640
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "9fa51bfdef301e0555fb21b2c97c8a82a9526ad741dd88d2c2f0710043181273",
+      "persistent_method_array_bytes": 8064
+    },
+    {
+      "method": "E",
+      "round": 3,
+      "private_seconds": 0.0008916000369936228,
+      "generation_seconds": 0.00020300003234297037,
+      "exchange_seconds": 0.00044959993101656437,
+      "public_seconds": 0.00036689999978989363,
+      "pipeline_seconds": 0.0019122000085189939,
+      "private_loss": 2.255691703876021,
+      "public_loss": 2.0439271849642706,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 90,
+      "certified_edges_before_refresh": 8,
+      "client_statistics": [
+        {
+          "forward_endpoints": 59,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 233
+        },
+        {
+          "forward_endpoints": 31,
+          "certified_edges_before_refresh": 8,
+          "unresolved_edges_before_refresh": 24,
+          "candidate_entries": 109
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "9fa51bfdef301e0555fb21b2c97c8a82a9526ad741dd88d2c2f0710043181273",
+      "persistent_method_array_bytes": 53056
+    },
+    {
+      "method": "D",
+      "round": 3,
+      "private_seconds": 0.0009204000234603882,
+      "generation_seconds": 0.00024780002422630787,
+      "exchange_seconds": 0.0002666999353095889,
+      "public_seconds": 0.0003079000161960721,
+      "pipeline_seconds": 0.001743700006045401,
+      "private_loss": 2.255691703876021,
+      "public_loss": 2.0439271849642706,
+      "private_forward_endpoints": 960,
+      "student_forward_endpoints": 128,
+      "teacher_forward_endpoints": 91,
+      "certified_edges_before_refresh": 8,
+      "client_statistics": [
+        {
+          "forward_endpoints": 60,
+          "certified_edges_before_refresh": 0,
+          "unresolved_edges_before_refresh": 32,
+          "candidate_entries": 242
+        },
+        {
+          "forward_endpoints": 31,
+          "certified_edges_before_refresh": 8,
+          "unresolved_edges_before_refresh": 24,
+          "candidate_entries": 112
+        }
+      ],
+      "traffic": {
+        "down_bytes": 184,
+        "control_setup_bytes": 256,
+        "total_bytes": 364,
+        "messages": 6,
+        "up_bytes": 180,
+        "vector_bytes": 108,
+        "up_full_messages": 1,
+        "up_vector_bytes": 52,
+        "down_full_messages": 1,
+        "down_vector_bytes": 56
+      },
+      "head_digest_after_public": "9fa51bfdef301e0555fb21b2c97c8a82a9526ad741dd88d2c2f0710043181273",
+      "persistent_method_array_bytes": 53056
+    }
+  ],
+  "metrics": [
+    {
+      "method": "Local",
+      "round": 1,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.24805950344689123,
+          "ari": 0.0505672638183741,
+          "acc": 0.3203125,
+          "occupied_clusters": 8,
+          "largest_cluster_fraction": 0.40625,
+          "cluster_counts": [
+            4,
+            0,
+            1,
+            19,
+            25,
+            11,
+            8,
+            8,
+            0,
+            52
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.24834052751773858,
+          "ari": 0.08976486170138448,
+          "acc": 0.28125,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.53125,
+          "cluster_counts": [
+            2,
+            2,
+            9,
+            1,
+            1,
+            0,
+            68,
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.2482000154823149,
+        "ari": 0.07016606275987929,
+        "acc": 0.30078125
+      }
+    },
+    {
+      "method": "B",
+      "round": 1,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2400296554076419,
+          "ari": 0.042150177198347,
+          "acc": 0.3125,
+          "occupied_clusters": 8,
+          "largest_cluster_fraction": 0.4375,
+          "cluster_counts": [
+            4,
+            0,
+            1,
+            19,
+            24,
+            10,
+            7,
+            7,
+            0,
+            56
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.24834052751773858,
+          "ari": 0.08976486170138448,
+          "acc": 0.28125,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.53125,
+          "cluster_counts": [
+            2,
+            2,
+            9,
+            1,
+            1,
+            0,
+            68,
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.24418509146269024,
+        "ari": 0.06595751944986575,
+        "acc": 0.296875
+      }
+    },
+    {
+      "method": "E",
+      "round": 1,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2400296554076419,
+          "ari": 0.042150177198347,
+          "acc": 0.3125,
+          "occupied_clusters": 8,
+          "largest_cluster_fraction": 0.4375,
+          "cluster_counts": [
+            4,
+            0,
+            1,
+            19,
+            24,
+            10,
+            7,
+            7,
+            0,
+            56
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.24834052751773858,
+          "ari": 0.08976486170138448,
+          "acc": 0.28125,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.53125,
+          "cluster_counts": [
+            2,
+            2,
+            9,
+            1,
+            1,
+            0,
+            68,
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.24418509146269024,
+        "ari": 0.06595751944986575,
+        "acc": 0.296875
+      }
+    },
+    {
+      "method": "D",
+      "round": 1,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2400296554076419,
+          "ari": 0.042150177198347,
+          "acc": 0.3125,
+          "occupied_clusters": 8,
+          "largest_cluster_fraction": 0.4375,
+          "cluster_counts": [
+            4,
+            0,
+            1,
+            19,
+            24,
+            10,
+            7,
+            7,
+            0,
+            56
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.24834052751773858,
+          "ari": 0.08976486170138448,
+          "acc": 0.28125,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.53125,
+          "cluster_counts": [
+            2,
+            2,
+            9,
+            1,
+            1,
+            0,
+            68,
+            45,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.24418509146269024,
+        "ari": 0.06595751944986575,
+        "acc": 0.296875
+      }
+    },
+    {
+      "method": "Local",
+      "round": 2,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.23297417310152896,
+          "ari": 0.025140493263056334,
+          "acc": 0.28125,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.6953125,
+          "cluster_counts": [
+            3,
+            0,
+            5,
+            14,
+            2,
+            89,
+            0,
+            4,
+            0,
+            11
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.27246856051362567,
+          "ari": 0.06086447207404437,
+          "acc": 0.25,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.7421875,
+          "cluster_counts": [
+            1,
+            5,
+            2,
+            1,
+            1,
+            0,
+            23,
+            95,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.2527213668075773,
+        "ari": 0.04300248266855035,
+        "acc": 0.265625
+      }
+    },
+    {
+      "method": "B",
+      "round": 2,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2244242261839758,
+          "ari": 0.024030314659063533,
+          "acc": 0.2734375,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.7109375,
+          "cluster_counts": [
+            3,
+            0,
+            5,
+            13,
+            2,
+            91,
+            0,
+            3,
+            0,
+            11
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.2736296059102528,
+          "ari": 0.05872880381662898,
+          "acc": 0.25,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.75,
+          "cluster_counts": [
+            1,
+            4,
+            2,
+            1,
+            1,
+            0,
+            23,
+            96,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.2490269160471143,
+        "ari": 0.04137955923784626,
+        "acc": 0.26171875
+      }
+    },
+    {
+      "method": "E",
+      "round": 2,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2244242261839758,
+          "ari": 0.024030314659063533,
+          "acc": 0.2734375,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.7109375,
+          "cluster_counts": [
+            3,
+            0,
+            5,
+            13,
+            2,
+            91,
+            0,
+            3,
+            0,
+            11
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.2736296059102528,
+          "ari": 0.05872880381662898,
+          "acc": 0.25,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.75,
+          "cluster_counts": [
+            1,
+            4,
+            2,
+            1,
+            1,
+            0,
+            23,
+            96,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.2490269160471143,
+        "ari": 0.04137955923784626,
+        "acc": 0.26171875
+      }
+    },
+    {
+      "method": "D",
+      "round": 2,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.2244242261839758,
+          "ari": 0.024030314659063533,
+          "acc": 0.2734375,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.7109375,
+          "cluster_counts": [
+            3,
+            0,
+            5,
+            13,
+            2,
+            91,
+            0,
+            3,
+            0,
+            11
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.2736296059102528,
+          "ari": 0.05872880381662898,
+          "acc": 0.25,
+          "occupied_clusters": 7,
+          "largest_cluster_fraction": 0.75,
+          "cluster_counts": [
+            1,
+            4,
+            2,
+            1,
+            1,
+            0,
+            23,
+            96,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.2490269160471143,
+        "ari": 0.04137955923784626,
+        "acc": 0.26171875
+      }
+    },
+    {
+      "method": "Local",
+      "round": 3,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.023460355283743625,
+          "ari": -0.0002615343239868759,
+          "acc": 0.140625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.9765625,
+          "cluster_counts": [
+            0,
+            0,
+            3,
+            0,
+            0,
+            125,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.2357443670021001,
+          "ari": 0.03336496708914129,
+          "acc": 0.2265625,
+          "occupied_clusters": 6,
+          "largest_cluster_fraction": 0.828125,
+          "cluster_counts": [
+            3,
+            5,
+            2,
+            0,
+            1,
+            0,
+            11,
+            106,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.12960236114292187,
+        "ari": 0.016551716382577207,
+        "acc": 0.18359375
+      }
+    },
+    {
+      "method": "B",
+      "round": 3,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.016119442921831786,
+          "ari": 0.0003365114974761638,
+          "acc": 0.140625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.9921875,
+          "cluster_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            127,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.22039314158214351,
+          "ari": 0.02838070700069491,
+          "acc": 0.21875,
+          "occupied_clusters": 6,
+          "largest_cluster_fraction": 0.84375,
+          "cluster_counts": [
+            2,
+            4,
+            2,
+            0,
+            1,
+            0,
+            11,
+            108,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.11825629225198765,
+        "ari": 0.014358609249085537,
+        "acc": 0.1796875
+      }
+    },
+    {
+      "method": "E",
+      "round": 3,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.016119442921831786,
+          "ari": 0.0003365114974761638,
+          "acc": 0.140625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.9921875,
+          "cluster_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            127,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.22039314158214351,
+          "ari": 0.02838070700069491,
+          "acc": 0.21875,
+          "occupied_clusters": 6,
+          "largest_cluster_fraction": 0.84375,
+          "cluster_counts": [
+            2,
+            4,
+            2,
+            0,
+            1,
+            0,
+            11,
+            108,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.11825629225198765,
+        "ari": 0.014358609249085537,
+        "acc": 0.1796875
+      }
+    },
+    {
+      "method": "D",
+      "round": 3,
+      "clients": [
+        {
+          "client": 0,
+          "width": 32,
+          "nmi": 0.016119442921831786,
+          "ari": 0.0003365114974761638,
+          "acc": 0.140625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.9921875,
+          "cluster_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            127,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 64,
+          "nmi": 0.22039314158214351,
+          "ari": 0.02838070700069491,
+          "acc": 0.21875,
+          "occupied_clusters": 6,
+          "largest_cluster_fraction": 0.84375,
+          "cluster_counts": [
+            2,
+            4,
+            2,
+            0,
+            1,
+            0,
+            11,
+            108,
+            0,
+            0
+          ]
+        }
+      ],
+      "mean": {
+        "nmi": 0.11825629225198765,
+        "ari": 0.014358609249085537,
+        "acc": 0.1796875
+      }
+    }
+  ],
+  "payload_sha256": "f0f4c5243e6f4f064214241ebe352e284ffe10f5fa9bd4c32e6d0ec82162dccc"
+}

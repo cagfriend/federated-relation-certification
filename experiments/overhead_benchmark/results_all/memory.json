@@ -1,0 +1,200 @@
+[
+  {
+    "method": "A",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378423,
+    "tracemalloc_current_bytes": 561361,
+    "process_peak_working_set_bytes": 293408768,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "B",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253417257,
+    "tracemalloc_current_bytes": 600338,
+    "process_peak_working_set_bytes": 293797888,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "C",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347463,
+    "tracemalloc_current_bytes": 644463,
+    "process_peak_working_set_bytes": 363798528,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "main",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347555,
+    "tracemalloc_current_bytes": 684160,
+    "process_peak_working_set_bytes": 363880448,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "main",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378423,
+    "tracemalloc_current_bytes": 561361,
+    "process_peak_working_set_bytes": 293625856,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "B",
+    "scenario": "main",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253416460,
+    "tracemalloc_current_bytes": 599639,
+    "process_peak_working_set_bytes": 293814272,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "C",
+    "scenario": "main",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347506,
+    "tracemalloc_current_bytes": 643089,
+    "process_peak_working_set_bytes": 363995136,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "main",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347408,
+    "tracemalloc_current_bytes": 682945,
+    "process_peak_working_set_bytes": 363794432,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "main",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378866,
+    "tracemalloc_current_bytes": 561706,
+    "process_peak_working_set_bytes": 293634048,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "B",
+    "scenario": "main",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253417177,
+    "tracemalloc_current_bytes": 600258,
+    "process_peak_working_set_bytes": 293826560,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "C",
+    "scenario": "main",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347555,
+    "tracemalloc_current_bytes": 645686,
+    "process_peak_working_set_bytes": 363905024,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "main",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325347510,
+    "tracemalloc_current_bytes": 684423,
+    "process_peak_working_set_bytes": 363769856,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "boundary",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378771,
+    "tracemalloc_current_bytes": 561660,
+    "process_peak_working_set_bytes": 293769216,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "boundary",
+    "seed": 101,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325933884,
+    "tracemalloc_current_bytes": 641117,
+    "process_peak_working_set_bytes": 367149056,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "boundary",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378036,
+    "tracemalloc_current_bytes": 560974,
+    "process_peak_working_set_bytes": 293634048,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "boundary",
+    "seed": 202,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325926730,
+    "tracemalloc_current_bytes": 639590,
+    "process_peak_working_set_bytes": 366927872,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "A",
+    "scenario": "boundary",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 253378771,
+    "tracemalloc_current_bytes": 561660,
+    "process_peak_working_set_bytes": 293670912,
+    "persistent_method_array_bytes": 38912,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  },
+  {
+    "method": "D",
+    "scenario": "boundary",
+    "seed": 303,
+    "rounds": 200,
+    "tracemalloc_peak_bytes": 325870696,
+    "tracemalloc_current_bytes": 640077,
+    "process_peak_working_set_bytes": 367640576,
+    "persistent_method_array_bytes": 5845760,
+    "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+  }
+]

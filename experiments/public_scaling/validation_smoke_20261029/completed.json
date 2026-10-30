@@ -1,0 +1,44 @@
+{
+  "seeds": [
+    404
+  ],
+  "case_count": 5,
+  "method_runs": 15,
+  "memory_profiles": 6,
+  "mismatches": 0,
+  "source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "invocation_wall_seconds": 0.17775949999941076,
+  "note": "Invocation includes paired cases, preparation, oracle, metrics and memory replays; not a method latency",
+  "file_hashes": {
+    "environment.json": "c96281e0f1e027efe285b19377635d7c73057936f1e345aa11e31b4bba68e27d",
+    "m128_d1_seed_404.json": "0d94b3c0682e71724893a9ed9d5e1059ccdd2aeeb08efc261a286587b5206b5d",
+    "m32_d1_seed_404.json": "63c4a9c5adb98f8197427aef22343eab3b39d86dc1198f8aadb89c9f8924c5b1",
+    "m32_d4_seed_404.json": "6fe7324480f5e51adff3634d4e1487cd30ea75c5c98713d5d2b5c9d49595b953",
+    "m32_d8_seed_404.json": "2d008fcd319b0d7f7525e6469d64b7a03cb9cf20b1ea9d4ed9d0666c981c514e",
+    "m64_d1_seed_404.json": "242b2836d8b063ccc6af26cfadf51a8cc3926741f9fd8e43f840d072f707b554",
+    "memory.json": "5d77d11296d1557203a8e5b401e101d5e34d83683419b6b650e1c03cede6e261",
+    "memory_m128_d1_B_404.json": "dffa47295c63a444fb840ddf5917ac32de1b7e0d0dc93d687cbd89fed3eb7e20",
+    "memory_m128_d1_D_404.json": "04ea0383208551331597be1f1aec644e6a57526e6a7d754c18d147fe57994474",
+    "memory_m128_d1_E_404.json": "99d859d7413aedb76c518758bb3cfdba94d8c696eccbb6985642db9135cae333",
+    "memory_m32_d8_B_404.json": "752ce2d89d8f957899a6430c51f5156f409d555bb26bf394a0bef2bec59aaf78",
+    "memory_m32_d8_D_404.json": "f61e2d35d6df4bfeff70359175ddcee218dd16e0319d5e2fc44087e637cdd843",
+    "memory_m32_d8_E_404.json": "2629300cb7819c3e79e94cf2834e9336c2b13d9343de22ee32e34fea9738d69c",
+    "paired_summary.json": "944f1edb63946ac6bdcf2e88486e90520c0ab5bbc8be7d510874e522b838f977",
+    "prepared_404.json": "56a758b3c1c75dc9cadc58548dbb949234c38ae20214dfaab25f8ae9d6bbbd21",
+    "reused_cases.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+}

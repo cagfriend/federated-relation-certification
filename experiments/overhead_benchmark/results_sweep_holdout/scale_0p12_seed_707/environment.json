@@ -1,0 +1,65 @@
+{
+  "python": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "D:\\python\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-9e3e5a4229c1ca39f10dc82bba9e2b2b.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "config": {
+    "samples": 4096,
+    "classes": 8,
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "rounds": 200,
+    "threads": 1
+  },
+  "numeric_guard": "1e-10 practical guard; not a formal IEEE error certificate",
+  "network": "reliable in-memory delivery of serialized application messages; no sockets",
+  "training": false,
+  "suite": "sweep",
+  "job_plan": [
+    {
+      "scenario": "sweep",
+      "scale": 0.12,
+      "seed": 707
+    }
+  ],
+  "method_definitions": {
+    "A": {
+      "generator": "full",
+      "adaptive": false
+    },
+    "B": {
+      "generator": "full",
+      "adaptive": true
+    },
+    "C": {
+      "generator": "relation",
+      "adaptive": false
+    },
+    "D": {
+      "generator": "relation",
+      "adaptive": true
+    },
+    "E": {
+      "generator": "point",
+      "adaptive": true
+    }
+  }
+}

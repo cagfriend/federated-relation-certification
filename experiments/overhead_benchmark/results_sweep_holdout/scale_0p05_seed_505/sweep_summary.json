@@ -1,0 +1,33 @@
+{
+  "interpretation": "D/reference cost ratios below 1 mean observed savings; exploratory grid, not a universal cutoff",
+  "rows": [
+    {
+      "scale": 0.05,
+      "seed_count": 1,
+      "B_with_init_s_median": 10.582896698848344,
+      "B_generation_with_init_s_median": 9.92572979873512,
+      "B_recompute_fraction_median": 1.0,
+      "E_with_init_s_median": 9.113329699845053,
+      "E_generation_with_init_s_median": 8.456257399520837,
+      "E_recompute_fraction_median": 0.26423502604166665,
+      "D_with_init_s_median": 6.6268039006972685,
+      "D_generation_with_init_s_median": 5.998732001171447,
+      "D_recompute_fraction_median": 0.1438580322265625,
+      "D_over_B_time_ratio_median": 0.6261805334846,
+      "D_over_B_time_ratio_min": 0.6261805334846,
+      "D_over_B_time_ratio_max": 0.6261805334846,
+      "D_faster_than_B_seed_count": 1,
+      "D_over_B_generation_with_init_ratio_median": 0.6043618074245677,
+      "D_over_E_time_ratio_median": 0.7271550705347507,
+      "D_over_E_time_ratio_min": 0.7271550705347507,
+      "D_over_E_time_ratio_max": 0.7271550705347507,
+      "D_faster_than_E_seed_count": 1,
+      "D_over_E_generation_with_init_ratio_median": 0.7093837992101988,
+      "D_faster_than_both_seed_count": 1,
+      "communication_bytes_median": 471317,
+      "hard_relation_change_fraction_median": 0.0011112467447916667,
+      "aggregate_count_change_fraction_median": 0.006650390625,
+      "relation_mismatches": 0
+    }
+  ]
+}

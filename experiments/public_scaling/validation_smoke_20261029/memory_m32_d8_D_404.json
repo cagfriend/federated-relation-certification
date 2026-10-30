@@ -1,0 +1,11 @@
+{
+  "seed": 404,
+  "case_id": "m32_d8",
+  "method": "D",
+  "rounds": 3,
+  "tracemalloc_peak_bytes": 312036,
+  "process_peak_working_set_bytes": 107945984,
+  "persistent_method_array_bytes": 36832,
+  "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+  "payload_sha256": "8dfc692a301d13186f42d023aa71aff5c2847381903dea7aa8a190a8067ff4cf"
+}

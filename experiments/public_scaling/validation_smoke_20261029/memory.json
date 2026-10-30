@@ -1,0 +1,68 @@
+[
+  {
+    "seed": 404,
+    "case_id": "m128_d1",
+    "method": "B",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 312113,
+    "process_peak_working_set_bytes": 108417024,
+    "persistent_method_array_bytes": 8288,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "76c55dd28fe1bd7d0e1f14f7b7f646b439a70512da652af6a244349af9bacaeb"
+  },
+  {
+    "seed": 404,
+    "case_id": "m128_d1",
+    "method": "E",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 434735,
+    "process_peak_working_set_bytes": 108404736,
+    "persistent_method_array_bytes": 87072,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "bc4cb183dae74b392d9489da8bb4bcfe26743291c3024dc0cdde8231f0655e3e"
+  },
+  {
+    "seed": 404,
+    "case_id": "m128_d1",
+    "method": "D",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 435274,
+    "process_peak_working_set_bytes": 108478464,
+    "persistent_method_array_bytes": 87072,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "a88d0e5f5a5e244963d79d4ecdb391b1e4a64405b2bd13151ae307a7c3369c4d"
+  },
+  {
+    "seed": 404,
+    "case_id": "m32_d8",
+    "method": "B",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 240922,
+    "process_peak_working_set_bytes": 108339200,
+    "persistent_method_array_bytes": 8736,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "18d142ecb29c8aa0ba5e58a7940f9df8e20b5d919eb2e5057029141826bffb5f"
+  },
+  {
+    "seed": 404,
+    "case_id": "m32_d8",
+    "method": "E",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 312003,
+    "process_peak_working_set_bytes": 108634112,
+    "persistent_method_array_bytes": 36832,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "88f0b8ed7fb93dfb42cc835751c5b3a63de7dd597553d931e792a87a045adf48"
+  },
+  {
+    "seed": 404,
+    "case_id": "m32_d8",
+    "method": "D",
+    "rounds": 3,
+    "tracemalloc_peak_bytes": 312036,
+    "process_peak_working_set_bytes": 107945984,
+    "persistent_method_array_bytes": 36832,
+    "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+    "payload_sha256": "8dfc692a301d13186f42d023aa71aff5c2847381903dea7aa8a190a8067ff4cf"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "config": {
+    "dimensions": [
+      32,
+      64
+    ],
+    "samples": 64,
+    "classes": 10,
+    "rounds": 3,
+    "train_limit": 1024,
+    "test_limit": 128,
+    "pretrain_epochs": 1,
+    "pretrain_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cpu",
+    "prepare_threads": 1,
+    "feature_batch": 256,
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "head_lr": 0.1,
+    "private_epochs": 1,
+    "private_batch": 128,
+    "public_epochs": 1,
+    "public_edge_batch": 256,
+    "public_weight": 1.0,
+    "eval_every": 1,
+    "threads": 1
+  },
+  "seeds": [
+    101
+  ],
+  "memory_audit": true,
+  "data_dir": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\data",
+  "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\prepared",
+  "runtime": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda\\python.exe",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.1",
+    "torch": "2.7.1+cu118",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 1,
+        "prefix": "mkl_rt",
+        "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "vcomp",
+        "filepath": "D:\\anaconda\\vcomp140.dll",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 16,
+        "prefix": "libiomp",
+        "filepath": "D:\\anaconda\\Library\\bin\\libiomp5md.dll",
+        "version": null
+      }
+    ]
+  },
+  "source_hashes": {
+    "overhead_benchmark\\certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "overhead_benchmark\\codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "overhead_benchmark\\protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "real_iid\\__init__.py": "6255b5a59050e723b4561fa9f03ae9d05d962a1dbfdff990f78d7d0bdb483ddc",
+    "real_iid\\config.py": "2925f04777916cc75264e7a1b1e4d94d760834eb39ef3d8f0df24038b52fe75f",
+    "real_iid\\data.py": "083f95c4387644e8edc362c7ada6c9386dd550654c3ae45e270e4c5f8918f6f5",
+    "real_iid\\engine.py": "31322b898e49eb5f569633dd9ddafb097e8218443e84d56fb6c067198c1ed9d0",
+    "real_iid\\head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "real_iid\\report.py": "ed69d3ed99af787c8f2ff708d185bca05d60a4f7c8fa5fc167f424ec6ee558b5",
+    "real_iid\\run.py": "cb85982b257d6b88991f77a891033db74fe33af94c978b1f33335a70da6c227b",
+    "real_iid\\test_real_iid.py": "e876711768253a5ec4d820a638a117b4d48209b53eeacab67345ee0edecc41b4"
+  },
+  "methods": {
+    "Local": null,
+    "B": "full",
+    "E": "point",
+    "D": "relation"
+  },
+  "preset": "smoke",
+  "scope": "Real frozen-encoder SGD; IID; CPU heads; private-only unsupervised AE preparation; no network stack/failover",
+  "numeric_guard": "existing practical 1e-10 guard plus full oracle; not an IEEE proof"
+}

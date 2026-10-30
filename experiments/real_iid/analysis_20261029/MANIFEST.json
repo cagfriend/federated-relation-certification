@@ -1,0 +1,9 @@
+{
+  "scope": "New result-audit artifacts only; raw experiment results unchanged",
+  "files": {
+    "experiments\\real_iid\\analysis_20261029\\audit.json": "cff9a09238ae2ab0dfa825c44eefeebc9d66fc0ebf4ab476290ada6778b0c588",
+    "experiments\\real_iid\\analysis_20261029\\RESULTS_REVIEW.md": "822986991a0e48d05609e309664f091555a0817073d91d0e5d945a09918371c2",
+    "experiments\\real_iid\\analysis_20261029\\INDEPENDENT_REVIEW.md": "94d61af2de276828d8537d3ae518c17e18d0f6b24faf71ec97f9421659b84953",
+    "work\\audit_real_iid_results_20261029.py": "165182414b6b7c18be81027d6a8452051a9d5620b6a8cdf8f70c076e2d8be2dc"
+  }
+}

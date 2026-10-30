@@ -1,0 +1,20 @@
+[
+  {
+    "case_id": "m32_d1",
+    "seed": 404,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\validation_smoke_20261029\\m32_d1_seed_404.json",
+    "sha256": "63c4a9c5adb98f8197427aef22343eab3b39d86dc1198f8aadb89c9f8924c5b1"
+  },
+  {
+    "case_id": "m128_d1",
+    "seed": 404,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\validation_smoke_20261029\\m128_d1_seed_404.json",
+    "sha256": "0d94b3c0682e71724893a9ed9d5e1059ccdd2aeeb08efc261a286587b5206b5d"
+  },
+  {
+    "case_id": "m64_d1",
+    "seed": 404,
+    "source": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\validation_smoke_20261029\\m64_d1_seed_404.json",
+    "sha256": "242b2836d8b063ccc6af26cfadf51a8cc3926741f9fd8e43f840d072f707b554"
+  }
+]

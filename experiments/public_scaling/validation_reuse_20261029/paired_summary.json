@@ -1,0 +1,862 @@
+{
+  "seed_count": 1,
+  "completed_case_seed_count": 3,
+  "case_count": 3,
+  "pairing_policy": "strictly within case_id and shared seed; never combine different sample counts or graph degrees",
+  "paired": {
+    "m128_d1": {
+      "case_id": "m128_d1",
+      "config": {
+        "dimensions": [
+          32,
+          64
+        ],
+        "public_pool": 128,
+        "samples": 128,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 3,
+        "train_limit": 1024,
+        "test_limit": 128,
+        "pretrain_epochs": 1,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cpu",
+        "prepare_threads": 1,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 16,
+        "public_weight": 1.0,
+        "eval_every": 1,
+        "threads": 1
+      },
+      "seed_count": 1,
+      "seeds": [
+        404
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 3.804323726735016,
+            "ratio_range": {
+              "min": 3.804323726735016,
+              "max": 3.804323726735016
+            },
+            "median_seconds_saved": -0.0005058999986431445,
+            "seconds_saved_range": {
+              "min": -0.0005058999986431445,
+              "max": -0.0005058999986431445
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0006862999980512541,
+                "reference_seconds": 0.00018039999940810958,
+                "ratio_D_over_reference": 3.804323726735016,
+                "seconds_saved_reference_minus_D": -0.0005058999986431445,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0461611768752446,
+            "ratio_range": {
+              "min": 1.0461611768752446,
+              "max": 1.0461611768752446
+            },
+            "median_seconds_saved": -0.0003099999994446989,
+            "seconds_saved_range": {
+              "min": -0.0003099999994446989,
+              "max": -0.0003099999994446989
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.007025599999906262,
+                "reference_seconds": 0.0067156000004615635,
+                "ratio_D_over_reference": 1.0461611768752446,
+                "seconds_saved_reference_minus_D": -0.0003099999994446989,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0001254766186645,
+            "ratio_range": {
+              "min": 1.0001254766186645,
+              "max": 1.0001254766186645
+            },
+            "median_seconds_saved": -0.0003099999994446989,
+            "seconds_saved_range": {
+              "min": -0.0003099999994446989,
+              "max": -0.0003099999994446989
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.470889799998986,
+                "reference_seconds": 2.470579799999541,
+                "ratio_D_over_reference": 1.0001254766186645,
+                "seconds_saved_reference_minus_D": -0.0003099999994446989,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.771484375,
+                "range": {
+                  "min": 0.771484375,
+                  "max": 0.771484375
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "B": {
+                "count": 1,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.771484375,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.159094742092095,
+            "ratio_range": {
+              "min": 1.159094742092095,
+              "max": 1.159094742092095
+            },
+            "median_seconds_saved": -9.419999696547166e-05,
+            "seconds_saved_range": {
+              "min": -9.419999696547166e-05,
+              "max": -9.419999696547166e-05
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0006862999980512541,
+                "reference_seconds": 0.0005921000010857824,
+                "ratio_D_over_reference": 1.159094742092095,
+                "seconds_saved_reference_minus_D": -9.419999696547166e-05,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.802734375
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 1,
+            "median_ratio_D_over_reference": 0.9850675117173716,
+            "ratio_range": {
+              "min": 0.9850675117173716,
+              "max": 0.9850675117173716
+            },
+            "median_seconds_saved": 0.00010649999967426993,
+            "seconds_saved_range": {
+              "min": 0.00010649999967426993,
+              "max": 0.00010649999967426993
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.007025599999906262,
+                "reference_seconds": 0.007132099999580532,
+                "ratio_D_over_reference": 0.9850675117173716,
+                "seconds_saved_reference_minus_D": 0.00010649999967426993,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.802734375
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 1,
+            "median_ratio_D_over_reference": 0.9999568999760646,
+            "ratio_range": {
+              "min": 0.9999568999760646,
+              "max": 0.9999568999760646
+            },
+            "median_seconds_saved": 0.00010649999967426993,
+            "seconds_saved_range": {
+              "min": 0.00010649999967426993,
+              "max": 0.00010649999967426993
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.470889799998986,
+                "reference_seconds": 2.47099629999866,
+                "ratio_D_over_reference": 0.9999568999760646,
+                "seconds_saved_reference_minus_D": 0.00010649999967426993,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.771484375,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.802734375
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.771484375,
+                "range": {
+                  "min": 0.771484375,
+                  "max": 0.771484375
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "E": {
+                "count": 1,
+                "median": 0.802734375,
+                "range": {
+                  "min": 0.802734375,
+                  "max": 0.802734375
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.771484375,
+                "E": 0.802734375
+              }
+            ]
+          }
+        }
+      }
+    },
+    "m32_d1": {
+      "case_id": "m32_d1",
+      "config": {
+        "dimensions": [
+          32,
+          64
+        ],
+        "public_pool": 128,
+        "samples": 32,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 3,
+        "train_limit": 1024,
+        "test_limit": 128,
+        "pretrain_epochs": 1,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cpu",
+        "prepare_threads": 1,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 16,
+        "public_weight": 1.0,
+        "eval_every": 1,
+        "threads": 1
+      },
+      "seed_count": 1,
+      "seeds": [
+        404
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 5.043278121421429,
+            "ratio_range": {
+              "min": 5.043278121421429,
+              "max": 5.043278121421429
+            },
+            "median_seconds_saved": -0.0004391000011310098,
+            "seconds_saved_range": {
+              "min": -0.0004391000011310098,
+              "max": -0.0004391000011310098
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0005477000004248112,
+                "reference_seconds": 0.00010859999929380137,
+                "ratio_D_over_reference": 5.043278121421429,
+                "seconds_saved_reference_minus_D": -0.0004391000011310098,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0802836821109536,
+            "ratio_range": {
+              "min": 1.0802836821109536,
+              "max": 1.0802836821109536
+            },
+            "median_seconds_saved": -0.00040299999909620965,
+            "seconds_saved_range": {
+              "min": -0.00040299999909620965,
+              "max": -0.00040299999909620965
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.005422699999144243,
+                "reference_seconds": 0.005019700000048033,
+                "ratio_D_over_reference": 1.0802836821109536,
+                "seconds_saved_reference_minus_D": -0.00040299999909620965,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0001632250677643,
+            "ratio_range": {
+              "min": 1.0001632250677643,
+              "max": 1.0001632250677643
+            },
+            "median_seconds_saved": -0.00040299999909620965,
+            "seconds_saved_range": {
+              "min": -0.00040299999909620965,
+              "max": -0.00040299999909620965
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.4693864999981088,
+                "reference_seconds": 2.4689834999990126,
+                "ratio_D_over_reference": 1.0001632250677643,
+                "seconds_saved_reference_minus_D": -0.00040299999909620965,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.8125,
+                "range": {
+                  "min": 0.8125,
+                  "max": 0.8125
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "B": {
+                "count": 1,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.8125,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.2010964927965566,
+            "ratio_range": {
+              "min": 1.2010964927965566,
+              "max": 1.2010964927965566
+            },
+            "median_seconds_saved": -9.170000066660577e-05,
+            "seconds_saved_range": {
+              "min": -9.170000066660577e-05,
+              "max": -9.170000066660577e-05
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0005477000004248112,
+                "reference_seconds": 0.0004559999997582054,
+                "ratio_D_over_reference": 1.2010964927965566,
+                "seconds_saved_reference_minus_D": -9.170000066660577e-05,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.84375
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0396679319164688,
+            "ratio_range": {
+              "min": 1.0396679319164688,
+              "max": 1.0396679319164688
+            },
+            "median_seconds_saved": -0.0002068999992843601,
+            "seconds_saved_range": {
+              "min": -0.0002068999992843601,
+              "max": -0.0002068999992843601
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.005422699999144243,
+                "reference_seconds": 0.0052157999998598825,
+                "ratio_D_over_reference": 1.0396679319164688,
+                "seconds_saved_reference_minus_D": -0.0002068999992843601,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.84375
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0000837930133897,
+            "ratio_range": {
+              "min": 1.0000837930133897,
+              "max": 1.0000837930133897
+            },
+            "median_seconds_saved": -0.0002068999992843601,
+            "seconds_saved_range": {
+              "min": -0.0002068999992843601,
+              "max": -0.0002068999992843601
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.4693864999981088,
+                "reference_seconds": 2.4691795999988244,
+                "ratio_D_over_reference": 1.0000837930133897,
+                "seconds_saved_reference_minus_D": -0.0002068999992843601,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.8125,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.84375
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.8125,
+                "range": {
+                  "min": 0.8125,
+                  "max": 0.8125
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "E": {
+                "count": 1,
+                "median": 0.84375,
+                "range": {
+                  "min": 0.84375,
+                  "max": 0.84375
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.8125,
+                "E": 0.84375
+              }
+            ]
+          }
+        }
+      }
+    },
+    "m64_d1": {
+      "case_id": "m64_d1",
+      "config": {
+        "dimensions": [
+          32,
+          64
+        ],
+        "public_pool": 128,
+        "samples": 64,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 3,
+        "train_limit": 1024,
+        "test_limit": 128,
+        "pretrain_epochs": 1,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cpu",
+        "prepare_threads": 1,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 16,
+        "public_weight": 1.0,
+        "eval_every": 1,
+        "threads": 1
+      },
+      "seed_count": 1,
+      "seeds": [
+        404
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 4.890587261091913,
+            "ratio_range": {
+              "min": 4.890587261091913,
+              "max": 4.890587261091913
+            },
+            "median_seconds_saved": -0.0004835999989154516,
+            "seconds_saved_range": {
+              "min": -0.0004835999989154516,
+              "max": -0.0004835999989154516
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0006078999995224876,
+                "reference_seconds": 0.00012430000060703605,
+                "ratio_D_over_reference": 4.890587261091913,
+                "seconds_saved_reference_minus_D": -0.0004835999989154516,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0669855608206475,
+            "ratio_range": {
+              "min": 1.0669855608206475,
+              "max": 1.0669855608206475
+            },
+            "median_seconds_saved": -0.0003766999998333631,
+            "seconds_saved_range": {
+              "min": -0.0003766999998333631,
+              "max": -0.0003766999998333631
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.00600029999986873,
+                "reference_seconds": 0.005623600000035367,
+                "ratio_D_over_reference": 1.0669855608206475,
+                "seconds_saved_reference_minus_D": -0.0003766999998333631,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0001525488082619,
+            "ratio_range": {
+              "min": 1.0001525488082619,
+              "max": 1.0001525488082619
+            },
+            "median_seconds_saved": -0.0003766999998333631,
+            "seconds_saved_range": {
+              "min": -0.0003766999998333631,
+              "max": -0.0003766999998333631
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.46975029999885,
+                "reference_seconds": 2.4693735999990167,
+                "ratio_D_over_reference": 1.0001525488082619,
+                "seconds_saved_reference_minus_D": -0.0003766999998333631,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.78515625,
+                "range": {
+                  "min": 0.78515625,
+                  "max": 0.78515625
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "B": {
+                "count": 1,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.78515625,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.2606802121045755,
+            "ratio_range": {
+              "min": 1.2606802121045755,
+              "max": 1.2606802121045755
+            },
+            "median_seconds_saved": -0.00012569999853440095,
+            "seconds_saved_range": {
+              "min": -0.00012569999853440095,
+              "max": -0.00012569999853440095
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.0006078999995224876,
+                "reference_seconds": 0.0004822000009880867,
+                "ratio_D_over_reference": 1.2606802121045755,
+                "seconds_saved_reference_minus_D": -0.00012569999853440095,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.81640625
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.045731016222257,
+            "ratio_range": {
+              "min": 1.045731016222257,
+              "max": 1.045731016222257
+            },
+            "median_seconds_saved": -0.0002623999980642111,
+            "seconds_saved_range": {
+              "min": -0.0002623999980642111,
+              "max": -0.0002623999980642111
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 0.00600029999986873,
+                "reference_seconds": 0.005737900001804519,
+                "ratio_D_over_reference": 1.045731016222257,
+                "seconds_saved_reference_minus_D": -0.0002623999980642111,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.81640625
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 1,
+            "unpaired_seeds": [],
+            "wins_D_faster": 0,
+            "median_ratio_D_over_reference": 1.0001062568470427,
+            "ratio_range": {
+              "min": 1.0001062568470427,
+              "max": 1.0001062568470427
+            },
+            "median_seconds_saved": -0.0002623999980642111,
+            "seconds_saved_range": {
+              "min": -0.0002623999980642111,
+              "max": -0.0002623999980642111
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.46975029999885,
+                "reference_seconds": 2.469487900000786,
+                "ratio_D_over_reference": 1.0001062568470427,
+                "seconds_saved_reference_minus_D": -0.0002623999980642111,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.78515625,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.81640625
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 1,
+                "median": 0.78515625,
+                "range": {
+                  "min": 0.78515625,
+                  "max": 0.78515625
+                },
+                "wins_lower_than_other_method": 1
+              },
+              "E": {
+                "count": 1,
+                "median": 0.81640625,
+                "range": {
+                  "min": 0.81640625,
+                  "max": 0.81640625
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.78515625,
+                "E": 0.81640625
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "metric_consistency_checks": [
+    {
+      "case_id": "m32_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.02937619313849623,
+          "ari": 0.0017208730714999398,
+          "acc": 0.15234375
+        },
+        "E": {
+          "nmi": 0.02937619313849623,
+          "ari": 0.0017208730714999398,
+          "acc": 0.15234375
+        },
+        "D": {
+          "nmi": 0.02937619313849623,
+          "ari": 0.0017208730714999398,
+          "acc": 0.15234375
+        }
+      }
+    },
+    {
+      "case_id": "m128_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.026471174179281035,
+          "ari": 0.005652784067475413,
+          "acc": 0.16015625
+        },
+        "E": {
+          "nmi": 0.026471174179281035,
+          "ari": 0.005652784067475413,
+          "acc": 0.16015625
+        },
+        "D": {
+          "nmi": 0.026471174179281035,
+          "ari": 0.005652784067475413,
+          "acc": 0.16015625
+        }
+      }
+    },
+    {
+      "case_id": "m64_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.027420891232833353,
+          "ari": 0.0009072043677819703,
+          "acc": 0.15234375
+        },
+        "E": {
+          "nmi": 0.027420891232833353,
+          "ari": 0.0009072043677819703,
+          "acc": 0.15234375
+        },
+        "D": {
+          "nmi": 0.027420891232833353,
+          "ari": 0.0009072043677819703,
+          "acc": 0.15234375
+        }
+      }
+    }
+  ]
+}

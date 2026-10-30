@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    101
+  ],
+  "method_runs": 4,
+  "memory_profiles": 4,
+  "source_hashes": {
+    "overhead_benchmark\\certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "overhead_benchmark\\codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "overhead_benchmark\\protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "real_iid\\__init__.py": "6255b5a59050e723b4561fa9f03ae9d05d962a1dbfdff990f78d7d0bdb483ddc",
+    "real_iid\\config.py": "2925f04777916cc75264e7a1b1e4d94d760834eb39ef3d8f0df24038b52fe75f",
+    "real_iid\\data.py": "083f95c4387644e8edc362c7ada6c9386dd550654c3ae45e270e4c5f8918f6f5",
+    "real_iid\\engine.py": "31322b898e49eb5f569633dd9ddafb097e8218443e84d56fb6c067198c1ed9d0",
+    "real_iid\\head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "real_iid\\report.py": "ed69d3ed99af787c8f2ff708d185bca05d60a4f7c8fa5fc167f424ec6ee558b5",
+    "real_iid\\run.py": "cb85982b257d6b88991f77a891033db74fe33af94c978b1f33335a70da6c227b",
+    "real_iid\\test_real_iid.py": "e876711768253a5ec4d820a638a117b4d48209b53eeacab67345ee0edecc41b4"
+  },
+  "invocation_wall_seconds": 74.62360100005753,
+  "mismatches": 0,
+  "note": "Invocation wall includes paired methods, audits, preparation, metrics and optional memory replays; not a method latency",
+  "file_hashes": {
+    "environment.json": "8c9c693adbb86dcd591b2c2cd0ecf18dc754cca30bd8489a9188c6dfe0e6133e",
+    "memory.json": "385c8ccdbf106bd6151329695451f85e54a46cd0b988c3007e4cd4c52f0c34ae",
+    "memory_B_101.json": "b1bd51489d8a7b37a66d5ae16adfab033154ef8293d3b4e982d93aa4e4df6a33",
+    "memory_D_101.json": "2d4a3e9436d2592678926f86b190ad63edcb046b2621fdba3b9444327fb8547b",
+    "memory_E_101.json": "1b060867ca4ec8adc7d460cedf9d30193a721b8f2e196243eaca45a869e53ab0",
+    "memory_Local_101.json": "49e270efadfe79f46b75598ab77270cb81e3f674761491ab6501d9ec06880302",
+    "paired_summary.json": "b116f24bcf438b866c42e31b7558ce7af74eccc74aa7f225ff81943d63241d7a",
+    "prepared_101.json": "652b7eed0da1556e47556eee603ad08a64d2a406fa765f31e19ca574b6a453fb",
+    "seed_101.json": "a63d9068bc079715a30e4096244bfe560c36b4a2cb1408ce7697a0555268eb43"
+  }
+}

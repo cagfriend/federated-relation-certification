@@ -1,0 +1,72 @@
+{
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "mkl",
+      "num_threads": 1,
+      "prefix": "mkl_rt",
+      "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+      "version": "2023.1-Product",
+      "threading_layer": "intel"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 16,
+      "prefix": "libiomp",
+      "filepath": "D:\\anaconda\\Library\\bin\\libiomp5md.dll",
+      "version": null
+    }
+  ],
+  "config": {
+    "samples": 4096,
+    "classes": 8,
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "rounds": 200,
+    "threads": 1
+  },
+  "numeric_guard": "1e-10 practical guard; not a formal IEEE error certificate",
+  "network": "reliable in-memory delivery of serialized application messages; no sockets",
+  "training": false,
+  "suite": "sweep",
+  "job_plan": [
+    {
+      "scenario": "sweep",
+      "scale": 0.16,
+      "seed": 505
+    }
+  ],
+  "method_definitions": {
+    "A": {
+      "generator": "full",
+      "adaptive": false
+    },
+    "B": {
+      "generator": "full",
+      "adaptive": true
+    },
+    "C": {
+      "generator": "relation",
+      "adaptive": false
+    },
+    "D": {
+      "generator": "relation",
+      "adaptive": true
+    },
+    "E": {
+      "generator": "point",
+      "adaptive": true
+    }
+  }
+}

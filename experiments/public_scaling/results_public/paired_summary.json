@@ -1,0 +1,1426 @@
+{
+  "seed_count": 3,
+  "completed_case_seed_count": 9,
+  "case_count": 3,
+  "pairing_policy": "strictly within case_id and shared seed; never combine different sample counts or graph degrees",
+  "paired": {
+    "m16384_d1": {
+      "case_id": "m16384_d1",
+      "config": {
+        "dimensions": [
+          512,
+          512,
+          512,
+          2048,
+          2048,
+          2048
+        ],
+        "public_pool": 16384,
+        "samples": 16384,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 200,
+        "train_limit": 60000,
+        "test_limit": 10000,
+        "pretrain_epochs": 5,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cuda",
+        "prepare_threads": 4,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 256,
+        "public_weight": 1.0,
+        "eval_every": 20,
+        "threads": 1
+      },
+      "seed_count": 3,
+      "seeds": [
+        404,
+        505,
+        606
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.33987231871400075,
+            "ratio_range": {
+              "min": 0.30014046721240345,
+              "max": 0.36017072163439545
+            },
+            "median_seconds_saved": 20.79482559994358,
+            "seconds_saved_range": {
+              "min": 19.034049199974106,
+              "max": 23.484846699902846
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 10.714588199982245,
+                "reference_seconds": 29.74863739995635,
+                "ratio_D_over_reference": 0.36017072163439545,
+                "seconds_saved_reference_minus_D": 19.034049199974106,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 10.071668000069621,
+                "reference_seconds": 33.55651469997247,
+                "ratio_D_over_reference": 0.30014046721240345,
+                "seconds_saved_reference_minus_D": 23.484846699902846,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 10.70639180004946,
+                "reference_seconds": 31.50121739999304,
+                "ratio_D_over_reference": 0.33987231871400075,
+                "seconds_saved_reference_minus_D": 20.79482559994358,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.8861024368988941,
+            "ratio_range": {
+              "min": 0.8760566566665169,
+              "max": 0.8948141599522168
+            },
+            "median_seconds_saved": 21.841280999979062,
+            "seconds_saved_range": {
+              "min": 20.479581900086487,
+              "max": 22.550895399930596
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 174.21945639996557,
+                "reference_seconds": 194.69903830005205,
+                "ratio_D_over_reference": 0.8948141599522168,
+                "seconds_saved_reference_minus_D": 20.479581900086487,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 159.39429660005408,
+                "reference_seconds": 181.94519199998467,
+                "ratio_D_over_reference": 0.8760566566665169,
+                "seconds_saved_reference_minus_D": 22.550895399930596,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 169.92121510005381,
+                "reference_seconds": 191.76249610003288,
+                "ratio_D_over_reference": 0.8861024368988941,
+                "seconds_saved_reference_minus_D": 21.841280999979062,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9026824240597549,
+            "ratio_range": {
+              "min": 0.8970095632805622,
+              "max": 0.912663581875654
+            },
+            "median_seconds_saved": 21.841280999979062,
+            "seconds_saved_range": {
+              "min": 20.479581900086487,
+              "max": 22.550895399930596
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 214.0111647999729,
+                "reference_seconds": 234.4907467000594,
+                "ratio_D_over_reference": 0.912663581875654,
+                "seconds_saved_reference_minus_D": 20.479581900086487,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 196.41016660005698,
+                "reference_seconds": 218.96106199998758,
+                "ratio_D_over_reference": 0.8970095632805622,
+                "seconds_saved_reference_minus_D": 22.550895399930596,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 202.59177530004672,
+                "reference_seconds": 224.43305630002578,
+                "ratio_D_over_reference": 0.9026824240597549,
+                "seconds_saved_reference_minus_D": 21.841280999979062,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07985126233380443,
+                "range": {
+                  "min": 0.07951296194514237,
+                  "max": 0.0804559908919598
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "B": {
+                "count": 3,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.0804559908919598,
+                "B": 1.0
+              },
+              {
+                "seed": 505,
+                "D": 0.07985126233380443,
+                "B": 1.0
+              },
+              {
+                "seed": 606,
+                "D": 0.07951296194514237,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.7931177176624082,
+            "ratio_range": {
+              "min": 0.7821626453760308,
+              "max": 0.7993284974881253
+            },
+            "median_seconds_saved": 2.7927288999708253,
+            "seconds_saved_range": {
+              "min": 2.52849329997116,
+              "max": 2.984082100017986
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 10.714588199982245,
+                "reference_seconds": 13.69867030000023,
+                "ratio_D_over_reference": 0.7821626453760308,
+                "seconds_saved_reference_minus_D": 2.984082100017986,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13541886475018322
+              },
+              {
+                "seed": 505,
+                "D_seconds": 10.071668000069621,
+                "reference_seconds": 12.600161300040781,
+                "ratio_D_over_reference": 0.7993284974881253,
+                "seconds_saved_reference_minus_D": 2.52849329997116,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1341288453170802
+              },
+              {
+                "seed": 606,
+                "D_seconds": 10.70639180004946,
+                "reference_seconds": 13.499120700020285,
+                "ratio_D_over_reference": 0.7931177176624082,
+                "seconds_saved_reference_minus_D": 2.7927288999708253,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340246663820404
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9864454310712961,
+            "ratio_range": {
+              "min": 0.9760924097476765,
+              "max": 0.9872309831009862
+            },
+            "median_seconds_saved": 2.3348567999564693,
+            "seconds_saved_range": {
+              "min": 2.0616334998921957,
+              "max": 4.267185500058986
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 174.21945639996557,
+                "reference_seconds": 178.48664190002455,
+                "ratio_D_over_reference": 0.9760924097476765,
+                "seconds_saved_reference_minus_D": 4.267185500058986,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13541886475018322
+              },
+              {
+                "seed": 505,
+                "D_seconds": 159.39429660005408,
+                "reference_seconds": 161.45593009994627,
+                "ratio_D_over_reference": 0.9872309831009862,
+                "seconds_saved_reference_minus_D": 2.0616334998921957,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1341288453170802
+              },
+              {
+                "seed": 606,
+                "D_seconds": 169.92121510005381,
+                "reference_seconds": 172.25607190001028,
+                "ratio_D_over_reference": 0.9864454310712961,
+                "seconds_saved_reference_minus_D": 2.3348567999564693,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340246663820404
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9886063769455935,
+            "ratio_range": {
+              "min": 0.9804507158213649,
+              "max": 0.9896124613226969
+            },
+            "median_seconds_saved": 2.3348567999564693,
+            "seconds_saved_range": {
+              "min": 2.0616334998921957,
+              "max": 4.267185500058986
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 214.0111647999729,
+                "reference_seconds": 218.2783503000319,
+                "ratio_D_over_reference": 0.9804507158213649,
+                "seconds_saved_reference_minus_D": 4.267185500058986,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.0804559908919598,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13541886475018322
+              },
+              {
+                "seed": 505,
+                "D_seconds": 196.41016660005698,
+                "reference_seconds": 198.47180009994918,
+                "ratio_D_over_reference": 0.9896124613226969,
+                "seconds_saved_reference_minus_D": 2.0616334998921957,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07985126233380443,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1341288453170802
+              },
+              {
+                "seed": 606,
+                "D_seconds": 202.59177530004672,
+                "reference_seconds": 204.9266321000032,
+                "ratio_D_over_reference": 0.9886063769455935,
+                "seconds_saved_reference_minus_D": 2.3348567999564693,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07951296194514237,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340246663820404
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07985126233380443,
+                "range": {
+                  "min": 0.07951296194514237,
+                  "max": 0.0804559908919598
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "E": {
+                "count": 3,
+                "median": 0.1341288453170802,
+                "range": {
+                  "min": 0.1340246663820404,
+                  "max": 0.13541886475018322
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.0804559908919598,
+                "E": 0.13541886475018322
+              },
+              {
+                "seed": 505,
+                "D": 0.07985126233380443,
+                "E": 0.1341288453170802
+              },
+              {
+                "seed": 606,
+                "D": 0.07951296194514237,
+                "E": 0.1340246663820404
+              }
+            ]
+          }
+        }
+      }
+    },
+    "m4096_d1": {
+      "case_id": "m4096_d1",
+      "config": {
+        "dimensions": [
+          512,
+          512,
+          512,
+          2048,
+          2048,
+          2048
+        ],
+        "public_pool": 16384,
+        "samples": 4096,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 200,
+        "train_limit": 60000,
+        "test_limit": 10000,
+        "pretrain_epochs": 5,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cuda",
+        "prepare_threads": 4,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 256,
+        "public_weight": 1.0,
+        "eval_every": 20,
+        "threads": 1
+      },
+      "seed_count": 3,
+      "seeds": [
+        404,
+        505,
+        606
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.3150171661203284,
+            "ratio_range": {
+              "min": 0.3130280485243809,
+              "max": 0.3154527601555684
+            },
+            "median_seconds_saved": 4.892189799989865,
+            "seconds_saved_range": {
+              "min": 4.891485199994349,
+              "max": 5.0807128999513225
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.3412919000475085,
+                "reference_seconds": 7.422004799998831,
+                "ratio_D_over_reference": 0.3154527601555684,
+                "seconds_saved_reference_minus_D": 5.0807128999513225,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 2.228871299987077,
+                "reference_seconds": 7.120356499981426,
+                "ratio_D_over_reference": 0.3130280485243809,
+                "seconds_saved_reference_minus_D": 4.891485199994349,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 2.2498720999865327,
+                "reference_seconds": 7.142061899976397,
+                "ratio_D_over_reference": 0.3150171661203284,
+                "seconds_saved_reference_minus_D": 4.892189799989865,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9419451718604607,
+            "ratio_range": {
+              "min": 0.9378551651973459,
+              "max": 0.9446426122368754
+            },
+            "median_seconds_saved": 5.031982600099582,
+            "seconds_saved_range": {
+              "min": 4.779078400031722,
+              "max": 6.078165099934267
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 91.72827560002042,
+                "reference_seconds": 97.80644069995469,
+                "ratio_D_over_reference": 0.9378551651973459,
+                "seconds_saved_reference_minus_D": 6.078165099934267,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 81.64440179991652,
+                "reference_seconds": 86.6763844000161,
+                "ratio_D_over_reference": 0.9419451718604607,
+                "seconds_saved_reference_minus_D": 5.031982600099582,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 81.55227849999937,
+                "reference_seconds": 86.3313569000311,
+                "ratio_D_over_reference": 0.9446426122368754,
+                "seconds_saved_reference_minus_D": 4.779078400031722,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9592317875264164,
+            "ratio_range": {
+              "min": 0.9557585688752486,
+              "max": 0.9597412147757591
+            },
+            "median_seconds_saved": 5.031982600099582,
+            "seconds_saved_range": {
+              "min": 4.779078400031722,
+              "max": 6.078165099934267
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 131.3081026000218,
+                "reference_seconds": 137.38626769995608,
+                "ratio_D_over_reference": 0.9557585688752486,
+                "seconds_saved_reference_minus_D": 6.078165099934267,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 118.39708859992243,
+                "reference_seconds": 123.42907120002201,
+                "ratio_D_over_reference": 0.9592317875264164,
+                "seconds_saved_reference_minus_D": 5.031982600099582,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 113.9298784999919,
+                "reference_seconds": 118.70895690002362,
+                "ratio_D_over_reference": 0.9597412147757591,
+                "seconds_saved_reference_minus_D": 4.779078400031722,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07942831017064489,
+                "range": {
+                  "min": 0.07845113425198912,
+                  "max": 0.08066884716551508
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "B": {
+                "count": 3,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.07845113425198912,
+                "B": 1.0
+              },
+              {
+                "seed": 505,
+                "D": 0.07942831017064489,
+                "B": 1.0
+              },
+              {
+                "seed": 606,
+                "D": 0.08066884716551508,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.7614887407644717,
+            "ratio_range": {
+              "min": 0.7584316901548769,
+              "max": 0.7621704623663484
+            },
+            "median_seconds_saved": 0.7020556000206852,
+            "seconds_saved_range": {
+              "min": 0.698120499982906,
+              "max": 0.7457255999324843
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 2.3412919000475085,
+                "reference_seconds": 3.087017499979993,
+                "ratio_D_over_reference": 0.7584316901548769,
+                "seconds_saved_reference_minus_D": 0.7457255999324843,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13184697903580403
+              },
+              {
+                "seed": 505,
+                "D_seconds": 2.228871299987077,
+                "reference_seconds": 2.926991799969983,
+                "ratio_D_over_reference": 0.7614887407644717,
+                "seconds_saved_reference_minus_D": 0.698120499982906,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13406162485605108
+              },
+              {
+                "seed": 606,
+                "D_seconds": 2.2498720999865327,
+                "reference_seconds": 2.951927700007218,
+                "ratio_D_over_reference": 0.7621704623663484,
+                "seconds_saved_reference_minus_D": 0.7020556000206852,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13581600221157872
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9870946541584478,
+            "ratio_range": {
+              "min": 0.9833265113621202,
+              "max": 0.994475100690528
+            },
+            "median_seconds_saved": 1.0662202999228612,
+            "seconds_saved_range": {
+              "min": 0.45358310008305125,
+              "max": 1.5553636999684386
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 91.72827560002042,
+                "reference_seconds": 93.28363929998886,
+                "ratio_D_over_reference": 0.9833265113621202,
+                "seconds_saved_reference_minus_D": 1.5553636999684386,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13184697903580403
+              },
+              {
+                "seed": 505,
+                "D_seconds": 81.64440179991652,
+                "reference_seconds": 82.09798489999957,
+                "ratio_D_over_reference": 0.994475100690528,
+                "seconds_saved_reference_minus_D": 0.45358310008305125,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13406162485605108
+              },
+              {
+                "seed": 606,
+                "D_seconds": 81.55227849999937,
+                "reference_seconds": 82.61849879992224,
+                "ratio_D_over_reference": 0.9870946541584478,
+                "seconds_saved_reference_minus_D": 1.0662202999228612,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13581600221157872
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.990728204599549,
+            "ratio_range": {
+              "min": 0.9882935185775101,
+              "max": 0.9961835882490597
+            },
+            "median_seconds_saved": 1.0662202999228612,
+            "seconds_saved_range": {
+              "min": 0.45358310008305125,
+              "max": 1.5553636999684386
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 131.3081026000218,
+                "reference_seconds": 132.86346629999025,
+                "ratio_D_over_reference": 0.9882935185775101,
+                "seconds_saved_reference_minus_D": 1.5553636999684386,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07845113425198912,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13184697903580403
+              },
+              {
+                "seed": 505,
+                "D_seconds": 118.39708859992243,
+                "reference_seconds": 118.85067170000548,
+                "ratio_D_over_reference": 0.9961835882490597,
+                "seconds_saved_reference_minus_D": 0.45358310008305125,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07942831017064489,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13406162485605108
+              },
+              {
+                "seed": 606,
+                "D_seconds": 113.9298784999919,
+                "reference_seconds": 114.99609879991476,
+                "ratio_D_over_reference": 0.990728204599549,
+                "seconds_saved_reference_minus_D": 1.0662202999228612,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.08066884716551508,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13581600221157872
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07942831017064489,
+                "range": {
+                  "min": 0.07845113425198912,
+                  "max": 0.08066884716551508
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "E": {
+                "count": 3,
+                "median": 0.13406162485605108,
+                "range": {
+                  "min": 0.13184697903580403,
+                  "max": 0.13581600221157872
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.07845113425198912,
+                "E": 0.13184697903580403
+              },
+              {
+                "seed": 505,
+                "D": 0.07942831017064489,
+                "E": 0.13406162485605108
+              },
+              {
+                "seed": 606,
+                "D": 0.08066884716551508,
+                "E": 0.13581600221157872
+              }
+            ]
+          }
+        }
+      }
+    },
+    "m8192_d1": {
+      "case_id": "m8192_d1",
+      "config": {
+        "dimensions": [
+          512,
+          512,
+          512,
+          2048,
+          2048,
+          2048
+        ],
+        "public_pool": 16384,
+        "samples": 8192,
+        "degree": 1,
+        "classes": 10,
+        "rounds": 200,
+        "train_limit": 60000,
+        "test_limit": 10000,
+        "pretrain_epochs": 5,
+        "pretrain_batch": 256,
+        "pretrain_lr": 0.001,
+        "noise_std": 0.15,
+        "prepare_device": "cuda",
+        "prepare_threads": 4,
+        "feature_batch": 256,
+        "kmeans_restarts": 10,
+        "kmeans_max_iter": 100,
+        "head_lr": 0.1,
+        "private_epochs": 1,
+        "private_batch": 128,
+        "public_epochs": 1,
+        "public_edge_batch": 256,
+        "public_weight": 1.0,
+        "eval_every": 20,
+        "threads": 1
+      },
+      "seed_count": 3,
+      "seeds": [
+        404,
+        505,
+        606
+      ],
+      "paired": {
+        "D_over_B": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.27041205109252553,
+            "ratio_range": {
+              "min": 0.25729090498395646,
+              "max": 0.29279782996138365
+            },
+            "median_seconds_saved": 10.898791400170012,
+            "seconds_saved_range": {
+              "min": 10.044567099997948,
+              "max": 11.777738599965232
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 4.158679900006973,
+                "reference_seconds": 14.203247000004922,
+                "ratio_D_over_reference": 0.29279782996138365,
+                "seconds_saved_reference_minus_D": 10.044567099997948,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 4.039491799943789,
+                "reference_seconds": 14.938283200113801,
+                "ratio_D_over_reference": 0.27041205109252553,
+                "seconds_saved_reference_minus_D": 10.898791400170012,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 4.080069900024682,
+                "reference_seconds": 15.857808499989915,
+                "ratio_D_over_reference": 0.25729090498395646,
+                "seconds_saved_reference_minus_D": 11.777738599965232,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.904974738374583,
+            "ratio_range": {
+              "min": 0.9015065684715001,
+              "max": 0.9251392888414961
+            },
+            "median_seconds_saved": 11.114231000021391,
+            "seconds_saved_range": {
+              "min": 10.14504229992599,
+              "max": 11.627182400101447
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 125.37387200006924,
+                "reference_seconds": 135.51891429999523,
+                "ratio_D_over_reference": 0.9251392888414961,
+                "seconds_saved_reference_minus_D": 10.14504229992599,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 105.84657300000254,
+                "reference_seconds": 116.96080400002393,
+                "ratio_D_over_reference": 0.904974738374583,
+                "seconds_saved_reference_minus_D": 11.114231000021391,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 106.42315069989854,
+                "reference_seconds": 118.05033309999999,
+                "ratio_D_over_reference": 0.9015065684715001,
+                "seconds_saved_reference_minus_D": 11.627182400101447,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9277717327556321,
+            "ratio_range": {
+              "min": 0.922748148984449,
+              "max": 0.9420819892623361
+            },
+            "median_seconds_saved": 11.114231000021391,
+            "seconds_saved_range": {
+              "min": 10.14504229992599,
+              "max": 11.627182400101447
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 165.017090700072,
+                "reference_seconds": 175.162132999998,
+                "ratio_D_over_reference": 0.9420819892623361,
+                "seconds_saved_reference_minus_D": 10.14504229992599,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 505,
+                "D_seconds": 142.7622418000101,
+                "reference_seconds": 153.87647280003148,
+                "ratio_D_over_reference": 0.9277717327556321,
+                "seconds_saved_reference_minus_D": 11.114231000021391,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              },
+              {
+                "seed": 606,
+                "D_seconds": 138.8828991998962,
+                "reference_seconds": 150.51008159999765,
+                "ratio_D_over_reference": 0.922748148984449,
+                "seconds_saved_reference_minus_D": 11.627182400101447,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 1.0
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07950468079328936,
+                "range": {
+                  "min": 0.07865008636934673,
+                  "max": 0.07960303225109924
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "B": {
+                "count": 3,
+                "median": 1.0,
+                "range": {
+                  "min": 1.0,
+                  "max": 1.0
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.07960303225109924,
+                "B": 1.0
+              },
+              {
+                "seed": 505,
+                "D": 0.07865008636934673,
+                "B": 1.0
+              },
+              {
+                "seed": 606,
+                "D": 0.07950468079328936,
+                "B": 1.0
+              }
+            ]
+          }
+        },
+        "D_over_E": {
+          "generation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.7331653894983163,
+            "ratio_range": {
+              "min": 0.7250887885412427,
+              "max": 0.7368998048236913
+            },
+            "median_seconds_saved": 1.484800899939728,
+            "seconds_saved_range": {
+              "min": 1.4701679000427248,
+              "max": 1.5469235999480588
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 4.158679900006973,
+                "reference_seconds": 5.643480799946701,
+                "ratio_D_over_reference": 0.7368998048236913,
+                "seconds_saved_reference_minus_D": 1.484800899939728,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340754267758061
+              },
+              {
+                "seed": 505,
+                "D_seconds": 4.039491799943789,
+                "reference_seconds": 5.509659699986514,
+                "ratio_D_over_reference": 0.7331653894983163,
+                "seconds_saved_reference_minus_D": 1.4701679000427248,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13273071084589616
+              },
+              {
+                "seed": 606,
+                "D_seconds": 4.080069900024682,
+                "reference_seconds": 5.626993499972741,
+                "ratio_D_over_reference": 0.7250887885412427,
+                "seconds_saved_reference_minus_D": 1.5469235999480588,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13413860889735135
+              }
+            ]
+          },
+          "training_pipeline_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9906633469873021,
+            "ratio_range": {
+              "min": 0.9816076511807673,
+              "max": 0.9916600508871025
+            },
+            "median_seconds_saved": 1.0544053999474272,
+            "seconds_saved_range": {
+              "min": 1.0030007001114427,
+              "max": 1.983243600021524
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 125.37387200006924,
+                "reference_seconds": 126.42827740001667,
+                "ratio_D_over_reference": 0.9916600508871025,
+                "seconds_saved_reference_minus_D": 1.0544053999474272,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340754267758061
+              },
+              {
+                "seed": 505,
+                "D_seconds": 105.84657300000254,
+                "reference_seconds": 107.82981660002406,
+                "ratio_D_over_reference": 0.9816076511807673,
+                "seconds_saved_reference_minus_D": 1.983243600021524,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13273071084589616
+              },
+              {
+                "seed": 606,
+                "D_seconds": 106.42315069989854,
+                "reference_seconds": 107.42615140000999,
+                "ratio_D_over_reference": 0.9906633469873021,
+                "seconds_saved_reference_minus_D": 1.0030007001114427,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13413860889735135
+              }
+            ]
+          },
+          "with_shared_preparation_seconds": {
+            "paired_count": 3,
+            "unpaired_seeds": [],
+            "wins_D_faster": 3,
+            "median_ratio_D_over_reference": 0.9928298656202776,
+            "ratio_range": {
+              "min": 0.9862984078947923,
+              "max": 0.9936508947970675
+            },
+            "median_seconds_saved": 1.0544053999474272,
+            "seconds_saved_range": {
+              "min": 1.0030007001114427,
+              "max": 1.983243600021524
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D_seconds": 165.017090700072,
+                "reference_seconds": 166.07149610001943,
+                "ratio_D_over_reference": 0.9936508947970675,
+                "seconds_saved_reference_minus_D": 1.0544053999474272,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07960303225109924,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.1340754267758061
+              },
+              {
+                "seed": 505,
+                "D_seconds": 142.7622418000101,
+                "reference_seconds": 144.7454854000316,
+                "ratio_D_over_reference": 0.9862984078947923,
+                "seconds_saved_reference_minus_D": 1.983243600021524,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07865008636934673,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13273071084589616
+              },
+              {
+                "seed": 606,
+                "D_seconds": 138.8828991998962,
+                "reference_seconds": 139.88589990000764,
+                "ratio_D_over_reference": 0.9928298656202776,
+                "seconds_saved_reference_minus_D": 1.0030007001114427,
+                "D_teacher_recompute_fraction_after_bootstrap": 0.07950468079328936,
+                "reference_teacher_recompute_fraction_after_bootstrap": 0.13413860889735135
+              }
+            ]
+          },
+          "recomputation": {
+            "summary": {
+              "D": {
+                "count": 3,
+                "median": 0.07950468079328936,
+                "range": {
+                  "min": 0.07865008636934673,
+                  "max": 0.07960303225109924
+                },
+                "wins_lower_than_other_method": 3
+              },
+              "E": {
+                "count": 3,
+                "median": 0.1340754267758061,
+                "range": {
+                  "min": 0.13273071084589616,
+                  "max": 0.13413860889735135
+                },
+                "wins_lower_than_other_method": 0
+              }
+            },
+            "raw_pairs": [
+              {
+                "seed": 404,
+                "D": 0.07960303225109924,
+                "E": 0.1340754267758061
+              },
+              {
+                "seed": 505,
+                "D": 0.07865008636934673,
+                "E": 0.13273071084589616
+              },
+              {
+                "seed": 606,
+                "D": 0.07950468079328936,
+                "E": 0.13413860889735135
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "metric_consistency_checks": [
+    {
+      "case_id": "m4096_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5789813774833813,
+          "ari": 0.40006491601544675,
+          "acc": 0.5442666666666667
+        },
+        "E": {
+          "nmi": 0.5789813774833813,
+          "ari": 0.40006491601544675,
+          "acc": 0.5442666666666667
+        },
+        "D": {
+          "nmi": 0.5789813774833813,
+          "ari": 0.40006491601544675,
+          "acc": 0.5442666666666667
+        }
+      }
+    },
+    {
+      "case_id": "m16384_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5790120745205917,
+          "ari": 0.40008619160584163,
+          "acc": 0.5444833333333333
+        },
+        "E": {
+          "nmi": 0.5790120745205917,
+          "ari": 0.40008619160584163,
+          "acc": 0.5444833333333333
+        },
+        "D": {
+          "nmi": 0.5790120745205917,
+          "ari": 0.40008619160584163,
+          "acc": 0.5444833333333333
+        }
+      }
+    },
+    {
+      "case_id": "m8192_d1",
+      "seed": 404,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5790254375445897,
+          "ari": 0.4001314884168403,
+          "acc": 0.5443666666666668
+        },
+        "E": {
+          "nmi": 0.5790254375445897,
+          "ari": 0.4001314884168403,
+          "acc": 0.5443666666666668
+        },
+        "D": {
+          "nmi": 0.5790254375445897,
+          "ari": 0.4001314884168403,
+          "acc": 0.5443666666666668
+        }
+      }
+    },
+    {
+      "case_id": "m16384_d1",
+      "seed": 505,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5784721877234061,
+          "ari": 0.3988645159244472,
+          "acc": 0.54265
+        },
+        "E": {
+          "nmi": 0.5784721877234061,
+          "ari": 0.3988645159244472,
+          "acc": 0.54265
+        },
+        "D": {
+          "nmi": 0.5784721877234061,
+          "ari": 0.3988645159244472,
+          "acc": 0.54265
+        }
+      }
+    },
+    {
+      "case_id": "m8192_d1",
+      "seed": 505,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5785886743720293,
+          "ari": 0.39885945602402617,
+          "acc": 0.5425
+        },
+        "E": {
+          "nmi": 0.5785886743720293,
+          "ari": 0.39885945602402617,
+          "acc": 0.5425
+        },
+        "D": {
+          "nmi": 0.5785886743720293,
+          "ari": 0.39885945602402617,
+          "acc": 0.5425
+        }
+      }
+    },
+    {
+      "case_id": "m4096_d1",
+      "seed": 505,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5785811774880841,
+          "ari": 0.39880085772915175,
+          "acc": 0.54245
+        },
+        "E": {
+          "nmi": 0.5785811774880841,
+          "ari": 0.39880085772915175,
+          "acc": 0.54245
+        },
+        "D": {
+          "nmi": 0.5785811774880841,
+          "ari": 0.39880085772915175,
+          "acc": 0.54245
+        }
+      }
+    },
+    {
+      "case_id": "m8192_d1",
+      "seed": 606,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5796067094492315,
+          "ari": 0.39955773425843927,
+          "acc": 0.5444166666666667
+        },
+        "E": {
+          "nmi": 0.5796067094492315,
+          "ari": 0.39955773425843927,
+          "acc": 0.5444166666666667
+        },
+        "D": {
+          "nmi": 0.5796067094492315,
+          "ari": 0.39955773425843927,
+          "acc": 0.5444166666666667
+        }
+      }
+    },
+    {
+      "case_id": "m16384_d1",
+      "seed": 606,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5795494530216722,
+          "ari": 0.3995991320563786,
+          "acc": 0.5443333333333334
+        },
+        "E": {
+          "nmi": 0.5795494530216722,
+          "ari": 0.3995991320563786,
+          "acc": 0.5443333333333334
+        },
+        "D": {
+          "nmi": 0.5795494530216722,
+          "ari": 0.3995991320563786,
+          "acc": 0.5443333333333334
+        }
+      }
+    },
+    {
+      "case_id": "m4096_d1",
+      "seed": 606,
+      "methods_present": [
+        "B",
+        "E",
+        "D"
+      ],
+      "consistent": true,
+      "mean_metrics": {
+        "B": {
+          "nmi": 0.5797854085878853,
+          "ari": 0.3997006700162224,
+          "acc": 0.54455
+        },
+        "E": {
+          "nmi": 0.5797854085878853,
+          "ari": 0.3997006700162224,
+          "acc": 0.54455
+        },
+        "D": {
+          "nmi": 0.5797854085878853,
+          "ari": 0.3997006700162224,
+          "acc": 0.54455
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "method": "D",
+  "scenario": "sweep",
+  "seed": 404,
+  "scale": 0.12,
+  "rounds": 200,
+  "tracemalloc_peak_bytes": 325346994,
+  "tracemalloc_current_bytes": 693829,
+  "process_peak_working_set_bytes": 364060672,
+  "persistent_method_array_bytes": 5845760,
+  "scope": "isolated full replay, includes fixtures/runtime; no oracle; instrumented times discarded"
+}

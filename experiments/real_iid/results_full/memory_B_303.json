@@ -1,0 +1,10 @@
+{
+  "seed": 303,
+  "method": "B",
+  "rounds": 200,
+  "tracemalloc_peak_bytes": 263447504,
+  "process_peak_working_set_bytes": 970526720,
+  "persistent_method_array_bytes": 653792,
+  "scope": "isolated complete real head-training replay including metrics and cached input; no oracle; instrumented times discarded",
+  "payload_sha256": "8d69b3eafc2cf68a8a61ba58c144d2f7a32f562170bb6b33e26632c358fb2499"
+}

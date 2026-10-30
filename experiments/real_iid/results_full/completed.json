@@ -1,0 +1,48 @@
+{
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "method_runs": 12,
+  "memory_profiles": 12,
+  "source_hashes": {
+    "overhead_benchmark\\certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "overhead_benchmark\\codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "overhead_benchmark\\protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "real_iid\\__init__.py": "6255b5a59050e723b4561fa9f03ae9d05d962a1dbfdff990f78d7d0bdb483ddc",
+    "real_iid\\config.py": "2925f04777916cc75264e7a1b1e4d94d760834eb39ef3d8f0df24038b52fe75f",
+    "real_iid\\data.py": "083f95c4387644e8edc362c7ada6c9386dd550654c3ae45e270e4c5f8918f6f5",
+    "real_iid\\engine.py": "31322b898e49eb5f569633dd9ddafb097e8218443e84d56fb6c067198c1ed9d0",
+    "real_iid\\head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "real_iid\\report.py": "ed69d3ed99af787c8f2ff708d185bca05d60a4f7c8fa5fc167f424ec6ee558b5",
+    "real_iid\\run.py": "cb85982b257d6b88991f77a891033db74fe33af94c978b1f33335a70da6c227b",
+    "real_iid\\test_real_iid.py": "e876711768253a5ec4d820a638a117b4d48209b53eeacab67345ee0edecc41b4"
+  },
+  "invocation_wall_seconds": 3582.402914699982,
+  "mismatches": 0,
+  "note": "Invocation wall includes paired methods, audits, preparation, metrics and optional memory replays; not a method latency",
+  "file_hashes": {
+    "environment.json": "068fc2f5b72f2796efa803db256200d28481c932afaee9202783a1b317bc3ef9",
+    "memory.json": "aaf4768d454d7a8328eb1f335e2f475dd9c31d3716b1a2a553bec0e9d739c146",
+    "memory_B_101.json": "c95cd1aa6da98758c939f6054ae441c398fb36d21eba07a44b33321042460e98",
+    "memory_B_202.json": "fddad25a34ac36825a0fc63246606a4ffeaf75fb47612614ce7582066e9733f3",
+    "memory_B_303.json": "0ff34ca511486fd4c523deaec70b0eadf30deb0f7c0e2dbe162b904452fb769a",
+    "memory_D_101.json": "5fb92769e583d63294acad1510a50908e299a368737b3b2b1f0995d285505aff",
+    "memory_D_202.json": "d86a0411d987ae37f932e4a850712217b845e8e1a672683b5b8914b910b4ce06",
+    "memory_D_303.json": "2743d00d112635faf498bd500063ad8efda7883035bfba4f2eee9de2a3407b30",
+    "memory_E_101.json": "72a139c5a07236cad93ee01a080f12b412c32d859980a0995f089338f65caf05",
+    "memory_E_202.json": "3a0b9a0fb5bd988ca3f45b8361c156243f81216750bf14abb60fd1181bf9c830",
+    "memory_E_303.json": "f10c42a7186a18a42eaeb74ec1fd4b6cebe7b010d599d2143493f059a5b949f1",
+    "memory_Local_101.json": "e2a0c7c2a65080fb6df3ea0b059ccf253e62fa8d55af9fe3835557c39990da97",
+    "memory_Local_202.json": "ef8dfec5dafdef2a88a13aaa41917ea16ff34e335e47be948c1a4c97d1b31859",
+    "memory_Local_303.json": "f9dcdcb1e34f11b184b6aa52491badf706a375e8d853d849bec171cc6e7889db",
+    "paired_summary.json": "a60fe26f2f1fd9a7247251c8e5c67733c2f317d2df0b634e3795700939d69383",
+    "prepared_101.json": "34567e9358f795b2d12c6cb1c45f548c13f7eee6ecccd4962a34790dda7eac5b",
+    "prepared_202.json": "f770d95c779b202714af243a6b0b359d41ef82deb7226584383fad910dd647dc",
+    "prepared_303.json": "2178c912e7a8936a377c140f9daf76c66cb6f59e8055e096b319fc476bf15c82",
+    "seed_101.json": "0f1b93b5491421f4b147cab2d7bc1fc1a1aa192fdb875d556eb2e56414dcd06d",
+    "seed_202.json": "ad5b2719f1a00524d4842a8a987c25e8575c2e05c1b801a69e58f95671098e62",
+    "seed_303.json": "71d95d98846f8de6751e8949eae443218e084105c8668d8beba08105cf5933bd"
+  }
+}

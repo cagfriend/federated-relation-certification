@@ -1,0 +1,317 @@
+{
+  "authorization": "User explicitly requested deletion of completed experiment code, retaining results",
+  "files": [
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__init__.py",
+      "relative_path": "experiments\\overhead_benchmark\\__init__.py",
+      "sha256": "4912fa6906f3419d4a4235b1a8c0ff762925ecd0b2e1be75ce32015eabe3006f",
+      "bytes": 82
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\__init__.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\__init__.cpython-312.pyc",
+      "sha256": "bf439d97a224e1063bd6038d804bd467308a24481ff0267d15d10c5958facdcc",
+      "bytes": 278
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\__init__.cpython-313.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\__init__.cpython-313.pyc",
+      "sha256": "de4b3839c632bc490e25800dc925890a14076a6ca96fa95c88ff079815e07cb3",
+      "bytes": 278
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\certification.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\certification.cpython-312.pyc",
+      "sha256": "13173dc2f328937acbcaf15bd3a87b305daa0f3a89caed114b9c123b7e0c4d56",
+      "bytes": 13112
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\certification.cpython-313.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\certification.cpython-313.pyc",
+      "sha256": "c51c9e1fea069fd090b767d4410284ae62283d4988d7147eaee5c9e456e030f3",
+      "bytes": 13254
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\codec.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\codec.cpython-312.pyc",
+      "sha256": "1e5111206b1a549d509dfbd7cf3d8dda93df388ad83ee5efd5a714de79f3e0c4",
+      "bytes": 13764
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\codec.cpython-313.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\codec.cpython-313.pyc",
+      "sha256": "bc083ebdd8d23a95330b2014cbea8149b58f02f03fdd5e7378c63c6e1d3ae26e",
+      "bytes": 13893
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\protocol.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\protocol.cpython-312.pyc",
+      "sha256": "20839e579e8755b14087ff8f6c205fa3f83fd22f9e323b07287c09491180e720",
+      "bytes": 12869
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\protocol.cpython-313.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\protocol.cpython-313.pyc",
+      "sha256": "ae7acd98a714c9d022ebcd5abb4034753c78965c6abe8b8cfb7348b9a56eef52",
+      "bytes": 12947
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\run.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\run.cpython-312.pyc",
+      "sha256": "14f72b2569f83fcef45865390a91316f7be0034825437179d8b8bdde77539a02",
+      "bytes": 49488
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\run.cpython-313.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\run.cpython-313.pyc",
+      "sha256": "c7e6f18ca9f65a342f97db9afeed23da4f64d4d0d01b0c0937eb077370d800e6",
+      "bytes": 49148
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__\\test_benchmark.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\__pycache__\\test_benchmark.cpython-312.pyc",
+      "sha256": "59a54ea6626054815975e71475b48b8401e2d60852ed08e6fa0af7d25377c40b",
+      "bytes": 33011
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\certification.py",
+      "relative_path": "experiments\\overhead_benchmark\\certification.py",
+      "sha256": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+      "bytes": 8735
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\codec.py",
+      "relative_path": "experiments\\overhead_benchmark\\codec.py",
+      "sha256": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+      "bytes": 8035
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\protocol.py",
+      "relative_path": "experiments\\overhead_benchmark\\protocol.py",
+      "sha256": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+      "bytes": 8860
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\review_support\\__pycache__\\independent_float_check.cpython-312.pyc",
+      "relative_path": "experiments\\overhead_benchmark\\review_support\\__pycache__\\independent_float_check.cpython-312.pyc",
+      "sha256": "4c8c06b4fc8e389b4b533ba9de3c10dc0954a0d02d8e5e72aaeb7f34080d6077",
+      "bytes": 4036
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\review_support\\independent_float_check.py",
+      "relative_path": "experiments\\overhead_benchmark\\review_support\\independent_float_check.py",
+      "sha256": "1aaf1e7f8a640cdad3b1d96d99b9da8814a56077d769f90b80304c613e018b7b",
+      "bytes": 2875
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\run.py",
+      "relative_path": "experiments\\overhead_benchmark\\run.py",
+      "sha256": "5d3386c138d172a028d46cbe90f0184db1164ebfd6faf52ac373a4a9d08b9cc8",
+      "bytes": 31908
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\test_benchmark.py",
+      "relative_path": "experiments\\overhead_benchmark\\test_benchmark.py",
+      "sha256": "1cd737a4b2ca5a6011fa38aa22177188cb1dd33c9a11644e27a1465dde931adf",
+      "bytes": 19425
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__init__.py",
+      "relative_path": "experiments\\real_iid\\__init__.py",
+      "sha256": "6255b5a59050e723b4561fa9f03ae9d05d962a1dbfdff990f78d7d0bdb483ddc",
+      "bytes": 70
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\__init__.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\__init__.cpython-312.pyc",
+      "sha256": "1b056e92e022123ff947cd7328f09c6ab17cd724c067b1563e467086d98995f5",
+      "bytes": 256
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\config.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\config.cpython-312.pyc",
+      "sha256": "5d169daf5209b754a0a5d7cd44c036eafdc0be5ec49749bc62181d2dce64d9fe",
+      "bytes": 4551
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\data.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\data.cpython-312.pyc",
+      "sha256": "3993b13beab11de3275f5e6f9af2be4467da435f81622e92f3e36135f112f6cf",
+      "bytes": 25087
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\engine.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\engine.cpython-312.pyc",
+      "sha256": "5f42315124503d7c42271e7c7b437866b54746a3d29f33722e837344774b63a1",
+      "bytes": 21546
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\head.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\head.cpython-312.pyc",
+      "sha256": "5a16b9e14c3e62f7beb3c9b65235151b4a9e386ac07e73877e3979fa00b5368b",
+      "bytes": 7703
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\report.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\report.cpython-312.pyc",
+      "sha256": "b651dc80838b2c8425efc340224f96d8e295dcf3a8d55f4fe388070489e9b8a3",
+      "bytes": 9998
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\run.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\run.cpython-312.pyc",
+      "sha256": "9b6d8ac3a167d1371ceaede5266020315dc53073b87a8e54ab532734d419b569",
+      "bytes": 14797
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__\\test_real_iid.cpython-312.pyc",
+      "relative_path": "experiments\\real_iid\\__pycache__\\test_real_iid.cpython-312.pyc",
+      "sha256": "75bb794cc886806eea118abaf284d239e651a3b781f34442e7f7d30329cf4c48",
+      "bytes": 22310
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\config.py",
+      "relative_path": "experiments\\real_iid\\config.py",
+      "sha256": "2925f04777916cc75264e7a1b1e4d94d760834eb39ef3d8f0df24038b52fe75f",
+      "bytes": 2992
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\data.py",
+      "relative_path": "experiments\\real_iid\\data.py",
+      "sha256": "083f95c4387644e8edc362c7ada6c9386dd550654c3ae45e270e4c5f8918f6f5",
+      "bytes": 14490
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\engine.py",
+      "relative_path": "experiments\\real_iid\\engine.py",
+      "sha256": "31322b898e49eb5f569633dd9ddafb097e8218443e84d56fb6c067198c1ed9d0",
+      "bytes": 13886
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\head.py",
+      "relative_path": "experiments\\real_iid\\head.py",
+      "sha256": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+      "bytes": 3937
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\report.py",
+      "relative_path": "experiments\\real_iid\\report.py",
+      "sha256": "ed69d3ed99af787c8f2ff708d185bca05d60a4f7c8fa5fc167f424ec6ee558b5",
+      "bytes": 7068
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\run.py",
+      "relative_path": "experiments\\real_iid\\run.py",
+      "sha256": "cb85982b257d6b88991f77a891033db74fe33af94c978b1f33335a70da6c227b",
+      "bytes": 11154
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\test_real_iid.py",
+      "relative_path": "experiments\\real_iid\\test_real_iid.py",
+      "sha256": "e876711768253a5ec4d820a638a117b4d48209b53eeacab67345ee0edecc41b4",
+      "bytes": 11491
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\analyze_overhead_holdout.py",
+      "relative_path": "work\\analyze_overhead_holdout.py",
+      "sha256": "c6da5ef2a3875850920445eccdf2a6f3a7177cf517751142fc9ac1e9b17c2918",
+      "bytes": 17540
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\analyze_overhead_holdout_original_env.py",
+      "relative_path": "work\\analyze_overhead_holdout_original_env.py",
+      "sha256": "f7c7ae82f497e38450e8cd5b4a4c2910947c95842a569ed5afb719da6b3896c8",
+      "bytes": 359
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\audit_20261018\\neutral_review\\prototype.py",
+      "relative_path": "work\\audit_20261018\\neutral_review\\prototype.py",
+      "sha256": "9022a3bf534d6af3a4ebb214b1019ba3a33c3a359fc7d8e32c4cc0ca893a8616",
+      "bytes": 12517
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\audit_20261018\\prepare_review_sources.py",
+      "relative_path": "work\\audit_20261018\\prepare_review_sources.py",
+      "sha256": "dc02d8f78cfb6fee32471e9491413e82b14040b535055e2d660d7fef716f0994",
+      "bytes": 2294
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\audit_real_iid_results_20261029.py",
+      "relative_path": "work\\audit_real_iid_results_20261029.py",
+      "sha256": "165182414b6b7c18be81027d6a8452051a9d5620b6a8cdf8f70c076e2d8be2dc",
+      "bytes": 12232
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\build_audit_v2.py",
+      "relative_path": "work\\build_audit_v2.py",
+      "sha256": "a7d686061516c3ee91609b75cc60e970f0da53ac203aa37890c6a33417036293",
+      "bytes": 3881
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\continue_overhead_sweep.py",
+      "relative_path": "work\\continue_overhead_sweep.py",
+      "sha256": "111bd48048b93fcfbe34be71348d3be7f16a718405bd03500d22f36d9c36fb3b",
+      "bytes": 7182
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\finalize_relation_artifacts.py",
+      "relative_path": "work\\finalize_relation_artifacts.py",
+      "sha256": "fd31feb8fd6f09efc3f1307aa76f7f6287f81a278bd07610d8ef6598aaff4398",
+      "bytes": 1633
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\package_relation_results.py",
+      "relative_path": "work\\package_relation_results.py",
+      "sha256": "c449ce8678dd97f48628a0c74d058723c866bc743eb4e21e26e776c798cd6c69",
+      "bytes": 2125
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\relation_cert_validation.py",
+      "relative_path": "work\\relation_cert_validation.py",
+      "sha256": "9022a3bf534d6af3a4ebb214b1019ba3a33c3a359fc7d8e32c4cc0ca893a8616",
+      "bytes": 12517
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\review_relation_final_checks.py",
+      "relative_path": "work\\review_relation_final_checks.py",
+      "sha256": "0c233515fdd3d24c9ef1ca0af516d191231ed44278ac47c8d18cdd2e399f300f",
+      "bytes": 1987
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\reviewer_cert_check.py",
+      "relative_path": "work\\reviewer_cert_check.py",
+      "sha256": "b837a408516a2272cff2472abfc8659fe236cd96cc92c5ad7ff38d180fba3bfd",
+      "bytes": 4574
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\run_overhead_holdout.py",
+      "relative_path": "work\\run_overhead_holdout.py",
+      "sha256": "4303f22ef8163d4872d1d5ce1eac0f0804d700c6df0e242d9881442493da2804",
+      "bytes": 9483
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\run_overhead_holdout_original_env.py",
+      "relative_path": "work\\run_overhead_holdout_original_env.py",
+      "sha256": "6b3d85df3e6b27d395eb4d4315f286d8b3e093f7ac0876a88308f8198a056a57",
+      "bytes": 1404
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\verify_binary_relations.py",
+      "relative_path": "work\\verify_binary_relations.py",
+      "sha256": "279f46579c4dede5c07a8b39a3b5b8231a8d6cc742a64c9c2a0faaf6f32768eb",
+      "bytes": 7577
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\verify_binary_relations_v2.py",
+      "relative_path": "work\\verify_binary_relations_v2.py",
+      "sha256": "9bb3f4ba8af7cccd3a0eb26f288fce5b3499ba53c40c8a70a5d67d3c0711bd98",
+      "bytes": 8957
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\work\\verify_codec_boundaries.py",
+      "relative_path": "work\\verify_codec_boundaries.py",
+      "sha256": "60901d75bfbb4aac5fb22f2cf3aa8ba3b52f5bd3866580090f1d51b5c6ad608c",
+      "bytes": 786
+    }
+  ]
+}

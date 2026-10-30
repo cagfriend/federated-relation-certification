@@ -1,0 +1,5 @@
+method,profiles,persistent_method_array_bytes_median,persistent_method_array_bytes_min,persistent_method_array_bytes_max,tracemalloc_peak_bytes_median,tracemalloc_peak_bytes_min,tracemalloc_peak_bytes_max,process_peak_working_set_bytes_median,process_peak_working_set_bytes_min,process_peak_working_set_bytes_max
+Local,3,614880,614880,614880,261355187,261352001,261356308,966918144,966115328,967102464
+B,3,653792,653792,653792,263446753,263446299,263447504,970215424,969801728,970526720
+E,3,7766816,7766816,7766816,328347773,328347340,328348183,988004352,986664960,988983296
+D,3,7766816,7766816,7766816,328372725,328372508,328373255,980574208,980385792,981852160

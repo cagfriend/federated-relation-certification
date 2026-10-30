@@ -1,0 +1,28 @@
+{
+  "deleted_sources": 32,
+  "deleted_bytecode": 20,
+  "preserved_noncode_files_verified": 742,
+  "reused_core": {
+    "certification.py": {
+      "previous_path": "experiments\\overhead_benchmark\\certification.py",
+      "sha256": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+      "exact_copy": true
+    },
+    "codec.py": {
+      "previous_path": "experiments\\overhead_benchmark\\codec.py",
+      "sha256": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+      "exact_copy": true
+    },
+    "protocol.py": {
+      "previous_path": "experiments\\overhead_benchmark\\protocol.py",
+      "sha256": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+      "exact_copy": true
+    },
+    "head.py": {
+      "previous_path": "experiments\\real_iid\\head.py",
+      "sha256": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+      "exact_copy": true
+    }
+  },
+  "note": "Deletion was explicitly requested. Historical source manifests may refer to removed paths; original result/data hashes are unchanged."
+}

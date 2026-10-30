@@ -1,0 +1,11 @@
+{
+  "seed": 505,
+  "case_id": "m16384_d1",
+  "method": "D",
+  "rounds": 200,
+  "tracemalloc_peak_bytes": 1305782334,
+  "process_peak_working_set_bytes": 1726369792,
+  "persistent_method_array_bytes": 27347744,
+  "scope": "isolated full head training with selected public prefix and metrics; no oracle or encoder preparation; instrumented times discarded",
+  "payload_sha256": "da50d7ad8bda7e1694d55992cb523978f23450f70a56878e4b690de386c744b4"
+}
