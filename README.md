@@ -12,7 +12,7 @@
 
 - [方法与每轮流程](docs/METHOD.md)：聚合什么、如何认证、基线区别和实现限制。
 - [已经完成的实验](docs/EXPERIMENTS.md)：配置、结果、证明范围与未解决问题。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：图密度与成本诊断已完成，下一步验证低成本E/D选择，再处理编码器更新和数据异构。
+- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：E/D选择实验已完成并记录动态负结果；优先新种子复核静态适用范围，再处理编码器更新和数据异构。
 - [运行与证据说明](docs/REPRODUCIBILITY.md)：当前代码运行方式、结果核验及历史脚本删除说明。
 - [最新公共库规模审阅](outputs/public_scaling_results_20261030/RESULTS_REVIEW.md)。
 
@@ -84,3 +84,20 @@ python -m experiments.public_scaling.run --preset smoke --suite all --download -
 负数表示D更慢；各列分别取配对中位数，不要求跨列精确相加。密图中教师节省收窄，位集合、端点处理及最终关系检查仍有成本，解释了上一轮密图优势消失。此表是插桩机制诊断，不能替代上一轮正式完整训练加速结果，也不证明自适应选择有效。
 
 [成本诊断审阅](outputs/cost_diagnostics_results_20261030/RESULTS_REVIEW.md) · [诊断运行说明](experiments/cost_diagnostics/README.md)
+
+
+## 新完成：连续缓存 E/D 路径选择（含负结果）
+
+公共样本4096、degree=1/4/8、三个既有seed，各200轮；重新确定性执行E训练捕获教师快照，对比固定E、固定D、简单static与adaptive四套独立连续缓存。以下为同seed配对后中位数，关系生成时间包含首次全量初始化和策略开销。
+
+|degree|固定D/E耗时比|adaptive/static耗时比|判断|
+|---:|---:|---:|---|
+|1|0.77871|1.17736|D有利；当前动态规则比静态慢17.74%|
+|4|1.00229|0.99830|接近持平，未获稳定动态收益|
+|8|1.10867|0.99571|D更慢；动态全程走E，微小领先不算选路收益|
+
+9组、36条策略回放完成；保存的383385600次关系检查、176947200次候选检查零误差。各策略协议字节与目标一致，E训练摘要/评估对齐历史。degree8的E/static/adaptive逐轮缓存摘要相同，因此不能把约0.4%的计时差归因为动态算法收益。稀疏图D的优势保留，**当前动态启发式没有超过简单静态规则**；此结论不代表所有自适应策略无效。
+
+这轮是已知轨迹的生成/协议开销探索，不是四套完整训练的端到端测速，也不是新种子确认；没有新增通信压缩。degree×width拆分只用于提出下一步静态候选，不能把事后选出的规则当作已验证结论。
+
+[路径选择完整审阅](outputs/path_selection_results_20261030/RESULTS_REVIEW.md) · [运行与计时说明](experiments/path_selection/README.md)

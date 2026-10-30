@@ -1,0 +1,35 @@
+{
+  "reference": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\graph_density\\results_graph",
+  "reference_completion_sha256": "858b1bfff319333f06951318c77cd6d6aa187f0f56a6cabb5c213c8ae4ad074f",
+  "source_hashes": {
+    "__init__.py": "285945a8d80af93316a7b75ce52599580218530ed5eb62597b1a842760494220",
+    "run.py": "b52133666269e56904dead2e62c6ad8da85755281c4095388f06212dedc18733",
+    "selection.py": "c3f735d45d57fef4fa23b2297016a47a5465eeda38d183354354f470422f8f70",
+    "test_selection.py": "bf33da9818ef0286aab1a370ff590842bf6fac156429507e473d252a5d9606c1"
+  },
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "preset": "full",
+  "rule": {
+    "version": 1,
+    "static_D_max_degree": 1,
+    "refresh_threshold_at_width_2048_degree_1": 0.15,
+    "width_reference": 2048,
+    "adaptive_condition": "last_refresh_fraction * degree <= 0.15 * width / 2048",
+    "first_post_bootstrap": "static",
+    "timing_feedback": false
+  }
+}

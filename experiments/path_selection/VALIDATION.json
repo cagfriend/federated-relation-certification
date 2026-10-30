@@ -1,0 +1,21 @@
+{
+  "formal_run_started": false,
+  "unit_tests_passed": 4,
+  "smoke_case_seed_count": 9,
+  "smoke_policy_replays": 36,
+  "smoke_relation_comparisons": 14976,
+  "smoke_candidate_membership_comparisons": 6912,
+  "mismatches": 0,
+  "smoke_resume_preserved_case_count": 9,
+  "formal_preflight_passed": true,
+  "source_hashes": {
+    "__init__.py": "285945a8d80af93316a7b75ce52599580218530ed5eb62597b1a842760494220",
+    "run.py": "b52133666269e56904dead2e62c6ad8da85755281c4095388f06212dedc18733",
+    "selection.py": "c3f735d45d57fef4fa23b2297016a47a5465eeda38d183354354f470422f8f70",
+    "test_selection.py": "bf33da9818ef0286aab1a370ff590842bf6fac156429507e473d252a5d9606c1"
+  },
+  "unchanged_core_files": 13,
+  "removed_published_py_files": 8,
+  "unchanged_retained_old_files": 101,
+  "note": "Runtime oracle assertions plus sealed summaries; full cache arrays and snapshots are not saved"
+}

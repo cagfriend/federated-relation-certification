@@ -88,3 +88,19 @@ python -m experiments.cost_diagnostics.run --resume
 默认来源为原机器的 `experiments/graph_density/results_graph`，依赖未上传的准备缓存、相同源码与环境；新克隆机器不能直接恢复这些原机器路径。需要先在新机器生成自己的完整三seed graph参考结果，再用 `--reference` 指向它。可直接读取汇总与审阅；无损解压归档后可核对原始文件摘要，但这不等于重做训练。
 
 诊断独立冻结四个新增源码文件，保持原训练核心13个源码不变。两项针对性测试及缩小路径/恢复验证记录随包保存。计时边界、运行命令和输出见 [成本诊断README](../experiments/cost_diagnostics/README.md)。原始计时记录保留字节不变，不用插桩墙钟宣布完整训练加速。
+
+
+## 连续缓存路径选择入口
+
+```powershell
+python -m unittest experiments.path_selection.test_selection -v
+python -m experiments.path_selection.run --preset full --check-only
+python -m experiments.path_selection.run --preset full
+python -m experiments.path_selection.run --preset full --resume
+```
+
+正式结果已完成。默认参考 `experiments/graph_density/results_graph`，在原环境重跑E一次并核对历史摘要；不是从旧JSON还原教师权重。原机器准备缓存不上传，新机器需要先生成自己的完整三seed graph参考与有效准备资产，再用 `--reference` 指向它。原始大JSON解压恢复后可以核对文件哈希，但不能重建未保存的完整权重或缓存数组。
+
+性能口径详见[新实验README](../experiments/path_selection/README.md)。`VALIDATION.json`和包内`INDEPENDENT_REVIEW.md`记录运行前的小规模检查；本轮正式结果审阅位于[结果审阅](../outputs/path_selection_results_20261030/RESULTS_REVIEW.md)，二者不要混作同一轮性能证据。所有正式记录字节保持不变，九组原始case已无损归档。
+
+按用户要求清理的是原工作区已完成旧实验的本地执行源码，结果与共同依赖保留。GitHub既有代码和历史均保留，供复现旧实验；本次新增源码使用独立package，公共核心13个源码哈希不变。

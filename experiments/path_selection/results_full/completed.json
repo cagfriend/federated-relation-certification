@@ -1,0 +1,24 @@
+{
+  "case_count": 9,
+  "shared_training_trajectories": 9,
+  "policy_replays": 36,
+  "relation_comparisons": 383385600,
+  "candidate_membership_comparisons": 176947200,
+  "mismatches": 0,
+  "files": {
+    "environment.json": "5630c4788d7999c097867c5ea2f2a512b6716f4d5f7f2a4f2696f526087977a7",
+    "m4096_d1_seed_404.json": "9b46689fe42b97948f64b71dba8a31f0264d9b7e09e487cdcc9e4156968fe28a",
+    "m4096_d1_seed_505.json": "5b1e1b71a5d61f6aa86e7d207d3d9ac5b3fcbcb3faaa32c6afc5eac9919b1687",
+    "m4096_d1_seed_606.json": "bad39a0f65e485364201cdfe7f345758dca27745d5dc6b5c1078b939d1951edb",
+    "m4096_d4_seed_404.json": "f920b9d2cd34a5dadb0f0ca30a69a28912d07d7c918c72b720a87609abe93891",
+    "m4096_d4_seed_505.json": "228b01181b439fff6c58b033080b0a094c4de474bd11617052b94fac00c4822a",
+    "m4096_d4_seed_606.json": "7182384fb018eed23f78138e811087144841e010d6794617c110fe681e128164",
+    "m4096_d8_seed_404.json": "91a4528a187da2ad64206a61435bbba78da1882855300203f27c7ad46998293f",
+    "m4096_d8_seed_505.json": "e099d25c7b2d8315da3b3926afc79a5632e39c379d635405e88050a1aa5b5472",
+    "m4096_d8_seed_606.json": "997ad3d777441c6cde5c0ea6cc6f2edd28d3ca59df6a43a9972aa7e36ebba176",
+    "report.md": "d4cedc9be17297cf2fc754aacf55f390651cceb2a60d770e650f9b37ab04f9f4",
+    "summary.csv": "74335b289abfaf39cb491492d36ce51f31e49da5a2dab648647c89b6c074c196",
+    "summary.json": "54b260794466da9ec75c2acd6029e3d7cb630719bf78a8ee32bba9503490c04e"
+  },
+  "note": "Exploratory snapshot replay, not end-to-end speed or new-seed confirmation"
+}
