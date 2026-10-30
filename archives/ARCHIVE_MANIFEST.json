@@ -826,5 +826,221 @@
         "sha256": "997ad3d777441c6cde5c0ea6cc6f2edd28d3ca59df6a43a9972aa7e36ebba176"
       }
     ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_control_sparse_seed_404.zip",
+    "bytes": 65923,
+    "sha256": "cd2874778b7a44535afa2ebb0cf4ce32497f0c534af7b9d10a3f6f5e72d106e5",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/control_sparse_seed_404.json",
+        "bytes": 652198,
+        "sha256": "2a68b7e95476eaba5177ae2dd134558001dbd5809e393db5dacbadb3b49c14fe"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_control_sparse_seed_505.zip",
+    "bytes": 66010,
+    "sha256": "aff78d490a14a34cb59c26ddd5bc869c9c8f983e77d3a65c9cab7647786fbf8a",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/control_sparse_seed_505.json",
+        "bytes": 652242,
+        "sha256": "07e145479542bfb24f4bca82f02fac23b5f1ab1d0deedcb43e22112d0f03cf5d"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_control_sparse_seed_606.zip",
+    "bytes": 65743,
+    "sha256": "569100be34261e61902909c28c7b9453d51f1ff480d0dcedce3cb7af2f53e3e9",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/control_sparse_seed_606.json",
+        "bytes": 652242,
+        "sha256": "1fb9eba0fc9fe205f72c24c063fd1d960afabbd1ef9644eb8764aa8414ab5e36"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_dense_seed_404.zip",
+    "bytes": 66691,
+    "sha256": "86aff62b8a39f9ac485e273269f79a801700baa414692b67c8fdc823b665cc02",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_dense_seed_404.json",
+        "bytes": 812288,
+        "sha256": "60e1a40986873f7c906484936d6c0c57c561ce6a76fbbe10e4b6e1062ab7b94f"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_dense_seed_505.zip",
+    "bytes": 66646,
+    "sha256": "00ca1f5ee04d9fbe2824fa7fb8167f959749e38ae1d51a22e76eedd446ab5774",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_dense_seed_505.json",
+        "bytes": 812283,
+        "sha256": "2eb5d9ed3a5adc6bdc879b070eb6879c71155cf2966f3069bb97df3a3bd506c2"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_dense_seed_606.zip",
+    "bytes": 66552,
+    "sha256": "7df64fcfda147da77bb73f99f5195646e6acf1aa2de6731243e404ca5545096f",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_dense_seed_606.json",
+        "bytes": 812252,
+        "sha256": "244c594eb34674346e2305b5dea14d00501d74a12afdf5b52fb9936d767c8ce3"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_down_sparse_seed_404.zip",
+    "bytes": 69764,
+    "sha256": "47b40e97aa258848ab4a29aca22291a8d20db6c10b5936c17d542648458b906b",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_down_sparse_seed_404.json",
+        "bytes": 810994,
+        "sha256": "21abcb9779d555fd879dbafe3d7af2d1f8e695883528e162fde880153e067cd3"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_down_sparse_seed_505.zip",
+    "bytes": 69630,
+    "sha256": "d9b6d47141fb43bd7b7c50d6620b42b9c45120f2ec0c42f92b7a7518674dc3a1",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_down_sparse_seed_505.json",
+        "bytes": 810973,
+        "sha256": "ff6ea50ec4235217610c8cf022df89e2d38bdcd351668a6d79448c5bd36b1047"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_down_sparse_seed_606.zip",
+    "bytes": 69736,
+    "sha256": "fac1589f206c9267c8f6c15be730e193627158235f4228bd8c42f9db83e4fef9",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_down_sparse_seed_606.json",
+        "bytes": 810991,
+        "sha256": "7f0f1ef6881b99c721e9d0bcb532d87a8eb7b97d57562967b0e61ba56775ccc9"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_upload_sparse_seed_404.zip",
+    "bytes": 68161,
+    "sha256": "1f82999b7e1bcd0256f140f96d57e33c1c03eff324bb862859dde3f0392ee40d",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_upload_sparse_seed_404.json",
+        "bytes": 810518,
+        "sha256": "ea39eccc5824caeabc84cfa2b7ad99c50c83763f2ff39152d562dfb37ed5cd65"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_upload_sparse_seed_505.zip",
+    "bytes": 68001,
+    "sha256": "a7b7a50263140ed64bdc445666c56353e7f78ffc492783c2ce161e1af323e049",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_upload_sparse_seed_505.json",
+        "bytes": 810519,
+        "sha256": "e114fc1bd693a465ddb3257926ad147b88b85b93a49501cb0b147ccb5947b98a"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_crash_upload_sparse_seed_606.zip",
+    "bytes": 68118,
+    "sha256": "1c73196276b3420fe495e3fc5bff87b7f0b33ee0f36f5be9178059f4ea05e1f6",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/crash_upload_sparse_seed_606.json",
+        "bytes": 810523,
+        "sha256": "f9c4c85105f3cc82a3672aeb6dacd2fd0cd9e90e25d0bebb4bd5b77f71516b41"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_frequent_crash_seed_404.zip",
+    "bytes": 71462,
+    "sha256": "c34bf2f031576bbf87a98541c706b603fe0bfe3cdd41a0f581ce54b0334641f8",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/frequent_crash_seed_404.json",
+        "bytes": 856717,
+        "sha256": "48817513e736284ea040327e600320726c3956bc087efcf7bbe8371abec46230"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_frequent_crash_seed_505.zip",
+    "bytes": 71504,
+    "sha256": "190e743f18aa504a65a3d2d4e0dbbb795afd1ea732aeb3fd5766ad543398f56a",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/frequent_crash_seed_505.json",
+        "bytes": 856754,
+        "sha256": "d3e8acc8991e671ae08b715bc794feb21e7d30f7deb84cdf7fdcb3425e6f896a"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_frequent_crash_seed_606.zip",
+    "bytes": 71401,
+    "sha256": "432d712e2faa763af61642d9d64e1eb42a6030e0acce2073857c741ee19636bd",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/frequent_crash_seed_606.json",
+        "bytes": 856750,
+        "sha256": "6847323f4d87c24e1e298cb9eedf52ffd86ea69c154731146e0c48690305934b"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_handoff_sparse_seed_404.zip",
+    "bytes": 67732,
+    "sha256": "4471fa9406d03abaac147ced1abafd624c9b88933bcb80abfd0ce49b6c24eb37",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/handoff_sparse_seed_404.json",
+        "bytes": 759739,
+        "sha256": "708f0a9ca97da7c9d5f5ae94d75b23a1bef65956b5de2dcb8ac318cc772de6fe"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_handoff_sparse_seed_505.zip",
+    "bytes": 67626,
+    "sha256": "c78a316fd53505f98649cd4611f4797204b60194a2e30902aa4cff121ec8f992",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/handoff_sparse_seed_505.json",
+        "bytes": 759725,
+        "sha256": "af12560319cfe7e608f1816d3cc8939e89cc7be4673562bbd642ce45514c6d9f"
+      }
+    ]
+  },
+  {
+    "archive": "archives/aggregator_recovery_raw_records_handoff_sparse_seed_606.zip",
+    "bytes": 67488,
+    "sha256": "458f359f5b9581c0dd2fb6cc56f76911386d3112306efd6baba3a0401a0289c7",
+    "files": [
+      {
+        "path": "experiments/aggregator_recovery/results_full/handoff_sparse_seed_606.json",
+        "bytes": 759750,
+        "sha256": "22ae0899679310c9ab826e040295de4d30bd9d3e1ea5410ccba1895ac4f58198"
+      }
+    ]
   }
 ]

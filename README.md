@@ -12,7 +12,7 @@
 
 - [方法与每轮流程](docs/METHOD.md)：聚合什么、如何认证、基线区别和实现限制。
 - [已经完成的实验](docs/EXPERIMENTS.md)：配置、结果、证明范围与未解决问题。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：E/D选择实验已完成并记录动态负结果；优先新种子复核静态适用范围，再处理编码器更新和数据异构。
+- [后续实验计划](docs/NEXT_EXPERIMENTS.md)：聚合者恢复协议实验已完成，通信收益未获支持；新种子复核暂缓，非IID主场景仍必做。
 - [运行与证据说明](docs/REPRODUCIBILITY.md)：当前代码运行方式、结果核验及历史脚本删除说明。
 - [最新公共库规模审阅](outputs/public_scaling_results_20261030/RESULTS_REVIEW.md)。
 
@@ -101,3 +101,10 @@ python -m experiments.public_scaling.run --preset smoke --suite all --download -
 这轮是已知轨迹的生成/协议开销探索，不是四套完整训练的端到端测速，也不是新种子确认；没有新增通信压缩。degree×width拆分只用于提出下一步静态候选，不能把事后选出的规则当作已验证结论。
 
 [路径选择完整审阅](outputs/path_selection_results_20261030/RESULTS_REVIEW.md) · [运行与计时说明](experiments/path_selection/README.md)
+
+
+## 新完成：聚合者交接与恢复协议
+
+18组/54条回放正确性核验通过，累计通信优化未获支持。按需在线交接总字节多约0.17%；热备在所有已测场景多9.3%–23.1%，持久数组多33.3%。这是合成关系上的可靠内存序列化协议，不是模型训练或真实网络容错。
+
+[完整结果审阅](outputs/aggregator_recovery_results_20261030/RESULTS_REVIEW.md) · [运行说明](experiments/aggregator_recovery/README.md)

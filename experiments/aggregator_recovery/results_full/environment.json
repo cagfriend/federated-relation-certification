@@ -1,0 +1,103 @@
+{
+  "preset": "full",
+  "plan": [
+    {
+      "name": "control_sparse",
+      "event": "none",
+      "degree": 1,
+      "change": 0.001,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": false
+    },
+    {
+      "name": "handoff_sparse",
+      "event": "handoff",
+      "degree": 1,
+      "change": 0.001,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": false
+    },
+    {
+      "name": "crash_upload_sparse",
+      "event": "crash_upload",
+      "degree": 1,
+      "change": 0.001,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": false
+    },
+    {
+      "name": "crash_down_sparse",
+      "event": "crash_down",
+      "degree": 8,
+      "change": 0.001,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": false
+    },
+    {
+      "name": "frequent_crash",
+      "event": "crash_upload",
+      "degree": 8,
+      "change": 0.001,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": true
+    },
+    {
+      "name": "crash_dense",
+      "event": "crash_upload",
+      "degree": 8,
+      "change": 0.2,
+      "samples": 4096,
+      "rounds": 200,
+      "clients": 6,
+      "rejoin_after": 3,
+      "frequent": false
+    }
+  ],
+  "seeds": [
+    404,
+    505,
+    606
+  ],
+  "source_hashes": {
+    "__init__.py": "1542ae0febb45f5d8969f9b3fb592fcbc07ad1a5a138e262415a5d70899fe2d7",
+    "protocol.py": "cf9d05aa379ecc64c9f52133f8f3b01a60863303fdaaa90351d5858c8b45fad9",
+    "run.py": "bcc332a97412c28ce24a7548b080b16274b40e28393fa6756f39f50c3216aa3a",
+    "test_recovery.py": "bcb2fbfd2535f79d7bc834251c98826d002268cf0309b903487cb7c36eb6d21f"
+  },
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "runtime": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda\\python.exe",
+    "numpy": "1.26.4"
+  },
+  "failure_model": "single crash-stop before atomic commit; reliable injected membership; no partition/commit-broadcast faults"
+}

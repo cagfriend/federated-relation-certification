@@ -104,3 +104,16 @@ python -m experiments.path_selection.run --preset full --resume
 性能口径详见[新实验README](../experiments/path_selection/README.md)。`VALIDATION.json`和包内`INDEPENDENT_REVIEW.md`记录运行前的小规模检查；本轮正式结果审阅位于[结果审阅](../outputs/path_selection_results_20261030/RESULTS_REVIEW.md)，二者不要混作同一轮性能证据。所有正式记录字节保持不变，九组原始case已无损归档。
 
 按用户要求清理的是原工作区已完成旧实验的本地执行源码，结果与共同依赖保留。GitHub既有代码和历史均保留，供复现旧实验；本次新增源码使用独立package，公共核心13个源码哈希不变。
+
+
+## 聚合者交接与恢复协议
+
+```powershell
+python -m unittest experiments.aggregator_recovery.test_recovery -v
+python -m experiments.aggregator_recovery.run --preset full
+python -m experiments.aggregator_recovery.run --preset full --resume
+```
+
+该包不依赖Fashion-MNIST或旧准备缓存，输入由seed生成合法共簇关系。保持实验及公共核心源码、Python/NumPy版本才可恢复原记录。完整配置包含18组/54条协议回放，非训练实验；运行前smoke证据在包内VALIDATION.json，正式结果另见 outputs/aggregator_recovery_results_20261030/RESULTS_REVIEW.md。
+
+原始18个case已无损归档，解压后可以用同seed重建输入核对保存目标与通信分类账，但结果摘要不能还原完整消息执行历史。ACK、可靠原子提交/复制屏障和未覆盖故障边界详见实验README。GitHub既有代码继续保留供复现；清除旧实验源码只发生在原工作区，未删除历史记录。

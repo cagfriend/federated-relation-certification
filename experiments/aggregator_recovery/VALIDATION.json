@@ -1,0 +1,20 @@
+{
+  "formal_run_started": false,
+  "unit_tests_passed": 6,
+  "source_hashes": {
+    "__init__.py": "1542ae0febb45f5d8969f9b3fb592fcbc07ad1a5a138e262415a5d70899fe2d7",
+    "protocol.py": "cf9d05aa379ecc64c9f52133f8f3b01a60863303fdaaa90351d5858c8b45fad9",
+    "run.py": "bcc332a97412c28ce24a7548b080b16274b40e28393fa6756f39f50c3216aa3a",
+    "test_recovery.py": "bcb2fbfd2535f79d7bc834251c98826d002268cf0309b903487cb7c36eb6d21f"
+  },
+  "unchanged_core_sources": 13,
+  "smoke_cases": 18,
+  "smoke_policy_replays": 54,
+  "smoke_counts_comparisons": 221472,
+  "mismatches": 0,
+  "smoke_resume_preserved_cases": 18,
+  "output_hashes_checked": 22,
+  "old_source_files_archived_removed": 4,
+  "old_retained_result_document_files_unchanged": 32,
+  "scope": "Synthetic legitimate co-cluster trace, serialized reliable-memory protocol; no model training or actual network"
+}

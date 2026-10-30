@@ -200,3 +200,31 @@ adaptive 的决策判断主体每组累计约 0.00357–0.00406 秒，覆盖 1,1
 本实验支持连续缓存切换的实现正确性，但当前冻结的动态启发式没有显示优于简单静态选择的额外收益，应保留为负结果；它也不能证明所有自适应策略都无效。当前三个种子均曾参与探索，尚不是独立新种子确认。四个策略未各自重跑完整 SGD，因此不报告新的端到端训练加速、独立聚类质量增益或防止塌缩的保证。优先后续工作是冻结简单静态规则并用新种子复核适用范围；更新编码器、数据非 IID、真实网络及临时聚合者选举/掉线仍待验证。
 
 证据：[结果审阅](../outputs/path_selection_results_20261030/RESULTS_REVIEW.md)、[审计 JSON](../outputs/path_selection_results_20261030/audit.json)、[独立复审](../outputs/path_selection_results_20261030/INDEPENDENT_REVIEW.md)、[逐种子配对汇总](../experiments/path_selection/results_full/summary.json)、[宽度拆分](../outputs/path_selection_results_20261030/width_summary.csv)、[运行及计时说明](../experiments/path_selection/README.md)。原始逐轮大 JSON 保存在[无损归档](../archives/README.md)中。
+
+
+## 7. 临时聚合者交接与故障恢复协议
+
+### 配置与方法
+
+合成样本簇轨迹产生合法共簇关系，公共样本4096、6客户端、200轮、三个seed；图度1/8，覆盖无故障、在线交接、上传中故障、下发中故障、频繁故障及较大关系变化。18组配置-seed、54条协议回放。比较rebuild全量收集当前关系、on_demand在线交接旧提交库/故障时重建、hot_backup每轮复制后接管。输入生成不计入协议耗时，不运行模型训练。
+
+### 配对结果
+
+同seed策略/rebuild总字节比取三seed中位数；包含setup、数据/控制/ACK、废弃尝试、交接、重试、重入、正常复制与新候补同步。
+
+|场景|on_demand总字节比|hot_backup总字节比|hot_backup事件轮字节比|
+|---|---:|---:|---:|
+|无故障|1.00000|1.17640|无事件|
+|在线交接|1.00173|1.17315|1.06524|
+|稀疏上传中故障|1.00000|1.17614|1.05425|
+|稀疏下发中故障|1.00000|1.09308|1.01449|
+|频繁故障|1.00000|1.12222|1.01495|
+|较大变化故障|1.00000|1.23053|1.21962|
+
+### 解释与边界
+
+恢复功能通过检查，当前交接/热备没有显示累计通信收益。on_demand在线交接多822字节，两次事件合计；突然故障走与rebuild相同的路径/通信账。hot_backup所有场景总字节都增加9.31%–23.05%，三seed均未胜出；持久数组内存多33.33%，本地处理时间多约20.3%–32.8%。事件轮字节包含该轮全部工作，不能误作纯恢复快照大小。
+
+592275456次计数检查零误差；成员、任期、提交版本、关系/目标摘要均与重建seed oracle一致。主审核对22个产物、4个实验源码和13个公共核心源码，重生成报表逐字节一致，独立复审重算配对指标。只证明声明的单故障可靠内存模型，最终提交/复制屏障可靠，统一存活名单由注入器给出；不覆盖提交传播中故障、分区、双故障或拜占庭。没有真实网络、学生训练、聚类质量或模型恢复证据，不将本地处理计时写作部署恢复停顿。
+
+证据：[完整审阅](../outputs/aggregator_recovery_results_20261030/RESULTS_REVIEW.md)、[审计JSON](../outputs/aggregator_recovery_results_20261030/audit.json)、[独立复审](../outputs/aggregator_recovery_results_20261030/INDEPENDENT_REVIEW.md)、[逐seed汇总](../experiments/aggregator_recovery/results_full/summary.csv)。原始18个case JSON无损ZIP归档。
