@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "partition": "iid",
+  "seed": 404,
+  "config": {
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "public_pool": 16384,
+    "classes": 10,
+    "train_limit": 60000,
+    "test_limit": 10000,
+    "pretrain_epochs": 5,
+    "pretrain_batch": 256,
+    "prepare_threads": 4,
+    "feature_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cuda",
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "threads": 1
+  },
+  "dataset": "Fashion-MNIST",
+  "partition_algorithm": "public_scaling.split_indices",
+  "partition_module_sha256": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+  "source_indices": {
+    "public_ids.npy": "e576a4cf5c7e6d2edf5c3ae9cedd9db9515fd0b71b69556b25b0166409b32bce",
+    "client_0_private_ids.npy": "e44bb9444eac450a09d82f004cb93057b294dfac914bb81768a750894911e733",
+    "client_1_private_ids.npy": "72537188525e6aa73d6564850df40fc5add9f2efe77eb1b4be127eefa101f28f",
+    "client_2_private_ids.npy": "97d73b9a5f6e7b000567a6910b3710600cad093faee9f902e428ca7fe14a7908",
+    "client_3_private_ids.npy": "93c0d7ae3c869dbec499299558ae34cea1a452397fa7294aba90d9f9af77bfce",
+    "client_4_private_ids.npy": "74ffcd1c1e91b49355f3b25ec341a039eaf47adb4805f030ece51890e5867684",
+    "client_5_private_ids.npy": "f7a5a183adc1d02d7124d77d3127c474a0dbba689c00e8186c101ad8f28bebf6"
+  },
+  "diagnostics": {
+    "partition": "iid",
+    "alpha": null,
+    "public_count": 16384,
+    "private_count": 43616,
+    "client_counts": [
+      7270,
+      7270,
+      7269,
+      7269,
+      7269,
+      7269
+    ],
+    "client_class_histograms": [
+      [
+        737,
+        704,
+        742,
+        743,
+        742,
+        763,
+        716,
+        715,
+        739,
+        669
+      ],
+      [
+        736,
+        665,
+        771,
+        705,
+        747,
+        729,
+        719,
+        729,
+        730,
+        739
+      ],
+      [
+        712,
+        756,
+        709,
+        759,
+        694,
+        740,
+        757,
+        747,
+        712,
+        683
+      ],
+      [
+        722,
+        750,
+        730,
+        689,
+        738,
+        738,
+        721,
+        725,
+        738,
+        718
+      ],
+      [
+        728,
+        776,
+        692,
+        727,
+        739,
+        709,
+        701,
+        715,
+        721,
+        761
+      ],
+      [
+        720,
+        737,
+        722,
+        735,
+        724,
+        706,
+        714,
+        739,
+        729,
+        743
+      ]
+    ],
+    "client_entropy_nats": [
+      2.3019723308286553,
+      2.301918459015936,
+      2.3019082663000767,
+      2.3023476170200685,
+      2.30201094286635,
+      2.302465582919613
+    ],
+    "client_missing_classes": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "private_class_totals": [
+      4355,
+      4388,
+      4366,
+      4358,
+      4384,
+      4385,
+      4328,
+      4370,
+      4369,
+      4313
+    ],
+    "indices_sha256": "7ad13526c81710f5a17ab38e5eed24993cbb6130e0c4b18d147cab8a53fc3d1c"
+  }
+}

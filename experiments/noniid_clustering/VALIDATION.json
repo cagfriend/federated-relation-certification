@@ -1,0 +1,38 @@
+{
+  "formal_training_started": false,
+  "unit_tests_passed": 4,
+  "smoke_cases": 9,
+  "smoke_training_trajectories": 36,
+  "smoke_memory_replays": 36,
+  "relation_comparisons": 2592,
+  "candidate_membership_comparisons": 3456,
+  "mismatches": 0,
+  "smoke_resume_preserved_cases": 9,
+  "source_hashes": {
+    "__init__.py": "daabbbba28cab72924289c9668b133cd771936acc114329a0138778f6daf7812",
+    "data.py": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+    "engine.py": "096ed16689261299bceb632ba3e6e38a2275cb3e0cef27b6fddccd34d0784ef3",
+    "report.py": "22d32a869e56c8df3deb79144c8789d0b57c100f0bb9483c39c10b732d020350",
+    "run.py": "fbdf35634e9e7320e3b3b2bfcdbe9ae0cb0cd058a88e5e2e18460663608c33a1",
+    "test_noniid.py": "48ee1477bbe5f5564b732b6f8444a5152087270849589f1aff80bb9ee0515021"
+  },
+  "frozen_full_partition_checks": 9,
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "validated_smoke_output_hashes": 60,
+  "unchanged_previous_recovery_files": 22,
+  "scope": "Real official Fashion-MNIST smoke and official full-size split preflight, not full training performance evidence"
+}

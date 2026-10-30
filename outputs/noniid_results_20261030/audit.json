@@ -1,0 +1,678 @@
+{
+  "cases": 9,
+  "training_trajectories": 36,
+  "memory_replays": 36,
+  "verified_output_files": 60,
+  "unchanged_recovery_files": 22,
+  "relation_comparisons": 66355200,
+  "candidate_membership_comparisons": 88473600,
+  "mismatches": 0,
+  "regenerated_reports_byte_identical": true,
+  "official_partitions_reconstructed": 9,
+  "source_hashes": {
+    "__init__.py": "daabbbba28cab72924289c9668b133cd771936acc114329a0138778f6daf7812",
+    "data.py": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+    "engine.py": "096ed16689261299bceb632ba3e6e38a2275cb3e0cef27b6fddccd34d0784ef3",
+    "report.py": "22d32a869e56c8df3deb79144c8789d0b57c100f0bb9483c39c10b732d020350",
+    "run.py": "fbdf35634e9e7320e3b3b2bfcdbe9ae0cb0cd058a88e5e2e18460663608c33a1",
+    "test_noniid.py": "48ee1477bbe5f5564b732b6f8444a5152087270849589f1aff80bb9ee0515021"
+  },
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "splits": [
+    {
+      "seed": 404,
+      "partition": "dirichlet_0.1",
+      "mean_entropy_nats": 1.1558928431998987,
+      "missing_classes_per_client": [
+        3,
+        5,
+        4,
+        4,
+        2,
+        2
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 404,
+      "partition": "iid",
+      "mean_entropy_nats": 2.302103866491783,
+      "missing_classes_per_client": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 404,
+      "partition": "dirichlet_0.5",
+      "mean_entropy_nats": 1.8512907679939692,
+      "missing_classes_per_client": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 505,
+      "partition": "dirichlet_0.5",
+      "mean_entropy_nats": 1.646555410181126,
+      "missing_classes_per_client": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 505,
+      "partition": "dirichlet_0.1",
+      "mean_entropy_nats": 1.0127586668867783,
+      "missing_classes_per_client": [
+        5,
+        2,
+        1,
+        5,
+        5,
+        1
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 505,
+      "partition": "iid",
+      "mean_entropy_nats": 2.30195370176487,
+      "missing_classes_per_client": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 606,
+      "partition": "iid",
+      "mean_entropy_nats": 2.302049818992743,
+      "missing_classes_per_client": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 606,
+      "partition": "dirichlet_0.5",
+      "mean_entropy_nats": 1.846594347074569,
+      "missing_classes_per_client": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    },
+    {
+      "seed": 606,
+      "partition": "dirichlet_0.1",
+      "mean_entropy_nats": 1.2187291864354122,
+      "missing_classes_per_client": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "client_counts": [
+        7270,
+        7270,
+        7269,
+        7269,
+        7269,
+        7269
+      ]
+    }
+  ],
+  "details": [
+    {
+      "partition": "iid",
+      "ratios": [
+        {
+          "partition": "iid",
+          "comparison": "D/B",
+          "metric": "generation_seconds",
+          "median_ratio": 0.3044246620561079,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/B",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9422520908250122,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/B",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.9597170299502196,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/B",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 11.87964367872351,
+          "wins": 0,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/E",
+          "metric": "generation_seconds",
+          "median_ratio": 0.7505106186020087,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/E",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9895765989647106,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/E",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.9935919998022311,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "D/E",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 1.0,
+          "wins": 0,
+          "seeds": 3
+        }
+      ],
+      "quality_gains": [
+        {
+          "partition": "iid",
+          "comparison": "B-Local",
+          "metric": "nmi",
+          "median_difference": 4.897458142627542e-05,
+          "positive_seeds": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "B-Local",
+          "metric": "ari",
+          "median_difference": 0.00013375448124403055,
+          "positive_seeds": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "B-Local",
+          "metric": "acc",
+          "median_difference": 0.00029999999999996696,
+          "positive_seeds": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "iid",
+          "comparison": "B-Local",
+          "metric": "worst_acc",
+          "median_difference": 0.00019999999999997797,
+          "positive_seeds": 3,
+          "seeds": 3
+        }
+      ],
+      "seed_quality": [
+        {
+          "seed": 404,
+          "Local": {
+            "nmi": 0.578932402901955,
+            "ari": 0.39991920743022286,
+            "acc": 0.5439666666666667
+          },
+          "B": {
+            "nmi": 0.5789813774833813,
+            "ari": 0.40006491601544675,
+            "acc": 0.5442666666666667
+          }
+        },
+        {
+          "seed": 505,
+          "Local": {
+            "nmi": 0.5786451861336079,
+            "ari": 0.3988509299705966,
+            "acc": 0.5423999999999999
+          },
+          "B": {
+            "nmi": 0.5785811774880841,
+            "ari": 0.39880085772915175,
+            "acc": 0.54245
+          }
+        },
+        {
+          "seed": 606,
+          "Local": {
+            "nmi": 0.5796585005311227,
+            "ari": 0.39956691553497836,
+            "acc": 0.5442166666666667
+          },
+          "B": {
+            "nmi": 0.5797854085878853,
+            "ari": 0.3997006700162224,
+            "acc": 0.54455
+          }
+        }
+      ],
+      "Local_min_occupied_clusters_all_evals": 10,
+      "Local_max_largest_cluster_fraction_all_evals": 0.2243,
+      "B_min_occupied_clusters_all_evals": 10,
+      "B_max_largest_cluster_fraction_all_evals": 0.2334,
+      "memory_D_over_B_peak_median": 1.1090071402654837,
+      "persistent_D_minus_B_bytes": 7113024
+    },
+    {
+      "partition": "dirichlet_0.5",
+      "ratios": [
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/B",
+          "metric": "generation_seconds",
+          "median_ratio": 0.33093605510406826,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/B",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9497993569235007,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/B",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.9640445794361117,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/B",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 11.87964367872351,
+          "wins": 0,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/E",
+          "metric": "generation_seconds",
+          "median_ratio": 0.7491305373427559,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/E",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9909433196333236,
+          "wins": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/E",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.99350133719841,
+          "wins": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "D/E",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 1.0,
+          "wins": 0,
+          "seeds": 3
+        }
+      ],
+      "quality_gains": [
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "B-Local",
+          "metric": "nmi",
+          "median_difference": 0.0004958986647060071,
+          "positive_seeds": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "B-Local",
+          "metric": "ari",
+          "median_difference": 0.000869638627470859,
+          "positive_seeds": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "B-Local",
+          "metric": "acc",
+          "median_difference": 0.0007999999999999119,
+          "positive_seeds": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.5",
+          "comparison": "B-Local",
+          "metric": "worst_acc",
+          "median_difference": 0.0007999999999999674,
+          "positive_seeds": 3,
+          "seeds": 3
+        }
+      ],
+      "seed_quality": [
+        {
+          "seed": 404,
+          "Local": {
+            "nmi": 0.5376639118310597,
+            "ari": 0.35022220787162023,
+            "acc": 0.4749666666666667
+          },
+          "B": {
+            "nmi": 0.5376481040292856,
+            "ari": 0.3508369653433658,
+            "acc": 0.4757666666666666
+          }
+        },
+        {
+          "seed": 505,
+          "Local": {
+            "nmi": 0.5509900073388446,
+            "ari": 0.3650786456754023,
+            "acc": 0.47641666666666665
+          },
+          "B": {
+            "nmi": 0.5515032095024869,
+            "ari": 0.36653186091646733,
+            "acc": 0.47738333333333344
+          }
+        },
+        {
+          "seed": 606,
+          "Local": {
+            "nmi": 0.5411058714830308,
+            "ari": 0.35600262224001905,
+            "acc": 0.47613333333333346
+          },
+          "B": {
+            "nmi": 0.5416017701477368,
+            "ari": 0.3568722608674899,
+            "acc": 0.47681666666666667
+          }
+        }
+      ],
+      "Local_min_occupied_clusters_all_evals": 8,
+      "Local_max_largest_cluster_fraction_all_evals": 0.3627,
+      "B_min_occupied_clusters_all_evals": 8,
+      "B_max_largest_cluster_fraction_all_evals": 0.3658,
+      "memory_D_over_B_peak_median": 1.1090870505764123,
+      "persistent_D_minus_B_bytes": 7113024
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "ratios": [
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/B",
+          "metric": "generation_seconds",
+          "median_ratio": 0.4023478737228238,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/B",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9508354181707089,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/B",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.9712187865557571,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/B",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 11.87964367872351,
+          "wins": 0,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/E",
+          "metric": "generation_seconds",
+          "median_ratio": 0.7500007211244104,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/E",
+          "metric": "head_pipeline_seconds",
+          "median_ratio": 0.9869390646512575,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/E",
+          "metric": "shared_preparation_plus_head_seconds",
+          "median_ratio": 0.992472557027875,
+          "wins": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "D/E",
+          "metric": "persistent_array_bytes",
+          "median_ratio": 1.0,
+          "wins": 0,
+          "seeds": 3
+        }
+      ],
+      "quality_gains": [
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "B-Local",
+          "metric": "nmi",
+          "median_difference": -0.00024204132395105882,
+          "positive_seeds": 1,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "B-Local",
+          "metric": "ari",
+          "median_difference": 0.001738596262746528,
+          "positive_seeds": 3,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "B-Local",
+          "metric": "acc",
+          "median_difference": 0.003166666666666762,
+          "positive_seeds": 2,
+          "seeds": 3
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "comparison": "B-Local",
+          "metric": "worst_acc",
+          "median_difference": 0.014400000000000024,
+          "positive_seeds": 2,
+          "seeds": 3
+        }
+      ],
+      "seed_quality": [
+        {
+          "seed": 404,
+          "Local": {
+            "nmi": 0.4880779121100989,
+            "ari": 0.27149184194534864,
+            "acc": 0.3886166666666666
+          },
+          "B": {
+            "nmi": 0.4859503879271673,
+            "ari": 0.2726321031798902,
+            "acc": 0.3917833333333334
+          }
+        },
+        {
+          "seed": 505,
+          "Local": {
+            "nmi": 0.4736142290406748,
+            "ari": 0.27979126840346763,
+            "acc": 0.38051666666666667
+          },
+          "B": {
+            "nmi": 0.47486839954444365,
+            "ari": 0.28152986466621416,
+            "acc": 0.38023333333333326
+          }
+        },
+        {
+          "seed": 606,
+          "Local": {
+            "nmi": 0.46556650362973234,
+            "ari": 0.2620733090215834,
+            "acc": 0.37645
+          },
+          "B": {
+            "nmi": 0.4653244623057813,
+            "ari": 0.2643819256797433,
+            "acc": 0.3809
+          }
+        }
+      ],
+      "Local_min_occupied_clusters_all_evals": 8,
+      "Local_max_largest_cluster_fraction_all_evals": 0.6082,
+      "B_min_occupied_clusters_all_evals": 7,
+      "B_max_largest_cluster_fraction_all_evals": 0.6587,
+      "memory_D_over_B_peak_median": 1.1085178467540469,
+      "persistent_D_minus_B_bytes": 7113024
+    }
+  ]
+}

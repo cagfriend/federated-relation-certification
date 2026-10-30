@@ -1042,5 +1042,113 @@
         "sha256": "22ae0899679310c9ab826e040295de4d30bd9d3e1ea5410ccba1895ac4f58198"
       }
     ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.1_seed_404.zip",
+    "bytes": 128122,
+    "sha256": "d4a8ce0e678a83236cc4ae6f0de2071cfc127188765d37b86e4119c33e1addb8",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.1_seed_404.json",
+        "bytes": 1819037,
+        "sha256": "470b11b18a8839e530f1e075d91e7089091bdd36388395666d33aa46f1c4e22c"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.1_seed_505.zip",
+    "bytes": 126622,
+    "sha256": "b208332a863321b10e42ead2646907f33402b6900ce1c4aa6a5f56e172686be9",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.1_seed_505.json",
+        "bytes": 1823695,
+        "sha256": "a9e2dc3bd89d23425adeea6b6ea045cdc7d7efddec5c1f6db6a2369ae3e31fb8"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.1_seed_606.zip",
+    "bytes": 128189,
+    "sha256": "d9b588cbb0dcd6f3e836a11e353354f3cb9e6035e452e885d8cdee8f0359821e",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.1_seed_606.json",
+        "bytes": 1821513,
+        "sha256": "ea128ad53cdcd447164caf9255ecfdd3e41463c4ffc47c2948ef6f39c81ae1a2"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.5_seed_404.zip",
+    "bytes": 124790,
+    "sha256": "34dd4f2ecf64f297f83ac6bd6a3042095a52142ab5fee972fb8192e188c75248",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.5_seed_404.json",
+        "bytes": 1837057,
+        "sha256": "8822cbd36d422ae098ad5e4392f207a689399189f2bb11f1997faa6ef9fd24ea"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.5_seed_505.zip",
+    "bytes": 125208,
+    "sha256": "a647b48b0495d82daf460fb2a0f02f4e44ae7e582c87700d15b586481f8b53b6",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.5_seed_505.json",
+        "bytes": 1833317,
+        "sha256": "47b97e1469e388421ab1732cdf10db76a57b553f2237bdb9e87eb9f4b8bf0f36"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_dirichlet_0.5_seed_606.zip",
+    "bytes": 126865,
+    "sha256": "3ae7740b50ee53434f3ffb253f272efbe8fbcf68389b8b7589bcdda8fb79bd4d",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/dirichlet_0.5_seed_606.json",
+        "bytes": 1830249,
+        "sha256": "b754a0105da61326132e7d202c680b9ad969f8698cb7a7e0cdd064e1e4951a99"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_iid_seed_404.zip",
+    "bytes": 122304,
+    "sha256": "90ad78b26aabf16b3bf47d6cda92c2c38678c747020452ed3575a93b248c9983",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/iid_seed_404.json",
+        "bytes": 1835187,
+        "sha256": "aac54842165f5bc4d402ebbb019a4314b30ebed8d6d6117e81503e8275897e09"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_iid_seed_505.zip",
+    "bytes": 123151,
+    "sha256": "89fe1da49dad8175c87f2836b5ba61fef7079c1f613f8cfcb953f052178c3336",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/iid_seed_505.json",
+        "bytes": 1827579,
+        "sha256": "1306e8f5f9cb3ce32ce17591fd81c91cba838631065763937602b92e4259cf49"
+      }
+    ]
+  },
+  {
+    "archive": "archives/noniid_clustering_raw_records_iid_seed_606.zip",
+    "bytes": 123233,
+    "sha256": "d3c9eb044b33bcbf8987197fcd12017291cd56658a52c75082a4e1e0dc39fb64",
+    "files": [
+      {
+        "path": "experiments/noniid_clustering/results_full/iid_seed_606.json",
+        "bytes": 1829463,
+        "sha256": "525e3b18ddfbe3973b358b885982a7dac5be683ef1524b408725a0ef680ff000"
+      }
+    ]
   }
 ]

@@ -1,0 +1,282 @@
+{
+  "dataset": "Fashion-MNIST",
+  "seed": 606,
+  "config": {
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "public_pool": 16384,
+    "classes": 10,
+    "train_limit": 60000,
+    "test_limit": 10000,
+    "pretrain_epochs": 5,
+    "pretrain_batch": 256,
+    "prepare_threads": 4,
+    "feature_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cuda",
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "threads": 1
+  },
+  "preparation_identity": {
+    "code": {
+      "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76"
+    },
+    "dependencies": {
+      "numpy": "1.26.4",
+      "torch": "2.7.1+cu118",
+      "scikit-learn": "1.5.1",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "clients": [
+    {
+      "client": 0,
+      "width": 512,
+      "private_samples": 7270,
+      "pretrain_losses": [
+        0.0804452330222484,
+        0.04530939738761936,
+        0.03359347533183544,
+        0.027626656472908417,
+        0.02438980108524123
+      ],
+      "pretrain_seconds": 0.6138636999967275,
+      "private_feature_seconds": 0.05661129999498371,
+      "public_feature_seconds": 0.13760800000454765,
+      "test_feature_seconds": 0.07929780000995379,
+      "kmeans_seconds": 2.1911043000000063,
+      "pseudo_histogram": [
+        1197,
+        404,
+        958,
+        525,
+        917,
+        253,
+        767,
+        446,
+        736,
+        1067
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 1,
+      "width": 512,
+      "private_samples": 7270,
+      "pretrain_losses": [
+        0.08477993580260336,
+        0.04484787165831667,
+        0.034314034575855225,
+        0.02826638537442422,
+        0.02444844316265852
+      ],
+      "pretrain_seconds": 0.5468667999957688,
+      "private_feature_seconds": 0.06621579999045935,
+      "public_feature_seconds": 0.1240109000063967,
+      "test_feature_seconds": 0.07720400000107475,
+      "kmeans_seconds": 2.097561800008407,
+      "pseudo_histogram": [
+        643,
+        858,
+        846,
+        898,
+        497,
+        336,
+        1004,
+        844,
+        776,
+        568
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 2,
+      "width": 512,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.08996531468159986,
+        0.04995636656021445,
+        0.036580622919320994,
+        0.030114756715414137,
+        0.026544299960640703
+      ],
+      "pretrain_seconds": 0.5996792999940226,
+      "private_feature_seconds": 0.07798620000539813,
+      "public_feature_seconds": 0.14565720000246074,
+      "test_feature_seconds": 0.07949340000050142,
+      "kmeans_seconds": 2.853883000003407,
+      "pseudo_histogram": [
+        824,
+        1114,
+        517,
+        918,
+        234,
+        900,
+        230,
+        374,
+        1194,
+        964
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 3,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.06201131302545103,
+        0.03062561357567851,
+        0.02300264146463393,
+        0.01857188519375871,
+        0.016018459637833726
+      ],
+      "pretrain_seconds": 0.7702556000003824,
+      "private_feature_seconds": 0.1143242999969516,
+      "public_feature_seconds": 0.27509479998843744,
+      "test_feature_seconds": 0.1667616999911843,
+      "kmeans_seconds": 9.170259599995916,
+      "pseudo_histogram": [
+        1034,
+        648,
+        766,
+        770,
+        480,
+        900,
+        283,
+        557,
+        822,
+        1009
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 4,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.07387463650774441,
+        0.03865898659608849,
+        0.027663835292188268,
+        0.022006340586248625,
+        0.01899793371686312
+      ],
+      "pretrain_seconds": 0.8727089000021806,
+      "private_feature_seconds": 0.14900449999549892,
+      "public_feature_seconds": 0.31445990000793245,
+      "test_feature_seconds": 0.1803414000023622,
+      "kmeans_seconds": 9.939750999998068,
+      "pseudo_histogram": [
+        755,
+        981,
+        762,
+        736,
+        1362,
+        381,
+        719,
+        614,
+        567,
+        392
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 5,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.06607309352385651,
+        0.03387815066984684,
+        0.025235602501223742,
+        0.021073401806813795,
+        0.018457249658968167
+      ],
+      "pretrain_seconds": 1.3340753999946173,
+      "private_feature_seconds": 0.18964579999737907,
+      "public_feature_seconds": 0.4536858000064967,
+      "test_feature_seconds": 0.28670969999802765,
+      "kmeans_seconds": 14.380560499994317,
+      "pseudo_histogram": [
+        1252,
+        1419,
+        387,
+        1193,
+        921,
+        502,
+        317,
+        508,
+        314,
+        456
+      ],
+      "encoder_frozen": true
+    }
+  ],
+  "data_checksums_md5": {
+    "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+    "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+    "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310"
+  },
+  "preparation_wall_seconds_excluding_download": 48.81562059999851,
+  "preparation_scope": "private-only unlabeled AE pretraining, fixed private/public/test features, KMeans, writes; includes test feature preparation",
+  "device": "cuda",
+  "torch": "2.7.1+cu118",
+  "numpy": "1.26.4",
+  "files": {
+    "client_0_autoencoder.pt": "fa16479d02b0aae2b23f6acd087f075ab43be5df8f6a9725dcb17586463aecf3",
+    "client_0_centers.npy": "f091183eb227c88bafa7129d8eacee6ae882de72f042379ed3b7fa9761feb651",
+    "client_0_private.npy": "e892ad7c3b7a9eed0e8f37aa63c2ad62f9982c552e01952f3b8b595fb0205841",
+    "client_0_private_ids.npy": "21caf11642df57d8b66bbc84fb12b34aef8e26bf0d47f8bada6f0031dfcbc076",
+    "client_0_pseudo.npy": "39f200742221e6c045ef11a0f1c5dedf451f976d4c870646c96a4efb83d7512f",
+    "client_0_public.npy": "ca3780c14a36d50d718eafa0cff8549f27054b961d6ac871947055b682d5426d",
+    "client_0_test.npy": "1899c74b962e97ce4e280e1cb1d2cffe14514eae5d1f782ae57c43dc8cdc636e",
+    "client_1_autoencoder.pt": "d27a13a979e81ec389d57f6919affa29577d4250dd03a3c95e0852c0f371de86",
+    "client_1_centers.npy": "2a1d5c38d47c5ab75ee2d46fc7d43b2697d5f2729923cb1a23e4b0c3d03ff8ec",
+    "client_1_private.npy": "f16ecdc68d3915014a1e3cc2864085ee36ce36e40cdd6836957e7dea12f69197",
+    "client_1_private_ids.npy": "1a335eec22b86c871f723df5b93713ed25eca1c2b4e63890ae27c306e96f8620",
+    "client_1_pseudo.npy": "a1bda86efa3b4eebee17351971ad87a8149a7116d2646a0857e5717cb2507d74",
+    "client_1_public.npy": "1ecb65fbb80e613ca561b8440b7831de460a0cf3068573b4c082956f15528626",
+    "client_1_test.npy": "085bf833ab2c3869255aa727ac884f8df95fc7711c9d6952d12d7bb8080a2cef",
+    "client_2_autoencoder.pt": "fe559a4873a0c2ac7138017377f621cee6734d988b5bc917e200f82e16a3cf4d",
+    "client_2_centers.npy": "5d3b43a20a5f8d14dd35bf18eec1b35b6053058e503a9ada3e09b4ef74f8247d",
+    "client_2_private.npy": "30de9aefd04ad7d31d898b89935d426b685a32cf3aad29ccb461c6f425be083f",
+    "client_2_private_ids.npy": "ad2eb4096de87ac7bc28ad03567a142b102098750903ab5123c3a0fe26a714b0",
+    "client_2_pseudo.npy": "cc2c2199029f694d1698aef5e93b5a0afbbc3e1ff34652ad1631e70dfcb2064d",
+    "client_2_public.npy": "5a197f80f7578e2c5fc772258d6bfa1473d21ba2f1a69829dabd63ec79b83d8a",
+    "client_2_test.npy": "80cbc639e29056f86296c09218aebe23ae96a7c83f33b3680114eb5d72e71ae6",
+    "client_3_autoencoder.pt": "a1d4eeb2662532748411372f189016fdb06845ff965a01b7c26c2238f69eaed9",
+    "client_3_centers.npy": "852a9d44d96afdba6ba8f0f93c22857a4859f10f2643a16a019342d5425b4d33",
+    "client_3_private.npy": "70222edb536171dde0eeb54d41554bdd157f924e5890ad1b80ff517a551fb28b",
+    "client_3_private_ids.npy": "0ac4cae6f5bc852d0139d34e5ee307c9f7488f880e8d347644f43aa9cb27b74f",
+    "client_3_pseudo.npy": "b978ee31dc56de6b17295862040d382dd127a4b57b493968cad22d516c776a2c",
+    "client_3_public.npy": "6f7b7ef2a20517fb8f5e7df228492689283623609ff0c2ffc1985f6c219997ce",
+    "client_3_test.npy": "30ac6f6c98aeb0cf0eafe5bf0f9bec0f98e22235ca6120b4c9b63a9361e95b5e",
+    "client_4_autoencoder.pt": "7eed90c5b39c1c1d08d13f4ecd2206547feddfe43f56474276aec2802646d336",
+    "client_4_centers.npy": "eae3dd03aba5de196464f8acf73d3844cc198eb5cd24d016bb3035f9639e3af8",
+    "client_4_private.npy": "366046a80ad1bf861fe31b61bd289e4987f80a0577dc14fa2227168c408f7a36",
+    "client_4_private_ids.npy": "4a06f830f4e91ef165cb20e3927485a526ca24cfed419c508f6196178b2f4d2e",
+    "client_4_pseudo.npy": "5bf633547cba74dc9b0a1a289e370f0cfa62c8ebd654f01a17e92bc25a859177",
+    "client_4_public.npy": "8e86e91013239973a7b1715edd4d19fe2ca5f965056e8fa137e5cb931758030c",
+    "client_4_test.npy": "f5ef810a7ddd04a85c9a2d5d18acd04c3de33f58e7387bfc926c430998da1cd4",
+    "client_5_autoencoder.pt": "bb03f594e3593354508c30f9269ad0a8eab18eaacfbbacf5d66081fc4c1b52a2",
+    "client_5_centers.npy": "9e2e1157f9b0ac536e3d6c93c8bef1d1e0143216f699f19d1867179faf7c0190",
+    "client_5_private.npy": "9ce7fcb7d5970789fbe2770180ae84a9828118db0c1bb53ed2cee338cba094d8",
+    "client_5_private_ids.npy": "efc8027372c79d5568b721a8d283cc258324757474689b0884dafaa974c17ea5",
+    "client_5_pseudo.npy": "d80d8ccb40574500352eb40b611f01f51c9904c6b12366cade5e7b57ec9a5581",
+    "client_5_public.npy": "675d6c71830aa80ff738bb2b2165c226684770f19c47f65e3bec894e951daf01",
+    "client_5_test.npy": "a84397a9352713813fc0775a154fae6bc700f15897be8830a6b6411bb614e4b2",
+    "partition.json": "a1eba28a27a95288cefec85dd1b0dc20b0b77e5fb69148fbe7cdf8eaa6b1ac5a",
+    "public_ids.npy": "74b52c35109f29e249ce4e8715a0e79eda2acd6847aa58a7b3f87d7ba2f88836",
+    "test_labels.npy": "dc8f8f1192c27394f85487043710db3a9b18d51be2c3bca478bf94dfff9dd146"
+  },
+  "partition": "dirichlet_0.5",
+  "partition_manifest": "partition.json",
+  "partition_complete": true
+}

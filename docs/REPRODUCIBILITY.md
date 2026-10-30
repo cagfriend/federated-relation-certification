@@ -117,3 +117,19 @@ python -m experiments.aggregator_recovery.run --preset full --resume
 该包不依赖Fashion-MNIST或旧准备缓存，输入由seed生成合法共簇关系。保持实验及公共核心源码、Python/NumPy版本才可恢复原记录。完整配置包含18组/54条协议回放，非训练实验；运行前smoke证据在包内VALIDATION.json，正式结果另见 outputs/aggregator_recovery_results_20261030/RESULTS_REVIEW.md。
 
 原始18个case已无损归档，解压后可以用同seed重建输入核对保存目标与通信分类账，但结果摘要不能还原完整消息执行历史。ACK、可靠原子提交/复制屏障和未覆盖故障边界详见实验README。GitHub既有代码继续保留供复现；清除旧实验源码只发生在原工作区，未删除历史记录。
+
+
+## 非IID＋模型宽度异构（已正式完成）
+
+在仓库根目录使用项目同一Python环境（原环境D:\anaconda\python.exe）：
+
+```powershell
+python -m unittest experiments.noniid_clustering.test_noniid -v
+python -m experiments.noniid_clustering.run --preset full --prepare-device cuda --download --memory-audit
+```
+
+可用CPU准备，但必须用新输出目录、不能假称复用了原CUDA准备身份。正式主实验9组/36条训练；memory-audit额外执行36条单方法完整轨迹，只取CPU工作集峰值，丢弃其耗时。原正式结果目录已完成；复跑请指定新的 --output 目录，原机器续跑使用同路径 --resume。保存身份检查源码、运行库与本机缓存绝对路径，异机复现需重新准备与新输出，不是拿现有摘要直接 --resume。
+
+原始case无损ZIP保留路径和字节；小结果/内存回放/完整清单直接可读。outputs/noniid_results_20261030/preparation只保存9组prepared.json/partition.json清单，含特征资产摘要和实际类别直方图，不含原始数据、特征数组或编码器。正式审计脚本需要原缓存/官方IDX才能完全重跑；下载新数据和重训不能保证跨硬件字节级相同。completed.json校验解压后的结果，不把ZIP替换后的GitHub目录当成原本已展开布局。
+
+包内VALIDATION.json与INDEPENDENT_REVIEW.md为实验前smoke/代码证据，formal_training_started=false是其生成时状态；正式完成与审核以results_full/completed.json、outputs/noniid_results_20261030/audit.json和RESULTS_REVIEW.md为准。冻结原实验源码和证据，不改写历史准备记录。

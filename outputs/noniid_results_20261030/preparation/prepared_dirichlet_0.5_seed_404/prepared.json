@@ -1,0 +1,282 @@
+{
+  "dataset": "Fashion-MNIST",
+  "seed": 404,
+  "config": {
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "public_pool": 16384,
+    "classes": 10,
+    "train_limit": 60000,
+    "test_limit": 10000,
+    "pretrain_epochs": 5,
+    "pretrain_batch": 256,
+    "prepare_threads": 4,
+    "feature_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cuda",
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "threads": 1
+  },
+  "preparation_identity": {
+    "code": {
+      "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76"
+    },
+    "dependencies": {
+      "numpy": "1.26.4",
+      "torch": "2.7.1+cu118",
+      "scikit-learn": "1.5.1",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "clients": [
+    {
+      "client": 0,
+      "width": 512,
+      "private_samples": 7270,
+      "pretrain_losses": [
+        0.08630532366127555,
+        0.048244477545091834,
+        0.03617497243222869,
+        0.03072066840394163,
+        0.02662057214694551
+      ],
+      "pretrain_seconds": 0.38663480000104755,
+      "private_feature_seconds": 0.04507230001036078,
+      "public_feature_seconds": 0.056786000001011416,
+      "test_feature_seconds": 0.03411759999289643,
+      "kmeans_seconds": 1.6083750999969197,
+      "pseudo_histogram": [
+        628,
+        1382,
+        501,
+        382,
+        1078,
+        269,
+        1184,
+        1015,
+        274,
+        557
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 1,
+      "width": 512,
+      "private_samples": 7270,
+      "pretrain_losses": [
+        0.08182718983378666,
+        0.04527275927539049,
+        0.03318572533067106,
+        0.026791114199194326,
+        0.02329476175847703
+      ],
+      "pretrain_seconds": 0.25490590000117663,
+      "private_feature_seconds": 0.029496899995137937,
+      "public_feature_seconds": 0.05549780000001192,
+      "test_feature_seconds": 0.035942899994552135,
+      "kmeans_seconds": 2.053436599991983,
+      "pseudo_histogram": [
+        682,
+        505,
+        772,
+        402,
+        971,
+        821,
+        906,
+        807,
+        707,
+        697
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 2,
+      "width": 512,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.08849126104332587,
+        0.04814057794836073,
+        0.036624541790090726,
+        0.029654227209213773,
+        0.0254817875469874
+      ],
+      "pretrain_seconds": 0.3858114999893587,
+      "private_feature_seconds": 0.041218900005333126,
+      "public_feature_seconds": 0.06663479999406263,
+      "test_feature_seconds": 0.03966029999719467,
+      "kmeans_seconds": 1.8675875999906566,
+      "pseudo_histogram": [
+        720,
+        307,
+        976,
+        385,
+        910,
+        868,
+        827,
+        667,
+        899,
+        710
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 3,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.0652522278206764,
+        0.03315778048436134,
+        0.024169232883097413,
+        0.01917725587580166,
+        0.01658438145230304
+      ],
+      "pretrain_seconds": 0.5996690999891143,
+      "private_feature_seconds": 0.06743649998679757,
+      "public_feature_seconds": 0.14699320000363514,
+      "test_feature_seconds": 0.08647030001156963,
+      "kmeans_seconds": 7.250858399987919,
+      "pseudo_histogram": [
+        936,
+        751,
+        603,
+        651,
+        519,
+        1171,
+        826,
+        736,
+        724,
+        352
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 4,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.06780797998016155,
+        0.03516402480897541,
+        0.02644688821842179,
+        0.021844806828651274,
+        0.018475723001234207
+      ],
+      "pretrain_seconds": 0.6763601999991806,
+      "private_feature_seconds": 0.05638720000570174,
+      "public_feature_seconds": 0.12003609999374021,
+      "test_feature_seconds": 0.07394120001117699,
+      "kmeans_seconds": 8.663204500000575,
+      "pseudo_histogram": [
+        1058,
+        779,
+        1176,
+        570,
+        230,
+        766,
+        558,
+        606,
+        380,
+        1146
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 5,
+      "width": 2048,
+      "private_samples": 7269,
+      "pretrain_losses": [
+        0.06890510257770671,
+        0.03569254347502833,
+        0.027069245713785616,
+        0.021919067809659326,
+        0.01879747877555235
+      ],
+      "pretrain_seconds": 0.6757972000050358,
+      "private_feature_seconds": 0.09256319999985863,
+      "public_feature_seconds": 0.1878216000040993,
+      "test_feature_seconds": 0.09446409999509342,
+      "kmeans_seconds": 7.888781699992251,
+      "pseudo_histogram": [
+        556,
+        1418,
+        793,
+        668,
+        395,
+        469,
+        472,
+        1006,
+        753,
+        739
+      ],
+      "encoder_frozen": true
+    }
+  ],
+  "data_checksums_md5": {
+    "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+    "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+    "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310"
+  },
+  "preparation_wall_seconds_excluding_download": 34.085951999993995,
+  "preparation_scope": "private-only unlabeled AE pretraining, fixed private/public/test features, KMeans, writes; includes test feature preparation",
+  "device": "cuda",
+  "torch": "2.7.1+cu118",
+  "numpy": "1.26.4",
+  "files": {
+    "client_0_autoencoder.pt": "ecd46621efba2b6b3d857b4a51989b1a56c86d23d3045483ff4aca93f6d723aa",
+    "client_0_centers.npy": "82b2cc2b14d26699faa38e0489d0fdcac818b541d3f122f07c937975ac57e05e",
+    "client_0_private.npy": "ac9f84f52038350b83102f3cd09eb599722681331bff844f8f776b9207e83530",
+    "client_0_private_ids.npy": "fb48c3f2302b8e092a9bc3c534d62e52fe5506fc6733004b5d349ea54850519e",
+    "client_0_pseudo.npy": "ce97bc768593c71f8354b4d3b80bec5dacbc6743cc6170b6ea20737e9b8ec384",
+    "client_0_public.npy": "33754269a824ece7f30e002fa25ab0204d5c2476154ab21679d7937ea23def6c",
+    "client_0_test.npy": "b29bb22ebaeee9b6d4cbea87c45c0c9059d1c088064c1da01a2710a64fe4de76",
+    "client_1_autoencoder.pt": "18cee779c493c470af541484a70f91c74bdcfe6cb6f88bb77046ddf5453b6435",
+    "client_1_centers.npy": "4f0e66e27bca06c12e8048fe5bf16cb390d71b55a1fa32b5fda9404123328477",
+    "client_1_private.npy": "f4a8dc1a999a9b37ae4f77be17f18683ba14630c8b1cda6bfd02bfa180830081",
+    "client_1_private_ids.npy": "79c74029c7df907c3c9a67fa601ecde3d2212e3e44ab4807c9dbc3ae8c2e08fb",
+    "client_1_pseudo.npy": "cf4153ded9c569ec91508e12dd0efd24f850d15c76195d5123343e955d744dc9",
+    "client_1_public.npy": "8a45462ba0bd1507d554d9f5530e4a50c3149e52c4a4bab920540fc5c75fd1fc",
+    "client_1_test.npy": "5bfc3d4bf3f1b60ab4e25eca0a078dcff489ae68114cc5c8fbd8549e3bc7aef0",
+    "client_2_autoencoder.pt": "fa22537f20a0cabda45b33c30812456a08a3336209badfb1d4bfd4edb25497d1",
+    "client_2_centers.npy": "7eb7c90c1dd6612013638e04ac08ea5e6d90a295b236caf425e365d46d84fea2",
+    "client_2_private.npy": "ea60664069de76510f468fd694bab4515c429d4b2d378114c916be0c69c03e40",
+    "client_2_private_ids.npy": "ea65005bc58aadade1358ce215991f71176287ab02a2183ff5467d517049943a",
+    "client_2_pseudo.npy": "5db12d85ee446b3ab9a216b1b65ca7f254219f73e792b14db0be9e3c3df73274",
+    "client_2_public.npy": "5cfab682a0dc3591cf69381ad61ee8eba365cce946848de01d3b372eb94cafce",
+    "client_2_test.npy": "3f9e807f78ff6bed64dfe8802b72d071b3ebd87f350c2b2bec299f8d7fc36780",
+    "client_3_autoencoder.pt": "b634ea2b6740574775e2993bba77deac1bd08702bff4dcaa414210af8ea045f3",
+    "client_3_centers.npy": "81f350271bc6d70cb56b7a0c38ad0fa5beb81b2430f08470eee08ab8bf396c67",
+    "client_3_private.npy": "5432fe6722513e5c13b37b869cfab8877e32c7abcf46ea5df988af3e96f7ff8c",
+    "client_3_private_ids.npy": "92fd4308a54725d3ae78c5cdaf6ec450ad3af1d816b969b01cd1b5813e123299",
+    "client_3_pseudo.npy": "a750215200f0ccd392e6a14131f621f8c11f775d1e94f5e4d16f113a47fe069d",
+    "client_3_public.npy": "47df38b4e6f68ac6636f4cd1ca81738ab97dcd1296a8b60b6cc0319b414c5f97",
+    "client_3_test.npy": "7fbe00592b2dc2f0ddf309b5d0ef2c6dced8dcbc4da3e0021ff6fe4c5998335e",
+    "client_4_autoencoder.pt": "c41aff7bacaf80a6efe719c0dd87c02f8c868f56f917971e9c34e88db8f2078a",
+    "client_4_centers.npy": "3b78cb14f5881aa03ea9d03b33e33e1c9214fbedb9cded8596c60583e7ce860b",
+    "client_4_private.npy": "f495e2cb435efd427182820ae64800739e132b98bcf3f03e1c2b80d962331ed2",
+    "client_4_private_ids.npy": "1154a0d7b1a32e5eafa2db2e0f45ad0c426496eb0be20ab9a7e038b37f21b5d9",
+    "client_4_pseudo.npy": "4b5007a2037a185ccee23f2b4a7fd77ebd3dc87cd3ec22f93f76e50a1db7b10a",
+    "client_4_public.npy": "1124e65e6d7068e6ee387db7aa93e20aae4567327a6ecc7b05ef016d5f01299a",
+    "client_4_test.npy": "0407e3af7d137e6e75b16179b574547d1d7b653c7a245141f37849fb0fc99178",
+    "client_5_autoencoder.pt": "c315996a67f9cecf23d7aaefb794f53ee6aef5567092da8bf9017da49010f6c2",
+    "client_5_centers.npy": "9eee50b1d94fcb099ac6a4daf81ad60bb1e296cfbc539f588bd58f28d5e570e7",
+    "client_5_private.npy": "640cb523fc4785a17e9310db96d98c72e869adf0c02423db4b08e8aa3310758a",
+    "client_5_private_ids.npy": "26f0d07a3aca82cbd78f43d627c08f2a46b3353b5e0a7ee6ca82d96ff4593ba2",
+    "client_5_pseudo.npy": "fd7e8a4add5bf44314898280684ba5af1a85101697da7f36eebcd8ba2b817858",
+    "client_5_public.npy": "f252ffc655dab7ad17b3468a8d95d633436320d25bd8e218a52bcdc5fc8ef591",
+    "client_5_test.npy": "d43119a618d13c1e7bc0780c356d55955b168da9a7bdf40422ab0e3ea0072a80",
+    "partition.json": "58c50000e54e7bcc5edf13fa5164b965c768b392998d5a2d92e2042f5ce60a43",
+    "public_ids.npy": "e576a4cf5c7e6d2edf5c3ae9cedd9db9515fd0b71b69556b25b0166409b32bce",
+    "test_labels.npy": "dc8f8f1192c27394f85487043710db3a9b18d51be2c3bca478bf94dfff9dd146"
+  },
+  "partition": "dirichlet_0.5",
+  "partition_manifest": "partition.json",
+  "partition_complete": true
+}
