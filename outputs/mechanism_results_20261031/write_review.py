@@ -1,0 +1,45 @@
+"""Write the main review from independently audited paired summaries."""
+import csv,json,statistics as st
+from pathlib import Path
+HERE=Path(__file__).parent
+def main():
+    audit=json.loads((HERE/'audit.json').read_text());q=audit['quality_summary']
+    lines=['# 跨客户端关系知识机制消融：完整结果审核','',
+    '日期：2026-10-31。9组正式配置全部完成；审核原始产物，不改源码、种子、损失或筛查门槛，不重跑训练。','',
+    '## 验收结论','',
+    '**实现与结果完整性通过；预定的协作收益筛查未通过。** 强非IID下，Aggregate的最终平均ACC优于Self，却在三个seed均低于Shuffled；NMI/ARI与ACC方向不同。当前不能认定正确边对应的跨客户端关系产生稳定且全面的聚类增益，也不能据此断言关系信息毫无用处。关系认证的既有计算优化证据保持有效，本轮没有重新测量D/E性能。','',
+    '## 配置与公平性','',
+    'Fashion-MNIST；IID、容量约束Dirichlet α0.5/α0.1，各seed404/505/606，9组×4分支＝36条真实头部训练轨迹。六客户端宽度512×3/2048×3；私有总43616张，固定公共候选池16384、实际公共4096、degree1共2048边、K10。各划分私有无标签AE与KMeans后冻结表示，头部200轮。Local仅私有CE；Self/Aggregate/Shuffled公共BCE更新步数、批次日程、学习率和权重相同。','',
+    'Self只使用自身当轮硬关系；Aggregate使用计数/N，含自身；Shuffled对其**自身训练分支**当轮的原聚合向量作公共随机置换。置换保留该向量的值多重集，但分支轨迹分叉后，Shuffled和Aggregate两个分支不再保证目标均值/方差相同。只有同一anchor快照上的反事实梯度比较才严格对齐这一目标分布。这个区别限制了对最终训练差异的纯机制归因，不能写成两条全程训练轨迹始终同目标分布。','',
+    '官方标签只用于划分、离线公共关系真值诊断及测试评估，不进入私有CE或公共BCE训练目标。探针使用同一post-private快照与固定独立批次，不更新头或SGD随机流。','',
+    '## 完整性审核','',
+    '26份结果文件SHA256与完成清单一致；7个新实验源码、13个公共核心源码及6个准备模块源码与冻结身份一致。9个准备缓存验证通过，同seed三划分公共ID一致。5400条逐轮目标记录已从位打包关系精确重建，包含Self/聚合/置换值与摘要；7128条梯度探针覆盖完整；3600个历史Local/B轮次方法对照中，Local与原Local、Aggregate与原B的参数、消息及已记录评估一致。七份报表重新生成逐字节一致，上一轮非IID的60份结果文件未改变。','',
+    '66355200是本轮处理的教师关系条目数，不是独立实验数，也不是新一次D认证或高精度浮点前向证明。只有3个seed；客户端、轮次、边数和梯度行不能扩充独立样本量。','',
+    '## 最终质量：配对seed中位数','',
+    'ACC差以百分点表示；NMI/ARI保留原指标差。主场景预先设为α0.1，门槛为Aggregate−Self及Aggregate−Shuffled都三个seed全正且中位ACC差≥0.5个百分点。未按结果改主指标或选最好轮次。','',
+    '|划分|比较|ACC差（百分点）|ACC正seed|NMI差|ARI差|','|---|---|---:|---:|---:|---:|']
+    for part in ('iid','dirichlet_0.5','dirichlet_0.1'):
+        for comp in ('Aggregate-Self','Aggregate-Shuffled','Aggregate-Local'):
+            r=next(x for x in q if x['partition']==part and x['comparison']==comp)
+            lines.append(f"|{part}|{comp}|{100*r['acc_difference_median']:+.3f}|{r['acc_positive_seeds']}/3|{r['nmi_difference_median']:+.6f}|{r['ari_difference_median']:+.6f}|")
+    lines+=['','强非IID关键结果：','',
+    '- Aggregate−Self：ACC差三seed为+0.833、+0.817、+0.912个百分点；17/18客户端ACC为正，6/18至少提高0.5个百分点。NMI中位差−0.006192，只有1/3 seed为正；ARI三个seed均提高。不能仅凭ACC说所有聚类质量更好。',
+    '- Aggregate−Shuffled：ACC差三seed为−0.362、−0.682、−0.662个百分点；仅3/18客户端ACC为正、15/18为负。NMI三个seed均更好，ARI2/3更好。**按预定ACC主指标，联合筛查失败。**',
+    '- Self−Local：ACC中位−0.517个百分点，三个seed全负；Shuffled−Local中位+0.678个百分点，三个seed全正，但NMI下降。Aggregate−Local仅+0.317个百分点、2/3为正。结果提示Self也可能是带ACC副作用的参照，不能把优于Self全部解释为跨客户端关系语义收益。',
+    '- 每方法先取最差客户端后的ACC差，在强非IID中Aggregate−Self中位+3.44个百分点，Aggregate−Shuffled−1.11个百分点。这不同于同一client配对差的最小值，两个统计量不混用。','',
+    '## 梯度及公共目标诊断','',
+    '以下均为描述性数据：每seed内先汇总客户端/轮次，再汇总三个seed，不做伪重复显著性推断。完整细节见gradient_summary.csv与target_summary.csv。','',
+    '在Aggregate anchor、全部11个检查点中，强非IID的加权公共/私有梯度范数比中位数约0.476，余弦中位数约−0.075；最终轮分别约0.693与−0.260。每个数字先在seed内取中位再跨seed取中位；负余弦是局部冲突的线索，不证明它造成最终ACC损失。公共梯度也并非可据这些数据笼统视为近零；单批梯度范数不代表一轮累计更新，实际每客户端私有57步、公共8步。','',
+    '强非IID最终轮，对Aggregate分支原始计数作反事实置换时，改变边目标的比例逐seed中位约69.04%；Shuffled自身分支实际置换相应约65.87%，并非近常量导致的无效打乱。Aggregate分支的公共真同/异类目标均值差约0.386，Shuffled分支约0.016；总体Brier约0.102与0.170。正确对应的关系在公共样本上包含标签关联，但这没有转化为更高最终ACC。常量先验Brier约0.100，且负边占多数，所以不能仅凭总体Brier评定所有关系无用或断言已校准。','',
+    '两个训练分支的上述目标统计不严格匹配，不能把目标值分布/正则化、Self硬目标效应或局部梯度冲突中的某一个直接认定为因果解释；需要单独诊断。','',
+    '## 早期单簇与后续恢复','',
+    '新增round1评估发现：α0.1的每个seed、每个分支至少一个客户端将全部测试样本归入同一簇；α0.5部分分支/seed也出现单簇。Local同样出现，所以不能据此认定公共聚合或认证单独造成。旧参考实验从round20起评估，没有round1数据；这是新增观测窗口，不是已证明的新回归。','',
+    'round20–200内，强非IID的最低占用簇数Local/Self/Aggregate/Shuffled分别8/6/7/7，最大簇比例60.82%/71.57%/65.87%/60.41%。最终轮全部分支/客户端恢复或保持10簇，但最大簇比例仍可达Local60.82%、Self67.94%、Aggregate55.71%、Shuffled51.47%。最终十簇不支持“全程无坍缩”或“类别分布均衡”。','',
+    '## 下一步及结论范围','',
+    '第1项机制消融现已完成，主门槛未通过。论文主结论继续限定为固定表示下的精确关系生成优化，不扩为稳定提升聚类质量的新学习方法。后续保留仓库第3.1项固定公共预算/小私有工作负载场景与STL-10候选；若推进，应先冻结质量下限并带上机制对照，将资源收益和学习价值分别验收，不能用更大规模追逐正ACC后改写本轮负结果。目标均值/软化、早期集中与关系对应效应可作已有数据的诊断候选，未自动实施。','',
+    '本轮时间列是排除探针/检查/评估的阶段求和，口径不同于既有D/E整段秒表；不用于新的性能收益确认，也没有通信压缩、实际网络容错或编码器持续更新证据。新seed静态选路复核仍暂缓。','',
+    '证据：[审计脚本](audit_results.py)、[审计JSON](audit.json)、[逐seed质量](seed_quality.csv)、[逐客户端差值](client_quality.csv)、[梯度汇总](gradient_summary.csv)、[目标汇总](target_summary.csv)、[簇占用](cluster_summary.csv)、[独立复审](INDEPENDENT_REVIEW.md)。','',
+    '## 独立复审及主审验收','',
+    '调用GPT-6 Luna/high，分派只读独立正式结果审核。子代理复算26份文件哈希、9case、5400目标记录、3600历史轮方法对照、逐seed/客户端质量和训练中簇占用，接受完整性与主筛查失败的结论。主审另检查缓存/源码、完整check_case与报表重生成；复审初稿把两个分支误写成始终同目标值分布，主审要求修正为“各自分支内的置换保分布”，并核对ACC与NMI/ARI及早期/最终簇状态。验收结论：结果完整性通过；不验收稳定全面协作收益、打乱方法普遍更优或梯度因果解释。']
+    (HERE/'RESULTS_REVIEW.md').write_text('\n'.join(lines)+'\n',encoding='utf-8');print('Review written')
+if __name__=='__main__':main()

@@ -1,0 +1,162 @@
+{
+  "preset": "full",
+  "config": {
+    "dimensions": [
+      512,
+      512,
+      512,
+      2048,
+      2048,
+      2048
+    ],
+    "public_pool": 16384,
+    "samples": 4096,
+    "degree": 1,
+    "classes": 10,
+    "rounds": 200,
+    "train_limit": 60000,
+    "test_limit": 10000,
+    "pretrain_epochs": 5,
+    "pretrain_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cuda",
+    "prepare_threads": 4,
+    "feature_batch": 256,
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "head_lr": 0.1,
+    "private_epochs": 1,
+    "private_batch": 128,
+    "public_epochs": 1,
+    "public_edge_batch": 256,
+    "public_weight": 1.0,
+    "eval_every": 20,
+    "threads": 1
+  },
+  "design": {
+    "primary_partition": "dirichlet_0.1",
+    "primary_metric": "final_mean_acc",
+    "minimum_practical_acc_difference": 0.005,
+    "screening": "Aggregate-Self and Aggregate-Shuffled each all 3 seeds positive and median >=0.005; exploratory only",
+    "shuffle": "Shared permutation of each branch own aggregate vector after receiving committed counts, seed/906/round",
+    "probe": "round1, every eval_every and final; same post-private snapshot and independent fixed probe batches",
+    "timing": "Diagnostic only; not independent D/E performance confirmation"
+  },
+  "methods": [
+    "Local",
+    "Self",
+    "Aggregate",
+    "Shuffled"
+  ],
+  "seeds": [
+    404,
+    505,
+    606
+  ],
+  "partitions": [
+    "iid",
+    "dirichlet_0.5",
+    "dirichlet_0.1"
+  ],
+  "source_hashes": {
+    "__init__.py": "4f1311da621b98a63f68eb4dd5f2ba9ce06e91936d1ba09ef042464dcd7804e0",
+    "diagnostics.py": "363646ee6007cb595ac66e42003c169262ec9e983552021997e542a932cc13e5",
+    "engine.py": "ad3784156293f8cfcf8698900ca5200ef2d96fca812c93fee491e2b0e5b88670",
+    "report.py": "1d7d13c1afbb9692a2cfd10041c930c8e6fe521110a96d0d3dff883fe45d3feb",
+    "run.py": "cec27b8bd2a6b148b44f546a8b3c393596067f4e1888b35c4159e05114177494",
+    "targets.py": "8f9c8a7e85695df7943ed959e79d626adc0616e5b73c6e991c84f9338b4f638e",
+    "test_mechanism.py": "5db0ffb9ee5cce555c0d274bb6904be1aaec46eb900399940f64f129ff32cf8c"
+  },
+  "core_source_hashes": {
+    "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+    "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+    "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+    "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+  },
+  "preparation_source_hashes": {
+    "__init__.py": "daabbbba28cab72924289c9668b133cd771936acc114329a0138778f6daf7812",
+    "data.py": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+    "engine.py": "096ed16689261299bceb632ba3e6e38a2275cb3e0cef27b6fddccd34d0784ef3",
+    "report.py": "22d32a869e56c8df3deb79144c8789d0b57c100f0bb9483c39c10b732d020350",
+    "run.py": "fbdf35634e9e7320e3b3b2bfcdbe9ae0cb0cd058a88e5e2e18460663608c33a1",
+    "test_noniid.py": "48ee1477bbe5f5564b732b6f8444a5152087270849589f1aff80bb9ee0515021"
+  },
+  "runtime": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda\\python.exe",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.1",
+    "torch": "2.7.1+cu118",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 8,
+        "prefix": "mkl_rt",
+        "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 16,
+        "prefix": "vcomp",
+        "filepath": "D:\\anaconda\\vcomp140.dll",
+        "version": null
+      }
+    ]
+  },
+  "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\prepared",
+  "data_dir": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\data",
+  "references": {
+    "iid_404": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\iid_seed_404.json",
+      "sha256": "aac54842165f5bc4d402ebbb019a4314b30ebed8d6d6117e81503e8275897e09"
+    },
+    "dirichlet_0.5_404": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.5_seed_404.json",
+      "sha256": "8822cbd36d422ae098ad5e4392f207a689399189f2bb11f1997faa6ef9fd24ea"
+    },
+    "dirichlet_0.1_404": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.1_seed_404.json",
+      "sha256": "470b11b18a8839e530f1e075d91e7089091bdd36388395666d33aa46f1c4e22c"
+    },
+    "iid_505": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\iid_seed_505.json",
+      "sha256": "1306e8f5f9cb3ce32ce17591fd81c91cba838631065763937602b92e4259cf49"
+    },
+    "dirichlet_0.5_505": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.5_seed_505.json",
+      "sha256": "47b97e1469e388421ab1732cdf10db76a57b553f2237bdb9e87eb9f4b8bf0f36"
+    },
+    "dirichlet_0.1_505": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.1_seed_505.json",
+      "sha256": "a9e2dc3bd89d23425adeea6b6ea045cdc7d7efddec5c1f6db6a2369ae3e31fb8"
+    },
+    "iid_606": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\iid_seed_606.json",
+      "sha256": "525e3b18ddfbe3973b358b885982a7dac5be683ef1524b408725a0ef680ff000"
+    },
+    "dirichlet_0.5_606": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.5_seed_606.json",
+      "sha256": "b754a0105da61326132e7d202c680b9ad969f8698cb7a7e0cdd064e1e4951a99"
+    },
+    "dirichlet_0.1_606": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\results_full\\dirichlet_0.1_seed_606.json",
+      "sha256": "ea128ad53cdcd447164caf9255ecfdd3e41463c4ffc47c2948ef6f39c81ae1a2"
+    }
+  }
+}

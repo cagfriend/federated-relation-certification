@@ -255,3 +255,24 @@ D/B头训练9/9胜出；D/E生成约减少25%，头训练8/9胜出，α0.5一个
 60个正式产物、6个新实验源码、13个核心源码审核通过，五份汇总重生成逐字节一致。局限为固定编码器＋线性头、一个数据集和degree1、既有三个seed、固定leader0及全员在线；未接入恢复协议。共享C0给Local计入不必要的公共特征，不能用于宣称协作相对Local最低独立总成本更低。
 
 证据：[完整审阅](../outputs/noniid_results_20261030/RESULTS_REVIEW.md)、[机器审计](../outputs/noniid_results_20261030/audit.json)、[独立复审](../outputs/noniid_results_20261030/INDEPENDENT_REVIEW.md)、[逐seed汇总](../experiments/noniid_clustering/results_full/summary.csv)。9份原始case JSON无损归档；准备阶段只上传摘要与划分清单，未上传数据/模型/特征。
+
+
+## 9. 跨客户端关系知识机制消融
+
+9组/36条真实训练完成：Local无公共更新，Self使用自身硬关系，Aggregate等权计数/N含自身，Shuffled置换自身分支的聚合目标；后三者公共BCE预算相同。沿用Fashion-MNIST、三个既有seed、IID/容量约束Dirichlet α0.5/α0.1、六客户端异宽冻结MLP、M4096/degree1/K10/200轮。
+
+|划分|Aggregate−Self ACC差|Aggregate−Shuffled ACC差|Aggregate−Local ACC差|
+|---|---:|---:|---:|
+|IID|+0.007个百分点|+0.017个百分点|+0.030个百分点|
+|α0.5|+0.057个百分点|+0.050个百分点|+0.080个百分点|
+|α0.1（主场景）|+0.833个百分点|−0.662个百分点|+0.317个百分点|
+
+以上先逐seed配对再取中位数。主场景Aggregate胜Self的ACC在3/3 seed为正，但胜Shuffled为0/3；预定要求两比较均3/3为正且中位差≥0.5个百分点，故**主筛查未通过**。Self−Local ACC中位−0.517个百分点，Shuffled−Local+0.678个百分点；Aggregate相对Shuffled的NMI中位+0.01110、ARI+0.00353，指标方向不同。不能认定正确对应的跨客户端关系带来稳定全面质量提升，也不将打乱目标宣称为普遍更优方法。
+
+每分支依赖自身轨迹，Shuffled保留的是自身当轮原聚合向量的值分布，不保证与Aggregate整个训练分支始终同分布；同anchor梯度probe才严格同快照反事实。因此最终对照未单独识别所有机制。梯度与离线关系真值诊断有相关线索，但不提供因果解释。
+
+26文件哈希、5400目标日志精确重建、7128梯度探针覆盖与3600历史Local/B轮方法对照通过，7份报表重生成逐字节一致。66355200为已处理教师关系条目数，不是独立样本数或新的认证压力测试。本轮不作D/E性能确认或新增通信压缩声明。
+
+本轮新增round1检查，强非IID每个seed/分支都至少有一个单簇/100%集中的客户端（Local也有）；最终全部客户端恢复/保持十簇，但仍存在大簇集中。旧历史评估从round20起，不能将新增观察窗口称为新回归，也不能据最终十簇宣称全程无坍缩。
+
+证据：[主审](../outputs/mechanism_results_20261031/RESULTS_REVIEW.md)、[机器审计](../outputs/mechanism_results_20261031/audit.json)、[独立复审](../outputs/mechanism_results_20261031/INDEPENDENT_REVIEW.md)、[逐seed质量](../outputs/mechanism_results_20261031/seed_quality.csv)。9个原始case及3份大型派生日志无损ZIP归档，清单记录原始路径与摘要。

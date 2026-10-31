@@ -133,3 +133,17 @@ python -m experiments.noniid_clustering.run --preset full --prepare-device cuda 
 原始case无损ZIP保留路径和字节；小结果/内存回放/完整清单直接可读。outputs/noniid_results_20261030/preparation只保存9组prepared.json/partition.json清单，含特征资产摘要和实际类别直方图，不含原始数据、特征数组或编码器。正式审计脚本需要原缓存/官方IDX才能完全重跑；下载新数据和重训不能保证跨硬件字节级相同。completed.json校验解压后的结果，不把ZIP替换后的GitHub目录当成原本已展开布局。
 
 包内VALIDATION.json与INDEPENDENT_REVIEW.md为实验前smoke/代码证据，formal_training_started=false是其生成时状态；正式完成与审核以results_full/completed.json、outputs/noniid_results_20261030/audit.json和RESULTS_REVIEW.md为准。冻结原实验源码和证据，不改写历史准备记录。
+
+
+## 跨客户端关系知识机制消融（正式完成）
+
+```powershell
+python -m unittest experiments.collaboration_mechanism.test_mechanism -v
+python -m experiments.collaboration_mechanism.run --preset full --prepare-device cuda --download --output runs/mechanism_full
+```
+
+9组36条训练；原配置复用noniid_clustering准备缓存，首次无缓存则重新私有AE/KMeans准备。完整数据/编码器/特征缓存未上传。默认历史参考位于noniid_clustering/results_full，原始JSON已归档时需先解压全部历史case；本机绝对路径不能异机直接 --resume。原结果目录已完成，复跑采用新输出；原机恢复使用 --resume 并保持源码/运行库/缓存/参考身份。
+
+原始9case保存5400条位打包输入关系和7128条梯度探针，可从日志重建目标，但未保存全历轮模型参数；重新前向仍需要重跑训练。summary.json、diagnostics.csv、target_diagnostics.csv三份较大派生文件也无损归档在collaboration_mechanism_derived_logs.zip。按ARCHIVE_MANIFEST.json解压到原路径后，可校验completed.json的全部26份原始文件摘要。小报表、完成清单、环境和准备指针直接可读。
+
+包内VALIDATION.json和INDEPENDENT_REVIEW.md是实验前开发/smoke证据，formal_mechanism_training_started=false为历史生成时状态；正式结果以results_full/completed.json及outputs/mechanism_results_20261031审核为准。audit_results.py的完整验证依赖原缓存与历史参考case，不能仅凭小汇总重建教师前向。计时列仅作诊断，不是新的D/E测速或用户实际等待总时长。
