@@ -147,3 +147,17 @@ python -m experiments.collaboration_mechanism.run --preset full --prepare-device
 原始9case保存5400条位打包输入关系和7128条梯度探针，可从日志重建目标，但未保存全历轮模型参数；重新前向仍需要重跑训练。summary.json、diagnostics.csv、target_diagnostics.csv三份较大派生文件也无损归档在collaboration_mechanism_derived_logs.zip。按ARCHIVE_MANIFEST.json解压到原路径后，可校验completed.json的全部26份原始文件摘要。小报表、完成清单、环境和准备指针直接可读。
 
 包内VALIDATION.json和INDEPENDENT_REVIEW.md是实验前开发/smoke证据，formal_mechanism_training_started=false为历史生成时状态；正式结果以results_full/completed.json及outputs/mechanism_results_20261031审核为准。audit_results.py的完整验证依赖原缓存与历史参考case，不能仅凭小汇总重建教师前向。计时列仅作诊断，不是新的D/E测速或用户实际等待总时长。
+
+
+## 固定公共预算：正式完成
+
+```powershell
+python -m unittest experiments.public_budget.test_budget -v
+python -m experiments.public_budget.run --preset full --prepare-device cuda --download --memory-audit --output runs/public_budget_full
+```
+
+正式18组54条主轨迹；memory-audit额外18次单方法最大M fixed8回放，仅取CPU峰值，耗时不用于性能。原环境可复用noniid_clustering准备缓存；异机需重新准备并采用新输出，不拿旧绝对路径直接resume。历史4096锚参考case需要先从归档解压到原路径。
+
+18个原始case JSON和较大派生日志无损ZIP保存，解压后completed.json可校验全部51个文件；archive清单含原始字节摘要与路径，数据集/编码器/特征缓存不上传。审计脚本完整运行需要原缓存和历史参考，不能只凭小汇总重建教师前向。包内VALIDATION与INDEPENDENT_REVIEW是开发阶段证据，formal_public_budget_training_started=false仅指当时；正式状态以results_full/completed.json及outputs/public_budget_results_20261031审核为准。
+
+用户确认两次长public区间为手动暂停。主要统计按公开共同掩码排除IID seed404 r119、强非IID seed404 r100，在同划分/seed的所有配置和B/E/D中成对排除，初始化/C0仍计；不计故障，不估算替换时间。原始51文件、全200轮模型/质量与内存不改。主要派生报告位于outputs/public_budget_results_20261031/pause_adjusted；adjust_pauses.py、PAUSE_EXCLUSION.json及两种独立复算保留来源。配对三个既有seed仍不等于独立性能确认。

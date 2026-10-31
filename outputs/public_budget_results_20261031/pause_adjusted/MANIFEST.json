@@ -1,0 +1,14 @@
+{
+  "source_completed_sha256": "e450670bf07ae97c28f71c7ff7330d4d357aee2bf95cbfd85ef82c53a52156c5",
+  "exclusion_sha256": "2c0725598ee747e2aefdc6513d8039b58700968ef076db7d4ae4d4b6439b0f61",
+  "files": {
+    "budget_effects.csv": "8fa34e41d9e6dec04bb18a7d69422e82c6c9fca7c30b81e52ff240ffe8ef7f28",
+    "final_clients.csv": "1642c7d45f4d9bb51d0c58f360f60909743b4014ea0a7e91850e7a8b9b06804f",
+    "memory_summary.csv": "408a39024b57966d18539c43d2bcdd0d09ff57d82fd4a51ce2018662d619c12b",
+    "paired_cost.csv": "7c42a8103aca89cf9a04fb96f06d4641f2ad93c09600a089d6d00d935d98c642",
+    "quality_guardrails.csv": "c84a9db4ae3c3165bff0666add5be0dc55bd590d33a197db5b1ee5fa41aeb2f6",
+    "report.md": "558468ba38ea417fd15e34f0da3d34bb3542eddf83408f8f926a742e7e7c10f4",
+    "summary.csv": "8418b7ff588bf22cc0fbe915c479497189df0a60811d1f150c9a66994faaf6f1",
+    "summary.json": "e190a2dd1a08a607a6eb1438659579dd7ea4b975445d2e269833ac0def7472e8"
+  }
+}
