@@ -15,9 +15,16 @@ from .design import Spec, plan
 from .sampling import subset_indices, subset_digest, STREAM
 from .engine import WorkloadMethod, run
 from .report import reports
+from .run import check_private_histograms
 
 
 class Tests(unittest.TestCase):
+    def test_histogram_rejects_wrong_bins_with_same_total(self):
+        pseudo=[np.array([0,0,1,2]),np.array([1,2,2,0])]
+        ids=[np.array([0,1,3]),np.array([0,1])]
+        check_private_histograms([[2,0,1],[0,1,1]],ids,pseudo,3)
+        with self.assertRaises(ValueError):check_private_histograms([[1,1,1],[0,1,1]],ids,pseudo,3)
+        with self.assertRaises(ValueError):check_private_histograms([],ids,pseudo,3)
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(dir=Path(__file__).parent)
         self.cfg = Config(dimensions=(6, 9), public_pool=64, samples=16, classes=3, rounds=4,

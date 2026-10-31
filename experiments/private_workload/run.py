@@ -25,8 +25,10 @@ DESIGN=dict(stage='Private head-workload reduction at a fixed public student bud
     memory_scope='Full-private case only, all methods/partitions/seeds; isolated single-method replays; times discarded')
 def own_sources():return {p.name:sha(p) for p in sorted(Path(__file__).parent.glob('*.py'))}
 def prep_sources():return {p.name:sha(p) for p in sorted((ROOT/'experiments/noniid_clustering').glob('*.py'))}
+
+def public_budget_sources():return {p.name:sha(p) for p in sorted((ROOT/'experiments/public_budget').glob('*.py'))}
 def check_environment(env):
-    if env['source_hashes']!=own_sources() or env['core_source_hashes']!=source_hashes() or env['preparation_source_hashes']!=prep_sources():raise ValueError('Frozen source changed')
+    if env['source_hashes']!=own_sources() or env['core_source_hashes']!=source_hashes() or env['preparation_source_hashes']!=prep_sources() or env['public_budget_source_hashes']!=public_budget_sources():raise ValueError('Frozen source changed')
     if env['design']!=DESIGN:raise ValueError('Design changed')
     current=runtime()
     if any(current[k]!=env['runtime'][k] for k in ('python','executable','numpy','scipy','sklearn','torch')):raise ValueError('Runtime changed')
@@ -36,6 +38,11 @@ def check_environment(env):
 def save(path,data):
     if path.exists():raise FileExistsError(path)
     tmp=path.with_suffix(path.suffix+'.part');tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8');tmp.replace(path)
+
+def check_private_histograms(histograms,indices,pseudo,classes):
+    expected=[np.bincount(labels[ids],minlength=classes).astype(int).tolist() for labels,ids in zip(pseudo,indices)]
+    if len(pseudo)!=len(indices) or histograms!=expected:
+        raise ValueError('Private subset histogram differs from cached pseudolabels')
 
 def check_reference(case,reference):
     validate_payload(reference)
@@ -63,6 +70,7 @@ def check_case(case,spec,part,seed,env,directory,reference=None):
     if case['graph_sha256']!=hashlib.sha256(graph.astype('<u4').tobytes()).hexdigest():raise ValueError('Graph differs')
     observer=Coverage(n,graph,cfg.samples);coverage=[]
     private_counts=case['partition_audit']['diagnostics']['client_counts']
+    private_pseudo=[np.load(directory/f'client_{c}_pseudo.npy',allow_pickle=False) for c in range(n)]
     effective_counts=[k if spec.private_limit is None else min(spec.private_limit,k) for k in private_counts]
     private_steps=sum((k+cfg.private_batch-1)//cfg.private_batch for k in effective_counts)*cfg.private_epochs
     edge_budget=e if spec.policy=='full' else spec.steps*cfg.public_edge_batch
@@ -78,7 +86,7 @@ def check_case(case,spec,part,seed,env,directory,reference=None):
             if r['public_schedule_digest']!=expected_schedule or r['public_optimizer_steps']!=n*spec.effective_steps or r['public_edges_consumed']!=n*edge_budget or r['private_optimizer_steps']!=private_steps or r['private_forward_endpoints']!=sum(effective_counts)*cfg.private_epochs:raise ValueError('Wrong training schedule or budget')
             idxs=[subset_indices(seed,c,rnd,k,spec.private_limit) for c,k in enumerate(private_counts)]
             if r['private_samples_per_client']!=[len(x) for x in idxs] or r['private_subset_digest']!=subset_digest(idxs):raise ValueError('Private subset differs from frozen sampling schedule')
-            if any(len(h)!=cfg.classes or sum(h)!=len(idxs[c]) for c,h in enumerate(r['private_subset_pseudo_histograms'])):raise ValueError('Private subset histogram inconsistent with subset sizes')
+            check_private_histograms(r['private_subset_pseudo_histograms'],idxs,private_pseudo,cfg.classes)
             if not 0<=r['teacher_forward_endpoints']<=n*cfg.samples or (r['method']=='B' and r['teacher_forward_endpoints']!=n*cfg.samples):raise ValueError('Wrong teacher scope')
             for phase in ('private','generation','exchange','public','pipeline'):
                 if not math.isfinite(r[phase+'_seconds']) or r[phase+'_seconds']<0:raise ValueError('Invalid timing')
@@ -102,6 +110,7 @@ def check_case(case,spec,part,seed,env,directory,reference=None):
         if abs(s['generation_fraction']-s['generation_seconds']/pipeline)>1e-12 or s['public_optimizer_steps']!=sum(r['public_optimizer_steps'] for r in rows) or s['student_forward_endpoints']!=sum(r['student_forward_endpoints'] for r in rows):raise ValueError('Summary budget/share differs')
         if s['final_head_digest']!=rows[-1]['head_digest_after_public'] or s['final_metrics']!=next(q for q in case['metrics'] if q['method']==m and q['round']==cfg.rounds):raise ValueError('Final summary differs')
         if s['persistent_method_array_bytes']!=rows[-1]['persistent_method_array_bytes']:raise ValueError('Persistent array summary differs')
+        if s['private_optimizer_steps']!=sum(r['private_optimizer_steps'] for r in rows) or s['private_forward_endpoints']!=sum(r['private_forward_endpoints'] for r in rows) or s['private_samples_per_client']!=effective_counts:raise ValueError('Private summary workload differs')
         traffic=Counter(s['initial_traffic'])
         for row in rows:traffic.update(row['traffic'])
         if dict(traffic)!=s['traffic']:raise ValueError('Traffic ledger differs')
@@ -145,7 +154,7 @@ def main():
                 for part in PARTITIONS:
                     p=refdir/f'{part}_m16384_fixed8_seed_{seed}.json'
                     if p.exists() and load_json(p)['config']==specs[0].config.json():references[f'{part}_{seed}']=dict(path=str(p.resolve()),sha256=sha(p))
-        env=dict(preset=args.preset,plan=[s.json() for s in specs],design=DESIGN,source_hashes=own_sources(),core_source_hashes=source_hashes(),preparation_source_hashes=prep_sources(),runtime=runtime(),cache=str(args.cache.resolve()),data_dir=str(args.data_dir.resolve()),memory_audit=args.memory_audit,references=references)
+        env=dict(preset=args.preset,plan=[s.json() for s in specs],design=DESIGN,source_hashes=own_sources(),core_source_hashes=source_hashes(),preparation_source_hashes=prep_sources(),public_budget_source_hashes=public_budget_sources(),runtime=runtime(),cache=str(args.cache.resolve()),data_dir=str(args.data_dir.resolve()),memory_audit=args.memory_audit,references=references)
         output.mkdir(parents=True,exist_ok=True);save(output/'environment.json',env)
     ensure_data(args.data_dir,args.download);cases=[];profiles=[]
     with threadpool_limits(limits=specs[0].config.threads):

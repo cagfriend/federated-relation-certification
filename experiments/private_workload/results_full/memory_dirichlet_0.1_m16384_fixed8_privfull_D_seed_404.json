@@ -1,0 +1,257 @@
+{
+  "partition": "dirichlet_0.1",
+  "seed": 404,
+  "case_id": "m16384_fixed8_privfull",
+  "method": "D",
+  "process_peak_working_set_bytes": 1640841216,
+  "persistent_method_array_bytes": 27347744,
+  "final_head_digest": "a743519bdb3ad183040100fdc944901e640da57a7d44b33f844fe539d83be3b0",
+  "identity": {
+    "preset": "full",
+    "plan": [
+      {
+        "config": {
+          "dimensions": [
+            512,
+            512,
+            512,
+            2048,
+            2048,
+            2048
+          ],
+          "public_pool": 16384,
+          "samples": 16384,
+          "degree": 1,
+          "classes": 10,
+          "rounds": 200,
+          "train_limit": 60000,
+          "test_limit": 10000,
+          "pretrain_epochs": 5,
+          "pretrain_batch": 256,
+          "pretrain_lr": 0.001,
+          "noise_std": 0.15,
+          "prepare_device": "cuda",
+          "prepare_threads": 4,
+          "feature_batch": 256,
+          "kmeans_restarts": 10,
+          "kmeans_max_iter": 100,
+          "head_lr": 0.1,
+          "private_epochs": 1,
+          "private_batch": 128,
+          "public_epochs": 1,
+          "public_edge_batch": 256,
+          "public_weight": 1.0,
+          "eval_every": 20,
+          "threads": 1
+        },
+        "policy": "fixed",
+        "steps": 8,
+        "private_limit": null
+      },
+      {
+        "config": {
+          "dimensions": [
+            512,
+            512,
+            512,
+            2048,
+            2048,
+            2048
+          ],
+          "public_pool": 16384,
+          "samples": 16384,
+          "degree": 1,
+          "classes": 10,
+          "rounds": 200,
+          "train_limit": 60000,
+          "test_limit": 10000,
+          "pretrain_epochs": 5,
+          "pretrain_batch": 256,
+          "pretrain_lr": 0.001,
+          "noise_std": 0.15,
+          "prepare_device": "cuda",
+          "prepare_threads": 4,
+          "feature_batch": 256,
+          "kmeans_restarts": 10,
+          "kmeans_max_iter": 100,
+          "head_lr": 0.1,
+          "private_epochs": 1,
+          "private_batch": 128,
+          "public_epochs": 1,
+          "public_edge_batch": 256,
+          "public_weight": 1.0,
+          "eval_every": 20,
+          "threads": 1
+        },
+        "policy": "fixed",
+        "steps": 8,
+        "private_limit": 2048
+      },
+      {
+        "config": {
+          "dimensions": [
+            512,
+            512,
+            512,
+            2048,
+            2048,
+            2048
+          ],
+          "public_pool": 16384,
+          "samples": 16384,
+          "degree": 1,
+          "classes": 10,
+          "rounds": 200,
+          "train_limit": 60000,
+          "test_limit": 10000,
+          "pretrain_epochs": 5,
+          "pretrain_batch": 256,
+          "pretrain_lr": 0.001,
+          "noise_std": 0.15,
+          "prepare_device": "cuda",
+          "prepare_threads": 4,
+          "feature_batch": 256,
+          "kmeans_restarts": 10,
+          "kmeans_max_iter": 100,
+          "head_lr": 0.1,
+          "private_epochs": 1,
+          "private_batch": 128,
+          "public_epochs": 1,
+          "public_edge_batch": 256,
+          "public_weight": 1.0,
+          "eval_every": 20,
+          "threads": 1
+        },
+        "policy": "fixed",
+        "steps": 8,
+        "private_limit": 1024
+      }
+    ],
+    "design": {
+      "stage": "Private head-workload reduction at a fixed public student budget",
+      "methods": [
+        "B",
+        "E",
+        "D"
+      ],
+      "partitions": [
+        "iid",
+        "dirichlet_0.1"
+      ],
+      "seeds": [
+        404,
+        505,
+        606
+      ],
+      "primary_metrics": [
+        "head_pipeline_seconds",
+        "with_shared_preparation_seconds",
+        "paired_absolute_seconds_saved"
+      ],
+      "quality_guardrail_acc_drop": 0.01,
+      "private_sampling": "Per-round subset from SeedSequence [seed,403,client,round]; full cap delegates to the original private_epoch",
+      "scope": "Known-seed paired serial CPU timing; not independent-seed/process timing confirmation",
+      "memory_scope": "Full-private case only, all methods/partitions/seeds; isolated single-method replays; times discarded"
+    },
+    "source_hashes": {
+      "__init__.py": "732fdfbcc95664a59b883a9e9cb4b416335589af841707c9b683d633bf317ccd",
+      "design.py": "dcbf3066422774ed340a6bbe97888ca535c0afeb0d531a47bcdd649b83b42c10",
+      "engine.py": "9649832819f624c642e0b978836d752e6adb24cafea65900d301414f0b65a35a",
+      "report.py": "60e12f89c0a32eef2656356667756f64772bb8b3ff61c3dacc0796f5a4620166",
+      "run.py": "d4fb9996269d47abf7a6a35446d347978b67d9604414bf81a6060906e5ff8bdd",
+      "sampling.py": "f836113f45b9d3e3613663e3c4adc4024d36604b73808c861eb7559a486abbed",
+      "student.py": "bd3494b42188a2eb4a0b986835b2be60a767a56c2c0d469c59c4b3dcff9f262d",
+      "test_workload.py": "172439a21ded3bdd7f3447df06f697313a55fed10aa39df775fae012cc8d0e70"
+    },
+    "core_source_hashes": {
+      "__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+      "certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+      "codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+      "config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+      "data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+      "engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+      "graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+      "head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+      "protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+      "report.py": "2826e47661a60c507f92511a41c27bb4b6bc76ca60cdc446c85e22eb92ddae88",
+      "run.py": "d1357a366ce8cca49f14ff9fec267da1472e9e07df41b621d5fb80d8a5dfed6a",
+      "test_scaling.py": "83aeef867d7ebd10747e9c6e2d359728acf972983788e605c36681a8e38f04e7",
+      "util.py": "f207d217f25b1a7098f121b734c312d241315baf5dba21cf742ca3baae6ca97d"
+    },
+    "preparation_source_hashes": {
+      "__init__.py": "daabbbba28cab72924289c9668b133cd771936acc114329a0138778f6daf7812",
+      "data.py": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+      "engine.py": "096ed16689261299bceb632ba3e6e38a2275cb3e0cef27b6fddccd34d0784ef3",
+      "report.py": "22d32a869e56c8df3deb79144c8789d0b57c100f0bb9483c39c10b732d020350",
+      "run.py": "fbdf35634e9e7320e3b3b2bfcdbe9ae0cb0cd058a88e5e2e18460663608c33a1",
+      "test_noniid.py": "48ee1477bbe5f5564b732b6f8444a5152087270849589f1aff80bb9ee0515021"
+    },
+    "public_budget_source_hashes": {
+      "__init__.py": "e07104bcd154bc11e772a1117dc40c28223606ea83c513c9fa2e42752a407fbe",
+      "design.py": "18683c3450d17bad5690f133ec44a6936f356090fe71fe91e63e1c968faaebd1",
+      "engine.py": "3ab6ad048c16c0cfd474c6b6cb827b998f62d0ac5b286ec8fbf13b8dc34136ef",
+      "report.py": "5db909401cabd079c47c2280525b3b4135ae6d92b367daac9e6d76dc05f76d2e",
+      "run.py": "3c6e7b643561582aa7a5d83b7359d6f70d924340cb7ef7a82546487ac0a7e32e",
+      "student.py": "0f2f01afa5ef54264c178fc09c67d79c381aea73342198dd6bf6984b77743e77",
+      "test_budget.py": "4820a9346d632b61989313d4251c65785c7002576a6dc245175d0e08628b52b7"
+    },
+    "runtime": {
+      "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+      "executable": "D:\\anaconda\\python.exe",
+      "numpy": "1.26.4",
+      "scipy": "1.13.1",
+      "sklearn": "1.5.1",
+      "torch": "2.7.1+cu118",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "blas": [
+        {
+          "user_api": "blas",
+          "internal_api": "mkl",
+          "num_threads": 8,
+          "prefix": "mkl_rt",
+          "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+          "version": "2023.1-Product",
+          "threading_layer": "intel"
+        },
+        {
+          "user_api": "openmp",
+          "internal_api": "openmp",
+          "num_threads": 16,
+          "prefix": "vcomp",
+          "filepath": "D:\\anaconda\\vcomp140.dll",
+          "version": null
+        }
+      ]
+    },
+    "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\prepared",
+    "data_dir": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\data",
+    "memory_audit": true,
+    "references": {
+      "iid_404": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\iid_m16384_fixed8_seed_404.json",
+        "sha256": "55f008adc1e2a36b02823af85eaaec05448733607475c0981b398f32fd635df5"
+      },
+      "dirichlet_0.1_404": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\dirichlet_0.1_m16384_fixed8_seed_404.json",
+        "sha256": "139accbb17bf1bb95be31fb4c646a89933239e204a61e8ff54dd7b46b17600e3"
+      },
+      "iid_505": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\iid_m16384_fixed8_seed_505.json",
+        "sha256": "c3c9f497d171940b321d65077c90379bad630e67c7064513353c357ffdc88472"
+      },
+      "dirichlet_0.1_505": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\dirichlet_0.1_m16384_fixed8_seed_505.json",
+        "sha256": "d18d3bb34ef7bb2c8df40a7ff5e88dcadfe51706b2836150ed5a4ca24e20305d"
+      },
+      "iid_606": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\iid_m16384_fixed8_seed_606.json",
+        "sha256": "fdd4619385d45bbbd6e413d96086762a0102300f0637c3ec89c691a04fef10e8"
+      },
+      "dirichlet_0.1_606": {
+        "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\results_full\\dirichlet_0.1_m16384_fixed8_seed_606.json",
+        "sha256": "efa24d3c37c6483af68e6d8a8d8d4476d2e273c73fae52bd0c8ef494ed5390e3"
+      }
+    }
+  },
+  "payload_sha256": "0ddba99f970ab2bf43171111e1ab25dcb7e88671c79b400431a836d6795a6363"
+}

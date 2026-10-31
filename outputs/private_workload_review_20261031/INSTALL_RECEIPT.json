@@ -1,0 +1,23 @@
+{
+  "source_commit": "00ac416419aa6a10565f501fcb17826af3553dbf",
+  "downloaded_files": 10,
+  "exact_unmodified_files": 8,
+  "local_patch_files": [
+    "experiments/private_workload/run.py",
+    "experiments/private_workload/test_workload.py"
+  ],
+  "patch_scope": "Histogram content verification, reused public_budget source identity, private summary ledger checks; no SGD or sampling changes",
+  "formal_started": false,
+  "github_modified": false,
+  "validation": "LOCAL_VALIDATION.json",
+  "source_hashes": {
+    "design.py": "dcbf3066422774ed340a6bbe97888ca535c0afeb0d531a47bcdd649b83b42c10",
+    "engine.py": "9649832819f624c642e0b978836d752e6adb24cafea65900d301414f0b65a35a",
+    "report.py": "60e12f89c0a32eef2656356667756f64772bb8b3ff61c3dacc0796f5a4620166",
+    "run.py": "d4fb9996269d47abf7a6a35446d347978b67d9604414bf81a6060906e5ff8bdd",
+    "sampling.py": "f836113f45b9d3e3613663e3c4adc4024d36604b73808c861eb7559a486abbed",
+    "student.py": "bd3494b42188a2eb4a0b986835b2be60a767a56c2c0d469c59c4b3dcff9f262d",
+    "test_workload.py": "172439a21ded3bdd7f3447df06f697313a55fed10aa39df775fae012cc8d0e70",
+    "__init__.py": "732fdfbcc95664a59b883a9e9cb4b416335589af841707c9b683d633bf317ccd"
+  }
+}

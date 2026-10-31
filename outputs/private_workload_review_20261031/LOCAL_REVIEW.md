@@ -1,0 +1,11 @@
+# 本地安装验收
+
+来源：GitHub提交00ac416419aa6a10565f501fcb17826af3553dbf，10文件内容以Git blob SHA逐一验证后安装到experiments/private_workload。原版保存在staging/及download.json。
+
+本地仅修改新包run.py和test_workload.py：直方图从缓存pseudo和子集索引逐项重算、拒绝同总数错误分箱及空表；冻结复用public_budget模块源码；核对私有summary步数/端点/样本量账本。没有改变SGD、403抽样、公共预算或任何旧实验。补丁尚未推回GitHub。
+
+主AI本地验收：7项单测（ResourceWarning按错误处理）、官方18组/54轨迹/18内存回放、resume全部保留、51文件hash和报表逐字节重生成通过；18个重新seal的错分箱case均拒绝，依赖变更拒绝。6正式缓存和历史锚输入可用。137份旧结果未变；按当前注册200轮随机日程实际核对72个客户端/档位组合均完整覆盖，不推广为任意设置保证。
+
+GPT-6 Luna/high独立子代理只读审阅原版及补丁，确认full等价、同BED子集、全图教师/交换、计时和护栏符合计划；指出的hist验证缺口已修。主AI复核代码与上述实测后接受可运行版本。子代理未亲自运行本地smoke，实测证据来自主AI，详见INDEPENDENT_REVIEW.md与LOCAL_VALIDATION.json。
+
+正式实验尚未启动。主要验收是计算节省，允许预定范围内质量下降；内存回放只覆盖完整私有档，不能据其宣称所有减少档的峰值均已实测。
