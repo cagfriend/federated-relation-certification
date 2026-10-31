@@ -1,0 +1,14 @@
+{
+  "source_completed_sha256": "72aa4110fb5bceb7c26ed15f17f2795439ff732f9e2842d08fbde51d61f50fe2",
+  "exclusion_sha256": "0542dee1a7259aa72ac443574e084ac0ebbe8bd555f22bce4beb3419d944abef",
+  "files": {
+    "summary.csv": "7c87e4bf39bd50122af833d9b09fd011fc9248cdb5688cd287c470c07b72886f",
+    "paired_cost.csv": "954667240d1bc604f0316b0790c22d77da0e3ea4edd30c2525eab5012b235e80",
+    "quality_guardrails.csv": "c77e22bb11223aabfe0699e3c6fdd46d966acf59838f57c72f50da1903cc7166",
+    "workload_effects.csv": "bc7c64cb6d2f9cf34d299e44c020d84aa32765f99a88a946671c04c8ae21a06f",
+    "final_clients.csv": "ac79929e5d2058c146b707313cfec37e12badc3ca52febdd3cd31c3680bdcdd1",
+    "memory_summary.csv": "129e4b0d799b6f8f37c9e5d33921ef9abaf35025e3914d321f3a5c69532823fc",
+    "summary.json": "43d7afbb493a12a05838c047a9691b0d25c64dfe90f8d2746fa7cde6d505a7b7",
+    "report.md": "bf122725d6952058013b1c09fa142e353667cc92e181a8d4f3957e5751e8dc24"
+  }
+}

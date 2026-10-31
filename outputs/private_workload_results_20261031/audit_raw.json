@@ -1,0 +1,86 @@
+{
+  "completion": {
+    "case_count": 18,
+    "training_trajectories": 54,
+    "memory_replays": 18,
+    "mismatches": 0,
+    "relation_comparisons": 530841600,
+    "candidate_membership_comparisons": 707788800,
+    "historical_anchor_round_method_pairs": 3600
+  },
+  "verified_output_files": 51,
+  "regenerated_reports_byte_identical": true,
+  "prior_result_files_unchanged": 137,
+  "timing_flags": [
+    {
+      "partition": "iid",
+      "seed": 505,
+      "case_id": "m16384_fixed8_priv2048",
+      "method": "E",
+      "round": 143,
+      "stage": "public_seconds",
+      "seconds": 15.030995499982964,
+      "median": 0.1811872999969637
+    },
+    {
+      "partition": "iid",
+      "seed": 505,
+      "case_id": "m16384_fixed8_priv2048",
+      "method": "E",
+      "round": 143,
+      "stage": "pipeline_seconds",
+      "seconds": 15.224854800006142,
+      "median": 0.40129074998549186
+    },
+    {
+      "partition": "iid",
+      "seed": 505,
+      "case_id": "m16384_fixed8_priv2048",
+      "method": "D",
+      "round": 9,
+      "stage": "public_seconds",
+      "seconds": 2.051722600008361,
+      "median": 0.17953410001064185
+    },
+    {
+      "partition": "iid",
+      "seed": 606,
+      "case_id": "m16384_fixed8_priv2048",
+      "method": "B",
+      "round": 50,
+      "stage": "public_seconds",
+      "seconds": 2.0837910999835003,
+      "median": 0.13027390000934247
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 606,
+      "case_id": "m16384_fixed8_priv1024",
+      "method": "B",
+      "round": 148,
+      "stage": "private_seconds",
+      "seconds": 2.3315249999868684,
+      "median": 0.09334110000054352
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 606,
+      "case_id": "m16384_fixed8_priv1024",
+      "method": "B",
+      "round": 150,
+      "stage": "generation_seconds",
+      "seconds": 36.88578900002176,
+      "median": 0.21903745000599883
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 606,
+      "case_id": "m16384_fixed8_priv1024",
+      "method": "B",
+      "round": 150,
+      "stage": "pipeline_seconds",
+      "seconds": 37.11816459998954,
+      "median": 0.562898549993406
+    }
+  ]
+}
