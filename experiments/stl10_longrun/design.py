@@ -1,1 +1,91 @@
-IiIiRnJvemVuIGRlc2lnbiBhbmQgbWVjaGFuaWNhbCBjcml0ZXJpYSBmb3IgdGhlIFNUTC0xMCBsb25nLWhvcml6b24gdmFsaWRhdGlvbi4iIiIKZnJvbSBkYXRhY2xhc3NlcyBpbXBvcnQgcmVwbGFjZQoKZnJvbSBleHBlcmltZW50cy5wcml2YXRlX3dvcmtsb2FkLmRlc2lnbiBpbXBvcnQgU3BlYywgc3BlY19mcm9tX2pzb24gICMgbm9xYTogRjQwMSAgKHNwZWNfZnJvbV9qc29uIHJlLWV4cG9ydGVkIGZvciBydW4ucHkpCmZyb20gZXhwZXJpbWVudHMuc3RsMTBfdHJhbnNmZXIuZGVzaWduIGltcG9ydCBwbGFuIGFzIF90cmFuc2Zlcl9wbGFuCgpTVEVQUyA9ICgxLCAyKQpTRUVEUyA9ICgxMDAyLCAxMDAzKQpTTU9LRV9TRUVEUyA9ICgxMDAxLCkKUEFSVElUSU9OUyA9ICgnaWlkJywgJ2RpcmljaGxldF8wLjEnKQpNRVRIT0QgPSAnQicKU01PS0VfUk9VTkRTID0gMTIKCiMgT3BlcmF0aW9uYWwgYWNjZXB0YW5jZSB0aHJlc2hvbGRzLCBmaXhlZCBiZWZvcmUgYW55IHJ1biAoUFJFUkVHSVNUUkFUSU9OLm1kCiMgc2VjdGlvbiA0KS4gVGhleSBhcmUgcHJlLXNwZWNpZmllZCBvcGVyYXRpbmcgc3RhbmRhcmRzLCBub3QgdGhlb3JldGljYWwKIyBoZWFsdGh5LWNsdXN0ZXJpbmcgYm91bmRzIGFuZCBub3QgY2FsaWJyYXRlZCBzdGF0aXN0aWNhbCB0aHJlc2hvbGRzLgpTMV9NQVhfTUVBTl9MQVJHRVNUID0gMC42MApTMV9DTElFTlRfTEFSR0VTVF9MVCA9IDAuOTkKUzJfTUFYX1NJTkdMRV9DTElFTlRTID0gMgpTMl9NRUFOX0xBUkdFU1RfTFQgPSAwLjkwClMyX0ZST01fUk9VTkQgPSAyMApRMV9NSU5fQUNDID0gMC4xNApRMV9NSU5fTk1JID0gMC4wMQpRMl9NQVhfRklOQUxfRURHRV9GUkFDVElPTiA9IDAuNjAKCgpkZWYgY2hlY2twb2ludHMocm91bmRzKToKICAgICIiIkV2YWx1YXRpb24gcm91bmRzOiAwLDEsMiw1LDEwLCBldmVyeSAyMCwgYW5kIHRoZSBmaW5hbCByb3VuZC4iIiIKICAgIHBvaW50cyA9IHswLCAxLCAyLCA1LCAxMCwgcm91bmRzfQogICAgcG9pbnRzLnVwZGF0ZShyYW5nZSgyMCwgcm91bmRzICsgMSwgMjApKQogICAgcmV0dXJuIHNvcnRlZChwIGZvciBwIGluIHBvaW50cyBpZiAwIDw9IHAgPD0gcm91bmRzKQoKCmRlZiBwbGFuKG5hbWUsIGRldmljZT1Ob25lKToKICAgIGlmIG5hbWUgPT0gJ2Z1bGwnOgogICAgICAgIGNvbmZpZyA9IF90cmFuc2Zlcl9wbGFuKCdmdWxsJywgZGV2aWNlKVstMV0uY29uZmlnICAjIHRoZSBNMTYzODQgc3BlYwogICAgICAgIHNlZWRzID0gU0VFRFMKICAgIGVsc2U6CiAgICAgICAgY29uZmlnID0gcmVwbGFjZShfdHJhbnNmZXJfcGxhbignc21va2UnLCBkZXZpY2UpWy0xXS5jb25maWcsIHJvdW5kcz1TTU9LRV9ST1VORFMpCiAgICAgICAgc2VlZHMgPSBTTU9LRV9TRUVEUwogICAgc3BlY3MgPSBbU3BlYyhjb25maWcsICdmaXhlZCcsIHN0ZXBzLCBOb25lKSBmb3Igc3RlcHMgaW4gU1RFUFNdCiAgICBmb3Igc3BlYyBpbiBzcGVjczoKICAgICAgICBzcGVjLnZhbGlkYXRlKCkKICAgIGlmIGxlbih7c3RyKHNwZWMuY29uZmlnLnByZXBhcmF0aW9uKCkpIGZvciBzcGVjIGluIHNwZWNzfSkgIT0gMToKICAgICAgICByYWlzZSBBc3NlcnRpb25FcnJvcignUHJlcGFyYXRpb24gY2hhbmdlZCBhY3Jvc3MgcHVibGljLXN0ZXAgdGllcnMnKQogICAgcmV0dXJuIHNwZWNzCgoKZGVmIHNjaGVkdWxlKG5hbWUpOgogICAgc2VlZHMgPSBTRUVEUyBpZiBuYW1lID09ICdmdWxsJyBlbHNlIFNNT0tFX1NFRURTCiAgICBvdXQgPSBbXQogICAgZm9yIHNlZWQgaW4gc2VlZHM6CiAgICAgICAgZm9yIHBhcnRpdGlvbiBpbiBQQVJUSVRJT05TOgogICAgICAgICAgICBmb3Igc3BlYyBpbiBwbGFuKG5hbWUpOgogICAgICAgICAgICAgICAgb3V0LmFwcGVuZChkaWN0KHNlZWQ9c2VlZCwgcGFydGl0aW9uPXBhcnRpdGlvbiwgY2FzZV9pZD1zcGVjLmNhc2VfaWQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc3RlcHM9c3BlYy5zdGVwcywgbWV0aG9kPU1FVEhPRCkpCiAgICByZXR1cm4gb3V0CgoKZGVmIGZpbGVuYW1lKG1ldGEpOgogICAgcmV0dXJuIGYie21ldGFbJ3BhcnRpdGlvbiddfV97bWV0YVsnY2FzZV9pZCddfV9zZWVkX3ttZXRhWydzZWVkJ119X0IuanNvbiIKCgpkZWYgZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQpOgogICAgIiIiTWVjaGFuaWNhbCBTMS9TMi9RMS9RMiB2ZXJkaWN0IGZvciBvbmUgZmluaXNoZWQgcnVuIHJlY29yZC4iIiIKICAgIGJ5X3JvdW5kID0ge2NbJ3JvdW5kJ106IGMgZm9yIGMgaW4gcmVjb3JkWydjaGVja3BvaW50cyddfQogICAgZmluYWwgPSBieV9yb3VuZFtyZWNvcmRbJ3JvdW5kcyddXQogICAgczEgPSAoZmluYWxbJ3NpbmdsZV9jbHVzdGVyX2NsaWVudHMnXSA9PSAwCiAgICAgICAgICBhbmQgYWxsKGNbJ2xhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbiddIDwgUzFfQ0xJRU5UX0xBUkdFU1RfTFQgZm9yIGMgaW4gZmluYWxbJ2NsaWVudHMnXSkKICAgICAgICAgIGFuZCBmaW5hbFsnbWVhbl9sYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb24nXSA8PSBTMV9NQVhfTUVBTl9MQVJHRVNUKQogICAganVkZ2VkID0gW2MgZm9yIGMgaW4gcmVjb3JkWydjaGVja3BvaW50cyddIGlmIGNbJ3JvdW5kJ10gPj0gUzJfRlJPTV9ST1VORF0KICAgIHMyID0gYWxsKGNbJ3NpbmdsZV9jbHVzdGVyX2NsaWVudHMnXSA8PSBTMl9NQVhfU0lOR0xFX0NMSUVOVFMKICAgICAgICAgICAgIGFuZCBjWydtZWFuX2xhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbiddIDwgUzJfTUVBTl9MQVJHRVNUX0xUIGZvciBjIGluIGp1ZGdlZCkKICAgIHExID0gZmluYWxbJ21lYW4nXVsnYWNjJ10gPj0gUTFfTUlOX0FDQyBhbmQgZmluYWxbJ21lYW4nXVsnbm1pJ10gPj0gUTFfTUlOX05NSQogICAgcTIgPSByZWNvcmRbJ3JvdW5kX3JlY29yZHMnXVstMV1bJ3Bvc2l0aXZlX3JlbGF0aW9uX2ZyYWN0aW9uJ10gPD0gUTJfTUFYX0ZJTkFMX0VER0VfRlJBQ1RJT04KICAgIHJlc3VsdCA9IGRpY3QoUzE9Ym9vbChzMSksIFMyPWJvb2woczIpLCBRMT1ib29sKHExKSwgUTI9Ym9vbChxMikpCiAgICByZXN1bHRbJ3Bhc3NlZCddID0gYWxsKHJlc3VsdC52YWx1ZXMoKSkKICAgIHJldHVybiByZXN1bHQKCgpkZWYgc2VsZWN0X3RpZXIocGFzc2VkX2J5X3N0ZXBzKToKICAgICIiIkZyb3plbiBzZWxlY3Rpb24gcnVsZTogMiBzdGVwcyBpZiBmdWxseSB2YWxpZGF0ZWQsIGVsc2UgMSwgZWxzZSBOb25lLgoKICAgIHBhc3NlZF9ieV9zdGVwcyBtYXBzIGVhY2ggc3RlcCB0aWVyIHRvIHRoZSBsaXN0IG9mIHBlci10cmFqZWN0b3J5CiAgICBwYXNzIGJvb2xlYW5zOyBhIHRpZXIgaXMgdmFsaWRhdGVkIG9ubHkgd2hlbiBldmVyeSB0cmFqZWN0b3J5IHBhc3NlZC4KICAgICIiIgogICAgaWYgcGFzc2VkX2J5X3N0ZXBzLmdldCgyKSBhbmQgYWxsKHBhc3NlZF9ieV9zdGVwc1syXSk6CiAgICAgICAgcmV0dXJuIDIKICAgIGlmIHBhc3NlZF9ieV9zdGVwcy5nZXQoMSkgYW5kIGFsbChwYXNzZWRfYnlfc3RlcHNbMV0pOgogICAgICAgIHJldHVybiAxCiAgICByZXR1cm4gTm9uZQo=
+"""Frozen design and mechanical criteria for the STL-10 long-horizon validation."""
+from dataclasses import replace
+
+from experiments.private_workload.design import Spec, spec_from_json  # noqa: F401  (spec_from_json re-exported for run.py)
+from experiments.stl10_transfer.design import plan as _transfer_plan
+
+STEPS = (1, 2)
+SEEDS = (1002, 1003)
+SMOKE_SEEDS = (1001,)
+PARTITIONS = ('iid', 'dirichlet_0.1')
+METHOD = 'B'
+SMOKE_ROUNDS = 12
+
+# Operational acceptance thresholds, fixed before any run (PREREGISTRATION.md
+# section 4). They are pre-specified operating standards, not theoretical
+# healthy-clustering bounds and not calibrated statistical thresholds.
+S1_MAX_MEAN_LARGEST = 0.60
+S1_CLIENT_LARGEST_LT = 0.99
+S2_MAX_SINGLE_CLIENTS = 2
+S2_MEAN_LARGEST_LT = 0.90
+S2_FROM_ROUND = 20
+Q1_MIN_ACC = 0.14
+Q1_MIN_NMI = 0.01
+Q2_MAX_FINAL_EDGE_FRACTION = 0.60
+
+
+def checkpoints(rounds):
+    """Evaluation rounds: 0,1,2,5,10, every 20, and the final round."""
+    points = {0, 1, 2, 5, 10, rounds}
+    points.update(range(20, rounds + 1, 20))
+    return sorted(p for p in points if 0 <= p <= rounds)
+
+
+def plan(name, device=None):
+    if name == 'full':
+        config = _transfer_plan('full', device)[-1].config  # the M16384 spec
+        seeds = SEEDS
+    else:
+        config = replace(_transfer_plan('smoke', device)[-1].config, rounds=SMOKE_ROUNDS)
+        seeds = SMOKE_SEEDS
+    specs = [Spec(config, 'fixed', steps, None) for steps in STEPS]
+    for spec in specs:
+        spec.validate()
+    if len({str(spec.config.preparation()) for spec in specs}) != 1:
+        raise AssertionError('Preparation changed across public-step tiers')
+    return specs
+
+
+def schedule(name):
+    seeds = SEEDS if name == 'full' else SMOKE_SEEDS
+    out = []
+    for seed in seeds:
+        for partition in PARTITIONS:
+            for spec in plan(name):
+                out.append(dict(seed=seed, partition=partition, case_id=spec.case_id,
+                                steps=spec.steps, method=METHOD))
+    return out
+
+
+def filename(meta):
+    return f"{meta['partition']}_{meta['case_id']}_seed_{meta['seed']}_B.json"
+
+
+def evaluate_trajectory(record):
+    """Mechanical S1/S2/Q1/Q2 verdict for one finished run record."""
+    by_round = {c['round']: c for c in record['checkpoints']}
+    final = by_round[record['rounds']]
+    s1 = (final['single_cluster_clients'] == 0
+          and all(c['largest_cluster_fraction'] < S1_CLIENT_LARGEST_LT for c in final['clients'])
+          and final['mean_largest_cluster_fraction'] <= S1_MAX_MEAN_LARGEST)
+    judged = [c for c in record['checkpoints'] if c['round'] >= S2_FROM_ROUND]
+    s2 = all(c['single_cluster_clients'] <= S2_MAX_SINGLE_CLIENTS
+             and c['mean_largest_cluster_fraction'] < S2_MEAN_LARGEST_LT for c in judged)
+    q1 = final['mean']['acc'] >= Q1_MIN_ACC and final['mean']['nmi'] >= Q1_MIN_NMI
+    q2 = record['round_records'][-1]['positive_relation_fraction'] <= Q2_MAX_FINAL_EDGE_FRACTION
+    result = dict(S1=bool(s1), S2=bool(s2), Q1=bool(q1), Q2=bool(q2))
+    result['passed'] = all(result.values())
+    return result
+
+
+def select_tier(passed_by_steps):
+    """Frozen selection rule: 2 steps if fully validated, else 1, else None.
+
+    passed_by_steps maps each step tier to the list of per-trajectory
+    pass booleans; a tier is validated only when every trajectory passed.
+    """
+    if passed_by_steps.get(2) and all(passed_by_steps[2]):
+        return 2
+    if passed_by_steps.get(1) and all(passed_by_steps[1]):
+        return 1
+    return None
