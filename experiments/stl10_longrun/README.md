@@ -1,1 +1,28 @@
-IyBTVEwtMTAg5YWs5YWx5q2l5pWw5YCZ6YCJ6ZW/56iL6aqM6K+BCgrmjIkgYFBSRVJFR0lTVFJBVElPTi5tZGDvvIjlhrvnu5PniYjvvInmiafooYzvvJrlj6rot5EgQiDmlrnms5XvvIzlhazlhbHmraXmlbAgMS8yIOatpQrkuKTmoaMgw5cgc2VlZCAxMDAyLzEwMDMgw5cgSUlEL0RpcmljaGxldCDOsT0wLjHvvIxNMTYzODTvvIwyMDAg6L2u77yM5YWxIDgg5p2hCumVv+eoi+i9qOi/ue+8jOacuuaisOWIpOWumiBTMS9TMi9RMS9RMiDlubbmjInlhrvnu5Pop4TliJnpgInmoaPjgILmnKzlrp7pqozkuI3kuqflh7rorqTor4EK55yB5pe257uT6K6677yb6YCa6L+H5LuF5oyH5a+55bqU5qGj5L2N55qEIDQg5p2h6L2o6L+55ruh6Laz57qm5a6a5pON5L2c5qCH5YeG44CCCgojIyDov5DooYwKCuato+W8j+i/kOihjO+8iOmcgOimgSBgZXhwZXJpbWVudHMvc3RsMTBfdHJhbnNmZXIvcmVzdWx0c19mdWxsYCDnmoTnjq/looPjgIEK5YeG5aSH57yT5a2Y5qCH6K6w5LiO5Y6G5Y+yIDgg5q2lIEIg6L+Q6KGM5L2c6ZSa77yb5byA5aeL5LiO5q+P5qyh5oGi5aSN6YO96KaB5rGCCkFDTGluZVN0YXR1cz0x77yJ77yaCgpgYGAKcHl0aG9uIC1tIGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4ucnVuIC0tcHJlc2V0IGZ1bGwKcHl0aG9uIC1tIGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4ucnVuIC0tcHJlc2V0IGZ1bGwgLS1yZXN1bWUgICAjIOS4reaWreWQjue7rei3kQpgYGAKCnNtb2tl77yI5ZCI5oiQIFNUTC0xMCDlpLnlhbfvvIzoh6rlpIflh4blpIfnvJPlrZjvvIwxMiDova7vvIzlj6rpqozor4Hlrp7njrDkuI7liKTlrpoK5py65qKw5rWB56iL77yJ77yaCgpgYGAKcHl0aG9uIC1tIGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4ucnVuIC0tcHJlc2V0IHNtb2tlCnB5dGhvbiAtbSB1bml0dGVzdCBleHBlcmltZW50cy5zdGwxMF9sb25ncnVuLnRlc3RfZGVzaWduCmBgYAoK6L6T5Ye677yaYHJlc3VsdHNfPHByZXNldD4vYCDkuIvmr4/mnaHovajov7nkuIDkuKrlsIHnrb4gSlNPTu+8jOWPpuWKoApgcmVwb3J0Lm1kYCDkuI4gYHZlcmRpY3QuanNvbmDvvIjmoaPkvY3liKTlrprkuI7pgInmoaPnu5PmnpzvvInjgIIK
+# STL-10 公共步数候选长程验证
+
+按 `PREREGISTRATION.md`（冻结版）执行：只跑 B 方法，公共步数 1/2 步
+两档 × seed 1002/1003 × IID/Dirichlet α=0.1，M16384，200 轮，共 8 条
+长程轨迹，机械判定 S1/S2/Q1/Q2 并按冻结规则选档。本实验不产出认证
+省时结论；通过仅指对应档位的 4 条轨迹满足约定操作标准。
+
+## 运行
+
+正式运行（需要 `experiments/stl10_transfer/results_full` 的环境、
+准备缓存标记与历史 8 步 B 运行作锚；开始与每次恢复都要求
+ACLineStatus=1）：
+
+```
+python -m experiments.stl10_longrun.run --preset full
+python -m experiments.stl10_longrun.run --preset full --resume   # 中断后续跑
+```
+
+smoke（合成 STL-10 夹具，自备准备缓存，12 轮，只验证实现与判定
+机械流程）：
+
+```
+python -m experiments.stl10_longrun.run --preset smoke
+python -m unittest experiments.stl10_longrun.test_design
+```
+
+输出：`results_<preset>/` 下每条轨迹一个封签 JSON，另加
+`report.md` 与 `verdict.json`（档位判定与选档结果）。
