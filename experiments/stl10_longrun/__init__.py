@@ -1,1 +1,1 @@
-IiIiU1RMLTEwIGxvbmctaG9yaXpvbiB2YWxpZGF0aW9uIG9mIHJlZHVjZWQgcHVibGljLXN0ZXAgY2FuZGlkYXRlcy4iIiIK
+"""STL-10 long-horizon validation of reduced public-step candidates."""
