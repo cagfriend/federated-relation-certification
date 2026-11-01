@@ -1,0 +1,127 @@
+{
+  "commit": "52d136cb6b43f2bc1c434430e9c1075f6b8c1e22",
+  "source_files_verified": 55,
+  "smoke_original_engine_equivalence": [
+    {
+      "partition": "iid",
+      "steps": 1,
+      "exact_rounds": 12
+    },
+    {
+      "partition": "iid",
+      "steps": 2,
+      "exact_rounds": 12
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "steps": 1,
+      "exact_rounds": 12
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "steps": 2,
+      "exact_rounds": 12
+    }
+  ],
+  "real_cache_and_initial_anchors": [
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\prepared\\seed_1002_iid_bd905d07d53c2a43",
+      "metadata_sha256": "55cf4c85f76904657d00faa8f719310019ebd67ceff5e7cfc54cf4b91fc9a70b",
+      "initial_head_digest": "9701d3c95e8413c94ac5dc5b7458bae3f1cf572291074851c7d6124822736071",
+      "graph_sha256": "999b5382075e99fc59c39652a6d0776f0c73f49866ad762d450569c51a30f5db"
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\prepared\\seed_1002_dirichlet_0.1_33a1d44877760354",
+      "metadata_sha256": "dcd4965ae2271cb1ddcb72b5df4ca7e63a6cbc059c2ead0a6a204d8891f3dc18",
+      "initial_head_digest": "9701d3c95e8413c94ac5dc5b7458bae3f1cf572291074851c7d6124822736071",
+      "graph_sha256": "999b5382075e99fc59c39652a6d0776f0c73f49866ad762d450569c51a30f5db"
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\prepared\\seed_1003_iid_cfbee06cebdef124",
+      "metadata_sha256": "1aa5a9e66feffea2c445cc027757befe0c39085962b7b401523297eafcc049ee",
+      "initial_head_digest": "4c20dd7929ef30ead3873ab2308a84d8e52090607f0dafcae7fa666b5d54ca01",
+      "graph_sha256": "999b5382075e99fc59c39652a6d0776f0c73f49866ad762d450569c51a30f5db"
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\prepared\\seed_1003_dirichlet_0.1_42c79e1cc2c977c3",
+      "metadata_sha256": "db0e4323a02032c17892a0644e0b0af41cff62797f54447757c7f5c99ba9d679",
+      "initial_head_digest": "4c20dd7929ef30ead3873ab2308a84d8e52090607f0dafcae7fa666b5d54ca01",
+      "graph_sha256": "999b5382075e99fc59c39652a6d0776f0c73f49866ad762d450569c51a30f5db"
+    }
+  ],
+  "matrix": [
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "case_id": "m16384_fixed1_privfull",
+      "steps": 1,
+      "method": "B"
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "case_id": "m16384_fixed2_privfull",
+      "steps": 2,
+      "method": "B"
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "case_id": "m16384_fixed1_privfull",
+      "steps": 1,
+      "method": "B"
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "case_id": "m16384_fixed2_privfull",
+      "steps": 2,
+      "method": "B"
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "case_id": "m16384_fixed1_privfull",
+      "steps": 1,
+      "method": "B"
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "case_id": "m16384_fixed2_privfull",
+      "steps": 2,
+      "method": "B"
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "case_id": "m16384_fixed1_privfull",
+      "steps": 1,
+      "method": "B"
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "case_id": "m16384_fixed2_privfull",
+      "steps": 2,
+      "method": "B"
+    }
+  ],
+  "power": {
+    "verified": true,
+    "ac_line_status": 1,
+    "scheme": {
+      "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "description": "电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)"
+    }
+  },
+  "result": "PASS"
+}

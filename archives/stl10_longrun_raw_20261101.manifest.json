@@ -1,0 +1,15 @@
+{
+  "archive": "archives/stl10_longrun_raw_20261101.zip",
+  "archive_sha256": "35b9f510ec93ad518c4b487b7c9aee4f710cc8f54365fffd9907413b87ca81bf",
+  "members": {
+    "experiments/stl10_longrun/results_full/runs/dirichlet_0.1_m16384_fixed1_privfull_seed_1002_B.json": "0e7f6d146bd9370ce111a432d3c081e3cec7d1f61746ef776058205f7d024f5b",
+    "experiments/stl10_longrun/results_full/runs/dirichlet_0.1_m16384_fixed1_privfull_seed_1003_B.json": "69880315a08468b104dfe6f52cba6366d78970d29e3a9edfe78bb387ada365be",
+    "experiments/stl10_longrun/results_full/runs/dirichlet_0.1_m16384_fixed2_privfull_seed_1002_B.json": "c4a08f1f3e8197ffb7aa404b8b919acd06c6380486ea3fc53aee0222076ce6f6",
+    "experiments/stl10_longrun/results_full/runs/dirichlet_0.1_m16384_fixed2_privfull_seed_1003_B.json": "45e2708fe3571391adcdf8dee5ed57f8504437e9d5034f23766c226ca286acf0",
+    "experiments/stl10_longrun/results_full/runs/iid_m16384_fixed1_privfull_seed_1002_B.json": "aa64011853d399692d5a8b6653e004418eefab2adf570a5022a533d7400f2f98",
+    "experiments/stl10_longrun/results_full/runs/iid_m16384_fixed1_privfull_seed_1003_B.json": "c7bccfb6c8494d1ad9d1cf2ff0ceb75d854a446163719d1615c57f6d8063b269",
+    "experiments/stl10_longrun/results_full/runs/iid_m16384_fixed2_privfull_seed_1002_B.json": "62d03099bb3b0a5aff4015916bda61ca9dc1ed17a38b0897274e35ce1193aadc",
+    "experiments/stl10_longrun/results_full/runs/iid_m16384_fixed2_privfull_seed_1003_B.json": "e23f2d3821acdbdfe9d5629afe10fdd7ab886e57d1b7964d54d91995007d5ed1"
+  },
+  "lossless_extraction_verified": true
+}

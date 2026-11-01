@@ -365,3 +365,14 @@ D/B头部18/18胜出；D/E生成18/18胜出，头部仅11/18胜出。大M fixed8
 
 
 新增源码入口：[STL-10迁移](../experiments/stl10_transfer/README.md)、[三分支定位](../experiments/stl10_diagnostics/README.md)、[公共步数干预](../experiments/stl10_public_steps/README.md)。原始数据/权重/特征缓存未上传；公开的原始运行JSON与NPY是公共关系目标，不包含图像特征。
+
+
+## 2026-11-01：STL-10 公共步数长程验证完成
+
+在未参与步数选档的seed1002/1003、IID与Dirichlet α=0.1下，对公共1/2步各运行200轮，仅B，M16384，其余训练与准备缓存不变，共8条轨迹。两档各4/4通过冻结S1/S2/Q1/Q2，按运行前规则选2步。2步末轮平均ACC 19.39%–20.76%、平均NMI 0.08695–0.10759；24个客户端全部非单簇，最大簇比例最高41.275%，各轨迹最大簇均值17.09%–26.59%，教师同簇边比例11.65%–14.92%。
+
+seed1002强非IID早期有单客户端坍缩（1步r1/2/5，r10仍≥99%；2步r1/2/5/10），第20轮及以后各检查点均恢复。不能写全程无坍缩或普适修复。本轮无认证省时结论，预算减少自身的省算与后续认证收益分开。
+
+8条轨迹、14个清单文件、55项源码/协议摘要、4历史锚点、逐轮工作量和报告重生成均经审核。用户要求的手动停止不计故障，未完成轨迹重跑。原数据和封签不改；8条原始记录无损归档，解压后可还原原completed清单。起止与两次启动电源快照均插电，中间电源状态未连续观测。
+
+[冻结协议](../experiments/stl10_longrun/PREREGISTRATION.md) · [结果报告](../experiments/stl10_longrun/results_full/report.md) · [无损原始记录说明](../experiments/stl10_longrun/results_full/ARCHIVED_RAW.md) · [审核](../outputs/stl10_longrun_results_20261101/REVIEW.md)
