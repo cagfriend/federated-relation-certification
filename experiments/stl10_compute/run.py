@@ -107,6 +107,34 @@ def load_verified_anchors(env):
     return anchors8, anchors_long
 
 
+def verify_triples(completed, anchors_long, *, fixture):
+    triples = {}
+    for meta, r in completed:
+        triples.setdefault((meta['partition'], meta['seed']), {})[meta['method']] = r
+    for key, group in triples.items():
+        if set(group) != set(METHODS):
+            raise ValueError(f'Incomplete method triple: {key}')
+        base = group['B']
+        # Triples use (partition, seed); verified anchors use (seed, partition).
+        anchor_key = (key[1], key[0])
+        long_anchor = anchors_long.get(anchor_key)
+        if not fixture and key[1] in ANCHORED_SEEDS and long_anchor is None:
+            raise ValueError(f'Missing required longrun step-2 anchor: {anchor_key}')
+        if long_anchor is not None:
+            check_anchor_longrun(base, long_anchor)
+        for method in ('E', 'D'):
+            other = group[method]
+            if other['initial_head_digest'] != base['initial_head_digest'] or other['graph_sha256'] != base['graph_sha256']:
+                raise ValueError('Initial state or graph differs across methods')
+            if [{k: x[k] for k in TRAJECTORY_KEYS} for x in other['round_records']] != \
+               [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]:
+                raise ValueError(f'Trajectory mismatch in {key}')
+            if [{k: v for k, v in q.items() if k != 'method'} for q in other['metrics']] != \
+               [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]:
+                raise ValueError('Quality metrics differ across methods')
+    return triples
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--preset', choices=('full', 'smoke'), default='full')
@@ -200,8 +228,10 @@ def main():
             for part in PARTITIONS:
                 candidate = Path(env['source_results']) / 'runs' / f'{part}_{marker_spec.case_id}_seed_{seed}_B.json'
                 if candidate.exists():
-                    prep = Path(env['prepared'][f'{seed}|{part}']['path'])
                     a8 = json.loads(candidate.read_text(encoding='utf-8'))
+                    # Validate an old record against its own cache identity.
+                    # A fresh smoke run intentionally prepares a separate fixture cache.
+                    prep = Path(a8['prepared_directory'])
                     check_run(a8, dict(seed=seed, partition=part, method='B', case_id=marker_spec.case_id),
                               marker_spec, prep, True)
                     anchors8[seed, part] = a8
@@ -233,26 +263,7 @@ def main():
     if len(completed) != len(expected) or {p.name for p in runs_dir.glob('*.json')} != {filename(m) for m in expected}:
         raise ValueError('Run matrix is incomplete or has unexpected files')
 
-    triples = {}
-    for meta, r in completed:
-        triples.setdefault((meta['partition'], meta['seed']), {})[meta['method']] = r
-    for key, group in triples.items():
-        if set(group) != set(METHODS):
-            raise ValueError(f'Incomplete method triple: {key}')
-        base = group['B']
-        long_anchor = anchors_long.get(key)
-        if long_anchor is not None:
-            check_anchor_longrun(base, long_anchor)
-        for method in ('E', 'D'):
-            other = group[method]
-            if other['initial_head_digest'] != base['initial_head_digest'] or other['graph_sha256'] != base['graph_sha256']:
-                raise ValueError('Initial state or graph differs across methods')
-            if [{k: x[k] for k in TRAJECTORY_KEYS} for x in other['round_records']] != \
-               [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]:
-                raise ValueError(f'Trajectory mismatch in {key}')
-            if [{k: v for k, v in q.items() if k != 'method'} for q in other['metrics']] != \
-               [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]:
-                raise ValueError('Quality metrics differ across methods')
+    triples = verify_triples(completed, anchors_long, fixture=env['fixture'])
 
     rs = [r for _, r in completed]
     reports(out, rs, fixture=env['fixture'], preset=env['preset'])

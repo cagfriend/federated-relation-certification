@@ -1,0 +1,127 @@
+--- a/experiments/stl10_compute/run.py
++++ b/experiments/stl10_compute/run.py
+@@ -105,6 +105,34 @@
+                                   long_spec, Path(al['prepared_directory']))
+                 anchors_long[seed, part] = al
+     return anchors8, anchors_long
++
++
++def verify_triples(completed, anchors_long, *, fixture):
++    triples = {}
++    for meta, r in completed:
++        triples.setdefault((meta['partition'], meta['seed']), {})[meta['method']] = r
++    for key, group in triples.items():
++        if set(group) != set(METHODS):
++            raise ValueError(f'Incomplete method triple: {key}')
++        base = group['B']
++        # Triples use (partition, seed); verified anchors use (seed, partition).
++        anchor_key = (key[1], key[0])
++        long_anchor = anchors_long.get(anchor_key)
++        if not fixture and key[1] in ANCHORED_SEEDS and long_anchor is None:
++            raise ValueError(f'Missing required longrun step-2 anchor: {anchor_key}')
++        if long_anchor is not None:
++            check_anchor_longrun(base, long_anchor)
++        for method in ('E', 'D'):
++            other = group[method]
++            if other['initial_head_digest'] != base['initial_head_digest'] or other['graph_sha256'] != base['graph_sha256']:
++                raise ValueError('Initial state or graph differs across methods')
++            if [{k: x[k] for k in TRAJECTORY_KEYS} for x in other['round_records']] != \
++               [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]:
++                raise ValueError(f'Trajectory mismatch in {key}')
++            if [{k: v for k, v in q.items() if k != 'method'} for q in other['metrics']] != \
++               [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]:
++                raise ValueError('Quality metrics differ across methods')
++    return triples
+ 
+ 
+ def main():
+@@ -200,8 +228,10 @@
+             for part in PARTITIONS:
+                 candidate = Path(env['source_results']) / 'runs' / f'{part}_{marker_spec.case_id}_seed_{seed}_B.json'
+                 if candidate.exists():
+-                    prep = Path(env['prepared'][f'{seed}|{part}']['path'])
+                     a8 = json.loads(candidate.read_text(encoding='utf-8'))
++                    # Validate an old record against its own cache identity.
++                    # A fresh smoke run intentionally prepares a separate fixture cache.
++                    prep = Path(a8['prepared_directory'])
+                     check_run(a8, dict(seed=seed, partition=part, method='B', case_id=marker_spec.case_id),
+                               marker_spec, prep, True)
+                     anchors8[seed, part] = a8
+@@ -233,26 +263,7 @@
+     if len(completed) != len(expected) or {p.name for p in runs_dir.glob('*.json')} != {filename(m) for m in expected}:
+         raise ValueError('Run matrix is incomplete or has unexpected files')
+ 
+-    triples = {}
+-    for meta, r in completed:
+-        triples.setdefault((meta['partition'], meta['seed']), {})[meta['method']] = r
+-    for key, group in triples.items():
+-        if set(group) != set(METHODS):
+-            raise ValueError(f'Incomplete method triple: {key}')
+-        base = group['B']
+-        long_anchor = anchors_long.get(key)
+-        if long_anchor is not None:
+-            check_anchor_longrun(base, long_anchor)
+-        for method in ('E', 'D'):
+-            other = group[method]
+-            if other['initial_head_digest'] != base['initial_head_digest'] or other['graph_sha256'] != base['graph_sha256']:
+-                raise ValueError('Initial state or graph differs across methods')
+-            if [{k: x[k] for k in TRAJECTORY_KEYS} for x in other['round_records']] != \
+-               [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]:
+-                raise ValueError(f'Trajectory mismatch in {key}')
+-            if [{k: v for k, v in q.items() if k != 'method'} for q in other['metrics']] != \
+-               [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]:
+-                raise ValueError('Quality metrics differ across methods')
++    triples = verify_triples(completed, anchors_long, fixture=env['fixture'])
+ 
+     rs = [r for _, r in completed]
+     reports(out, rs, fixture=env['fixture'], preset=env['preset'])
+--- a/experiments/stl10_compute/test_run.py
++++ b/experiments/stl10_compute/test_run.py
+@@ -1,7 +1,9 @@
+ import unittest
++import copy
+ 
+ from experiments.stl10_compute.design import guardrail, plan, schedule
+ from experiments.stl10_compute.report import aggregate
++from experiments.stl10_compute.run import TRAJECTORY_KEYS, verify_triples
+ 
+ 
+ def clients(single=0, largest=0.30):
+@@ -74,5 +76,37 @@
+         self.assertEqual(len(schedule('smoke')), 6)
+ 
+ 
++class AnchorIntegrationTests(unittest.TestCase):
++    def setUp(self):
++        row = {key: 0 for key in TRAJECTORY_KEYS}
++        row.update(round=20, head_digest_after_public='head', public_loss=0.5)
++        metric = dict(round=20, method='B', mean=dict(acc=.2, nmi=.1, ari=.05), clients=clients())
++        base = dict(initial_head_digest='initial', graph_sha256='graph', round_records=[row], metrics=[metric])
++        self.completed = []
++        for method in ('B', 'E', 'D'):
++            record = copy.deepcopy(base)
++            record['metrics'][0]['method'] = method
++            self.completed.append((dict(partition='iid', seed=1002, method=method), record))
++        self.anchor = dict(round_records=copy.deepcopy(base['round_records']),
++                           checkpoints=[{k: v for k, v in metric.items() if k != 'method'}])
++
++    def test_valid_anchor_is_found_with_seed_partition_key(self):
++        self.assertEqual(len(verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)), 1)
++
++    def test_changed_longrun_trajectory_is_rejected(self):
++        self.anchor['round_records'][0]['public_loss'] = .6
++        with self.assertRaisesRegex(ValueError, 'differs from longrun'):
++            verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)
++
++    def test_missing_required_longrun_anchor_is_rejected(self):
++        with self.assertRaisesRegex(ValueError, 'Missing required longrun'):
++            verify_triples(self.completed, {}, fixture=False)
++
++    def test_different_student_trajectory_is_rejected(self):
++        self.completed[2][1]['round_records'][0]['head_digest_after_public'] = 'changed'
++        with self.assertRaisesRegex(ValueError, 'Trajectory mismatch'):
++            verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)
++
++
+ if __name__ == '__main__':
+     unittest.main()

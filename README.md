@@ -1,12 +1,20 @@
 # 半分布式异构联邦聚类：关系认证与自适应传输
 
-## 最新：STL-10 长程预算验证完成（2026-11-01）
+## 最新：STL-10 固定公共2步计算对照完成（2026-11-01）
+
+18次独立方法运行、6个B/E/D三元组全部通过精确性检查，6条质量护栏全部通过。完整头部耗时中位省时：IID下D/B **38.56%**、D/E **16.65%**；强非IID下D/B **35.47%**、D/E **9.46%**，两种比较均6/6配置更快。计入既有共享准备与加载后，D/B仍省29.82%/28.15%，D/E省11.89%/6.84%。
+
+代价：D较B多25.35 MiB持久数组，观测进程峰值约高7%；D/E持久数组相同，同配置B/E/D通信字节相同。每方法每配置仅一次，结果支持本批计算迁移收益，尚不排除计时噪声；不能将公共预算从8降2的省算算作认证贡献。原始记录和封签无损保留，本次同步实际运行代码修复。
+
+[正式报告](experiments/stl10_compute/results_full/report.md) · [结果审核](outputs/stl10_compute_results_20261101/REVIEW.md) · [原始归档](experiments/stl10_compute/results_full/ARCHIVED_RAW.md) · [后续清单](docs/NEXT_EXPERIMENTS.md)
+
+## 前一阶段：STL-10 长程预算验证完成（2026-11-01）
 
 公共1/2步 × seed1002/1003 × IID/Dirichlet α=0.1 的8条B轨迹各200轮，全部通过冻结S1/S2/Q1/Q2标准。按运行前规则选定公共 **2步**；不是依据结果重新调阈值。2步末轮平均ACC为19.39%–20.76%，全部24个客户端非单簇，单客户端最大簇占比最高41.275%。seed1002强非IID存在早期短暂单客户端坍缩，第20轮及以后观测检查点均恢复；不声称全程无瞬时事件或普适防坍缩。
 
-本轮仅验证预算配置的长程退化风险，不提供D/E新省时结论。下一步固定2步做B/E/D计算对照，预算缩减收益与认证收益分别报告。
+该阶段仅验证预算配置的长程退化风险；随后固定2步的B/E/D计算对照已完成，结果见上。预算缩减收益与认证收益分别报告。
 
-[冻结协议](experiments/stl10_longrun/PREREGISTRATION.md) · [完整结果](experiments/stl10_longrun/results_full/report.md) · [主审核](outputs/stl10_longrun_results_20261101/REVIEW.md) · [下一步实验设计](docs/STL10_2STEP_EXPERIMENT_PLAN.md)
+[冻结协议](experiments/stl10_longrun/PREREGISTRATION.md) · [完整结果](experiments/stl10_longrun/results_full/report.md) · [主审核](outputs/stl10_longrun_results_20261101/REVIEW.md) · [已完成实验设计记录](docs/STL10_2STEP_EXPERIMENT_PLAN.md)
 
 原始逐轮大JSON以无损ZIP保存，解压即可恢复原路径；汇总与代码直接可读。见[归档与恢复说明](archives/README.md)。
 

@@ -376,3 +376,14 @@ seed1002强非IID早期有单客户端坍缩（1步r1/2/5，r10仍≥99%；2步r
 8条轨迹、14个清单文件、55项源码/协议摘要、4历史锚点、逐轮工作量和报告重生成均经审核。用户要求的手动停止不计故障，未完成轨迹重跑。原数据和封签不改；8条原始记录无损归档，解压后可还原原completed清单。起止与两次启动电源快照均插电，中间电源状态未连续观测。
 
 [冻结协议](../experiments/stl10_longrun/PREREGISTRATION.md) · [结果报告](../experiments/stl10_longrun/results_full/report.md) · [无损原始记录说明](../experiments/stl10_longrun/results_full/ARCHIVED_RAW.md) · [审核](../outputs/stl10_longrun_results_20261101/REVIEW.md)
+
+
+## 2026-11-01：STL-10固定公共2步B/E/D计算对照完成
+
+18次独立进程、6个三元组，两划分×seed1001/1002/1003，M16384、200轮、公共2步、完整私有更新。27项结果摘要、61项执行源码/协议摘要、6旧8步锚点、4长程2步锚点、6三元组精确性及6份报表逐字节重生成均通过。关系176947200与候选235929600次oracle记录零错误；本次审核未独立重跑全部训练前向。
+
+完整头部中位省时：IID D/B38.56%（24.385秒）、D/E16.65%（7.762秒）；强非IID D/B35.47%（25.133秒）、D/E9.46%（4.913秒），均3/3seed更快。含共享准备和加载D/B29.82%/28.15%，D/E11.89%/6.84%。公共预算减少的自身收益不计为认证贡献。
+
+6条护栏全部通过，最终36个客户端均非单簇，平均ACC19.325%–20.758%，同配置B/E/D评估一致。D比B多25.346MiB持久数组、观测进程峰值约高7%；D/E持久数组相同，同配置通信字节相同。每方法只运行一次，无技术重复，不声称已排除机器噪声；进程峰值含oracle及评估。未删除任何计时，本轮只有每20轮观察点，不能声称全程无瞬时坍缩。
+
+本次同步实际执行run.py/test_run.py修复，见[运行前审核](../outputs/stl10_compute_review_20261101/REVIEW.md)。[报告](../experiments/stl10_compute/results_full/report.md) · [结果审核](../outputs/stl10_compute_results_20261101/REVIEW.md) · [原始无损归档说明](../experiments/stl10_compute/results_full/ARCHIVED_RAW.md)

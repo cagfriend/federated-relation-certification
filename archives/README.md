@@ -13,3 +13,8 @@ for archive in Path("archives").glob("*_raw_records*.zip"):
 ```
 
 请只解压本仓库已核验的归档。解压后原始结果目录及其 `completed.json` 文件清单即可对应；数据/模型/特征准备缓存仍未上传，原机器缓存绝对路径不能在新机器直接使用。
+
+
+## STL-10公共2步计算对照（2026-11-01）
+
+新增stl10_compute_seed1001/1002/1003_raw_records_20261101.zip，共18条完整原始记录；各ZIP在仓库根目录解压恢复原路径。字节摘要和成员见[清单](stl10_compute_raw_20261101.manifest.json)。原completed/finished/run封签未改。[结果与恢复说明](../experiments/stl10_compute/results_full/ARCHIVED_RAW.md)。

@@ -1,7 +1,9 @@
 import unittest
+import copy
 
 from experiments.stl10_compute.design import guardrail, plan, schedule
 from experiments.stl10_compute.report import aggregate
+from experiments.stl10_compute.run import TRAJECTORY_KEYS, verify_triples
 
 
 def clients(single=0, largest=0.30):
@@ -72,6 +74,38 @@ class PlanTests(unittest.TestCase):
 
     def test_smoke_matrix_is_6_runs(self):
         self.assertEqual(len(schedule('smoke')), 6)
+
+
+class AnchorIntegrationTests(unittest.TestCase):
+    def setUp(self):
+        row = {key: 0 for key in TRAJECTORY_KEYS}
+        row.update(round=20, head_digest_after_public='head', public_loss=0.5)
+        metric = dict(round=20, method='B', mean=dict(acc=.2, nmi=.1, ari=.05), clients=clients())
+        base = dict(initial_head_digest='initial', graph_sha256='graph', round_records=[row], metrics=[metric])
+        self.completed = []
+        for method in ('B', 'E', 'D'):
+            record = copy.deepcopy(base)
+            record['metrics'][0]['method'] = method
+            self.completed.append((dict(partition='iid', seed=1002, method=method), record))
+        self.anchor = dict(round_records=copy.deepcopy(base['round_records']),
+                           checkpoints=[{k: v for k, v in metric.items() if k != 'method'}])
+
+    def test_valid_anchor_is_found_with_seed_partition_key(self):
+        self.assertEqual(len(verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)), 1)
+
+    def test_changed_longrun_trajectory_is_rejected(self):
+        self.anchor['round_records'][0]['public_loss'] = .6
+        with self.assertRaisesRegex(ValueError, 'differs from longrun'):
+            verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)
+
+    def test_missing_required_longrun_anchor_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, 'Missing required longrun'):
+            verify_triples(self.completed, {}, fixture=False)
+
+    def test_different_student_trajectory_is_rejected(self):
+        self.completed[2][1]['round_records'][0]['head_digest_after_public'] = 'changed'
+        with self.assertRaisesRegex(ValueError, 'Trajectory mismatch'):
+            verify_triples(self.completed, {(1002, 'iid'): self.anchor}, fixture=False)
 
 
 if __name__ == '__main__':
