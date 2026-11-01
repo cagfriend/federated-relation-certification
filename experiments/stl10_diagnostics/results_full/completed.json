@@ -1,0 +1,19 @@
+{
+  "runs": 3,
+  "rounds": 40,
+  "j_anchor_rounds_matched": 40,
+  "j_f_round1_matched": true,
+  "files": {
+    "environment.json": "8f9aa612fc019156847394efa5f6baba1786fb776e89c2d7b59382806d7fa75e",
+    "F.json": "969c9cbed8056f7fe39e647eff8201cca18462cd4ccf097a80f13fc42b2818eb",
+    "fixed_round1_targets.npy": "9912c83078790d0c33f41cd47ff733243fce51ebef00116fe5325aed05db80dd",
+    "gradients.csv": "214789cdb4a4b0369e01071ae83da246e6ff6a43c295835fb5027f4929006297",
+    "initial_inspection.json": "f29b83980e835ffe64dad1fb23bdde7b0e7877eda009b075db990f1643ff2ea4",
+    "J.json": "e502da352550e3c3df7d814f16e208ca2b9e208f2bd994828289bd1507e7c64e",
+    "P.json": "34d9a54f1726c2ecc7768e0e73ca6e964d2043caebd98b0cf9219d4fb7171a63",
+    "public_cluster_concentration.svg": "922b2eaadfe979a16f8ab8ee621670baa35a39583ce9ec00c7857602185681e5",
+    "report.md": "da8d7988fc9aa92b2a9d9f064dd2b10304b4df6a5dae17dad8ee65f023268c4c",
+    "stages.csv": "c7a4b6c003bac3548539a274857f188bbdfdd968a92b28d88e28aa10094a8ec8"
+  },
+  "ended_utc": 1793536178.8291497
+}

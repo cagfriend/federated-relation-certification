@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "runs": 36,
+  "trajectory_blocks": 12,
+  "relation_comparisons": 221184000,
+  "candidate_membership_comparisons": 294912000,
+  "mismatches": 0,
+  "manifest_files_verified": 52,
+  "reports_byte_reproduced": [
+    "report.md",
+    "summary.json",
+    "runs.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "cross_M_ACC_sensitivity.csv"
+  ],
+  "quality": {
+    "unique_configurations": 12,
+    "final_acc_range": [
+      0.09999999999999999,
+      0.10127083333333332
+    ],
+    "final_nmi_range": [
+      0.0,
+      0.0025698900516283483
+    ],
+    "client_cases": 72,
+    "one_cluster": 67,
+    "dominant_at_least_99_percent": 70,
+    "dominant_fraction_min": 0.98925
+  },
+  "completed_sha256": "bd03f03f263f4e271057e89f12c2c10ee7946ac9f8cb60b88b16656cb9554b79"
+}

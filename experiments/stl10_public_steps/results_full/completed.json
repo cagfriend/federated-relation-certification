@@ -1,0 +1,26 @@
+{
+  "public_budgets": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "runs": 4,
+  "rounds": 40,
+  "original_budget_anchor": 8,
+  "anchor_rounds_matched": 40,
+  "private_workload_identical": true,
+  "files": {
+    "checkpoints.csv": "cb6572307e614325d0a2cb75ae15e201145c5b3a65a21b99d7fc52b8309b5d1b",
+    "environment.json": "8ed49814aed5887f5818dd774d3ddb711f65e279adc921d0d2b8f63fa62c4643",
+    "gradients.csv": "acb608ee81eb68c761c86612b9f0776097bc322b821831482694ea1f1bd66fae",
+    "public_concentration.svg": "90b4ca953b8c21e69ccc4f3b63980340c575355e2b95d4be446077d9b593f34a",
+    "public_steps_1.json": "56f8647a47519d992df8f592085861a322f2ad9f68baaf981862919f95e15e24",
+    "public_steps_2.json": "6a301970981fbd581df0e66335a00ed4d01e65f41ff857a32a7db800e4e7954c",
+    "public_steps_4.json": "b990046c74aeae78b70b882e595db0cc06cf0b8e5d8fc840133df9f3c3f575be",
+    "public_steps_8.json": "b649261b48904256f97f89cded392ac4097f1ad457175a3a7600547a29c6a66a",
+    "report.md": "d64c230777f5da94393527403eb27522c525ee24dd9f3c3cd5905876d20c71b7",
+    "stages.csv": "af9652c8bb2f918c480142ddaf7b2180f005102ba48e06f6ce558c7192354b45"
+  },
+  "ended_utc": 1793537181.1221187
+}

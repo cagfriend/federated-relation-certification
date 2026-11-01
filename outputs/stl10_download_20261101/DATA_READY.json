@@ -1,0 +1,14 @@
+{
+  "source": "https://modelscope.cn/datasets/kxs712/STL10",
+  "official_members_validated": {
+    "train_X.bin": "918c2871b30a85fa023e0c44e0bee87f",
+    "train_y.bin": "5a34089d4802c674881badbb80307741",
+    "unlabeled_X.bin": "5242ba1fed5e4be9e1e742405eb56ca4",
+    "test_X.bin": "7f263ba9f9e0b06b93213547f721ac82",
+    "test_y.bin": "36f9794fa4beb8a2c72628de14fa638e"
+  },
+  "data_ready_utc": 1793527859.0861773,
+  "acquisition_wall_seconds": 161.72364687919617,
+  "training_exit_code": 0,
+  "training_end_utc": 1793530897.0821111
+}

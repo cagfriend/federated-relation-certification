@@ -1,0 +1,1072 @@
+{
+  "clients": [
+    {
+      "client": 0,
+      "private_pseudo_histogram": [
+        73,
+        88,
+        100,
+        126,
+        85,
+        135,
+        15,
+        79,
+        59,
+        74
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          73,
+          88,
+          100,
+          126,
+          85,
+          135,
+          15,
+          79,
+          59,
+          74
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.1618705035971223
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000016973303,
+        "norm_std": 3.202921060304624e-08,
+        "norm_min": 0.9999999103834654,
+        "norm_max": 1.000000099499453,
+        "centered_discrete_rms": 0.6825330062420337,
+        "mean_norm": 0.7308547727044503,
+        "spread_to_mean_scale": 0.9338832169302158
+      },
+      "head_private": {
+        "cluster_counts": [
+          274,
+          14,
+          259,
+          153,
+          2,
+          1,
+          11,
+          0,
+          17,
+          103
+        ],
+        "occupied_clusters": 9,
+        "largest_cluster_fraction": 0.328537170263789,
+        "mean_confidence": 0.10630224074701221,
+        "pseudo_ce": 2.3056965346882983,
+        "pseudo_accuracy": 0.1366906474820144
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          1913,
+          1849,
+          2174,
+          2247,
+          1645,
+          2067,
+          151,
+          1829,
+          1220,
+          1289
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.13714599609375
+      },
+      "public_head": {
+        "cluster_counts": [
+          5508,
+          330,
+          4742,
+          3761,
+          72,
+          17,
+          181,
+          0,
+          223,
+          1550
+        ],
+        "occupied_clusters": 9,
+        "largest_cluster_fraction": 0.336181640625,
+        "mean_confidence": 0.10650143853494702
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          635,
+          1044,
+          941,
+          1172,
+          822,
+          1125,
+          114,
+          791,
+          596,
+          760
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.1465
+      },
+      "test_head": {
+        "cluster_counts": [
+          3005,
+          179,
+          2341,
+          1394,
+          40,
+          8,
+          116,
+          0,
+          125,
+          792
+        ],
+        "occupied_clusters": 9,
+        "largest_cluster_fraction": 0.375625,
+        "mean_confidence": 0.10632771743014073
+      },
+      "test_center_metrics": {
+        "acc": 0.21075,
+        "nmi": 0.10841614406319493,
+        "ari": 0.051570642057572655
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000001191056,
+        "norm_std": 3.3397636266306605e-08,
+        "norm_min": 0.9999998707269315,
+        "norm_max": 1.0000001349525398,
+        "centered_discrete_rms": 0.6762003962367421,
+        "mean_norm": 0.7367177372423482,
+        "spread_to_mean_scale": 0.9178554581404105
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999994798839,
+        "norm_std": 3.356370484015747e-08,
+        "norm_min": 0.999999889998613,
+        "norm_max": 1.0000001003725643,
+        "centered_discrete_rms": 0.6822006628041019,
+        "mean_norm": 0.7311649982250334,
+        "spread_to_mean_scale": 0.9330324406395317
+      },
+      "pretraining_record": {
+        "client": 0,
+        "width": 512,
+        "private_samples": 834,
+        "pretrain_losses": [
+          0.06883652935282504,
+          0.06525645031631708,
+          0.06153855817638141,
+          0.05750831667717984,
+          0.054608338537047524
+        ],
+        "pretrain_seconds": 0.33126100001391023,
+        "pseudo_histogram": [
+          73,
+          88,
+          100,
+          126,
+          85,
+          135,
+          15,
+          79,
+          59,
+          74
+        ],
+        "encoder_frozen": true
+      }
+    },
+    {
+      "client": 1,
+      "private_pseudo_histogram": [
+        70,
+        97,
+        118,
+        57,
+        73,
+        81,
+        57,
+        68,
+        136,
+        77
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          70,
+          97,
+          118,
+          57,
+          73,
+          81,
+          57,
+          68,
+          136,
+          77
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.1630695443645084
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000008849743,
+        "norm_std": 3.398785245074847e-08,
+        "norm_min": 0.9999998799434374,
+        "norm_max": 1.0000001128513947,
+        "centered_discrete_rms": 0.6370793516485765,
+        "mean_norm": 0.7707982235792836,
+        "spread_to_mean_scale": 0.8265189671691648
+      },
+      "head_private": {
+        "cluster_counts": [
+          516,
+          0,
+          4,
+          0,
+          29,
+          0,
+          1,
+          172,
+          112,
+          0
+        ],
+        "occupied_clusters": 6,
+        "largest_cluster_fraction": 0.6187050359712231,
+        "mean_confidence": 0.10702446322961469,
+        "pseudo_ce": 2.2948042900286434,
+        "pseudo_accuracy": 0.09352517985611511
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          1134,
+          2128,
+          1789,
+          1030,
+          1622,
+          1877,
+          1257,
+          1925,
+          2213,
+          1409
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.13507080078125
+      },
+      "public_head": {
+        "cluster_counts": [
+          9733,
+          0,
+          53,
+          0,
+          556,
+          0,
+          19,
+          3088,
+          2935,
+          0
+        ],
+        "occupied_clusters": 6,
+        "largest_cluster_fraction": 0.59405517578125,
+        "mean_confidence": 0.10682059929456028
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          643,
+          967,
+          938,
+          581,
+          797,
+          751,
+          607,
+          662,
+          1229,
+          825
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.153625
+      },
+      "test_head": {
+        "cluster_counts": [
+          5030,
+          0,
+          19,
+          0,
+          241,
+          0,
+          8,
+          1660,
+          1041,
+          1
+        ],
+        "occupied_clusters": 7,
+        "largest_cluster_fraction": 0.62875,
+        "mean_confidence": 0.1069618838135067
+      },
+      "test_center_metrics": {
+        "acc": 0.199375,
+        "nmi": 0.1036662689347258,
+        "ari": 0.05111254240027226
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.000000000359835,
+        "norm_std": 3.3358023041349975e-08,
+        "norm_min": 0.9999998789981032,
+        "norm_max": 1.000000119358887,
+        "centered_discrete_rms": 0.6270545411212315,
+        "mean_norm": 0.7789753546672148,
+        "spread_to_mean_scale": 0.8049735301177978
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000000696923,
+        "norm_std": 3.390329460997671e-08,
+        "norm_min": 0.9999998883325936,
+        "norm_max": 1.000000118810249,
+        "centered_discrete_rms": 0.6334161627809655,
+        "mean_norm": 0.773811323816874,
+        "spread_to_mean_scale": 0.8185666754740673
+      },
+      "pretraining_record": {
+        "client": 1,
+        "width": 512,
+        "private_samples": 834,
+        "pretrain_losses": [
+          0.06914171592580329,
+          0.06509276281157844,
+          0.06054491491662227,
+          0.05654241590441274,
+          0.05368327675498933
+        ],
+        "pretrain_seconds": 0.050597299996297807,
+        "pseudo_histogram": [
+          70,
+          97,
+          118,
+          57,
+          73,
+          81,
+          57,
+          68,
+          136,
+          77
+        ],
+        "encoder_frozen": true
+      }
+    },
+    {
+      "client": 2,
+      "private_pseudo_histogram": [
+        89,
+        83,
+        92,
+        106,
+        112,
+        74,
+        64,
+        87,
+        57,
+        69
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          89,
+          83,
+          92,
+          106,
+          112,
+          74,
+          64,
+          87,
+          57,
+          69
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.13445378151260504
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000011581325,
+        "norm_std": 3.415308693773003e-08,
+        "norm_min": 0.9999999058982219,
+        "norm_max": 1.000000095211555,
+        "centered_discrete_rms": 0.6333725206655804,
+        "mean_norm": 0.7738470471494966,
+        "spread_to_mean_scale": 0.818472491429203
+      },
+      "head_private": {
+        "cluster_counts": [
+          0,
+          158,
+          89,
+          229,
+          212,
+          70,
+          8,
+          0,
+          0,
+          67
+        ],
+        "occupied_clusters": 7,
+        "largest_cluster_fraction": 0.27490996398559425,
+        "mean_confidence": 0.10572684757426687,
+        "pseudo_ce": 2.293524484581499,
+        "pseudo_accuracy": 0.11284513805522209
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          1523,
+          1896,
+          1613,
+          1764,
+          1808,
+          1426,
+          1893,
+          1367,
+          1183,
+          1911
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.11663818359375
+      },
+      "public_head": {
+        "cluster_counts": [
+          0,
+          3041,
+          2431,
+          4166,
+          4025,
+          1030,
+          59,
+          2,
+          1,
+          1629
+        ],
+        "occupied_clusters": 9,
+        "largest_cluster_fraction": 0.2542724609375,
+        "mean_confidence": 0.10587099276564396
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          890,
+          890,
+          787,
+          874,
+          1009,
+          696,
+          665,
+          742,
+          689,
+          758
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.126125
+      },
+      "test_head": {
+        "cluster_counts": [
+          1,
+          1556,
+          906,
+          2106,
+          1935,
+          672,
+          31,
+          1,
+          0,
+          792
+        ],
+        "occupied_clusters": 9,
+        "largest_cluster_fraction": 0.26325,
+        "mean_confidence": 0.10582913519541992
+      },
+      "test_center_metrics": {
+        "acc": 0.1975,
+        "nmi": 0.1039244572568398,
+        "ari": 0.05059625421891769
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999998078124,
+        "norm_std": 3.323866175531747e-08,
+        "norm_min": 0.9999998724097615,
+        "norm_max": 1.0000001241825505,
+        "centered_discrete_rms": 0.6291303627489477,
+        "mean_norm": 0.7772998046333237,
+        "spread_to_mean_scale": 0.8093792884017614
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999998917272,
+        "norm_std": 3.3086908664153704e-08,
+        "norm_min": 0.9999998724097615,
+        "norm_max": 1.0000001056526058,
+        "centered_discrete_rms": 0.6319557502256042,
+        "mean_norm": 0.7750044706582337,
+        "spread_to_mean_scale": 0.8154220706480131
+      },
+      "pretraining_record": {
+        "client": 2,
+        "width": 512,
+        "private_samples": 833,
+        "pretrain_losses": [
+          0.06813963496384501,
+          0.06428358440890032,
+          0.060285167779777944,
+          0.056591793908184175,
+          0.05378182433626088
+        ],
+        "pretrain_seconds": 0.053953199996612966,
+        "pseudo_histogram": [
+          89,
+          83,
+          92,
+          106,
+          112,
+          74,
+          64,
+          87,
+          57,
+          69
+        ],
+        "encoder_frozen": true
+      }
+    },
+    {
+      "client": 3,
+      "private_pseudo_histogram": [
+        52,
+        81,
+        79,
+        74,
+        149,
+        75,
+        94,
+        74,
+        82,
+        73
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          52,
+          81,
+          79,
+          74,
+          149,
+          75,
+          94,
+          74,
+          82,
+          73
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.1788715486194478
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999966116503,
+        "norm_std": 3.319679562474569e-08,
+        "norm_min": 0.9999999060261231,
+        "norm_max": 1.000000104302794,
+        "centered_discrete_rms": 0.6004673628800821,
+        "mean_norm": 0.7996492602004592,
+        "spread_to_mean_scale": 0.7509134226292594
+      },
+      "head_private": {
+        "cluster_counts": [
+          359,
+          0,
+          3,
+          0,
+          0,
+          0,
+          461,
+          0,
+          0,
+          10
+        ],
+        "occupied_clusters": 4,
+        "largest_cluster_fraction": 0.553421368547419,
+        "mean_confidence": 0.10413879780693454,
+        "pseudo_ce": 2.3063554094439382,
+        "pseudo_accuracy": 0.057623049219687875
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          1078,
+          1329,
+          1703,
+          1759,
+          2329,
+          1745,
+          1409,
+          1971,
+          1406,
+          1655
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.14215087890625
+      },
+      "public_head": {
+        "cluster_counts": [
+          7617,
+          0,
+          69,
+          4,
+          0,
+          4,
+          8354,
+          0,
+          0,
+          336
+        ],
+        "occupied_clusters": 6,
+        "largest_cluster_fraction": 0.5098876953125,
+        "mean_confidence": 0.10425317970829237
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          554,
+          689,
+          932,
+          708,
+          1291,
+          826,
+          684,
+          661,
+          842,
+          813
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.161375
+      },
+      "test_head": {
+        "cluster_counts": [
+          3250,
+          0,
+          39,
+          2,
+          0,
+          0,
+          4564,
+          0,
+          0,
+          145
+        ],
+        "occupied_clusters": 5,
+        "largest_cluster_fraction": 0.5705,
+        "mean_confidence": 0.10414236363183392
+      },
+      "test_center_metrics": {
+        "acc": 0.20175,
+        "nmi": 0.1049386781784444,
+        "ari": 0.05116882061925143
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999994725053,
+        "norm_std": 3.267041254534853e-08,
+        "norm_min": 0.9999998872901861,
+        "norm_max": 1.0000001038797295,
+        "centered_discrete_rms": 0.6109735896966698,
+        "mean_norm": 0.7916509784230529,
+        "spread_to_mean_scale": 0.7717714072857114
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.9999999999547866,
+        "norm_std": 3.294249128224162e-08,
+        "norm_min": 0.9999998858876838,
+        "norm_max": 1.0000001121092041,
+        "centered_discrete_rms": 0.6032268606191235,
+        "mean_norm": 0.7975696549751444,
+        "spread_to_mean_scale": 0.756331258161925
+      },
+      "pretraining_record": {
+        "client": 3,
+        "width": 2048,
+        "private_samples": 833,
+        "pretrain_losses": [
+          0.06891659682109004,
+          0.06037114420626201,
+          0.05434725082078043,
+          0.05005619390493109,
+          0.04767112695530397
+        ],
+        "pretrain_seconds": 0.13914420001674443,
+        "pseudo_histogram": [
+          52,
+          81,
+          79,
+          74,
+          149,
+          75,
+          94,
+          74,
+          82,
+          73
+        ],
+        "encoder_frozen": true
+      }
+    },
+    {
+      "client": 4,
+      "private_pseudo_histogram": [
+        115,
+        84,
+        77,
+        76,
+        76,
+        76,
+        98,
+        93,
+        53,
+        85
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          115,
+          84,
+          77,
+          76,
+          76,
+          76,
+          98,
+          93,
+          53,
+          85
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.13805522208883553
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000007343923,
+        "norm_std": 3.237066979223815e-08,
+        "norm_min": 0.9999999131716968,
+        "norm_max": 1.0000001027957652,
+        "centered_discrete_rms": 0.6082520965583721,
+        "mean_norm": 0.7937439061190523,
+        "spread_to_mean_scale": 0.766307737129438
+      },
+      "head_private": {
+        "cluster_counts": [
+          140,
+          0,
+          0,
+          232,
+          12,
+          0,
+          47,
+          2,
+          400,
+          0
+        ],
+        "occupied_clusters": 6,
+        "largest_cluster_fraction": 0.4801920768307323,
+        "mean_confidence": 0.10414687368799865,
+        "pseudo_ce": 2.308628957354819,
+        "pseudo_accuracy": 0.015606242496998799
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          1791,
+          2495,
+          1176,
+          989,
+          1775,
+          1601,
+          1515,
+          1805,
+          854,
+          2383
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.15228271484375
+      },
+      "public_head": {
+        "cluster_counts": [
+          4385,
+          2,
+          8,
+          4159,
+          267,
+          0,
+          567,
+          3,
+          6993,
+          0
+        ],
+        "occupied_clusters": 8,
+        "largest_cluster_fraction": 0.42681884765625,
+        "mean_confidence": 0.10403816044684067
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          1045,
+          914,
+          630,
+          651,
+          895,
+          801,
+          762,
+          920,
+          462,
+          920
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.130625
+      },
+      "test_head": {
+        "cluster_counts": [
+          1551,
+          1,
+          5,
+          2146,
+          115,
+          0,
+          328,
+          1,
+          3853,
+          0
+        ],
+        "occupied_clusters": 8,
+        "largest_cluster_fraction": 0.481625,
+        "mean_confidence": 0.10409561963959134
+      },
+      "test_center_metrics": {
+        "acc": 0.223,
+        "nmi": 0.12506652424633777,
+        "ari": 0.06671495170403265
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000002404819,
+        "norm_std": 3.280646771004667e-08,
+        "norm_min": 0.9999998867517512,
+        "norm_max": 1.0000001083683,
+        "centered_discrete_rms": 0.6146176975295669,
+        "mean_norm": 0.7888251304087736,
+        "spread_to_mean_scale": 0.779155827871595
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000000320226,
+        "norm_std": 3.325495090973886e-08,
+        "norm_min": 0.9999998848915023,
+        "norm_max": 1.0000001120470208,
+        "centered_discrete_rms": 0.6106597760579953,
+        "mean_norm": 0.7918930723076477,
+        "spread_to_mean_scale": 0.7711391820596153
+      },
+      "pretraining_record": {
+        "client": 4,
+        "width": 2048,
+        "private_samples": 833,
+        "pretrain_losses": [
+          0.06862556067656497,
+          0.06104442807269984,
+          0.0550108998924458,
+          0.050189805716848605,
+          0.04704604207539186
+        ],
+        "pretrain_seconds": 0.14971939998213202,
+        "pseudo_histogram": [
+          115,
+          84,
+          77,
+          76,
+          76,
+          76,
+          98,
+          93,
+          53,
+          85
+        ],
+        "encoder_frozen": true
+      }
+    },
+    {
+      "client": 5,
+      "private_pseudo_histogram": [
+        63,
+        104,
+        60,
+        119,
+        74,
+        82,
+        88,
+        76,
+        118,
+        49
+      ],
+      "private_pseudo_nearest_center_mismatches": 0,
+      "private_center_probe": {
+        "cluster_counts": [
+          63,
+          104,
+          60,
+          119,
+          74,
+          82,
+          88,
+          76,
+          118,
+          49
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.14285714285714285
+      },
+      "private_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000011865247,
+        "norm_std": 3.321144158700957e-08,
+        "norm_min": 0.999999914016641,
+        "norm_max": 1.0000001015463091,
+        "centered_discrete_rms": 0.630628191207981,
+        "mean_norm": 0.7760851028249418,
+        "spread_to_mean_scale": 0.8125760807835388
+      },
+      "head_private": {
+        "cluster_counts": [
+          2,
+          0,
+          2,
+          96,
+          3,
+          260,
+          0,
+          0,
+          470,
+          0
+        ],
+        "occupied_clusters": 6,
+        "largest_cluster_fraction": 0.5642256902761105,
+        "mean_confidence": 0.10389630175159582,
+        "pseudo_ce": 2.298876036459436,
+        "pseudo_accuracy": 0.06602641056422569
+      },
+      "public_center_probe": {
+        "cluster_counts": [
+          2283,
+          1672,
+          1003,
+          2500,
+          1821,
+          1476,
+          1653,
+          1266,
+          2168,
+          542
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.152587890625
+      },
+      "public_head": {
+        "cluster_counts": [
+          43,
+          10,
+          99,
+          1939,
+          60,
+          5738,
+          3,
+          0,
+          8492,
+          0
+        ],
+        "occupied_clusters": 8,
+        "largest_cluster_fraction": 0.518310546875,
+        "mean_confidence": 0.1038252712363721
+      },
+      "test_center_probe": {
+        "cluster_counts": [
+          732,
+          981,
+          584,
+          1240,
+          830,
+          719,
+          870,
+          652,
+          950,
+          442
+        ],
+        "occupied_clusters": 10,
+        "largest_cluster_fraction": 0.155
+      },
+      "test_head": {
+        "cluster_counts": [
+          13,
+          11,
+          16,
+          1071,
+          10,
+          2382,
+          1,
+          0,
+          4496,
+          0
+        ],
+        "occupied_clusters": 8,
+        "largest_cluster_fraction": 0.562,
+        "mean_confidence": 0.10388414522654446
+      },
+      "test_center_metrics": {
+        "acc": 0.237125,
+        "nmi": 0.1270384278000788,
+        "ari": 0.06428691689537878
+      },
+      "public_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 1.0000000002683975,
+        "norm_std": 3.2658665196405874e-08,
+        "norm_min": 0.9999998852561129,
+        "norm_max": 1.0000001210583127,
+        "centered_discrete_rms": 0.6315063168783043,
+        "mean_norm": 0.7753707321530746,
+        "spread_to_mean_scale": 0.814457253402791
+      },
+      "test_features": {
+        "finite_fraction": 1.0,
+        "norm_mean": 0.99999999997035,
+        "norm_std": 3.260122877687321e-08,
+        "norm_min": 0.9999998895390338,
+        "norm_max": 1.0000001071007951,
+        "centered_discrete_rms": 0.6258438117540157,
+        "mean_norm": 0.7799484106207957,
+        "spread_to_mean_scale": 0.8024169332634177
+      },
+      "pretraining_record": {
+        "client": 5,
+        "width": 2048,
+        "private_samples": 833,
+        "pretrain_losses": [
+          0.06807568993549101,
+          0.05950974187805873,
+          0.052659544633144664,
+          0.049270652945624105,
+          0.04728371724218023
+        ],
+        "pretrain_seconds": 0.27089580000028946,
+        "pseudo_histogram": [
+          63,
+          104,
+          60,
+          119,
+          74,
+          82,
+          88,
+          76,
+          118,
+          49
+        ],
+        "encoder_frozen": true
+      }
+    }
+  ]
+}
