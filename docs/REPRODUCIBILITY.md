@@ -170,3 +170,8 @@ python -m experiments.public_budget.run --preset full --prepare-device cuda --do
 18个原始case和大summary无损归档于archives/private_workload_*.zip，解压到原路径后completed.json核验51文件；小报表/内存档案直接保留。数据集和特征缓存不上传；异机重新准备并使用新输出。精确历史full锚校验还需public_budget对应六个原始case。主审脚本需要原环境缓存；审计不是独立重训。正式本地run.py/test_workload.py已补直方图、依赖源码冻结和私有账本检查，随本次上传，核心训练源码未改；历史云端VALIDATION.md仅是开发阶段记录。
 
 正式51文件哈希、18case、18内存档案、8份报表逐字节重生成和3600轮×方法历史锚点一致。原始计时离群未剔除，没有将此前已确认暂停移植到本实验。内存回放仅完整档，其耗时不作为性能证据。质量预算护栏：2048 5/6，1024 0/6；同预算B/E/D学习轨迹一致。详见outputs/private_workload_results_20261031。
+
+
+## 独立性能确认正式结果
+
+72原始runs无损ZIP保存，路径见archives/ARCHIVE_MANIFEST.json；顶层结果直接可读。audit.json补充72个运行文件哈希。运行源码含本地补齐public_budget依赖冻结、全部72次完成后才发布判定的修正；预注册规则与训练引擎未改变。异机需要重新准备数据与使用新输出，绝对路径缓存不上传。原始环境仅可在源码完全一致时resume。

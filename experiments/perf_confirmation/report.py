@@ -8,7 +8,7 @@ is evaluated mechanically here.
 """
 import csv, json, statistics as st
 from pathlib import Path
-from .design import METHODS, DECISION, PRIMARY_PRIVATE_LIMIT, QUALITY_ACC_DROP
+from .design import METHODS, PARTITIONS, DECISION, PRIMARY_PRIVATE_LIMIT, QUALITY_ACC_DROP
 
 PHASES = ('generation_seconds', 'head_pipeline_seconds', 'with_shared_preparation_seconds')
 
@@ -135,7 +135,10 @@ def reports(output, runs, blocks, expected_seeds=3):
     # Decide only when the preregistered candidate tier exists and every
     # seed has completed; smoke tiers use scaled limits, never a verdict.
     cand_rows = [r for r in summary_rows if r['private_limit'] == PRIMARY_PRIVATE_LIMIT]
-    has_candidate = bool(cand_rows) and all(r['paired_seeds'] == expected_seeds for r in cand_rows)
+    has_candidate = (len(runs) == expected_seeds * len(PARTITIONS) * 2 * len(METHODS) * 2
+                     and blocks['blocks_checked'] == expected_seeds * len(PARTITIONS) * 2
+                     and len(cand_rows) == len(PARTITIONS) * 2
+                     and all(r['paired_seeds'] == expected_seeds for r in cand_rows))
     verdicts = decide(summary_rows) if has_candidate else []
     _write_csv(output / 'runs.csv', run_rows)
     _write_csv(output / 'seed_summary.csv', seed_rows)

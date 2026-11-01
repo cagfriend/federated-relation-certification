@@ -1,0 +1,25 @@
+{
+  "run_count": 72,
+  "blocks_verified": 12,
+  "training_trajectories": 12,
+  "mismatches": 0,
+  "relation_comparisons": 707788800,
+  "candidate_membership_comparisons": 943718400,
+  "files": {
+    "environment.json": "bc7dce4cc2e3a95f6526bffbd04e7378c07c124ce1c27411ba13b61cd77a463b",
+    "paired_cost.csv": "5df4a2719cf4b46bb32282d45074a28cf9aab85bff197c554ceaf9a7b3e0c502",
+    "paired_summary.csv": "ba7c1a1360b6a2969eefb1b9e8c814a1b6996ad6e76e3315e85b1ac8551a378e",
+    "prepared_dirichlet_0.1_seed_707.json": "a4a1f68566df4e93021ec602239960e548bdc2f95b5b8917804fd9c2c5417c3d",
+    "prepared_dirichlet_0.1_seed_808.json": "f00cf7e0070e197dc121fb647ee94bb5043d921a0c56334610238a1644dfdbff",
+    "prepared_dirichlet_0.1_seed_909.json": "e86c7fe51fddce3e541408e78456aebfd5f7cdb412bc5454ed38edd023c073ae",
+    "prepared_iid_seed_707.json": "61e011041b612cd5fc6d42a3112d7541f5662b0f39c000ceca2e7335a7a6d362",
+    "prepared_iid_seed_808.json": "0f3bb1ccfae6dda9f5dde591d74d014be2151c91256feb153a3986667691c51b",
+    "prepared_iid_seed_909.json": "dc3f520ce09a13aaac5e12a65f75c25323dd17f99b2f6efcd5d7e39a52049970",
+    "quality_guardrails.csv": "4a85943171731448a6eb765064bb856fddfbe7f8aa43a6111ea7fea580b6c5d4",
+    "report.md": "2c8cea36f0765a5af99db1bcda8db7dae9d652b39928fe1ee1bc7f167b698c38",
+    "runs.csv": "fd471a2b9a26e99ab6f34639fb2868c882cba77d5ec84dfbc4f588af216bdaae",
+    "seed_summary.csv": "f6b19604cc49dd7c48f2d7ed50f5c8c1202ff50e47a40c8093dcb2d945edf343",
+    "summary.json": "6e90ec5ccd760268bddeb56ef8b5f9e24c0f75037fa9da5d3f318fd64cee6b36",
+    "timing_noise.csv": "e7ffc7a26bcf097edcdc50cb7a5ed8c140af3440f5efea530ecaff2e099080b2"
+  }
+}

@@ -36,9 +36,10 @@ DESIGN = dict(stage='Independent performance confirmation of the frozen private-
 def own_sources(): return {p.name: sha(p) for p in sorted(Path(__file__).parent.glob('*.py'))}
 def dep_sources(): return {p.name: sha(p) for p in sorted((ROOT / 'experiments/private_workload').glob('*.py'))}
 def prep_sources(): return {p.name: sha(p) for p in sorted((ROOT / 'experiments/noniid_clustering').glob('*.py'))}
+def budget_sources(): return {p.name: sha(p) for p in sorted((ROOT / 'experiments/public_budget').glob('*.py'))}
 
 def check_environment(env):
-    if env['source_hashes'] != own_sources() or env['dependency_source_hashes'] != dep_sources() or env['core_source_hashes'] != source_hashes() or env['preparation_source_hashes'] != prep_sources():
+    if env['source_hashes'] != own_sources() or env['dependency_source_hashes'] != dep_sources() or env['core_source_hashes'] != source_hashes() or env['preparation_source_hashes'] != prep_sources() or env['budget_source_hashes'] != budget_sources():
         raise ValueError('Frozen source changed')
     if env['design'] != DESIGN:
         raise ValueError('Design changed')
@@ -145,7 +146,7 @@ def main():
         specs = plan(args.preset, args.prepare_device)
         env = dict(preset=args.preset, plan=[s.json() for s in specs], design=DESIGN,
                    source_hashes=own_sources(), dependency_source_hashes=dep_sources(),
-                   core_source_hashes=source_hashes(), preparation_source_hashes=prep_sources(),
+                   core_source_hashes=source_hashes(), preparation_source_hashes=prep_sources(), budget_source_hashes=budget_sources(),
                    runtime=runtime(), cache=str(args.cache.resolve()), data_dir=str(args.data_dir.resolve()))
         output.mkdir(parents=True, exist_ok=True); runs_dir.mkdir(exist_ok=True)
         save(output / 'environment.json', env)
