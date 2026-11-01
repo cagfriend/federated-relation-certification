@@ -6,7 +6,7 @@
 
 本轮仅验证预算配置的长程退化风险，不提供D/E新省时结论。下一步固定2步做B/E/D计算对照，预算缩减收益与认证收益分别报告。
 
-[冻结协议](experiments/stl10_longrun/PREREGISTRATION.md) · [完整结果](experiments/stl10_longrun/results_full/report.md) · [主审核](outputs/stl10_longrun_results_20261101/REVIEW.md) · [论文写作计划](docs/PAPER_WRITING_PLAN.md)
+[冻结协议](experiments/stl10_longrun/PREREGISTRATION.md) · [完整结果](experiments/stl10_longrun/results_full/report.md) · [主审核](outputs/stl10_longrun_results_20261101/REVIEW.md) · [下一步实验设计](docs/STL10_2STEP_EXPERIMENT_PLAN.md)
 
 原始逐轮大JSON以无损ZIP保存，解压即可恢复原路径；汇总与代码直接可读。见[归档与恢复说明](archives/README.md)。
 
