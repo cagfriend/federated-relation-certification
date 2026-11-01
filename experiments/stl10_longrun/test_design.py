@@ -1,1 +1,87 @@
-aW1wb3J0IHVuaXR0ZXN0Cgpmcm9tIGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4uZGVzaWduIGltcG9ydCBjaGVja3BvaW50cywgZXZhbHVhdGVfdHJhamVjdG9yeSwgcGxhbiwgc2NoZWR1bGUsIHNlbGVjdF90aWVyCgoKZGVmIHJlY29yZChmaW5hbF9hY2M9MC4xOCwgZmluYWxfbm1pPTAuMDUsIGZpbmFsX2NsaWVudHM9Tm9uZSwgbWlkPU5vbmUsIGVkZ2U9MC4zMCwgZWFybHlfc2luZ2xlPTApOgogICAgY2xpZW50cyA9IGZpbmFsX2NsaWVudHMgaWYgZmluYWxfY2xpZW50cyBpcyBub3QgTm9uZSBlbHNlIFsKICAgICAgICBkaWN0KGNsaWVudD1pLCBvY2N1cGllZF9jbHVzdGVycz01LCBsYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb249MC4zMCkgZm9yIGkgaW4gcmFuZ2UoNildCiAgICBjcHMgPSBbZGljdChyb3VuZD0wLCBjbGllbnRzPWNsaWVudHMsIG1lYW49ZGljdChhY2M9MC4xNywgbm1pPTAuMDQsIGFyaT0wLjAzKSwKICAgICAgICAgICAgICAgIHNpbmdsZV9jbHVzdGVyX2NsaWVudHM9ZWFybHlfc2luZ2xlLCBtZWFuX2xhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbj0wLjM1LAogICAgICAgICAgICAgICAgcHJpdmF0ZV9wc2V1ZG9fZml0X21lYW49MC41LCB0ZWFjaGVyX2VkZ2VfZnJhY3Rpb249Tm9uZSksCiAgICAgICAgICAgZGljdChyb3VuZD0yMCwgY2xpZW50cz0obWlkIGlmIG1pZCBpcyBub3QgTm9uZSBlbHNlIGNsaWVudHMpLAogICAgICAgICAgICAgICAgbWVhbj1kaWN0KGFjYz0wLjE3LCBubWk9MC4wNCwgYXJpPTAuMDMpLAogICAgICAgICAgICAgICAgc2luZ2xlX2NsdXN0ZXJfY2xpZW50cz0oc3VtKGNbJ29jY3VwaWVkX2NsdXN0ZXJzJ10gPT0gMSBmb3IgYyBpbiBtaWQpIGlmIG1pZCBpcyBub3QgTm9uZSBlbHNlIDApLAogICAgICAgICAgICAgICAgbWVhbl9sYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb249KHN1bShjWydsYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb24nXSBmb3IgYyBpbiBtaWQpIC8gNiBpZiBtaWQgaXMgbm90IE5vbmUgZWxzZSAwLjM1KSwKICAgICAgICAgICAgICAgIHByaXZhdGVfcHNldWRvX2ZpdF9tZWFuPTAuNSwgdGVhY2hlcl9lZGdlX2ZyYWN0aW9uPWVkZ2UpLAogICAgICAgICAgIGRpY3Qocm91bmQ9MjAwLCBjbGllbnRzPWNsaWVudHMsIG1lYW49ZGljdChhY2M9ZmluYWxfYWNjLCBubWk9ZmluYWxfbm1pLCBhcmk9MC4wMyksCiAgICAgICAgICAgICAgICBzaW5nbGVfY2x1c3Rlcl9jbGllbnRzPXN1bShjWydvY2N1cGllZF9jbHVzdGVycyddID09IDEgZm9yIGMgaW4gY2xpZW50cyksCiAgICAgICAgICAgICAgICBtZWFuX2xhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbj1zdW0oY1snbGFyZ2VzdF9jbHVzdGVyX2ZyYWN0aW9uJ10gZm9yIGMgaW4gY2xpZW50cykgLyA2LAogICAgICAgICAgICAgICAgcHJpdmF0ZV9wc2V1ZG9fZml0X21lYW49MC41LCB0ZWFjaGVyX2VkZ2VfZnJhY3Rpb249ZWRnZSldCiAgICByZXR1cm4gZGljdChyb3VuZHM9MjAwLCBjaGVja3BvaW50cz1jcHMsCiAgICAgICAgICAgICAgICByb3VuZF9yZWNvcmRzPVtkaWN0KHJvdW5kPTIwMCwgcG9zaXRpdmVfcmVsYXRpb25fZnJhY3Rpb249ZWRnZSldKQoKCmNsYXNzIENoZWNrcG9pbnRUZXN0cyh1bml0dGVzdC5UZXN0Q2FzZSk6CiAgICBkZWYgdGVzdF9mdWxsX2NoZWNrcG9pbnRfc2V0KHNlbGYpOgogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoY2hlY2twb2ludHMoMjAwKSwgWzAsIDEsIDIsIDUsIDEwLCAyMCwgNDAsIDYwLCA4MCwgMTAwLCAxMjAsIDE0MCwgMTYwLCAxODAsIDIwMF0pCgogICAgZGVmIHRlc3Rfc21va2VfY2hlY2twb2ludF9zZXQoc2VsZik6CiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChjaGVja3BvaW50cygxMiksIFswLCAxLCAyLCA1LCAxMCwgMTJdKQoKCmNsYXNzIENyaXRlcmlhVGVzdHModW5pdHRlc3QuVGVzdENhc2UpOgogICAgZGVmIHRlc3RfaGVhbHRoeV90cmFqZWN0b3J5X3Bhc3NlcyhzZWxmKToKICAgICAgICBzZWxmLmFzc2VydFRydWUoZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQoKSlbJ3Bhc3NlZCddKQoKICAgIGRlZiB0ZXN0X29uZV9kb21pbmFudF9jbGllbnRfZmFpbHNfczFfZXZlbl93aGVuX21lYW5faXNfZmluZShzZWxmKToKICAgICAgICBjbGllbnRzID0gW2RpY3QoY2xpZW50PTAsIG9jY3VwaWVkX2NsdXN0ZXJzPTIsIGxhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbj0wLjk5NSldICsgWwogICAgICAgICAgICBkaWN0KGNsaWVudD1pLCBvY2N1cGllZF9jbHVzdGVycz02LCBsYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb249MC4yMCkgZm9yIGkgaW4gcmFuZ2UoMSwgNildCiAgICAgICAgdmVyZGljdCA9IGV2YWx1YXRlX3RyYWplY3RvcnkocmVjb3JkKGZpbmFsX2NsaWVudHM9Y2xpZW50cykpCiAgICAgICAgc2VsZi5hc3NlcnRGYWxzZSh2ZXJkaWN0WydTMSddKQogICAgICAgIHNlbGYuYXNzZXJ0RmFsc2UodmVyZGljdFsncGFzc2VkJ10pCgogICAgZGVmIHRlc3Rfc2luZ2xlX2NsdXN0ZXJfY2xpZW50X2ZhaWxzX3MxKHNlbGYpOgogICAgICAgIGNsaWVudHMgPSBbZGljdChjbGllbnQ9aSwgb2NjdXBpZWRfY2x1c3RlcnM9NSwgbGFyZ2VzdF9jbHVzdGVyX2ZyYWN0aW9uPTAuMzApIGZvciBpIGluIHJhbmdlKDYpXQogICAgICAgIGNsaWVudHNbM10gPSBkaWN0KGNsaWVudD0zLCBvY2N1cGllZF9jbHVzdGVycz0xLCBsYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb249MS4wKQogICAgICAgIHNlbGYuYXNzZXJ0RmFsc2UoZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQoZmluYWxfY2xpZW50cz1jbGllbnRzKSlbJ1MxJ10pCgogICAgZGVmIHRlc3RfZWFybHlfc2luZ2xlX2NsdXN0ZXJfaXNfd2FybmluZ19vbmx5X2Zvcl9zMihzZWxmKToKICAgICAgICBzZWxmLmFzc2VydFRydWUoZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQoZWFybHlfc2luZ2xlPTMpKVsnUzInXSkKCiAgICBkZWYgdGVzdF9yb3VuZDIwX21hc3NfY29sbGFwc2VfZmFpbHNfczIoc2VsZik6CiAgICAgICAgbWlkID0gW2RpY3QoY2xpZW50PWksIG9jY3VwaWVkX2NsdXN0ZXJzPTEsIGxhcmdlc3RfY2x1c3Rlcl9mcmFjdGlvbj0xLjApIGZvciBpIGluIHJhbmdlKDQpXSArIFsKICAgICAgICAgICAgZGljdChjbGllbnQ9aSwgb2NjdXBpZWRfY2x1c3RlcnM9NSwgbGFyZ2VzdF9jbHVzdGVyX2ZyYWN0aW9uPTAuMzApIGZvciBpIGluIHJhbmdlKDQsIDYpXQogICAgICAgIHNlbGYuYXNzZXJ0RmFsc2UoZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQobWlkPW1pZCkpWydTMiddKQoKICAgIGRlZiB0ZXN0X3F1YWxpdHlfZmxvb3JfYW5kX2VkZ2VfZnJhY3Rpb24oc2VsZik6CiAgICAgICAgc2VsZi5hc3NlcnRGYWxzZShldmFsdWF0ZV90cmFqZWN0b3J5KHJlY29yZChmaW5hbF9hY2M9MC4xMCkpWydRMSddKQogICAgICAgIHNlbGYuYXNzZXJ0RmFsc2UoZXZhbHVhdGVfdHJhamVjdG9yeShyZWNvcmQoZmluYWxfbm1pPTAuMDAyKSlbJ1ExJ10pCiAgICAgICAgc2VsZi5hc3NlcnRGYWxzZShldmFsdWF0ZV90cmFqZWN0b3J5KHJlY29yZChlZGdlPTAuOTk5KSlbJ1EyJ10pCgoKY2xhc3MgU2VsZWN0aW9uVGVzdHModW5pdHRlc3QuVGVzdENhc2UpOgogICAgZGVmIHRlc3RfYm90aF92YWxpZGF0ZWRfc2VsZWN0c190d28oc2VsZik6CiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChzZWxlY3RfdGllcih7MTogW1RydWVdICogNCwgMjogW1RydWVdICogNH0pLCAyKQoKICAgIGRlZiB0ZXN0X29ubHlfdHdvX3ZhbGlkYXRlZF9zZWxlY3RzX3R3byhzZWxmKToKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHNlbGVjdF90aWVyKHsxOiBbVHJ1ZSwgVHJ1ZSwgRmFsc2UsIFRydWVdLCAyOiBbVHJ1ZV0gKiA0fSksIDIpCgogICAgZGVmIHRlc3Rfb25seV9vbmVfdmFsaWRhdGVkX3NlbGVjdHNfb25lKHNlbGYpOgogICAgICAgIHNlbGYuYXNzZXJ0RXF1YWwoc2VsZWN0X3RpZXIoezE6IFtUcnVlXSAqIDQsIDI6IFtUcnVlLCBGYWxzZSwgVHJ1ZSwgVHJ1ZV19KSwgMSkKCiAgICBkZWYgdGVzdF9uZWl0aGVyX3ZhbGlkYXRlZF9yZXR1cm5zX25vbmUoc2VsZik6CiAgICAgICAgc2VsZi5hc3NlcnRJc05vbmUoc2VsZWN0X3RpZXIoezE6IFtGYWxzZV0gKiA0LCAyOiBbVHJ1ZSwgVHJ1ZSwgVHJ1ZSwgRmFsc2VdfSkpCgoKY2xhc3MgUGxhblRlc3RzKHVuaXR0ZXN0LlRlc3RDYXNlKToKICAgIGRlZiB0ZXN0X2Z1bGxfbWF0cml4X2lzX2VpZ2h0X3RyYWplY3RvcmllcyhzZWxmKToKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKGxlbihzY2hlZHVsZSgnZnVsbCcpKSwgOCkKICAgICAgICBzZWxmLmFzc2VydEVxdWFsKHtzLnN0ZXBzIGZvciBzIGluIHBsYW4oJ2Z1bGwnKX0sIHsxLCAyfSkKCiAgICBkZWYgdGVzdF9zbW9rZV9tYXRyaXgoc2VsZik6CiAgICAgICAgc2VsZi5hc3NlcnRFcXVhbChsZW4oc2NoZWR1bGUoJ3Ntb2tlJykpLCA0KQoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICB1bml0dGVzdC5tYWluKCkK
+import unittest
+
+from experiments.stl10_longrun.design import checkpoints, evaluate_trajectory, plan, schedule, select_tier
+
+
+def record(final_acc=0.18, final_nmi=0.05, final_clients=None, mid=None, edge=0.30, early_single=0):
+    clients = final_clients if final_clients is not None else [
+        dict(client=i, occupied_clusters=5, largest_cluster_fraction=0.30) for i in range(6)]
+    cps = [dict(round=0, clients=clients, mean=dict(acc=0.17, nmi=0.04, ari=0.03),
+                single_cluster_clients=early_single, mean_largest_cluster_fraction=0.35,
+                private_pseudo_fit_mean=0.5, teacher_edge_fraction=None),
+           dict(round=20, clients=(mid if mid is not None else clients),
+                mean=dict(acc=0.17, nmi=0.04, ari=0.03),
+                single_cluster_clients=(sum(c['occupied_clusters'] == 1 for c in mid) if mid is not None else 0),
+                mean_largest_cluster_fraction=(sum(c['largest_cluster_fraction'] for c in mid) / 6 if mid is not None else 0.35),
+                private_pseudo_fit_mean=0.5, teacher_edge_fraction=edge),
+           dict(round=200, clients=clients, mean=dict(acc=final_acc, nmi=final_nmi, ari=0.03),
+                single_cluster_clients=sum(c['occupied_clusters'] == 1 for c in clients),
+                mean_largest_cluster_fraction=sum(c['largest_cluster_fraction'] for c in clients) / 6,
+                private_pseudo_fit_mean=0.5, teacher_edge_fraction=edge)]
+    return dict(rounds=200, checkpoints=cps,
+                round_records=[dict(round=200, positive_relation_fraction=edge)])
+
+
+class CheckpointTests(unittest.TestCase):
+    def test_full_checkpoint_set(self):
+        self.assertEqual(checkpoints(200), [0, 1, 2, 5, 10, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200])
+
+    def test_smoke_checkpoint_set(self):
+        self.assertEqual(checkpoints(12), [0, 1, 2, 5, 10, 12])
+
+
+class CriteriaTests(unittest.TestCase):
+    def test_healthy_trajectory_passes(self):
+        self.assertTrue(evaluate_trajectory(record())['passed'])
+
+    def test_one_dominant_client_fails_s1_even_when_mean_is_fine(self):
+        clients = [dict(client=0, occupied_clusters=2, largest_cluster_fraction=0.995)] + [
+            dict(client=i, occupied_clusters=6, largest_cluster_fraction=0.20) for i in range(1, 6)]
+        verdict = evaluate_trajectory(record(final_clients=clients))
+        self.assertFalse(verdict['S1'])
+        self.assertFalse(verdict['passed'])
+
+    def test_single_cluster_client_fails_s1(self):
+        clients = [dict(client=i, occupied_clusters=5, largest_cluster_fraction=0.30) for i in range(6)]
+        clients[3] = dict(client=3, occupied_clusters=1, largest_cluster_fraction=1.0)
+        self.assertFalse(evaluate_trajectory(record(final_clients=clients))['S1'])
+
+    def test_early_single_cluster_is_warning_only_for_s2(self):
+        self.assertTrue(evaluate_trajectory(record(early_single=3))['S2'])
+
+    def test_round20_mass_collapse_fails_s2(self):
+        mid = [dict(client=i, occupied_clusters=1, largest_cluster_fraction=1.0) for i in range(4)] + [
+            dict(client=i, occupied_clusters=5, largest_cluster_fraction=0.30) for i in range(4, 6)]
+        self.assertFalse(evaluate_trajectory(record(mid=mid))['S2'])
+
+    def test_quality_floor_and_edge_fraction(self):
+        self.assertFalse(evaluate_trajectory(record(final_acc=0.10))['Q1'])
+        self.assertFalse(evaluate_trajectory(record(final_nmi=0.002))['Q1'])
+        self.assertFalse(evaluate_trajectory(record(edge=0.999))['Q2'])
+
+
+class SelectionTests(unittest.TestCase):
+    def test_both_validated_selects_two(self):
+        self.assertEqual(select_tier({1: [True] * 4, 2: [True] * 4}), 2)
+
+    def test_only_two_validated_selects_two(self):
+        self.assertEqual(select_tier({1: [True, True, False, True], 2: [True] * 4}), 2)
+
+    def test_only_one_validated_selects_one(self):
+        self.assertEqual(select_tier({1: [True] * 4, 2: [True, False, True, True]}), 1)
+
+    def test_neither_validated_returns_none(self):
+        self.assertIsNone(select_tier({1: [False] * 4, 2: [True, True, True, False]}))
+
+
+class PlanTests(unittest.TestCase):
+    def test_full_matrix_is_eight_trajectories(self):
+        self.assertEqual(len(schedule('full')), 8)
+        self.assertEqual({s.steps for s in plan('full')}, {1, 2})
+
+    def test_smoke_matrix(self):
+        self.assertEqual(len(schedule('smoke')), 4)
+
+
+if __name__ == '__main__':
+    unittest.main()
