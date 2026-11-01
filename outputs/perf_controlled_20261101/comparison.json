@@ -1,0 +1,32 @@
+{
+  "909": {
+    "D_B_saving_percent": 22.614424635841278,
+    "D_E_saving_percent": 6.516174083608517,
+    "power_samples": 64,
+    "ac_status": [
+      1
+    ],
+    "battery_saver": [
+      0
+    ],
+    "battery_percent_range": [
+      100,
+      100
+    ]
+  },
+  "808": {
+    "D_B_saving_percent": 19.7631715456003,
+    "D_E_saving_percent": 6.133665394507293,
+    "power_samples": 65,
+    "ac_status": [
+      1
+    ],
+    "battery_saver": [
+      0
+    ],
+    "battery_percent_range": [
+      100,
+      100
+    ]
+  }
+}

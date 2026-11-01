@@ -1,0 +1,35 @@
+{
+  "diagnostic_only": true,
+  "original_results_unchanged": true,
+  "all_method_signatures_identical_to_original": true,
+  "comparison": [
+    {
+      "method": "D",
+      "rerun_head_seconds": 59.368211299937684,
+      "original_rep0_head_seconds": 55.016091099969344,
+      "original_rep1_head_seconds": 88.51832080015447
+    },
+    {
+      "method": "B",
+      "rerun_head_seconds": 76.71741280020797,
+      "original_rep0_head_seconds": 81.98079670019797,
+      "original_rep1_head_seconds": 124.42626160010695
+    },
+    {
+      "method": "E",
+      "rerun_head_seconds": 63.506398799974704,
+      "original_rep0_head_seconds": 55.99460050003836,
+      "original_rep1_head_seconds": 105.19435320000048
+    }
+  ],
+  "files": {
+    "environment.json": "bc7dce4cc2e3a95f6526bffbd04e7378c07c124ce1c27411ba13b61cd77a463b",
+    "power_log.jsonl": "984a2759644994689407d11c5d41db36046f71df27cd6cb0bacb689e24f8fa76",
+    "power_scheme.txt": "84c9ce56ad7e43ec189583fb4980b05f4fedda128896fda11d0611779cf92173",
+    "prepared_dirichlet_0.1_seed_909.json": "e86c7fe51fddce3e541408e78456aebfd5f7cdb412bc5454ed38edd023c073ae",
+    "rerun.py": "29c535f163400bc70a23172ca5efc8c2c63294e629b1662dc92eb6632f736757",
+    "runs/dirichlet_0.1_m16384_fixed8_priv2048_seed_909_B_rep1.json": "c3d88b53bd8cdaf69f61779668a96e5ffb331d79b95d858fe77e6dd1d5ab52b3",
+    "runs/dirichlet_0.1_m16384_fixed8_priv2048_seed_909_D_rep1.json": "e64bdb3cce478b3e6f504833a0896d90bccde60e5048454d3b60999bfaefa659",
+    "runs/dirichlet_0.1_m16384_fixed8_priv2048_seed_909_E_rep1.json": "1f0ccf64c3f54d789055b9e4fcd62af4012ea98bd6357500a52c75cd94d98a85"
+  }
+}
