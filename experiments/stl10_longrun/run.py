@@ -1,1 +1,246 @@
-IiIiRnJvemVuIFNUTC0xMCBsb25nLWhvcml6b24gdmFsaWRhdGlvbiBydW5uZXIuIEVhY2ggdHJhamVjdG9yeSBpcyBpdHMgb3duIHByb2Nlc3MuIiIiCmltcG9ydCBhcmdwYXJzZQppbXBvcnQgaGFzaGxpYgppbXBvcnQganNvbgppbXBvcnQgbWF0aAppbXBvcnQgc3VicHJvY2VzcwppbXBvcnQgc3lzCmltcG9ydCB0aW1lCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aAoKZnJvbSB0aHJlYWRwb29sY3RsIGltcG9ydCB0aHJlYWRwb29sX2xpbWl0cwoKZnJvbSBleHBlcmltZW50cy5wdWJsaWNfc2NhbGluZy5kYXRhIGltcG9ydCBydW50aW1lIGFzIGNvcmVfcnVudGltZQpmcm9tIGV4cGVyaW1lbnRzLnB1YmxpY19zY2FsaW5nLnV0aWwgaW1wb3J0IG5hdGl2ZV9wZWFrX2J5dGVzCmZyb20gZXhwZXJpbWVudHMucHJpdmF0ZV93b3JrbG9hZC5kZXNpZ24gaW1wb3J0IHNwZWNfZnJvbV9qc29uCmZyb20gZXhwZXJpbWVudHMuc3RsMTBfdHJhbnNmZXIgaW1wb3J0IGRhdGEgYXMgdHJhbnNmZXJfZGF0YQpmcm9tIGV4cGVyaW1lbnRzLnN0bDEwX3RyYW5zZmVyLmRlc2lnbiBpbXBvcnQgcGxhbiBhcyB0cmFuc2Zlcl9wbGFuCmZyb20gZXhwZXJpbWVudHMuc3RsMTBfdHJhbnNmZXIucnVuIGltcG9ydCBjaGVja19lbnZpcm9ubWVudCBhcyBjaGVja190cmFuc2Zlcl9lbnZpcm9ubWVudApmcm9tIGV4cGVyaW1lbnRzLnN0bDEwX3RyYW5zZmVyLnJ1biBpbXBvcnQgcG93ZXJfc3RhdHVzCgpmcm9tIC5kZXNpZ24gaW1wb3J0IFBBUlRJVElPTlMsIGNoZWNrcG9pbnRzLCBmaWxlbmFtZSwgcGxhbiwgc2NoZWR1bGUKZnJvbSAuZW5naW5lIGltcG9ydCBydW4gYXMgZW5naW5lX3J1bgpmcm9tIC5yZXBvcnQgaW1wb3J0IHJlcG9ydHMKClJPT1QgPSBQYXRoKF9fZmlsZV9fKS5yZXNvbHZlKCkucGFyZW50c1syXQpESVIgPSBQYXRoKF9fZmlsZV9fKS5wYXJlbnQKUFJJVkFURV9BTkNIT1JfRklFTERTID0gKCdwcml2YXRlX3N1YnNldF9kaWdlc3QnLCAncHJpdmF0ZV9zYW1wbGVzX3Blcl9jbGllbnQnLAogICAgICAgICAgICAgICAgICAgICAgICAgJ3ByaXZhdGVfc3Vic2V0X3BzZXVkb19oaXN0b2dyYW1zJywgJ3ByaXZhdGVfb3B0aW1pemVyX3N0ZXBzJywKICAgICAgICAgICAgICAgICAgICAgICAgICdwcml2YXRlX2ZvcndhcmRfZW5kcG9pbnRzJykKCgpkZWYgZGlnZXN0KHApOgogICAgaCA9IGhhc2hsaWIuc2hhMjU2KCkKICAgIHdpdGggUGF0aChwKS5vcGVuKCdyYicpIGFzIGY6CiAgICAgICAgZm9yIGIgaW4gaXRlcihsYW1iZGE6IGYucmVhZCgxIDw8IDIwKSwgYicnKToKICAgICAgICAgICAgaC51cGRhdGUoYikKICAgIHJldHVybiBoLmhleGRpZ2VzdCgpCgoKZGVmIGZyb3plbl9zb3VyY2VzKCk6CiAgICBmb2xkZXJzID0gWydzdGwxMF9sb25ncnVuJywgJ3N0bDEwX3RyYW5zZmVyJywgJ3N0bDEwX2RpYWdub3N0aWNzJywgJ3B1YmxpY19zY2FsaW5nJywKICAgICAgICAgICAgICAgJ3ByaXZhdGVfd29ya2xvYWQnLCAncHVibGljX2J1ZGdldCcsICdub25paWRfY2x1c3RlcmluZyddCiAgICBvdXQgPSB7fQogICAgZm9yIGZvbGRlciBpbiBmb2xkZXJzOgogICAgICAgIGZvciBwIGluIHNvcnRlZCgoUk9PVCAvICdleHBlcmltZW50cycgLyBmb2xkZXIpLmdsb2IoJyoucHknKSk6CiAgICAgICAgICAgIG91dFtzdHIocC5yZWxhdGl2ZV90byhST09UKSldID0gZGlnZXN0KHApCiAgICBvdXRbJ2V4cGVyaW1lbnRzL3N0bDEwX2xvbmdydW4vUFJFUkVHSVNUUkFUSU9OLm1kJ10gPSBkaWdlc3QoRElSIC8gJ1BSRVJFR0lTVFJBVElPTi5tZCcpCiAgICBvdXRbJ2V4cGVyaW1lbnRzL3N0bDEwX3RyYW5zZmVyL1BSRVJFR0lTVFJBVElPTi5tZCddID0gZGlnZXN0KFJPT1QgLyAnZXhwZXJpbWVudHMvc3RsMTBfdHJhbnNmZXIvUFJFUkVHSVNUUkFUSU9OLm1kJykKICAgIHJldHVybiBvdXQKCgpkZWYgd3JpdGVfbmV3KHAsIG9iaik6CiAgICBwID0gUGF0aChwKQogICAgcC5wYXJlbnQubWtkaXIocGFyZW50cz1UcnVlLCBleGlzdF9vaz1UcnVlKQogICAgdCA9IHAud2l0aF9zdWZmaXgocC5zdWZmaXggKyAnLnBhcnQnKQogICAgdC53cml0ZV90ZXh0KGpzb24uZHVtcHMob2JqLCBlbnN1cmVfYXNjaWk9RmFsc2UsIGluZGVudD0yLCBhbGxvd19uYW49RmFsc2UpLCBlbmNvZGluZz0ndXRmLTgnKQogICAgdC5yZXBsYWNlKHApCgoKZGVmIHNlYWwocik6CiAgICByLnBvcCgncnVuX3NoYTI1NicsIE5vbmUpCiAgICByWydydW5fc2hhMjU2J10gPSBoYXNobGliLnNoYTI1Nihqc29uLmR1bXBzKHIsIHNvcnRfa2V5cz1UcnVlLCBzZXBhcmF0b3JzPSgnLCcsICc6JykpLmVuY29kZSgpKS5oZXhkaWdlc3QoKQogICAgcmV0dXJuIHIKCgpkZWYgY2hlY2tfZW52aXJvbm1lbnQoZW52KToKICAgIGlmIGVudlsnc291cmNlX2hhc2hlcyddICE9IGZyb3plbl9zb3VyY2VzKCk6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignRnJvemVuIHNvdXJjZSBjaGFuZ2VkJykKICAgIG5vdyA9IGNvcmVfcnVudGltZSgpCiAgICBpZiBhbnkoZW52WydydW50aW1lJ10uZ2V0KGspICE9IG5vdy5nZXQoaykgZm9yIGsgaW4gKCdweXRob24nLCAnZXhlY3V0YWJsZScsICdudW1weScsICdzY2lweScsICdza2xlYXJuJywgJ3RvcmNoJywgJ3BsYXRmb3JtJykpOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ1J1bnRpbWUgY2hhbmdlZCcpCiAgICBpZiBlbnZbJ3BsYW4nXSAhPSBbcy5qc29uKCkgZm9yIHMgaW4gcGxhbihlbnZbJ3ByZXNldCddLCBlbnYuZ2V0KCdwcmVwYXJlX2RldmljZScpKV06CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignRnJvemVuIHBsYW4gY2hhbmdlZCcpCgoKZGVmIGNoZWNrX3J1bihyLCBtZXRhLCBzcGVjLCBwcmVwYXJlZCk6CiAgICBpZiByLmdldCgncnVuX3NoYTI1NicpICE9IGhhc2hsaWIuc2hhMjU2KGpzb24uZHVtcHMoe2s6IHYgZm9yIGssIHYgaW4gci5pdGVtcygpIGlmIGsgIT0gJ3J1bl9zaGEyNTYnfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzb3J0X2tleXM9VHJ1ZSwgc2VwYXJhdG9ycz0oJywnLCAnOicpKS5lbmNvZGUoKSkuaGV4ZGlnZXN0KCk6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignUnVuIHNlYWwgbWlzbWF0Y2gnKQogICAgZm9yIGssIHYgaW4gWygnc2VlZCcsIG1ldGFbJ3NlZWQnXSksICgncGFydGl0aW9uJywgbWV0YVsncGFydGl0aW9uJ10pLCAoJ21ldGhvZCcsICdCJyksCiAgICAgICAgICAgICAgICAgKCdjYXNlX2lkJywgbWV0YVsnY2FzZV9pZCddKSwgKCdwdWJsaWNfc3RlcHMnLCBtZXRhWydzdGVwcyddKV06CiAgICAgICAgaWYgci5nZXQoaykgIT0gdjoKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcihmJ1J1biBpZGVudGl0eSBtaXNtYXRjaDoge2t9JykKICAgIGlmIHJbJ3NwZWMnXSAhPSBzcGVjLmpzb24oKSBvciByWydjb25maWcnXSAhPSBzcGVjLmNvbmZpZy5qc29uKCkgb3IgclsncHJlcGFyZWRfZGlyZWN0b3J5J10gIT0gc3RyKFBhdGgocHJlcGFyZWQpLnJlc29sdmUoKSk6CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignUnVuIHNwZWMvY2FjaGUgbWlzbWF0Y2gnKQogICAgY2ZnID0gc3BlYy5jb25maWcKICAgIHJyID0gclsncm91bmRfcmVjb3JkcyddCiAgICBpZiBbeFsncm91bmQnXSBmb3IgeCBpbiBycl0gIT0gbGlzdChyYW5nZSgxLCBjZmcucm91bmRzICsgMSkpOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ0luY29tcGxldGUgcm91bmQgY292ZXJhZ2UnKQogICAgbiA9IGxlbihjZmcuZGltZW5zaW9ucykKICAgIGZvciB4IGluIHJyOgogICAgICAgIGlmIHhbJ3B1YmxpY19vcHRpbWl6ZXJfc3RlcHMnXSAhPSBuICogc3BlYy5zdGVwczoKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignUHVibGljIHN0ZXAgY291bnQgZGlmZmVycyBmcm9tIGZyb3plbiB0aWVyJykKICAgICAgICBmb3IgcGhhc2UgaW4gKCdwcml2YXRlJywgJ2dlbmVyYXRpb24nLCAnZXhjaGFuZ2UnLCAncHVibGljJywgJ3BpcGVsaW5lJyk6CiAgICAgICAgICAgIGlmIG5vdCBtYXRoLmlzZmluaXRlKHhbcGhhc2UgKyAnX3NlY29uZHMnXSkgb3IgeFtwaGFzZSArICdfc2Vjb25kcyddIDwgMDoKICAgICAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ0ludmFsaWQgdGltaW5nJykKICAgIGlmIFtjWydyb3VuZCddIGZvciBjIGluIHJbJ2NoZWNrcG9pbnRzJ11dICE9IGNoZWNrcG9pbnRzKGNmZy5yb3VuZHMpOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ0NoZWNrcG9pbnQgc2V0IGRpZmZlcnMgZnJvbSBmcm96ZW4gZGVzaWduJykKICAgIGlmIHJbJ2NoZWNrcG9pbnRzJ11bLTFdWydyb3VuZCddICE9IGNmZy5yb3VuZHMgb3Igclsnc3VtbWFyeSddWydCJ11bJ2ZpbmFsX21ldHJpY3MnXSAhPSByWydjaGVja3BvaW50cyddWy0xXVsnbWVhbiddOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ0ZpbmFsIGNoZWNrcG9pbnQgZGlmZmVycycpCiAgICBpZiByWydzdW1tYXJ5J11bJ0InXVsnZmluYWxfaGVhZF9kaWdlc3QnXSAhPSByclstMV1bJ2hlYWRfZGlnZXN0X2FmdGVyX3B1YmxpYyddOgogICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ0ZpbmFsIGRpZ2VzdCBkaWZmZXJzJykKICAgIHJldHVybiBUcnVlCgoKZGVmIGNoZWNrX2FuY2hvcihyLCBhbmNob3IpOgogICAgIiIiRXhhY3RuZXNzIGFuY2hvciBhZ2FpbnN0IHRoZSBoaXN0b3JpY2FsIHN0ZXAtOCBCIHJ1biAoZnVsbCBwcmVzZXQgb25seSkuIiIiCiAgICBpZiByWydpbml0aWFsX2hlYWRfZGlnZXN0J10gIT0gYW5jaG9yWydpbml0aWFsX2hlYWRfZGlnZXN0J106CiAgICAgICAgcmFpc2UgVmFsdWVFcnJvcignSW5pdGlhbCBoZWFkIGRpZ2VzdCBkaWZmZXJzIGZyb20gaGlzdG9yaWNhbCBzdGVwLTggQiBydW4nKQogICAgaWYgclsnZ3JhcGhfc2hhMjU2J10gIT0gYW5jaG9yWydncmFwaF9zaGEyNTYnXToKICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCdHcmFwaCBkaWZmZXJzIGZyb20gaGlzdG9yaWNhbCBzdGVwLTggQiBydW4nKQogICAgZm9yIGZpZWxkIGluIFBSSVZBVEVfQU5DSE9SX0ZJRUxEUzoKICAgICAgICBpZiBbeFtmaWVsZF0gZm9yIHggaW4gclsncm91bmRfcmVjb3JkcyddXSAhPSBbeFtmaWVsZF0gZm9yIHggaW4gYW5jaG9yWydyb3VuZF9yZWNvcmRzJ11dOgogICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKGYnUHJpdmF0ZSB3b3JrbG9hZCBmaWVsZCBkaWZmZXJzIGZyb20gYW5jaG9yOiB7ZmllbGR9JykKICAgIHJldHVybiBUcnVlCgoKZGVmIGxvYWRfYW5jaG9yKHNvdXJjZSwgcGFydGl0aW9uLCBzZWVkKToKICAgIGNhc2UgPSB0cmFuc2Zlcl9wbGFuKCdmdWxsJylbLTFdLmNhc2VfaWQKICAgIHBhdGggPSBQYXRoKHNvdXJjZSkgLyAncnVucycgLyBmJ3twYXJ0aXRpb259X3tjYXNlfV9zZWVkX3tzZWVkfV9CLmpzb24nCiAgICByZXR1cm4ganNvbi5sb2FkcyhwYXRoLnJlYWRfdGV4dChlbmNvZGluZz0ndXRmLTgnKSkKCgpkZWYgbWFpbigpOgogICAgYXAgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcihkZXNjcmlwdGlvbj1fX2RvY19fKQogICAgYXAuYWRkX2FyZ3VtZW50KCctLXByZXNldCcsIGNob2ljZXM9KCdmdWxsJywgJ3Ntb2tlJyksIGRlZmF1bHQ9J2Z1bGwnKQogICAgYXAuYWRkX2FyZ3VtZW50KCctLXNvdXJjZS1yZXN1bHRzJywgdHlwZT1QYXRoLAogICAgICAgICAgICAgICAgICAgIGRlZmF1bHQ9Uk9PVCAvICdleHBlcmltZW50cycgLyAnc3RsMTBfdHJhbnNmZXInIC8gJ3Jlc3VsdHNfZnVsbCcpCiAgICBhcC5hZGRfYXJndW1lbnQoJy0tb3V0cHV0JywgdHlwZT1QYXRoKQogICAgYXAuYWRkX2FyZ3VtZW50KCctLXJlc3VtZScsIGFjdGlvbj0nc3RvcmVfdHJ1ZScpCiAgICBhcC5hZGRfYXJndW1lbnQoJy0tY2FjaGUnLCB0eXBlPVBhdGgsIGRlZmF1bHQ9RElSIC8gJ3ByZXBhcmVkJykKICAgIGFwLmFkZF9hcmd1bWVudCgnLS1kYXRhLWRpcicsIHR5cGU9UGF0aCwgZGVmYXVsdD1ESVIgLyAnZGF0YScpCiAgICBhcC5hZGRfYXJndW1lbnQoJy0td29ya2VyJywgYWN0aW9uPSdzdG9yZV90cnVlJywgaGVscD1hcmdwYXJzZS5TVVBQUkVTUykKICAgIGFwLmFkZF9hcmd1bWVudCgnLS13b3JrZXItc2VlZCcsIHR5cGU9aW50LCBoZWxwPWFyZ3BhcnNlLlNVUFBSRVNTKQogICAgYXAuYWRkX2FyZ3VtZW50KCctLXdvcmtlci1wYXJ0aXRpb24nLCBjaG9pY2VzPVBBUlRJVElPTlMsIGhlbHA9YXJncGFyc2UuU1VQUFJFU1MpCiAgICBhcC5hZGRfYXJndW1lbnQoJy0td29ya2VyLWNhc2UnLCBoZWxwPWFyZ3BhcnNlLlNVUFBSRVNTKQogICAgYSA9IGFwLnBhcnNlX2FyZ3MoKQogICAgb3V0ID0gKGEub3V0cHV0IG9yIERJUiAvIGYncmVzdWx0c197YS5wcmVzZXR9JykucmVzb2x2ZSgpCiAgICBydW5zX2RpciA9IG91dCAvICdydW5zJwoKICAgIGlmIGEud29ya2VyOgogICAgICAgIGVudiA9IGpzb24ubG9hZHMoKG91dCAvICdlbnZpcm9ubWVudC5qc29uJykucmVhZF90ZXh0KGVuY29kaW5nPSd1dGYtOCcpKQogICAgICAgIGNoZWNrX2Vudmlyb25tZW50KGVudikKICAgICAgICBzcGVjID0gbmV4dChzcGVjX2Zyb21fanNvbih4KSBmb3IgeCBpbiBlbnZbJ3BsYW4nXSBpZiBzcGVjX2Zyb21fanNvbih4KS5jYXNlX2lkID09IGEud29ya2VyX2Nhc2UpCiAgICAgICAgcHJlcGFyZWQgPSBQYXRoKGVudlsncHJlcGFyZWQnXVtmJ3thLndvcmtlcl9zZWVkfXx7YS53b3JrZXJfcGFydGl0aW9ufSddWydwYXRoJ10pCiAgICAgICAgaWYgZGlnZXN0KHByZXBhcmVkIC8gJ3ByZXBhcmVkLmpzb24nKSAhPSBlbnZbJ3ByZXBhcmVkJ11bZid7YS53b3JrZXJfc2VlZH18e2Eud29ya2VyX3BhcnRpdGlvbn0nXVsnbWV0YWRhdGFfc2hhMjU2J106CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoJ1ByZXBhcmVkIG1ldGFkYXRhIGNoYW5nZWQnKQogICAgICAgIHQgPSB0aW1lLnBlcmZfY291bnRlcigpCiAgICAgICAgd2l0aCB0aHJlYWRwb29sX2xpbWl0cyhsaW1pdHM9c3BlYy5jb25maWcudGhyZWFkcyk6CiAgICAgICAgICAgIHIgPSBlbmdpbmVfcnVuKHByZXBhcmVkLCBzcGVjLCBmaXh0dXJlPWVudlsnZml4dHVyZSddKQogICAgICAgIG1ldGEgPSBkaWN0KHNlZWQ9YS53b3JrZXJfc2VlZCwgcGFydGl0aW9uPWEud29ya2VyX3BhcnRpdGlvbiwgY2FzZV9pZD1zcGVjLmNhc2VfaWQsIHN0ZXBzPXNwZWMuc3RlcHMpCiAgICAgICAgci51cGRhdGUoc2VlZD1hLndvcmtlcl9zZWVkLCBwYXJ0aXRpb249YS53b3JrZXJfcGFydGl0aW9uLCBtZXRob2Q9J0InLCBzdGVwcz1zcGVjLnN0ZXBzLAogICAgICAgICAgICAgICAgIHdvcmtlcl93YWxsX3NlY29uZHM9dGltZS5wZXJmX2NvdW50ZXIoKSAtIHQsIHByb2Nlc3NfcGVha19ieXRlcz1uYXRpdmVfcGVha19ieXRlcygpKQogICAgICAgIHIgPSBzZWFsKHIpCiAgICAgICAgY2hlY2tfcnVuKHIsIG1ldGEsIHNwZWMsIHByZXBhcmVkKQogICAgICAgIHdyaXRlX25ldyhydW5zX2RpciAvIGZpbGVuYW1lKG1ldGEpLCByKQogICAgICAgIHJldHVybgoKICAgIGlmIGEucmVzdW1lOgogICAgICAgIGVudiA9IGpzb24ubG9hZHMoKG91dCAvICdlbnZpcm9ubWVudC5qc29uJykucmVhZF90ZXh0KGVuY29kaW5nPSd1dGYtOCcpKQogICAgICAgIGNoZWNrX2Vudmlyb25tZW50KGVudikKICAgICAgICBhLmNhY2hlID0gUGF0aChlbnZbJ2NhY2hlJ10pCiAgICAgICAgYS5kYXRhX2RpciA9IFBhdGgoZW52WydkYXRhX2RpciddKQogICAgICAgIHNvdXJjZSA9IFBhdGgoZW52Wydzb3VyY2VfcmVzdWx0cyddKQogICAgZWxzZToKICAgICAgICBpZiBvdXQuZXhpc3RzKCkgYW5kIGFueShvdXQuaXRlcmRpcigpKToKICAgICAgICAgICAgcmFpc2UgRmlsZUV4aXN0c0Vycm9yKCdPdXRwdXQgZXhpc3RzOyB1c2UgLS1yZXN1bWUgb3IgYSBuZXcgLS1vdXRwdXQnKQogICAgICAgIHNwZWNzID0gcGxhbihhLnByZXNldCkKICAgICAgICBmaXh0dXJlID0gYS5wcmVzZXQgPT0gJ3Ntb2tlJwogICAgICAgIHNvdXJjZSA9IGEuc291cmNlX3Jlc3VsdHMucmVzb2x2ZSgpCiAgICAgICAgcHJlcGFyZWQgPSB7fQogICAgICAgIGlmIGZpeHR1cmU6CiAgICAgICAgICAgIGZvciBzZWVkIGluICgxMDAxLCk6CiAgICAgICAgICAgICAgICBmb3IgcGFydCBpbiBQQVJUSVRJT05TOgogICAgICAgICAgICAgICAgICAgIHAgPSB0cmFuc2Zlcl9kYXRhLnByZXBhcmUoYS5jYWNoZSwgYS5kYXRhX2Rpciwgc3BlY3NbLTFdLmNvbmZpZywgc2VlZCwgcGFydCwgZml4dHVyZT1UcnVlKQogICAgICAgICAgICAgICAgICAgIHByZXBhcmVkW2Yne3NlZWR9fHtwYXJ0fSddID0gZGljdChwYXRoPXN0cihwLnJlc29sdmUoKSksIG1ldGFkYXRhX3NoYTI1Nj1kaWdlc3QocCAvICdwcmVwYXJlZC5qc29uJykpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgdHJhbnNmZXJfZW52ID0ganNvbi5sb2Fkcygoc291cmNlIC8gJ2Vudmlyb25tZW50Lmpzb24nKS5yZWFkX3RleHQoZW5jb2Rpbmc9J3V0Zi04JykpCiAgICAgICAgICAgIGNoZWNrX3RyYW5zZmVyX2Vudmlyb25tZW50KHRyYW5zZmVyX2VudikKICAgICAgICAgICAgZm9yIHNlZWQgaW4gKDEwMDIsIDEwMDMpOgogICAgICAgICAgICAgICAgZm9yIHBhcnQgaW4gUEFSVElUSU9OUzoKICAgICAgICAgICAgICAgICAgICBtYXJrZXIgPSBqc29uLmxvYWRzKChzb3VyY2UgLyBmJ3ByZXBhcmVkX3twYXJ0fV9zZWVkX3tzZWVkfS5qc29uJykucmVhZF90ZXh0KGVuY29kaW5nPSd1dGYtOCcpKQogICAgICAgICAgICAgICAgICAgIHAgPSBQYXRoKG1hcmtlclsncGF0aCddKQogICAgICAgICAgICAgICAgICAgIGlmIGRpZ2VzdChwIC8gJ3ByZXBhcmVkLmpzb24nKSAhPSBtYXJrZXJbJ21ldGFkYXRhX3NoYTI1NiddOgogICAgICAgICAgICAgICAgICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCdQcmVwYXJlZCBtZXRhZGF0YSBjaGFuZ2VkJykKICAgICAgICAgICAgICAgICAgICBwcmVwYXJlZFtmJ3tzZWVkfXx7cGFydH0nXSA9IGRpY3QocGF0aD1zdHIocC5yZXNvbHZlKCkpLCBtZXRhZGF0YV9zaGEyNTY9bWFya2VyWydtZXRhZGF0YV9zaGEyNTYnXSkKICAgICAgICBlbnYgPSBkaWN0KHByZXNldD1hLnByZXNldCwgcHJlcGFyZV9kZXZpY2U9c3BlY3NbMF0uY29uZmlnLnByZXBhcmVfZGV2aWNlLAogICAgICAgICAgICAgICAgICAgcGxhbj1bcy5qc29uKCkgZm9yIHMgaW4gc3BlY3NdLCBmaXh0dXJlPWZpeHR1cmUsIHNvdXJjZV9yZXN1bHRzPXN0cihzb3VyY2UpLAogICAgICAgICAgICAgICAgICAgY2FjaGU9c3RyKGEuY2FjaGUucmVzb2x2ZSgpKSwgZGF0YV9kaXI9c3RyKGEuZGF0YV9kaXIucmVzb2x2ZSgpKSwKICAgICAgICAgICAgICAgICAgIHJ1bnRpbWU9Y29yZV9ydW50aW1lKCksIHNvdXJjZV9oYXNoZXM9ZnJvemVuX3NvdXJjZXMoKSwgcHJlcGFyZWQ9cHJlcGFyZWQsCiAgICAgICAgICAgICAgICAgICBzdGFydGVkX3Bvd2VyPXBvd2VyX3N0YXR1cygpLCBzdGFydGVkX3V0Yz10aW1lLnRpbWUoKSwKICAgICAgICAgICAgICAgICAgIGV4ZWN1dGlvbj0nb25lIHRyYWplY3RvcnkgcGVyIGluZGVwZW5kZW50IHByb2Nlc3MsIHNlcmlhbCcpCiAgICAgICAgaWYgYS5wcmVzZXQgPT0gJ2Z1bGwnIGFuZCBlbnZbJ3N0YXJ0ZWRfcG93ZXInXVsnYWNfbGluZV9zdGF0dXMnXSAhPSAxOgogICAgICAgICAgICByYWlzZSBSdW50aW1lRXJyb3IoJ0Z1bGwgcnVuIHJlcXVpcmVzIHZlcmlmaWVkIEFDTGluZVN0YXR1cz0xIGF0IHN0YXJ0JykKICAgICAgICBvdXQubWtkaXIocGFyZW50cz1UcnVlLCBleGlzdF9vaz1UcnVlKQogICAgICAgIHJ1bnNfZGlyLm1rZGlyKGV4aXN0X29rPVRydWUpCiAgICAgICAgd3JpdGVfbmV3KG91dCAvICdlbnZpcm9ubWVudC5qc29uJywgZW52KQoKICAgIHNwZWNzID0gW3NwZWNfZnJvbV9qc29uKHgpIGZvciB4IGluIGVudlsncGxhbiddXQogICAgaW52b2NhdGlvbl9wb3dlciA9IHBvd2VyX3N0YXR1cygpCiAgICBpZiBlbnZbJ3ByZXNldCddID09ICdmdWxsJyBhbmQgaW52b2NhdGlvbl9wb3dlclsnYWNfbGluZV9zdGF0dXMnXSAhPSAxOgogICAgICAgIHJhaXNlIFJ1bnRpbWVFcnJvcignRnVsbCBydW4gYW5kIHJlc3VtZSByZXF1aXJlIHZlcmlmaWVkIEFDTGluZVN0YXR1cz0xJykKICAgIHdyaXRlX25ldyhvdXQgLyBmJ2ludm9jYXRpb25fe3RpbWUudGltZV9ucygpfS5qc29uJywgZGljdCh1dGM9dGltZS50aW1lKCksIHJlc3VtZT1hLnJlc3VtZSwgcG93ZXI9aW52b2NhdGlvbl9wb3dlcikpCgogICAgY29tcGxldGVkID0gW10KICAgIGZvciBtZXRhIGluIHNjaGVkdWxlKGVudlsncHJlc2V0J10pOgogICAgICAgIHNwZWMgPSBuZXh0KHMgZm9yIHMgaW4gc3BlY3MgaWYgcy5jYXNlX2lkID09IG1ldGFbJ2Nhc2VfaWQnXSkKICAgICAgICBwcmVwYXJlZCA9IFBhdGgoZW52WydwcmVwYXJlZCddW2Yie21ldGFbJ3NlZWQnXX18e21ldGFbJ3BhcnRpdGlvbiddfSJdWydwYXRoJ10pCiAgICAgICAgdGFyZ2V0ID0gcnVuc19kaXIgLyBmaWxlbmFtZShtZXRhKQogICAgICAgIGlmIHRhcmdldC5leGlzdHMoKToKICAgICAgICAgICAgciA9IGpzb24ubG9hZHModGFyZ2V0LnJlYWRfdGV4dChlbmNvZGluZz0ndXRmLTgnKSkKICAgICAgICAgICAgcHJpbnQoJ1ByZXNlcnZlZDogJyArIHRhcmdldC5uYW1lLCBmbHVzaD1UcnVlKQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIHByaW50KCdSdW5uaW5nOiAnICsgdGFyZ2V0Lm5hbWUsIGZsdXNoPVRydWUpCiAgICAgICAgICAgIGNtZCA9IFtzeXMuZXhlY3V0YWJsZSwgJy1tJywgJ2V4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4ucnVuJywgJy0tb3V0cHV0Jywgc3RyKG91dCksICctLXdvcmtlcicsCiAgICAgICAgICAgICAgICAgICAnLS13b3JrZXItc2VlZCcsIHN0cihtZXRhWydzZWVkJ10pLCAnLS13b3JrZXItcGFydGl0aW9uJywgbWV0YVsncGFydGl0aW9uJ10sCiAgICAgICAgICAgICAgICAgICAnLS13b3JrZXItY2FzZScsIG1ldGFbJ2Nhc2VfaWQnXV0KICAgICAgICAgICAgc3VicHJvY2Vzcy5ydW4oY21kLCBjaGVjaz1UcnVlKQogICAgICAgICAgICByID0ganNvbi5sb2Fkcyh0YXJnZXQucmVhZF90ZXh0KGVuY29kaW5nPSd1dGYtOCcpKQogICAgICAgIGNoZWNrX3J1bihyLCBtZXRhLCBzcGVjLCBwcmVwYXJlZCkKICAgICAgICBpZiBub3QgZW52WydmaXh0dXJlJ106CiAgICAgICAgICAgIGNoZWNrX2FuY2hvcihyLCBsb2FkX2FuY2hvcihlbnZbJ3NvdXJjZV9yZXN1bHRzJ10sIG1ldGFbJ3BhcnRpdGlvbiddLCBtZXRhWydzZWVkJ10pKQogICAgICAgIGNvbXBsZXRlZC5hcHBlbmQoKG1ldGEsIHIpKQoKICAgIGV4cGVjdGVkID0gc2NoZWR1bGUoZW52WydwcmVzZXQnXSkKICAgIGlmIGxlbihjb21wbGV0ZWQpICE9IGxlbihleHBlY3RlZCkgb3Ige3AubmFtZSBmb3IgcCBpbiBydW5zX2Rpci5nbG9iKCcqLmpzb24nKX0gIT0ge2ZpbGVuYW1lKG0pIGZvciBtIGluIGV4cGVjdGVkfToKICAgICAgICByYWlzZSBWYWx1ZUVycm9yKCdSdW4gbWF0cml4IGlzIGluY29tcGxldGUgb3IgaGFzIHVuZXhwZWN0ZWQgZmlsZXMnKQogICAgdmVyZGljdCA9IHJlcG9ydHMob3V0LCBjb21wbGV0ZWQsIGZpeHR1cmU9ZW52WydmaXh0dXJlJ10sIHByZXNldD1lbnZbJ3ByZXNldCddKQogICAgY2hlY2tfZW52aXJvbm1lbnQoZW52KQogICAgZW52WydlbmRlZF9wb3dlciddID0gcG93ZXJfc3RhdHVzKCkKICAgIGVudlsnZW5kZWRfdXRjJ10gPSB0aW1lLnRpbWUoKQogICAgZW52Wydwb3dlcl9tb25pdG9yaW5nJ10gPSAnc3RhcnQvZW5kIHNuYXBzaG90cyBvbmx5OyBpbnRlcm1lZGlhdGUgY2hhbmdlcyBhcmUgdW5vYnNlcnZlZCcKICAgIHdyaXRlX25ldyhvdXQgLyAnZW52aXJvbm1lbnRfZmluYWwuanNvbicsIGVudikKICAgIG1hbmlmZXN0ID0ge3N0cih4LnJlbGF0aXZlX3RvKG91dCkpOiBkaWdlc3QoeCkgZm9yIHggaW4gc29ydGVkKG91dC5yZ2xvYignKicpKQogICAgICAgICAgICAgICAgaWYgeC5pc19maWxlKCkgYW5kIHgubmFtZSBub3QgaW4gKCdjb21wbGV0ZWQuanNvbicsICdmaW5pc2hlZC5qc29uJyl9CiAgICB3cml0ZV9uZXcob3V0IC8gJ2NvbXBsZXRlZC5qc29uJywgZGljdChmaWxlcz1tYW5pZmVzdCwgY291bnQ9bGVuKGNvbXBsZXRlZCksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzZWxlY3RlZF9zdGVwcz12ZXJkaWN0WydzZWxlY3RlZF9zdGVwcyddLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmluaXNoZWRfdXRjPWVudlsnZW5kZWRfdXRjJ10pKQogICAgd3JpdGVfbmV3KG91dCAvICdmaW5pc2hlZC5qc29uJywgZGljdChzdGF0dXM9J2NvbXBsZXRlJywgZXhwZWN0ZWRfcnVucz1sZW4oZXhwZWN0ZWQpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb21wbGV0ZWRfcnVucz1sZW4oY29tcGxldGVkKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY29tcGxldGVkX21hbmlmZXN0X3NoYTI1Nj1kaWdlc3Qob3V0IC8gJ2NvbXBsZXRlZC5qc29uJykpKQogICAgcHJpbnQoJ0ZpbmlzaGVkOiAnICsgc3RyKG91dCAvICdyZXBvcnQubWQnKSwgZmx1c2g9VHJ1ZSkKCgppZiBfX25hbWVfXyA9PSAnX19tYWluX18nOgogICAgbWFpbigpCg==
+"""Frozen STL-10 long-horizon validation runner. Each trajectory is its own process."""
+import argparse
+import hashlib
+import json
+import math
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+from threadpoolctl import threadpool_limits
+
+from experiments.public_scaling.data import runtime as core_runtime
+from experiments.public_scaling.util import native_peak_bytes
+from experiments.private_workload.design import spec_from_json
+from experiments.stl10_transfer import data as transfer_data
+from experiments.stl10_transfer.design import plan as transfer_plan
+from experiments.stl10_transfer.run import check_environment as check_transfer_environment
+from experiments.stl10_transfer.run import power_status
+
+from .design import PARTITIONS, checkpoints, filename, plan, schedule
+from .engine import run as engine_run
+from .report import reports
+
+ROOT = Path(__file__).resolve().parents[2]
+DIR = Path(__file__).parent
+PRIVATE_ANCHOR_FIELDS = ('private_subset_digest', 'private_samples_per_client',
+                         'private_subset_pseudo_histograms', 'private_optimizer_steps',
+                         'private_forward_endpoints')
+
+
+def digest(p):
+    h = hashlib.sha256()
+    with Path(p).open('rb') as f:
+        for b in iter(lambda: f.read(1 << 20), b''):
+            h.update(b)
+    return h.hexdigest()
+
+
+def frozen_sources():
+    folders = ['stl10_longrun', 'stl10_transfer', 'stl10_diagnostics', 'public_scaling',
+               'private_workload', 'public_budget', 'noniid_clustering']
+    out = {}
+    for folder in folders:
+        for p in sorted((ROOT / 'experiments' / folder).glob('*.py')):
+            out[str(p.relative_to(ROOT))] = digest(p)
+    out['experiments/stl10_longrun/PREREGISTRATION.md'] = digest(DIR / 'PREREGISTRATION.md')
+    out['experiments/stl10_transfer/PREREGISTRATION.md'] = digest(ROOT / 'experiments/stl10_transfer/PREREGISTRATION.md')
+    return out
+
+
+def write_new(p, obj):
+    p = Path(p)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    t = p.with_suffix(p.suffix + '.part')
+    t.write_text(json.dumps(obj, ensure_ascii=False, indent=2, allow_nan=False), encoding='utf-8')
+    t.replace(p)
+
+
+def seal(r):
+    r.pop('run_sha256', None)
+    r['run_sha256'] = hashlib.sha256(json.dumps(r, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+    return r
+
+
+def check_environment(env):
+    if env['source_hashes'] != frozen_sources():
+        raise ValueError('Frozen source changed')
+    now = core_runtime()
+    if any(env['runtime'].get(k) != now.get(k) for k in ('python', 'executable', 'numpy', 'scipy', 'sklearn', 'torch', 'platform')):
+        raise ValueError('Runtime changed')
+    if env['plan'] != [s.json() for s in plan(env['preset'], env.get('prepare_device'))]:
+        raise ValueError('Frozen plan changed')
+
+
+def check_run(r, meta, spec, prepared):
+    if r.get('run_sha256') != hashlib.sha256(json.dumps({k: v for k, v in r.items() if k != 'run_sha256'},
+                                                        sort_keys=True, separators=(',', ':')).encode()).hexdigest():
+        raise ValueError('Run seal mismatch')
+    for k, v in [('seed', meta['seed']), ('partition', meta['partition']), ('method', 'B'),
+                 ('case_id', meta['case_id']), ('public_steps', meta['steps'])]:
+        if r.get(k) != v:
+            raise ValueError(f'Run identity mismatch: {k}')
+    if r['spec'] != spec.json() or r['config'] != spec.config.json() or r['prepared_directory'] != str(Path(prepared).resolve()):
+        raise ValueError('Run spec/cache mismatch')
+    cfg = spec.config
+    rr = r['round_records']
+    if [x['round'] for x in rr] != list(range(1, cfg.rounds + 1)):
+        raise ValueError('Incomplete round coverage')
+    n = len(cfg.dimensions)
+    for x in rr:
+        if x['public_optimizer_steps'] != n * spec.steps:
+            raise ValueError('Public step count differs from frozen tier')
+        for phase in ('private', 'generation', 'exchange', 'public', 'pipeline'):
+            if not math.isfinite(x[phase + '_seconds']) or x[phase + '_seconds'] < 0:
+                raise ValueError('Invalid timing')
+    if [c['round'] for c in r['checkpoints']] != checkpoints(cfg.rounds):
+        raise ValueError('Checkpoint set differs from frozen design')
+    if r['checkpoints'][-1]['round'] != cfg.rounds or r['summary']['B']['final_metrics'] != r['checkpoints'][-1]['mean']:
+        raise ValueError('Final checkpoint differs')
+    if r['summary']['B']['final_head_digest'] != rr[-1]['head_digest_after_public']:
+        raise ValueError('Final digest differs')
+    return True
+
+
+def check_anchor(r, anchor):
+    """Exactness anchor against the historical step-8 B run (full preset only)."""
+    if r['initial_head_digest'] != anchor['initial_head_digest']:
+        raise ValueError('Initial head digest differs from historical step-8 B run')
+    if r['graph_sha256'] != anchor['graph_sha256']:
+        raise ValueError('Graph differs from historical step-8 B run')
+    for field in PRIVATE_ANCHOR_FIELDS:
+        if [x[field] for x in r['round_records']] != [x[field] for x in anchor['round_records']]:
+            raise ValueError(f'Private workload field differs from anchor: {field}')
+    return True
+
+
+def load_anchor(source, partition, seed):
+    case = transfer_plan('full')[-1].case_id
+    path = Path(source) / 'runs' / f'{partition}_{case}_seed_{seed}_B.json'
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--preset', choices=('full', 'smoke'), default='full')
+    ap.add_argument('--source-results', type=Path,
+                    default=ROOT / 'experiments' / 'stl10_transfer' / 'results_full')
+    ap.add_argument('--output', type=Path)
+    ap.add_argument('--resume', action='store_true')
+    ap.add_argument('--cache', type=Path, default=DIR / 'prepared')
+    ap.add_argument('--data-dir', type=Path, default=DIR / 'data')
+    ap.add_argument('--worker', action='store_true', help=argparse.SUPPRESS)
+    ap.add_argument('--worker-seed', type=int, help=argparse.SUPPRESS)
+    ap.add_argument('--worker-partition', choices=PARTITIONS, help=argparse.SUPPRESS)
+    ap.add_argument('--worker-case', help=argparse.SUPPRESS)
+    a = ap.parse_args()
+    out = (a.output or DIR / f'results_{a.preset}').resolve()
+    runs_dir = out / 'runs'
+
+    if a.worker:
+        env = json.loads((out / 'environment.json').read_text(encoding='utf-8'))
+        check_environment(env)
+        spec = next(spec_from_json(x) for x in env['plan'] if spec_from_json(x).case_id == a.worker_case)
+        prepared = Path(env['prepared'][f'{a.worker_seed}|{a.worker_partition}']['path'])
+        if digest(prepared / 'prepared.json') != env['prepared'][f'{a.worker_seed}|{a.worker_partition}']['metadata_sha256']:
+            raise ValueError('Prepared metadata changed')
+        t = time.perf_counter()
+        with threadpool_limits(limits=spec.config.threads):
+            r = engine_run(prepared, spec, fixture=env['fixture'])
+        meta = dict(seed=a.worker_seed, partition=a.worker_partition, case_id=spec.case_id, steps=spec.steps)
+        r.update(seed=a.worker_seed, partition=a.worker_partition, method='B', steps=spec.steps,
+                 worker_wall_seconds=time.perf_counter() - t, process_peak_bytes=native_peak_bytes())
+        r = seal(r)
+        check_run(r, meta, spec, prepared)
+        write_new(runs_dir / filename(meta), r)
+        return
+
+    if a.resume:
+        env = json.loads((out / 'environment.json').read_text(encoding='utf-8'))
+        check_environment(env)
+        a.cache = Path(env['cache'])
+        a.data_dir = Path(env['data_dir'])
+        source = Path(env['source_results'])
+    else:
+        if out.exists() and any(out.iterdir()):
+            raise FileExistsError('Output exists; use --resume or a new --output')
+        specs = plan(a.preset)
+        fixture = a.preset == 'smoke'
+        source = a.source_results.resolve()
+        prepared = {}
+        if fixture:
+            for seed in (1001,):
+                for part in PARTITIONS:
+                    p = transfer_data.prepare(a.cache, a.data_dir, specs[-1].config, seed, part, fixture=True)
+                    prepared[f'{seed}|{part}'] = dict(path=str(p.resolve()), metadata_sha256=digest(p / 'prepared.json'))
+        else:
+            transfer_env = json.loads((source / 'environment.json').read_text(encoding='utf-8'))
+            check_transfer_environment(transfer_env)
+            for seed in (1002, 1003):
+                for part in PARTITIONS:
+                    marker = json.loads((source / f'prepared_{part}_seed_{seed}.json').read_text(encoding='utf-8'))
+                    p = Path(marker['path'])
+                    if digest(p / 'prepared.json') != marker['metadata_sha256']:
+                        raise ValueError('Prepared metadata changed')
+                    prepared[f'{seed}|{part}'] = dict(path=str(p.resolve()), metadata_sha256=marker['metadata_sha256'])
+        env = dict(preset=a.preset, prepare_device=specs[0].config.prepare_device,
+                   plan=[s.json() for s in specs], fixture=fixture, source_results=str(source),
+                   cache=str(a.cache.resolve()), data_dir=str(a.data_dir.resolve()),
+                   runtime=core_runtime(), source_hashes=frozen_sources(), prepared=prepared,
+                   started_power=power_status(), started_utc=time.time(),
+                   execution='one trajectory per independent process, serial')
+        if a.preset == 'full' and env['started_power']['ac_line_status'] != 1:
+            raise RuntimeError('Full run requires verified ACLineStatus=1 at start')
+        out.mkdir(parents=True, exist_ok=True)
+        runs_dir.mkdir(exist_ok=True)
+        write_new(out / 'environment.json', env)
+
+    specs = [spec_from_json(x) for x in env['plan']]
+    invocation_power = power_status()
+    if env['preset'] == 'full' and invocation_power['ac_line_status'] != 1:
+        raise RuntimeError('Full run and resume require verified ACLineStatus=1')
+    write_new(out / f'invocation_{time.time_ns()}.json', dict(utc=time.time(), resume=a.resume, power=invocation_power))
+
+    completed = []
+    for meta in schedule(env['preset']):
+        spec = next(s for s in specs if s.case_id == meta['case_id'])
+        prepared = Path(env['prepared'][f"{meta['seed']}|{meta['partition']}"]['path'])
+        target = runs_dir / filename(meta)
+        if target.exists():
+            r = json.loads(target.read_text(encoding='utf-8'))
+            print('Preserved: ' + target.name, flush=True)
+        else:
+            print('Running: ' + target.name, flush=True)
+            cmd = [sys.executable, '-m', 'experiments.stl10_longrun.run', '--output', str(out), '--worker',
+                   '--worker-seed', str(meta['seed']), '--worker-partition', meta['partition'],
+                   '--worker-case', meta['case_id']]
+            subprocess.run(cmd, check=True)
+            r = json.loads(target.read_text(encoding='utf-8'))
+        check_run(r, meta, spec, prepared)
+        if not env['fixture']:
+            check_anchor(r, load_anchor(env['source_results'], meta['partition'], meta['seed']))
+        completed.append((meta, r))
+
+    expected = schedule(env['preset'])
+    if len(completed) != len(expected) or {p.name for p in runs_dir.glob('*.json')} != {filename(m) for m in expected}:
+        raise ValueError('Run matrix is incomplete or has unexpected files')
+    verdict = reports(out, completed, fixture=env['fixture'], preset=env['preset'])
+    check_environment(env)
+    env['ended_power'] = power_status()
+    env['ended_utc'] = time.time()
+    env['power_monitoring'] = 'start/end snapshots only; intermediate changes are unobserved'
+    write_new(out / 'environment_final.json', env)
+    manifest = {str(x.relative_to(out)): digest(x) for x in sorted(out.rglob('*'))
+                if x.is_file() and x.name not in ('completed.json', 'finished.json')}
+    write_new(out / 'completed.json', dict(files=manifest, count=len(completed),
+                                           selected_steps=verdict['selected_steps'],
+                                           finished_utc=env['ended_utc']))
+    write_new(out / 'finished.json', dict(status='complete', expected_runs=len(expected),
+                                          completed_runs=len(completed),
+                                          completed_manifest_sha256=digest(out / 'completed.json')))
+    print('Finished: ' + str(out / 'report.md'), flush=True)
+
+
+if __name__ == '__main__':
+    main()
