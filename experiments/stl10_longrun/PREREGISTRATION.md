@@ -1,1 +1,112 @@
-IyBTVEwtMTAg5YWs5YWx5q2l5pWw5YCZ6YCJ6ZW/56iL6aqM6K+B77ya6L+Q6KGM5YmN5Y2P6K6u77yI5Ya757uT54mI77yJCgrorr7orqHml6XmnJ/vvJoyMDI2LTExLTAx44CC6K6+6K6h6I2J5qGI57uP55So5oi36YCQ5p2h5L+u6K6i5bm25LqOIDIwMjYtMTEtMDEg5om55YeG77yMCuacrOaWh+S7tuS4uuWGu+e7k+eJiO+8m+ato+W8j+i/kOihjOWJjeS4jeWGjeS/ruaUueagh+WHhuOAgeefqemYteS4jumAieaho+inhOWImeOAgnNtb2tlIOWPqumqjOivgQrlrp7njrDvvIzkuI3nlKjkuo7mjJHotoXlj4LmlbDmiJbmlLnpmIjlgLzjgIIKCiMjIDEuIOebrueahOS4juWUr+S4gOmXrumimAoKU1RMLTEwIOi/geenu++8iOWFrOWFsSA4IOatpe+8ieWcqCAxMiDkuKrphY3nva7kuIrlh7rnjrDlpKfpnaLnp6/kuKXph43pgIDljJbvvIjmnIDnu4gKQUND4omIMTAl77yM5aSa5pWw5a6i5oi356uv5Y2V57CH77yJ44CC5YmC6YeP6K+K5pat77yIc2VlZDEwMDHjgIFJSUTjgIFNMTYzODTjgIE0MCDova7vvIkK5pi+56S65YWs5YWxIDEg5q2l5LiOIDIg5q2l5LiN5Z2N57yp44CBNCDmraXkuK3pl7TmgIHjgIE4IOatpeWFqOWdjee8qeOAguacrOWunumqjOWPquWbnuetlArkuIDkuKrpl67popjvvJoKCj4g5YWs5YWxIDEg5q2lIC8gMiDmraXlnKgqKuacquWPguS4juatpeaVsOmAieaho+eahCBzZWVkKirjgIEqKjIwMCDova7plb/nqIsqKuOAgSoqSUlEIOS4jgo+IOW8uumdniBJSUQg5Lik56eN5YiS5YiGKirkuIvvvIzmmK/lkKbku43nhLbkuI3lj5HnlJ/kuKXph43lnY3nvKnvvJ8KCnNlZWQxMDAyLzEwMDMg5pyq5Y+C5LiO5q2l5pWw6YCJ5qGj77yM5L2G5YW2IDgg5q2l57uT5p6c5bey57uP55yL6L+H77yM5pys5a6e6aqM5LiN56ewCuWujOWFqOebsua1i+OAgumAmui/h+WPquiDveivtOaYjuWvueW6lOaho+S9jeeahOi/mSA0IOadoemVv+eoi+i9qOi/uea7oei2s+acrOaWh+e6puWumueahArpqozmlLbmoIflh4bvvIzkuI3og73kv53or4Hlhbbku5bnp43lrZDmiJbliIbluIPlnYfkuI3loYznvKnjgIIKCumAmui/h+WQjuaJjeWFgeiuuOWcqOmAieWumuatpeaVsOS4i+aBouWkjSBTVEwtMTAg55qEIEIvRS9EIOiuoeeul+avlOi+g+OAguacrOWunumqjOS4jeS6p+WHugrku7vkvZXorqTor4HnnIHml7bnu5PorrrvvIzorqHml7blj6rmj4/ov7DmgKforrDlvZXvvIjmraXmlbDkuI3lkIzliJnmgLvlt6XkvZzph4/kuI3lkIzvvInjgIIKCiMjIDIuIOWGu+e7k+efqemYte+8iOWFsSA4IOadoei9qOi/ue+8iQoKfCDnu7TluqYgfCDorr7nva4gfCDnkIbnlLEgfAp8LS0tfC0tLXwtLS18Cnwg5pa55rOVIHwg5LuFIELvvIjlhajph4/lhbPns7vorqHnrpfvvIkgfCDlj6rpqozovajov7notKjph4/vvIxCL0UvRCDlnKjlkIzphY3nva7kuIvovajov7npgJDkvY3kuIDoh7TvvIjov4Hnp7vlt7Lor4HvvIkgfAp8IOWFrOWFseatpeaVsCB8ICoqMeOAgTIqKu+8iGJhdGNoIDI1Ni/lrqLmiLfnq68v6L2u5LiN5Y+Y77yJIHwg5YmC6YeP5a6e6aqM55qE5Lik5Liq5pyq5Z2N57yp5YCZ6YCJ77ybNCDmraXmnInnnqzml7bljZXnsIfvvIzkuI3pgIkgfAp8IHNlZWQgfCAqKjEwMDLjgIExMDAzKiogfCDmnKrlj4LkuI7mraXmlbDpgInmoaPvvIjlhbYgOCDmraXnu5Pmnpzlt7LnnIvov4fvvIzkuI3np7Dnm7LmtYvvvInvvJvlt7LmnInlkIwgc2VlZCDnmoQgOCDmraUgMjAwIOi9rue7k+aenOS9nOmAgOWMluWPgueFpyB8Cnwg5YiS5YiGIHwgSUlE44CBRGlyaWNobGV0IM6xPTAuMSB8IOWJgumHj+WunumqjOWPquaciSBJSUTvvIzlvLrpnZ4gSUlEIOW/hemhu+S4gOW5tumqjCB8Cnwg5YWs5YWxIE0gfCAxNjM4NO+8iOWbuuWumu+8iSB8IOiviuaWreS4juWJgumHj+Wdh+WcqOatpOaho++8m+S4jeaJqSBNNDA5NiDku6Xkv53mjIHnn6npmLXmnIDlsI8gfAp8IOi9ruaVsCB8IDIwMCB8IOS4juato+W8j+WNj+iuruS4gOiHtO+8jOajgOmqjCA0MCDova7nu5Porrrog73lkKbplb/nqIvmiJDnq4sgfAp8IOWFtuS9memFjee9riB8IOS4jiBgc3RsMTBfdHJhbnNmZXJgIOato+W8j+WNj+iuruWujOWFqOebuOWQjO+8muWQjOS4gOWHhuWkh+e8k+WtmO+8iEFFL0tNZWFucy/kvKrmoIfnrb7vvInjgIHlkIzliJ3lp4vlpLTjgIHlkIzlm77jgIHlkIznp4HmnInlhajph48gMSBlcG9jaC/ova7vvIjnuqYgNyDmraXvvInjgIHlkIzotoXlj4LmlbAgfCDkuI4gOCDmraXljoblj7Lnu5PmnpzmnoTmiJDljZXlj5jph4/lr7nnhafvvIjku4XlhazlhbHmraXmlbDkuI3lkIzvvIkgfAoK5omn6KGM77ya5q+P5p2h6L2o6L+554us56uL6L+b56iL44CB5Liy6KGM44CB5Y2V57q/56iL77yb5q2j5byP6L+Q6KGM5byA5aeL6KaB5rGC5o+S55S1Cu+8iEFDTGluZVN0YXR1cz0x77yJ77yM6K6w5b2V5byA5aeLL+e7k+adn+eUtea6kOW/q+eFp++8iOayv+eUqOi/geenu+WNj+iuru+8m+S4remAlOeKtuaAgQrlj5jljJblv4XpobvmiqvpnLLvvIzkuI3oh6rooYzliKDpmaTmlbDmja7vvInjgILlh4blpIfnvJPlrZjlpI3nlKggMTAwMi8xMDAzIOaXouaciee8k+WtmOW5tgrmoKHpqozmkZjopoHvvJvml6DmlrDlop7pooTorq3nu4PvvIznvJPlrZjmoKHpqozjgIHliqDovb3miJDmnKzlj6booYzorrDlvZXvvIzmraTliY3lt7Llj5HnlJ/nmoQK5YeG5aSH5oiQ5pys5LiN5Zyo5pys6L2u6YeN5aSN6K6h5YWl77yM5L2G5LiN6KeG5Li65LiN5a2Y5Zyo44CCCgrplJrlrprmo4Dmn6XvvIjmr4/mnaHmraPlvI/ovajov7nlvLrliLbvvInvvJrliJ3lp4vlpLTmkZjopoHkuI7lm77mkZjopoHlv4XpobvkuI7lkIwKc2VlZC/liJLliIYvTTE2Mzg0IOeahOWOhuWPsiA4IOatpSBCIOi/kOihjOS4gOiHtO+8m+mAkOi9ruengeacieW3peS9nOmHj+Wtl+autQrvvIhwcml2YXRlX3NhbXBsZXNfcGVyX2NsaWVudOOAgXByaXZhdGVfb3B0aW1pemVyX3N0ZXBz44CBCnByaXZhdGVfZm9yd2FyZF9lbmRwb2ludHPjgIFwcml2YXRlX3N1YnNldF9kaWdlc3TjgIEKcHJpdmF0ZV9zdWJzZXRfcHNldWRvX2hpc3RvZ3JhbXPvvInlv4XpobvkuI7ljoblj7IgQiDov5DooYzpgJDova7kuIDoh7TjgIIK5Lu75LiA5LiN5LiA6Ie05Y2z5YGc5bm25oql5ZGK77yM5LiN57un57ut6K+l6L2o6L+555qE5Yik5a6a44CC5pys6L2u5LiN5YGa6YCQ6L2uIG9yYWNsZQrlrqHorqHvvJpCIOWNs+WPguiAg+WunueOsOacrOi6q++8jOeyvuehruaAp+eUsemUmuWumuajgOafpeS4jui/geenu+WunumqjOW3suehrueri+eahApCL0UvRCDnrYnku7fmgKfmib/mi4XjgIIKCiMjIDMuIOiusOW9lemhue+8iOavj+adoei9qOi/ue+8iQoKLSDmr4/ova7vvJrmlZnluIjlkIznsIfovrnmr5TkvovvvIjlhbPns7vmraPkvovmr5TkvosgcG9zaXRpdmVfcmVsYXRpb25fZnJhY3Rpb27vvInjgIEKICDnp4HmnIkv5YWs5YWx5o2f5aSx77yI5byV5pOO5pei5pyJ5a2X5q6177yJ44CCCi0g6K+E5Lyw5qOA5p+l54K55Y+WICoqMOOAgTHjgIEy44CBNeOAgTEwIOi9ruWPiuavjyAyMCDova7vvIgyMC80MC/igKYvMjAw77yJKirvvJrpgJDlrqLmiLfnq68KICDlrozmlbTmtYvor5Xpm4bpooTmtYvnmoTnsIfljaDnlKjmlbDkuI7mnIDlpKfnsIfljaDmr5TjgIFBQ0MvTk1JL0FSSe+8iOmAkOWuouaIt+err+S4jgogIOWdh+WAvO+8ieOAggotIOeerOaXtuS6i+S7tuaXpeW/l++8muS7u+S4gOajgOafpeeCueWHuueOsOWNleewh+WuouaIt+err+aIluacgOWkp+ewhyDiiaU5OSUg55qE5a6i5oi356uv77yMCiAg6YCQ5p2h6K6w5b2V77yI6L2u5qyh44CB5a6i5oi356uv6K6h5pWw77yJ77yM5LiN6K665pyA57uI5piv5ZCm5oGi5aSN44CC56ysIDIwIOi9ruS5i+WJjeeahAogIOaXqeacn+S6i+S7tuS7heS9nOitpuWRiu+8iFMyIOiHquesrCAyMCDova7mo4Dmn6XngrnotbfliKTlrprvvIzop4HkuIvvvInjgILmo4Dmn6XngrnkuYvpl7QKICDmnKrop4LmtYvnmoTml7bmrrXkuI3og73lo7Dnp7Dml6Dkuovku7blj5HnlJ/vvIzmnKzml6Xlv5flj6ropobnm5bkuIrov7DnprvmlaPmo4Dmn6XngrnjgIIKLSDmj4/ov7DmgKfvvJrnp4HmnInkvKrmoIfnrb7mi5/lkIjlh4bnoa7njofvvIjmo4Dmn6XngrnvvInigJTigJTlrprkuYnkuLrmr4/lrqLmiLfnq6/lvZPliY3lpLQKICDlnKjlhbblhajpg6jnp4HmnInmoLfmnKzkuIrlr7kgS01lYW5zIOS8quagh+etvueahCBhcmdtYXgg5ZG95Lit546H77yI6K+K5pat5o6i6ZKICiAgYHByb2JlYCDnmoQgcHNldWRvX2FjY3VyYWN577yJ77yM5Y+WIDYg5a6i5oi356uv5Z2H5YC877yb5ZCE6Zi25q616ICX5pe244CBCiAg6L+b56iL5aKZ6ZKf5LiO55S15rqQ5pel5b+X5pGY6KaB44CCCgojIyA0LiDpgJrov4fmoIflh4bvvIjpgJDmnaHovajov7nliKTlrprvvIzlhYjlrprmrbvvvIkKCumYiOWAvOaAp+i0qOWFiOWjsOaYju+8muS4i+aWhyA2MCXjgIExNCUgQUND44CBMC4wMSBOTUkg562J5pWw5YC85Z2H5Li65pys6L2uKirov5DooYzliY0K6aKE5YWI6KeE5a6a55qE5o6i57Si5oCn6aqM5pS26Zeo5qeb77yI5pON5L2c5qCH5YeG77yJKirvvIzkuI3mmK/nkIborrrkuIrnmoTlgaXlurfogZrnsbvnlYzpmZDvvIwK5Lmf5LiN5piv57uP6L+H5qCh5YeG55qE57uf6K6h6ZiI5YC844CC5q2k5YmN6K+K5pat5Lit55qEIDM3JeKAkzQxJSDmmK/lhazlhbHlm7rlrprmjqLpkojkuIrnmoQK5pyA5aSn57CH5q+U5L6L77yM5LiO5pys6IqCIFMxIOS9v+eUqOeahOWujOaVtOa1i+ivlembhuWPo+W+hOS4jeWQjO+8jOS4jeiDveaNruatpOWJjeiAheebtOaOpQrmjqjlr7zlkI7ogIXnmoTpl6jmp5vvvJvpl6jmp5vlj5blgLzku4Xlj4LogIPlt7Lop4LmtYvnmoTph4/nuqfvvIjlnY3nvKnovajov7nmnIDnu4ggQUNDCjEwLjAw4oCTMTAuMTMl44CBTk1J4omkMC4wMDI244CB5pyA5aSn57CHIDEwMCXjgIHmlZnluIjlkIznsIfovrnmr5TkvovihpI5OS45Je+8mwrlgaXlurflj4LnhacgNDAg6L2uIEFDQ+KJiDE4JeOAgeaVmeW4iOi+ueavlOS+iyAyNi424oCTMjguNSXvvInvvIzlnKjov5DooYzliY3kuIDmrKHlrprmrbvjgIIKCuS4gOadoei9qOi/uSoq6YCa6L+HKirvvIzlvZPkuJTku4XlvZPku6XkuIvlm5vmnaHlhajmu6HotrPvvJoKCi0gKipTMSDmnIDnu4jnu5PmnoQqKu+8muesrCAyMDAg6L2u5a6M5pW05rWL6K+V6ZuG6aKE5rWL5Lit77yM5ZCM5pe25ruh6Laz77ya5Y2V57CH5a6i5oi356uvCiAgPSAwLzbvvIjmr4/lrqLmiLfnq6/oh7PlsJHljaDnlKggMiDnsIfvvInvvJsqKuavj+S4quWuouaIt+err+eahOacgOWkp+ewh+WNoOavlOWdhyA8IDk5JSoq77ybCiAg5LiUIDYg5a6i5oi356uv5pyA5aSn57CH5Y2g5q+U55qE5Z2H5YC8IOKJpCA2MCXjgIIKLSAqKlMyIOi/h+eoi+eos+Wumioq77ya6Ieq56ysIDIwIOi9rui1t++8iOWQqyAyMC80MC/igKYvMjAwIOWQhOajgOafpeeCue+8ie+8jOS7u+S4gOajgOafpeeCuQogIOWNleewh+WuouaIt+erryDiiaQgMi8277yM5LiU5Lu75LiA5qOA5p+l54K555qE5pyA5aSn57CH5Y2g5q+U5Z2H5YC8IDwgOTAl44CC56ysIDIwIOi9rgogIOS5i+WJjeeahOaXqeacn+ajgOafpeeCue+8iDAvMS8yLzUvMTAg6L2u77yJ5LqL5Lu25LuF6K6w5YWl5pel5b+X5L2c6K2m5ZGK77yM5LiN5Y+C5LiOCiAgUzIg5Yik5a6a44CC77yI6Ziy5q2i4oCc6ZW/5pyf5aGM44CB5pyr6L2u5oGi5aSN4oCd6KKr5pS+6L+H44CC77yJCi0gKipRMSDotKjph4/lnLDmnb8qKu+8muesrCAyMDAg6L2u5bmz5Z2HIEFDQyDiiaUgMTQl77yM5LiU5bmz5Z2HIE5NSSDiiaUgMC4wMeOAggogIO+8iOaTjeS9nOagh+WHhu+8m+S4jeimgeaxgui+vuWIsOaIlui2hei/h+S7heengeacieiuree7g+OAgu+8iQotICoqUTIg5pWZ5biI6L655q+U5L6LKirvvJrnrKwgMjAwIOi9ru+8iOacgOWQjuS4gOi9riByb3VuZCByZWNvcmTvvInnmoTmlZnluIjlkIznsIcKICDovrnmr5Tkvosg4omkIDYwJeOAggoKIyMgNS4g6YCJ5qGj5LiO5ZCO57ut6KeE5YiZ77yI5YWI5a6a5q2777yJCgotIOS4gOS4quatpeaVsOaho+S9jeKAnOiOt+W+l+WujOaVtOmqjOivgeKAnSDih5Qg5YW2IDQg5p2h6L2o6L+577yIMiBzZWVkIMOXIDIg5YiS5YiG77yJ5YWo6YOo6YCa6L+H44CCCi0gKioyIOatpeWbm+adoeWFqOmDqOmAmui/hyDihpIg6YCJIDIg5q2lKirvvIjnkIbnlLHku4XkuLrkv53nlZnmm7TlpJrlhazlhbHorq3nu4PpooTnrpfvvInvvJsKLSAqKuWQpuWIme+8jDEg5q2l5Zub5p2h5YWo6YOo6YCa6L+HIOKGkiDpgIkgMSDmraUqKu+8mwotICoq5ZCm5YiZIOKGkiDkuKTmoaPlnYfmnKrojrflvpflrozmlbTpqozor4HvvIzlm57liLDor4rmlq0qKu+8muS4jeWcqCBTVEwtMTAg5LiK5oGi5aSNCiAgQi9FL0Qg6K6h566X5q+U6L6D77yM5Zue5Yiw6K+K5pat6Zi25q615Y+m6KGM6K6+6K6h77yI5bGK5pe25omN6K6o6K6657yW56CB5Zmo44CB5Yid5aeL5YyWCiAg5oiW5o2f5aSx77yJ77yM5pys6L2u57uT5p6c5aaC5a6e6K6w5b2V5Li64oCc6ZmN5L2O5YWs5YWx6aKE566X5LiN6Laz5Lul5Zyo6ZW/56iLL+acquWPguS4jgogIOmAieaho+eahCBzZWVkL+W8uumdniBJSUQg5LiL6YG/5YWN5Lil6YeN6YCA5YyW4oCd44CCCi0g5Lu75LiA6L2o6L+55pyq6YCa6L+H6YO96YCQ5p2h5YiX5piO5pyq6L+H5ZOq5p2h5qCH5YeG77yM5LiN55So5oC75L2T5Lit5L2N5pWw5o6p55uW77ybCiAg5LiN6L+95YqgIHNlZWTjgIHkuI3ov73liqDmraXmlbDmoaPvvIjlpoIgMyDmraXvvInmnaXmjL3mlZHnu5PorrrjgIIKLSDpgJrov4flkI7nmoTkuIvkuIDmraXvvIjkuI3lnKjmnKzlrp7pqozlhoXvvInvvJrlnKjpgInlrprmraXmlbDkuIvmjIkgYHN0bDEwX3RyYW5zZmVyYAogIOWOn+WNj+iuruaBouWkjSBCL0UvRCDorqHnrpfmr5TovoPvvIjkuKTliJLliIYgw5cgc2VlZDEwMDEvMTAwMi8xMDAzIMOXIE0xNjM4NO+8jAogIOW/heimgeaXtuWQqyBNNDA5Nu+8ie+8jOmihOeul+e8qeWHj+ecgeaXtuS4juiupOivgeecgeaXtuWIhuWIl+OAggoKIyMgNi4g5piO56Gu5LiN5YGa55qE5LqLCgotIOS4jeaUuee8lueggeWZqOOAgemihOiuree7g+i9ruaVsOOAgeWIneWni+WMluOAgeaNn+WkseWHveaVsO+8m+S4jeWKoOWdh+ihoeato+WImeOAggotIOS4jei3kSBFL0TvvIzkuI3lgZrmioDmnK/ph43lpI3vvIjovajov7nnoa7lrprmgKflt7LnlLHov4Hnp7vlrp7pqoznoa7nq4vvvJvmnKzova7pqoznmoTmmK8KICDovajov7nmnKzouqvvvIzkuI3mmK/orqHml7bnqLPlrprmgKfvvInjgIIKLSDkuI3miormnKzova7orqHml7bkuI4gOCDmraXorqHml7bkvZznnIHml7bmr5TovoPvvIjlhazlhbHmraXmlbDmlLnlj5jkuobmgLvlt6XkvZzph4/vvIwKICDliYLph4/mnKzouqvnmoTnnIHnrpfkuI3nrpforqTor4HotKHnjK7vvInjgIIK
+# STL-10 公共步数候选长程验证：运行前协议（冻结版）
+
+设计日期：2026-11-01。设计草案经用户逐条修订并于 2026-11-01 批准，
+本文件为冻结版；正式运行前不再修改标准、矩阵与选档规则。smoke 只验证
+实现，不用于挑超参数或改阈值。
+
+## 1. 目的与唯一问题
+
+STL-10 迁移（公共 8 步）在 12 个配置上出现大面积严重退化（最终
+ACC≈10%，多数客户端单簇）。剂量诊断（seed1001、IID、M16384、40 轮）
+显示公共 1 步与 2 步不坍缩、4 步中间态、8 步全坍缩。本实验只回答
+一个问题：
+
+> 公共 1 步 / 2 步在**未参与步数选档的 seed**、**200 轮长程**、**IID 与
+> 强非 IID 两种划分**下，是否仍然不发生严重坍缩？
+
+seed1002/1003 未参与步数选档，但其 8 步结果已经看过，本实验不称
+完全盲测。通过只能说明对应档位的这 4 条长程轨迹满足本文约定的
+验收标准，不能保证其他种子或分布均不塌缩。
+
+通过后才允许在选定步数下恢复 STL-10 的 B/E/D 计算比较。本实验不产出
+任何认证省时结论，计时只描述性记录（步数不同则总工作量不同）。
+
+## 2. 冻结矩阵（共 8 条轨迹）
+
+| 维度 | 设置 | 理由 |
+|---|---|---|
+| 方法 | 仅 B（全量关系计算） | 只验轨迹质量，B/E/D 在同配置下轨迹逐位一致（迁移已证） |
+| 公共步数 | **1、2**（batch 256/客户端/轮不变） | 剂量实验的两个未坍缩候选；4 步有瞬时单簇，不选 |
+| seed | **1002、1003** | 未参与步数选档（其 8 步结果已看过，不称盲测）；已有同 seed 的 8 步 200 轮结果作退化参照 |
+| 划分 | IID、Dirichlet α=0.1 | 剂量实验只有 IID，强非 IID 必须一并验 |
+| 公共 M | 16384（固定） | 诊断与剂量均在此档；不扩 M4096 以保持矩阵最小 |
+| 轮数 | 200 | 与正式协议一致，检验 40 轮结论能否长程成立 |
+| 其余配置 | 与 `stl10_transfer` 正式协议完全相同：同一准备缓存（AE/KMeans/伪标签）、同初始头、同图、同私有全量 1 epoch/轮（约 7 步）、同超参数 | 与 8 步历史结果构成单变量对照（仅公共步数不同） |
+
+执行：每条轨迹独立进程、串行、单线程；正式运行开始要求插电
+（ACLineStatus=1），记录开始/结束电源快照（沿用迁移协议；中途状态
+变化必须披露，不自行删除数据）。准备缓存复用 1002/1003 既有缓存并
+校验摘要；无新增预训练，缓存校验、加载成本另行记录，此前已发生的
+准备成本不在本轮重复计入，但不视为不存在。
+
+锚定检查（每条正式轨迹强制）：初始头摘要与图摘要必须与同
+seed/划分/M16384 的历史 8 步 B 运行一致；逐轮私有工作量字段
+（private_samples_per_client、private_optimizer_steps、
+private_forward_endpoints、private_subset_digest、
+private_subset_pseudo_histograms）必须与历史 B 运行逐轮一致。
+任一不一致即停并报告，不继续该轨迹的判定。本轮不做逐轮 oracle
+审计：B 即参考实现本身，精确性由锚定检查与迁移实验已确立的
+B/E/D 等价性承担。
+
+## 3. 记录项（每条轨迹）
+
+- 每轮：教师同簇边比例（关系正例比例 positive_relation_fraction）、
+  私有/公共损失（引擎既有字段）。
+- 评估检查点取 **0、1、2、5、10 轮及每 20 轮（20/40/…/200）**：逐客户端
+  完整测试集预测的簇占用数与最大簇占比、ACC/NMI/ARI（逐客户端与
+  均值）。
+- 瞬时事件日志：任一检查点出现单簇客户端或最大簇 ≥99% 的客户端，
+  逐条记录（轮次、客户端计数），不论最终是否恢复。第 20 轮之前的
+  早期事件仅作警告（S2 自第 20 轮检查点起判定，见下）。检查点之间
+  未观测的时段不能声称无事件发生，本日志只覆盖上述离散检查点。
+- 描述性：私有伪标签拟合准确率（检查点）——定义为每客户端当前头
+  在其全部私有样本上对 KMeans 伪标签的 argmax 命中率（诊断探针
+  `probe` 的 pseudo_accuracy），取 6 客户端均值；各阶段耗时、
+  进程墙钟与电源日志摘要。
+
+## 4. 通过标准（逐条轨迹判定，先定死）
+
+阈值性质先声明：下文 60%、14% ACC、0.01 NMI 等数值均为本轮**运行前
+预先规定的探索性验收门槛（操作标准）**，不是理论上的健康聚类界限，
+也不是经过校准的统计阈值。此前诊断中的 37%–41% 是公共固定探针上的
+最大簇比例，与本节 S1 使用的完整测试集口径不同，不能据此前者直接
+推导后者的门槛；门槛取值仅参考已观测的量级（坍缩轨迹最终 ACC
+10.00–10.13%、NMI≤0.0026、最大簇 100%、教师同簇边比例→99.9%；
+健康参照 40 轮 ACC≈18%、教师边比例 26.6–28.5%），在运行前一次定死。
+
+一条轨迹**通过**，当且仅当以下四条全满足：
+
+- **S1 最终结构**：第 200 轮完整测试集预测中，同时满足：单簇客户端
+  = 0/6（每客户端至少占用 2 簇）；**每个客户端的最大簇占比均 < 99%**；
+  且 6 客户端最大簇占比的均值 ≤ 60%。
+- **S2 过程稳定**：自第 20 轮起（含 20/40/…/200 各检查点），任一检查点
+  单簇客户端 ≤ 2/6，且任一检查点的最大簇占比均值 < 90%。第 20 轮
+  之前的早期检查点（0/1/2/5/10 轮）事件仅记入日志作警告，不参与
+  S2 判定。（防止“长期塌、末轮恢复”被放过。）
+- **Q1 质量地板**：第 200 轮平均 ACC ≥ 14%，且平均 NMI ≥ 0.01。
+  （操作标准；不要求达到或超过仅私有训练。）
+- **Q2 教师边比例**：第 200 轮（最后一轮 round record）的教师同簇
+  边比例 ≤ 60%。
+
+## 5. 选档与后续规则（先定死）
+
+- 一个步数档位“获得完整验证” ⇔ 其 4 条轨迹（2 seed × 2 划分）全部通过。
+- **2 步四条全部通过 → 选 2 步**（理由仅为保留更多公共训练预算）；
+- **否则，1 步四条全部通过 → 选 1 步**；
+- **否则 → 两档均未获得完整验证，回到诊断**：不在 STL-10 上恢复
+  B/E/D 计算比较，回到诊断阶段另行设计（届时才讨论编码器、初始化
+  或损失），本轮结果如实记录为“降低公共预算不足以在长程/未参与
+  选档的 seed/强非 IID 下避免严重退化”。
+- 任一轨迹未通过都逐条列明未过哪条标准，不用总体中位数掩盖；
+  不追加 seed、不追加步数档（如 3 步）来挽救结论。
+- 通过后的下一步（不在本实验内）：在选定步数下按 `stl10_transfer`
+  原协议恢复 B/E/D 计算比较（两划分 × seed1001/1002/1003 × M16384，
+  必要时含 M4096），预算缩减省时与认证省时分列。
+
+## 6. 明确不做的事
+
+- 不改编码器、预训练轮数、初始化、损失函数；不加均衡正则。
+- 不跑 E/D，不做技术重复（轨迹确定性已由迁移实验确立；本轮验的是
+  轨迹本身，不是计时稳定性）。
+- 不把本轮计时与 8 步计时作省时比较（公共步数改变了总工作量，
+  剂量本身的省算不算认证贡献）。
