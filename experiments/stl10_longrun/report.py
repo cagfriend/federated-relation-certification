@@ -1,1 +1,60 @@
-IiIiTWVjaGFuaWNhbCB2ZXJkaWN0IHJlcG9ydCBmb3IgdGhlIFNUTC0xMCBsb25nLWhvcml6b24gdmFsaWRhdGlvbi4iIiIKaW1wb3J0IGpzb24KZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgpmcm9tIC5kZXNpZ24gaW1wb3J0IFNURVBTLCBldmFsdWF0ZV90cmFqZWN0b3J5LCBzZWxlY3RfdGllcgoKCmRlZiBjb2xsZWN0KHJ1bnMpOgogICAgIiIiUmV0dXJuIChwZXItdHJhamVjdG9yeSByb3dzLCBwYXNzZWQtYnktc3RlcHMsIHNlbGVjdGVkIHRpZXIpLiIiIgogICAgcm93cyA9IFtdCiAgICBmb3IgbWV0YSwgcmVjb3JkIGluIHJ1bnM6CiAgICAgICAgdmVyZGljdCA9IGV2YWx1YXRlX3RyYWplY3RvcnkocmVjb3JkKQogICAgICAgIGZpbmFsID0gcmVjb3JkWydjaGVja3BvaW50cyddWy0xXQogICAgICAgIHJvd3MuYXBwZW5kKGRpY3Qoc2VlZD1tZXRhWydzZWVkJ10sIHBhcnRpdGlvbj1tZXRhWydwYXJ0aXRpb24nXSwgc3RlcHM9bWV0YVsnc3RlcHMnXSwKICAgICAgICAgICAgICAgICAgICAgICAgIGZpbmFsX2FjYz1maW5hbFsnbWVhbiddWydhY2MnXSwgZmluYWxfbm1pPWZpbmFsWydtZWFuJ11bJ25taSddLAogICAgICAgICAgICAgICAgICAgICAgICAgZmluYWxfc2luZ2xlX2NsaWVudHM9ZmluYWxbJ3NpbmdsZV9jbHVzdGVyX2NsaWVudHMnXSwKICAgICAgICAgICAgICAgICAgICAgICAgIGZpbmFsX21lYW5fbGFyZ2VzdD1maW5hbFsnbWVhbl9sYXJnZXN0X2NsdXN0ZXJfZnJhY3Rpb24nXSwKICAgICAgICAgICAgICAgICAgICAgICAgIGZpbmFsX21heF9jbGllbnRfbGFyZ2VzdD1tYXgoY1snbGFyZ2VzdF9jbHVzdGVyX2ZyYWN0aW9uJ10gZm9yIGMgaW4gZmluYWxbJ2NsaWVudHMnXSksCiAgICAgICAgICAgICAgICAgICAgICAgICBmaW5hbF9lZGdlX2ZyYWN0aW9uPXJlY29yZFsncm91bmRfcmVjb3JkcyddWy0xXVsncG9zaXRpdmVfcmVsYXRpb25fZnJhY3Rpb24nXSwKICAgICAgICAgICAgICAgICAgICAgICAgIGV2ZW50cz1sZW4ocmVjb3JkWydldmVudHMnXSksICoqdmVyZGljdCkpCiAgICBieV9zdGVwcyA9IHtzOiBbclsncGFzc2VkJ10gZm9yIHIgaW4gcm93cyBpZiByWydzdGVwcyddID09IHNdIGZvciBzIGluIFNURVBTfQogICAgcmV0dXJuIHJvd3MsIGJ5X3N0ZXBzLCBzZWxlY3RfdGllcihieV9zdGVwcykKCgpkZWYgcmVwb3J0cyhvdXQsIHJ1bnMsICosIGZpeHR1cmU9RmFsc2UsIHByZXNldD0nZnVsbCcpOgogICAgb3V0ID0gUGF0aChvdXQpCiAgICByb3dzLCBieV9zdGVwcywgc2VsZWN0ZWQgPSBjb2xsZWN0KHJ1bnMpCiAgICB2ZXJkaWN0ID0gZGljdChmaXh0dXJlPWZpeHR1cmUsIHByZXNldD1wcmVzZXQsIHRyYWplY3Rvcmllcz1yb3dzLAogICAgICAgICAgICAgICAgICAgdGllcl92YWxpZGF0ZWQ9e3N0cihzKTogYm9vbCh2KSBhbmQgYWxsKHYpIGZvciBzLCB2IGluIGJ5X3N0ZXBzLml0ZW1zKCl9LAogICAgICAgICAgICAgICAgICAgc2VsZWN0ZWRfc3RlcHM9c2VsZWN0ZWQpCiAgICAob3V0IC8gJ3ZlcmRpY3QuanNvbicpLndyaXRlX3RleHQoanNvbi5kdW1wcyh2ZXJkaWN0LCBlbnN1cmVfYXNjaWk9RmFsc2UsIGluZGVudD0yKSwgZW5jb2Rpbmc9J3V0Zi04JykKICAgIGxpbmVzID0gWycjIFNUTC0xMCDlhazlhbHmraXmlbDlgJnpgInplb/nqIvpqozor4HmiqXlkYonLCAnJ10KICAgIGlmIGZpeHR1cmU6CiAgICAgICAgbGluZXMgKz0gWyc+IOacrOaKpeWRiuadpeiHquWQiOaIkOWkueWFtyBzbW9rZe+8muWPqumqjOivgeWunueOsOS4juWIpOWumuacuuaisOa1geeoi++8jCcKICAgICAgICAgICAgICAgICAgJ+WFtuS4remAmui/hy/mnKrpgJrov4fkuI3mnoTmiJDku7vkvZXlrp7pqoznu5PorrrjgIInLCAnJ10KICAgIGxpbmVzICs9IFsn5Yik5a6a5oyJ5Ya757uT5Y2P6K6u5py65qKw5omn6KGM77ya6ZiI5YC85piv6L+Q6KGM5YmN6aKE5YWI6KeE5a6a55qE5pON5L2c5qCH5YeG77yMJwogICAgICAgICAgICAgICfkuI3mmK/nkIborrrkuIrnmoTlgaXlurfogZrnsbvnlYzpmZDvvIzkuZ/kuI3mmK/nu4/ov4fmoKHlh4bnmoTnu5/orqHpmIjlgLzjgIInCiAgICAgICAgICAgICAgJ+mAmui/h+WPquiDveivtOaYjuWvueW6lOaho+S9jeeahOi/mSA0IOadoemVv+eoi+i9qOi/uea7oei2s+e6puWumuagh+WHhu+8jCcKICAgICAgICAgICAgICAn5LiN6IO95L+d6K+B5YW25LuW56eN5a2Q5oiW5YiG5biD5Z2H5LiN5aGM57yp44CCJywgJycsCiAgICAgICAgICAgICAgJ3xzZWVkfOWIkuWIhnzlhazlhbHmraXmlbB85pyA57uIQUNDfOacgOe7iE5NSXzljZXnsIflrqLmiLfnq6985pyA5aSn57CH5Z2H5YC8fOWNleWuouaIt+err+acgOWkp+ewh3zmlZnluIjovrnmr5Tkvot8UzF8UzJ8UTF8UTJ86YCa6L+HfOS6i+S7tuaVsHwnLAogICAgICAgICAgICAgICd8LS0tOnwtLS18LS0tOnwtLS06fC0tLTp8LS0tOnwtLS06fC0tLTp8LS0tOnw6LS06fDotLTp8Oi0tOnw6LS06fDotLTp8LS0tOnwnXQogICAgZm9yIHIgaW4gcm93czoKICAgICAgICBtYXJrID0gbGFtYmRhIG9rOiAn4pyTJyBpZiBvayBlbHNlICfinJcnICAjIG5vcWE6IEU3MzEKICAgICAgICBsaW5lcy5hcHBlbmQoZiJ8e3JbJ3NlZWQnXX18e3JbJ3BhcnRpdGlvbiddfXx7clsnc3RlcHMnXX18e3JbJ2ZpbmFsX2FjYyddOi40Zn18e3JbJ2ZpbmFsX25taSddOi40Zn0iCiAgICAgICAgICAgICAgICAgICAgIGYifHtyWydmaW5hbF9zaW5nbGVfY2xpZW50cyddfXx7clsnZmluYWxfbWVhbl9sYXJnZXN0J106LjRmfXx7clsnZmluYWxfbWF4X2NsaWVudF9sYXJnZXN0J106LjRmfSIKICAgICAgICAgICAgICAgICAgICAgZiJ8e3JbJ2ZpbmFsX2VkZ2VfZnJhY3Rpb24nXTouNGZ9fHttYXJrKHJbJ1MxJ10pfXx7bWFyayhyWydTMiddKX18e21hcmsoclsnUTEnXSl9fHttYXJrKHJbJ1EyJ10pfSIKICAgICAgICAgICAgICAgICAgICAgZiJ8e21hcmsoclsncGFzc2VkJ10pfXx7clsnZXZlbnRzJ119fCIpCiAgICBsaW5lcyArPSBbJycsICcjIyDmoaPkvY3liKTlrponLCAnJ10KICAgIGZvciBzIGluIFNURVBTOgogICAgICAgIHN0YXRlID0gJ+iOt+W+l+WujOaVtOmqjOivgScgaWYgYnlfc3RlcHNbc10gYW5kIGFsbChieV9zdGVwc1tzXSkgZWxzZSAn5pyq6I635b6X5a6M5pW06aqM6K+BJwogICAgICAgIGxpbmVzLmFwcGVuZChmIi0g5YWs5YWxIHtzfSDmraXvvJp7c3RhdGV977yIe3N1bShieV9zdGVwc1tzXSl9L3tsZW4oYnlfc3RlcHNbc10pfSDmnaHovajov7npgJrov4fvvIkiKQogICAgbGluZXMgKz0gWycnLCAnIyMg6YCJ5qGj57uT5p6c77yI5Ya757uT6KeE5YiZ77yJJywgJyddCiAgICBpZiBzZWxlY3RlZCBpcyBub3QgTm9uZToKICAgICAgICBsaW5lcy5hcHBlbmQoZifpgInlrprlhazlhbEgKip7c2VsZWN0ZWR9IOatpSoq77ya6K+l5qGj5L2NIDQg5p2h6L2o6L+55YWo6YOo6YCa6L+HJwogICAgICAgICAgICAgICAgICAgICArICgn77yIMiDmraXkvJjlhYjvvIznkIbnlLHku4XkuLrkv53nlZnmm7TlpJrlhazlhbHorq3nu4PpooTnrpfvvInjgIInIGlmIHNlbGVjdGVkID09IDIgZWxzZSAn77yIMiDmraXmnKrojrflrozmlbTpqozor4HvvInjgIInKSkKICAgIGVsc2U6CiAgICAgICAgbGluZXMuYXBwZW5kKCfkuKTmoaPlnYfmnKrojrflvpflrozmlbTpqozor4Eg4oaSICoq5Zue5Yiw6K+K5patKirvvIzkuI3lnKggU1RMLTEwIOS4iuaBouWkjSBCL0UvRCDorqHnrpfmr5TovoPjgIInKQogICAgbGluZXMgKz0gWycnLCAn6K6h5pe25LuF5o+P6L+w5oCn6K6w5b2V77yI5q2l5pWw5LiN5ZCM5YiZ5oC75bel5L2c6YeP5LiN5ZCM77yJ77yM5pys5oql5ZGK5LiN5L2c5Lu75L2V55yB5pe25q+U6L6D44CCJywgJyddCiAgICAob3V0IC8gJ3JlcG9ydC5tZCcpLndyaXRlX3RleHQoJ1xuJy5qb2luKGxpbmVzKSwgZW5jb2Rpbmc9J3V0Zi04JykKICAgIHJldHVybiB2ZXJkaWN0Cg==
+"""Mechanical verdict report for the STL-10 long-horizon validation."""
+import json
+from pathlib import Path
+
+from .design import STEPS, evaluate_trajectory, select_tier
+
+
+def collect(runs):
+    """Return (per-trajectory rows, passed-by-steps, selected tier)."""
+    rows = []
+    for meta, record in runs:
+        verdict = evaluate_trajectory(record)
+        final = record['checkpoints'][-1]
+        rows.append(dict(seed=meta['seed'], partition=meta['partition'], steps=meta['steps'],
+                         final_acc=final['mean']['acc'], final_nmi=final['mean']['nmi'],
+                         final_single_clients=final['single_cluster_clients'],
+                         final_mean_largest=final['mean_largest_cluster_fraction'],
+                         final_max_client_largest=max(c['largest_cluster_fraction'] for c in final['clients']),
+                         final_edge_fraction=record['round_records'][-1]['positive_relation_fraction'],
+                         events=len(record['events']), **verdict))
+    by_steps = {s: [r['passed'] for r in rows if r['steps'] == s] for s in STEPS}
+    return rows, by_steps, select_tier(by_steps)
+
+
+def reports(out, runs, *, fixture=False, preset='full'):
+    out = Path(out)
+    rows, by_steps, selected = collect(runs)
+    verdict = dict(fixture=fixture, preset=preset, trajectories=rows,
+                   tier_validated={str(s): bool(v) and all(v) for s, v in by_steps.items()},
+                   selected_steps=selected)
+    (out / 'verdict.json').write_text(json.dumps(verdict, ensure_ascii=False, indent=2), encoding='utf-8')
+    lines = ['# STL-10 公共步数候选长程验证报告', '']
+    if fixture:
+        lines += ['> 本报告来自合成夹具 smoke：只验证实现与判定机械流程，'
+                  '其中通过/未通过不构成任何实验结论。', '']
+    lines += ['判定按冻结协议机械执行：阈值是运行前预先规定的操作标准，'
+              '不是理论上的健康聚类界限，也不是经过校准的统计阈值。'
+              '通过只能说明对应档位的这 4 条长程轨迹满足约定标准，'
+              '不能保证其他种子或分布均不塌缩。', '',
+              '|seed|划分|公共步数|最终ACC|最终NMI|单簇客户端|最大簇均值|单客户端最大簇|教师边比例|S1|S2|Q1|Q2|通过|事件数|',
+              '|---:|---|---:|---:|---:|---:|---:|---:|---:|:--:|:--:|:--:|:--:|:--:|---:|']
+    for r in rows:
+        mark = lambda ok: '✓' if ok else '✗'  # noqa: E731
+        lines.append(f"|{r['seed']}|{r['partition']}|{r['steps']}|{r['final_acc']:.4f}|{r['final_nmi']:.4f}"
+                     f"|{r['final_single_clients']}|{r['final_mean_largest']:.4f}|{r['final_max_client_largest']:.4f}"
+                     f"|{r['final_edge_fraction']:.4f}|{mark(r['S1'])}|{mark(r['S2'])}|{mark(r['Q1'])}|{mark(r['Q2'])}"
+                     f"|{mark(r['passed'])}|{r['events']}|")
+    lines += ['', '## 档位判定', '']
+    for s in STEPS:
+        state = '获得完整验证' if by_steps[s] and all(by_steps[s]) else '未获得完整验证'
+        lines.append(f"- 公共 {s} 步：{state}（{sum(by_steps[s])}/{len(by_steps[s])} 条轨迹通过）")
+    lines += ['', '## 选档结果（冻结规则）', '']
+    if selected is not None:
+        lines.append(f'选定公共 **{selected} 步**：该档位 4 条轨迹全部通过'
+                     + ('（2 步优先，理由仅为保留更多公共训练预算）。' if selected == 2 else '（2 步未获完整验证）。'))
+    else:
+        lines.append('两档均未获得完整验证 → **回到诊断**，不在 STL-10 上恢复 B/E/D 计算比较。')
+    lines += ['', '计时仅描述性记录（步数不同则总工作量不同），本报告不作任何省时比较。', '']
+    (out / 'report.md').write_text('\n'.join(lines), encoding='utf-8')
+    return verdict
