@@ -1,1 +1,23 @@
-IyDkupHnq6/pqozor4HorrDlvZXvvIgyMDI2LTExLTAx77yM5o6o6YCB5YmN77yJCgrnjq/looPvvJrkupHnq68gTGludXjvvIzku5PlupMgdmVudu+8iG51bXB5L3NjaXB5L3NrbGVhcm4vdG9yY2gg5LiO5Ya757uT6L+Q6KGM5pe2CuWtl+auteS4gOiHtOaAp+eUsSBydW5uZXIg55qEIGVudmlyb25tZW50IOajgOafpeaJv+aLhe+8ieOAggoKLSDljZXlhYPmtYvor5XvvJpgcHl0aG9uIC1tIHVuaXR0ZXN0IGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4udGVzdF9kZXNpZ25gCiAgMTQg6aG55YWo6L+H44CC6KaG55uW77ya5a6M5pW0LyBzbW9rZSDmo4Dmn6Xngrnpm4blkIjvvJtTMSDkuInmnaHku7bvvIjlkKvigJzlnYflgLzlkIjmoLzkvYYKICDljZXlrqLmiLfnq68gOTkuNSUg5LuN5Yik5aSx6LSl4oCd44CB5Y2V57CH5a6i5oi356uv5Yik5aSx6LSl77yJ77ybUzIg6Ieq56ysIDIwIOi9rui1t+WIpOWumgogIO+8iOaXqeacn+WNleewh+WPquitpuWRiu+8ieOAgeesrCAyMCDova7lpKfpnaLnp6/lnY3nvKnliKTlpLHotKXvvJtRMS9RMiDovrnnlYzvvJvpgInmoaMKICDkuInliIbmlK/vvIjkuKTmoaPpg73ov4fihpIy44CB5LuFIDIg6L+H4oaSMuOAgeS7hSAxIOi/h+KGkjHjgIHpg73kuI3ov4fihpJOb25l77yJ77ybCiAg5q2j5byP55+p6Zi1IDgg5p2h44CBc21va2Ug55+p6Zi1IDQg5p2h44CCCi0gU21va2XvvJpgcHl0aG9uIC1tIGV4cGVyaW1lbnRzLnN0bDEwX2xvbmdydW4ucnVuIC0tcHJlc2V0IHNtb2tlYAogIOWujOaIkCA0IOadoei9qOi/ue+8iHNlZWQxMDAxIMOXIOS4pOWIkuWIhiDDlyAxLzIg5q2l77yMMTIg6L2u77yM5ZCI5oiQ5aS55YW377yMCiAg5q+P5p2h54us56uL6L+b56iL77yJ44CC5qOA5p+l54K56ZuG5ZCI5a6e5rWLIFswLDEsMiw1LDEwLDEyXe+8m+mAkOi9ruWFrOWFseatpeaVsAogID0g5a6i5oi356uv5pWwIMOXIOaho+S9jeatpeaVsO+8jOWwgeetvuS4jiBjaGVja19ydW4g5YWo6L+H77yb5LqL5Lu25pel5b+X5bimCiAgd2FybmluZ19vbmx5IOagh+iusO+8m+engeacieS8quagh+etvuaLn+WQiOOAgeengeacieW3peS9nOmHj+Wtl+auteWdh+acieiusOW9leOAggogIOWkueWFt+i9qOi/ueacrOi6q+WFqOmDqOacqumAmui/h+agh+WHhu+8iOWQiOaIkOaVsOaNruaXoOiBmuexu+e7k+aehO+8ie+8jOaKpeWRiuW3suagh+azqAogIOWPqumqjOivgeacuuaisOa1geeoi++8jOS4jeaehOaIkOe7k+iuuuOAggotIFJlc3VtZe+8mmAtLXJlc3VtZWAg5aSN6LeR5L+d55WZ5YWo6YOoIDQg5p2h6L2o6L+55bm26YeN5paw5omn6KGMIGNoZWNrX3J1bgogIOS4juaKpeWRiueUn+aIkO+8jOe7k+aenOS4gOiHtOOAggotIOato+W8jyBwcmVzZXQg55qE6ZSa5a6a5qOA5p+l77yI5Yid5aeL5aS0L+WbvuaRmOimgeOAgeengeacieW3peS9nOmHj+Wtl+autSB2cyDljoblj7IKICA4IOatpSBCIOi/kOihjO+8ieS4jiBBQ0xpbmVTdGF0dXM9MSDpl6jmp5vlj6rog73lnKjnlKjmiLfmnKzlnLDvvIhXaW5kb3dzICsKICByZXN1bHRzX2Z1bGwgKyDlh4blpIfnvJPlrZjvvInpqozor4HvvIzkupHnq6/mnKrot5HmraPlvI/nn6npmLXjgIIK
+# 云端验证记录（2026-11-01，推送前）
+
+环境：云端 Linux，仓库 venv（numpy/scipy/sklearn/torch 与冻结运行时
+字段一致性由 runner 的 environment 检查承担）。
+
+- 单元测试：`python -m unittest experiments.stl10_longrun.test_design`
+  14 项全过。覆盖：完整/ smoke 检查点集合；S1 三条件（含“均值合格但
+  单客户端 99.5% 仍判失败”、单簇客户端判失败）；S2 自第 20 轮起判定
+  （早期单簇只警告）、第 20 轮大面积坍缩判失败；Q1/Q2 边界；选档
+  三分支（两档都过→2、仅 2 过→2、仅 1 过→1、都不过→None）；
+  正式矩阵 8 条、smoke 矩阵 4 条。
+- Smoke：`python -m experiments.stl10_longrun.run --preset smoke`
+  完成 4 条轨迹（seed1001 × 两划分 × 1/2 步，12 轮，合成夹具，
+  每条独立进程）。检查点集合实测 [0,1,2,5,10,12]；逐轮公共步数
+  = 客户端数 × 档位步数，封签与 check_run 全过；事件日志带
+  warning_only 标记；私有伪标签拟合、私有工作量字段均有记录。
+  夹具轨迹本身全部未通过标准（合成数据无聚类结构），报告已标注
+  只验证机械流程，不构成结论。
+- Resume：`--resume` 复跑保留全部 4 条轨迹并重新执行 check_run
+  与报告生成，结果一致。
+- 正式 preset 的锚定检查（初始头/图摘要、私有工作量字段 vs 历史
+  8 步 B 运行）与 ACLineStatus=1 门槛只能在用户本地（Windows +
+  results_full + 准备缓存）验证，云端未跑正式矩阵。
