@@ -18,3 +18,8 @@ for archive in Path("archives").glob("*_raw_records*.zip"):
 ## STL-10公共2步计算对照（2026-11-01）
 
 新增stl10_compute_seed1001/1002/1003_raw_records_20261101.zip，共18条完整原始记录；各ZIP在仓库根目录解压恢复原路径。字节摘要和成员见[清单](stl10_compute_raw_20261101.manifest.json)。原completed/finished/run封签未改。[结果与恢复说明](../experiments/stl10_compute/results_full/ARCHIVED_RAW.md)。
+
+
+## STL-10重复计时（2026-11-02）
+
+stl10_repeat_seed1001/1002/1003_raw_records_20261102.zip各18条，共54条。根目录解压恢复原路径；原封签未改。[归档清单](stl10_repeat_raw_20261102.manifest.json) · [恢复与结果说明](../experiments/stl10_repeat_confirmation/results_full/ARCHIVED_RAW.md)。

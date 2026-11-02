@@ -387,3 +387,14 @@ seed1002强非IID早期有单客户端坍缩（1步r1/2/5，r10仍≥99%；2步r
 6条护栏全部通过，最终36个客户端均非单簇，平均ACC19.325%–20.758%，同配置B/E/D评估一致。D比B多25.346MiB持久数组、观测进程峰值约高7%；D/E持久数组相同，同配置通信字节相同。每方法只运行一次，无技术重复，不声称已排除机器噪声；进程峰值含oracle及评估。未删除任何计时，本轮只有每20轮观察点，不能声称全程无瞬时坍缩。
 
 本次同步实际执行run.py/test_run.py修复，见[运行前审核](../outputs/stl10_compute_review_20261101/REVIEW.md)。[报告](../experiments/stl10_compute/results_full/report.md) · [结果审核](../outputs/stl10_compute_results_20261101/REVIEW.md) · [原始无损归档说明](../experiments/stl10_compute/results_full/ARCHIVED_RAW.md)
+
+
+## 2026-11-02：STL-10两步重复计时核验
+
+54独立进程、6块×B/E/D×3技术重复，M16384、200轮、公共2步、完整私有更新。62结果文件及67执行源码/协议摘要通过，16历史锚点、6块公共/方法专属非计时字段一致；关系530841600和候选707788800次oracle记录零错误，五份报表重生成一致，六质量护栏通过。
+
+重复先在seed内平均再配对：IID D/B省38.79%、D/E10.71%；强非IIDD/B39.53%、D/E11.09%。两划分C1/C2/C3通过，按seed均值均3/3胜，按对应重复编号18/18更快，生成阶段同向。统计单位仍为seed，不把54运行或大量边当作独立训练样本。
+
+IID seed1001的B/D/E重复相对极差48.18%/37.70%/29.79%，绝对计时有较大漂移；没有中途频率、温度或电源遥测，不确定原因。全部原计时保留，不与探索批次混合，不自动剔除波动。机械通过不代表已排除机器噪声、统计显著、普适加速或新seed泛化。
+
+同步实际执行的新包校验/报表修复：重复身份、同方法专属逐轮计数、逐重复比值范围；训练与阈值未改。[报告](../experiments/stl10_repeat_confirmation/results_full/report.md) · [主审核与独立复审](../outputs/stl10_repeat_results_20261102/REVIEW.md) · [归档](../experiments/stl10_repeat_confirmation/results_full/ARCHIVED_RAW.md)

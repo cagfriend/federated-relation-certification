@@ -40,11 +40,13 @@ def reports(output, runs, guardrails, *, fixture=False, preset='full'):
                      f"| {v['wins_B']}/3 | {v['wins_E']}/3 | {mark(v['C1'])} | {mark(v['C2'])} | {mark(v['C3'])} "
                      f"| {mark(v['confirmed'])} |")
     lines += ['', '## 逐 seed（重复均值口径）', '',
-              '| 划分 | seed | B 均值秒 | E 均值秒 | D 均值秒 | D/B 省时 | D/E 省时 | D/B 省秒 | D/E 省秒 |',
-              '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
+              '| 划分 | seed | B 均值秒 | E 均值秒 | D 均值秒 | D/B 省时 | D/E 省时 | D/B 省秒 | D/E 省秒 | 逐重复D/B比值范围 | 逐重复D/E比值范围 |',
+              '|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
     for r in seed_rows:
         lines.append(f"| {r['partition']} | {r['seed']} | {r['B_mean']:.3f} | {r['E_mean']:.3f} | {r['D_mean']:.3f} "
-                     f"| {pct(r['ratio_DB'])} | {pct(r['ratio_DE'])} | {r['saved_DB']:.3f} | {r['saved_DE']:.3f} |")
+                     f"| {pct(r['ratio_DB'])} | {pct(r['ratio_DE'])} | {r['saved_DB']:.3f} | {r['saved_DE']:.3f} "
+                     f"| {r['repeat_ratio_DB_min']:.4f}–{r['repeat_ratio_DB_max']:.4f} "
+                     f"| {r['repeat_ratio_DE_min']:.4f}–{r['repeat_ratio_DE_max']:.4f} |")
     worst = {}
     for n in noise:
         key = n['method']

@@ -60,6 +60,14 @@ def check_anchor_compute(record, anchor):
         raise ValueError('B metrics differ from exploratory compute batch')
 
 
+def check_repeat_run(record, meta, spec, prepared, fixture):
+    check_run(record, dict(seed=meta['seed'], partition=meta['partition'],
+                          method=meta['method'], case_id=meta['case_id']),
+              spec, prepared, fixture)
+    if type(record.get('repeat')) is not int or record['repeat'] != meta['repeat']:
+        raise ValueError('Run repeat identity differs from scheduled repeat')
+
+
 def load_verified_anchors(env):
     """Verify all historical anchors with their own validators before running."""
     source = Path(env['source_results'])
@@ -107,6 +115,14 @@ def verify_blocks(completed, anchors8, anchors_long, anchors_compute, *, fixture
             by_method.setdefault(meta['method'], []).append(record)
         if set(by_method) != set(METHODS) or any(len(v) != REPEATS for v in by_method.values()):
             raise ValueError(f'Block composition differs: {(part, seed)}')
+        for method in METHODS:
+            ids = [m['repeat'] for m, _ in items if m['method'] == method]
+            if sorted(ids) != list(range(REPEATS)):
+                raise ValueError(f'Repeat coverage differs: {(part, seed, method)}')
+            rows = [[{k: v for k, v in row.items() if not k.endswith('_seconds')}
+                     for row in r['round_records']] for r in by_method[method]]
+            if any(row != rows[0] for row in rows[1:]):
+                raise ValueError(f'Method-specific repeat counters differ: {(part, seed, method)}')
         base = by_method['B'][0]
         reference_rows = [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]
         reference_metrics = [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]
@@ -176,8 +192,7 @@ def main():
                  repeat=a.worker_repeat,
                  worker_wall_seconds=time.perf_counter() - t, process_peak_bytes=native_peak_bytes())
         r = seal(r)
-        check_run(r, dict(seed=meta['seed'], partition=meta['partition'], method=meta['method'],
-                          case_id=meta['case_id']), spec, prepared, env['fixture'])
+        check_repeat_run(r, meta, spec, prepared, env['fixture'])
         write_new(runs_dir / filename(meta), r)
         return
     if a.resume:
@@ -247,8 +262,7 @@ def main():
                    '--worker-repeat', str(meta['repeat'])]
             subprocess.run(cmd, check=True)
             r = json.loads(target.read_text(encoding='utf-8'))
-        check_run(r, dict(seed=meta['seed'], partition=meta['partition'], method=meta['method'],
-                          case_id=meta['case_id']), spec, prepared, env['fixture'])
+        check_repeat_run(r, meta, spec, prepared, env['fixture'])
         anchor = anchors8.get((meta['seed'], meta['partition']))
         if anchor is not None:
             check_anchor8(r, anchor)

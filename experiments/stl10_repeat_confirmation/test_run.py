@@ -1,9 +1,10 @@
 import copy
 import unittest
+from unittest.mock import patch
 
 from experiments.stl10_compute.run import TRAJECTORY_KEYS
 from experiments.stl10_repeat_confirmation.design import REPEATS, schedule, summarize
-from experiments.stl10_repeat_confirmation.run import verify_blocks
+from experiments.stl10_repeat_confirmation.run import verify_blocks, check_repeat_run
 
 CLIENT = dict(acc=0.20, nmi=0.10, ari=0.05, occupied_clusters=5,
               largest_cluster_fraction=0.30, cluster_counts=[2400] + [700] * 8)
@@ -113,6 +114,39 @@ class VerifyBlocksTests(unittest.TestCase):
         bad[(1002, 'iid')]['round_records'][3]['private_loss'] = 7.7
         with self.assertRaises(ValueError):
             verify_blocks(items, {}, bad, {(1002, 'iid'): make_record('B', 100.0)}, fixture=False)
+
+    def test_method_specific_counters_must_match(self):
+        items = copy.deepcopy(self.items)
+        for _, r in items:
+            r['round_records'][0]['teacher_forward_endpoints'] = 10
+        items[4][1]['round_records'][0]['teacher_forward_endpoints'] = 11
+        with self.assertRaisesRegex(ValueError, 'Method-specific repeat'):
+            verify_blocks(items, {}, {}, self.compute_anchor, fixture=False)
+
+    def test_duplicate_repeat_rejected(self):
+        items = copy.deepcopy(self.items)
+        items[1][0]['repeat'] = 0
+        with self.assertRaisesRegex(ValueError, 'Repeat coverage'):
+            verify_blocks(items, {}, {}, self.compute_anchor, fixture=False)
+
+    def test_repeat_identity_rejected_even_if_transfer_validator_passes(self):
+        meta, record = self.items[0]
+        with patch('experiments.stl10_repeat_confirmation.run.check_run'):
+            with self.assertRaisesRegex(ValueError, 'repeat identity'):
+                check_repeat_run(dict(record, repeat=2), meta, None, None, False)
+
+    def test_pair_ranges_do_not_replace_ratio_of_means(self):
+        items = block()
+        for meta, record in items:
+            if meta['method'] == 'E':
+                record['summary']['E']['head_pipeline_seconds'] = [10., 20., 30.][meta['repeat']]
+            if meta['method'] == 'D':
+                record['summary']['D']['head_pipeline_seconds'] = [8., 18., 15.][meta['repeat']]
+        _, rows, _ = summarize(items)
+        r = rows[0]
+        self.assertAlmostEqual(r['ratio_DE'], 41. / 60.)
+        self.assertAlmostEqual(r['repeat_ratio_DE_min'], .5)
+        self.assertAlmostEqual(r['repeat_ratio_DE_max'], .9)
 
 
 if __name__ == '__main__':

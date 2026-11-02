@@ -1,0 +1,185 @@
+{
+  "result": "PASS",
+  "files_verified": 62,
+  "source_hashes_verified": 67,
+  "runs": 54,
+  "blocks": 6,
+  "anchors_verified": 16,
+  "relations": 530841600,
+  "candidates": 707788800,
+  "mismatches": 0,
+  "guards": [
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1001,
+      "final_acc": 0.19325,
+      "final_nmi": 0.08909247772548101,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1002,
+      "final_acc": 0.193875,
+      "final_nmi": 0.08694645360064014,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1003,
+      "final_acc": 0.19633333333333333,
+      "final_nmi": 0.09480812283057716,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    },
+    {
+      "partition": "iid",
+      "seed": 1001,
+      "final_acc": 0.20493750000000002,
+      "final_nmi": 0.10861816589497082,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    },
+    {
+      "partition": "iid",
+      "seed": 1002,
+      "final_acc": 0.20758333333333331,
+      "final_nmi": 0.10758936257264495,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    },
+    {
+      "partition": "iid",
+      "seed": 1003,
+      "final_acc": 0.20120833333333332,
+      "final_nmi": 0.10401972345153804,
+      "S1": true,
+      "S2": true,
+      "Q1": true,
+      "Q2": true,
+      "passed": true
+    }
+  ],
+  "independent": {
+    "iid": {
+      "rows": [
+        {
+          "partition": "iid",
+          "seed": 1001,
+          "ratio_DB": 0.5674392069508659,
+          "ratio_DE": 0.8928872544270111,
+          "saved_DB": 24.894723333631795,
+          "saved_DE": 3.917635433802694
+        },
+        {
+          "partition": "iid",
+          "seed": 1002,
+          "ratio_DB": 0.6120721083796744,
+          "ratio_DE": 0.8280146410024802,
+          "saved_DB": 17.77168993355008,
+          "saved_DE": 5.824166366752856
+        },
+        {
+          "partition": "iid",
+          "seed": 1003,
+          "ratio_DB": 0.6329186976174311,
+          "ratio_DE": 0.9052058014280204,
+          "saved_DB": 16.7399579998261,
+          "saved_DE": 3.0225566994437614
+        }
+      ],
+      "median_ratio_DB": 0.6120721083796744,
+      "median_ratio_DE": 0.8928872544270111,
+      "C1": true,
+      "C2": true,
+      "C3": true
+    },
+    "dirichlet_0.1": {
+      "rows": [
+        {
+          "partition": "dirichlet_0.1",
+          "seed": 1001,
+          "ratio_DB": 0.6046845339418001,
+          "ratio_DE": 0.8224835178232751,
+          "saved_DB": 17.352562766522173,
+          "saved_DE": 5.728753799805421
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "seed": 1002,
+          "ratio_DB": 0.5826571216963746,
+          "ratio_DE": 0.912267402428557,
+          "saved_DB": 19.376596466133684,
+          "saved_DE": 2.601575166375067
+        },
+        {
+          "partition": "dirichlet_0.1",
+          "seed": 1003,
+          "ratio_DB": 0.6106818214662579,
+          "ratio_DE": 0.8890509949195239,
+          "saved_DB": 16.95607726693076,
+          "saved_DE": 3.319192467199173
+        }
+      ],
+      "median_ratio_DB": 0.6046845339418001,
+      "median_ratio_DE": 0.8890509949195239,
+      "C1": true,
+      "C2": true,
+      "C3": true
+    }
+  },
+  "paired_wins_DB": 18,
+  "paired_wins_DE": 18,
+  "generation_wins_DB": 18,
+  "generation_wins_DE": 18,
+  "round_timing_flags": [],
+  "power_start": {
+    "verified": true,
+    "ac_line_status": 1,
+    "scheme": {
+      "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "description": "��Դ���� GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (ƽ��)"
+    }
+  },
+  "power_end": {
+    "verified": true,
+    "ac_line_status": 1,
+    "scheme": {
+      "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+      "description": "��Դ���� GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (ƽ��)"
+    }
+  },
+  "invocations": [
+    {
+      "utc": 1793588737.2809868,
+      "resume": false,
+      "power": {
+        "verified": true,
+        "ac_line_status": 1,
+        "scheme": {
+          "guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+          "description": "��Դ���� GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (ƽ��)"
+        }
+      }
+    }
+  ],
+  "continuous_power_monitoring": false,
+  "excluded_timing": false,
+  "replayed_training": false
+}

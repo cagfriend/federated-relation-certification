@@ -1,0 +1,154 @@
+--- a/run.py
++++ b/run.py
+@@ -58,6 +58,14 @@
+     if [{k: v for k, v in q.items() if k != 'method'} for q in record['metrics']] != \
+        [{k: v for k, v in q.items() if k != 'method'} for q in anchor['metrics']]:
+         raise ValueError('B metrics differ from exploratory compute batch')
++
++
++def check_repeat_run(record, meta, spec, prepared, fixture):
++    check_run(record, dict(seed=meta['seed'], partition=meta['partition'],
++                          method=meta['method'], case_id=meta['case_id']),
++              spec, prepared, fixture)
++    if type(record.get('repeat')) is not int or record['repeat'] != meta['repeat']:
++        raise ValueError('Run repeat identity differs from scheduled repeat')
+ 
+ 
+ def load_verified_anchors(env):
+@@ -107,6 +115,14 @@
+             by_method.setdefault(meta['method'], []).append(record)
+         if set(by_method) != set(METHODS) or any(len(v) != REPEATS for v in by_method.values()):
+             raise ValueError(f'Block composition differs: {(part, seed)}')
++        for method in METHODS:
++            ids = [m['repeat'] for m, _ in items if m['method'] == method]
++            if sorted(ids) != list(range(REPEATS)):
++                raise ValueError(f'Repeat coverage differs: {(part, seed, method)}')
++            rows = [[{k: v for k, v in row.items() if not k.endswith('_seconds')}
++                     for row in r['round_records']] for r in by_method[method]]
++            if any(row != rows[0] for row in rows[1:]):
++                raise ValueError(f'Method-specific repeat counters differ: {(part, seed, method)}')
+         base = by_method['B'][0]
+         reference_rows = [{k: x[k] for k in TRAJECTORY_KEYS} for x in base['round_records']]
+         reference_metrics = [{k: v for k, v in q.items() if k != 'method'} for q in base['metrics']]
+@@ -176,8 +192,7 @@
+                  repeat=a.worker_repeat,
+                  worker_wall_seconds=time.perf_counter() - t, process_peak_bytes=native_peak_bytes())
+         r = seal(r)
+-        check_run(r, dict(seed=meta['seed'], partition=meta['partition'], method=meta['method'],
+-                          case_id=meta['case_id']), spec, prepared, env['fixture'])
++        check_repeat_run(r, meta, spec, prepared, env['fixture'])
+         write_new(runs_dir / filename(meta), r)
+         return
+     if a.resume:
+@@ -247,8 +262,7 @@
+                    '--worker-repeat', str(meta['repeat'])]
+             subprocess.run(cmd, check=True)
+             r = json.loads(target.read_text(encoding='utf-8'))
+-        check_run(r, dict(seed=meta['seed'], partition=meta['partition'], method=meta['method'],
+-                          case_id=meta['case_id']), spec, prepared, env['fixture'])
++        check_repeat_run(r, meta, spec, prepared, env['fixture'])
+         anchor = anchors8.get((meta['seed'], meta['partition']))
+         if anchor is not None:
+             check_anchor8(r, anchor)
+--- a/design.py
++++ b/design.py
+@@ -40,8 +40,13 @@
+ def summarize(runs):
+     """runs: list of (meta, record). Returns (noise rows, seed rows, partition verdicts)."""
+     cells = {}
++    by_repeat = {}
+     for meta, record in runs:
+         cells.setdefault((meta['partition'], meta['seed'], meta['method']), []).append(_head(record))
++        key = (meta['partition'], meta['seed'], meta['method'], meta['repeat'])
++        if key in by_repeat:
++            raise ValueError('Duplicate repeat in summary')
++        by_repeat[key] = _head(record)
+     noise = []
+     for (part, seed, method), values in sorted(cells.items()):
+         mean = st.fmean(values)
+@@ -53,8 +58,12 @@
+     for part in PARTITIONS:
+         for seed in sorted({s for (p, s, m) in cells if p == part}):
+             means = {m: st.fmean(cells[part, seed, m]) for m in METHODS}
++            ratios_db = [by_repeat[part, seed, 'D', r] / by_repeat[part, seed, 'B', r] for r in range(REPEATS)]
++            ratios_de = [by_repeat[part, seed, 'D', r] / by_repeat[part, seed, 'E', r] for r in range(REPEATS)]
+             seed_rows.append(dict(partition=part, seed=seed,
+                                   B_mean=means['B'], E_mean=means['E'], D_mean=means['D'],
++                                  repeat_ratio_DB_min=min(ratios_db), repeat_ratio_DB_max=max(ratios_db),
++                                  repeat_ratio_DE_min=min(ratios_de), repeat_ratio_DE_max=max(ratios_de),
+                                   ratio_DB=means['D'] / means['B'], ratio_DE=means['D'] / means['E'],
+                                   saved_DB=means['B'] - means['D'], saved_DE=means['E'] - means['D'],
+                                   win_B=means['D'] < means['B'], win_E=means['D'] < means['E']))
+--- a/report.py
++++ b/report.py
+@@ -40,11 +40,13 @@
+                      f"| {v['wins_B']}/3 | {v['wins_E']}/3 | {mark(v['C1'])} | {mark(v['C2'])} | {mark(v['C3'])} "
+                      f"| {mark(v['confirmed'])} |")
+     lines += ['', '## 逐 seed（重复均值口径）', '',
+-              '| 划分 | seed | B 均值秒 | E 均值秒 | D 均值秒 | D/B 省时 | D/E 省时 | D/B 省秒 | D/E 省秒 |',
+-              '|---|---:|---:|---:|---:|---:|---:|---:|---:|']
++              '| 划分 | seed | B 均值秒 | E 均值秒 | D 均值秒 | D/B 省时 | D/E 省时 | D/B 省秒 | D/E 省秒 | 逐重复D/B比值范围 | 逐重复D/E比值范围 |',
++              '|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|']
+     for r in seed_rows:
+         lines.append(f"| {r['partition']} | {r['seed']} | {r['B_mean']:.3f} | {r['E_mean']:.3f} | {r['D_mean']:.3f} "
+-                     f"| {pct(r['ratio_DB'])} | {pct(r['ratio_DE'])} | {r['saved_DB']:.3f} | {r['saved_DE']:.3f} |")
++                     f"| {pct(r['ratio_DB'])} | {pct(r['ratio_DE'])} | {r['saved_DB']:.3f} | {r['saved_DE']:.3f} "
++                     f"| {r['repeat_ratio_DB_min']:.4f}–{r['repeat_ratio_DB_max']:.4f} "
++                     f"| {r['repeat_ratio_DE_min']:.4f}–{r['repeat_ratio_DE_max']:.4f} |")
+     worst = {}
+     for n in noise:
+         key = n['method']
+--- a/test_run.py
++++ b/test_run.py
+@@ -1,9 +1,10 @@
+ import copy
+ import unittest
++from unittest.mock import patch
+ 
+ from experiments.stl10_compute.run import TRAJECTORY_KEYS
+ from experiments.stl10_repeat_confirmation.design import REPEATS, schedule, summarize
+-from experiments.stl10_repeat_confirmation.run import verify_blocks
++from experiments.stl10_repeat_confirmation.run import verify_blocks, check_repeat_run
+ 
+ CLIENT = dict(acc=0.20, nmi=0.10, ari=0.05, occupied_clusters=5,
+               largest_cluster_fraction=0.30, cluster_counts=[2400] + [700] * 8)
+@@ -114,6 +115,39 @@
+         with self.assertRaises(ValueError):
+             verify_blocks(items, {}, bad, {(1002, 'iid'): make_record('B', 100.0)}, fixture=False)
+ 
++    def test_method_specific_counters_must_match(self):
++        items = copy.deepcopy(self.items)
++        for _, r in items:
++            r['round_records'][0]['teacher_forward_endpoints'] = 10
++        items[4][1]['round_records'][0]['teacher_forward_endpoints'] = 11
++        with self.assertRaisesRegex(ValueError, 'Method-specific repeat'):
++            verify_blocks(items, {}, {}, self.compute_anchor, fixture=False)
++
++    def test_duplicate_repeat_rejected(self):
++        items = copy.deepcopy(self.items)
++        items[1][0]['repeat'] = 0
++        with self.assertRaisesRegex(ValueError, 'Repeat coverage'):
++            verify_blocks(items, {}, {}, self.compute_anchor, fixture=False)
++
++    def test_repeat_identity_rejected_even_if_transfer_validator_passes(self):
++        meta, record = self.items[0]
++        with patch('experiments.stl10_repeat_confirmation.run.check_run'):
++            with self.assertRaisesRegex(ValueError, 'repeat identity'):
++                check_repeat_run(dict(record, repeat=2), meta, None, None, False)
++
++    def test_pair_ranges_do_not_replace_ratio_of_means(self):
++        items = block()
++        for meta, record in items:
++            if meta['method'] == 'E':
++                record['summary']['E']['head_pipeline_seconds'] = [10., 20., 30.][meta['repeat']]
++            if meta['method'] == 'D':
++                record['summary']['D']['head_pipeline_seconds'] = [8., 18., 15.][meta['repeat']]
++        _, rows, _ = summarize(items)
++        r = rows[0]
++        self.assertAlmostEqual(r['ratio_DE'], 41. / 60.)
++        self.assertAlmostEqual(r['repeat_ratio_DE_min'], .5)
++        self.assertAlmostEqual(r['repeat_ratio_DE_max'], .9)
++
+ 
+ if __name__ == '__main__':
+     unittest.main()

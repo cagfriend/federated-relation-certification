@@ -40,8 +40,13 @@ def _head(record):
 def summarize(runs):
     """runs: list of (meta, record). Returns (noise rows, seed rows, partition verdicts)."""
     cells = {}
+    by_repeat = {}
     for meta, record in runs:
         cells.setdefault((meta['partition'], meta['seed'], meta['method']), []).append(_head(record))
+        key = (meta['partition'], meta['seed'], meta['method'], meta['repeat'])
+        if key in by_repeat:
+            raise ValueError('Duplicate repeat in summary')
+        by_repeat[key] = _head(record)
     noise = []
     for (part, seed, method), values in sorted(cells.items()):
         mean = st.fmean(values)
@@ -53,8 +58,12 @@ def summarize(runs):
     for part in PARTITIONS:
         for seed in sorted({s for (p, s, m) in cells if p == part}):
             means = {m: st.fmean(cells[part, seed, m]) for m in METHODS}
+            ratios_db = [by_repeat[part, seed, 'D', r] / by_repeat[part, seed, 'B', r] for r in range(REPEATS)]
+            ratios_de = [by_repeat[part, seed, 'D', r] / by_repeat[part, seed, 'E', r] for r in range(REPEATS)]
             seed_rows.append(dict(partition=part, seed=seed,
                                   B_mean=means['B'], E_mean=means['E'], D_mean=means['D'],
+                                  repeat_ratio_DB_min=min(ratios_db), repeat_ratio_DB_max=max(ratios_db),
+                                  repeat_ratio_DE_min=min(ratios_de), repeat_ratio_DE_max=max(ratios_de),
                                   ratio_DB=means['D'] / means['B'], ratio_DE=means['D'] / means['E'],
                                   saved_DB=means['B'] - means['D'], saved_DE=means['E'] - means['D'],
                                   win_B=means['D'] < means['B'], win_E=means['D'] < means['E']))
