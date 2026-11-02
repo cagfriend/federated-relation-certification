@@ -1,0 +1,26 @@
+{
+  "Time": "2026-11-02T13:18:17.7538493+08:00",
+  "Data": {
+    "WakeTimerContextLength": "0",
+    "Attributes": "1979727889",
+    "WakeSourceTextLength": "0",
+    "WakeTimerOwner": null,
+    "WakeTime": "2026-11-02T05:18:16.7707900Z",
+    "SleepTime": "2026-11-02T05:06:58.0964553Z",
+    "DriverInitDuration": "1179",
+    "BiosInitDuration": "9499",
+    "CheckpointDuration": "468",
+    "NoMultiStageResumeReason": "0",
+    "SleepDuration": "6701",
+    "EffectiveState": "5",
+    "HiberPagesWritten": "1788260",
+    "WakeTimerContext": null,
+    "TargetState": "5",
+    "WakeSourceType": "0",
+    "WakeSourceText": null,
+    "WakeTimerOwnerLength": "0",
+    "WakeDuration": "2269",
+    "HiberWriteDuration": "3933",
+    "HiberReadDuration": "3608"
+  }
+}

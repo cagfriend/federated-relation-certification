@@ -1,0 +1,52 @@
+{
+  "excluded_training_rounds": [],
+  "excluded_method_runs": [],
+  "contaminated_preparation_case": {
+    "seed": 1002,
+    "partition": "dirichlet_0.1",
+    "classes": 64,
+    "client": 3,
+    "kmeans_client_seconds": 675.0166935000452,
+    "whole_additional_kmeans_seconds": 686.1858787000529,
+    "whole_additional_preparation_seconds": 686.6888297999976,
+    "event": {
+      "Time": "2026-11-02T13:18:17.7538493+08:00",
+      "Data": {
+        "WakeTimerContextLength": "0",
+        "Attributes": "1979727889",
+        "WakeSourceTextLength": "0",
+        "WakeTimerOwner": null,
+        "WakeTime": "2026-11-02T05:18:16.7707900Z",
+        "SleepTime": "2026-11-02T05:06:58.0964553Z",
+        "DriverInitDuration": "1179",
+        "BiosInitDuration": "9499",
+        "CheckpointDuration": "468",
+        "NoMultiStageResumeReason": "0",
+        "SleepDuration": "6701",
+        "EffectiveState": "5",
+        "HiberPagesWritten": "1788260",
+        "WakeTimerContext": null,
+        "TargetState": "5",
+        "WakeSourceType": "0",
+        "WakeSourceText": null,
+        "WakeTimerOwnerLength": "0",
+        "WakeDuration": "2269",
+        "HiberWriteDuration": "3933",
+        "HiberReadDuration": "3608"
+      }
+    },
+    "action": "Mark contaminated shared preparation and totals including it unavailable for all B/E/D; retain all method-stage times. No counterfactual time imputation."
+  },
+  "affected_methods": [
+    "B",
+    "E",
+    "D"
+  ],
+  "masked_preparation_rows": 3,
+  "masked_with_preparation_comparisons": 2,
+  "training_timing_changed": false,
+  "no_numerical_sleep_subtraction": true,
+  "no_counterfactual_imputation": true,
+  "raw_results_unchanged": true,
+  "reason": "Confirmed user sleep plus Windows wake event and 675s KMeans fit anomaly. Different clock intervals cannot safely be subtracted."
+}

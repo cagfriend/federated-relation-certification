@@ -1,0 +1,184 @@
+{
+  "fixture": false,
+  "summary": [
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 10,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.6192933170586322,
+      "min_head_ratio": 0.5964486873210161,
+      "max_head_ratio": 0.6824095444449771,
+      "wins": 3,
+      "median_saved_seconds": 17.206190199998673
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 10,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.8971476975755328,
+      "min_head_ratio": 0.8781023977496611,
+      "max_head_ratio": 1.0063833372747362,
+      "wins": 2,
+      "median_saved_seconds": 2.9154736013151705
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 16,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.4629085058850297,
+      "min_head_ratio": 0.46108682154329345,
+      "max_head_ratio": 0.4812741616845615,
+      "wins": 3,
+      "median_saved_seconds": 38.442281099793036
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 16,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.8537146339646396,
+      "min_head_ratio": 0.840759153416637,
+      "max_head_ratio": 0.8584964120359904,
+      "wins": 3,
+      "median_saved_seconds": 5.6141383001813665
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 32,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.515192134231352,
+      "min_head_ratio": 0.5119697598859656,
+      "max_head_ratio": 0.5353597450344881,
+      "wins": 3,
+      "median_saved_seconds": 51.509916299488395
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 32,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.8746970937048243,
+      "min_head_ratio": 0.864261031520619,
+      "max_head_ratio": 0.9165108832265374,
+      "wins": 3,
+      "median_saved_seconds": 8.597061299718916
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 64,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.7305936175761327,
+      "min_head_ratio": 0.6825946061612578,
+      "max_head_ratio": 0.7892462182175815,
+      "wins": 3,
+      "median_saved_seconds": 33.56324409984518
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "classes": 64,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 1.0146779381307562,
+      "min_head_ratio": 0.9909595216690353,
+      "max_head_ratio": 1.09571249184203,
+      "wins": 1,
+      "median_saved_seconds": -1.3166452000150457
+    },
+    {
+      "partition": "iid",
+      "classes": 10,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.6426558689127687,
+      "min_head_ratio": 0.6338731523531498,
+      "max_head_ratio": 0.657304510294201,
+      "wins": 3,
+      "median_saved_seconds": 19.180857200699393
+    },
+    {
+      "partition": "iid",
+      "classes": 10,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.8982180078187462,
+      "min_head_ratio": 0.8838015412641307,
+      "max_head_ratio": 0.9521269513435188,
+      "wins": 3,
+      "median_saved_seconds": 3.7907334998599254
+    },
+    {
+      "partition": "iid",
+      "classes": 16,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.46592040209183755,
+      "min_head_ratio": 0.45964709900791756,
+      "max_head_ratio": 0.48822041904647373,
+      "wins": 3,
+      "median_saved_seconds": 40.49740880046738
+    },
+    {
+      "partition": "iid",
+      "classes": 16,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.8260956031125172,
+      "min_head_ratio": 0.7525576963565884,
+      "max_head_ratio": 0.9166715835353643,
+      "wins": 3,
+      "median_saved_seconds": 7.019850500917528
+    },
+    {
+      "partition": "iid",
+      "classes": 32,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.5341651656474729,
+      "min_head_ratio": 0.41692462555558046,
+      "max_head_ratio": 0.5766322374741923,
+      "wins": 3,
+      "median_saved_seconds": 57.761025100713596
+    },
+    {
+      "partition": "iid",
+      "classes": 32,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.887292561510333,
+      "min_head_ratio": 0.6976217233104037,
+      "max_head_ratio": 0.9752715600738189,
+      "wins": 3,
+      "median_saved_seconds": 8.413258500862867
+    },
+    {
+      "partition": "iid",
+      "classes": 64,
+      "comparison": "D/B",
+      "seeds": 3,
+      "median_head_ratio": 0.759551220643965,
+      "min_head_ratio": 0.7491297299350397,
+      "max_head_ratio": 0.9085774959966466,
+      "wins": 3,
+      "median_saved_seconds": 32.75815969938412
+    },
+    {
+      "partition": "iid",
+      "classes": 64,
+      "comparison": "D/E",
+      "seeds": 3,
+      "median_head_ratio": 0.9626574113188374,
+      "min_head_ratio": 0.9621308838156186,
+      "max_head_ratio": 1.1734756229303738,
+      "wins": 2,
+      "median_saved_seconds": 3.7945474991574883
+    }
+  ],
+  "runs": 72,
+  "memory_runs": 12,
+  "note": "K is the output cluster count; ground truth remains 10 classes. Different K changes private targets and training trajectories. No cross-K quality improvement claim."
+}

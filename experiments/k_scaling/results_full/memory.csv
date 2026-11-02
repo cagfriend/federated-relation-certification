@@ -1,0 +1,13 @@
+seed,partition,classes,method,block,position,process_peak_bytes,persistent_bytes,note
+1002,iid,10,B,0,0,1251282944,770528,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,iid,10,E,0,1,1443803136,27347744,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,iid,10,D,0,2,1443803136,27347744,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,iid,64,E,1,0,1581133824,161776640,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,iid,64,D,1,1,1552621568,161776640,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,iid,64,B,1,2,1251336192,4090880,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,10,D,2,0,1449103360,27347744,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,10,B,2,1,1256824832,770528,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,10,E,2,2,1448972288,27347744,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,64,B,3,0,1256828928,4090880,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,64,E,3,1,1602740224,161776640,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"
+1002,dirichlet_0.1,64,D,3,2,1600274432,161776640,"isolated process, no oracle, no evaluation; includes input verification/loading and interpreter"

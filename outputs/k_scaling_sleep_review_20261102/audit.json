@@ -1,0 +1,4095 @@
+{
+  "status": "PREPARATION_SLEEP_CONTAMINATION_IDENTIFIED",
+  "manifest_files_verified": 93,
+  "runs_verified": 72,
+  "memory_runs_verified": 12,
+  "triples_verified": 24,
+  "run_start": "2026-11-02T13:21:44.197484",
+  "run_end": "2026-11-02T17:07:55.413863",
+  "max_noninitial_pipeline_seconds": 1.2870248000253923,
+  "statistical_flags": [],
+  "phase_checks": [
+    {
+      "file": "iid_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.049655199982225895,
+      "max_seconds": 0.08115350001025945,
+      "max_round": 176,
+      "max_ratio": 1.634340412269176
+    },
+    {
+      "file": "iid_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.19267370004672557,
+      "max_seconds": 0.2749349999940023,
+      "max_round": 116,
+      "max_ratio": 1.4269461785771873
+    },
+    {
+      "file": "iid_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003253450006013736,
+      "max_seconds": 0.011094100016634911,
+      "max_round": 89,
+      "max_ratio": 3.40994943709858
+    },
+    {
+      "file": "iid_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.043198200000915676,
+      "max_seconds": 0.0811157999560237,
+      "max_round": 89,
+      "max_ratio": 1.8777587944475527
+    },
+    {
+      "file": "iid_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.29081550001865253,
+      "max_seconds": 0.40517039998667315,
+      "max_round": 116,
+      "max_ratio": 1.3932214753363767
+    },
+    {
+      "file": "iid_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04874900000868365,
+      "max_seconds": 0.13147690001642331,
+      "max_round": 86,
+      "max_ratio": 2.697017374571855
+    },
+    {
+      "file": "iid_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.08401249995222315,
+      "max_seconds": 0.4372904999763705,
+      "max_round": 2,
+      "max_ratio": 5.205064725190324
+    },
+    {
+      "file": "iid_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035716500133275986,
+      "max_seconds": 0.0071134999743662775,
+      "max_round": 136,
+      "max_ratio": 1.9916565026870716
+    },
+    {
+      "file": "iid_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04567225000937469,
+      "max_seconds": 0.09439589997055009,
+      "max_round": 121,
+      "max_ratio": 2.0668108085582464
+    },
+    {
+      "file": "iid_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.18639629997778684,
+      "max_seconds": 0.5345068000024185,
+      "max_round": 2,
+      "max_ratio": 2.8675826723283486
+    },
+    {
+      "file": "iid_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04793379997136071,
+      "max_seconds": 0.09235230000922456,
+      "max_round": 29,
+      "max_ratio": 1.9266634413379042
+    },
+    {
+      "file": "iid_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.060620700009167194,
+      "max_seconds": 0.45581259997561574,
+      "max_round": 2,
+      "max_ratio": 7.519091661869407
+    },
+    {
+      "file": "iid_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035923499963246286,
+      "max_seconds": 0.007570100016891956,
+      "max_round": 11,
+      "max_ratio": 2.1072835399215015
+    },
+    {
+      "file": "iid_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04451005000737496,
+      "max_seconds": 0.07237759995041415,
+      "max_round": 173,
+      "max_ratio": 1.6260956781316076
+    },
+    {
+      "file": "iid_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.16396350000286475,
+      "max_seconds": 0.5510165999876335,
+      "max_round": 2,
+      "max_ratio": 3.3606052565235935
+    },
+    {
+      "file": "iid_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03731235000304878,
+      "max_seconds": 0.09878190001472831,
+      "max_round": 56,
+      "max_ratio": 2.64743174864775
+    },
+    {
+      "file": "iid_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.10775260004447773,
+      "max_seconds": 0.5666937999776565,
+      "max_round": 2,
+      "max_ratio": 5.259212304331762
+    },
+    {
+      "file": "iid_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0027572500112000853,
+      "max_seconds": 0.007462600013241172,
+      "max_round": 2,
+      "max_ratio": 2.70653730453449
+    },
+    {
+      "file": "iid_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03629519999958575,
+      "max_seconds": 0.06524219998391345,
+      "max_round": 34,
+      "max_ratio": 1.7975434764006835
+    },
+    {
+      "file": "iid_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.18170840002130717,
+      "max_seconds": 0.6751060000387952,
+      "max_round": 3,
+      "max_ratio": 3.7153263138062527
+    },
+    {
+      "file": "iid_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0340231999871321,
+      "max_seconds": 0.0416879000258632,
+      "max_round": 1,
+      "max_ratio": 1.2252786346266653
+    },
+    {
+      "file": "iid_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06960340001387522,
+      "max_seconds": 0.48900860000867397,
+      "max_round": 2,
+      "max_ratio": 7.025642424237777
+    },
+    {
+      "file": "iid_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023475000052712858,
+      "max_seconds": 0.004970500012859702,
+      "max_round": 2,
+      "max_ratio": 2.1173588931622995
+    },
+    {
+      "file": "iid_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03404430000227876,
+      "max_seconds": 0.051048099994659424,
+      "max_round": 82,
+      "max_ratio": 1.4994609961503838
+    },
+    {
+      "file": "iid_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1383802000200376,
+      "max_seconds": 0.5705527000245638,
+      "max_round": 2,
+      "max_ratio": 4.123080469185239
+    },
+    {
+      "file": "iid_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.034065599989844486,
+      "max_seconds": 0.0442571000312455,
+      "max_round": 132,
+      "max_ratio": 1.2991727738375154
+    },
+    {
+      "file": "iid_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.30373909999616444,
+      "max_seconds": 0.32967439998174086,
+      "max_round": 132,
+      "max_ratio": 1.0853867677421312
+    },
+    {
+      "file": "iid_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002450450003379956,
+      "max_seconds": 0.004562999994959682,
+      "max_round": 2,
+      "max_ratio": 1.8621069553207954
+    },
+    {
+      "file": "iid_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03211120000923984,
+      "max_seconds": 0.040906200010795146,
+      "max_round": 132,
+      "max_ratio": 1.2738919753551594
+    },
+    {
+      "file": "iid_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.372946800023783,
+      "max_seconds": 0.41739990003407,
+      "max_round": 132,
+      "max_ratio": 1.1191942121703478
+    },
+    {
+      "file": "iid_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.059223199990810826,
+      "max_seconds": 0.11374000000068918,
+      "max_round": 177,
+      "max_ratio": 1.9205311435102674
+    },
+    {
+      "file": "iid_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.14601540000876412,
+      "max_seconds": 0.6215381000074558,
+      "max_round": 2,
+      "max_ratio": 4.256661283468387
+    },
+    {
+      "file": "iid_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024417499953415245,
+      "max_seconds": 0.005681700014974922,
+      "max_round": 193,
+      "max_ratio": 2.326896703517851
+    },
+    {
+      "file": "iid_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04913915001088753,
+      "max_seconds": 0.09284269995987415,
+      "max_round": 176,
+      "max_ratio": 1.889383514759686
+    },
+    {
+      "file": "iid_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.26000130001921207,
+      "max_seconds": 0.7395876999944448,
+      "max_round": 2,
+      "max_ratio": 2.84455385392225
+    },
+    {
+      "file": "iid_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07925770003930666,
+      "max_seconds": 0.14791820000391454,
+      "max_round": 13,
+      "max_ratio": 1.8662943780926868
+    },
+    {
+      "file": "iid_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.5517803999828175,
+      "max_seconds": 0.7341749999905005,
+      "max_round": 60,
+      "max_ratio": 1.3305565040247223
+    },
+    {
+      "file": "iid_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003731150005478412,
+      "max_seconds": 0.007471400022041053,
+      "max_round": 95,
+      "max_ratio": 2.0024389293035303
+    },
+    {
+      "file": "iid_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.07163475002744235,
+      "max_seconds": 0.13372320000780746,
+      "max_round": 106,
+      "max_ratio": 1.866736464587087
+    },
+    {
+      "file": "iid_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.7100183999864385,
+      "max_seconds": 0.9232987000141293,
+      "max_round": 60,
+      "max_ratio": 1.3003870040998438
+    },
+    {
+      "file": "iid_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.08316764998016879,
+      "max_seconds": 0.1436517999973148,
+      "max_round": 145,
+      "max_ratio": 1.7272557302216474
+    },
+    {
+      "file": "iid_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.22195630002534017,
+      "max_seconds": 0.8596573000540957,
+      "max_round": 4,
+      "max_ratio": 3.8730925860448693
+    },
+    {
+      "file": "iid_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0037001500313635916,
+      "max_seconds": 0.00771630002418533,
+      "max_round": 15,
+      "max_ratio": 2.0854019320242787
+    },
+    {
+      "file": "iid_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06970074999844655,
+      "max_seconds": 0.12922750000143424,
+      "max_round": 70,
+      "max_ratio": 1.8540331345690595
+    },
+    {
+      "file": "iid_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3818472999846563,
+      "max_seconds": 1.0180813999613747,
+      "max_round": 4,
+      "max_ratio": 2.6662003371564604
+    },
+    {
+      "file": "iid_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.11034129999461584,
+      "max_seconds": 0.19320139999035746,
+      "max_round": 9,
+      "max_ratio": 1.7509436629782757
+    },
+    {
+      "file": "iid_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.5991137999808416,
+      "max_seconds": 0.7486040000221692,
+      "max_round": 93,
+      "max_ratio": 1.249518872785284
+    },
+    {
+      "file": "iid_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003712750010890886,
+      "max_seconds": 0.006546400021761656,
+      "max_round": 24,
+      "max_ratio": 1.7632213325859842
+    },
+    {
+      "file": "iid_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.09355705001507886,
+      "max_seconds": 0.14946270000655204,
+      "max_round": 195,
+      "max_ratio": 1.5975567846833854
+    },
+    {
+      "file": "iid_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.8057873999932781,
+      "max_seconds": 0.9658306999481283,
+      "max_round": 93,
+      "max_ratio": 1.198617277902565
+    },
+    {
+      "file": "iid_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.10529730000416748,
+      "max_seconds": 0.1607693000114523,
+      "max_round": 1,
+      "max_ratio": 1.5268131282102135
+    },
+    {
+      "file": "iid_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.38797410001279786,
+      "max_seconds": 1.0702635999768972,
+      "max_round": 2,
+      "max_ratio": 2.7585954834139526
+    },
+    {
+      "file": "iid_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003800200007390231,
+      "max_seconds": 0.007890499953646213,
+      "max_round": 7,
+      "max_ratio": 2.0763380712335127
+    },
+    {
+      "file": "iid_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.08584385001449846,
+      "max_seconds": 0.14946010004496202,
+      "max_round": 137,
+      "max_ratio": 1.7410693954164358
+    },
+    {
+      "file": "iid_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5889334999956191,
+      "max_seconds": 1.2870248000253923,
+      "max_round": 2,
+      "max_ratio": 2.1853482609411183
+    },
+    {
+      "file": "iid_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.10548895000829361,
+      "max_seconds": 0.15122559998417273,
+      "max_round": 199,
+      "max_ratio": 1.4335681601938712
+    },
+    {
+      "file": "iid_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.37212100002216175,
+      "max_seconds": 0.9920281999511644,
+      "max_round": 3,
+      "max_ratio": 2.6658753467073453
+    },
+    {
+      "file": "iid_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0037310000334400684,
+      "max_seconds": 0.007391599996481091,
+      "max_round": 83,
+      "max_ratio": 1.981131045358331
+    },
+    {
+      "file": "iid_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.08924290002323687,
+      "max_seconds": 0.14048190001631156,
+      "max_round": 199,
+      "max_ratio": 1.5741521171962496
+    },
+    {
+      "file": "iid_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5702087000245228,
+      "max_seconds": 1.1951223999494687,
+      "max_round": 3,
+      "max_ratio": 2.0959385570547595
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.05209945002570748,
+      "max_seconds": 0.08411699999123812,
+      "max_round": 102,
+      "max_ratio": 1.614546793675023
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.07788170001003891,
+      "max_seconds": 0.4744453000021167,
+      "max_round": 2,
+      "max_ratio": 6.091871388798151
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0034952499845530838,
+      "max_seconds": 0.01744760002475232,
+      "max_round": 68,
+      "max_ratio": 4.991803190575863
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04604295000899583,
+      "max_seconds": 0.09932919999118894,
+      "max_round": 137,
+      "max_ratio": 2.157316157452598
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.18274459999520332,
+      "max_seconds": 0.5835322999628261,
+      "max_round": 2,
+      "max_ratio": 3.1931575541939003
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.05248544999631122,
+      "max_seconds": 0.08094969997182488,
+      "max_round": 51,
+      "max_ratio": 1.5423264919613757
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.078757899987977,
+      "max_seconds": 0.41808779997518286,
+      "max_round": 2,
+      "max_ratio": 5.308518891933472
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035343999916221946,
+      "max_seconds": 0.015279999992344528,
+      "max_round": 44,
+      "max_ratio": 4.323223185990169
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05123819998698309,
+      "max_seconds": 0.08582850004313514,
+      "max_round": 149,
+      "max_ratio": 1.6750881191169793
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1905517999548465,
+      "max_seconds": 0.5169925999944098,
+      "max_round": 2,
+      "max_ratio": 2.713134172004239
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04716325001209043,
+      "max_seconds": 0.1361837000004016,
+      "max_round": 148,
+      "max_ratio": 2.8874960899745146
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.20534480002243072,
+      "max_seconds": 0.2704595000250265,
+      "max_round": 119,
+      "max_ratio": 1.3170993372877375
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035032999876420945,
+      "max_seconds": 0.006234099972061813,
+      "max_round": 3,
+      "max_ratio": 1.7794936186032104
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04339629999594763,
+      "max_seconds": 0.061906699964310974,
+      "max_round": 147,
+      "max_ratio": 1.426543276041779
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.30137840000679716,
+      "max_seconds": 0.40314690000377595,
+      "max_round": 148,
+      "max_ratio": 1.3376768208825967
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04723974998341873,
+      "max_seconds": 0.07725289999507368,
+      "max_round": 112,
+      "max_ratio": 1.6353367666465135
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.08784340001875535,
+      "max_seconds": 0.5761613000067882,
+      "max_round": 2,
+      "max_ratio": 6.558959465182047
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035068499855697155,
+      "max_seconds": 0.006450299988500774,
+      "max_round": 2,
+      "max_ratio": 1.8393430044179298
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04256619999068789,
+      "max_seconds": 0.09236880001844838,
+      "max_round": 11,
+      "max_ratio": 2.170003430859595
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.18533129995921627,
+      "max_seconds": 0.6735496000037529,
+      "max_round": 2,
+      "max_ratio": 3.634300305193851
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0475663999968674,
+      "max_seconds": 0.07257479999680072,
+      "max_round": 1,
+      "max_ratio": 1.5257576777216755
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.36788869998417795,
+      "max_seconds": 0.49818280001636595,
+      "max_round": 88,
+      "max_ratio": 1.3541671707714633
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003636099980212748,
+      "max_seconds": 0.007582999998703599,
+      "max_round": 17,
+      "max_ratio": 2.085476208016678
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.043312499998137355,
+      "max_seconds": 0.06740679999347776,
+      "max_round": 174,
+      "max_ratio": 1.556289754606097
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.46398659999249503,
+      "max_seconds": 0.6047523999586701,
+      "max_round": 88,
+      "max_ratio": 1.3033833303988778
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04857239997363649,
+      "max_seconds": 0.09089769999263808,
+      "max_round": 179,
+      "max_ratio": 1.871385808442127
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.12690199998905882,
+      "max_seconds": 0.5863871999899857,
+      "max_round": 2,
+      "max_ratio": 4.620787694760859
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0034328500041738153,
+      "max_seconds": 0.007091500039678067,
+      "max_round": 38,
+      "max_ratio": 2.0657762591013
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04415825000614859,
+      "max_seconds": 0.0609602999757044,
+      "max_round": 38,
+      "max_ratio": 1.3804962825115645
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.22724010003730655,
+      "max_seconds": 0.6972467000014149,
+      "max_round": 3,
+      "max_ratio": 3.0683259683785837
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07627895000041462,
+      "max_seconds": 0.12130949995480478,
+      "max_round": 78,
+      "max_ratio": 1.5903404537443866
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.5475327999447472,
+      "max_seconds": 0.6936394000076689,
+      "max_round": 149,
+      "max_ratio": 1.266845383651291
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035155500227119774,
+      "max_seconds": 0.006832599989138544,
+      "max_round": 2,
+      "max_ratio": 1.9435365575790375
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06727554998360574,
+      "max_seconds": 0.1416981000220403,
+      "max_round": 20,
+      "max_ratio": 2.1062347324781507
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.6940622000256553,
+      "max_seconds": 0.935802899999544,
+      "max_round": 20,
+      "max_ratio": 1.3482983224917782
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07200319998082705,
+      "max_seconds": 0.12776629999279976,
+      "max_round": 82,
+      "max_ratio": 1.7744530802356182
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.25927519996184856,
+      "max_seconds": 0.7233141000033356,
+      "max_round": 4,
+      "max_ratio": 2.7897542846742334
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00328770000487566,
+      "max_seconds": 0.0071632000035606325,
+      "max_round": 77,
+      "max_ratio": 2.1787876001270203
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06300734999240376,
+      "max_seconds": 0.10473780002212152,
+      "max_round": 80,
+      "max_ratio": 1.6623108261932749
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3928514000144787,
+      "max_seconds": 0.8518729000352323,
+      "max_round": 4,
+      "max_ratio": 2.1684354440478923
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07227634999435395,
+      "max_seconds": 0.1350836999481544,
+      "max_round": 179,
+      "max_ratio": 1.868988956397311
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.15803950000554323,
+      "max_seconds": 0.7864565000054426,
+      "max_round": 2,
+      "max_ratio": 4.976328702494362
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0034115999878849834,
+      "max_seconds": 0.006706299958750606,
+      "max_round": 144,
+      "max_ratio": 1.965734547592189
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06646720002754591,
+      "max_seconds": 0.11931619996903464,
+      "max_round": 111,
+      "max_ratio": 1.7951139798214244
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.30467040004441515,
+      "max_seconds": 0.927262100041844,
+      "max_round": 4,
+      "max_ratio": 3.043492573964083
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0964090499910526,
+      "max_seconds": 0.14861969999037683,
+      "max_round": 57,
+      "max_ratio": 1.5415534123007095
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.33497869997518137,
+      "max_seconds": 0.9772338000475429,
+      "max_round": 3,
+      "max_ratio": 2.917301309366674
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003249750006943941,
+      "max_seconds": 0.018618699978105724,
+      "max_round": 3,
+      "max_ratio": 5.729271463442418
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.08423260002746247,
+      "max_seconds": 0.1160154000390321,
+      "max_round": 12,
+      "max_ratio": 1.3773218445258422
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5258374999975786,
+      "max_seconds": 1.208512499986682,
+      "max_round": 3,
+      "max_ratio": 2.2982622958466203
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.11314325002604164,
+      "max_seconds": 0.18571930000325665,
+      "max_round": 106,
+      "max_ratio": 1.6414527597581874
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.37057790003018454,
+      "max_seconds": 0.9463117999839596,
+      "max_round": 3,
+      "max_ratio": 2.553610994899804
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0035734500270336866,
+      "max_seconds": 0.0063170999637804925,
+      "max_round": 193,
+      "max_ratio": 1.7677874088040078
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.09840035001980141,
+      "max_seconds": 0.18158919998677447,
+      "max_round": 84,
+      "max_ratio": 1.8454121347153005
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5934559000306763,
+      "max_seconds": 1.143311400024686,
+      "max_round": 3,
+      "max_ratio": 1.9265313563578814
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.1306516499898862,
+      "max_seconds": 0.20046180003555492,
+      "max_round": 83,
+      "max_ratio": 1.5343227586568768
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.6695585999987088,
+      "max_seconds": 0.8095439000171609,
+      "max_round": 55,
+      "max_ratio": 1.2090710208467519
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0038738499861210585,
+      "max_seconds": 0.007850499998312443,
+      "max_round": 3,
+      "max_ratio": 2.0265369145523526
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.10570690000895411,
+      "max_seconds": 0.18479770002886653,
+      "max_round": 130,
+      "max_ratio": 1.7482084898262353
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1001_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.9127231999882497,
+      "max_seconds": 1.1191068000043742,
+      "max_round": 27,
+      "max_ratio": 1.2261184990353937
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.050092500023311004,
+      "max_seconds": 0.07976339996093884,
+      "max_round": 16,
+      "max_ratio": 1.5923222024019605
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06127820000983775,
+      "max_seconds": 0.47698439995292574,
+      "max_round": 2,
+      "max_ratio": 7.783916627387057
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0033972499950323254,
+      "max_seconds": 0.007756999984849244,
+      "max_round": 9,
+      "max_ratio": 2.2833173879437845
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.047234949975972995,
+      "max_seconds": 0.06414289999520406,
+      "max_round": 120,
+      "max_ratio": 1.3579542272794114
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.16807299997890368,
+      "max_seconds": 0.5868998999940231,
+      "max_round": 2,
+      "max_ratio": 3.4919344574541427
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04888154999935068,
+      "max_seconds": 0.10093819996109232,
+      "max_round": 133,
+      "max_ratio": 2.0649549771321314
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.20147679996443912,
+      "max_seconds": 0.27233819995308295,
+      "max_round": 198,
+      "max_ratio": 1.3517099735609803
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0033750500006135553,
+      "max_seconds": 0.005645100027322769,
+      "max_round": 14,
+      "max_ratio": 1.6725974507922958
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04624989998410456,
+      "max_seconds": 0.06302450003568083,
+      "max_round": 190,
+      "max_ratio": 1.362694839498928
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3002728999708779,
+      "max_seconds": 0.3953245999873616,
+      "max_round": 198,
+      "max_ratio": 1.3165510441525103
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.045680949988309294,
+      "max_seconds": 0.1092958000372164,
+      "max_round": 25,
+      "max_ratio": 2.3925903481689295
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.08528459997614846,
+      "max_seconds": 0.4631348999682814,
+      "max_round": 2,
+      "max_ratio": 5.430463414236642
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00323805000516586,
+      "max_seconds": 0.007720800000242889,
+      "max_round": 2,
+      "max_ratio": 2.384398013596276
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.0430052499868907,
+      "max_seconds": 0.0672467999975197,
+      "max_round": 149,
+      "max_ratio": 1.5636881547722326
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1825914999935776,
+      "max_seconds": 0.5759791000164114,
+      "max_round": 2,
+      "max_ratio": 3.154468307871235
+    },
+    {
+      "file": "iid_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03451960001257248,
+      "max_seconds": 0.04958809999516234,
+      "max_round": 28,
+      "max_ratio": 1.4365201212384187
+    },
+    {
+      "file": "iid_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.28443369996966794,
+      "max_seconds": 0.41954039997654036,
+      "max_round": 28,
+      "max_ratio": 1.4750024347370942
+    },
+    {
+      "file": "iid_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024053500092122704,
+      "max_seconds": 0.0041943000396713614,
+      "max_round": 35,
+      "max_ratio": 1.7437379273733868
+    },
+    {
+      "file": "iid_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.030767349991947412,
+      "max_seconds": 0.042829399986658245,
+      "max_round": 35,
+      "max_ratio": 1.3920405884116693
+    },
+    {
+      "file": "iid_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3522530000191182,
+      "max_seconds": 0.5116363999550231,
+      "max_round": 28,
+      "max_ratio": 1.4524685380316265
+    },
+    {
+      "file": "iid_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.033836400019936264,
+      "max_seconds": 0.039178899955004454,
+      "max_round": 1,
+      "max_ratio": 1.1578920905273733
+    },
+    {
+      "file": "iid_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.11045059998286888,
+      "max_seconds": 0.4899133999715559,
+      "max_round": 2,
+      "max_ratio": 4.435588399225921
+    },
+    {
+      "file": "iid_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023279500019270927,
+      "max_seconds": 0.005044199991971254,
+      "max_round": 2,
+      "max_ratio": 2.1667991098587307
+    },
+    {
+      "file": "iid_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03036935001728125,
+      "max_seconds": 0.04319900000700727,
+      "max_round": 153,
+      "max_ratio": 1.4224538879635387
+    },
+    {
+      "file": "iid_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.17673599999397993,
+      "max_seconds": 0.5583437000168487,
+      "max_round": 2,
+      "max_ratio": 3.1591962024480997
+    },
+    {
+      "file": "iid_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03387305000796914,
+      "max_seconds": 0.039768199960235506,
+      "max_round": 189,
+      "max_ratio": 1.1740365851578007
+    },
+    {
+      "file": "iid_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.0709031000151299,
+      "max_seconds": 0.4691564000095241,
+      "max_round": 3,
+      "max_ratio": 6.616867244301188
+    },
+    {
+      "file": "iid_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023658999998588115,
+      "max_seconds": 0.004466399957891554,
+      "max_round": 2,
+      "max_ratio": 1.8878227981563434
+    },
+    {
+      "file": "iid_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.030432900006417185,
+      "max_seconds": 0.037959499983116984,
+      "max_round": 180,
+      "max_ratio": 1.2473178689875994
+    },
+    {
+      "file": "iid_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.13823019998380914,
+      "max_seconds": 0.5377389999921434,
+      "max_round": 3,
+      "max_ratio": 3.89017016581853
+    },
+    {
+      "file": "iid_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.06712044999585487,
+      "max_seconds": 0.09427900001173839,
+      "max_round": 200,
+      "max_ratio": 1.4046240753386001
+    },
+    {
+      "file": "iid_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.20827079995069653,
+      "max_seconds": 0.6380494000040926,
+      "max_round": 8,
+      "max_ratio": 3.063556677917099
+    },
+    {
+      "file": "iid_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003200600011041388,
+      "max_seconds": 0.008839700021781027,
+      "max_round": 99,
+      "max_ratio": 2.7618883932031326
+    },
+    {
+      "file": "iid_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.055478449969086796,
+      "max_seconds": 0.09353329997975379,
+      "max_round": 99,
+      "max_ratio": 1.6859393157500178
+    },
+    {
+      "file": "iid_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3402551999897696,
+      "max_seconds": 0.7852671999717131,
+      "max_round": 8,
+      "max_ratio": 2.3078771463164225
+    },
+    {
+      "file": "iid_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.06630665002739988,
+      "max_seconds": 0.08616699994308874,
+      "max_round": 156,
+      "max_ratio": 1.2995227463230608
+    },
+    {
+      "file": "iid_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.1602827999740839,
+      "max_seconds": 0.7173506999970414,
+      "max_round": 3,
+      "max_ratio": 4.475531374002886
+    },
+    {
+      "file": "iid_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003260600002249703,
+      "max_seconds": 0.006058100028894842,
+      "max_round": 7,
+      "max_ratio": 1.8579709331763967
+    },
+    {
+      "file": "iid_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.054897200025152415,
+      "max_seconds": 0.07529800001066178,
+      "max_round": 172,
+      "max_ratio": 1.3716182241746806
+    },
+    {
+      "file": "iid_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2872479999787174,
+      "max_seconds": 0.8484353999956511,
+      "max_round": 3,
+      "max_ratio": 2.9536686071217653
+    },
+    {
+      "file": "iid_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.06524750002427027,
+      "max_seconds": 0.11260049999691546,
+      "max_round": 93,
+      "max_ratio": 1.725744280700888
+    },
+    {
+      "file": "iid_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.4858794000465423,
+      "max_seconds": 0.5811399999656714,
+      "max_round": 106,
+      "max_ratio": 1.1960581162938873
+    },
+    {
+      "file": "iid_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0031965000089257956,
+      "max_seconds": 0.006165300030261278,
+      "max_round": 200,
+      "max_ratio": 1.9287658417160984
+    },
+    {
+      "file": "iid_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.054394799954025075,
+      "max_seconds": 0.10261820000596344,
+      "max_round": 146,
+      "max_ratio": 1.8865443037330256
+    },
+    {
+      "file": "iid_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.610455300018657,
+      "max_seconds": 0.7324314000434242,
+      "max_round": 146,
+      "max_ratio": 1.1998116815777329
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.09914805000880733,
+      "max_seconds": 0.16496510000433773,
+      "max_round": 9,
+      "max_ratio": 1.6638259652074232
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.33668690000195056,
+      "max_seconds": 0.9285858999937773,
+      "max_round": 3,
+      "max_ratio": 2.7580101868780686
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.003428099997108802,
+      "max_seconds": 0.013356999959796667,
+      "max_round": 183,
+      "max_ratio": 3.8963274032442814
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.08159570000134408,
+      "max_seconds": 0.134425199998077,
+      "max_round": 41,
+      "max_ratio": 1.6474544613976312
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5244473000057042,
+      "max_seconds": 1.127381400030572,
+      "max_round": 3,
+      "max_ratio": 2.149656219067788
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07471440001972951,
+      "max_seconds": 0.18465939996531233,
+      "max_round": 14,
+      "max_ratio": 2.4715369449068736
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.46373179997317493,
+      "max_seconds": 0.7939651999622583,
+      "max_round": 15,
+      "max_ratio": 1.7121215323343926
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024551499518565834,
+      "max_seconds": 0.026358700008131564,
+      "max_round": 3,
+      "max_ratio": 10.7360855854035
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06101784997736104,
+      "max_seconds": 0.10965350002516061,
+      "max_round": 3,
+      "max_ratio": 1.7970724970782233
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.6010378999635577,
+      "max_seconds": 1.0670759999775328,
+      "max_round": 14,
+      "max_ratio": 1.7753888732178653
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07509104997734539,
+      "max_seconds": 0.12174790003336966,
+      "max_round": 1,
+      "max_ratio": 1.6213370311122353
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.31580310000572354,
+      "max_seconds": 0.7994626000290737,
+      "max_round": 3,
+      "max_ratio": 2.531522331524245
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00242765000439249,
+      "max_seconds": 0.005346899968571961,
+      "max_round": 6,
+      "max_ratio": 2.202500343499887
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05989934998797253,
+      "max_seconds": 0.08135150000452995,
+      "max_round": 198,
+      "max_ratio": 1.3581366078407346
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.458446400007233,
+      "max_seconds": 0.9387565999641083,
+      "max_round": 3,
+      "max_ratio": 2.047691071299278
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03283065001596697,
+      "max_seconds": 0.0622707000002265,
+      "max_round": 60,
+      "max_ratio": 1.896724553730784
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.14252199995098636,
+      "max_seconds": 0.20453899999847636,
+      "max_round": 60,
+      "max_ratio": 1.4351398385429464
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002331699972273782,
+      "max_seconds": 0.0045261000050231814,
+      "max_round": 61,
+      "max_ratio": 1.9411159492400334
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03110235001076944,
+      "max_seconds": 0.09610949998022988,
+      "max_round": 88,
+      "max_ratio": 3.0901041222592887
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2089898000122048,
+      "max_seconds": 0.31318340002326295,
+      "max_round": 60,
+      "max_ratio": 1.498558302869199
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.032369399996241555,
+      "max_seconds": 0.03793089999817312,
+      "max_round": 1,
+      "max_ratio": 1.1718135029557952
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06202170002507046,
+      "max_seconds": 0.3217002000310458,
+      "max_round": 2,
+      "max_ratio": 5.186897487508532
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023296000144910067,
+      "max_seconds": 0.0044982999679632485,
+      "max_round": 2,
+      "max_ratio": 1.9309323231379185
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.030703349999384955,
+      "max_seconds": 0.03436840005451813,
+      "max_round": 47,
+      "max_ratio": 1.1193697122693973
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.127160299976822,
+      "max_seconds": 0.39253159996587783,
+      "max_round": 2,
+      "max_ratio": 3.086903695865975
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0323416999890469,
+      "max_seconds": 0.03745020000496879,
+      "max_round": 1,
+      "max_ratio": 1.1579539732806865
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.043738999986089766,
+      "max_seconds": 0.3189624000224285,
+      "max_round": 2,
+      "max_ratio": 7.29240266407251
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023248500074259937,
+      "max_seconds": 0.004287099989596754,
+      "max_round": 2,
+      "max_ratio": 1.8440329379972804
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.031833199987886474,
+      "max_seconds": 0.03617949999170378,
+      "max_round": 105,
+      "max_ratio": 1.136533556333363
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.11068220000015572,
+      "max_seconds": 0.38802720000967383,
+      "max_round": 2,
+      "max_ratio": 3.5057778035594516
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03442969999741763,
+      "max_seconds": 0.03927419998217374,
+      "max_round": 55,
+      "max_ratio": 1.1407070054377317
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.10057939996477216,
+      "max_seconds": 0.47516589995939285,
+      "max_round": 2,
+      "max_ratio": 4.724286485362005
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023364000080619007,
+      "max_seconds": 0.004572000005282462,
+      "max_round": 2,
+      "max_ratio": 1.9568566981280933
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03334014996653423,
+      "max_seconds": 0.03985190001549199,
+      "max_round": 108,
+      "max_ratio": 1.195312560246251
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.17258579999906942,
+      "max_seconds": 0.5497598999645561,
+      "max_round": 2,
+      "max_ratio": 3.18542950791734
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03234179998980835,
+      "max_seconds": 0.0713924000156112,
+      "max_round": 87,
+      "max_ratio": 2.2074343431135124
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06833460001507774,
+      "max_seconds": 0.4755218999926001,
+      "max_round": 2,
+      "max_ratio": 6.958728080469896
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002339849976124242,
+      "max_seconds": 0.005024800018873066,
+      "max_round": 27,
+      "max_ratio": 2.147488116822007
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.030672649998450652,
+      "max_seconds": 0.05057459999807179,
+      "max_round": 29,
+      "max_ratio": 1.6488500341713688
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.13533580000512302,
+      "max_seconds": 0.5503244000137784,
+      "max_round": 2,
+      "max_ratio": 4.066362337186068
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03324459999566898,
+      "max_seconds": 0.053952000045683235,
+      "max_round": 1,
+      "max_ratio": 1.6228801084299995
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.28082400001585484,
+      "max_seconds": 0.3754926999681629,
+      "max_round": 127,
+      "max_ratio": 1.3371104319679346
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024656000023242086,
+      "max_seconds": 0.004568799980916083,
+      "max_round": 172,
+      "max_ratio": 1.8530175116033758
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03137104999041185,
+      "max_seconds": 0.048118699982296675,
+      "max_round": 172,
+      "max_ratio": 1.5338568520021971
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3494551000185311,
+      "max_seconds": 0.4709736999939196,
+      "max_round": 127,
+      "max_ratio": 1.3477373773310064
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04883370001334697,
+      "max_seconds": 0.06724249996477738,
+      "max_round": 197,
+      "max_ratio": 1.3769691820689198
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.13226189999841154,
+      "max_seconds": 0.6292912000208162,
+      "max_round": 2,
+      "max_ratio": 4.757917435243059
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002394750015810132,
+      "max_seconds": 0.004240699985530227,
+      "max_round": 2,
+      "max_ratio": 1.7708320106621316
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04961260000709444,
+      "max_seconds": 0.06744880002224818,
+      "max_round": 47,
+      "max_ratio": 1.359509479700786
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2350330000044778,
+      "max_seconds": 0.7302546999999322,
+      "max_round": 2,
+      "max_ratio": 3.1070305020402222
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.05754089998663403,
+      "max_seconds": 0.07977359998039901,
+      "max_round": 93,
+      "max_ratio": 1.3863808177996753
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.413507999968715,
+      "max_seconds": 0.4851520000374876,
+      "max_round": 168,
+      "max_ratio": 1.173259042326129
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002500350004993379,
+      "max_seconds": 0.005924500001128763,
+      "max_round": 3,
+      "max_ratio": 2.3694682701610215
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05091774999164045,
+      "max_seconds": 0.08590770000591874,
+      "max_round": 137,
+      "max_ratio": 1.6871857067530056
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5265361999627203,
+      "max_seconds": 0.628773899981752,
+      "max_round": 93,
+      "max_ratio": 1.1941703154052283
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04894124998827465,
+      "max_seconds": 0.06949589995201677,
+      "max_round": 165,
+      "max_ratio": 1.419986207313189
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.17472700000507757,
+      "max_seconds": 0.6659898000070825,
+      "max_round": 2,
+      "max_ratio": 3.8116020992046384
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024330500164069235,
+      "max_seconds": 0.004431599983945489,
+      "max_round": 13,
+      "max_ratio": 1.8214175434379196
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.052264200028730556,
+      "max_seconds": 0.07059430005028844,
+      "max_round": 185,
+      "max_ratio": 1.3507199959337655
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.282708199985791,
+      "max_seconds": 0.7682305999915116,
+      "max_round": 2,
+      "max_ratio": 2.7173976560641786
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.08135249998304062,
+      "max_seconds": 0.11444579996168613,
+      "max_round": 85,
+      "max_ratio": 1.406788973732146
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.46466190001228824,
+      "max_seconds": 0.5296027000294998,
+      "max_round": 139,
+      "max_ratio": 1.1397592529439022
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002404950006166473,
+      "max_seconds": 0.004671100003179163,
+      "max_round": 4,
+      "max_ratio": 1.9422856987472132
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06773944999440573,
+      "max_seconds": 0.09591059997910634,
+      "max_round": 85,
+      "max_ratio": 1.4158750917969827
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.6169556999811903,
+      "max_seconds": 0.7360082999803126,
+      "max_round": 85,
+      "max_ratio": 1.1929678257332772
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0734365499811247,
+      "max_seconds": 0.11650850001024082,
+      "max_round": 179,
+      "max_ratio": 1.5865192474345111
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.27333669998915866,
+      "max_seconds": 0.7635227999999188,
+      "max_round": 2,
+      "max_ratio": 2.7933416918774623
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024053999804891646,
+      "max_seconds": 0.006303599977400154,
+      "max_round": 2,
+      "max_ratio": 2.620603653666883
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06682559999171644,
+      "max_seconds": 0.0906595999840647,
+      "max_round": 58,
+      "max_ratio": 1.3566597231495514
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.4185103999916464,
+      "max_seconds": 0.9221381999668665,
+      "max_round": 2,
+      "max_ratio": 2.203381803618913
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07399959999020211,
+      "max_seconds": 0.10628670000005513,
+      "max_round": 76,
+      "max_ratio": 1.4363145208099501
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.281469100038521,
+      "max_seconds": 0.7663634000346065,
+      "max_round": 3,
+      "max_ratio": 2.7227265796839664
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00233800002024509,
+      "max_seconds": 0.005445999966468662,
+      "max_round": 6,
+      "max_ratio": 2.329341282853267
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06385159998899326,
+      "max_seconds": 0.0927081000409089,
+      "max_round": 166,
+      "max_ratio": 1.4519307277639077
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.4295219999621622,
+      "max_seconds": 0.9270344999968074,
+      "max_round": 3,
+      "max_ratio": 2.158293405409903
+    },
+    {
+      "file": "iid_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03705610000179149,
+      "max_seconds": 0.0687978999922052,
+      "max_round": 117,
+      "max_ratio": 1.8565877140033393
+    },
+    {
+      "file": "iid_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06862410000758246,
+      "max_seconds": 0.3218813999556005,
+      "max_round": 2,
+      "max_ratio": 4.690500857862398
+    },
+    {
+      "file": "iid_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0022965499956626445,
+      "max_seconds": 0.009179299988318235,
+      "max_round": 26,
+      "max_ratio": 3.9969954957020857
+    },
+    {
+      "file": "iid_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03719550001551397,
+      "max_seconds": 0.04978080000728369,
+      "max_round": 115,
+      "max_ratio": 1.338355445860937
+    },
+    {
+      "file": "iid_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.147004000027664,
+      "max_seconds": 0.40319380001164973,
+      "max_round": 2,
+      "max_ratio": 2.742740333159469
+    },
+    {
+      "file": "iid_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.037590599997201934,
+      "max_seconds": 0.052486400003544986,
+      "max_round": 92,
+      "max_ratio": 1.3962639598051594
+    },
+    {
+      "file": "iid_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.04597690002992749,
+      "max_seconds": 0.32728309999220073,
+      "max_round": 2,
+      "max_ratio": 7.118424682376674
+    },
+    {
+      "file": "iid_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002293199999257922,
+      "max_seconds": 0.005357299989555031,
+      "max_round": 151,
+      "max_ratio": 2.3361677966547396
+    },
+    {
+      "file": "iid_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03796665000845678,
+      "max_seconds": 0.06808860000455752,
+      "max_round": 151,
+      "max_ratio": 1.7933791890880892
+    },
+    {
+      "file": "iid_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1277356999926269,
+      "max_seconds": 0.4215068999910727,
+      "max_round": 2,
+      "max_ratio": 3.2998363027360615
+    },
+    {
+      "file": "iid_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03666584999882616,
+      "max_seconds": 0.052714899997226894,
+      "max_round": 41,
+      "max_ratio": 1.437711112626996
+    },
+    {
+      "file": "iid_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.14048639999236912,
+      "max_seconds": 0.1986210999893956,
+      "max_round": 80,
+      "max_ratio": 1.413810162408491
+    },
+    {
+      "file": "iid_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023510500031989068,
+      "max_seconds": 0.004399799974635243,
+      "max_round": 2,
+      "max_ratio": 1.8714191398093396
+    },
+    {
+      "file": "iid_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.03803845000220463,
+      "max_seconds": 0.048007600009441376,
+      "max_round": 120,
+      "max_ratio": 1.262080868349235
+    },
+    {
+      "file": "iid_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.21782690001418814,
+      "max_seconds": 0.2909090000321157,
+      "max_round": 192,
+      "max_ratio": 1.3355053944814317
+    },
+    {
+      "file": "iid_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04200294998008758,
+      "max_seconds": 0.061828300007618964,
+      "max_round": 153,
+      "max_ratio": 1.4719989914263172
+    },
+    {
+      "file": "iid_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.07408049999503419,
+      "max_seconds": 0.48133519996190444,
+      "max_round": 2,
+      "max_ratio": 6.49746154513225
+    },
+    {
+      "file": "iid_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00231194996740669,
+      "max_seconds": 0.0049365999875590205,
+      "max_round": 2,
+      "max_ratio": 2.135253814811743
+    },
+    {
+      "file": "iid_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04452634998597205,
+      "max_seconds": 0.05543770000804216,
+      "max_round": 193,
+      "max_ratio": 1.245053772103658
+    },
+    {
+      "file": "iid_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1650375000317581,
+      "max_seconds": 0.5746941999532282,
+      "max_round": 2,
+      "max_ratio": 3.4822037406204047
+    },
+    {
+      "file": "iid_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.047719349997350946,
+      "max_seconds": 0.06721040001139045,
+      "max_round": 40,
+      "max_ratio": 1.4084517080622747
+    },
+    {
+      "file": "iid_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.29588009999133646,
+      "max_seconds": 0.342264500039164,
+      "max_round": 187,
+      "max_ratio": 1.1567675556726718
+    },
+    {
+      "file": "iid_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.00243580000824295,
+      "max_seconds": 0.005231100018136203,
+      "max_round": 2,
+      "max_ratio": 2.1475901143089438
+    },
+    {
+      "file": "iid_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04823819999000989,
+      "max_seconds": 0.06123290001414716,
+      "max_round": 123,
+      "max_ratio": 1.269386088760121
+    },
+    {
+      "file": "iid_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.3948555000242777,
+      "max_seconds": 0.4442214000155218,
+      "max_round": 123,
+      "max_ratio": 1.125022698147066
+    },
+    {
+      "file": "iid_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0333907000022009,
+      "max_seconds": 0.053663099999539554,
+      "max_round": 1,
+      "max_ratio": 1.607127134082317
+    },
+    {
+      "file": "iid_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.10652909998316318,
+      "max_seconds": 0.48018160002538934,
+      "max_round": 2,
+      "max_ratio": 4.5075157877169865
+    },
+    {
+      "file": "iid_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002339450002182275,
+      "max_seconds": 0.0053943999810144305,
+      "max_round": 2,
+      "max_ratio": 2.305841106235419
+    },
+    {
+      "file": "iid_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04279749997658655,
+      "max_seconds": 0.06510350003372878,
+      "max_round": 141,
+      "max_ratio": 1.5211986697668156
+    },
+    {
+      "file": "iid_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.18904179998207837,
+      "max_seconds": 0.5644193000043742,
+      "max_round": 2,
+      "max_ratio": 2.985685176812126
+    },
+    {
+      "file": "iid_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.050095299986423925,
+      "max_seconds": 0.07005550002213567,
+      "max_round": 186,
+      "max_ratio": 1.3984445654806152
+    },
+    {
+      "file": "iid_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.4161850999807939,
+      "max_seconds": 0.5077428999939002,
+      "max_round": 93,
+      "max_ratio": 1.2199929791271518
+    },
+    {
+      "file": "iid_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002405100007308647,
+      "max_seconds": 0.005071999970823526,
+      "max_round": 31,
+      "max_ratio": 2.108852004245425
+    },
+    {
+      "file": "iid_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.054456549987662584,
+      "max_seconds": 0.07198130001779646,
+      "max_round": 31,
+      "max_ratio": 1.3218116100653492
+    },
+    {
+      "file": "iid_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5245263000251725,
+      "max_seconds": 0.6230770000256598,
+      "max_round": 93,
+      "max_ratio": 1.1878851451219086
+    },
+    {
+      "file": "iid_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04934629998751916,
+      "max_seconds": 0.07251519995043054,
+      "max_round": 88,
+      "max_ratio": 1.469516457541322
+    },
+    {
+      "file": "iid_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.17129309999290854,
+      "max_seconds": 0.6501567999948747,
+      "max_round": 2,
+      "max_ratio": 3.795580791180678
+    },
+    {
+      "file": "iid_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023957999947015196,
+      "max_seconds": 0.004951199982315302,
+      "max_round": 2,
+      "max_ratio": 2.0666165762021995
+    },
+    {
+      "file": "iid_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05282690000603907,
+      "max_seconds": 0.0824811999918893,
+      "max_round": 88,
+      "max_ratio": 1.5613484793251204
+    },
+    {
+      "file": "iid_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2787700999761,
+      "max_seconds": 0.7536006000009365,
+      "max_round": 2,
+      "max_ratio": 2.7033049816517103
+    },
+    {
+      "file": "iid_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.06602809997275472,
+      "max_seconds": 0.08448840002529323,
+      "max_round": 114,
+      "max_ratio": 1.2795824817033326
+    },
+    {
+      "file": "iid_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.13885179994395003,
+      "max_seconds": 0.6383049999712966,
+      "max_round": 2,
+      "max_ratio": 4.597023590828204
+    },
+    {
+      "file": "iid_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002433799993013963,
+      "max_seconds": 0.0048602999886497855,
+      "max_round": 2,
+      "max_ratio": 1.9970005763008074
+    },
+    {
+      "file": "iid_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.06013939998229034,
+      "max_seconds": 0.08597990003181621,
+      "max_round": 75,
+      "max_ratio": 1.4296767187091208
+    },
+    {
+      "file": "iid_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2705098000005819,
+      "max_seconds": 0.7594320999924093,
+      "max_round": 2,
+      "max_ratio": 2.80741067418177
+    },
+    {
+      "file": "iid_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.08117124997079372,
+      "max_seconds": 0.10435119998874143,
+      "max_round": 43,
+      "max_ratio": 1.2855684743833327
+    },
+    {
+      "file": "iid_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.3080483000376262,
+      "max_seconds": 0.829936699999962,
+      "max_round": 4,
+      "max_ratio": 2.694177179028712
+    },
+    {
+      "file": "iid_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0024178000167012215,
+      "max_seconds": 0.004452299966942519,
+      "max_round": 143,
+      "max_ratio": 1.8414674233550186
+    },
+    {
+      "file": "iid_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.07177814998431131,
+      "max_seconds": 0.10234139999374747,
+      "max_round": 128,
+      "max_ratio": 1.4258015846899987
+    },
+    {
+      "file": "iid_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.46282529999734834,
+      "max_seconds": 0.9809096999815665,
+      "max_round": 4,
+      "max_ratio": 2.119395158361452
+    },
+    {
+      "file": "iid_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.0772732500336133,
+      "max_seconds": 0.11534099996788427,
+      "max_round": 1,
+      "max_ratio": 1.492638136971226
+    },
+    {
+      "file": "iid_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.2917382000014186,
+      "max_seconds": 0.7784789999714121,
+      "max_round": 3,
+      "max_ratio": 2.668416408847476
+    },
+    {
+      "file": "iid_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023973000061232597,
+      "max_seconds": 0.004227400000672787,
+      "max_round": 180,
+      "max_ratio": 1.763400487996925
+    },
+    {
+      "file": "iid_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.07635940000182018,
+      "max_seconds": 0.09442520001903176,
+      "max_round": 115,
+      "max_ratio": 1.2365890776614399
+    },
+    {
+      "file": "iid_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.45082109997747466,
+      "max_seconds": 0.9303999000112526,
+      "max_round": 3,
+      "max_ratio": 2.063789605361728
+    },
+    {
+      "file": "iid_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.08841159997973591,
+      "max_seconds": 0.11732419999316335,
+      "max_round": 74,
+      "max_ratio": 1.327022698605774
+    },
+    {
+      "file": "iid_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.476262999989558,
+      "max_seconds": 0.5615905000013299,
+      "max_round": 138,
+      "max_ratio": 1.1791604638899993
+    },
+    {
+      "file": "iid_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002459449984598905,
+      "max_seconds": 0.004632700001820922,
+      "max_round": 177,
+      "max_ratio": 1.8836325320014335
+    },
+    {
+      "file": "iid_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.07830970000941306,
+      "max_seconds": 0.310530100017786,
+      "max_round": 94,
+      "max_ratio": 3.9654104150630047
+    },
+    {
+      "file": "iid_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.6455129999667406,
+      "max_seconds": 0.9198817000142299,
+      "max_round": 94,
+      "max_ratio": 1.4250397746623629
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.032381099998019636,
+      "max_seconds": 0.05146050004987046,
+      "max_round": 47,
+      "max_ratio": 1.5892140802201804
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.04631160001736134,
+      "max_seconds": 0.3577383999945596,
+      "max_round": 2,
+      "max_ratio": 7.724595994533772
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002299599989783019,
+      "max_seconds": 0.005049799976404756,
+      "max_round": 2,
+      "max_ratio": 2.195947120734348
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.028906549996463582,
+      "max_seconds": 0.04227919998811558,
+      "max_round": 47,
+      "max_ratio": 1.4626166039630466
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.11087810003664345,
+      "max_seconds": 0.42376459995284677,
+      "max_round": 2,
+      "max_ratio": 3.8218962970397157
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.032843499997397885,
+      "max_seconds": 0.04838970000855625,
+      "max_round": 87,
+      "max_ratio": 1.4733417574981367
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.1412148000090383,
+      "max_seconds": 0.18687799997860566,
+      "max_round": 86,
+      "max_ratio": 1.3233598742245483
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002339600003324449,
+      "max_seconds": 0.004483899974729866,
+      "max_round": 170,
+      "max_ratio": 1.9165241786452722
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.030082799989031628,
+      "max_seconds": 0.06508660002145916,
+      "max_round": 5,
+      "max_ratio": 2.163581848936606
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.20742180000524968,
+      "max_seconds": 0.27429540001321584,
+      "max_round": 86,
+      "max_ratio": 1.3224039132158416
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.032591600000159815,
+      "max_seconds": 0.04880549997324124,
+      "max_round": 47,
+      "max_ratio": 1.4974870817327752
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.06576770002720878,
+      "max_seconds": 0.3420495000318624,
+      "max_round": 2,
+      "max_ratio": 5.200873679486328
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002334650023840368,
+      "max_seconds": 0.00492189999204129,
+      "max_round": 2,
+      "max_ratio": 2.1081960644127045
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.02900474998750724,
+      "max_seconds": 0.04336760001024231,
+      "max_round": 200,
+      "max_ratio": 1.4951895820140273
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.1320739999646321,
+      "max_seconds": 0.4100515000172891,
+      "max_round": 2,
+      "max_ratio": 3.1047102391621073
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03330369998002425,
+      "max_seconds": 0.04761250002775341,
+      "max_round": 191,
+      "max_ratio": 1.4296459569450741
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.26918950001709163,
+      "max_seconds": 0.3514743999694474,
+      "max_round": 191,
+      "max_ratio": 1.305676484213282
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002379350014962256,
+      "max_seconds": 0.0043735000072047114,
+      "max_round": 95,
+      "max_ratio": 1.8381070375112882
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.029730699985520914,
+      "max_seconds": 0.04192599997622892,
+      "max_round": 48,
+      "max_ratio": 1.4101921581613355
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.33565929997712374,
+      "max_seconds": 0.4364426000392996,
+      "max_round": 191,
+      "max_ratio": 1.3002547525691812
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.032410699990577996,
+      "max_seconds": 0.04863099998328835,
+      "max_round": 39,
+      "max_ratio": 1.5004612673415167
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.09979459998430684,
+      "max_seconds": 0.4758459000149742,
+      "max_round": 2,
+      "max_ratio": 4.768252992544718
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023124500003177673,
+      "max_seconds": 0.006004400027450174,
+      "max_round": 3,
+      "max_ratio": 2.59655345050707
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.029205150000052527,
+      "max_seconds": 0.05678569996962324,
+      "max_round": 199,
+      "max_ratio": 1.9443728236123117
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.16593130002729595,
+      "max_seconds": 0.544844500022009,
+      "max_round": 2,
+      "max_ratio": 3.2835546996400393
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.03249010001309216,
+      "max_seconds": 0.048384200024884194,
+      "max_round": 152,
+      "max_ratio": 1.4891982482475392
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.070281199994497,
+      "max_seconds": 0.47423170000547543,
+      "max_round": 2,
+      "max_ratio": 6.747632368864044
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023136000090744346,
+      "max_seconds": 0.004273500002454966,
+      "max_round": 2,
+      "max_ratio": 1.8471213631109027
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.02910524999606423,
+      "max_seconds": 0.04357119998894632,
+      "max_round": 154,
+      "max_ratio": 1.4970220147512305
+    },
+    {
+      "file": "dirichlet_0.1_k16_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.13553289999254048,
+      "max_seconds": 0.5406240999582224,
+      "max_round": 2,
+      "max_ratio": 3.9888772393122074
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04994480000459589,
+      "max_seconds": 0.07081070001004264,
+      "max_round": 146,
+      "max_ratio": 1.4177792283386195
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.15994749998208135,
+      "max_seconds": 0.6715107000200078,
+      "max_round": 2,
+      "max_ratio": 4.198319449164482
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023779000039212406,
+      "max_seconds": 0.01878669997677207,
+      "max_round": 189,
+      "max_ratio": 7.9005424726826785
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.042695799987996,
+      "max_seconds": 0.07112450001295656,
+      "max_round": 125,
+      "max_ratio": 1.6658430110913331
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2600734999869019,
+      "max_seconds": 0.7671777000068687,
+      "max_round": 2,
+      "max_ratio": 2.949849561933477
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.05036194997956045,
+      "max_seconds": 0.06831190001685172,
+      "max_round": 28,
+      "max_ratio": 1.3564188845860081
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.1332587000215426,
+      "max_seconds": 0.6251976999919862,
+      "max_round": 2,
+      "max_ratio": 4.691608877250916
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023627499758731574,
+      "max_seconds": 0.004142799996770918,
+      "max_round": 149,
+      "max_ratio": 1.7533806111837715
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.042631200019968674,
+      "max_seconds": 0.05905959999654442,
+      "max_round": 105,
+      "max_ratio": 1.3853609555649524
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.2304895999841392,
+      "max_seconds": 0.7215765999862924,
+      "max_round": 2,
+      "max_ratio": 3.13062541666065
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.04852485001902096,
+      "max_seconds": 0.08224259997950867,
+      "max_round": 127,
+      "max_ratio": 1.6948553153131003
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.39557480002986267,
+      "max_seconds": 0.4849185000057332,
+      "max_round": 126,
+      "max_ratio": 1.2258579160480543
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002431000000797212,
+      "max_seconds": 0.004220000002533197,
+      "max_round": 2,
+      "max_ratio": 1.7359111481486253
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.04171504999976605,
+      "max_seconds": 0.0541539000114426,
+      "max_round": 189,
+      "max_ratio": 1.2981861465285625
+    },
+    {
+      "file": "dirichlet_0.1_k32_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.48909819999244064,
+      "max_seconds": 0.5784383999998681,
+      "max_round": 126,
+      "max_ratio": 1.1826631134786598
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07105329999467358,
+      "max_seconds": 0.09445550001692027,
+      "max_round": 130,
+      "max_ratio": 1.3293611981991125
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.2850434999563731,
+      "max_seconds": 0.8186752999899909,
+      "max_round": 3,
+      "max_ratio": 2.872106538529354
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002384349994827062,
+      "max_seconds": 0.004496099951211363,
+      "max_round": 73,
+      "max_ratio": 1.8856711309018488
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05882129998644814,
+      "max_seconds": 0.08525400003418326,
+      "max_round": 88,
+      "max_ratio": 1.4493729321491529
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_D.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.42057200003182516,
+      "max_seconds": 0.9532436999725178,
+      "max_round": 3,
+      "max_ratio": 2.2665410438649856
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07121740002185106,
+      "max_seconds": 0.0997683999594301,
+      "max_round": 10,
+      "max_ratio": 1.4008992174499344
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.44688269996549934,
+      "max_seconds": 0.5184520000475459,
+      "max_round": 194,
+      "max_ratio": 1.1601523175714161
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.002438149997033179,
+      "max_seconds": 0.004648700007237494,
+      "max_round": 87,
+      "max_ratio": 1.9066505395050284
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05846749999909662,
+      "max_seconds": 0.07882559997960925,
+      "max_round": 62,
+      "max_ratio": 1.348195150824427
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_B.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.5807758999872021,
+      "max_seconds": 0.6733629000373185,
+      "max_round": 194,
+      "max_ratio": 1.1594194939083329
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "private",
+      "median": 0.07107939998968504,
+      "max_seconds": 0.11198319995310158,
+      "max_round": 180,
+      "max_ratio": 1.5754663090762224
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "generation",
+      "median": 0.2930865000234917,
+      "max_seconds": 0.8567018999601714,
+      "max_round": 3,
+      "max_ratio": 2.923034325673494
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "exchange",
+      "median": 0.0023828500125091523,
+      "max_seconds": 0.004898100043646991,
+      "max_round": 134,
+      "max_ratio": 2.055563723244699
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "public",
+      "median": 0.05838005000259727,
+      "max_seconds": 0.08853379997890443,
+      "max_round": 134,
+      "max_ratio": 1.5165077791979562
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1003_E.json",
+      "memory": false,
+      "phase": "pipeline",
+      "median": 0.42772699997294694,
+      "max_seconds": 0.9889350000303239,
+      "max_round": 3,
+      "max_ratio": 2.3120705498901692
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.03294669999741018,
+      "max_seconds": 0.04944829997839406,
+      "max_round": 181,
+      "max_ratio": 1.5008574449726684
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.14123460004338995,
+      "max_seconds": 0.18641230004141107,
+      "max_round": 97,
+      "max_ratio": 1.3198769988667203
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002353250019950792,
+      "max_seconds": 0.0042152999667450786,
+      "max_round": 2,
+      "max_ratio": 1.7912673668364498
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.029894699982833117,
+      "max_seconds": 0.04586399998515844,
+      "max_round": 109,
+      "max_ratio": 1.5341849896970239
+    },
+    {
+      "file": "iid_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.2068536999868229,
+      "max_seconds": 0.2658176000113599,
+      "max_round": 181,
+      "max_ratio": 1.2850512223290815
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.032708049984648824,
+      "max_seconds": 0.04809439997188747,
+      "max_round": 157,
+      "max_ratio": 1.4704147753981074
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.06802760000573471,
+      "max_seconds": 0.32422650000080466,
+      "max_round": 2,
+      "max_ratio": 4.76610228750496
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.0023264000192284584,
+      "max_seconds": 0.004409699991811067,
+      "max_round": 161,
+      "max_ratio": 1.8955037634815386
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.02896925000823103,
+      "max_seconds": 0.04818209999939427,
+      "max_round": 46,
+      "max_ratio": 1.6632153053912095
+    },
+    {
+      "file": "iid_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.13460950000444427,
+      "max_seconds": 0.39024689997313544,
+      "max_round": 2,
+      "max_ratio": 2.899103703380898
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.03340625000419095,
+      "max_seconds": 0.07826300000306219,
+      "max_round": 178,
+      "max_ratio": 2.3427652009203
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.04460239998297766,
+      "max_seconds": 0.3616383000044152,
+      "max_round": 2,
+      "max_ratio": 8.108045758578756
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002295399986905977,
+      "max_seconds": 0.0045068999752402306,
+      "max_round": 2,
+      "max_ratio": 1.9634486368169695
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.02951605003909208,
+      "max_seconds": 0.043586600048001856,
+      "max_round": 172,
+      "max_ratio": 1.4767084345728596
+    },
+    {
+      "file": "iid_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.11267429997678846,
+      "max_seconds": 0.43016599997645244,
+      "max_round": 2,
+      "max_ratio": 3.8177827602662635
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.07133725000312552,
+      "max_seconds": 0.11304969998309389,
+      "max_round": 17,
+      "max_ratio": 1.58472186660042
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.2994806000497192,
+      "max_seconds": 0.8203140999539755,
+      "max_round": 3,
+      "max_ratio": 2.739122667103607
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002427099971100688,
+      "max_seconds": 0.005028299987316132,
+      "max_round": 3,
+      "max_ratio": 2.0717317157050608
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.05889405001653358,
+      "max_seconds": 0.08311609999509528,
+      "max_round": 15,
+      "max_ratio": 1.4112817843527783
+    },
+    {
+      "file": "iid_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.43605469999602064,
+      "max_seconds": 0.9723667000071146,
+      "max_round": 3,
+      "max_ratio": 2.229919090462706
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.07067009998718277,
+      "max_seconds": 0.09554609999759123,
+      "max_round": 121,
+      "max_ratio": 1.3520017661630612
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.27795829996466637,
+      "max_seconds": 0.7278077999944799,
+      "max_round": 3,
+      "max_ratio": 2.6184064303422407
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002387149987043813,
+      "max_seconds": 0.004453499976079911,
+      "max_round": 136,
+      "max_ratio": 1.8656138073649131
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.05795149996993132,
+      "max_seconds": 0.0807988999877125,
+      "max_round": 64,
+      "max_ratio": 1.3942503650403488
+    },
+    {
+      "file": "iid_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.41289929999038577,
+      "max_seconds": 0.8590907999896444,
+      "max_round": 3,
+      "max_ratio": 2.080630313516269
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.0702791000076104,
+      "max_seconds": 0.10582789999898523,
+      "max_round": 57,
+      "max_ratio": 1.5058232104213816
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.4548812999855727,
+      "max_seconds": 0.5269039999693632,
+      "max_round": 31,
+      "max_ratio": 1.158332954082911
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.0024537499994039536,
+      "max_seconds": 0.0048880999675020576,
+      "max_round": 181,
+      "max_ratio": 1.9920937213201988
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.057531400001607835,
+      "max_seconds": 0.09081629995489493,
+      "max_round": 106,
+      "max_ratio": 1.5785518856199723
+    },
+    {
+      "file": "iid_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.5865904999664053,
+      "max_seconds": 0.6857311999774538,
+      "max_round": 106,
+      "max_ratio": 1.1690117722955389
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.03199464999488555,
+      "max_seconds": 0.05732230003923178,
+      "max_round": 129,
+      "max_ratio": 1.791621413217364
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.04379899997729808,
+      "max_seconds": 0.32016880001174286,
+      "max_round": 2,
+      "max_ratio": 7.309956852386879
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002315999969141558,
+      "max_seconds": 0.00439300003927201,
+      "max_round": 5,
+      "max_ratio": 1.8968048781539093
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.028121499984990805,
+      "max_seconds": 0.04362919996492565,
+      "max_round": 8,
+      "max_ratio": 1.5514535137959111
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_D.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.10902979999082163,
+      "max_seconds": 0.3849379000021145,
+      "max_round": 2,
+      "max_ratio": 3.530575127483673
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.032164800009923056,
+      "max_seconds": 0.05701489996863529,
+      "max_round": 109,
+      "max_ratio": 1.7725868014427515
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.14210269995965064,
+      "max_seconds": 0.18113979999907315,
+      "max_round": 174,
+      "max_ratio": 1.2747104738369286
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002362850005738437,
+      "max_seconds": 0.004206400015391409,
+      "max_round": 184,
+      "max_ratio": 1.7802230379311896
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.02800474999821745,
+      "max_seconds": 0.04140349995577708,
+      "max_round": 106,
+      "max_ratio": 1.4784456193471638
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_B.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.20536879997234792,
+      "max_seconds": 0.2630085999844596,
+      "max_round": 107,
+      "max_ratio": 1.2806648333138853
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.03193085003294982,
+      "max_seconds": 0.04969469999196008,
+      "max_round": 169,
+      "max_ratio": 1.5563224887743212
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.06250400003045797,
+      "max_seconds": 0.3238843000144698,
+      "max_round": 2,
+      "max_ratio": 5.181817161407944
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.0023340499901678413,
+      "max_seconds": 0.004143099999055266,
+      "max_round": 30,
+      "max_ratio": 1.7750690929963058
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.028150100028142333,
+      "max_seconds": 0.04700379999121651,
+      "max_round": 162,
+      "max_ratio": 1.6697560557236273
+    },
+    {
+      "file": "dirichlet_0.1_k10_seed1002_E.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.12756410002475604,
+      "max_seconds": 0.3896303999936208,
+      "max_round": 2,
+      "max_ratio": 3.054389126078624
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.07041364998440258,
+      "max_seconds": 0.09654679999221116,
+      "max_round": 69,
+      "max_ratio": 1.3711375566186013
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.4553419000003487,
+      "max_seconds": 0.5425675000296906,
+      "max_round": 19,
+      "max_ratio": 1.1915606712873887
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002453249995596707,
+      "max_seconds": 0.004868199990596622,
+      "max_round": 18,
+      "max_ratio": 1.9843880563882461
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.05791935001616366,
+      "max_seconds": 0.08416859997669235,
+      "max_round": 167,
+      "max_ratio": 1.4532034622833865
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_B.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.5888953999965452,
+      "max_seconds": 0.6943800000008196,
+      "max_round": 19,
+      "max_ratio": 1.1791228119711807
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.06987874998594634,
+      "max_seconds": 0.09908939996967092,
+      "max_round": 77,
+      "max_ratio": 1.418019068595235
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.272576300019864,
+      "max_seconds": 0.7515969999949448,
+      "max_round": 3,
+      "max_ratio": 2.7573820612436672
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.0023314999707508832,
+      "max_seconds": 0.004698699980508536,
+      "max_round": 13,
+      "max_ratio": 2.0153120478038318
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.05760810000356287,
+      "max_seconds": 0.08360179996816441,
+      "max_round": 13,
+      "max_ratio": 1.451216060987846
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_E.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.4053501000162214,
+      "max_seconds": 0.8854610999696888,
+      "max_round": 3,
+      "max_ratio": 2.1844353805124364
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "private",
+      "median": 0.07011814997531474,
+      "max_seconds": 0.09828269999707118,
+      "max_round": 119,
+      "max_ratio": 1.4016727485204878
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "generation",
+      "median": 0.28033889998914674,
+      "max_seconds": 0.7536586000351235,
+      "max_round": 3,
+      "max_ratio": 2.6883839526526687
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "exchange",
+      "median": 0.002328149974346161,
+      "max_seconds": 0.00580500002251938,
+      "max_round": 2,
+      "max_ratio": 2.4933960812166576
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "public",
+      "median": 0.05797029996756464,
+      "max_seconds": 0.08115139999426901,
+      "max_round": 153,
+      "max_ratio": 1.3998789041918809
+    },
+    {
+      "file": "dirichlet_0.1_k64_seed1002_D.json",
+      "memory": true,
+      "phase": "pipeline",
+      "median": 0.4142583000357263,
+      "max_seconds": 0.8917393999872729,
+      "max_round": 3,
+      "max_ratio": 2.152616857430178
+    }
+  ],
+  "power_exits": [
+    {
+      "time": "2026-11-02T15:18:42.6565545+08:00",
+      "scenario": "266",
+      "sleep_entered": "false",
+      "sleep_duration_us": "0",
+      "session_duration_us": "256905669"
+    },
+    {
+      "time": "2026-11-02T15:11:03.9509376+08:00",
+      "scenario": "263",
+      "sleep_entered": "false",
+      "sleep_duration_us": "0",
+      "session_duration_us": "36833891"
+    },
+    {
+      "time": "2026-11-02T13:52:04.6286867+08:00",
+      "scenario": "260",
+      "sleep_entered": "false",
+      "sleep_duration_us": "0",
+      "session_duration_us": "43467333"
+    }
+  ],
+  "actual_window_events": [
+    {
+      "Time": "2026-11-02T15:27:46.9827110+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 506,
+      "Data": {
+        "ScenarioInstanceIdV2": "269",
+        "ExternalMonitorConnectedState": "false",
+        "BatteryRemainingCapacityOnEnter": "94428",
+        "BatteryFullChargeCapacityOnEnter": "94428",
+        "LidOpenState": "true",
+        "ScenarioInstanceId": "13",
+        "BootId": "170",
+        "Reason": "12"
+      }
+    },
+    {
+      "Time": "2026-11-02T15:18:42.6565545+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 507,
+      "Data": {
+        "ExternalMonitorConnectedState": "false",
+        "ScreenOffFullEnergyCapacityAtEnd": "94428",
+        "ScreenOffHwDripsResidencyInUs": "0",
+        "ModernSleepEnabledActionsBitmask": "7",
+        "FirstDripsEntryInUs": "0",
+        "Reason": "31",
+        "ResiliencyDripsTimeInUs": "0",
+        "ScreenOffEnergyCapacityAtEnd": "94428",
+        "ScreenOffSwDripsResidencyInUs": "0",
+        "DwmSyncFlushTime": "0",
+        "ExitLatencyInUs": "934707",
+        "AoAcCompliantNic": "true",
+        "SleepDurationInUs": "0",
+        "PowerStateAc": "true",
+        "NonDripsTimeActivatedInUs": "0",
+        "InputSuppressionActionCount": "0",
+        "PowerSchemeInfo": "4",
+        "HwDripsResidencyInUs": "0",
+        "SleepHwDripsResidencyInUs": "0",
+        "ScreenOffDurationInUs": "256905467",
+        "IsCsSessionInProgressOnExit": "false",
+        "DisconnectedStandby": "false",
+        "NonAttributedCpuInUs": "0",
+        "EnergyDrain": "0",
+        "ActiveResidencyInUs": "256905669",
+        "ScenarioInstanceIdV2": "266",
+        "SleepFullEnergyCapacityAtStart": "0",
+        "ScreenOffFullEnergyCapacityAtStart": "94428",
+        "BatteryRemainingCapacityOnExit": "94428",
+        "NonActivatedCpuInUs": "0",
+        "DripsTransitions": "0",
+        "SleepFullEnergyCapacityAtEnd": "0",
+        "PowerButtonSuppressionActionCount": "0",
+        "BatteryFullChargeCapacityOnExit": "94428",
+        "FullChargeCapacityRatio": "95",
+        "NonResiliencyTimeInUs": "256905669",
+        "DripsResidencyInUs": "0",
+        "ModernSleepAppliedActionsBitmask": "0",
+        "SleepEnergyCapacityAtStart": "0",
+        "ResiliencyHwDripsTimeInUs": "0",
+        "AudioPlaying": "false",
+        "BootId": "170",
+        "DurationInUs": "256905669",
+        "SleepEntered": "false",
+        "ScenarioInstanceId": "12",
+        "SleepSwDripsResidencyInUs": "0",
+        "ScreenOffEnergyCapacityAtStart": "94428",
+        "MonitorPowerOnTime": "932968",
+        "GdiOnTime": "0",
+        "AudioPlaybackInUs": "0",
+        "LidOpenState": "true",
+        "SleepEnergyCapacityAtEnd": "0"
+      }
+    },
+    {
+      "Time": "2026-11-02T15:14:25.7523623+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 506,
+      "Data": {
+        "ScenarioInstanceIdV2": "266",
+        "ExternalMonitorConnectedState": "false",
+        "BatteryRemainingCapacityOnEnter": "94428",
+        "BatteryFullChargeCapacityOnEnter": "94428",
+        "LidOpenState": "true",
+        "ScenarioInstanceId": "10",
+        "BootId": "170",
+        "Reason": "12"
+      }
+    },
+    {
+      "Time": "2026-11-02T15:11:03.9509376+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 507,
+      "Data": {
+        "ExternalMonitorConnectedState": "false",
+        "ScreenOffFullEnergyCapacityAtEnd": "94428",
+        "ScreenOffHwDripsResidencyInUs": "0",
+        "ModernSleepEnabledActionsBitmask": "7",
+        "FirstDripsEntryInUs": "0",
+        "Reason": "31",
+        "ResiliencyDripsTimeInUs": "0",
+        "ScreenOffEnergyCapacityAtEnd": "94428",
+        "ScreenOffSwDripsResidencyInUs": "0",
+        "DwmSyncFlushTime": "0",
+        "ExitLatencyInUs": "919912",
+        "AoAcCompliantNic": "true",
+        "SleepDurationInUs": "0",
+        "PowerStateAc": "true",
+        "NonDripsTimeActivatedInUs": "0",
+        "InputSuppressionActionCount": "0",
+        "PowerSchemeInfo": "4",
+        "HwDripsResidencyInUs": "0",
+        "SleepHwDripsResidencyInUs": "0",
+        "ScreenOffDurationInUs": "36833589",
+        "IsCsSessionInProgressOnExit": "false",
+        "DisconnectedStandby": "false",
+        "NonAttributedCpuInUs": "0",
+        "EnergyDrain": "0",
+        "ActiveResidencyInUs": "36833891",
+        "ScenarioInstanceIdV2": "263",
+        "SleepFullEnergyCapacityAtStart": "0",
+        "ScreenOffFullEnergyCapacityAtStart": "94428",
+        "BatteryRemainingCapacityOnExit": "94428",
+        "NonActivatedCpuInUs": "0",
+        "DripsTransitions": "0",
+        "SleepFullEnergyCapacityAtEnd": "0",
+        "PowerButtonSuppressionActionCount": "0",
+        "BatteryFullChargeCapacityOnExit": "94428",
+        "FullChargeCapacityRatio": "95",
+        "NonResiliencyTimeInUs": "36833891",
+        "DripsResidencyInUs": "0",
+        "ModernSleepAppliedActionsBitmask": "0",
+        "SleepEnergyCapacityAtStart": "0",
+        "ResiliencyHwDripsTimeInUs": "0",
+        "AudioPlaying": "false",
+        "BootId": "170",
+        "DurationInUs": "36833891",
+        "SleepEntered": "false",
+        "ScenarioInstanceId": "9",
+        "SleepSwDripsResidencyInUs": "0",
+        "ScreenOffEnergyCapacityAtStart": "94428",
+        "MonitorPowerOnTime": "918426",
+        "GdiOnTime": "0",
+        "AudioPlaybackInUs": "0",
+        "LidOpenState": "true",
+        "SleepEnergyCapacityAtEnd": "0"
+      }
+    },
+    {
+      "Time": "2026-11-02T15:10:27.1184080+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 506,
+      "Data": {
+        "ScenarioInstanceIdV2": "263",
+        "ExternalMonitorConnectedState": "false",
+        "BatteryRemainingCapacityOnEnter": "94428",
+        "BatteryFullChargeCapacityOnEnter": "94428",
+        "LidOpenState": "true",
+        "ScenarioInstanceId": "7",
+        "BootId": "170",
+        "Reason": "12"
+      }
+    },
+    {
+      "Time": "2026-11-02T13:52:04.6286867+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 507,
+      "Data": {
+        "ExternalMonitorConnectedState": "false",
+        "ScreenOffFullEnergyCapacityAtEnd": "94428",
+        "ScreenOffHwDripsResidencyInUs": "0",
+        "ModernSleepEnabledActionsBitmask": "7",
+        "FirstDripsEntryInUs": "0",
+        "Reason": "31",
+        "ResiliencyDripsTimeInUs": "0",
+        "ScreenOffEnergyCapacityAtEnd": "94428",
+        "ScreenOffSwDripsResidencyInUs": "0",
+        "DwmSyncFlushTime": "0",
+        "ExitLatencyInUs": "933175",
+        "AoAcCompliantNic": "true",
+        "SleepDurationInUs": "0",
+        "PowerStateAc": "true",
+        "NonDripsTimeActivatedInUs": "0",
+        "InputSuppressionActionCount": "0",
+        "PowerSchemeInfo": "4",
+        "HwDripsResidencyInUs": "0",
+        "SleepHwDripsResidencyInUs": "0",
+        "ScreenOffDurationInUs": "43467155",
+        "IsCsSessionInProgressOnExit": "false",
+        "DisconnectedStandby": "false",
+        "NonAttributedCpuInUs": "0",
+        "EnergyDrain": "0",
+        "ActiveResidencyInUs": "43467333",
+        "ScenarioInstanceIdV2": "260",
+        "SleepFullEnergyCapacityAtStart": "0",
+        "ScreenOffFullEnergyCapacityAtStart": "94428",
+        "BatteryRemainingCapacityOnExit": "94428",
+        "NonActivatedCpuInUs": "0",
+        "DripsTransitions": "0",
+        "SleepFullEnergyCapacityAtEnd": "0",
+        "PowerButtonSuppressionActionCount": "0",
+        "BatteryFullChargeCapacityOnExit": "94428",
+        "FullChargeCapacityRatio": "95",
+        "NonResiliencyTimeInUs": "43467333",
+        "DripsResidencyInUs": "0",
+        "ModernSleepAppliedActionsBitmask": "0",
+        "SleepEnergyCapacityAtStart": "0",
+        "ResiliencyHwDripsTimeInUs": "0",
+        "AudioPlaying": "false",
+        "BootId": "170",
+        "DurationInUs": "43467333",
+        "SleepEntered": "false",
+        "ScenarioInstanceId": "6",
+        "SleepSwDripsResidencyInUs": "0",
+        "ScreenOffEnergyCapacityAtStart": "94428",
+        "MonitorPowerOnTime": "931866",
+        "GdiOnTime": "0",
+        "AudioPlaybackInUs": "0",
+        "LidOpenState": "true",
+        "SleepEnergyCapacityAtEnd": "0"
+      }
+    },
+    {
+      "Time": "2026-11-02T13:51:21.1619578+08:00",
+      "Provider": "Microsoft-Windows-Kernel-Power",
+      "Id": 506,
+      "Data": {
+        "ScenarioInstanceIdV2": "260",
+        "ExternalMonitorConnectedState": "false",
+        "BatteryRemainingCapacityOnEnter": "94428",
+        "BatteryFullChargeCapacityOnEnter": "94428",
+        "LidOpenState": "true",
+        "ScenarioInstanceId": "4",
+        "BootId": "170",
+        "Reason": "12"
+      }
+    }
+  ],
+  "excluded_rounds": [],
+  "excluded_runs": [],
+  "raw_results_changed": false,
+  "note": "Method-stage environment.started_utc is after preparation. Real preparation sleep found by extending analysis to small-cache timestamps. No numerical sleep subtraction is defensible.",
+  "affected_preparation": {
+    "seed": 1002,
+    "partition": "dirichlet_0.1",
+    "classes": 64,
+    "client": 3,
+    "kmeans_client_seconds": 675.0166935000452,
+    "whole_additional_kmeans_seconds": 686.1858787000529,
+    "whole_additional_preparation_seconds": 686.6888297999976,
+    "event": {
+      "Time": "2026-11-02T13:18:17.7538493+08:00",
+      "Data": {
+        "WakeTimerContextLength": "0",
+        "Attributes": "1979727889",
+        "WakeSourceTextLength": "0",
+        "WakeTimerOwner": null,
+        "WakeTime": "2026-11-02T05:18:16.7707900Z",
+        "SleepTime": "2026-11-02T05:06:58.0964553Z",
+        "DriverInitDuration": "1179",
+        "BiosInitDuration": "9499",
+        "CheckpointDuration": "468",
+        "NoMultiStageResumeReason": "0",
+        "SleepDuration": "6701",
+        "EffectiveState": "5",
+        "HiberPagesWritten": "1788260",
+        "WakeTimerContext": null,
+        "TargetState": "5",
+        "WakeSourceType": "0",
+        "WakeSourceText": null,
+        "WakeTimerOwnerLength": "0",
+        "WakeDuration": "2269",
+        "HiberWriteDuration": "3933",
+        "HiberReadDuration": "3608"
+      }
+    },
+    "action": "Mark contaminated shared preparation and totals including it unavailable for all B/E/D; retain all method-stage times. No counterfactual time imputation."
+  }
+}

@@ -23,3 +23,8 @@ for archive in Path("archives").glob("*_raw_records*.zip"):
 ## STL-10重复计时（2026-11-02）
 
 stl10_repeat_seed1001/1002/1003_raw_records_20261102.zip各18条，共54条。根目录解压恢复原路径；原封签未改。[归档清单](stl10_repeat_raw_20261102.manifest.json) · [恢复与结果说明](../experiments/stl10_repeat_confirmation/results_full/ARCHIVED_RAW.md)。
+
+
+## K输出簇数实验（2026-11-02）
+
+k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根目录解压恢复；seed1002归档含全部内存回放。成员及摘要见[k_scaling清单](k_scaling_raw_20261102.manifest.json)。原结果封签不改，休眠处理版另存，详见[恢复与结果说明](../experiments/k_scaling/results_full/ARCHIVED_RAW.md)。

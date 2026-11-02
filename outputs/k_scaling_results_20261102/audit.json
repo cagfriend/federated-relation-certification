@@ -1,0 +1,402 @@
+{
+  "result": "PASS",
+  "runs": 72,
+  "memory_runs": 12,
+  "triples": 24,
+  "original_files": 93,
+  "old_K10_anchors_verified": 6,
+  "relations": 707788800,
+  "candidates": 943718400,
+  "mismatches": 0,
+  "quality": [
+    {
+      "partition": "iid",
+      "seed": 1001,
+      "classes": 10,
+      "nmi": 0.10861816589497082,
+      "ari": 0.053935338011753174,
+      "acc": 0.20493750000000002,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.270625
+    },
+    {
+      "partition": "iid",
+      "seed": 1001,
+      "classes": 16,
+      "nmi": 0.10302238244494621,
+      "ari": 0.0485672013267447,
+      "acc": 0.19595833333333332,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.2435
+    },
+    {
+      "partition": "iid",
+      "seed": 1001,
+      "classes": 32,
+      "nmi": 0.10464542914629582,
+      "ari": 0.04856580044466579,
+      "acc": 0.192875,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.316875
+    },
+    {
+      "partition": "iid",
+      "seed": 1001,
+      "classes": 64,
+      "nmi": 0.10080724848165738,
+      "ari": 0.04906347876351801,
+      "acc": 0.1940625,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.355625
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1001,
+      "classes": 10,
+      "nmi": 0.08909247772548101,
+      "ari": 0.04176548632190321,
+      "acc": 0.19325,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.30475
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1001,
+      "classes": 16,
+      "nmi": 0.09398580726423102,
+      "ari": 0.046032151128387565,
+      "acc": 0.18766666666666668,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.232625
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1001,
+      "classes": 32,
+      "nmi": 0.08652448881810097,
+      "ari": 0.03749682779685063,
+      "acc": 0.18345833333333336,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.3985
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1001,
+      "classes": 64,
+      "nmi": 0.06773824189871856,
+      "ari": 0.029383354790949542,
+      "acc": 0.1714375,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.521125
+    },
+    {
+      "partition": "iid",
+      "seed": 1002,
+      "classes": 10,
+      "nmi": 0.10758936257264495,
+      "ari": 0.05393197155107086,
+      "acc": 0.20758333333333331,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.198125
+    },
+    {
+      "partition": "iid",
+      "seed": 1002,
+      "classes": 16,
+      "nmi": 0.10978096724796234,
+      "ari": 0.05367379574048383,
+      "acc": 0.19535416666666663,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.20025
+    },
+    {
+      "partition": "iid",
+      "seed": 1002,
+      "classes": 32,
+      "nmi": 0.1062773556116743,
+      "ari": 0.049282781783123696,
+      "acc": 0.19595833333333332,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.29525
+    },
+    {
+      "partition": "iid",
+      "seed": 1002,
+      "classes": 64,
+      "nmi": 0.10068266461704554,
+      "ari": 0.05006995914262135,
+      "acc": 0.19881249999999998,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.360375
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1002,
+      "classes": 10,
+      "nmi": 0.08694645360064014,
+      "ari": 0.03883600421788267,
+      "acc": 0.193875,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.41275
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1002,
+      "classes": 16,
+      "nmi": 0.09055107918133067,
+      "ari": 0.040209519854703245,
+      "acc": 0.18852083333333333,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.293875
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1002,
+      "classes": 32,
+      "nmi": 0.09018513081992814,
+      "ari": 0.041498066636681895,
+      "acc": 0.18862500000000001,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.283875
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1002,
+      "classes": 64,
+      "nmi": 0.0,
+      "ari": 0.0,
+      "acc": 0.09999999999999999,
+      "single": 6,
+      "dominant99": 6,
+      "max_client_largest": 1.0
+    },
+    {
+      "partition": "iid",
+      "seed": 1003,
+      "classes": 10,
+      "nmi": 0.10401972345153804,
+      "ari": 0.04998405405858105,
+      "acc": 0.20120833333333332,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.202375
+    },
+    {
+      "partition": "iid",
+      "seed": 1003,
+      "classes": 16,
+      "nmi": 0.10587680947935958,
+      "ari": 0.051596564213287066,
+      "acc": 0.19910416666666667,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.201375
+    },
+    {
+      "partition": "iid",
+      "seed": 1003,
+      "classes": 32,
+      "nmi": 0.10025190113356734,
+      "ari": 0.05143040552616513,
+      "acc": 0.1971875,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.2575
+    },
+    {
+      "partition": "iid",
+      "seed": 1003,
+      "classes": 64,
+      "nmi": 0.09250980961118781,
+      "ari": 0.052844675393125574,
+      "acc": 0.19979166666666667,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.3805
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1003,
+      "classes": 10,
+      "nmi": 0.09480812283057716,
+      "ari": 0.04479453229945929,
+      "acc": 0.19633333333333333,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.32725
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1003,
+      "classes": 16,
+      "nmi": 0.09397496573227411,
+      "ari": 0.04273472858770061,
+      "acc": 0.18760416666666666,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.35125
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1003,
+      "classes": 32,
+      "nmi": 0.08603540430406709,
+      "ari": 0.041428694463921924,
+      "acc": 0.190125,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.40575
+    },
+    {
+      "partition": "dirichlet_0.1",
+      "seed": 1003,
+      "classes": 64,
+      "nmi": 0.07598745057352377,
+      "ari": 0.033273933623027864,
+      "acc": 0.17158333333333334,
+      "single": 0,
+      "dominant99": 0,
+      "max_client_largest": 0.559125
+    }
+  ],
+  "memory": [
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 10,
+      "method": "B",
+      "block": 0,
+      "position": 0,
+      "peak_bytes": 1251282944,
+      "persistent_bytes": 770528
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 10,
+      "method": "E",
+      "block": 0,
+      "position": 1,
+      "peak_bytes": 1443803136,
+      "persistent_bytes": 27347744
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 10,
+      "method": "D",
+      "block": 0,
+      "position": 2,
+      "peak_bytes": 1443803136,
+      "persistent_bytes": 27347744
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 64,
+      "method": "E",
+      "block": 1,
+      "position": 0,
+      "peak_bytes": 1581133824,
+      "persistent_bytes": 161776640
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 64,
+      "method": "D",
+      "block": 1,
+      "position": 1,
+      "peak_bytes": 1552621568,
+      "persistent_bytes": 161776640
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "classes": 64,
+      "method": "B",
+      "block": 1,
+      "position": 2,
+      "peak_bytes": 1251336192,
+      "persistent_bytes": 4090880
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 10,
+      "method": "D",
+      "block": 2,
+      "position": 0,
+      "peak_bytes": 1449103360,
+      "persistent_bytes": 27347744
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 10,
+      "method": "B",
+      "block": 2,
+      "position": 1,
+      "peak_bytes": 1256824832,
+      "persistent_bytes": 770528
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 10,
+      "method": "E",
+      "block": 2,
+      "position": 2,
+      "peak_bytes": 1448972288,
+      "persistent_bytes": 27347744
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 64,
+      "method": "B",
+      "block": 3,
+      "position": 0,
+      "peak_bytes": 1256828928,
+      "persistent_bytes": 4090880
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 64,
+      "method": "E",
+      "block": 3,
+      "position": 1,
+      "peak_bytes": 1602740224,
+      "persistent_bytes": 161776640
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "classes": 64,
+      "method": "D",
+      "block": 3,
+      "position": 2,
+      "peak_bytes": 1600274432,
+      "persistent_bytes": 161776640
+    }
+  ],
+  "sleep_adjustment": "Preparation-only cost NA for seed1002/dirichlet_0.1/K64; no training timing exclusions.",
+  "statistical_limit": "One run per case; K64 cases include a severe collapse. No pure-K complexity causality, fresh-seed, or universal speed claim.",
+  "independently_replayed_all_training": false
+}

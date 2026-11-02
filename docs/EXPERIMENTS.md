@@ -398,3 +398,16 @@ seed1002强非IID早期有单客户端坍缩（1步r1/2/5，r10仍≥99%；2步r
 IID seed1001的B/D/E重复相对极差48.18%/37.70%/29.79%，绝对计时有较大漂移；没有中途频率、温度或电源遥测，不确定原因。全部原计时保留，不与探索批次混合，不自动剔除波动。机械通过不代表已排除机器噪声、统计显著、普适加速或新seed泛化。
 
 同步实际执行的新包校验/报表修复：重复身份、同方法专属逐轮计数、逐重复比值范围；训练与阈值未改。[报告](../experiments/stl10_repeat_confirmation/results_full/report.md) · [主审核与独立复审](../outputs/stl10_repeat_results_20261102/REVIEW.md) · [归档](../experiments/stl10_repeat_confirmation/results_full/ARCHIVED_RAW.md)
+
+
+## 2026-11-02：K输出簇数的计算与内存边界
+
+72方法、12独立无oracle/评估内存回放，24三元组一致，93原清单文件、6旧K10锚点、6报表重生成通过；关系707788800/候选943718400次oracle记录零错误。STL真类10不变，只改变输出K10/16/32/64和私有KMeans目标，AE特征固定。
+
+D/B全24配置更快；D/E K16/32较有利，K64 IID中位省3.73%（2/3胜）、强非IID慢1.47%（1/3胜）。K64非IIDseed1002最终6/6单簇、ACC10%、NMI/ARI0，三方法一致，作为边界而非成功质量证据，原计时不删。K10/16/32末轮均无单簇。
+
+K10/64的D/E持久数组27.35/161.78MB，K64较B额外150.38MiB；独立进程峰值仅一个seed两端点，包含加载/解释器，不外推。
+
+准备期真实休眠污染seed1002/非IID/K64的675秒单客户端KMeans；共享新增准备成本及含准备比值共同标NA，无方法轮次剔除。原封签与全部数据保留，处理版另存；不硬减墙钟或估补正常时间，不用休眠解释K64质量/收益失败。数据和完整代码一并发布，新K小缓存元数据快照用于追溯，但不上传特征或伪标签数组。
+
+[审核](../outputs/k_scaling_results_20261102/REVIEW.md) · [质量逐配置](../outputs/k_scaling_results_20261102/quality.csv) · [处理版报告](../outputs/k_scaling_sleep_review_20261102/sleep_adjusted/report.md) · [恢复说明](../experiments/k_scaling/results_full/ARCHIVED_RAW.md)
