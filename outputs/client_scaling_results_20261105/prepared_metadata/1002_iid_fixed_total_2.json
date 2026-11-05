@@ -1,0 +1,131 @@
+{
+  "dataset": "STL-10",
+  "seed": 1002,
+  "partition": "iid",
+  "config": {
+    "dimensions": [
+      512,
+      2048
+    ],
+    "public_pool": 16384,
+    "classes": 10,
+    "train_limit": 21384,
+    "test_limit": 8000,
+    "pretrain_epochs": 5,
+    "pretrain_batch": 256,
+    "prepare_threads": 4,
+    "feature_batch": 256,
+    "pretrain_lr": 0.001,
+    "noise_std": 0.15,
+    "prepare_device": "cuda",
+    "kmeans_restarts": 10,
+    "kmeans_max_iter": 100,
+    "threads": 1
+  },
+  "preparation_identity": {
+    "code": {
+      "data.py": "74532195b1178aed918166ad2d7b3422da38ff19d74d79b0b748111b2b719d4e"
+    },
+    "partition_code": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "torch": "2.7.1+cu118",
+      "scikit-learn": "1.5.1",
+      "scipy": "1.13.1",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "clients": [
+    {
+      "client": 0,
+      "width": 512,
+      "private_samples": 2500,
+      "pretrain_losses": [
+        0.0648913754582405,
+        0.05604276910424232,
+        0.050614471513032916,
+        0.046659339064359664,
+        0.04337872344851494
+      ],
+      "pretrain_seconds": 0.16685009992215782,
+      "pseudo_histogram": [
+        260,
+        243,
+        230,
+        183,
+        252,
+        227,
+        268,
+        226,
+        305,
+        306
+      ],
+      "encoder_frozen": true
+    },
+    {
+      "client": 1,
+      "width": 2048,
+      "private_samples": 2500,
+      "pretrain_losses": [
+        0.06332261459231377,
+        0.0504386750638485,
+        0.0448970335662365,
+        0.04086802581548691,
+        0.03796880635023117
+      ],
+      "pretrain_seconds": 0.4025568999350071,
+      "pseudo_histogram": [
+        238,
+        203,
+        250,
+        447,
+        248,
+        249,
+        151,
+        229,
+        225,
+        260
+      ],
+      "encoder_frozen": true
+    }
+  ],
+  "source_md5": {
+    "tarball": "91f7769df0f17e558f3565bffb0c7dfb",
+    "files": {
+      "train_X.bin": "918c2871b30a85fa023e0c44e0bee87f",
+      "train_y.bin": "5a34089d4802c674881badbb80307741",
+      "unlabeled_X.bin": "5242ba1fed5e4be9e1e742405eb56ca4",
+      "test_X.bin": "7f263ba9f9e0b06b93213547f721ac82",
+      "test_y.bin": "36f9794fa4beb8a2c72628de14fa638e"
+    }
+  },
+  "source_sha256": {
+    "test_X.bin": "5763f4f98a73b2c85eba7ba4a846299df17a1f602287ab2bf94be020f931ac20",
+    "test_y.bin": "fb12a5783a605f75bc6f5b9f2724596ce2eb5dd4dd82a14f6863c2d66e52560e",
+    "train_X.bin": "fd6ff6b82df7f3bdb4c3a506888012a65a9a1e7fdf5efc0078570737bfa39d82",
+    "train_y.bin": "0cd44363fdaae70fdc79bc8a500aef0436bf2476db3292726814afed629d40dc",
+    "unlabeled_X.bin": "c6c4ac235fdf2448e93a61ff9f98c94a6700d823c997dd0e6e7b01d8d2adca71"
+  },
+  "source_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\data\\stl10_binary",
+  "preparation_wall_seconds_excluding_download": 24.4715422000736,
+  "download_seconds_excluded": 0.0,
+  "files": {
+    "client_0_autoencoder.pt": "841b1ecddd7e4ec56f587bb1f6a17eb18a93afa051464a0920ec89d1552dbf65",
+    "client_0_centers.npy": "80b9af2309a927d5e49577926bfc9498879e7b11b8c52de4886adc9e6d0f9b2e",
+    "client_0_private.npy": "f1f61e541353eb860335477e26400f7a3e431f2ea40bafe89fa1ef144fe918d0",
+    "client_0_private_ids.npy": "59dbbbe6d54a495dd59811b26e67b030a569e683c7b7a17457db060c29893ed7",
+    "client_0_pseudo.npy": "e3312be7600c99ff1a064eb08b3e00da4f9404682bdeec6bee916050e18d3363",
+    "client_0_public.npy": "ac4635aa15f34d699f3cf6ee728483d249302c27e2aab45b2589155dc79e8a5d",
+    "client_0_test.npy": "54a444bd2b850d4e046629c85e2d488d2e3047a356437f447859e50979c8acb9",
+    "client_1_autoencoder.pt": "9dd12210f2af51f2d7b506882ff31fe37ec9d4a4c968c384507d87d589e6bbfd",
+    "client_1_centers.npy": "255b732fda59f15fa0be6658001fe87cf206402d078fa675841089689906784f",
+    "client_1_private.npy": "fd60db25b5fe31c5bbe5b487cf17f32ec62c059c6bff34ac29982ed905cc8726",
+    "client_1_private_ids.npy": "cf75ba0bb88e9b1eb7f69ba73b408edaaa77c80bb4c8c721af5ebe1c1928a40e",
+    "client_1_pseudo.npy": "6df5fa73b410562482ae0c80fb3c489a3ebadfd273b1f14cf351db4268f86f9c",
+    "client_1_public.npy": "6b782953d1fbabed00b2c9fa67bbb45eb6d7e8ce7f6c573887a3b4a550cfd2b6",
+    "client_1_test.npy": "e040bd30b5ba098ec2bc461a0289e7ae666b1f7e43963f7b4c220bbcd0ae27a8",
+    "partition.json": "2d2b855cf90940d5b74d6da74d202679e45f6181f21f2a331dc982569cb0d8af",
+    "public_ids.npy": "42930f0fba34e67a83c8fbc9bc29ef71b09fbfd72ab8954a87250843e31ebb12",
+    "test_labels.npy": "8dae9a3e314b3e5b1e24b57a3a815d39c73795aa0a5c7ccda3427872620611d5"
+  }
+}

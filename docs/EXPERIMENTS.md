@@ -411,3 +411,11 @@ K10/64的D/E持久数组27.35/161.78MB，K64较B额外150.38MiB；独立进程�
 准备期真实休眠污染seed1002/非IID/K64的675秒单客户端KMeans；共享新增准备成本及含准备比值共同标NA，无方法轮次剔除。原封签与全部数据保留，处理版另存；不硬减墙钟或估补正常时间，不用休眠解释K64质量/收益失败。数据和完整代码一并发布，新K小缓存元数据快照用于追溯，但不上传特征或伪标签数组。
 
 [审核](../outputs/k_scaling_results_20261102/REVIEW.md) · [质量逐配置](../outputs/k_scaling_results_20261102/quality.csv) · [处理版报告](../outputs/k_scaling_sleep_review_20261102/sleep_adjusted/report.md) · [恢复说明](../experiments/k_scaling/results_full/ARCHIVED_RAW.md)
+
+
+
+## 2026-11-05 客户端数固定总量结果
+
+固定私有5000张、N2/6/12的54方法与12内存运行审核完成，18三元组精确一致。D/B18/18更快；N12强非IID的D/E三seed均慢，中位慢10.09%。该档seed1003最终3客户端最大簇超过99%，质量事件在B/E/D一致。固定每客户端400张分支仍待运行。
+
+[完整审核](../outputs/client_scaling_results_20261105/REVIEW.md) · [原始结果](../experiments/client_scaling/results_full_fixed_total/report.md)

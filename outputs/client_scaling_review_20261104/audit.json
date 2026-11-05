@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "unit_tests": 7,
+  "smoke_runs": 24,
+  "smoke_memory_runs": 24,
+  "triples": 8,
+  "relation_comparisons": 13824,
+  "candidate_comparisons": 18432,
+  "final_client_rows": 72,
+  "checkpoint_client_rows": 216,
+  "reports_reproduced": [
+    "client_checkpoints.csv",
+    "collapse_checkpoints.csv",
+    "collapse_events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "report.md",
+    "runs.csv",
+    "summary.json"
+  ],
+  "old_frozen_source_files_unchanged": 75,
+  "compatible_historical_anchors": [
+    [
+      1001,
+      "iid"
+    ],
+    [
+      1001,
+      "dirichlet_0.1"
+    ],
+    [
+      1002,
+      "iid"
+    ],
+    [
+      1002,
+      "dirichlet_0.1"
+    ],
+    [
+      1003,
+      "iid"
+    ],
+    [
+      1003,
+      "dirichlet_0.1"
+    ]
+  ],
+  "formal_training_started": false
+}

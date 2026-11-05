@@ -28,3 +28,7 @@ stl10_repeat_seed1001/1002/1003_raw_records_20261102.zip各18条，共54条。�
 ## K输出簇数实验（2026-11-02）
 
 k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根目录解压恢复；seed1002归档含全部内存回放。成员及摘要见[k_scaling清单](k_scaling_raw_20261102.manifest.json)。原结果封签不改，休眠处理版另存，详见[恢复与结果说明](../experiments/k_scaling/results_full/ARCHIVED_RAW.md)。
+
+
+
+2026-11-05新增客户端数固定总量原始结果，3个seed ZIP含54方法与12内存记录，SHA256成员清单见client_scaling_fixed_total_raw_20261105.manifest.json。

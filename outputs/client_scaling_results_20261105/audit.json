@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "runs": 54,
+  "memory": 12,
+  "triples": 18,
+  "anchors": 6,
+  "manifest_files": 98,
+  "sources": 84,
+  "reports_checked": [
+    "client_checkpoints.csv",
+    "collapse_checkpoints.csv",
+    "collapse_events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "report.md",
+    "runs.csv",
+    "summary.json"
+  ],
+  "relations": 589824000,
+  "candidates": 786432000,
+  "mismatches": 0,
+  "quality": [
+    {
+      "seed": 1001,
+      "partition": "iid",
+      "N": 2,
+      "mean": {
+        "nmi": 0.13608944788675445,
+        "ari": 0.07246255471981103,
+        "acc": 0.23981249999999998
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "N": 2,
+      "mean": {
+        "nmi": 0.10943641519551105,
+        "ari": 0.05884049208293393,
+        "acc": 0.220375
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1001,
+      "partition": "iid",
+      "N": 6,
+      "mean": {
+        "nmi": 0.10861816589497082,
+        "ari": 0.053935338011753174,
+        "acc": 0.20493750000000002
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "N": 6,
+      "mean": {
+        "nmi": 0.08909247772548101,
+        "ari": 0.04176548632190321,
+        "acc": 0.19325
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1001,
+      "partition": "iid",
+      "N": 12,
+      "mean": {
+        "nmi": 0.09068671638961845,
+        "ari": 0.04707513514053959,
+        "acc": 0.1933645833333333
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "N": 12,
+      "mean": {
+        "nmi": 0.0641811394265467,
+        "ari": 0.03197106963690595,
+        "acc": 0.17541666666666667
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "N": 2,
+      "mean": {
+        "nmi": 0.13650277343523312,
+        "ari": 0.07128541058518892,
+        "acc": 0.2396875
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "N": 2,
+      "mean": {
+        "nmi": 0.13266523106812067,
+        "ari": 0.06744532209997607,
+        "acc": 0.22799999999999998
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "N": 6,
+      "mean": {
+        "nmi": 0.10758936257264495,
+        "ari": 0.05393197155107086,
+        "acc": 0.20758333333333331
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "N": 6,
+      "mean": {
+        "nmi": 0.08694645360064014,
+        "ari": 0.03883600421788267,
+        "acc": 0.193875
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "iid",
+      "N": 12,
+      "mean": {
+        "nmi": 0.08951873923388194,
+        "ari": 0.04738084572359714,
+        "acc": 0.19185416666666666
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "N": 12,
+      "mean": {
+        "nmi": 0.0689078036098719,
+        "ari": 0.030176528021789037,
+        "acc": 0.17358333333333334
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "N": 2,
+      "mean": {
+        "nmi": 0.13592410978502906,
+        "ari": 0.0701341291005653,
+        "acc": 0.229375
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "N": 2,
+      "mean": {
+        "nmi": 0.13097751647751738,
+        "ari": 0.0707679331007277,
+        "acc": 0.23425
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "N": 6,
+      "mean": {
+        "nmi": 0.10401972345153804,
+        "ari": 0.04998405405858105,
+        "acc": 0.20120833333333332
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "N": 6,
+      "mean": {
+        "nmi": 0.09480812283057716,
+        "ari": 0.04479453229945929,
+        "acc": 0.19633333333333333
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "iid",
+      "N": 12,
+      "mean": {
+        "nmi": 0.08867001136382024,
+        "ari": 0.048497409881032454,
+        "acc": 0.19271875000000002
+      },
+      "single": [],
+      "near": []
+    },
+    {
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "N": 12,
+      "mean": {
+        "nmi": 0.01171106139646072,
+        "ari": 0.0006582614646774409,
+        "acc": 0.10886458333333333
+      },
+      "single": [],
+      "near": [
+        4,
+        7,
+        10
+      ]
+    }
+  ],
+  "timing_flags": [],
+  "power_samples": 409,
+  "power_warnings": [],
+  "excluded_runs": 0,
+  "excluded_rounds": 0
+}

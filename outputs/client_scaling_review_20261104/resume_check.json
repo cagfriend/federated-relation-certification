@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "preserved": 47,
+  "rerun": [
+    "memory/fixed_per_client_N4_dirichlet_0.1_seed_1001_B.json"
+  ],
+  "complete_resume_verified": true
+}

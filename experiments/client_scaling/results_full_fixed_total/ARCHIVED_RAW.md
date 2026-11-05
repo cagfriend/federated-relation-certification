@@ -1,0 +1,3 @@
+# 原始逐轮记录
+
+66份原始运行JSON按seed保存在仓库archives/client_scaling_fixed_total_seed*_raw_20261105.zip。三个ZIP从仓库根目录解压恢复原相对路径。归档清单逐文件SHA256可核对原completed.json。准备特征和模型数组保存在本地缓存，发布其元数据快照供审查。
