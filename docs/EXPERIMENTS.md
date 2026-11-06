@@ -419,3 +419,11 @@ K10/64的D/E持久数组27.35/161.78MB，K64较B额外150.38MiB；独立进程�
 固定私有5000张、N2/6/12的54方法与12内存运行审核完成，18三元组精确一致。D/B18/18更快；N12强非IID的D/E三seed均慢，中位慢10.09%。该档seed1003最终3客户端最大簇超过99%，质量事件在B/E/D一致。固定每客户端400张分支仍待运行。
 
 [完整审核](../outputs/client_scaling_results_20261105/REVIEW.md) · [原始结果](../experiments/client_scaling/results_full_fixed_total/report.md)
+
+
+
+## 2026-11-06 已完成的退化诊断与学习率确认
+
+N12已知失败种子新增3条200轮B干预轨迹，公共1步和2步半学习率均恢复。随后8配置、16份配对记录（11新+5历史），覆盖N12/K10、N6/K64、健康/失败及新seed1101的IID/强非IID。0.05全部通过预定判据，0.1参照5/8通过。全部原始记录与源码已入库，计时按诊断用途保留。
+
+[干预审核](../outputs/collapse_intervention_results_20261106/REVIEW.md) · [学习率确认审核](../outputs/public_lr_confirmation_results_20261106/REVIEW.md) · [当前实验顺序](NEXT_RESOURCE_PLAN.md)

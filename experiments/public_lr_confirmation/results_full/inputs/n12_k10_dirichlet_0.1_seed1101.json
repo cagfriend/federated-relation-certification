@@ -1,0 +1,8 @@
+{
+  "base_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\prepared\\seed_1101_dirichlet_0.1_a93ba8db939607fe",
+  "base_metadata_sha256": "b24c547955e3630384d722af798f39c99eb84fc75610974375bfa912cd3e2b3b",
+  "seed": 1101,
+  "partition": "dirichlet_0.1",
+  "family": "n12_k10",
+  "fixture": false
+}

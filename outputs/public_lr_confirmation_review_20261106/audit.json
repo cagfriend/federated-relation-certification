@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "unit_tests": 3,
+  "smoke_records": 8,
+  "smoke_pairs": 4,
+  "smoke_rounds": 12,
+  "frozen_sources": 97,
+  "old_sources_unchanged": 90,
+  "reused_real_records_checked": 5,
+  "resume_preserved": 7,
+  "resume_missing_only_rerun": 1,
+  "reports_reproduced": 3,
+  "formal_training_started": false
+}

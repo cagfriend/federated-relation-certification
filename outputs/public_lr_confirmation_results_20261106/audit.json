@@ -1,0 +1,565 @@
+{
+  "status": "PASS",
+  "records": 16,
+  "new": 11,
+  "historical": 5,
+  "pairs": 8,
+  "manifest_files": 37,
+  "sources": 97,
+  "preflights": 8,
+  "reports_reproduced": [
+    "clients.csv",
+    "report.md",
+    "verdicts.csv"
+  ],
+  "all_candidate_verdicts_passed": true,
+  "all_mean_acc_increased": true,
+  "summary": [
+    {
+      "family": "n12_k10",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "role": "healthy",
+      "case_id": "n12_k10_dirichlet_0.1_seed1001",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "historical",
+          "final_metrics": {
+            "nmi": 0.0641811394265467,
+            "ari": 0.03197106963690595,
+            "acc": 0.17541666666666667
+          },
+          "final_mean_largest": 0.3560520833333333,
+          "final_worst_largest": 0.577375,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.132625,
+          "near_rounds": [
+            20,
+            40,
+            60,
+            80
+          ],
+          "common_grid_near_events": 9,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.24395751953125
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.06785540375508274,
+            "ari": 0.03429924443967806,
+            "acc": 0.17851041666666664
+          },
+          "final_mean_largest": 0.33230208333333333,
+          "final_worst_largest": 0.536125,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.134375,
+          "near_rounds": [
+            1,
+            2,
+            5,
+            10,
+            20
+          ],
+          "common_grid_near_events": 2,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.22649129231770834
+        }
+      ],
+      "acc_delta": 0.0030937499999999785
+    },
+    {
+      "family": "n12_k10",
+      "seed": 1003,
+      "partition": "dirichlet_0.1",
+      "role": "known_failure",
+      "case_id": "n12_k10_dirichlet_0.1_seed1003",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "historical",
+          "final_metrics": {
+            "nmi": 0.01171106139646072,
+            "ari": 0.0006582614646774409,
+            "acc": 0.10886458333333333
+          },
+          "final_mean_largest": 0.9623645833333333,
+          "final_worst_largest": 0.999875,
+          "final_near": 3,
+          "final_single": 0,
+          "min_acc": 0.100125,
+          "near_rounds": [
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "common_grid_near_events": 83,
+          "verdict": {
+            "final_structure": false,
+            "process": false,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": false
+          },
+          "final_teacher_fraction": 0.8770751953125
+        },
+        {
+          "arm": "public2_half",
+          "origin": "historical",
+          "final_metrics": {
+            "nmi": 0.07729104359506694,
+            "ari": 0.03471228256152064,
+            "acc": 0.17796875
+          },
+          "final_mean_largest": 0.3499791666666667,
+          "final_worst_largest": 0.5085,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.16175,
+          "near_rounds": [
+            2,
+            5,
+            10,
+            20,
+            40
+          ],
+          "common_grid_near_events": 3,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.22809855143229166
+        }
+      ],
+      "acc_delta": 0.06910416666666667
+    },
+    {
+      "family": "n12_k10",
+      "seed": 1101,
+      "partition": "iid",
+      "role": "new_seed",
+      "case_id": "n12_k10_iid_seed1101",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.08454893884455222,
+            "ari": 0.04416918411878492,
+            "acc": 0.18667708333333333
+          },
+          "final_mean_largest": 0.31536458333333334,
+          "final_worst_largest": 0.4575,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.171125,
+          "near_rounds": [
+            1,
+            2,
+            5,
+            10,
+            20,
+            40
+          ],
+          "common_grid_near_events": 10,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.18980916341145834
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.08612425701450978,
+            "ari": 0.045268259882099225,
+            "acc": 0.18732291666666667
+          },
+          "final_mean_largest": 0.2969583333333333,
+          "final_worst_largest": 0.432125,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.172125,
+          "near_rounds": [
+            1,
+            2,
+            5,
+            10,
+            20
+          ],
+          "common_grid_near_events": 6,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.180572509765625
+        }
+      ],
+      "acc_delta": 0.0006458333333333455
+    },
+    {
+      "family": "n12_k10",
+      "seed": 1101,
+      "partition": "dirichlet_0.1",
+      "role": "new_seed",
+      "case_id": "n12_k10_dirichlet_0.1_seed1101",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.07795350863578722,
+            "ari": 0.03477195643586892,
+            "acc": 0.17628125000000003
+          },
+          "final_mean_largest": 0.3776875,
+          "final_worst_largest": 0.549375,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.143875,
+          "near_rounds": [
+            2,
+            5,
+            10,
+            20,
+            40,
+            60,
+            80
+          ],
+          "common_grid_near_events": 17,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.2539876302083333
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.07927869727153311,
+            "ari": 0.036636378237630565,
+            "acc": 0.17852083333333332
+          },
+          "final_mean_largest": 0.3515729166666667,
+          "final_worst_largest": 0.51775,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.14775,
+          "near_rounds": [
+            2,
+            5,
+            10,
+            20
+          ],
+          "common_grid_near_events": 10,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.23530069986979166
+        }
+      ],
+      "acc_delta": 0.002239583333333295
+    },
+    {
+      "family": "n6_k64",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "role": "healthy",
+      "case_id": "n6_k64_dirichlet_0.1_seed1001",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "historical",
+          "final_metrics": {
+            "nmi": 0.06773824189871856,
+            "ari": 0.029383354790949542,
+            "acc": 0.1714375
+          },
+          "final_mean_largest": 0.3869375,
+          "final_worst_largest": 0.521125,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.14025,
+          "near_rounds": [],
+          "common_grid_near_events": 0,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.2539265950520833
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.07179710180969598,
+            "ari": 0.032027746988375565,
+            "acc": 0.17670833333333336
+          },
+          "final_mean_largest": 0.3325625,
+          "final_worst_largest": 0.458375,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.14675,
+          "near_rounds": [],
+          "common_grid_near_events": 0,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.21779378255208334
+        }
+      ],
+      "acc_delta": 0.0052708333333333635
+    },
+    {
+      "family": "n6_k64",
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "role": "known_failure",
+      "case_id": "n6_k64_dirichlet_0.1_seed1002",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "historical",
+          "final_metrics": {
+            "nmi": 0.0,
+            "ari": 0.0,
+            "acc": 0.09999999999999999
+          },
+          "final_mean_largest": 1.0,
+          "final_worst_largest": 1.0,
+          "final_near": 6,
+          "final_single": 6,
+          "min_acc": 0.1,
+          "near_rounds": [
+            20,
+            40,
+            60,
+            80,
+            100,
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "common_grid_near_events": 28,
+          "verdict": {
+            "final_structure": false,
+            "process": false,
+            "nmi_floor": false,
+            "process_checkpoints": 10,
+            "passed": false
+          },
+          "final_teacher_fraction": 0.9984944661458334
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.08522664305403821,
+            "ari": 0.040585051457062433,
+            "acc": 0.18872916666666664
+          },
+          "final_mean_largest": 0.3068125,
+          "final_worst_largest": 0.4915,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.158375,
+          "near_rounds": [
+            5,
+            10,
+            20,
+            40
+          ],
+          "common_grid_near_events": 2,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.19818115234375
+        }
+      ],
+      "acc_delta": 0.08872916666666665
+    },
+    {
+      "family": "n6_k64",
+      "seed": 1101,
+      "partition": "iid",
+      "role": "new_seed",
+      "case_id": "n6_k64_iid_seed1101",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.08451561573502225,
+            "ari": 0.046318286775496896,
+            "acc": 0.1835416666666667
+          },
+          "final_mean_largest": 0.3940625,
+          "final_worst_largest": 0.473375,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.171125,
+          "near_rounds": [],
+          "common_grid_near_events": 0,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.2605997721354167
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.09114250989566608,
+            "ari": 0.04830314686824783,
+            "acc": 0.18647916666666667
+          },
+          "final_mean_largest": 0.31816666666666665,
+          "final_worst_largest": 0.390875,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.170875,
+          "near_rounds": [],
+          "common_grid_near_events": 0,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.2056884765625
+        }
+      ],
+      "acc_delta": 0.002937499999999982
+    },
+    {
+      "family": "n6_k64",
+      "seed": 1101,
+      "partition": "dirichlet_0.1",
+      "role": "new_seed",
+      "case_id": "n6_k64_dirichlet_0.1_seed1101",
+      "arms": [
+        {
+          "arm": "reference2",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.008112486195738391,
+            "ari": 0.002162815587877587,
+            "acc": 0.11095833333333333
+          },
+          "final_mean_largest": 0.9246875,
+          "final_worst_largest": 1.0,
+          "final_near": 4,
+          "final_single": 4,
+          "min_acc": 0.1,
+          "near_rounds": [
+            100,
+            120,
+            140,
+            160,
+            180,
+            200
+          ],
+          "common_grid_near_events": 18,
+          "verdict": {
+            "final_structure": false,
+            "process": false,
+            "nmi_floor": false,
+            "process_checkpoints": 10,
+            "passed": false
+          },
+          "final_teacher_fraction": 0.8727823893229166
+        },
+        {
+          "arm": "public2_half",
+          "origin": "new",
+          "final_metrics": {
+            "nmi": 0.09062663961353183,
+            "ari": 0.03669763141206286,
+            "acc": 0.17145833333333335
+          },
+          "final_mean_largest": 0.4335,
+          "final_worst_largest": 0.730625,
+          "final_near": 0,
+          "final_single": 0,
+          "min_acc": 0.156375,
+          "near_rounds": [],
+          "common_grid_near_events": 0,
+          "verdict": {
+            "final_structure": true,
+            "process": true,
+            "nmi_floor": true,
+            "process_checkpoints": 10,
+            "passed": true
+          },
+          "final_teacher_fraction": 0.2862141927083333
+        }
+      ],
+      "acc_delta": 0.060500000000000026
+    }
+  ],
+  "power_samples": 142,
+  "power_warnings": [],
+  "excluded_runs": 0,
+  "excluded_rounds": 0,
+  "input_metadata_digests_verified": 8
+}

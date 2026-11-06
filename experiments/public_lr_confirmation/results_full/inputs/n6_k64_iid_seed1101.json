@@ -1,0 +1,10 @@
+{
+  "base_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\prepared\\seed_1101_iid_aaacc3129639011b",
+  "base_metadata_sha256": "9b3d06044d7d8e72e2b002ac75095e524f409a248689dc73a566ee32d1e0adf9",
+  "seed": 1101,
+  "partition": "iid",
+  "family": "n6_k64",
+  "fixture": false,
+  "k_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\prepared_k\\k64_seed1101_iid_73a838eaa881664ee596",
+  "k_metadata_sha256": "68a5abbec01e29dc60120599b06db63664d69fe15a923b338ab98a13c251106a"
+}

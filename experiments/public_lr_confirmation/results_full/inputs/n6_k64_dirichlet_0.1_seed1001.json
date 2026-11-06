@@ -1,0 +1,10 @@
+{
+  "base_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\prepared\\seed_1001_dirichlet_0.1_c989e79219297f57",
+  "base_metadata_sha256": "7f3c760f9bde1263b994ce5c452cee0e191c8f058ef735509f365969f172636c",
+  "seed": 1001,
+  "partition": "dirichlet_0.1",
+  "family": "n6_k64",
+  "fixture": false,
+  "k_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\prepared_k\\k64_seed1001_dirichlet_0.1_5c5cfb8c24703391a9a1",
+  "k_metadata_sha256": "c2676762a0e2722b2517d6d12f8917ad1d7fcc920c37000a90e4c582dc7a696e"
+}

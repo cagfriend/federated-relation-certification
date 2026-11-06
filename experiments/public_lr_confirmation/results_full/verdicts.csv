@@ -1,0 +1,9 @@
+family,seed,partition,role,case_id,final_structure,process,nmi_floor,process_checkpoints,passed,acc_guard_applicable,acc_drop,acc_guard_passed,overall_passed
+n12_k10,1001,dirichlet_0.1,healthy,n12_k10_dirichlet_0.1_seed1001,True,True,True,10,True,True,-0.0030937499999999785,True,True
+n12_k10,1003,dirichlet_0.1,known_failure,n12_k10_dirichlet_0.1_seed1003,True,True,True,10,True,False,-0.06910416666666667,,True
+n12_k10,1101,iid,new_seed,n12_k10_iid_seed1101,True,True,True,10,True,True,-0.0006458333333333455,True,True
+n12_k10,1101,dirichlet_0.1,new_seed,n12_k10_dirichlet_0.1_seed1101,True,True,True,10,True,True,-0.002239583333333295,True,True
+n6_k64,1001,dirichlet_0.1,healthy,n6_k64_dirichlet_0.1_seed1001,True,True,True,10,True,True,-0.0052708333333333635,True,True
+n6_k64,1002,dirichlet_0.1,known_failure,n6_k64_dirichlet_0.1_seed1002,True,True,True,10,True,False,-0.08872916666666665,,True
+n6_k64,1101,iid,new_seed,n6_k64_iid_seed1101,True,True,True,10,True,True,-0.002937499999999982,True,True
+n6_k64,1101,dirichlet_0.1,new_seed,n6_k64_dirichlet_0.1_seed1101,True,True,True,10,True,False,-0.060500000000000026,,True

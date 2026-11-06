@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "manifest_files": 13,
+  "frozen_sources": 90,
+  "runs": 3,
+  "rounds_per_run": 200,
+  "preflight_rounds": 3,
+  "report_replay": [
+    "clients.csv",
+    "events.csv",
+    "report.md",
+    "rounds.csv",
+    "stages.csv"
+  ],
+  "summary": [
+    {
+      "arm": "private_only",
+      "final": {
+        "nmi": 0.07897161948180235,
+        "ari": 0.03601786795906437,
+        "acc": 0.17936458333333336
+      },
+      "mean_largest": 0.33260416666666665,
+      "worst_largest": 0.48875,
+      "final_single": 0,
+      "final_near": 0,
+      "near_events": 6,
+      "near_event_rounds": [
+        2,
+        5,
+        10,
+        20
+      ],
+      "min_client_acc": 0.162,
+      "occupied_counts": [
+        9,
+        8,
+        10,
+        10,
+        9,
+        9,
+        10,
+        9,
+        10,
+        10,
+        8,
+        10
+      ],
+      "teacher_fraction_final": 0.21651204427083334
+    },
+    {
+      "arm": "public1",
+      "final": {
+        "nmi": 0.07735150279969012,
+        "ari": 0.03475249247576684,
+        "acc": 0.17798958333333334
+      },
+      "mean_largest": 0.34959375,
+      "worst_largest": 0.50875,
+      "final_single": 0,
+      "final_near": 0,
+      "near_events": 13,
+      "near_event_rounds": [
+        2,
+        5,
+        10,
+        20,
+        40
+      ],
+      "min_client_acc": 0.161875,
+      "occupied_counts": [
+        9,
+        7,
+        9,
+        10,
+        9,
+        9,
+        10,
+        9,
+        10,
+        10,
+        8,
+        9
+      ],
+      "teacher_fraction_final": 0.22803751627604166
+    },
+    {
+      "arm": "public2_half",
+      "final": {
+        "nmi": 0.07729104359506694,
+        "ari": 0.03471228256152064,
+        "acc": 0.17796875
+      },
+      "mean_largest": 0.3499791666666667,
+      "worst_largest": 0.5085,
+      "final_single": 0,
+      "final_near": 0,
+      "near_events": 13,
+      "near_event_rounds": [
+        2,
+        5,
+        10,
+        20,
+        40
+      ],
+      "min_client_acc": 0.16175,
+      "occupied_counts": [
+        9,
+        7,
+        9,
+        10,
+        9,
+        9,
+        10,
+        9,
+        10,
+        10,
+        8,
+        9
+      ],
+      "teacher_fraction_final": 0.22809855143229166
+    },
+    {
+      "arm": "historical_public2",
+      "final": {
+        "nmi": 0.01171106139646072,
+        "ari": 0.0006582614646774409,
+        "acc": 0.10886458333333333
+      },
+      "mean_largest": 0.9623645833333333,
+      "worst_largest": 0.999875,
+      "final_single": 0,
+      "final_near": 3,
+      "near_events": 83,
+      "near_event_rounds": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200
+      ],
+      "min_client_acc": 0.100125,
+      "occupied_counts": [
+        3,
+        2,
+        4,
+        3,
+        2,
+        4,
+        2,
+        3,
+        4,
+        5,
+        2,
+        2
+      ],
+      "teacher_fraction_final": 0.8770751953125
+    }
+  ],
+  "power_samples": 32,
+  "power_warnings": [],
+  "excluded_runs": 0,
+  "excluded_rounds": 0,
+  "half_lr_same_edge_schedule_all_200_rounds": true,
+  "first_private_heads_equal": true,
+  "first_aggregated_targets_match_history": true,
+  "common_checkpoints": [
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    180,
+    200
+  ],
+  "common_grid_near_events": {
+    "private_only": 1,
+    "public1": 3,
+    "public2_half": 3,
+    "historical_public2": 83
+  }
+}

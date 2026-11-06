@@ -1,0 +1,20 @@
+{
+  "files": {
+    "clients.csv": "6433e00a3dc475a71738f119e2420db0eda0f0f4b32c6252a9177544dcc32165",
+    "environment.json": "ed0b58c5666cc0cfc21cb3e3e7ae2d86408be5a8b552d491ed948dffc4c0f564",
+    "environment_final.json": "9de6dc423bb338c8e85a9fdb222f507de1b53c86874ca1487e821929282db301",
+    "events.csv": "2503c294473c0a27dd57f9f549fbe41c9abb94bb48a7d6236978afb7f8b7da7f",
+    "historical_public2.json": "a9a463b74e681a148714b47ee7ed16b49c4801cf6fec9a05dcca848e14be118f",
+    "power_1793948301111550200.jsonl": "5a6e9715c1579d99edc24fcd7ad39227789b6f6fab9ad89316aebe3adbb73d09",
+    "preflight.json": "6025ab878e71ba9350163b1a32460859625bc06fb12b37f6d96397a9d5a8244e",
+    "report.md": "f7f198f41009c3b02a419838cc4b6bbbdd2b4c603a207de4ac62a35677fbb53e",
+    "rounds.csv": "760ece16b5839833692e1ea4ee4e342c9b849fa2d01fe1a14ee5bb9e9073227f",
+    "stages.csv": "8e9b453d3ec79bd0ba43fa3432fdb3f0457b890cd2b59860d3115b7476d71ecf",
+    "runs\\private_only.json": "d6a4abece63803df012c0d418a4ef9058ecb7cf2e29725df1f6d39a8c85bd76a",
+    "runs\\public1.json": "8d7ae6b159e03456d359817b839e860d0d2341576363b77735916e6e140d1a06",
+    "runs\\public2_half.json": "6991e6db58038e282ecc216ec16dc7bd8579c007924594d7facc52e9b7452fc6"
+  },
+  "runs": 3,
+  "reference_preflight_rounds": 3,
+  "status": "complete"
+}

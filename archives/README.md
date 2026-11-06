@@ -32,3 +32,7 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 
 
 2026-11-05新增客户端数固定总量原始结果，3个seed ZIP含54方法与12内存记录，SHA256成员清单见client_scaling_fixed_total_raw_20261105.manifest.json。
+
+
+
+2026-11-06新增退化干预与学习率确认归档，7个ZIP保存3条干预、1份历史参照及16份确认封装。封装内5份轨迹复用历史，按origin与source_sha256说明；不能将重复记录计为独立实验。恢复路径与SHA256见lr_recovery_raw_20261106.manifest.json。

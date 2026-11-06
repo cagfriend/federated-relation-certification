@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "unit_tests": 8,
+  "smoke_arms": 3,
+  "rounds_per_arm": 12,
+  "preflight_reference_rounds": 3,
+  "old_sources_unchanged": 84,
+  "frozen_sources": 90,
+  "reports_reproduced": 5,
+  "synthetic_200_checkpoint_check": {
+    "status": "PASS",
+    "synthetic_rounds": 200,
+    "checkpoints": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      40,
+      60,
+      80,
+      100,
+      120,
+      140,
+      160,
+      180,
+      200
+    ],
+    "stages": 29,
+    "formal_training_started": false
+  },
+  "formal_training_started": false,
+  "resume_complete_verified": true,
+  "resume_preserved_arms": 2,
+  "resume_only_missing_arm_rerun": "public2_half"
+}

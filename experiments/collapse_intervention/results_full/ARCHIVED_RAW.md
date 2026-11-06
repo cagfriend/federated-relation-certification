@@ -1,0 +1,3 @@
+# 原始运行记录
+
+原始JSON按协议保存为仓库archives目录中的collapse_intervention_raw_20261106.zip和public_lr_*_raw_20261106.zip。从仓库根目录解压即可恢复原相对路径。逐文件SHA256见archives/lr_recovery_raw_20261106.manifest.json。原始completed.json原样保留，包含本机路径及Windows目录分隔符。特征、模型和伪标签数组保存在本地缓存，仓库发布相关输入标记与元数据快照。

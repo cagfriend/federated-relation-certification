@@ -1,0 +1,10 @@
+{
+  "base_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\prepared\\seed_1101_dirichlet_0.1_b86f7fab95f08f51",
+  "base_metadata_sha256": "935911c45780be22b3e8defb400594a33e92cd6ca9a610dad8c822eccbe18881",
+  "seed": 1101,
+  "partition": "dirichlet_0.1",
+  "family": "n6_k64",
+  "fixture": false,
+  "k_directory": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\prepared_k\\k64_seed1101_dirichlet_0.1_47a47f979b5a491a03f0",
+  "k_metadata_sha256": "66d69f52ca6cd3d00f039eda0c7285c8f3a4a7329be6e715b9569f7b224ab82b"
+}
