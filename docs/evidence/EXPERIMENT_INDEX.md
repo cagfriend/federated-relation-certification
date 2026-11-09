@@ -425,8 +425,43 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 
 **归档、清单与原始文件：** [experiments/public_lr_confirmation/results_full/completed.json](../../experiments/public_lr_confirmation/results_full/completed.json)
 
-## 本地后续材料：与已发布证据分开
+|E23|[0.05下同配置计算与内存验证](#e23)|质量轨迹恢复后认证有无净计算收益|[正式报告](../../experiments/lr_compute/results_full/report.md)|
 
-本地P1 `lr_compute`已完成24次方法运行和6次隔离内存回放，审阅记录见本次随附的[本地后续快照](LOCAL_FOLLOWUPS.md)。它不在上述远端基线中。P2 `lr_repeat`已有代码与开发验证，但缺完整正式报告时不列为已完成正式实验。
+<a id="e23"></a>
+## E23 0.05下同配置计算与内存验证
 
-本次仅补文档与只读证据快照，不把尚未发布的执行包悄悄并入历史基线，不改变后续实验计划。
+|项目|记录|
+|---|---|
+|实验目录|`experiments/lr_compute/`|
+|配置与对照|8配置×B/E/D，24主运行+6隔离内存，200轮|
+|验证问题|质量轨迹恢复后认证有无净计算收益|
+|主要结果|D/B8/8更快，D/E7/8更快；关系353,894,400次零错误|
+|结论边界与异常|一次/方法；K64/IID/1101慢0.33%，两配置内存代价与准备NA保留|
+|代码状态|5个Python文件保持原版与路径，依赖既有冻结核心和缓存|
+
+**原始说明及协议：** [README](../../experiments/lr_compute/README.md) · [预注册](../../experiments/lr_compute/PREREGISTRATION.md) · [开发验证](../../experiments/lr_compute/VALIDATION.md)
+
+**结果与审核：** [正式报告](../../experiments/lr_compute/results_full/report.md) · [审核](../../outputs/lr_compute_results_20261106/REVIEW.md) · [完成清单](../../experiments/lr_compute/results_full/completed.json)
+
+**归档、清单与原始文件：** [60份主运行恢复路径和SHA](../../archives/lr_followups_raw_20261109.manifest.json)；内存原记录在专门ZIP内，电源直接保留。 [发布状态](LOCAL_FOLLOWUPS.md)
+
+|E24|[0.05固定配置技术重复](#e24)|同轨迹下D/B与D/E完整头部收益及机器波动|[正式报告](../../experiments/lr_repeat/results_full/report.md)|
+
+<a id="e24"></a>
+## E24 0.05固定配置技术重复
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/lr_repeat/`|
+|配置与对照|4强非IID配置×B/E/D×3，36独立进程，200轮|
+|验证问题|同轨迹下D/B与D/E完整头部收益及机器波动|
+|主要结果|D/B中位省25.93%–40.87%；D/E省0.79%–8.47%，C2及合取仅1/4通过|
+|结论边界与异常|技术重复不增加seed；不覆盖IID负收益；零剔除，准备污染NA|
+|代码状态|5个Python文件保持原版与路径，依赖既有冻结核心和缓存|
+
+**原始说明及协议：** [README](../../experiments/lr_repeat/README.md) · [预注册](../../experiments/lr_repeat/PREREGISTRATION.md) · [开发验证](../../experiments/lr_repeat/VALIDATION.md)
+
+**结果与审核：** [正式报告](../../experiments/lr_repeat/results_full/report.md) · [审核](../../outputs/lr_repeat_results_20261109/REVIEW.md) · [完成清单](../../experiments/lr_repeat/results_full/completed.json)
+
+**归档、清单与原始文件：** [60份主运行恢复路径和SHA](../../archives/lr_followups_raw_20261109.manifest.json)；内存原记录在专门ZIP内，电源直接保留。 [发布状态](LOCAL_FOLLOWUPS.md)
+

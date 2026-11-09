@@ -1,0 +1,7 @@
+family,seed,partition,role,case_id,method,block,position,process_peak_bytes,persistent_method_array_bytes,scope
+n12_k10,1001,dirichlet_0.1,healthy,n12_k10_dirichlet_0.1_seed1001,B,0,0,2263773184,1532864,Standalone process; no oracle/evaluation; two selected cases only
+n12_k10,1001,dirichlet_0.1,healthy,n12_k10_dirichlet_0.1_seed1001,E,0,1,2487390208,54687296,Standalone process; no oracle/evaluation; two selected cases only
+n12_k10,1001,dirichlet_0.1,healthy,n12_k10_dirichlet_0.1_seed1001,D,0,2,2486964224,54687296,Standalone process; no oracle/evaluation; two selected cases only
+n6_k64,1002,dirichlet_0.1,known_failure,n6_k64_dirichlet_0.1_seed1002,E,1,0,1601163264,161776640,Standalone process; no oracle/evaluation; two selected cases only
+n6_k64,1002,dirichlet_0.1,known_failure,n6_k64_dirichlet_0.1_seed1002,D,1,1,1601146880,161776640,Standalone process; no oracle/evaluation; two selected cases only
+n6_k64,1002,dirichlet_0.1,known_failure,n6_k64_dirichlet_0.1_seed1002,B,1,2,1257369600,4090880,Standalone process; no oracle/evaluation; two selected cases only

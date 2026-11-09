@@ -14,7 +14,7 @@
 - [工程与成本](#具体优化及成本边界)
 - [实验结论](#已完成验证及其解释)
 - [完整实验台账](docs/evidence/EXPERIMENT_INDEX.md) · [历史源码台账](docs/evidence/CODE_HISTORY.md)
-- [复现说明](docs/REPRODUCIBILITY.md) · [后续计划，保留原文](docs/NEXT_EXPERIMENTS.md) · [资源计划，保留原文](docs/NEXT_RESOURCE_PLAN.md)
+- [复现说明](docs/REPRODUCIBILITY.md) · [后续计划](docs/NEXT_EXPERIMENTS.md) · [资源计划，保留原文](docs/NEXT_RESOURCE_PLAN.md)
 
 ## 适用范围与实现状态
 
@@ -229,7 +229,7 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 |公共学习率|0.05八配置护栏通过，原0.1五配置通过|有限配置恢复，不是普适防坍缩|
 |恢复协议|正确性回放通过，累计省通信未获支持|未接真实训练网络和完整模型状态|
 
-**本地后续P1：** 0.05下24方法运行+6隔离内存回放已审核，D/B完整头8/8更快，D/E7/8更快；K64/IID/1101慢0.33%，空间代价保留。原执行包尚不在本次远端基线，本次仅随附[报告与审计快照](docs/evidence/LOCAL_FOLLOWUPS.md)，不混作已发布运行包。P2没有完整封印与审核前不列作正式完成结果。
+**0.05后续计算验证已发布：** [P1八配置](experiments/lr_compute/results_full/report.md)完成24方法+6隔离内存，D/B 8/8更快，D/E 7/8更快，K64/IID/1101慢0.33%。[P2四配置重复](outputs/lr_repeat_results_20261109/REVIEW.md)完成36次独立进程：配对中位D/B省25.93%–40.87%，D/E省0.79%–8.47%；相对E达到预设3%门槛仅1/4，全部合取标准仅1/4通过。关系/参数/质量精确复现，零关系错误。技术重复不是新增种子，空间代价、准备NA及不利边界继续保留。[发布状态与复查](docs/evidence/LOCAL_FOLLOWUPS.md)
 
 ## 代码与复现
 
@@ -259,6 +259,6 @@ python -m experiments.public_scaling.run --preset smoke --suite all --download -
 - [原始TXT原件](docs/history/user_method_notes_20261109.original.txt)保留原字节；[UTF-8副本](docs/history/user_method_notes_20261109.utf8.txt)供GitHub阅读。旧20261029笔记也原样保留。
 - [原首页完整快照](docs/history/README_before_restructure_20261109.md)、[基线所有文件及Git blob SHA](docs/history/BASELINE_FILES.json)、[来源映射](docs/history/SOURCE_MAP.md)用于追溯。本次不删除任何原跟踪文件，不改冻结源码或结果。
 - [主张—证据对应](docs/evidence/CLAIMS.md)区分理论、实现、观察及未验证范围。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)与[资源计划](docs/NEXT_RESOURCE_PLAN.md)保持原文；它们是原日期的计划快照，当前完成状态看实验台账。本次不重排实验、不增加任务。
+- [后续实验计划](docs/NEXT_EXPERIMENTS.md)与[资源计划](docs/NEXT_RESOURCE_PLAN.md)已补P1/P2完成状态与下一步；原计划保留于[发布前快照](docs/history/NEXT_EXPERIMENTS_before_P2_20261109.md)。当前证据以实验台账和逐配置审核为准。
 
 TXT中的FLESD、CFD、LAG、L-SDFL、D-fedSD等描述作为[历史文献笔记](docs/history/user_method_notes_20261109.utf8.txt)保留。本次是方法与证据整理，未重新审定这些论文的全部技术比较，也不宣称已有完整新颖性排重。准确贡献定位是既有公共关系学习框架上的精确关系生成与实现成本优化。

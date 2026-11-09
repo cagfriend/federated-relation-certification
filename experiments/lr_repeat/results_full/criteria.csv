@@ -1,0 +1,5 @@
+case_id,family,seed,partition,role,C1,C2,C3,passed,C1_median_D_B_saving_percent,C2_median_D_E_saving_percent,D_B_wins,D_E_wins,threshold_C1_percent,threshold_C2_percent,required_wins
+n12_k10_dirichlet_0.1_seed1001,n12_k10,1001,dirichlet_0.1,healthy,True,False,True,False,36.11372250896336,2.5683681453937734,3,2,10,3,2
+n12_k10_dirichlet_0.1_seed1101,n12_k10,1101,dirichlet_0.1,new_seed,True,True,True,True,40.86892542297312,8.467320916237053,3,3,10,3,2
+n6_k64_dirichlet_0.1_seed1002,n6_k64,1002,dirichlet_0.1,known_failure,True,False,True,False,25.930702401587535,1.7354725715838182,3,2,10,3,2
+n6_k64_dirichlet_0.1_seed1101,n6_k64,1101,dirichlet_0.1,new_seed,True,False,True,False,30.899945221801218,0.7943166943782276,3,2,10,3,2

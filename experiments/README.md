@@ -18,4 +18,4 @@
 - [stl10_transfer](stl10_transfer/README.md)及后续STL-10包：复用上述核心，依赖各自准备/锚点。
 - [aggregator_recovery](aggregator_recovery/README.md)：独立合成关系协议，不是模型训练恢复。
 
-其余包逐项列在完整台账，源目录不重新分组移动。`lr_compute`和`lr_repeat`本地后续状态见[专门说明](../docs/evidence/LOCAL_FOLLOWUPS.md)，本次没有发布其执行包。
+其余包逐项列在完整台账，源目录不重新分组移动。[lr_compute](lr_compute/README.md)与[lr_repeat](lr_repeat/README.md)执行包、正式结果和审核已发布；详见[发布与复查说明](../docs/evidence/LOCAL_FOLLOWUPS.md)。旧开发验证记录不代表当前正式完成状态。

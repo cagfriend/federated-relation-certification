@@ -1,0 +1,7 @@
+{
+  "fixture": false,
+  "runs": 24,
+  "memory_runs": 6,
+  "cases": 8,
+  "paired_comparisons": 16
+}

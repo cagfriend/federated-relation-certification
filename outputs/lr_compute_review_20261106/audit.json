@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "unit_tests": 4,
+  "smoke_runs": 12,
+  "memory_runs": 6,
+  "triples": 4,
+  "relation_comparisons": 18432,
+  "candidate_membership_comparisons": 24576,
+  "reports_reproduced": [
+    "events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "quality.csv",
+    "report.md",
+    "runs.csv",
+    "summary.json"
+  ],
+  "old_sources_unchanged": 97,
+  "frozen_sources": 104,
+  "mismatches": 0,
+  "full_anchors_prechecked": 8,
+  "known_preparation_mask": "n6_k64_dirichlet_0.1_seed1002 only",
+  "formal_training_started": false,
+  "resume_preserved": 17,
+  "resume_reran_missing_memory": 1,
+  "completed_resume_verified": true
+}

@@ -335,3 +335,21 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 所有基线文件与Git blob SHA见[BASELINE_FILES.json](../history/BASELINE_FILES.json)。它覆盖实验内未逐条展开的CSV、JSON、图片、封印、审计和归档成员清单。
 
 较早的清理和迁移说明原文仍在[复现边界](../REPRODUCIBILITY.md)；不要把其中旧运行命令当作当前可用性保证。
+
+
+## E23/E24 后续发布增补，2026-11-09
+
+原基线清单保持原样；新增两个包各5个Python文件，未改既有104份P1依赖源码。原缓存与锚点仍是运行前提。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/lr_compute/__init__.py)|`996c2958d45507b57aee8f3f32d4c461048c7fff3f54ea21768b5ea4250c7b1d`|
+|[design.py](../../experiments/lr_compute/design.py)|`1a12becdffd0f992240b43335901f211a00d082b1b683695ccb03440ab4d70bd`|
+|[report.py](../../experiments/lr_compute/report.py)|`d496bda9f37eff39aaa6768bafe7596ea663be07ba6deeb3ab57558d99b18f6f`|
+|[run.py](../../experiments/lr_compute/run.py)|`10ae5efddd17690587833c2c0cc0d1d1dd181cf880d3ce49ac4ae7955e2ba4e7`|
+|[test_run.py](../../experiments/lr_compute/test_run.py)|`2d570aef7ea32783b3af02b7d2a44ed760384d9b9548420996b2e896a41bab1c`|
+|[__init__.py](../../experiments/lr_repeat/__init__.py)|`dd7f13e2e8919fcaf8edb5c49857ed1ffb239e10b608720da6a3009ff7bf6fba`|
+|[design.py](../../experiments/lr_repeat/design.py)|`e38d57d49548640b07df4a14ef80ddfcf080e7931203923d7fccce887a1a2dd6`|
+|[report.py](../../experiments/lr_repeat/report.py)|`57e3cfbf51570cbaa54cc244bb244056b442f04c30137be82bcb3a2727c9f7a3`|
+|[run.py](../../experiments/lr_repeat/run.py)|`a82700e86eb6d2fc599488e13378fc49f995ce3c622567808ce8c1c04ec5fd40`|
+|[test_run.py](../../experiments/lr_repeat/test_run.py)|`53962f30341d135af47c9dfc2ccdcc5ed64c0336b9be17ac1756c5d7e7a26386`|

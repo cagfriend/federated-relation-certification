@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "unit_tests": 4,
+  "smoke_runs": 18,
+  "cases": 2,
+  "repeats": 3,
+  "relations": 27648,
+  "candidates": 36864,
+  "mismatches": 0,
+  "reports_reproduced": [
+    "case_summary.csv",
+    "checkpoints.csv",
+    "criteria.csv",
+    "paired_repeats.csv",
+    "report.md",
+    "runs.csv",
+    "summary.json"
+  ],
+  "frozen_sources": 110,
+  "old_sources_unchanged": 104,
+  "full_P1_anchors_prechecked": 12,
+  "formal_training_started": false,
+  "resume_preserved": 17,
+  "resume_missing_only_rerun": 1,
+  "completed_resume_verified": true
+}

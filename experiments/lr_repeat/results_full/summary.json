@@ -1,0 +1,8 @@
+{
+  "fixture": false,
+  "runs": 36,
+  "cases": 4,
+  "paired_repeats": 12,
+  "criteria_cases": 4,
+  "quality_trajectories": 4
+}

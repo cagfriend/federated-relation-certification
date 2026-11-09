@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "runs": 24,
+  "memory_runs": 6,
+  "triples": 8,
+  "anchor_runs_matched": 24,
+  "manifest_files": 41,
+  "sources": 104,
+  "reports_reproduced": [
+    "events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "quality.csv",
+    "report.md",
+    "runs.csv",
+    "summary.json"
+  ],
+  "relations": 353894400,
+  "candidates": 471859200,
+  "mismatches": 0,
+  "quality_all_passed": true,
+  "masked_preparation_pairs": 2,
+  "family_summary": [
+    {
+      "family": "n12_k10",
+      "comparison": "D/B",
+      "cases": 4,
+      "median_head_saving_pct": 41.28808116154126,
+      "min_head_saving_pct": 37.18159987469988,
+      "max_head_saving_pct": 48.963563166920196,
+      "wins": 4
+    },
+    {
+      "family": "n12_k10",
+      "comparison": "D/E",
+      "cases": 4,
+      "median_head_saving_pct": 9.71663897618794,
+      "min_head_saving_pct": 6.453099359066949,
+      "max_head_saving_pct": 17.97191454636029,
+      "wins": 4
+    },
+    {
+      "family": "n6_k64",
+      "comparison": "D/B",
+      "cases": 4,
+      "median_head_saving_pct": 26.53879458384687,
+      "min_head_saving_pct": 23.547568835205567,
+      "max_head_saving_pct": 27.83315391136889,
+      "wins": 4
+    },
+    {
+      "family": "n6_k64",
+      "comparison": "D/E",
+      "cases": 4,
+      "median_head_saving_pct": 1.5876457122670384,
+      "min_head_saving_pct": -0.3316538437742267,
+      "max_head_saving_pct": 3.5652212547942153,
+      "wins": 3
+    }
+  ],
+  "power_samples": 475,
+  "power_warnings": [],
+  "timing_flags": [],
+  "excluded_runs": 0,
+  "excluded_rounds": 0
+}
