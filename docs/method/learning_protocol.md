@@ -8,7 +8,7 @@
 
 ## 损失
 
-$$p_{c,i}=\operatorname{softmax}(W_cf_c(x_i)+b_c),\qquad
+$$p_{c,i}=\mathrm{softmax}(W_cf_c(x_i)+b_c),\qquad
 \mathcal L_{private}=-\frac1{|B_p|}\sum_{i\in B_p}\log p_{c,i,\hat y_{c,i}}.$$
 
 公共边e=(i,j)的学生同簇概率为 $q_{c,e}=p_{c,i}^{\top}p_{c,j}$，目标 $\tau_e=n_e/N$，损失

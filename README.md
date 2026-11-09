@@ -58,7 +58,7 @@ $$n_e=\sum_{c=1}^{N}r_{c,e},\qquad \tau_e=\frac{n_e}{N}.$$
 
 私有batch用交叉熵：
 
-$$p_{c,i}=\operatorname{softmax}(W_cz_{c,i}+b_c),\qquad
+$$p_{c,i}=\mathrm{softmax}(W_cz_{c,i}+b_c),\qquad
 \mathcal L_{private}=-\frac1{|B_p|}\sum_{i\in B_p}\log p_{c,i,\hat y_{c,i}}.$$
 
 公共batch用概率向量内积 $q_{c,e}=p_{c,i}^{\top}p_{c,j}$ 表示学生同簇概率，再学习聚合目标：
