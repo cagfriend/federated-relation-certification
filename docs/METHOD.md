@@ -1,3 +1,11 @@
+# 方法阅读入口（2026-11-09重整）
+
+完整、自洽的方法说明现放在[仓库首页](../README.md)，包含公式、证明思路、基础代码和每轮时序。专题补充：[学习协议](method/learning_protocol.md)、[关系认证](method/relation_certification.md)、[通信](method/communication.md)、[实现定位](method/implementation.md)、[恢复范围](method/aggregation_recovery.md)、[单簇风险](method/stability.md)。
+
+以下为原文件完整保留内容。它按历史阶段追加，其中“当前”“下一步”和固定K等描述对应原段落日期，不能覆盖新版状态；原文不删除，数值和依据仍可追溯。后续计划没有在本次重整中改动。
+
+---
+
 # 当前方法概述
 
 ## 目标与知识形式
