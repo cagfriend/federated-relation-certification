@@ -1,0 +1,509 @@
+{
+  "status": "PASS",
+  "runs": 54,
+  "memory_runs": 12,
+  "triples": 18,
+  "validated_inputs": 18,
+  "manifest_files": 102,
+  "frozen_sources": 90,
+  "relations": 589824000,
+  "candidates": 786432000,
+  "mismatches": 0,
+  "reports_reproduced": [
+    "client_checkpoints.csv",
+    "collapse_checkpoints.csv",
+    "collapse_events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "quality_guardrails.csv",
+    "report.md",
+    "runs.csv",
+    "scope.json",
+    "summary.json"
+  ],
+  "quality_trajectories": 18,
+  "final_severe_cases": 0,
+  "intermediate_single_cases": 7,
+  "unique_B_collapse_events": [
+    {
+      "seed": "1001",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "4",
+      "position": "2",
+      "round": "20",
+      "client": "7",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1001",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "5",
+      "position": "1",
+      "round": "20",
+      "client": "5",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1001",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "5",
+      "position": "1",
+      "round": "40",
+      "client": "2",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.994125"
+    },
+    {
+      "seed": "1002",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "8",
+      "position": "1",
+      "round": "20",
+      "client": "1",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1002",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "8",
+      "position": "1",
+      "round": "40",
+      "client": "1",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.999125"
+    },
+    {
+      "seed": "1002",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "11",
+      "position": "1",
+      "round": "20",
+      "client": "0",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1002",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "11",
+      "position": "1",
+      "round": "20",
+      "client": "5",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "3",
+      "largest_cluster_fraction": "0.996125"
+    },
+    {
+      "seed": "1003",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "2",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "13",
+      "position": "2",
+      "round": "20",
+      "client": "1",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1003",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "14",
+      "position": "1",
+      "round": "20",
+      "client": "1",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.999625"
+    },
+    {
+      "seed": "1003",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "14",
+      "position": "1",
+      "round": "20",
+      "client": "5",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1003",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "14",
+      "position": "1",
+      "round": "40",
+      "client": "5",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1003",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "15",
+      "position": "0",
+      "round": "20",
+      "client": "1",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.9965"
+    },
+    {
+      "seed": "1003",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "6",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "15",
+      "position": "0",
+      "round": "20",
+      "client": "5",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.9985"
+    },
+    {
+      "seed": "1003",
+      "partition": "iid",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "16",
+      "position": "2",
+      "round": "20",
+      "client": "1",
+      "single_cluster": "False",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "2",
+      "largest_cluster_fraction": "0.999875"
+    },
+    {
+      "seed": "1003",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "17",
+      "position": "1",
+      "round": "20",
+      "client": "7",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    },
+    {
+      "seed": "1003",
+      "partition": "dirichlet_0.1",
+      "regime": "fixed_per_client",
+      "clients": "12",
+      "case_id": "m16384_fixed2_privfull",
+      "method": "B",
+      "block": "17",
+      "position": "1",
+      "round": "40",
+      "client": "7",
+      "single_cluster": "True",
+      "largest_cluster_at_least_099": "True",
+      "occupied_clusters": "1",
+      "largest_cluster_fraction": "1.0"
+    }
+  ],
+  "power_invocations": [
+    {
+      "file": "power_1794313379625274500.jsonl",
+      "samples": 158,
+      "first_utc": 1794313379.6371737,
+      "last_utc": 1794315735.876979
+    },
+    {
+      "file": "power_1794315890152933700.jsonl",
+      "samples": 312,
+      "first_utc": 1794315890.1642501,
+      "last_utc": 1794320556.9732459
+    }
+  ],
+  "power_warnings": [],
+  "timing_flags": [],
+  "excluded_runs": 0,
+  "excluded_rounds": 0,
+  "case_statistics": [
+    {
+      "clients": 2,
+      "partition": "iid",
+      "D/B": {
+        "median_saving_pct": 41.644524202555225,
+        "wins": 3,
+        "range": [
+          0.5301473109062491,
+          0.5835547579744478,
+          0.620117281385255
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 11.275638734651883,
+        "wins": 3,
+        "range": [
+          0.8872436126534812,
+          0.8882579774776912,
+          0.8699083926465846
+        ]
+      }
+    },
+    {
+      "clients": 2,
+      "partition": "dirichlet_0.1",
+      "D/B": {
+        "median_saving_pct": 35.38632335806052,
+        "wins": 3,
+        "range": [
+          0.6461367664193948,
+          0.7174314336275497,
+          0.5797672867644141
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 13.594988386373675,
+        "wins": 3,
+        "range": [
+          0.7492691623635187,
+          0.8640501161362633,
+          0.9673893622548322
+        ]
+      }
+    },
+    {
+      "clients": 6,
+      "partition": "iid",
+      "D/B": {
+        "median_saving_pct": 40.7636479982611,
+        "wins": 3,
+        "range": [
+          0.6440291913154581,
+          0.592363520017389,
+          0.5596218050023751
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 6.270602383911649,
+        "wins": 3,
+        "range": [
+          0.9864306214123332,
+          0.9057039440296751,
+          0.9372939761608835
+        ]
+      }
+    },
+    {
+      "clients": 6,
+      "partition": "dirichlet_0.1",
+      "D/B": {
+        "median_saving_pct": 43.57496206616299,
+        "wins": 3,
+        "range": [
+          0.5642503793383701,
+          0.5991171516721719,
+          0.5561405732737953
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 11.435367767200166,
+        "wins": 3,
+        "range": [
+          0.7958907922889307,
+          0.9064841310469355,
+          0.8856463223279983
+        ]
+      }
+    },
+    {
+      "clients": 12,
+      "partition": "iid",
+      "D/B": {
+        "median_saving_pct": 41.90585236449642,
+        "wins": 3,
+        "range": [
+          0.5255564946343276,
+          0.5809414763550358,
+          0.6019369652085665
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 12.361575170834527,
+        "wins": 3,
+        "range": [
+          0.792136974547589,
+          0.8763842482916547,
+          0.8991746665719617
+        ]
+      }
+    },
+    {
+      "clients": 12,
+      "partition": "dirichlet_0.1",
+      "D/B": {
+        "median_saving_pct": 40.144191464554154,
+        "wins": 3,
+        "range": [
+          0.5985580853544584,
+          0.6280919297009135,
+          0.5044851529122216
+        ]
+      },
+      "D/E": {
+        "median_saving_pct": 16.53154680840867,
+        "wins": 3,
+        "range": [
+          0.8346845319159133,
+          0.9511926027200412,
+          0.814502061120711
+        ]
+      }
+    }
+  ],
+  "memory_pairs": [
+    {
+      "clients": 2,
+      "partition": "iid",
+      "comparison": "D/B",
+      "peak_ratio": 1.2616855424068687,
+      "D_persistent": 9121376,
+      "ref_persistent": 262304
+    },
+    {
+      "clients": 2,
+      "partition": "iid",
+      "comparison": "D/E",
+      "peak_ratio": 1.0003526902427964,
+      "D_persistent": 9121376,
+      "ref_persistent": 9121376
+    },
+    {
+      "clients": 2,
+      "partition": "dirichlet_0.1",
+      "comparison": "D/B",
+      "peak_ratio": 1.2597858792246868,
+      "D_persistent": 9121376,
+      "ref_persistent": 262304
+    },
+    {
+      "clients": 2,
+      "partition": "dirichlet_0.1",
+      "comparison": "D/E",
+      "peak_ratio": 1.0008116070932236,
+      "D_persistent": 9121376,
+      "ref_persistent": 9121376
+    },
+    {
+      "clients": 12,
+      "partition": "iid",
+      "comparison": "D/B",
+      "peak_ratio": 1.0978554272818966,
+      "D_persistent": 54687296,
+      "ref_persistent": 1532864
+    },
+    {
+      "clients": 12,
+      "partition": "iid",
+      "comparison": "D/E",
+      "peak_ratio": 0.9993427929318865,
+      "D_persistent": 54687296,
+      "ref_persistent": 54687296
+    },
+    {
+      "clients": 12,
+      "partition": "dirichlet_0.1",
+      "comparison": "D/B",
+      "peak_ratio": 1.0983526167409172,
+      "D_persistent": 54687296,
+      "ref_persistent": 1532864
+    },
+    {
+      "clients": 12,
+      "partition": "dirichlet_0.1",
+      "comparison": "D/E",
+      "peak_ratio": 0.9994977704300403,
+      "D_persistent": 54687296,
+      "ref_persistent": 54687296
+    }
+  ],
+  "pre_resume_completed_runs": 15,
+  "post_resume_completed_runs": 39,
+  "saved_workers_crossing_resume": 0,
+  "previous_frozen_sources_unchanged": 110
+}

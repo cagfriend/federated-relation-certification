@@ -1,0 +1,13 @@
+seed,partition,regime,clients,case_id,method,block,position,process_peak_bytes,persistent_method_array_bytes,scope
+1002,iid,fixed_per_client,2,m16384_fixed2_privfull,B,0,0,580108288,262304,isolated process; no oracle; endpoint only
+1002,iid,fixed_per_client,2,m16384_fixed2_privfull,E,0,1,731656192,9121376,isolated process; no oracle; endpoint only
+1002,iid,fixed_per_client,2,m16384_fixed2_privfull,D,0,2,731914240,9121376,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,2,m16384_fixed2_privfull,E,1,0,736829440,9121376,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,2,m16384_fixed2_privfull,D,1,1,737427456,9121376,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,2,m16384_fixed2_privfull,B,1,2,585359360,262304,isolated process; no oracle; endpoint only
+1002,iid,fixed_per_client,12,m16384_fixed2_privfull,D,2,0,2478878720,54687296,isolated process; no oracle; endpoint only
+1002,iid,fixed_per_client,12,m16384_fixed2_privfull,B,2,1,2257928192,1532864,isolated process; no oracle; endpoint only
+1002,iid,fixed_per_client,12,m16384_fixed2_privfull,E,2,2,2480508928,54687296,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,12,m16384_fixed2_privfull,B,3,0,2263588864,1532864,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,12,m16384_fixed2_privfull,E,3,1,2487468032,54687296,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,fixed_per_client,12,m16384_fixed2_privfull,D,3,2,2486218752,54687296,isolated process; no oracle; endpoint only

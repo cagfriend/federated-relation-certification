@@ -24,3 +24,10 @@
 |`experiments/lr_compute/PREREGISTRATION.md`|[docs/history/local_followups/experiments/lr_compute/PREREGISTRATION.md](../../docs/history/local_followups/experiments/lr_compute/PREREGISTRATION.md)|`bc32d94d68b540e872af9136526d03844f619c7521e8d802c55b2f52e0917b76`|
 |`experiments/lr_repeat/PREREGISTRATION.md`|[docs/history/local_followups/experiments/lr_repeat/PREREGISTRATION.md](../../docs/history/local_followups/experiments/lr_repeat/PREREGISTRATION.md)|`50290a5e5f24c711b507f22d14c1b85b50045ce1643228c39e2f3247561152b6`|
 |`experiments/lr_repeat/VALIDATION.md`|[docs/history/local_followups/experiments/lr_repeat/VALIDATION.md](../../docs/history/local_followups/experiments/lr_repeat/VALIDATION.md)|`e63816312ad889ee5ade86d7d66e5306c232a624281525f541060e4f10682253`|
+
+
+## P3：正式完成并发布，2026-11-10
+
+P3固定每客户端400张规模实验已完成：54次主运行+12次隔离内存回放；18/18配置D/B与D/E完整头部均更快，六组配对中位省时分别35.39%–43.57%和6.27%–16.53%。末轮18/18无严重退化，9/18早期配置在20/40轮曾有单簇或≥99%事件。相对B的峰值内存增加9.8%–26.2%，通信字节相同。
+
+执行包[lr_client_scaling](../../experiments/lr_client_scaling/README.md)、[正式审核](../../outputs/lr_client_scaling_results_20261110/REVIEW.md)及[原始恢复清单](../../archives/lr_client_scaling_raw_20261110.manifest.json)已发布。66份主/内存JSON按N/seed无损ZIP保存，解压回原路径后校验completed.json全部102份文件；18输入指针、原电源/环境及报表直接保留。开发VALIDATION中的未启动标记是当时状态，不能覆盖正式完成证据。原数据、表示和模型缓存不上传，原机绝对路径不适用于异机resume。

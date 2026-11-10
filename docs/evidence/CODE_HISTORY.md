@@ -353,3 +353,16 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/lr_repeat/report.py)|`57e3cfbf51570cbaa54cc244bb244056b442f04c30137be82bcb3a2727c9f7a3`|
 |[run.py](../../experiments/lr_repeat/run.py)|`a82700e86eb6d2fc599488e13378fc49f995ce3c622567808ce8c1c04ec5fd40`|
 |[test_run.py](../../experiments/lr_repeat/test_run.py)|`53962f30341d135af47c9dfc2ccdcc5ed64c0336b9be17ac1756c5d7e7a26386`|
+
+
+## E25 P3固定每客户端规模，2026-11-10发布
+
+5个Python文件直接复用旧冻结核心，仅新计划设public_weight=0.5；源文件SHA256如下。旧依赖不改，仍需原缓存/数据准备和精确版本。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/lr_client_scaling/__init__.py)|`99f527e0d1c739f891d8f74a71afcf867e675d2c36848aeb6bfc52c91d714638`|
+|[design.py](../../experiments/lr_client_scaling/design.py)|`3f1e4974cc456261fd1bb4ea3fafa24208f5af982d59c8c5090d9e9ed292e8d7`|
+|[report.py](../../experiments/lr_client_scaling/report.py)|`105cf0d5f2e9aa9bdeaac52eeda308bdbffe9d3d5863c3eb41b1e4a9b288647e`|
+|[run.py](../../experiments/lr_client_scaling/run.py)|`3255a126a6fb413e050d0ae1c47a661e2d54f6e0ce333bf113ad7782849fddd8`|
+|[test_run.py](../../experiments/lr_client_scaling/test_run.py)|`d9e4b1c32eb891832752417fff9245da55b709deb1240834940948a125feb9f3`|

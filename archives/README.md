@@ -41,3 +41,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## 2026-11-09 P1/P2正式原始记录
 
 [lr_followups_raw_20261109.manifest.json](lr_followups_raw_20261109.manifest.json)列出13个无损ZIP及60个主运行JSON、6个隔离内存JSON的原路径、字节数、SHA256。解压至仓库根目录恢复runs路径后核验各completed.json；内存原记录在专门ZIP内；电源、环境和报表直接保留。数据和表示缓存不在归档内。
+
+
+## 2026-11-10 P3正式结果
+
+[lr_client_scaling_raw_20261110.manifest.json](lr_client_scaling_raw_20261110.manifest.json)记录11个无损ZIP及54主+12内存JSON的恢复路径/字节/SHA256。解压到仓库根目录后核对completed.json；输入指针、电源、环境和报表原样直接保留。缓存不上传。

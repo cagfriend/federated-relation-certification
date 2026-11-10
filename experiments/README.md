@@ -19,3 +19,8 @@
 - [aggregator_recovery](aggregator_recovery/README.md)：独立合成关系协议，不是模型训练恢复。
 
 其余包逐项列在完整台账，源目录不重新分组移动。[lr_compute](lr_compute/README.md)与[lr_repeat](lr_repeat/README.md)执行包、正式结果和审核已发布；详见[发布与复查说明](../docs/evidence/LOCAL_FOLLOWUPS.md)。旧开发验证记录不代表当前正式完成状态。
+
+
+## P3固定每客户端规模已完成
+
+[lr_client_scaling](lr_client_scaling/README.md)显式使用公共有效LR0.05，仅fixed_per_client；54主+12内存已审核。原client_scaling默认仍为旧0.1，不以旧命令重现新协议。[审核](../outputs/lr_client_scaling_results_20261110/REVIEW.md)

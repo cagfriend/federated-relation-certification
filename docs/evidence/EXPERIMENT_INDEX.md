@@ -465,3 +465,25 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 
 **归档、清单与原始文件：** [60份主运行恢复路径和SHA](../../archives/lr_followups_raw_20261109.manifest.json)；内存原记录在专门ZIP内，电源直接保留。 [发布状态](LOCAL_FOLLOWUPS.md)
 
+
+
+|E25|[0.05固定每客户端400张规模](#e25)|客户端数增大时的精确性、计算与空间边界|[正式报告](../../experiments/lr_client_scaling/results_full_fixed_per_client/report.md)|
+
+<a id="e25"></a>
+## E25 0.05固定每客户端400张规模
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/lr_client_scaling/`|
+|配置与对照|STL-10、N2/6/12、IID/α0.1、seed1001/1002/1003；54主+12内存；K10、公共2步、有效LR0.05、200轮|
+|验证问题|固定每客户端400张时，关系认证随规模增长是否仍有净计算收益|
+|主要结果|P3固定每客户端400张规模实验已完成：54次主运行+12次隔离内存回放；18/18配置D/B与D/E完整头部均更快，六组配对中位省时分别35.39%–43.57%和6.27%–16.53%。末轮18/18无严重退化，9/18早期配置在20/40轮曾有单簇或≥99%事件。相对B的峰值内存增加9.8%–26.2%，通信字节相同。|
+|正确性|18份缓存/102完成文件/90冻结来源均通过；589,824,000关系和786,432,000候选检查零错；12报表重生成一致|
+|结论边界与异常|单方法单次、旧种子；跨N同时改变总数据/总模型/公共总步数。关闭PyCharm后resume，15条主记录保留，未完成方法重跑；无计时剔除。两日志间154秒未采样，不算故障或推定休眠。|
+|代码状态|5个Python文件保持原版，旧依赖及历史结果不改|
+
+**原始说明及协议：** [README](../../experiments/lr_client_scaling/README.md) · [预注册](../../experiments/lr_client_scaling/PREREGISTRATION.md) · [开发验证](../../experiments/lr_client_scaling/VALIDATION.md)
+
+**结果与审核：** [正式报告](../../experiments/lr_client_scaling/results_full_fixed_per_client/report.md) · [主审](../../outputs/lr_client_scaling_results_20261110/REVIEW.md) · [独立复审](../../outputs/lr_client_scaling_results_20261110/INDEPENDENT_REVIEW.md) · [机器审计](../../outputs/lr_client_scaling_results_20261110/audit.json)
+
+**归档、清单与原始文件：** [66份主/内存记录无损ZIP及恢复路径](../../archives/lr_client_scaling_raw_20261110.manifest.json) · [完成清单](../../experiments/lr_client_scaling/results_full_fixed_per_client/completed.json)。输入指针、电源、环境与小报表直接保留，数据/编码器/特征缓存不上传。

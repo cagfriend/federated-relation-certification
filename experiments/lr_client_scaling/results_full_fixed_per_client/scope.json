@@ -1,0 +1,10 @@
+{
+  "public_effective_lr": 0.05,
+  "private_lr": 0.1,
+  "public_steps_per_client": 2,
+  "private_samples_per_client": 400,
+  "severe_final_cases": 0,
+  "quality_trajectories": 18,
+  "independent_technical_repeats": false,
+  "scope": "Fixed samples per client; total private data and public workload increase with N. No cross-N causal isolation or parallel-latency claim."
+}

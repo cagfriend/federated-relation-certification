@@ -1,0 +1,37 @@
+from pathlib import Path
+import json,csv
+H=Path(__file__).parent;ROOT=H.resolve().parents[1]
+out=ROOT/'experiments/lr_client_scaling/results_full_fixed_per_client'
+a=json.loads((H/'audit.json').read_text(encoding='utf-8'))
+assert a['status']=='PASS'
+lines=['# P3固定每客户端400张：正式结果审核','',
+'2026-11-10。STL-10、公共有效学习率0.05、公共2步、K10、N2/6/12、IID与Dirichlet α0.1、种子1001/1002/1003。54次200轮主运行、12次隔离内存回放完整。旧源码与原始结果未改。','',
+'## 审核结果','',
+f"完成清单{a['manifest_files']}份文件、finished封印、{a['frozen_sources']}份冻结源码/协议和两份调度核对通过；18份准备缓存经原数据验证器校验，样本容量、私有ID无重复、上游文件摘要与各N公共ID顺序一致。18个三元组的关系/提交目标/逐轮头摘要/损失/质量和通信精确一致；12份内存回放同方法非计时工作量与轨迹一致。",'',
+f"关系比较{a['relations']:,}次、候选成员比较{a['candidates']:,}次，零错误。{len(a['reports_reproduced'])}份报表逐字节重生成，36个配对头部比值从原始JSON另行复算一致；比较次数和200轮均不是独立实验样本数。",'',
+'## 计算收益','',
+'下表为每个N/划分内，三个配对种子的完整头部耗时比值中位数对应的省时比例；含初始化和200轮私有/关系生成/交换/公共阶段，不含模型准备、oracle、评估。各方法每配置只测一次，不是P2技术重复确认。','',
+'|N|划分|D/B完整头省时|D/E完整头省时|D/B胜场|D/E胜场|','|---|---|---:|---:|---:|---:|']
+for s in a['case_statistics']:
+ lines.append(f"|{s['clients']}|{s['partition']}|{s['D/B']['median_saving_pct']:.2f}%|{s['D/E']['median_saving_pct']:.2f}%|{s['D/B']['wins']}/3|{s['D/E']['wins']}/3|")
+lines+=['','D相对B、E在18/18配置都更快；六个N/划分组的完整头中位省时分别为35.39%–43.57%、6.27%–16.53%。这是该矩阵的有利结果，不能替代各方法技术重复或推翻P2固定总量/K64条件下的边界。部分单种子D/E收益很小，须保留paired_cost.csv而不只看组中位数。','',
+'## 退化与质量','',
+f"18/18配置末轮均无单簇/最大簇≥99%客户端，末轮平均最大簇比例约21.47%–34.64%。有{a['intermediate_single_cases']}/18配置在中间检查点出现过单簇；按共同B轨迹去重，单簇或≥99%事件涉及9/18配置、共16个客户端检查点，仅在第20/40轮出现，第60轮及以后已记录检查点无此事件。不能声称全过程无坍缩或任意长程均稳定。",'',
+'质量与B/E/D逐位相同，认证没有新增质量损失；不要求ACC提高。没有Local、旧固定总量与本轮之间的同预算学习质量因果比较，不作此类主张。','',
+'## 内存与通信','',
+'隔离内存仅seed1002、N2/N12、两划分。D和E持久数组大小相同，均高于B；进程峰值包括解释器和输入加载，但关闭oracle与评估。','',
+'|N|划分|D/B峰值增加|D/E峰值变化|','|---|---|---:|---:|']
+for m in a['memory_pairs']:
+ if m['comparison']!='D/B':continue
+ e=next(x for x in a['memory_pairs'] if x['clients']==m['clients'] and x['partition']==m['partition'] and x['comparison']=='D/E')
+ lines.append(f"|{m['clients']}|{m['partition']}|{100*(m['peak_ratio']-1):.2f}%|{100*(e['peak_ratio']-1):+.2f}%|")
+lines+=['','B/E/D实际通信字节一致，本轮收益是计算省时，没有额外通信节省。没有能耗测量；进程峰值不是显存或部署时最小内存。','',
+'## 中断、续跑与计时保留','',
+'两次启动记录，第二次为resume；15条主运行结束于恢复启动之前，39条主运行和12条内存记录在恢复后完成。与关闭PyCharm前15/54条完成状态一致。未完成方法从初始头重跑；人工关闭不计入故障。完整方法结果不跨越停机间隔，不把两次启动间隔当成训练阶段耗时或从阶段中估算扣除。','',
+f"电源采样共{sum(x['samples'] for x in a['power_invocations'])}点；异常电源/采样提示{len(a['power_warnings'])}项。日志不能保证温度/频率受控。阶段粗筛发现{len(a['timing_flags'])}项超过max(2秒,阶段中位数10倍)，仅作排查标记，全部保留。未排除运行或轮次，原始值不改。",'',
+'## 允许的结论与后续范围','',
+'固定每客户端400张、当前K10和有限N范围内，关系认证保持相同轨迹并有净完整头部省时；末轮严重退化未出现。随N增长总私有数据、总模型规模及公共更新量都增加，跨N趋势不是纯聚合复杂度因果估计；串行总耗时/N不是实际并行轮时延。','',
+'数量不均、更多簇数、真实网络/故障恢复和更长训练不由本实验覆盖。下一项若推进现有计划，可另行设计私有数量不均实验；无须为当前计算主贡献追求ACC提升。','',
+'[机器审计](audit.json) · [审计脚本](audit_results.py) · [原始报告](../../experiments/lr_client_scaling/results_full_fixed_per_client/report.md) · [冻结协议](../../experiments/lr_client_scaling/PREREGISTRATION.md)。原始结果和缓存原样保留，本次仅新增审阅材料。']
+(H/'REVIEW.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+print(H/'REVIEW.md')

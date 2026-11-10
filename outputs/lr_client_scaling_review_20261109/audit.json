@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "formal_training_started": false,
+  "runs": 12,
+  "memory_runs": 12,
+  "triples": 4,
+  "relations": 6912,
+  "candidates": 9216,
+  "mismatches": 0,
+  "reports_reproduced": [
+    "client_checkpoints.csv",
+    "collapse_checkpoints.csv",
+    "collapse_events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "quality_guardrails.csv",
+    "report.md",
+    "runs.csv",
+    "scope.json",
+    "summary.json"
+  ],
+  "previous_frozen_sources_unchanged": 110,
+  "frozen_sources": 90,
+  "resume_preserved_runs": 23,
+  "resume_missing_only_rerun": 1,
+  "completed_resume_verified": true
+}
