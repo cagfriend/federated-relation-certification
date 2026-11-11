@@ -487,3 +487,25 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **结果与审核：** [正式报告](../../experiments/lr_client_scaling/results_full_fixed_per_client/report.md) · [主审](../../outputs/lr_client_scaling_results_20261110/REVIEW.md) · [独立复审](../../outputs/lr_client_scaling_results_20261110/INDEPENDENT_REVIEW.md) · [机器审计](../../outputs/lr_client_scaling_results_20261110/audit.json)
 
 **归档、清单与原始文件：** [66份主/内存记录无损ZIP及恢复路径](../../archives/lr_client_scaling_raw_20261110.manifest.json) · [完成清单](../../experiments/lr_client_scaling/results_full_fixed_per_client/completed.json)。输入指针、电源、环境与小报表直接保留，数据/编码器/特征缓存不上传。
+
+
+|E26|[私有数量异构](#e26)|数量不均下的认证成本与退化边界|[原报告](../../experiments/quantity_heterogeneity/results_full/report.md)|
+
+<a id="e26"></a>
+## E26 私有数量异构
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/quantity_heterogeneity/`|
+|配置与对照|N6、总2400、equal/moderate/strong、两划分、三旧seed、54主+6strong内存；K10/公共2步/LR0.05/200轮|
+|验证问题|数量不均下的同轨迹计算收益与适用范围|
+|主要结果|私有数量异构54主+6内存已完成：D/B18/18更快、D/E16/18更快；两个IID/seed1002负收益保留。末轮严重退化equal0/6、moderate2/6、strong6/6，集中在低容量客户端；B/E/D轨迹一致，不归为认证新增损失。|
+|精确性|18缓存、79完成文件、99冻结来源、18 P3方法锚点均通过；530,841,600关系/707,788,800候选检查零错，13报表重生成一致|
+|结论边界|8/18严重退化，不支持全部数量档健康；每方法单次，旧seed；跨档表示/类别构成/私有批次数变化，非容量单因素因果|
+|代码状态|8个Python文件及协议保持原版本，复用旧训练/认证/协议，不改原源码|
+
+**协议与说明：** [预注册](../../experiments/quantity_heterogeneity/PREREGISTRATION.md) · [README](../../experiments/quantity_heterogeneity/README.md) · [开发验证](../../experiments/quantity_heterogeneity/VALIDATION.md)
+
+**结果与审核：** [正式报告](../../experiments/quantity_heterogeneity/results_full/report.md) · [主审](../../outputs/quantity_heterogeneity_results_20261111/REVIEW.md) · [机器审计](../../outputs/quantity_heterogeneity_results_20261111/audit.json) · [独立复审](../../outputs/quantity_heterogeneity_results_20261111/INDEPENDENT_REVIEW.md)
+
+**归档：** [60份主/内存JSON恢复清单](../../archives/quantity_heterogeneity_raw_20261111.manifest.json) · [完成清单](../../experiments/quantity_heterogeneity/results_full/completed.json)。原环境（含18缓存输入身份）、电源、原报表直接保留；不上传数据/模型/特征。开发smoke不作正式性能证据。

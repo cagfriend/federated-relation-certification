@@ -366,3 +366,19 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/lr_client_scaling/report.py)|`105cf0d5f2e9aa9bdeaac52eeda308bdbffe9d3d5863c3eb41b1e4a9b288647e`|
 |[run.py](../../experiments/lr_client_scaling/run.py)|`3255a126a6fb413e050d0ae1c47a661e2d54f6e0ce333bf113ad7782849fddd8`|
 |[test_run.py](../../experiments/lr_client_scaling/test_run.py)|`d9e4b1c32eb891832752417fff9245da55b709deb1240834940948a125feb9f3`|
+
+
+## E26数量异构，2026-11-11增补
+
+8个Python文件，保持正式运行版本；旧训练/认证核心与P3来源不改。非均量划分与准备器独立，equal强制使用旧P3缓存及方法锚点。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/quantity_heterogeneity/__init__.py)|`80d4d8febace56a8649b517d7b82513552bcd626b2f2dc938075a9c370765cd2`|
+|[data.py](../../experiments/quantity_heterogeneity/data.py)|`70444736529196c60d1630f4592a23ebdb3ba047e6a72a5549c93699ca1b125f`|
+|[design.py](../../experiments/quantity_heterogeneity/design.py)|`c9c4d3e38f5ec4fb8edc02de0e654b84c3273cdf069a56769d8b8868f41d8f88`|
+|[engine.py](../../experiments/quantity_heterogeneity/engine.py)|`cbf4e8edeb628b28fe38ccdfb461c4f0a2c37663a0e4c1a413a81b76a4d69a01`|
+|[partition.py](../../experiments/quantity_heterogeneity/partition.py)|`987a13ac3364f377974d689c04fb87d0d976a5b59de9f4f574035d737528db69`|
+|[report.py](../../experiments/quantity_heterogeneity/report.py)|`42b86947b06e1f1b95635bc8b5dd51717cac84c428416a5b5fdc8284365c6c0a`|
+|[run.py](../../experiments/quantity_heterogeneity/run.py)|`a41fa74838de0f270f6155588c54fa71e182f423adda33e7602b37d30f5a5eb0`|
+|[test_run.py](../../experiments/quantity_heterogeneity/test_run.py)|`6b83150ba7842726daedb1bf8f1269f97dca348c22659ad165c44966d37bd91f`|

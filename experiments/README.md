@@ -24,3 +24,8 @@
 ## P3固定每客户端规模已完成
 
 [lr_client_scaling](lr_client_scaling/README.md)显式使用公共有效LR0.05，仅fixed_per_client；54主+12内存已审核。原client_scaling默认仍为旧0.1，不以旧命令重现新协议。[审核](../outputs/lr_client_scaling_results_20261110/REVIEW.md)
+
+
+## 私有数量不均已完成
+
+[quantity_heterogeneity](quantity_heterogeneity/README.md)：固定N6/总2400/公共LR0.05的三容量档，54主+6内存，equal旧P3锚点18方法一致。严重退化8/18，按[正式审核](../outputs/quantity_heterogeneity_results_20261111/REVIEW.md)限定学习范围；旧代码/旧结果不改。

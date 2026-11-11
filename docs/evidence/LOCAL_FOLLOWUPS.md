@@ -31,3 +31,10 @@
 P3固定每客户端400张规模实验已完成：54次主运行+12次隔离内存回放；18/18配置D/B与D/E完整头部均更快，六组配对中位省时分别35.39%–43.57%和6.27%–16.53%。末轮18/18无严重退化，9/18早期配置在20/40轮曾有单簇或≥99%事件。相对B的峰值内存增加9.8%–26.2%，通信字节相同。
 
 执行包[lr_client_scaling](../../experiments/lr_client_scaling/README.md)、[正式审核](../../outputs/lr_client_scaling_results_20261110/REVIEW.md)及[原始恢复清单](../../archives/lr_client_scaling_raw_20261110.manifest.json)已发布。66份主/内存JSON按N/seed无损ZIP保存，解压回原路径后校验completed.json全部102份文件；18输入指针、原电源/环境及报表直接保留。开发VALIDATION中的未启动标记是当时状态，不能覆盖正式完成证据。原数据、表示和模型缓存不上传，原机绝对路径不适用于异机resume。
+
+
+## 数量异构：正式完成、正确性通过、学习范围受限，2026-11-11
+
+私有数量异构54主+6内存已完成：D/B18/18更快、D/E16/18更快；两个IID/seed1002负收益保留。末轮严重退化equal0/6、moderate2/6、strong6/6，集中在低容量客户端；B/E/D轨迹一致，不归为认证新增损失。
+
+[执行包](../../experiments/quantity_heterogeneity/README.md) · [审核](../../outputs/quantity_heterogeneity_results_20261111/REVIEW.md) · [原始60记录清单](../../archives/quantity_heterogeneity_raw_20261111.manifest.json)。10个无损ZIP恢复原路径后可核对79份完成文件；原环境中保存18份输入身份，数据与特征缓存不上传。VALIDATION未启动字段为开发时状态，正式结论以本轮审核为准。

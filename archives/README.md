@@ -46,3 +46,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## 2026-11-10 P3正式结果
 
 [lr_client_scaling_raw_20261110.manifest.json](lr_client_scaling_raw_20261110.manifest.json)记录11个无损ZIP及54主+12内存JSON的恢复路径/字节/SHA256。解压到仓库根目录后核对completed.json；输入指针、电源、环境和报表原样直接保留。缓存不上传。
+
+
+## 2026-11-11数量异构原始记录
+
+[quantity_heterogeneity_raw_20261111.manifest.json](quantity_heterogeneity_raw_20261111.manifest.json)列出10个无损ZIP、54主+6内存JSON的路径/大小/SHA256。解压到仓库根目录后校验79完成文件；环境/电源/小报表直接保留，数据/模型/特征不上传。失败配置和负收益均保留。

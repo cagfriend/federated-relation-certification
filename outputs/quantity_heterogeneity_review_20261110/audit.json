@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "formal_training_started": false,
+  "runs": 18,
+  "memory_runs": 6,
+  "groups": 6,
+  "reports_reproduced": [
+    "client_checkpoints.csv",
+    "collapse_checkpoints.csv",
+    "collapse_events.csv",
+    "final_clients.csv",
+    "memory.csv",
+    "paired_cost.csv",
+    "paired_summary.csv",
+    "private_capacities.csv",
+    "quality_guardrails.csv",
+    "report.md",
+    "runs.csv",
+    "scope.json",
+    "summary.json"
+  ],
+  "relations": 20736,
+  "candidates": 27648,
+  "mismatches": 0,
+  "full_readonly_anchor_preflight": 18,
+  "P3_pointers": 6,
+  "sources": 99,
+  "development_quality_trajectories": 6,
+  "resume_preserved": 23,
+  "resume_missing_only_rerun": 1
+}

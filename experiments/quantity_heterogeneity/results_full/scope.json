@@ -1,0 +1,35 @@
+{
+  "fixture": false,
+  "profiles": {
+    "equal": [
+      400,
+      400,
+      400,
+      400,
+      400,
+      400
+    ],
+    "moderate": [
+      200,
+      400,
+      600,
+      200,
+      400,
+      600
+    ],
+    "strong": [
+      100,
+      400,
+      700,
+      100,
+      400,
+      700
+    ]
+  },
+  "clients": 6,
+  "private_total": 2400,
+  "public_effective_lr": 0.05,
+  "quality_trajectories": 18,
+  "severe_final_cases": 8,
+  "note": "Only within-profile method pairs identify certification savings. Across profiles, encoders, pseudo-labels, class allocation and private batch counts may change. Equal aggregation remains unchanged."
+}

@@ -1,0 +1,7 @@
+seed,partition,profile,regime,clients,case_id,method,block,position,process_peak_bytes,persistent_method_array_bytes,scope
+1002,iid,strong,quantity_strong,6,m16384_fixed2_privfull,B,0,0,1251201024,770528,isolated process; no oracle; endpoint only
+1002,iid,strong,quantity_strong,6,m16384_fixed2_privfull,E,0,1,1430470656,27347744,isolated process; no oracle; endpoint only
+1002,iid,strong,quantity_strong,6,m16384_fixed2_privfull,D,0,2,1430499328,27347744,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,strong,quantity_strong,6,m16384_fixed2_privfull,E,1,0,1436221440,27347744,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,strong,quantity_strong,6,m16384_fixed2_privfull,D,1,1,1437130752,27347744,isolated process; no oracle; endpoint only
+1002,dirichlet_0.1,strong,quantity_strong,6,m16384_fixed2_privfull,B,1,2,1256931328,770528,isolated process; no oracle; endpoint only
