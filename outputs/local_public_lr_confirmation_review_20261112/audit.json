@@ -1,0 +1,17 @@
+{
+  "unit_tests_passed": 6,
+  "unit_tests_seconds": 13.469,
+  "smoke_runs": 3,
+  "rounds_each": 3,
+  "source_files": 123,
+  "distinct_case_caches": 3,
+  "all_record_validation_passed": true,
+  "regenerated_reports_byte_equal": 13,
+  "partial_resume_preserved_run_sha256": "08dd1b8b612516e98801939de1b939ab3d50357fcc6fc4a6ee266d51e9cc00f4",
+  "partial_resume_only_two_missing_runs": true,
+  "completed_resume_no_file_changes": true,
+  "replayed_non_time_trajectories_equal": true,
+  "formal_training_started": false,
+  "independent_review_completed": false,
+  "independent_review_blocker": "Sub-agent usage quota exhausted"
+}

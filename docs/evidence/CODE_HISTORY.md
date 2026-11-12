@@ -412,3 +412,18 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/local_public_lr/report.py)|`08791442583826840d2c249b4bafdb0c8a30ecb19fd4036b9b5c0b1d75fbc818`|
 |[run.py](../../experiments/local_public_lr/run.py)|`27870c94511751632e57efd5581265189f37f06484eb519664e1e7f18ca849db`|
 |[test_local_public_lr.py](../../experiments/local_public_lr/test_local_public_lr.py)|`c8be85d22c6d16cc6a0f1b838d609ec6762144104d2f88011e0808162b8f5ff2`|
+
+
+## 局部LR剩余三配置确认，2026-11-12：代码就绪
+
+直接复用E28训练引擎；新增三case调度/身份核验/报表。正式实验尚未启动。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/local_public_lr_confirmation/__init__.py)|`d1503d317aef769d4bbc90c73ee56ba6384bc6c794e965ffbbcb9ad9721c55f6`|
+|[design.py](../../experiments/local_public_lr_confirmation/design.py)|`09b25ee4a3262067367de571cdc2a5e44544400ee3de7a7dd899ab4c4c3800ae`|
+|[engine.py](../../experiments/local_public_lr_confirmation/engine.py)|`4e87031cba514e9dfb241b01a87813dcd25886de26ab648808817e1d4b4be15b`|
+|[probes.py](../../experiments/local_public_lr_confirmation/probes.py)|`d767bd3f0eca9eb5717d492cfcfabafc5ef3533d22b8761a3ae633488b55feda`|
+|[report.py](../../experiments/local_public_lr_confirmation/report.py)|`1a5ac12a36ad1d987e51dedd6cce16659056dc7be1e574db2b3d6f06b9ced63b`|
+|[run.py](../../experiments/local_public_lr_confirmation/run.py)|`0120c03b38480987e2b5487797537f1182b05598e3c8b08fbaa453986bff98aa`|
+|[test_confirmation.py](../../experiments/local_public_lr_confirmation/test_confirmation.py)|`f07acfdc0b98dea05d8716af0b62acf21d4d8dbf7589f550af21c03c86f6b990`|

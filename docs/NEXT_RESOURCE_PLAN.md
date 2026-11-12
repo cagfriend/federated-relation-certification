@@ -8,7 +8,7 @@ strong/IID/seed1001局部公共LR干预完成：仅100张client0/3降至0.0125�
 
 原strong/IID/seed1001是探索结果，单列，不并入三个待确认实例的通过数。历史0.05/全局低LR/private-only只用已有且定义相同的字段参照；本轮不补跑另外三条200轮基线，不补造历史晚期T0/T1/T2。无认证省时结论。三配置全部通过才称该确认矩阵通过；任一失败如实保留，不追补seed/步数/LR挽救结论。
 
-新入口：`experiments.local_public_lr_confirmation.run --preset full`，正式运行由用户启动；本次代码先进行开发smoke和独立审阅。确认稳定范围后再设计B/E/D精确性及计算收益实验。
+新入口：`experiments.local_public_lr_confirmation.run --preset full`，正式运行由用户启动；代码、开发smoke和主AI检查已完成；独立复审因子代理额度限制未完成；正式实验尚未启动。[执行说明](../experiments/local_public_lr_confirmation/README.md)。确认稳定范围后再设计B/E/D精确性及计算收益实验。
 
 ## 历史计划与阶段结论（原文保留，不表示仍待执行）
 

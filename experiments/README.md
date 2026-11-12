@@ -39,3 +39,8 @@
 ## 局部公共学习率：完成与确认
 
 [local_public_lr](local_public_lr/README.md)已完成单配置两条200轮，局部晚期通过但早期仍坍缩。[完整审核](../outputs/local_public_lr_results_20261112/REVIEW.md)。下一执行为`local_public_lr_confirmation`剩余3配置，用户启动正式运行。
+
+
+## 局部LR剩余三配置确认：代码就绪
+
+[local_public_lr_confirmation](local_public_lr_confirmation/README.md)：仅3条200轮B局部干预，复用已有缓存、完整参照清单及原引擎；新增完整基线数为0，探索case不并入确认分母。主AI开发验证通过，独立复审因子代理额度限制待补，正式由用户启动。
