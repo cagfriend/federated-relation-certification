@@ -56,3 +56,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## 2026-11-12低容量诊断记录
 
 [low_capacity_diagnostic_20261112.manifest.json](low_capacity_diagnostic_20261112.manifest.json)列出5个无损ZIP及全部成员路径/大小/SHA256；12个原始case/branch JSON按case存档，stages/losses_and_deltas/stage_display/stage_events四份大CSV在derived_logs归档。解压到仓库根后核对completed的27文件；环境、电源及小表保留，数据/表示缓存不上传。
+
+
+## E28局部公共学习率
+
+[local_public_lr_20261112.manifest.json](local_public_lr_20261112.manifest.json)列出ZIP摘要及每个成员的原路径/大小/SHA256；恢复后可核验22项完成清单。旧归档原样保留。

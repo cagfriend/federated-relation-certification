@@ -34,3 +34,8 @@
 ## 低容量稳定性诊断已完成
 
 [low_capacity_diagnostic](low_capacity_diagnostic/README.md)：复用quantity strong缓存，4短回放+8长诊断，T0/T1/T2只读；private-only/low_lr各4/4解除严重退化。不是认证测速。[审核](../outputs/low_capacity_diagnostic_results_20261112/REVIEW.md)
+
+
+## 局部公共学习率：完成与确认
+
+[local_public_lr](local_public_lr/README.md)已完成单配置两条200轮，局部晚期通过但早期仍坍缩。[完整审核](../outputs/local_public_lr_results_20261112/REVIEW.md)。下一执行为`local_public_lr_confirmation`剩余3配置，用户启动正式运行。

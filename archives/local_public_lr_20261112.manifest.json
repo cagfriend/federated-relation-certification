@@ -1,0 +1,42 @@
+{
+  "archive": "archives/local_public_lr_20261112.zip",
+  "bytes": 1791269,
+  "sha256": "7d49875e0295fb98a5e314ac7e9e5dba6ed023f0d6b453a1c683ed68110b010f",
+  "members": [
+    {
+      "path": "experiments/local_public_lr/results_full/losses_and_deltas.csv",
+      "bytes": 1013177,
+      "sha256": "90ef01c69022c7075721a9227e76bf070f2a134a8519a9826dc47711b0b0516e"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/runs/strong_iid_seed1001_baseline.json",
+      "bytes": 5893829,
+      "sha256": "acbd3d86fc0233dcf238f8925f96399bb991a3c82810d4c7a2c577fa7d345adb"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/runs/strong_iid_seed1001_local_lr.json",
+      "bytes": 5903661,
+      "sha256": "42512e909a1d149b7b24b27f6930d8668c006278fde6c98f1c9f59ef137db63d"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/stage_contrasts.csv",
+      "bytes": 361848,
+      "sha256": "89f33a4ced2d9fc9751c19f62fc0e95335f13fdb5c6b09ad71e1745794a39954"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/stage_effects.csv",
+      "bytes": 410151,
+      "sha256": "a2ce9c243f561b3d837bdd09f7a1df11625123d24b53f5bb6adb5d98a62575ef"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/stage_events.csv",
+      "bytes": 384914,
+      "sha256": "854b9dc1e979b2623c8ba517bca10f850841c0edac5da8102fddde9beee9b1d5"
+    },
+    {
+      "path": "experiments/local_public_lr/results_full/stages.csv",
+      "bytes": 1656147,
+      "sha256": "b8ee6b7819e884dd0950f2ceaa253b912769575195c79a23ffb1ee9608432588"
+    }
+  ]
+}

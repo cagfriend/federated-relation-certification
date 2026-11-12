@@ -397,3 +397,18 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/low_capacity_diagnostic/report.py)|`e8780a05111f5af0b09000dfaabf420820f0f9b55f73f9cf84fe6c5c3c7a0206`|
 |[run.py](../../experiments/low_capacity_diagnostic/run.py)|`12e9e011b39fe2b434fa99d20ddde8ba0eae567e5e715472f306d01459e59280`|
 |[test_run.py](../../experiments/low_capacity_diagnostic/test_run.py)|`78093f707b4be8e4631de24961c1f966febf91db8c04fee42bbaa46ef6e9fc22`|
+
+
+## E28局部学习率，2026-11-12
+
+只在公共学生更新调用时传入逐客户端Spec；旧源不改。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/local_public_lr/__init__.py)|`4dd1be3d96d20d8010f9bff02b5901501d336a3cc1c5af4bb2a4ca05b547c4b5`|
+|[design.py](../../experiments/local_public_lr/design.py)|`f7d06413fc564b69335288c2331af1052f3a4023a2b9af9249d9479bd761154c`|
+|[engine.py](../../experiments/local_public_lr/engine.py)|`8e0a1fb48d5447b7396253d7cbbd18e1187cff0c742912f55ac4a07697b216b3`|
+|[probes.py](../../experiments/local_public_lr/probes.py)|`8cf9b3e133973f364325e8f94ddf55b65903f19f4b717187f20a255201f94b7c`|
+|[report.py](../../experiments/local_public_lr/report.py)|`08791442583826840d2c249b4bafdb0c8a30ecb19fd4036b9b5c0b1d75fbc818`|
+|[run.py](../../experiments/local_public_lr/run.py)|`27870c94511751632e57efd5581265189f37f06484eb519664e1e7f18ca849db`|
+|[test_local_public_lr.py](../../experiments/local_public_lr/test_local_public_lr.py)|`c8be85d22c6d16cc6a0f1b838d609ec6762144104d2f88011e0808162b8f5ff2`|

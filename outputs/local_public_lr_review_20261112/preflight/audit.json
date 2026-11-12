@@ -1,0 +1,27 @@
+{
+  "kind": "read-only formal input preflight; no formal model training",
+  "case_count": 1,
+  "references": {
+    "private_only": {
+      "rounds": 200,
+      "initial_head_digest": "5363d4ff151f27136d9d8d2e95cd7b605069e4ac64a30db5068029c559f68c46",
+      "probe_sha256": "9fe4dfe57a8cc8be58706d39c270c03e5baa9c1750cfb304ca94bc91eb602f5f"
+    },
+    "low_lr": {
+      "rounds": 200,
+      "initial_head_digest": "5363d4ff151f27136d9d8d2e95cd7b605069e4ac64a30db5068029c559f68c46",
+      "probe_sha256": "9fe4dfe57a8cc8be58706d39c270c03e5baa9c1750cfb304ca94bc91eb602f5f"
+    }
+  },
+  "baseline_reference_rounds": 200,
+  "source_snapshot": {
+    "environment": "6f8920bf3877a86689fbf83a9cc90c275a6461e66cc34f6d1d9892a3a47379b5",
+    "completed": "6ebfb27838b274ec3a84ecf420d61f61e66a01c8c43c7bd217d76d21a49b0e06",
+    "finished": "072f7a4d25702f7c394091514350863e9a38e77395f3aee7bba9ec341a28a855"
+  },
+  "diagnostic_snapshot": {
+    "environment": "706a8a9eb1ca45a83eade1198f11dcd7e84b0e7535fc6a5182fb6dc77094eb07",
+    "completed": "71d1cd398d5c6af9b0db6055057fc66f21bb021480adf167fe7be9daca1e74de",
+    "finished": "67156aa93d1063a2577e9014a9e0a1d8f52d0a2b612c5621c794a7bfbb13c820"
+  }
+}

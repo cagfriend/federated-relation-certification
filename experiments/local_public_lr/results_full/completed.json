@@ -1,0 +1,29 @@
+{
+  "runs": 2,
+  "baseline_replays": 1,
+  "long_diagnostic_runs": 1,
+  "files": {
+    "client_rates.csv": "21bfcc5c89bccec44b069121f36ce03014c2b33da34f129fa9bcc334178e348a",
+    "environment.json": "2540651ad6ffc7a69ada682a17a9c7dca4803dacdef80ecd065eb1e187628bbd",
+    "environment_final.json": "bb6794f4550b3ad059c222d216917d5280bb9359b9e5f37189768ec0c8b1be90",
+    "historical_diagnostic_checkpoints.csv": "cdd8d053a855d0582973e68542a2f992d14646bb12b1ffeb4ec00a52b47406e1",
+    "historical_test_metrics.csv": "d497133b65fbb3845cd3af9bcd4c2a5972cbe171535030a43928c9ce04763371",
+    "initial.csv": "e606c4ea014c8efcd5e27a93aacd07212950533dcab7975a4865e08154bf9c63",
+    "invocation_1794476952666818100.json": "240b8e6d148ef3d399f2d9cbb8288b7eebfdf98afbcda7a8c6d59b1ae3496e87",
+    "late_comparison.csv": "008b4c0596ec82f9ef0f9dccd8cf75552247d038247075f4d9896c04066422bf",
+    "losses_and_deltas.csv": "90ef01c69022c7075721a9227e76bf070f2a134a8519a9826dc47711b0b0516e",
+    "power_1794476952670431300.jsonl": "37a4fe5514588c562bc0531c66afed4b5afc478ac16c02d55c8040b00b49b73e",
+    "recovery.csv": "39950b36eefa264e2f7b35b81399b037091f6b3c1ca56a91ad0ae90f7d81bb99",
+    "report.md": "9ff9def8b0a3b11b5d23aa31bd8151ce9d84c0c3596856677a5183c7975dbe15",
+    "runs.csv": "767307b35b5fe500fff1344729064d40ba550b4247ad10217e9ec13db8f20c34",
+    "stages.csv": "b8ee6b7819e884dd0950f2ceaa253b912769575195c79a23ffb1ee9608432588",
+    "stage_contrasts.csv": "89f33a4ced2d9fc9751c19f62fc0e95335f13fdb5c6b09ad71e1745794a39954",
+    "stage_display.csv": "2a304ae62f8d9477fd27cd20c57cd938371d333ed668468594bc5252c5303c99",
+    "stage_effects.csv": "a2ce9c243f561b3d837bdd09f7a1df11625123d24b53f5bb6adb5d98a62575ef",
+    "stage_events.csv": "854b9dc1e979b2623c8ba517bca10f850841c0edac5da8102fddde9beee9b1d5",
+    "summary.json": "a89b8f0d9586fe3bb1549d68c6b603698627886b51f4ddbbd3e8c8a80731ce18",
+    "test_checkpoints.csv": "0af67906e29e300e4bd4b03118e6f39d852a274786865bbde464b1369eaaa98a",
+    "runs\\strong_iid_seed1001_baseline.json": "acbd3d86fc0233dcf238f8925f96399bb991a3c82810d4c7a2c577fa7d345adb",
+    "runs\\strong_iid_seed1001_local_lr.json": "42512e909a1d149b7b24b27f6930d8668c006278fde6c98f1c9f59ef137db63d"
+  }
+}

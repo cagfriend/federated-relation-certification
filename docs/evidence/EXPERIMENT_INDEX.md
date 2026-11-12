@@ -531,3 +531,25 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **结果与审核：** [正式报告](../../experiments/low_capacity_diagnostic/results_full/report.md) · [主审](../../outputs/low_capacity_diagnostic_results_20261112/REVIEW.md) · [独立复审](../../outputs/low_capacity_diagnostic_results_20261112/INDEPENDENT_REVIEW.md) · [机器审计](../../outputs/low_capacity_diagnostic_results_20261112/audit.json)
 
 **原始/派生归档：** [无损ZIP及恢复清单](../../archives/low_capacity_diagnostic_20261112.manifest.json)。12份raw JSON按case保存，4份大CSV日志另存derived_logs；解压回原路径后可核验27份完成文件。环境/电源/小表直接保留，数据/表示缓存不上传。
+
+
+新增证据：[E28 局部公共学习率干预](#e28)。
+
+<a id="e28"></a>
+## E28 局部公共学习率干预
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/local_public_lr/`|
+|配置与对照|strong/IID/seed1001，N6、100/400/700重复、K10、M16384、公共2步；原全体0.05完整200轮回放＋仅client0/3降LR0.0125的200轮B|
+|验证问题|只减小低容量客户端公共步幅能否解除晚期严重退化|
+|主要结果|strong/IID/seed1001局部公共LR干预完成：仅100张client0/3降至0.0125，其余仍0.05；局部分支160/180/200全部6客户端通过严重退化检查，原0.05持续单簇。局部早期40/60/80轮仍双单簇，属于晚期解除持续退化，不是防止坍缩或充分健康保证。 末轮两小客户端最大簇86.0125%/89.7875%，NMI0.01769/0.05789；历史全局低LR为85.8%/89.575%，仅私有为80.0625%/81.4875%。|
+|核验|22完成文件、115来源、原200轮全部非计时字段及10个测试点一致；16报告重生成一致；首轮仅目标client公共更新不同，200轮批次顺序相同|
+|边界|单个既有IID配置；未防早期坍缩，公共更新不是唯一触发原因；局部干预仍改变后续教师反馈；不作健康、ACC提升或认证省时保证|
+|代码状态|7个Python文件和预注册保持正式版本；旧训练/协议/缓存未改|
+
+**协议与结果：** [README](../../experiments/local_public_lr/README.md) · [预注册](../../experiments/local_public_lr/PREREGISTRATION.md) · [开发验证](../../experiments/local_public_lr/VALIDATION.md) · [正式报告](../../experiments/local_public_lr/results_full/report.md)
+
+**审核：** [主审](../../outputs/local_public_lr_results_20261112/REVIEW.md) · [独立Luna/high复审](../../outputs/local_public_lr_results_20261112/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/local_public_lr_results_20261112/audit_results.py) · [机器审计](../../outputs/local_public_lr_results_20261112/audit.json)
+
+**无损归档：** [ZIP与逐文件恢复清单](../../archives/local_public_lr_20261112.manifest.json)。两份原始JSON及超过250KB的派生CSV保存于ZIP，解压回根目录可按completed核验全部22项；缓存/原图/模型不上传。数据身份与公共探针ID仍在环境/原始记录中。

@@ -1,0 +1,13 @@
+{
+  "smoke_runs": 2,
+  "rounds_per_run": 3,
+  "source_files": 115,
+  "all_record_validations": true,
+  "baseline_exact_non_time_replay": true,
+  "partial_resume_preserved_baseline_sha256": "60000736f18f7b580700c2b970a961994f238b5448fe1d42cad23b9b5a98574a",
+  "partial_resume_only_missing_local_run": true,
+  "completed_resume_no_file_changes": true,
+  "regenerated_report_files": 15,
+  "regenerated_reports_byte_equal": true,
+  "formal_training_started": false
+}

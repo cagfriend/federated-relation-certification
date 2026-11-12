@@ -1,0 +1,435 @@
+{
+  "fixture": false,
+  "verdict": {
+    "baseline": {
+      "passed": 0,
+      "cases": 1
+    },
+    "local_lr": {
+      "passed": 1,
+      "cases": 1
+    }
+  },
+  "comparison_checkpoints": [
+    160,
+    180,
+    200
+  ],
+  "runs": [
+    {
+      "case_id": "strong_iid_seed1001",
+      "seed": 1001,
+      "partition": "iid",
+      "branch": "baseline",
+      "recovery_status": "not_released",
+      "passed": false,
+      "rounds": 200,
+      "probe_seconds": 11.977953800131218,
+      "evaluation_seconds": 1.7270883999881335,
+      "worker_wall_seconds": 64.67566370000714
+    },
+    {
+      "case_id": "strong_iid_seed1001",
+      "seed": 1001,
+      "partition": "iid",
+      "branch": "local_lr",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 13.101064100148506,
+      "evaluation_seconds": 1.6925955000187969,
+      "worker_wall_seconds": 66.36423369999102
+    }
+  ],
+  "note": "Single-case local LR diagnostic; no certification speedup or general healthy-clustering claims.",
+  "historical_reference_recovery": {
+    "private_only": {
+      "passed": true,
+      "client_results": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true
+      },
+      "details": [
+        {
+          "round": 160,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.848625,
+          "nmi": 0.02027822947295415
+        },
+        {
+          "round": 160,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.410375,
+          "nmi": 0.08106666323965911
+        },
+        {
+          "round": 160,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.20225,
+          "nmi": 0.10807099748455204
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.8905,
+          "nmi": 0.0600651398990286
+        },
+        {
+          "round": 160,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.2655,
+          "nmi": 0.09772295021192443
+        },
+        {
+          "round": 160,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.166625,
+          "nmi": 0.09436527267309407
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.821875,
+          "nmi": 0.02141738843070297
+        },
+        {
+          "round": 180,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.388375,
+          "nmi": 0.08324714040985756
+        },
+        {
+          "round": 180,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.193375,
+          "nmi": 0.10778358923876288
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.852375,
+          "nmi": 0.07203644112938609
+        },
+        {
+          "round": 180,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.252,
+          "nmi": 0.09782861330086663
+        },
+        {
+          "round": 180,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.1635,
+          "nmi": 0.09549631163998759
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.800625,
+          "nmi": 0.022618525997958237
+        },
+        {
+          "round": 200,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.3845,
+          "nmi": 0.08400980200987916
+        },
+        {
+          "round": 200,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.18725,
+          "nmi": 0.10931992642876265
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.814875,
+          "nmi": 0.08335857663258683
+        },
+        {
+          "round": 200,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.256375,
+          "nmi": 0.097355942534002
+        },
+        {
+          "round": 200,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.15525,
+          "nmi": 0.09561070179650644
+        }
+      ]
+    },
+    "low_lr": {
+      "passed": true,
+      "client_results": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true
+      },
+      "details": [
+        {
+          "round": 160,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.925875,
+          "nmi": 0.013822183377962375
+        },
+        {
+          "round": 160,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.413625,
+          "nmi": 0.07992902954560868
+        },
+        {
+          "round": 160,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.20275,
+          "nmi": 0.10792148037101605
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.978875,
+          "nmi": 0.01498689601299553
+        },
+        {
+          "round": 160,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.269375,
+          "nmi": 0.09760681054451928
+        },
+        {
+          "round": 160,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.168,
+          "nmi": 0.09434935920194215
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.890875,
+          "nmi": 0.015682437419653028
+        },
+        {
+          "round": 180,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.392875,
+          "nmi": 0.0830827535143482
+        },
+        {
+          "round": 180,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.193375,
+          "nmi": 0.10809151349427654
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.93725,
+          "nmi": 0.040195828090768916
+        },
+        {
+          "round": 180,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.253875,
+          "nmi": 0.09822145325125509
+        },
+        {
+          "round": 180,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.164625,
+          "nmi": 0.09536504583593863
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.858,
+          "nmi": 0.01813268220669194
+        },
+        {
+          "round": 200,
+          "client": 1,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.388125,
+          "nmi": 0.08421575590890482
+        },
+        {
+          "round": 200,
+          "client": 2,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.187375,
+          "nmi": 0.10897974215026966
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "capacity": 100,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.89575,
+          "nmi": 0.05861020154490497
+        },
+        {
+          "round": 200,
+          "client": 4,
+          "capacity": 400,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.25825,
+          "nmi": 0.09789112810536617
+        },
+        {
+          "round": 200,
+          "client": 5,
+          "capacity": 700,
+          "present": true,
+          "passed": true,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.15625,
+          "nmi": 0.09562466556409326
+        }
+      ]
+    }
+  },
+  "baseline_exact_replay": true,
+  "interpretation": "Release of severe collapse only; local intervention still changes future coupled teachers."
+}

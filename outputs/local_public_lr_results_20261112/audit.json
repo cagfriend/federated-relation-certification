@@ -1,0 +1,1474 @@
+{
+  "manifest_files": 22,
+  "source_files": 115,
+  "formal_runs": 2,
+  "rounds_each": 200,
+  "baseline_all_200_non_time_rounds_and_checkpoints_equal": true,
+  "records_verified": true,
+  "unchanged_inputs_and_historical_manifests": true,
+  "regenerated_reports_byte_equal": 16,
+  "first_round_intervention": [
+    {
+      "client": 0,
+      "public_head_changed": true
+    },
+    {
+      "client": 1,
+      "public_head_changed": false
+    },
+    {
+      "client": 2,
+      "public_head_changed": false
+    },
+    {
+      "client": 3,
+      "public_head_changed": true
+    },
+    {
+      "client": 4,
+      "public_head_changed": false
+    },
+    {
+      "client": 5,
+      "public_head_changed": false
+    }
+  ],
+  "all_private_and_public_orders_equal": true,
+  "power": {
+    "samples": 12,
+    "all_ac": true,
+    "gap_warnings": 0
+  },
+  "analyses": {
+    "baseline": {
+      "late_pass": false,
+      "late_small": [
+        {
+          "round": 160,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_clients": [
+        {
+          "client": 0,
+          "width": 512,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 512,
+          "nmi": 0.0824596937466722,
+          "ari": 0.047123043113727614,
+          "acc": 0.186375,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.411625,
+          "cluster_counts": [
+            197,
+            886,
+            3293,
+            305,
+            68,
+            2207,
+            123,
+            25,
+            896,
+            0
+          ]
+        },
+        {
+          "client": 2,
+          "width": 512,
+          "nmi": 0.10904155210677033,
+          "ari": 0.05137460952271178,
+          "acc": 0.203,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.187,
+          "cluster_counts": [
+            1496,
+            1142,
+            731,
+            577,
+            808,
+            340,
+            402,
+            1033,
+            997,
+            474
+          ]
+        },
+        {
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.0,
+          "ari": 0.0,
+          "acc": 0.1,
+          "occupied_clusters": 1,
+          "largest_cluster_fraction": 1.0,
+          "cluster_counts": [
+            0,
+            0,
+            8000,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 4,
+          "width": 2048,
+          "nmi": 0.09789390510407962,
+          "ari": 0.05371628422642947,
+          "acc": 0.199,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.2635,
+          "cluster_counts": [
+            859,
+            1108,
+            254,
+            179,
+            2108,
+            816,
+            622,
+            1159,
+            264,
+            631
+          ]
+        },
+        {
+          "client": 5,
+          "width": 2048,
+          "nmi": 0.09572102853005299,
+          "ari": 0.04936480065202846,
+          "acc": 0.2035,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.15975,
+          "cluster_counts": [
+            1278,
+            871,
+            129,
+            510,
+            1070,
+            861,
+            965,
+            543,
+            930,
+            843
+          ]
+        }
+      ],
+      "test_severe_events": [
+        {
+          "round": 20,
+          "client": 0,
+          "occupied": 2,
+          "maximum": 0.99875
+        },
+        {
+          "round": 20,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 100,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 100,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 120,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 120,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 140,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 140,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 160,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        }
+      ],
+      "stage_changes": {
+        "early": {
+          "client_rounds": 80,
+          "private_fit_change": 0.0022500000000000003,
+          "public_fit_change": -0.00037500000000000033,
+          "public_probe_concentration_change": 0.0019287109375
+        },
+        "late": {
+          "client_rounds": 82,
+          "private_fit_change": 0.0,
+          "public_fit_change": 0.0,
+          "public_probe_concentration_change": 0.0
+        }
+      }
+    },
+    "local_lr": {
+      "late_pass": true,
+      "late_small": [
+        {
+          "round": 160,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.012840013800347012,
+          "ari": 0.00113310363538674,
+          "acc": 0.115875,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.930125,
+          "cluster_counts": [
+            0,
+            559,
+            0,
+            0,
+            7441,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.01399918763023715,
+          "ari": 0.00024233310428918708,
+          "acc": 0.107125,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.9805,
+          "cluster_counts": [
+            0,
+            0,
+            7844,
+            0,
+            0,
+            39,
+            0,
+            117,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.015456744581583247,
+          "ari": 0.0021427588118374135,
+          "acc": 0.119625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.894375,
+          "cluster_counts": [
+            0,
+            845,
+            0,
+            0,
+            7155,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.03834352660259631,
+          "ari": 0.00222873043842123,
+          "acc": 0.11975,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.940125,
+          "cluster_counts": [
+            0,
+            0,
+            7521,
+            0,
+            0,
+            105,
+            0,
+            374,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.017693941376872767,
+          "ari": 0.0034061211418179456,
+          "acc": 0.123375,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.860125,
+          "cluster_counts": [
+            0,
+            1119,
+            0,
+            0,
+            6881,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.05788684240095781,
+          "ari": 0.005903810002632032,
+          "acc": 0.12925,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.897875,
+          "cluster_counts": [
+            0,
+            0,
+            7183,
+            0,
+            0,
+            204,
+            0,
+            613,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_clients": [
+        {
+          "client": 0,
+          "width": 512,
+          "nmi": 0.017693941376872767,
+          "ari": 0.0034061211418179456,
+          "acc": 0.123375,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.860125,
+          "cluster_counts": [
+            0,
+            1119,
+            0,
+            0,
+            6881,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 512,
+          "nmi": 0.08423290246875223,
+          "ari": 0.04872523067759563,
+          "acc": 0.188125,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.4,
+          "cluster_counts": [
+            232,
+            890,
+            3200,
+            326,
+            78,
+            2216,
+            126,
+            28,
+            904,
+            0
+          ]
+        },
+        {
+          "client": 2,
+          "width": 512,
+          "nmi": 0.10922326038475334,
+          "ari": 0.05139022737789876,
+          "acc": 0.2025,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.187875,
+          "cluster_counts": [
+            1503,
+            1115,
+            729,
+            576,
+            817,
+            341,
+            402,
+            1032,
+            1012,
+            473
+          ]
+        },
+        {
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.05788684240095781,
+          "ari": 0.005903810002632032,
+          "acc": 0.12925,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.897875,
+          "cluster_counts": [
+            0,
+            0,
+            7183,
+            0,
+            0,
+            204,
+            0,
+            613,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 4,
+          "width": 2048,
+          "nmi": 0.09820690906546242,
+          "ari": 0.05354379841260017,
+          "acc": 0.198875,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.26525,
+          "cluster_counts": [
+            870,
+            1089,
+            256,
+            189,
+            2122,
+            809,
+            587,
+            1133,
+            281,
+            664
+          ]
+        },
+        {
+          "client": 5,
+          "width": 2048,
+          "nmi": 0.09568510395097785,
+          "ari": 0.04933404121548947,
+          "acc": 0.203875,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.160625,
+          "cluster_counts": [
+            1285,
+            880,
+            131,
+            516,
+            1065,
+            862,
+            947,
+            549,
+            934,
+            831
+          ]
+        }
+      ],
+      "test_severe_events": [
+        {
+          "round": 20,
+          "client": 0,
+          "occupied": 2,
+          "maximum": 0.99
+        },
+        {
+          "round": 20,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 100,
+          "client": 0,
+          "occupied": 2,
+          "maximum": 0.998875
+        },
+        {
+          "round": 100,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 120,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 140,
+          "client": 3,
+          "occupied": 3,
+          "maximum": 0.998375
+        }
+      ],
+      "stage_changes": {
+        "early": {
+          "client_rounds": 80,
+          "private_fit_change": 0.0017499999999999996,
+          "public_fit_change": 0.0001250000000000001,
+          "public_probe_concentration_change": 0.000537109375
+        },
+        "late": {
+          "client_rounds": 82,
+          "private_fit_change": 0.0034146341463414643,
+          "public_fit_change": -0.002073170731707318,
+          "public_probe_concentration_change": 0.003120236280487805
+        }
+      }
+    },
+    "private_only": {
+      "late_pass": true,
+      "late_small": [
+        {
+          "round": 160,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.02027822947295415,
+          "ari": 0.00427846983871823,
+          "acc": 0.124625,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.848625,
+          "cluster_counts": [
+            0,
+            1211,
+            0,
+            0,
+            6789,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.0600651398990286,
+          "ari": 0.006510333722369459,
+          "acc": 0.1305,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.8905,
+          "cluster_counts": [
+            0,
+            0,
+            7124,
+            0,
+            0,
+            229,
+            0,
+            647,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.02141738843070297,
+          "ari": 0.005446178490630652,
+          "acc": 0.127,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.821875,
+          "cluster_counts": [
+            0,
+            1425,
+            0,
+            0,
+            6575,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.07203644112938609,
+          "ari": 0.010690378424528933,
+          "acc": 0.13775,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.852375,
+          "cluster_counts": [
+            0,
+            0,
+            6819,
+            0,
+            0,
+            347,
+            0,
+            834,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.022618525997958237,
+          "ari": 0.006428573082593128,
+          "acc": 0.12925,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.800625,
+          "cluster_counts": [
+            0,
+            1592,
+            0,
+            0,
+            6405,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.08335857663258683,
+          "ari": 0.01569786890248858,
+          "acc": 0.144625,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.814875,
+          "cluster_counts": [
+            0,
+            0,
+            6519,
+            0,
+            0,
+            468,
+            0,
+            1013,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_clients": [
+        {
+          "client": 0,
+          "width": 512,
+          "nmi": 0.022618525997958237,
+          "ari": 0.006428573082593128,
+          "acc": 0.12925,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.800625,
+          "cluster_counts": [
+            0,
+            1592,
+            0,
+            0,
+            6405,
+            0,
+            0,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 512,
+          "nmi": 0.08400980200987916,
+          "ari": 0.049740110965380974,
+          "acc": 0.19,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.3845,
+          "cluster_counts": [
+            313,
+            838,
+            3076,
+            400,
+            124,
+            2086,
+            175,
+            47,
+            941,
+            0
+          ]
+        },
+        {
+          "client": 2,
+          "width": 512,
+          "nmi": 0.10931992642876265,
+          "ari": 0.05129026468262993,
+          "acc": 0.202625,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.18725,
+          "cluster_counts": [
+            1498,
+            1096,
+            730,
+            561,
+            819,
+            352,
+            406,
+            1016,
+            1032,
+            490
+          ]
+        },
+        {
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.08335857663258683,
+          "ari": 0.01569786890248858,
+          "acc": 0.144625,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.814875,
+          "cluster_counts": [
+            0,
+            0,
+            6519,
+            0,
+            0,
+            468,
+            0,
+            1013,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 4,
+          "width": 2048,
+          "nmi": 0.097355942534002,
+          "ari": 0.052712519047477285,
+          "acc": 0.1985,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.256375,
+          "cluster_counts": [
+            901,
+            994,
+            289,
+            234,
+            2051,
+            834,
+            569,
+            1068,
+            344,
+            716
+          ]
+        },
+        {
+          "client": 5,
+          "width": 2048,
+          "nmi": 0.09561070179650644,
+          "ari": 0.04922925549103488,
+          "acc": 0.20475,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.15525,
+          "cluster_counts": [
+            1242,
+            881,
+            149,
+            554,
+            1045,
+            869,
+            934,
+            575,
+            952,
+            799
+          ]
+        }
+      ],
+      "test_severe_events": [
+        {
+          "round": 20,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 0,
+          "occupied": 2,
+          "maximum": 0.994125
+        },
+        {
+          "round": 80,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 100,
+          "client": 3,
+          "occupied": 3,
+          "maximum": 0.998625
+        }
+      ],
+      "stage_changes": {
+        "early": {
+          "client_rounds": 80,
+          "private_fit_change": 0.0018749999999999997,
+          "public_fit_change": 0.0,
+          "public_probe_concentration_change": 0.0
+        },
+        "late": {
+          "client_rounds": 82,
+          "private_fit_change": 0.000853658536585366,
+          "public_fit_change": 0.0,
+          "public_probe_concentration_change": 0.0
+        }
+      }
+    },
+    "low_lr": {
+      "late_pass": true,
+      "late_small": [
+        {
+          "round": 160,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.013822183377962375,
+          "ari": 0.001303366699529818,
+          "acc": 0.11675,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.925875,
+          "cluster_counts": [
+            0,
+            593,
+            0,
+            0,
+            7407,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 160,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.01498689601299553,
+          "ari": 0.0002871571913651389,
+          "acc": 0.1075,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.978875,
+          "cluster_counts": [
+            0,
+            0,
+            7831,
+            0,
+            0,
+            40,
+            0,
+            129,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.015682437419653028,
+          "ari": 0.0022593455801773877,
+          "acc": 0.12,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.890875,
+          "cluster_counts": [
+            0,
+            873,
+            0,
+            0,
+            7127,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 180,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.040195828090768916,
+          "ari": 0.0024475624718879674,
+          "acc": 0.120625,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.93725,
+          "cluster_counts": [
+            0,
+            0,
+            7498,
+            0,
+            0,
+            111,
+            0,
+            391,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 0,
+          "width": 512,
+          "nmi": 0.01813268220669194,
+          "ari": 0.0035520071886838483,
+          "acc": 0.1235,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.858,
+          "cluster_counts": [
+            0,
+            1136,
+            0,
+            0,
+            6864,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "round": 200,
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.05861020154490497,
+          "ari": 0.006115194885170061,
+          "acc": 0.129875,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.89575,
+          "cluster_counts": [
+            0,
+            0,
+            7166,
+            0,
+            0,
+            210,
+            0,
+            624,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_clients": [
+        {
+          "client": 0,
+          "width": 512,
+          "nmi": 0.01813268220669194,
+          "ari": 0.0035520071886838483,
+          "acc": 0.1235,
+          "occupied_clusters": 2,
+          "largest_cluster_fraction": 0.858,
+          "cluster_counts": [
+            0,
+            1136,
+            0,
+            0,
+            6864,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 1,
+          "width": 512,
+          "nmi": 0.08421575590890482,
+          "ari": 0.049616743477737334,
+          "acc": 0.18975,
+          "occupied_clusters": 9,
+          "largest_cluster_fraction": 0.388125,
+          "cluster_counts": [
+            297,
+            860,
+            3105,
+            382,
+            110,
+            2117,
+            163,
+            40,
+            926,
+            0
+          ]
+        },
+        {
+          "client": 2,
+          "width": 512,
+          "nmi": 0.10897974215026966,
+          "ari": 0.051141960394686325,
+          "acc": 0.20225,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.187375,
+          "cluster_counts": [
+            1499,
+            1098,
+            728,
+            566,
+            819,
+            346,
+            407,
+            1022,
+            1031,
+            484
+          ]
+        },
+        {
+          "client": 3,
+          "width": 2048,
+          "nmi": 0.05861020154490497,
+          "ari": 0.006115194885170061,
+          "acc": 0.129875,
+          "occupied_clusters": 3,
+          "largest_cluster_fraction": 0.89575,
+          "cluster_counts": [
+            0,
+            0,
+            7166,
+            0,
+            0,
+            210,
+            0,
+            624,
+            0,
+            0
+          ]
+        },
+        {
+          "client": 4,
+          "width": 2048,
+          "nmi": 0.09789112810536617,
+          "ari": 0.05314729737888448,
+          "acc": 0.198875,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.25825,
+          "cluster_counts": [
+            896,
+            1014,
+            287,
+            217,
+            2066,
+            831,
+            574,
+            1082,
+            327,
+            706
+          ]
+        },
+        {
+          "client": 5,
+          "width": 2048,
+          "nmi": 0.09562466556409326,
+          "ari": 0.049270954884302935,
+          "acc": 0.20475,
+          "occupied_clusters": 10,
+          "largest_cluster_fraction": 0.15625,
+          "cluster_counts": [
+            1250,
+            881,
+            144,
+            550,
+            1049,
+            869,
+            938,
+            570,
+            946,
+            803
+          ]
+        }
+      ],
+      "test_severe_events": [
+        {
+          "round": 20,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 40,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 60,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 0,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 80,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 100,
+          "client": 0,
+          "occupied": 2,
+          "maximum": 0.9985
+        },
+        {
+          "round": 100,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 120,
+          "client": 3,
+          "occupied": 1,
+          "maximum": 1.0
+        },
+        {
+          "round": 140,
+          "client": 3,
+          "occupied": 3,
+          "maximum": 0.998375
+        }
+      ],
+      "stage_changes": {
+        "early": {
+          "client_rounds": 80,
+          "private_fit_change": 0.0017499999999999996,
+          "public_fit_change": 0.0001250000000000001,
+          "public_probe_concentration_change": 0.0005615234375
+        },
+        "late": {
+          "client_rounds": 82,
+          "private_fit_change": 0.003292682926829269,
+          "public_fit_change": -0.0018292682926829274,
+          "public_probe_concentration_change": 0.003001143292682927
+        }
+      }
+    }
+  }
+}

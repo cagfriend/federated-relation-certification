@@ -1,0 +1,3 @@
+case_id,seed,partition,branch,recovery_status,passed,rounds,probe_seconds,evaluation_seconds,worker_wall_seconds
+strong_iid_seed1001,1001,iid,baseline,not_released,False,200,11.977953800131218,1.7270883999881335,64.67566370000714
+strong_iid_seed1001,1001,iid,local_lr,released_severe_collapse,True,200,13.101064100148506,1.6925955000187969,66.36423369999102
