@@ -51,3 +51,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## 2026-11-11数量异构原始记录
 
 [quantity_heterogeneity_raw_20261111.manifest.json](quantity_heterogeneity_raw_20261111.manifest.json)列出10个无损ZIP、54主+6内存JSON的路径/大小/SHA256。解压到仓库根目录后校验79完成文件；环境/电源/小报表直接保留，数据/模型/特征不上传。失败配置和负收益均保留。
+
+
+## 2026-11-12低容量诊断记录
+
+[low_capacity_diagnostic_20261112.manifest.json](low_capacity_diagnostic_20261112.manifest.json)列出5个无损ZIP及全部成员路径/大小/SHA256；12个原始case/branch JSON按case存档，stages/losses_and_deltas/stage_display/stage_events四份大CSV在derived_logs归档。解压到仓库根后核对completed的27文件；环境、电源及小表保留，数据/表示缓存不上传。

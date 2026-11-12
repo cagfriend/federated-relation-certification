@@ -1,0 +1,127 @@
+{
+  "archives": [
+    {
+      "path": "archives/low_capacity_diagnostic_derived_logs_20261112.zip",
+      "bytes": 2429509,
+      "sha256": "e361563bf800a9c9c223d9bd001337a20d733f9f59c29a65b70105f3d57e5b6b"
+    },
+    {
+      "path": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1001_20261112.zip",
+      "bytes": 973724,
+      "sha256": "374fe74423c7f88c49777501a033b9896db99d2478b65bf9504c3f2750a105bf"
+    },
+    {
+      "path": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1002_20261112.zip",
+      "bytes": 970948,
+      "sha256": "23104d1261efc4a179e5cab5e99914f6e10ce78b28bc912dcf7ec6917d8637b5"
+    },
+    {
+      "path": "archives/low_capacity_diagnostic_iid_seed1001_20261112.zip",
+      "bytes": 963592,
+      "sha256": "d29cf604cdc68a1a8951dc8869f74d80084df995a523954d9707bd5a22cb7221"
+    },
+    {
+      "path": "archives/low_capacity_diagnostic_iid_seed1002_20261112.zip",
+      "bytes": 967877,
+      "sha256": "a692accad8f8789565dcc2e0e6e6202d56ea48a43a8d2004f6d2ab42fb1cc628"
+    }
+  ],
+  "members": [
+    {
+      "archive": "archives/low_capacity_diagnostic_derived_logs_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/losses_and_deltas.csv",
+      "bytes": 4270866,
+      "sha256": "e677094f7138fc096cac09908eb60bc46f6edb32b28936b96a3530ba8c15a146"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_derived_logs_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/stages.csv",
+      "bytes": 8008710,
+      "sha256": "a1702b146c576e6886f2369b668295013cef1dd2e6bdc9e390288bc185b68c43"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_derived_logs_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/stage_display.csv",
+      "bytes": 1414274,
+      "sha256": "dfc00dd515499c8c17dbfda4345bb10e0a6fe3ba77d9156bca9f4672acd3f863"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_derived_logs_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/stage_events.csv",
+      "bytes": 880921,
+      "sha256": "185caf46f55c64cade17a2f4511362f541ed2c74521b0ce726c909752b6eac80"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1001_baseline.json",
+      "bytes": 1177773,
+      "sha256": "f1b6cdd8b5be92dafe1c0996439dcabd810a2b3f486c8ab47381685c99438c0d"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1001_low_lr.json",
+      "bytes": 5796086,
+      "sha256": "5bd7ddb847c1ce43ed4a97a3eb9f5afee7528de0ddd9619d3500144537a1c30a"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1001_private_only.json",
+      "bytes": 5712519,
+      "sha256": "55cefd4460db067a83c98fbc55487a6c2dad8d4526f1357553a1c6d536311805"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1002_baseline.json",
+      "bytes": 1178134,
+      "sha256": "9d081754a47a4f6237cfd7ca3b421030b445945374bf419d86a0a426581381d3"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1002_low_lr.json",
+      "bytes": 5795560,
+      "sha256": "131840ac42ac37eb1f0f36b6473cca8e68205a820f4c4eaf65ff12a6c607d4f0"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_dirichlet_0.1_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_dirichlet_0.1_seed1002_private_only.json",
+      "bytes": 5713315,
+      "sha256": "67990134631e4c4906bba1dd893e6368b1d784efdc7762d0f07217b7a8b29308"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1001_baseline.json",
+      "bytes": 1178927,
+      "sha256": "387f1639b10632216f9e0e74a1915b5df3861d80b78a6cd93ebebfd1061ce511"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1001_low_lr.json",
+      "bytes": 5799688,
+      "sha256": "4955d4aeafc8757a9c07cfdb7508a3dc7d4ae7cc939728f3dfc62d42c7c88b46"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1001_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1001_private_only.json",
+      "bytes": 5719484,
+      "sha256": "d8d88c7f5a95b809b5bc2f66c2567b6b7362e27523b047b5d8e21dd266303884"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1002_baseline.json",
+      "bytes": 1179708,
+      "sha256": "189f5cbe7376606dfd132a2d3494d7718409ab36f7777eb0a8c231ce9058e090"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1002_low_lr.json",
+      "bytes": 5799041,
+      "sha256": "2f22f7bc5a960a3c36a36e4e8b84b4852cab4faf5687a18fd6f416697ff9bf8f"
+    },
+    {
+      "archive": "archives/low_capacity_diagnostic_iid_seed1002_20261112.zip",
+      "path": "experiments/low_capacity_diagnostic/results_full/runs/strong_iid_seed1002_private_only.json",
+      "bytes": 5714954,
+      "sha256": "b2d53d71c798f733af3cd0ef6a00691e3d1b9c909e00b17c13c169af015c9625"
+    }
+  ]
+}

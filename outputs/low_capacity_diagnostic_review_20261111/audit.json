@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "formal_training_started": false,
+  "runs": 6,
+  "short_baselines": 2,
+  "per_round_clients_observed": 96,
+  "reports_reproduced": [
+    "historical_test_metrics.csv",
+    "initial.csv",
+    "losses_and_deltas.csv",
+    "recovery.csv",
+    "report.md",
+    "runs.csv",
+    "stage_display.csv",
+    "stage_events.csv",
+    "stages.csv",
+    "summary.json",
+    "test_checkpoints.csv"
+  ],
+  "frozen_sources": 107,
+  "old_frozen_sources_unchanged": 99,
+  "formal_cache_preflight": 4,
+  "readonly_observations_match_frozen_baseline": true,
+  "private_only_public_updates": 0,
+  "resume_preserved": 5,
+  "resume_missing_only_rerun": 1
+}

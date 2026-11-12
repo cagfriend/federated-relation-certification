@@ -1,0 +1,13 @@
+case_id,seed,partition,branch,recovery_status,passed,rounds,probe_seconds,evaluation_seconds,worker_wall_seconds
+strong_iid_seed1001,1001,iid,baseline,short_replay_only,,40,4.830597199899785,0.6462560000072699,43.844498399994336
+strong_dirichlet_0.1_seed1001,1001,dirichlet_0.1,baseline,short_replay_only,,40,4.95585689998552,0.6146773000000394,38.34650099999999
+strong_iid_seed1002,1002,iid,baseline,short_replay_only,,40,6.109237799952098,0.7709719999984372,45.35938549999992
+strong_dirichlet_0.1_seed1002,1002,dirichlet_0.1,baseline,short_replay_only,,40,4.476152299997921,0.6879881999993813,29.42300119999709
+strong_iid_seed1001,1001,iid,private_only,released_severe_collapse,True,200,20.742173899910995,2.9108388000022387,97.23906989999523
+strong_dirichlet_0.1_seed1001,1001,dirichlet_0.1,private_only,released_severe_collapse,True,200,14.536813800114032,2.054942900002061,68.98911049999879
+strong_iid_seed1002,1002,iid,private_only,released_severe_collapse,True,200,13.873848799958068,2.0371107000028132,65.18080779999582
+strong_dirichlet_0.1_seed1002,1002,dirichlet_0.1,private_only,released_severe_collapse,True,200,14.0640038999627,2.0629541000016616,65.7301512999984
+strong_iid_seed1001,1001,iid,low_lr,released_severe_collapse,True,200,14.169000300011248,2.0600820999970892,74.80494249999902
+strong_dirichlet_0.1_seed1001,1001,dirichlet_0.1,low_lr,released_severe_collapse,True,200,15.150666499896033,2.1549698999951943,76.04655189999903
+strong_iid_seed1002,1002,iid,low_lr,released_severe_collapse,True,200,16.53150950003328,2.280001999999513,78.02767409999797
+strong_dirichlet_0.1_seed1002,1002,dirichlet_0.1,low_lr,released_severe_collapse,True,200,17.978272200045467,2.5231751000028453,80.4826308000047

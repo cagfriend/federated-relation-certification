@@ -1,0 +1,4 @@
+branch,client_rounds,private_fit_delta_pp,public_fit_delta_pp,public_concentration_delta_pp,public_fit_decrease_count
+baseline,320,0.31250000000000006,-0.09375000000000006,0.23986816406249997,26
+private_only,320,0.259375,0.0,0.0,0
+low_lr,320,0.26875,-0.01874999999999998,0.072021484375,8

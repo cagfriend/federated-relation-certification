@@ -1,0 +1,165 @@
+{
+  "fixture": false,
+  "verdict": {
+    "private_only": {
+      "passed": 4,
+      "cases": 4
+    },
+    "low_lr": {
+      "passed": 4,
+      "cases": 4
+    }
+  },
+  "comparison_checkpoints": [
+    160,
+    180,
+    200
+  ],
+  "runs": [
+    {
+      "case_id": "strong_iid_seed1001",
+      "seed": 1001,
+      "partition": "iid",
+      "branch": "baseline",
+      "recovery_status": "short_replay_only",
+      "passed": null,
+      "rounds": 40,
+      "probe_seconds": 4.830597199899785,
+      "evaluation_seconds": 0.6462560000072699,
+      "worker_wall_seconds": 43.844498399994336
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1001",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "branch": "baseline",
+      "recovery_status": "short_replay_only",
+      "passed": null,
+      "rounds": 40,
+      "probe_seconds": 4.95585689998552,
+      "evaluation_seconds": 0.6146773000000394,
+      "worker_wall_seconds": 38.34650099999999
+    },
+    {
+      "case_id": "strong_iid_seed1002",
+      "seed": 1002,
+      "partition": "iid",
+      "branch": "baseline",
+      "recovery_status": "short_replay_only",
+      "passed": null,
+      "rounds": 40,
+      "probe_seconds": 6.109237799952098,
+      "evaluation_seconds": 0.7709719999984372,
+      "worker_wall_seconds": 45.35938549999992
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1002",
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "branch": "baseline",
+      "recovery_status": "short_replay_only",
+      "passed": null,
+      "rounds": 40,
+      "probe_seconds": 4.476152299997921,
+      "evaluation_seconds": 0.6879881999993813,
+      "worker_wall_seconds": 29.42300119999709
+    },
+    {
+      "case_id": "strong_iid_seed1001",
+      "seed": 1001,
+      "partition": "iid",
+      "branch": "private_only",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 20.742173899910995,
+      "evaluation_seconds": 2.9108388000022387,
+      "worker_wall_seconds": 97.23906989999523
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1001",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "branch": "private_only",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 14.536813800114032,
+      "evaluation_seconds": 2.054942900002061,
+      "worker_wall_seconds": 68.98911049999879
+    },
+    {
+      "case_id": "strong_iid_seed1002",
+      "seed": 1002,
+      "partition": "iid",
+      "branch": "private_only",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 13.873848799958068,
+      "evaluation_seconds": 2.0371107000028132,
+      "worker_wall_seconds": 65.18080779999582
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1002",
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "branch": "private_only",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 14.0640038999627,
+      "evaluation_seconds": 2.0629541000016616,
+      "worker_wall_seconds": 65.7301512999984
+    },
+    {
+      "case_id": "strong_iid_seed1001",
+      "seed": 1001,
+      "partition": "iid",
+      "branch": "low_lr",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 14.169000300011248,
+      "evaluation_seconds": 2.0600820999970892,
+      "worker_wall_seconds": 74.80494249999902
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1001",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "branch": "low_lr",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 15.150666499896033,
+      "evaluation_seconds": 2.1549698999951943,
+      "worker_wall_seconds": 76.04655189999903
+    },
+    {
+      "case_id": "strong_iid_seed1002",
+      "seed": 1002,
+      "partition": "iid",
+      "branch": "low_lr",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 16.53150950003328,
+      "evaluation_seconds": 2.280001999999513,
+      "worker_wall_seconds": 78.02767409999797
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1002",
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "branch": "low_lr",
+      "recovery_status": "released_severe_collapse",
+      "passed": true,
+      "rounds": 200,
+      "probe_seconds": 17.978272200045467,
+      "evaluation_seconds": 2.5231751000028453,
+      "worker_wall_seconds": 80.4826308000047
+    }
+  ],
+  "note": "Diagnostic study only; no certification speedup claims. Historical unrecorded stage fields are NA."
+}

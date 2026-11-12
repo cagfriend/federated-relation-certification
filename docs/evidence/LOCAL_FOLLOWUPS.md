@@ -38,3 +38,10 @@ P3固定每客户端400张规模实验已完成：54次主运行+12次隔离内�
 私有数量异构54主+6内存已完成：D/B18/18更快、D/E16/18更快；两个IID/seed1002负收益保留。末轮严重退化equal0/6、moderate2/6、strong6/6，集中在低容量客户端；B/E/D轨迹一致，不归为认证新增损失。
 
 [执行包](../../experiments/quantity_heterogeneity/README.md) · [审核](../../outputs/quantity_heterogeneity_results_20261111/REVIEW.md) · [原始60记录清单](../../archives/quantity_heterogeneity_raw_20261111.manifest.json)。10个无损ZIP恢复原路径后可核对79份完成文件；原环境中保存18份输入身份，数据与特征缓存不上传。VALIDATION未启动字段为开发时状态，正式结论以本轮审核为准。
+
+
+## 低容量诊断正式完成并发布，2026-11-12
+
+低容量诊断已完成4条40轮基线回放和8条200轮B诊断。基线逐轮匹配旧轨迹；private-only、全体公共LR0.0125均4/4通过160/180/200逐客户端解除严重退化检查。低LR的100张客户端最大簇仍最高97.89%，不等于充分健康聚类，也没有认证省时结论。
+
+[执行包](../../experiments/low_capacity_diagnostic/README.md) · [审核](../../outputs/low_capacity_diagnostic_results_20261112/REVIEW.md) · [恢复清单](../../archives/low_capacity_diagnostic_20261112.manifest.json)。12原始JSON及4大CSV分5个无损ZIP保存，按清单恢复后可核验27份完成文件；输入身份/公共探针ID存在环境和JSON中，真实数据/模型/特征缓存不上传。VALIDATION的未启动标记是开发时状态，不代表本轮正式结果仍未完成。

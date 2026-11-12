@@ -29,3 +29,8 @@
 ## 私有数量不均已完成
 
 [quantity_heterogeneity](quantity_heterogeneity/README.md)：固定N6/总2400/公共LR0.05的三容量档，54主+6内存，equal旧P3锚点18方法一致。严重退化8/18，按[正式审核](../outputs/quantity_heterogeneity_results_20261111/REVIEW.md)限定学习范围；旧代码/旧结果不改。
+
+
+## 低容量稳定性诊断已完成
+
+[low_capacity_diagnostic](low_capacity_diagnostic/README.md)：复用quantity strong缓存，4短回放+8长诊断，T0/T1/T2只读；private-only/low_lr各4/4解除严重退化。不是认证测速。[审核](../outputs/low_capacity_diagnostic_results_20261112/REVIEW.md)

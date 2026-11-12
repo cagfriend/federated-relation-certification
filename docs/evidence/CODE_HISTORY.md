@@ -382,3 +382,18 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/quantity_heterogeneity/report.py)|`42b86947b06e1f1b95635bc8b5dd51717cac84c428416a5b5fdc8284365c6c0a`|
 |[run.py](../../experiments/quantity_heterogeneity/run.py)|`a41fa74838de0f270f6155588c54fa71e182f423adda33e7602b37d30f5a5eb0`|
 |[test_run.py](../../experiments/quantity_heterogeneity/test_run.py)|`6b83150ba7842726daedb1bf8f1269f97dca348c22659ad165c44966d37bd91f`|
+
+
+## E27低容量诊断，2026-11-12增补
+
+7个Python文件原版，公共/私有训练核心与旧99来源不改；本包增加三时点只读观测和private-only跳过公共更新。SHA256如下。
+
+|源码|SHA256|
+|---|---|
+|[__init__.py](../../experiments/low_capacity_diagnostic/__init__.py)|`a8721997cab3e739c9425937efd348ceadb42f3256317dae7450c0925ac64e5d`|
+|[design.py](../../experiments/low_capacity_diagnostic/design.py)|`7b01c66a6c377fa5dce1155618f08a213bcb8a0f7d1ddfea178fd64cc848da73`|
+|[engine.py](../../experiments/low_capacity_diagnostic/engine.py)|`d5bb298967b1cc28e753b9af58ac4e9597be806056261cebf5ee31e4a55f5e79`|
+|[probes.py](../../experiments/low_capacity_diagnostic/probes.py)|`82a987c9985d258e2c4e5c68c966e0225e5e4235105df6730b28ca348bdc6486`|
+|[report.py](../../experiments/low_capacity_diagnostic/report.py)|`e8780a05111f5af0b09000dfaabf420820f0f9b55f73f9cf84fe6c5c3c7a0206`|
+|[run.py](../../experiments/low_capacity_diagnostic/run.py)|`12e9e011b39fe2b434fa99d20ddde8ba0eae567e5e715472f306d01459e59280`|
+|[test_run.py](../../experiments/low_capacity_diagnostic/test_run.py)|`78093f707b4be8e4631de24961c1f966febf91db8c04fee42bbaa46ef6e9fc22`|

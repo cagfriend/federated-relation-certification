@@ -237,6 +237,8 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 
 **数量不均新增边界：** 私有数量异构54主+6内存已完成：D/B18/18更快、D/E16/18更快；两个IID/seed1002负收益保留。末轮严重退化equal0/6、moderate2/6、strong6/6，集中在低容量客户端；B/E/D轨迹一致，不归为认证新增损失。 公共LR0.05不能作为数量不均下的防坍缩保证；退化配置开销照报，不包装为健康聚类扩展成功。[完整审核](outputs/quantity_heterogeneity_results_20261111/REVIEW.md) · [台账E26](docs/evidence/EXPERIMENT_INDEX.md#e26)
 
+**低容量干预新增证据：** 低容量诊断已完成4条40轮基线回放和8条200轮B诊断。基线逐轮匹配旧轨迹；private-only、全体公共LR0.0125均4/4通过160/180/200逐客户端解除严重退化检查。低LR的100张客户端最大簇仍最高97.89%，不等于充分健康聚类，也没有认证省时结论。 支持公共协作更新参与退化，不能识别小客户端本地步幅为唯一原因。[审核](outputs/low_capacity_diagnostic_results_20261112/REVIEW.md) · [台账E27](docs/evidence/EXPERIMENT_INDEX.md#e27)
+
 ## 代码与复现
 
 |代码入口|作用|

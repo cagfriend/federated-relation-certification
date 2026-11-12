@@ -509,3 +509,25 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **结果与审核：** [正式报告](../../experiments/quantity_heterogeneity/results_full/report.md) · [主审](../../outputs/quantity_heterogeneity_results_20261111/REVIEW.md) · [机器审计](../../outputs/quantity_heterogeneity_results_20261111/audit.json) · [独立复审](../../outputs/quantity_heterogeneity_results_20261111/INDEPENDENT_REVIEW.md)
 
 **归档：** [60份主/内存JSON恢复清单](../../archives/quantity_heterogeneity_raw_20261111.manifest.json) · [完成清单](../../experiments/quantity_heterogeneity/results_full/completed.json)。原环境（含18缓存输入身份）、电源、原报表直接保留；不上传数据/模型/特征。开发smoke不作正式性能证据。
+
+
+新增证据：[E27 低容量三时点诊断](#e27) · [原报告](../../experiments/low_capacity_diagnostic/results_full/report.md)。
+
+<a id="e27"></a>
+## E27 低容量三时点诊断
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/low_capacity_diagnostic/`|
+|配置与对照|strong/N6/K10，seed1001/1002×IID/α0.1；4×40轮公共LR0.05回放，4×200轮private-only，4×200轮全体LR0.0125|
+|验证问题|关闭或减弱公共更新能否解除严重退化，T0/T1/T2观察哪段更新参与集中|
+|主要结果|低容量诊断已完成4条40轮基线回放和8条200轮B诊断。基线逐轮匹配旧轨迹；private-only、全体公共LR0.0125均4/4通过160/180/200逐客户端解除严重退化检查。低LR的100张客户端最大簇仍最高97.89%，不等于充分健康聚类，也没有认证省时结论。|
+|核验|27完成文件、107来源、4缓存/历史baseline和11报表重生成一致；99旧源不变。基线新增观测仅到40轮，不补造晚期T0/T1/T2。|
+|结论边界|仅B、旧seed、有限四配置；公共LR全体变化也改变教师反馈；诊断子集非独立测试集，解除99%阈值不代表充分健康|
+|代码状态|7个Python文件保持正式版本，旧源/旧缓存不改|
+
+**说明及协议：** [README](../../experiments/low_capacity_diagnostic/README.md) · [预注册](../../experiments/low_capacity_diagnostic/PREREGISTRATION.md) · [开发验证](../../experiments/low_capacity_diagnostic/VALIDATION.md)
+
+**结果与审核：** [正式报告](../../experiments/low_capacity_diagnostic/results_full/report.md) · [主审](../../outputs/low_capacity_diagnostic_results_20261112/REVIEW.md) · [独立复审](../../outputs/low_capacity_diagnostic_results_20261112/INDEPENDENT_REVIEW.md) · [机器审计](../../outputs/low_capacity_diagnostic_results_20261112/audit.json)
+
+**原始/派生归档：** [无损ZIP及恢复清单](../../archives/low_capacity_diagnostic_20261112.manifest.json)。12份raw JSON按case保存，4份大CSV日志另存derived_logs；解压回原路径后可核验27份完成文件。环境/电源/小表直接保留，数据/表示缓存不上传。
