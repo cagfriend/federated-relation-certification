@@ -1,0 +1,27 @@
+{
+  "runs": 12,
+  "memory_runs": 6,
+  "files": {
+    "comparisons.csv": "ee162328d77847b2eff7e82ca52f7c3ce39b44a9ba4fa433d8b51dbb760beb47",
+    "environment.json": "ca7c32bd0b5a630091f051e57b78101a856fbb89e10c042989e003a9a5bddb0b",
+    "memory/strong_dirichlet_0.1_seed1002_B.json": "02b1d654a5fa980669cd1b9132b4aa9ec4426919799da222eab3f9a81fa217ca",
+    "memory/strong_dirichlet_0.1_seed1002_D.json": "db86fac17bfdefcda8cad5df3468e72541722b4fe8a3d0c89e33d264a0aa9f81",
+    "memory/strong_dirichlet_0.1_seed1002_E.json": "8d2990f7181f0c482eb2ade77b10261e94c571e13d911104df8e8e7e9749fe26",
+    "memory/strong_iid_seed1002_B.json": "d3139b05ff20bf79f54b0f734f33cb862fa7a768fe24857b9610281f8057ce02",
+    "memory/strong_iid_seed1002_D.json": "4ea1209ee5be24fb77510060fe535b9203140b525bac395a8f74294ad3d4408c",
+    "memory/strong_iid_seed1002_E.json": "2e2c2d344ced51893a8034eb8844bea3d6c1c95c846d6d5653675e401f97cf1b",
+    "report.md": "8a5ee4e4a82471a5f78437eb4ee3a3f0814cd8a56eb942273645c91a0a33c7c3",
+    "runs/strong_dirichlet_0.1_seed1001_B.json": "57ed5b71d97dc3f5775ee896e3df34cf6c20cd8838b35544ec5b9a1a3e339ecd",
+    "runs/strong_dirichlet_0.1_seed1001_D.json": "8b6eaef31f422b217cf61f8e5370267cea6e68bac7824c624ba6fd4c6c454192",
+    "runs/strong_dirichlet_0.1_seed1001_E.json": "39f8d52a4a83982da838219ef9fd77c4c07ac9254addd97a18351d94cf6d7c93",
+    "runs/strong_dirichlet_0.1_seed1002_B.json": "2095998243ed5a1b1c295cd8c9c02e6ffa02231cb1aa1cd5265bcbf4c4f90aee",
+    "runs/strong_dirichlet_0.1_seed1002_D.json": "2fba60dc2f798fc52759e62c40fdffa13eb5a66ecb8440c6fa30698c94e65cc2",
+    "runs/strong_dirichlet_0.1_seed1002_E.json": "fb367c409f6704644a09c14ae46be3900948d3b08453272750c996af11e86ff5",
+    "runs/strong_iid_seed1001_B.json": "d11098c48686d79106a3ec1e119a28a00334ca5d505891be10ae5591c105171c",
+    "runs/strong_iid_seed1001_D.json": "cb0a7a97250829a314e183b3f6897dcb7958bb39007f0869c4858f6c638a0faa",
+    "runs/strong_iid_seed1001_E.json": "a96af28534915f2e597603a49ce2dea76b599ca9fb17e6442e189004d1be0941",
+    "runs/strong_iid_seed1002_B.json": "0e5d6c3a8b09928131fe7393d339c09d17c725427fcca47fb7e5c7a35b3b9690",
+    "runs/strong_iid_seed1002_D.json": "93e0ca5d80a8a7c5818792ba46a2118e167c94765ae31a607198f3d68532695e",
+    "runs/strong_iid_seed1002_E.json": "9863fe0087b77e455a092185fbbbf149ccc4db03ccefc7d19565d615c0a28ac7"
+  }
+}

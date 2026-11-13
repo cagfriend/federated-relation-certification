@@ -1,0 +1,61 @@
+{
+  "archives": [
+    {
+      "path": "archives/private_prior_results_full_curves_20261113.zip",
+      "bytes": 122858,
+      "sha256": "c5aa36bee3e23d0eb79ae9766f2a278513f164173af1c9dba7b51ad4f7af07f8"
+    },
+    {
+      "path": "archives/private_prior_runs_strong_dirichlet_0.1_seed1001_20261113.zip",
+      "bytes": 527803,
+      "sha256": "289d32d47b7c7a803c5dc532799c0208385b8943996b2d1fd21dd76c2d15576d"
+    },
+    {
+      "path": "archives/private_prior_runs_strong_dirichlet_0.1_seed1002_20261113.zip",
+      "bytes": 526444,
+      "sha256": "d366f7a78693585b02f148d0a661b162650d390f2e609e67668ca1258012d68d"
+    },
+    {
+      "path": "archives/private_prior_runs_strong_iid_seed1001_20261113.zip",
+      "bytes": 529655,
+      "sha256": "91125bafaf730a60936ed98eea3d39d06607a6091023e99aeaad403671a689d5"
+    },
+    {
+      "path": "archives/private_prior_runs_strong_iid_seed1002_20261113.zip",
+      "bytes": 526158,
+      "sha256": "fa8946f86edb549ba6e4f4e738bf7ce5bb15dc9219d51c6b357caea3d1eb8ec8"
+    }
+  ],
+  "members": [
+    {
+      "archive": "archives/private_prior_results_full_curves_20261113.zip",
+      "path": "experiments/private_prior/results_full/curves.csv",
+      "bytes": 1044900,
+      "sha256": "b54154f7351fd8c2379a69d60be591a490ee3c541f071baeb2a9a202168e8bb9"
+    },
+    {
+      "archive": "archives/private_prior_runs_strong_dirichlet_0.1_seed1001_20261113.zip",
+      "path": "experiments/private_prior/results_full/runs/strong_dirichlet_0.1_seed1001.json",
+      "bytes": 5910737,
+      "sha256": "e0fee433dfb4b545f8d18ced7a95a427b7771c06b71ddde5aa40cb0e14b96d4f"
+    },
+    {
+      "archive": "archives/private_prior_runs_strong_dirichlet_0.1_seed1002_20261113.zip",
+      "path": "experiments/private_prior/results_full/runs/strong_dirichlet_0.1_seed1002.json",
+      "bytes": 5917173,
+      "sha256": "935eac0d1f959fdb8ba1a42c96458165688717f65807c221f2fb2df832c201d7"
+    },
+    {
+      "archive": "archives/private_prior_runs_strong_iid_seed1001_20261113.zip",
+      "path": "experiments/private_prior/results_full/runs/strong_iid_seed1001.json",
+      "bytes": 5918097,
+      "sha256": "38033928c32e8ee31128bca3d400f468a35cfb1cedbb3d379be8cd22409b3903"
+    },
+    {
+      "archive": "archives/private_prior_runs_strong_iid_seed1002_20261113.zip",
+      "path": "experiments/private_prior/results_full/runs/strong_iid_seed1002.json",
+      "bytes": 5916729,
+      "sha256": "21b53380480786be791c79d325b5ac2361f8e6274f523089239c912f0c990e70"
+    }
+  ]
+}

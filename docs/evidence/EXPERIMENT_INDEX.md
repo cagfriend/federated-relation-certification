@@ -575,3 +575,37 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **审核证据：** [主审](../../outputs/local_public_lr_confirmation_results_20261113/REVIEW.md) · [独立Luna/high复审](../../outputs/local_public_lr_confirmation_results_20261113/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/local_public_lr_confirmation_results_20261113/audit_results.py) · [机器审计](../../outputs/local_public_lr_confirmation_results_20261113/audit.json)
 
 **归档：** [4个无损ZIP及逐文件恢复清单](../../archives/local_public_lr_confirmation_20261113.manifest.json)。三份原始JSON各自存档，大CSV另存derived_logs；恢复原路径可核验22项清单。日志/环境/小表直接保留，不上传图像、编码器或特征缓存。
+
+
+<a id="e30"></a>
+## E30 private_prior
+
+|项目|记录|
+|---|---|
+|目录|experiments/private_prior/|
+|矩阵|2seed × 2划分，4条B各200轮|
+|结果|私有伪簇频数校正四条B协作轨迹全部通过：两个小客户端最后40轮平均同簇边由63.4%–82.5%降至17.9%–22.9%，末轮测试最大簇为23.2%–37.6%。保持既定学习率和更新预算，早期7–11轮高度集中仍存在，结论为两个既有seed的探索性证据。|
+|边界|既有随机实例、固定表示及线性头、K10、六端strong数量偏斜；未来新seed确认单列|
+
+**协议与结果** [配置](../../experiments/private_prior/PREREGISTRATION.md) · [正式报告](../../experiments/private_prior/results_full/report.md) · [源码及实现验证](../../experiments/private_prior/VALIDATION.md)
+
+**审阅** [结果复核](../../outputs/private_prior_results_review/REVIEW.md) · [审计脚本](../../outputs/private_prior_results_review/audit.py) · [机器审计](../../outputs/private_prior_results_review/audit.json)
+
+**原始归档** [ZIP和逐文件恢复清单](../../archives/private_prior_20261113.manifest.json)。解压回仓库根目录可恢复完成清单；缓存、图像、模型及特征不上传。环境中的本机绝对路径仅用于来源核验，异机需重新准备。
+
+
+<a id="e31"></a>
+## E31 private_prior_compute
+
+|项目|记录|
+|---|---|
+|目录|experiments/private_prior_compute/|
+|矩阵|2seed × 2划分 × B/E/D，12条主运行＋6内存，各200轮|
+|结果|私有校正后的四环境B/E/D共12次主运行及6次隔离内存回放完成，关系/参数/质量精确一致，117,964,800次关系与157,286,400次候选检查零错误。D/B完整头部省35.25%–43.00%，D/E省10.31%–14.12%；通信字节相同，两个内存配置D/B峰值增加约14.5%。每环境每方法一次。|
+|边界|既有随机实例、固定表示及线性头、K10、六端strong数量偏斜；未来新seed确认单列|
+
+**协议与结果** [配置](../../experiments/private_prior_compute/PREREGISTRATION.md) · [正式报告](../../experiments/private_prior_compute/results_full/report.md) · [源码及实现验证](../../experiments/private_prior_compute/VALIDATION.md)
+
+**审阅** [结果复核](../../outputs/private_prior_compute_results_review/REVIEW.md) · [审计脚本](../../outputs/private_prior_compute_results_review/audit.py) · [机器审计](../../outputs/private_prior_compute_results_review/audit.json)
+
+**原始归档** [ZIP和逐文件恢复清单](../../archives/private_prior_compute_20261113.manifest.json)。解压回仓库根目录可恢复完成清单；缓存、图像、模型及特征不上传。环境中的本机绝对路径仅用于来源核验，异机需重新准备。

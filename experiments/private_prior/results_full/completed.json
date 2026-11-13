@@ -1,0 +1,15 @@
+{
+  "runs": 4,
+  "files": {
+    "curves.csv": "b54154f7351fd8c2379a69d60be591a490ee3c541f071baeb2a9a202168e8bb9",
+    "decision.json": "165ef7649ecb6c07e73b1f6640c46f0064d16d2a659951a533d0ca8a8f66b837",
+    "environment.json": "0e93125cf9a2b916d690b8f4dc2e95557d2bac6d632d1ab21a26cb17c1715fb7",
+    "paired.csv": "107b950d15dd49f93672d096c9ecbc69241329f3244ddeadf9802443f81923e9",
+    "quality.csv": "41082df7f1cf24e344bb8bdd5e585fc368100d7ac793e5dce2f0077331a044da",
+    "report.md": "eba4b97cd15a0dfcf1577581684b0bf4f722af7b58d7f3a05880753b18f12cd2",
+    "runs/strong_dirichlet_0.1_seed1001.json": "e0fee433dfb4b545f8d18ced7a95a427b7771c06b71ddde5aa40cb0e14b96d4f",
+    "runs/strong_dirichlet_0.1_seed1002.json": "935eac0d1f959fdb8ba1a42c96458165688717f65807c221f2fb2df832c201d7",
+    "runs/strong_iid_seed1001.json": "38033928c32e8ee31128bca3d400f468a35cfb1cedbb3d379be8cd22409b3903",
+    "runs/strong_iid_seed1002.json": "21b53380480786be791c79d325b5ac2361f8e6274f523089239c912f0c990e70"
+  }
+}

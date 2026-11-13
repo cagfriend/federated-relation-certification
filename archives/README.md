@@ -66,3 +66,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E29局部LR三配置确认
 
 [local_public_lr_confirmation_20261113.manifest.json](local_public_lr_confirmation_20261113.manifest.json)：三case原始JSON各一ZIP，加大CSV日志ZIP。所有成员保留原路径、大小、SHA256；可恢复22项完成清单。
+
+
+## E30/E31 无损原始记录
+
+[私有校正恢复清单](private_prior_20261113.manifest.json)含4份主轨迹与大CSV；[计算比较恢复清单](private_prior_compute_20261113.manifest.json)含12主运行及6内存回放。ZIP成员保留完整仓库相对路径、大小与SHA256，可恢复各自completed.json。小报告/环境/完成封印直接保留。
