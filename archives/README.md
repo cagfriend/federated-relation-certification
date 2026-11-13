@@ -61,3 +61,8 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E28局部公共学习率
 
 [local_public_lr_20261112.manifest.json](local_public_lr_20261112.manifest.json)列出ZIP摘要及每个成员的原路径/大小/SHA256；恢复后可核验22项完成清单。旧归档原样保留。
+
+
+## E29局部LR三配置确认
+
+[local_public_lr_confirmation_20261113.manifest.json](local_public_lr_confirmation_20261113.manifest.json)：三case原始JSON各一ZIP，加大CSV日志ZIP。所有成员保留原路径、大小、SHA256；可恢复22项完成清单。

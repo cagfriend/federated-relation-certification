@@ -44,3 +44,8 @@
 ## 局部LR剩余三配置确认：代码就绪
 
 [local_public_lr_confirmation](local_public_lr_confirmation/README.md)：仅3条200轮B局部干预，复用已有缓存、完整参照清单及原引擎；新增完整基线数为0，探索case不并入确认分母。主AI开发验证通过，独立复审因子代理额度限制待补，正式由用户启动。
+
+
+## 局部LR三配置确认已完成，E29
+
+局部公共LR剩余三配置确认已完成：seed1001/α0.1、seed1002/IID及α0.1各200轮B；160/180/200全部6客户端检查为3/3配置、54/54项通过。此前1001/IID探索单列。早期严重集中仍存在，解除严重退化不等于充分健康聚类；本轮不使用计时或加速结论。 [报告](local_public_lr_confirmation/results_full/report.md) · [审核](../outputs/local_public_lr_confirmation_results_20261113/REVIEW.md)。下一项计算实验另行设计。

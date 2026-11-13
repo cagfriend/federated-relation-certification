@@ -241,6 +241,8 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 
 **局部公共步幅新增证据：** strong/IID/seed1001局部公共LR干预完成：仅100张client0/3降至0.0125，其余仍0.05；局部分支160/180/200全部6客户端通过严重退化检查，原0.05持续单簇。局部早期40/60/80轮仍双单簇，属于晚期解除持续退化，不是防止坍缩或充分健康保证。 尚无此新轨迹的B/E/D省时结论。[审核](outputs/local_public_lr_results_20261112/REVIEW.md) · [台账E28](docs/evidence/EXPERIMENT_INDEX.md#e28)
 
+**局部LR范围确认（E29）：** 局部公共LR剩余三配置确认已完成：seed1001/α0.1、seed1002/IID及α0.1各200轮B；160/180/200全部6客户端检查为3/3配置、54/54项通过。此前1001/IID探索单列。早期严重集中仍存在，解除严重退化不等于充分健康聚类；本轮不使用计时或加速结论。 [审核](outputs/local_public_lr_confirmation_results_20261113/REVIEW.md) · [台账](docs/evidence/EXPERIMENT_INDEX.md#e29)
+
 ## 代码与复现
 
 |代码入口|作用|

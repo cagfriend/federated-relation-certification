@@ -553,3 +553,25 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **审核：** [主审](../../outputs/local_public_lr_results_20261112/REVIEW.md) · [独立Luna/high复审](../../outputs/local_public_lr_results_20261112/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/local_public_lr_results_20261112/audit_results.py) · [机器审计](../../outputs/local_public_lr_results_20261112/audit.json)
 
 **无损归档：** [ZIP与逐文件恢复清单](../../archives/local_public_lr_20261112.manifest.json)。两份原始JSON及超过250KB的派生CSV保存于ZIP，解压回根目录可按completed核验全部22项；缓存/原图/模型不上传。数据身份与公共探针ID仍在环境/原始记录中。
+
+
+新增证据：[E29 局部LR三配置确认](#e29)。
+
+<a id="e29"></a>
+## E29 局部LR三配置确认
+
+|项目|记录|
+|---|---|
+|实验目录|`experiments/local_public_lr_confirmation/`|
+|配置|strong/N6/K10/M16384/公共2步；1001/α0.1、1002/IID、1002/α0.1；仅local_lr B各200轮，无新增baseline|
+|主要结果|局部公共LR剩余三配置确认已完成：seed1001/α0.1、seed1002/IID及α0.1各200轮B；160/180/200全部6客户端检查为3/3配置、54/54项通过。此前1001/IID探索单列。早期严重集中仍存在，解除严重退化不等于充分健康聚类；本轮不使用计时或加速结论。|
+|末轮100张客户端最大簇|1001/α0.1：88.575%/71.4875%；1002/IID：91.625%/66.0375%；1002/α0.1：90.675%/65.25%|
+|核验|22项完成清单、123冻结来源、3份run封印与完整字段、3缓存及旧参照清单通过；13报表重生成一致。54客户端-检查点不是54独立实例。|
+|边界|既有seed和数据；只确认新局部规则在3case晚期解除阈值，未防早期退化；局部改变仍影响后续教师反馈；不作ACC提升、充分健康或计算收益主张|
+|代码及复审|训练引擎未变；入口执行策略附质量专用修订；本次独立复审补齐最终源码/结果审核，旧开发时未完成记录保留|
+
+**协议及结果：** [README](../../experiments/local_public_lr_confirmation/README.md) · [预注册及执行修订](../../experiments/local_public_lr_confirmation/PREREGISTRATION.md) · [报告](../../experiments/local_public_lr_confirmation/results_full/report.md)
+
+**审核证据：** [主审](../../outputs/local_public_lr_confirmation_results_20261113/REVIEW.md) · [独立Luna/high复审](../../outputs/local_public_lr_confirmation_results_20261113/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/local_public_lr_confirmation_results_20261113/audit_results.py) · [机器审计](../../outputs/local_public_lr_confirmation_results_20261113/audit.json)
+
+**归档：** [4个无损ZIP及逐文件恢复清单](../../archives/local_public_lr_confirmation_20261113.manifest.json)。三份原始JSON各自存档，大CSV另存derived_logs；恢复原路径可核验22项清单。日志/环境/小表直接保留，不上传图像、编码器或特征缓存。

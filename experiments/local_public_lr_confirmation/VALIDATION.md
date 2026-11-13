@@ -13,3 +13,10 @@ Evidence: outputs/local_public_lr_confirmation_review_20261112/audit.json, prefl
 The main agent completed missing engine/probe re-exports, fixed the prior exploratory probe-identity comparison against a nonexistent quantity metadata field, corrected report coverage/formatting and wrote the tests. The old training engine is directly re-exported and no old source changed.
 
 Synthetic KMeans emits warnings about too few distinct clusters due to fixture duplicates; these are not formal clustering observations. The full preset reuses the verified real cache. Software checks do not replace the registered experiment or pending independent review.
+
+2026-11-12 power-policy amendment: startup and worker AC-only exceptions were replaced with informational messages. Power snapshots/telemetry remain active. Targeted main-agent checks simulated both battery (AC=0) and unknown (AC=255): startup reached historical validation and each worker reached the engine dispatch without a power exception. The engine was mocked to stop before training. No formal result environment existed at the time of this change. The earlier smoke source snapshot predates this policy amendment; it is preserved as historical development evidence, not represented as a rerun of the amended source.
+
+
+## 2026-11-13 supplement
+
+The above is the historical development record. All three formal quality/stability runs have now completed, and final independent source/result review is supplied in [outputs/local_public_lr_confirmation_results_20261113/INDEPENDENT_REVIEW.md](../../outputs/local_public_lr_confirmation_results_20261113/INDEPENDENT_REVIEW.md). This supplement does not claim that the interrupted earlier review had completed. No timing claim follows.

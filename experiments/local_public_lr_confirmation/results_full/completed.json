@@ -1,0 +1,31 @@
+{
+  "runs": 3,
+  "expected_runs": 3,
+  "record_validation_passed": true,
+  "certification_comparisons_performed": false,
+  "relation_mismatches": null,
+  "files": {
+    "environment.json": "dce28d1c30f1946665916fe7bcb63f612e52335471cefabc934852d5a67b4684",
+    "environment_final.json": "95cc2dd7a4a5b4f9a2788b92a09b5d55d25895f868f3320d58f6fc96638273ad",
+    "historical_stage_availability.csv": "8fdc70d35224ef108afd86376cfd89420d1a53d2eecec6ae7fd05d9120a63e8f",
+    "historical_test_metrics.csv": "696e16a6ad25ce76341388d7a741adcb7296bd17ed0388af335e39e5c5fea9ce",
+    "initial.csv": "09a9c1618f244c978e0db41339bd91e6a87dac8e0206fed9e16aaef4b3739c77",
+    "invocation_1794555447833161000.json": "375eac09fe1306225789a071c3a3d0e50f9ca6fffd4a7fa6412d2f8addee7d2b",
+    "invocation_1794555721142913400.json": "90225227f4c644fb77d6315666c0f60d8a56972f4a6adcbb8fcc1251a24f27ed",
+    "late_comparison.csv": "ca636d35fd010f43851ab5d6249a2ff0ac5468e94af55ebc21d18bc0060eb9c8",
+    "losses_and_deltas.csv": "0bbc82062c0e13a7b41b3f6cad37d39c61391d938f2ebdc2de61fc17028e409c",
+    "power_1794555447834688500.jsonl": "dc9f778f45f11f83aacf36c44f43dd4431dceaca0482e451c142262010bcd936",
+    "power_1794555721142913400.jsonl": "9484b5fcac3f3ed9d847ce20946c3641fd6faeabd6e2e86cc0372fc723d57cd8",
+    "recovery.csv": "b18603b8f060beebcf0605a20c6c62f765ae37a48696cd0341f697b3cdc8a2c0",
+    "report.md": "2ddefabe2fd7f01efb7cbf7720bf7cf05a3c8d23cd51d23d7153e299630c6900",
+    "runs\\strong_dirichlet_0.1_seed1001_local_lr.json": "88f5a047bcd5bd29cefb58caf2096415135d8269129a4a9430eef854234b7207",
+    "runs\\strong_dirichlet_0.1_seed1002_local_lr.json": "e1ab20e3f4a6b45a8f419d2f03d377a815beb3386d89277a189b30bdf4b7218d",
+    "runs\\strong_iid_seed1002_local_lr.json": "e7ea1b711e647b6b0c7bbcf3757c1c513c0bf5e2789d9ae10c52d9365b99925b",
+    "runs.csv": "4b1e6262f708f177fd614c4241237e4953932180d081984c23bf0d30e9700a20",
+    "severe_events.csv": "4846a377654dd7bfc258e16e7962b64ff00bc54f9cf01ccb75a8e1de4824c4fa",
+    "stages.csv": "5adba5ffe38bdb51c0ceb57f61bb94db7c82b09ae05e356140e82ed2b2b93449",
+    "summary.json": "02fcc8126b7103f1a59833d3020c1591c04542dac82d9b808b368e2e172bb8c3",
+    "test_checkpoints.csv": "e90d05c6e68c107a5f9ef062736c4912abd30de220465b69347e12a0d7cf896a",
+    "test_severe_events.csv": "a4dcd9eb9dae9375dae30bad1dd441718d81dbd41c81f6e6a8431d1b147c6641"
+  }
+}

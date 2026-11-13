@@ -1,0 +1,52 @@
+{
+  "fixture": false,
+  "cases": [
+    {
+      "case_id": "strong_dirichlet_0.1_seed1001",
+      "seed": 1001,
+      "partition": "dirichlet_0.1",
+      "branch": "local_lr",
+      "rounds": 200,
+      "severe_collapse_released": true,
+      "probe_seconds": 29.086155599929043,
+      "evaluation_seconds": 4.358608499984257
+    },
+    {
+      "case_id": "strong_iid_seed1002",
+      "seed": 1002,
+      "partition": "iid",
+      "branch": "local_lr",
+      "rounds": 200,
+      "severe_collapse_released": true,
+      "probe_seconds": 21.939623899917933,
+      "evaluation_seconds": 2.8771492000232683
+    },
+    {
+      "case_id": "strong_dirichlet_0.1_seed1002",
+      "seed": 1002,
+      "partition": "dirichlet_0.1",
+      "branch": "local_lr",
+      "rounds": 200,
+      "severe_collapse_released": true,
+      "probe_seconds": 23.63291760023276,
+      "evaluation_seconds": 3.7764936000166927
+    }
+  ],
+  "checkpoints": [
+    160,
+    180,
+    200
+  ],
+  "expected_case_ids": [
+    "strong_dirichlet_0.1_seed1001",
+    "strong_dirichlet_0.1_seed1002",
+    "strong_iid_seed1002"
+  ],
+  "all_cases_released": true,
+  "released_case_count": 3,
+  "counts": {
+    "new_local_lr_runs": 3,
+    "new_baseline_runs": 0
+  },
+  "claim_boundary": "Severe-collapse release check only; no ACC improvement or certification speed claim."
+}

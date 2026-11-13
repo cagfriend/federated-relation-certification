@@ -1,6 +1,6 @@
 # Local public-LR confirmation
 
-Status (2026-11-12): main-agent unit tests, smoke, resume and input preflight passed. Final independent review remains pending because sub-agents reached their usage limit. Formal training has not started. See VALIDATION.md.
+Status (2026-11-13): all three 200-round cases completed; final independent result/source review completed. This is a quality/stability result, not a timing benchmark. See [result review](../../outputs/local_public_lr_confirmation_results_20261113/REVIEW.md).
 
 This package runs the three remaining strong-profile cases registered in `PREREGISTRATION.md`. It reuses `experiments.local_public_lr.engine.run` and runs only the `local_lr` branch. It never schedules a new 200-round baseline.
 
@@ -22,7 +22,7 @@ Start the formal matrix with:
 python -m experiments.local_public_lr_confirmation.run --preset full --output experiments/local_public_lr_confirmation/results_full
 ```
 
-Formal execution checks AC power, sets one BLAS thread in each worker, records power every 15 seconds, and verifies the frozen quantity, local-LR, and low-capacity source manifests. It does not download or modify those source results. It consumes the prepared input pointers from the full quantity-heterogeneity result set.
+Formal execution records power state, sets one BLAS thread in each worker, records power every 15 seconds, and verifies the frozen quantity, local-LR, and low-capacity source manifests. Battery or unknown power state prints an informational message and continues: AC power is optional for this quality/stability experiment. It does not download or modify those source results. It consumes the prepared input pointers from the full quantity-heterogeneity result set.
 
 To resume an interrupted output directory, pass `--resume` with the same output path. Each completed run is verified and preserved. A completed output is rechecked against its completion manifest and finished seal.
 

@@ -14,4 +14,6 @@ The full matrix has three new long runs and no new baseline runs. The existing 2
 
 At rounds 160, 180 and 200, every client must occupy more than one cluster and have largest-cluster fraction below 0.99. Missing checkpoints or clients fail. This is a severe-collapse release check only. There is no ACC improvement requirement, no new health threshold, no certification-speed claim, and no claim that one client’s intervention isolates a unique cause.
 
-Smoke uses the same three identities with independent synthetic caches, six clients, M=128, probe size 32 and three rounds with per-round evaluation. It is a code-path check and does not count as evidence. Resume preserves and verifies every already-written run. Formal runs require one BLAS thread, AC power, per-worker power checks, and a 15-second parent power log.
+Smoke uses the same three identities with independent synthetic caches, six clients, M=128, probe size 32 and three rounds with per-round evaluation. It is a code-path check and does not count as evidence. Resume preserves and verifies every already-written run. Formal runs require one BLAS thread and retain per-worker power snapshots and a 15-second parent power log.
+
+2026-11-12 execution-policy amendment, before formal training: AC power is optional for this quality/stability experiment. Battery or unknown power state is logged and prints an informational message without aborting startup, resume or a worker. This experiment makes no timing comparison; training configuration and recovery criteria are unchanged.

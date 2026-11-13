@@ -1,0 +1,4 @@
+case_id,seed,partition,branch,rounds,severe_collapse_released,probe_seconds,evaluation_seconds
+strong_dirichlet_0.1_seed1001,1001,dirichlet_0.1,local_lr,200,True,29.086155599929043,4.358608499984257
+strong_iid_seed1002,1002,iid,local_lr,200,True,21.939623899917933,2.8771492000232683
+strong_dirichlet_0.1_seed1002,1002,dirichlet_0.1,local_lr,200,True,23.63291760023276,3.7764936000166927

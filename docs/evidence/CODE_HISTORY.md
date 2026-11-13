@@ -427,3 +427,13 @@ P1/P2代码尚未出现在本次远端基线，不能通过远端相对源码链
 |[report.py](../../experiments/local_public_lr_confirmation/report.py)|`1a5ac12a36ad1d987e51dedd6cce16659056dc7be1e574db2b3d6f06b9ced63b`|
 |[run.py](../../experiments/local_public_lr_confirmation/run.py)|`0120c03b38480987e2b5487797537f1182b05598e3c8b08fbaa453986bff98aa`|
 |[test_confirmation.py](../../experiments/local_public_lr_confirmation/test_confirmation.py)|`f07acfdc0b98dea05d8716af0b62acf21d4d8dbf7589f550af21c03c86f6b990`|
+
+
+## E29正式质量确认执行版，2026-11-13
+
+仅入口启动执行策略及协议修订，原训练引擎和学习设置不变；冻结123来源记录于正式环境。
+
+|文件|SHA256|
+|---|---|
+|[experiments/local_public_lr_confirmation/run.py](../../experiments/local_public_lr_confirmation/run.py)|`9186ef55c96c9b05b7c008113a8fb8d0f77884fbb2a19632352e64d639cda2af`|
+|[experiments/local_public_lr_confirmation/PREREGISTRATION.md](../../experiments/local_public_lr_confirmation/PREREGISTRATION.md)|`045aa18ca343157166e4b9ea0725c5a2cc8216262bac2e4db9422729ce5866f2`|
