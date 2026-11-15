@@ -58,3 +58,9 @@
 [private_prior_compute](private_prior_compute/README.md)：私有校正后的四环境B/E/D共12次主运行及6次隔离内存回放完成，关系/参数/质量精确一致，117,964,800次关系与157,286,400次候选检查零错误。D/B完整头部省35.25%–43.00%，D/E省10.31%–14.12%；通信字节相同，两个内存配置D/B峰值增加约14.5%。每环境每方法一次。
 
 后续新seed联合确认仍待另行设计与实现。
+
+
+
+## E32新种子确认已完成
+
+新seed1201/1202/1203 × 两划分 × B/E/D各3次重复，共54次独立进程完成。IID完整头部D/B、D/E中位省时39.08%/16.67%，强非IID为39.29%/12.45%；预定性能及质量条件全部通过，逐轮匹配各case全量B参考。 [执行包](private_prior_confirmation/README.md) · [审核](../outputs/private_prior_confirmation_review/REVIEW.md)

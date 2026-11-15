@@ -1,0 +1,696 @@
+{
+  "remote_commit": "b8057f567682d58c88c6eb87a63d4c67654042b3",
+  "protected_modules": [
+    "experiments.local_public_lr.__init__",
+    "experiments.local_public_lr.design",
+    "experiments.local_public_lr.probes",
+    "experiments.low_capacity_diagnostic.__init__",
+    "experiments.low_capacity_diagnostic.probes",
+    "experiments.lr_client_scaling.__init__",
+    "experiments.lr_client_scaling.design",
+    "experiments.noniid_clustering.__init__",
+    "experiments.noniid_clustering.data",
+    "experiments.private_prior.__init__",
+    "experiments.private_prior.training",
+    "experiments.private_prior_compute.__init__",
+    "experiments.private_prior_compute.engine",
+    "experiments.private_workload.__init__",
+    "experiments.private_workload.design",
+    "experiments.private_workload.engine",
+    "experiments.private_workload.sampling",
+    "experiments.private_workload.student",
+    "experiments.public_budget.__init__",
+    "experiments.public_budget.student",
+    "experiments.public_scaling.__init__",
+    "experiments.public_scaling.certification",
+    "experiments.public_scaling.codec",
+    "experiments.public_scaling.config",
+    "experiments.public_scaling.data",
+    "experiments.public_scaling.engine",
+    "experiments.public_scaling.graphs",
+    "experiments.public_scaling.head",
+    "experiments.public_scaling.protocol",
+    "experiments.public_scaling.util",
+    "experiments.quantity_heterogeneity.__init__",
+    "experiments.quantity_heterogeneity.data",
+    "experiments.quantity_heterogeneity.design",
+    "experiments.quantity_heterogeneity.partition",
+    "experiments.stl10_compute.__init__",
+    "experiments.stl10_compute.design",
+    "experiments.stl10_longrun.__init__",
+    "experiments.stl10_longrun.design",
+    "experiments.stl10_transfer.__init__",
+    "experiments.stl10_transfer.data",
+    "experiments.stl10_transfer.design"
+  ],
+  "removed_source_files": [
+    "experiments/client_scaling/data.py",
+    "experiments/client_scaling/design.py",
+    "experiments/client_scaling/engine.py",
+    "experiments/client_scaling/report.py",
+    "experiments/client_scaling/run.py",
+    "experiments/client_scaling/telemetry.py",
+    "experiments/client_scaling/test_run.py",
+    "experiments/client_scaling/__init__.py",
+    "experiments/k_scaling/data.py",
+    "experiments/k_scaling/design.py",
+    "experiments/k_scaling/engine.py",
+    "experiments/k_scaling/report.py",
+    "experiments/k_scaling/run.py",
+    "experiments/k_scaling/test_run.py",
+    "experiments/k_scaling/__init__.py",
+    "experiments/local_public_lr/engine.py",
+    "experiments/local_public_lr/report.py",
+    "experiments/local_public_lr/run.py",
+    "experiments/local_public_lr/test_local_public_lr.py",
+    "experiments/local_public_lr_confirmation/design.py",
+    "experiments/local_public_lr_confirmation/engine.py",
+    "experiments/local_public_lr_confirmation/probes.py",
+    "experiments/local_public_lr_confirmation/report.py",
+    "experiments/local_public_lr_confirmation/run.py",
+    "experiments/local_public_lr_confirmation/test_confirmation.py",
+    "experiments/local_public_lr_confirmation/__init__.py",
+    "experiments/low_capacity_diagnostic/design.py",
+    "experiments/low_capacity_diagnostic/engine.py",
+    "experiments/low_capacity_diagnostic/report.py",
+    "experiments/low_capacity_diagnostic/run.py",
+    "experiments/low_capacity_diagnostic/test_run.py",
+    "experiments/lr_client_scaling/report.py",
+    "experiments/lr_client_scaling/run.py",
+    "experiments/lr_client_scaling/test_run.py",
+    "experiments/noniid_clustering/engine.py",
+    "experiments/noniid_clustering/report.py",
+    "experiments/noniid_clustering/run.py",
+    "experiments/noniid_clustering/test_noniid.py",
+    "experiments/private_prior/design.py",
+    "experiments/private_prior/engine.py",
+    "experiments/private_prior/fixture.py",
+    "experiments/private_prior/report.py",
+    "experiments/private_prior/run.py",
+    "experiments/private_prior/test_private_prior.py",
+    "experiments/private_prior_compute/design.py",
+    "experiments/private_prior_compute/report.py",
+    "experiments/private_prior_compute/run.py",
+    "experiments/private_prior_compute/test_compute.py",
+    "experiments/private_workload/report.py",
+    "experiments/private_workload/run.py",
+    "experiments/private_workload/test_workload.py",
+    "experiments/public_budget/design.py",
+    "experiments/public_budget/engine.py",
+    "experiments/public_budget/report.py",
+    "experiments/public_budget/run.py",
+    "experiments/public_budget/test_budget.py",
+    "experiments/public_scaling/report.py",
+    "experiments/public_scaling/run.py",
+    "experiments/public_scaling/test_scaling.py",
+    "experiments/quantity_heterogeneity/engine.py",
+    "experiments/quantity_heterogeneity/report.py",
+    "experiments/quantity_heterogeneity/run.py",
+    "experiments/quantity_heterogeneity/test_run.py",
+    "experiments/stl10_compute/report.py",
+    "experiments/stl10_compute/run.py",
+    "experiments/stl10_compute/test_run.py",
+    "experiments/stl10_diagnostics/probes.py",
+    "experiments/stl10_diagnostics/run.py",
+    "experiments/stl10_diagnostics/test_probes.py",
+    "experiments/stl10_diagnostics/test_run.py",
+    "experiments/stl10_diagnostics/__init__.py",
+    "experiments/stl10_longrun/engine.py",
+    "experiments/stl10_longrun/report.py",
+    "experiments/stl10_longrun/run.py",
+    "experiments/stl10_longrun/test_design.py",
+    "experiments/stl10_repeat_confirmation/design.py",
+    "experiments/stl10_repeat_confirmation/report.py",
+    "experiments/stl10_repeat_confirmation/run.py",
+    "experiments/stl10_repeat_confirmation/test_run.py",
+    "experiments/stl10_repeat_confirmation/__init__.py",
+    "experiments/stl10_transfer/engine.py",
+    "experiments/stl10_transfer/report.py",
+    "experiments/stl10_transfer/run.py",
+    "experiments/stl10_transfer/test_data.py",
+    "experiments/stl10_transfer/test_run.py"
+  ],
+  "targets": [
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\aggregator_recovery\\__pycache__",
+      "bytes": 70428
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\__init__.py",
+      "bytes": 62
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\__pycache__",
+      "bytes": 109030
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\data.py",
+      "bytes": 4806
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\design.py",
+      "bytes": 2632
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\engine.py",
+      "bytes": 734
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\report.py",
+      "bytes": 10619
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\run.py",
+      "bytes": 18782
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\telemetry.py",
+      "bytes": 1668
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\client_scaling\\test_run.py",
+      "bytes": 5616
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\collaboration_mechanism\\__pycache__",
+      "bytes": 108422
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\collapse_intervention\\__pycache__",
+      "bytes": 55618
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\cost_diagnostics\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\graph_density\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\__init__.py",
+      "bytes": 74
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\__pycache__",
+      "bytes": 73256
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\data.py",
+      "bytes": 8543
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\design.py",
+      "bytes": 1162
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\engine.py",
+      "bytes": 7092
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\report.py",
+      "bytes": 5095
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\run.py",
+      "bytes": 11604
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\k_scaling\\test_run.py",
+      "bytes": 2866
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\__pycache__",
+      "bytes": 183515
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\engine.py",
+      "bytes": 16883
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\fixture_data",
+      "bytes": 15925568
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\report.py",
+      "bytes": 11397
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\run.py",
+      "bytes": 14696
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr\\test_local_public_lr.py",
+      "bytes": 11902
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\__init__.py",
+      "bytes": 67
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\__pycache__",
+      "bytes": 62302
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\design.py",
+      "bytes": 1500
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\engine.py",
+      "bytes": 149
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\fixture_data",
+      "bytes": 15925568
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\probes.py",
+      "bytes": 279
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\report.py",
+      "bytes": 12781
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\run.py",
+      "bytes": 22210
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\local_public_lr_confirmation\\test_confirmation.py",
+      "bytes": 6551
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\__pycache__",
+      "bytes": 176579
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\design.py",
+      "bytes": 1297
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\engine.py",
+      "bytes": 14509
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\fixture_data",
+      "bytes": 15925568
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\report.py",
+      "bytes": 6988
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\run.py",
+      "bytes": 16928
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\low_capacity_diagnostic\\test_run.py",
+      "bytes": 7927
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_client_scaling\\__pycache__",
+      "bytes": 86135
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_client_scaling\\report.py",
+      "bytes": 3336
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_client_scaling\\run.py",
+      "bytes": 16984
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_client_scaling\\test_run.py",
+      "bytes": 4450
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_compute\\__pycache__",
+      "bytes": 59263
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\lr_repeat\\__pycache__",
+      "bytes": 37749
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\__pycache__",
+      "bytes": 112752
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\engine.py",
+      "bytes": 6120
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\report.py",
+      "bytes": 5780
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\run.py",
+      "bytes": 11558
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\noniid_clustering\\test_noniid.py",
+      "bytes": 6355
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\overhead_benchmark\\review_support\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\path_selection\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\perf_confirmation\\__pycache__",
+      "bytes": 58873
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\__pycache__",
+      "bytes": 77941
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\design.py",
+      "bytes": 328
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\engine.py",
+      "bytes": 17342
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\fixture.py",
+      "bytes": 1987
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\fixture_data",
+      "bytes": 15925568
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\prepared_smoke",
+      "bytes": 30907454
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\report.py",
+      "bytes": 5224
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\results_smoke",
+      "bytes": 126358
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\run.py",
+      "bytes": 8826
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\test_private_prior.py",
+      "bytes": 5730
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\validation_final",
+      "bytes": 953128
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior\\validation_smoke",
+      "bytes": 949404
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\__pycache__",
+      "bytes": 60651
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\design.py",
+      "bytes": 425
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\report.py",
+      "bytes": 4082
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\results_smoke",
+      "bytes": 1964852
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\run.py",
+      "bytes": 12028
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\test_compute.py",
+      "bytes": 2524
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_compute\\validation_final",
+      "bytes": 1964891
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_workload\\__pycache__",
+      "bytes": 146144
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_workload\\report.py",
+      "bytes": 27830
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_workload\\run.py",
+      "bytes": 19239
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_workload\\test_workload.py",
+      "bytes": 9735
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\__pycache__",
+      "bytes": 121574
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\design.py",
+      "bytes": 1962
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\engine.py",
+      "bytes": 8853
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\report.py",
+      "bytes": 26888
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\run.py",
+      "bytes": 17296
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_budget\\test_budget.py",
+      "bytes": 9999
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_lr_confirmation\\__pycache__",
+      "bytes": 59225
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\__pycache__",
+      "bytes": 313064
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\report.py",
+      "bytes": 16924
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\run.py",
+      "bytes": 13556
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\public_scaling\\test_scaling.py",
+      "bytes": 11179
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\quantity_heterogeneity\\__pycache__",
+      "bytes": 241635
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\quantity_heterogeneity\\engine.py",
+      "bytes": 5841
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\quantity_heterogeneity\\report.py",
+      "bytes": 4324
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\quantity_heterogeneity\\run.py",
+      "bytes": 22258
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\quantity_heterogeneity\\test_run.py",
+      "bytes": 11457
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\real_iid\\__pycache__",
+      "bytes": 0
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_compute\\__pycache__",
+      "bytes": 88236
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_compute\\report.py",
+      "bytes": 8003
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_compute\\run.py",
+      "bytes": 16277
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_compute\\test_run.py",
+      "bytes": 5329
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\__init__.py",
+      "bytes": 75
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\__pycache__",
+      "bytes": 83711
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\probes.py",
+      "bytes": 11468
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\run.py",
+      "bytes": 12250
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\test_probes.py",
+      "bytes": 6641
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_diagnostics\\test_run.py",
+      "bytes": 3089
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_longrun\\__pycache__",
+      "bytes": 90993
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_longrun\\engine.py",
+      "bytes": 5162
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_longrun\\report.py",
+      "bytes": 3913
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_longrun\\run.py",
+      "bytes": 12571
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_longrun\\test_design.py",
+      "bytes": 4434
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_public_steps\\__pycache__",
+      "bytes": 19813
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\__init__.py",
+      "bytes": 78
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\__pycache__",
+      "bytes": 52174
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\design.py",
+      "bytes": 4115
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\report.py",
+      "bytes": 3975
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\run.py",
+      "bytes": 17177
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_repeat_confirmation\\test_run.py",
+      "bytes": 6799
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\__pycache__",
+      "bytes": 190633
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\engine.py",
+      "bytes": 4033
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\report.py",
+      "bytes": 6455
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\run.py",
+      "bytes": 13319
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\test_data.py",
+      "bytes": 2735
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\test_run.py",
+      "bytes": 2722
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\github_release_20261030\\packets",
+      "bytes": 137698386
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\github_release_20261030\\publish",
+      "bytes": 8900767
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\github_release_20261030\\publish_packets",
+      "bytes": 11564165
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\github_release_20261030\\publish_v2",
+      "bytes": 2096559
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\github_release_20261030\\repository",
+      "bytes": 122434944
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_confirmation_results_20261113\\publication\\payload.json",
+      "bytes": 4310164
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_confirmation_results_20261113\\publication\\stage",
+      "bytes": 3226566
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_confirmation_review_20261112\\publication\\payload.json",
+      "bytes": 261951
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_confirmation_review_20261112\\publication\\stage",
+      "bytes": 194122
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_results_20261112\\publication\\payload.json",
+      "bytes": 3329158
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\local_public_lr_results_20261112\\publication\\stage",
+      "bytes": 2491360
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\private_prior_publication\\payload.json",
+      "bytes": 14518133
+    },
+    {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\outputs\\private_prior_publication\\stage",
+      "bytes": 10879293
+    }
+  ],
+  "bytes": 425912102
+}

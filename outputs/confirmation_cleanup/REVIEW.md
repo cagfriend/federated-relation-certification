@@ -1,0 +1,9 @@
+# 本地清理记录
+
+已核对远端提交b8057f567682d58c88c6eb87a63d4c67654042b3，按Git blob哈希匹配85份已发布且无新运行依赖的旧Python源码，删除前额外保存在removed_published_source.zip中。
+
+清理包括上述源码、已发布副本、发布传输payload、合成验证和字节码目录，共140个核验目标、425,912,102字节，约406.18 MiB。递归操作前逐一确认绝对路径位于本工作区，并拒绝真实data、prepared、results_full及.git路径。完整清理计划、保护模块及逐项大小在plan.json，远端身份在remote_files.json。
+
+正式结果、真实STL-10数据、特征与模型缓存均保留。共享模块41份保留，旧compute引擎供新引擎回归核对。新实验位于experiments/private_prior_confirmation，已完成7项测试及9次最终smoke、续跑与来源检查。
+
+旧入口恢复时需先解压源码备份或读取原GitHub提交。GitHub上的旧源码仍提供原记录恢复路径，本次清理仅作用于本地工作区。

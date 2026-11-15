@@ -609,3 +609,18 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 **审阅** [结果复核](../../outputs/private_prior_compute_results_review/REVIEW.md) · [审计脚本](../../outputs/private_prior_compute_results_review/audit.py) · [机器审计](../../outputs/private_prior_compute_results_review/audit.json)
 
 **原始归档** [ZIP和逐文件恢复清单](../../archives/private_prior_compute_20261113.manifest.json)。解压回仓库根目录可恢复完成清单；缓存、图像、模型及特征不上传。环境中的本机绝对路径仅用于来源核验，异机需重新准备。
+
+
+
+<a id="e32"></a>
+## E32 私有校正的新种子质量与省时联合确认
+
+|项目|记录|
+|---|---|
+|目录|experiments/private_prior_confirmation/|
+|矩阵|3新seed × IID/α0.1 × B/E/D × 3重复，54条各200轮|
+|结果|新seed1201/1202/1203 × 两划分 × B/E/D各3次重复，共54次独立进程完成。IID完整头部D/B、D/E中位省时39.08%/16.67%，强非IID为39.29%/12.45%；预定性能及质量条件全部通过，逐轮匹配各case全量B参考。|
+|核验|60完成文件、37来源、6缓存及10,800轮轨迹通过，五份报表重生成一致。正式无oracle，以B repeat0为参考|
+|边界|n=3每划分，保留计时变异，早期2case近单簇；未新增隔离内存/能耗测量|
+
+[预注册](../../experiments/private_prior_confirmation/PREREGISTRATION.md) · [报告](../../experiments/private_prior_confirmation/results_full/report.md) · [主审](../../outputs/private_prior_confirmation_review/REVIEW.md) · [独立Luna/high审阅](../../outputs/private_prior_confirmation_review/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/private_prior_confirmation_review/audit.py) · [机器审计](../../outputs/private_prior_confirmation_review/audit.json) · [无损归档](../../archives/private_prior_confirmation_20261114.manifest.json)

@@ -71,3 +71,9 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E30/E31 无损原始记录
 
 [私有校正恢复清单](private_prior_20261113.manifest.json)含4份主轨迹与大CSV；[计算比较恢复清单](private_prior_compute_20261113.manifest.json)含12主运行及6内存回放。ZIP成员保留完整仓库相对路径、大小与SHA256，可恢复各自completed.json。小报告/环境/完成封印直接保留。
+
+
+
+## E32确认原始记录
+
+[恢复清单](private_prior_confirmation_20261114.manifest.json)记录6个case ZIP与54份完整JSON。恢复原路径可核验completed.json的60项。模型、数据和特征缓存不上传。

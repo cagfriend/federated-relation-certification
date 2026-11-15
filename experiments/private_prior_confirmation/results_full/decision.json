@@ -1,0 +1,165 @@
+{
+  "mode": "formal_confirmation",
+  "statistical_unit": "seed; technical repeats averaged before paired comparisons",
+  "small_sample_note": "n=3 seeds; report paired per-seed ratios and min/max only; no significance claims.",
+  "partitions": {
+    "dirichlet_0.1": {
+      "seed_method_mean_head_pipeline_seconds": {
+        "1201": {
+          "B": 59.40054310006477,
+          "E": 41.18531136681364,
+          "D": 36.059420600058125
+        },
+        "1202": {
+          "B": 56.52460469971993,
+          "E": 42.425532166904304,
+          "D": 35.61680609975398
+        },
+        "1203": {
+          "B": 56.6898343002346,
+          "E": 37.90851856689551,
+          "D": 33.4868700998486
+        }
+      },
+      "paired_ratios_D_over_B_by_seed": {
+        "1201": 0.6070554024954496,
+        "1202": 0.6301115468027405,
+        "1203": 0.5907032629959552
+      },
+      "paired_ratios_D_over_E_by_seed": {
+        "1201": 0.8755408033436439,
+        "1202": 0.8395134788088353,
+        "1203": 0.8833600300353542
+      },
+      "D_over_B_median": 0.6070554024954496,
+      "D_over_B_min_max": [
+        0.5907032629959552,
+        0.6301115468027405
+      ],
+      "D_over_E_median": 0.8755408033436439,
+      "D_over_E_min_max": [
+        0.8395134788088353,
+        0.8833600300353542
+      ],
+      "D_wins_vs_B": {
+        "count": 3,
+        "seeds": 3
+      },
+      "D_wins_vs_E": {
+        "count": 3,
+        "seeds": 3
+      },
+      "C1": {
+        "threshold": "median(D/B) <= 0.80",
+        "value": 0.6070554024954496,
+        "pass": true
+      },
+      "C2": {
+        "threshold": "median(D/E) <= 0.95",
+        "value": 0.8755408033436439,
+        "pass": true
+      },
+      "C3": {
+        "threshold": "at least 2/3 seed wins against each method",
+        "D_beats_B": true,
+        "D_beats_E": true,
+        "pass": true
+      },
+      "formal_performance_decision": true,
+      "quality": {
+        "cluster_guard_by_seed": {
+          "1201": true,
+          "1202": true,
+          "1203": true
+        },
+        "teacher_C0_C3_le_0.40_by_seed": {
+          "1201": true,
+          "1202": true,
+          "1203": true
+        },
+        "pass": true,
+        "formal_quality_decision": true
+      },
+      "overall_pass": true
+    },
+    "iid": {
+      "seed_method_mean_head_pipeline_seconds": {
+        "1201": {
+          "B": 59.036694033430344,
+          "E": 38.76033083332004,
+          "D": 32.29832166686538
+        },
+        "1202": {
+          "B": 56.601795366810016,
+          "E": 41.43210796719844,
+          "D": 34.48203733327682
+        },
+        "1203": {
+          "B": 60.935868966703616,
+          "E": 40.06211033321839,
+          "D": 37.41944210013995
+        }
+      },
+      "paired_ratios_D_over_B_by_seed": {
+        "1201": 0.547088928261735,
+        "1202": 0.6092039503308103,
+        "1203": 0.6140790758327672
+      },
+      "paired_ratios_D_over_E_by_seed": {
+        "1201": 0.8332829202556846,
+        "1202": 0.8322539939453732,
+        "1203": 0.9340357207571461
+      },
+      "D_over_B_median": 0.6092039503308103,
+      "D_over_B_min_max": [
+        0.547088928261735,
+        0.6140790758327672
+      ],
+      "D_over_E_median": 0.8332829202556846,
+      "D_over_E_min_max": [
+        0.8322539939453732,
+        0.9340357207571461
+      ],
+      "D_wins_vs_B": {
+        "count": 3,
+        "seeds": 3
+      },
+      "D_wins_vs_E": {
+        "count": 3,
+        "seeds": 3
+      },
+      "C1": {
+        "threshold": "median(D/B) <= 0.80",
+        "value": 0.6092039503308103,
+        "pass": true
+      },
+      "C2": {
+        "threshold": "median(D/E) <= 0.95",
+        "value": 0.8332829202556846,
+        "pass": true
+      },
+      "C3": {
+        "threshold": "at least 2/3 seed wins against each method",
+        "D_beats_B": true,
+        "D_beats_E": true,
+        "pass": true
+      },
+      "formal_performance_decision": true,
+      "quality": {
+        "cluster_guard_by_seed": {
+          "1201": true,
+          "1202": true,
+          "1203": true
+        },
+        "teacher_C0_C3_le_0.40_by_seed": {
+          "1201": true,
+          "1202": true,
+          "1203": true
+        },
+        "pass": true,
+        "formal_quality_decision": true
+      },
+      "overall_pass": true
+    }
+  }
+}

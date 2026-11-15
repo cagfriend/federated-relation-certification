@@ -1,0 +1,681 @@
+{
+  "preset": "full",
+  "prepare_device": "cuda",
+  "spec": {
+    "config": {
+      "dimensions": [
+        512,
+        512,
+        512,
+        2048,
+        2048,
+        2048
+      ],
+      "public_pool": 16384,
+      "samples": 16384,
+      "degree": 1,
+      "classes": 10,
+      "rounds": 200,
+      "train_limit": 18784,
+      "test_limit": 8000,
+      "pretrain_epochs": 5,
+      "pretrain_batch": 256,
+      "pretrain_lr": 0.001,
+      "noise_std": 0.15,
+      "prepare_device": "cuda",
+      "prepare_threads": 4,
+      "feature_batch": 256,
+      "kmeans_restarts": 10,
+      "kmeans_max_iter": 100,
+      "head_lr": 0.1,
+      "private_epochs": 1,
+      "private_batch": 128,
+      "public_epochs": 1,
+      "public_edge_batch": 256,
+      "public_weight": 0.5,
+      "eval_every": 20,
+      "threads": 1
+    },
+    "policy": "fixed",
+    "steps": 2,
+    "private_limit": null
+  },
+  "sources": {
+    "experiments/private_prior_confirmation/design.py": "defbd2aa9fd854dac107641a149e9733a4d6900cfee2b3139ec50b8f91fc2751",
+    "experiments/quantity_heterogeneity/design.py": "c9c4d3e38f5ec4fb8edc02de0e654b84c3273cdf069a56769d8b8868f41d8f88",
+    "experiments/private_workload/design.py": "dcbf3066422774ed340a6bbe97888ca535c0afeb0d531a47bcdd649b83b42c10",
+    "experiments/public_scaling/config.py": "407fef48da6bbd873da49946051fa3c40febbe61b991d1efbda2b1ae052eb207",
+    "experiments/stl10_compute/design.py": "d5745b0feb7da88c5d6121605e091047b6059b0ace28d4b0bec1a345857a38b6",
+    "experiments/stl10_longrun/design.py": "cd43d20637df7b88bdc5402ea386e47f660147451bbcc77fddbe78dd07e78c24",
+    "experiments/stl10_transfer/design.py": "25dc478b1e72eac3528ffaa984b61166ea51dc5c0fa578facb5e4517cdef0823",
+    "experiments/lr_client_scaling/design.py": "3f1e4974cc456261fd1bb4ea3fafa24208f5af982d59c8c5090d9e9ed292e8d7",
+    "experiments/private_prior_confirmation/engine.py": "1b6c4088cf117809e5af05911561e7e26524e16f4c68b1d31a5eb5f1056a7306",
+    "experiments/quantity_heterogeneity/__init__.py": "80d4d8febace56a8649b517d7b82513552bcd626b2f2dc938075a9c370765cd2",
+    "experiments/quantity_heterogeneity/data.py": "70444736529196c60d1630f4592a23ebdb3ba047e6a72a5549c93699ca1b125f",
+    "experiments/noniid_clustering/data.py": "8ae8e35883e25a80edc6a5ed5460b9f845245e4490d2bd9c043e35bbdeccfd61",
+    "experiments/public_scaling/__init__.py": "b2906bedb8a768065cc47dfd18f4309e0b3d78024d56c53e7b2cd60683a868f8",
+    "experiments/public_scaling/data.py": "a933bf16d6110a99847b32a73a8d596492fc2e5541bbc6098f1e2f4395c60b76",
+    "experiments/public_scaling/graphs.py": "5d44dfca1e3328d52aea7ece700b6af562164506ef21abd76dce1a89c8232eb3",
+    "experiments/quantity_heterogeneity/partition.py": "987a13ac3364f377974d689c04fb87d0d976a5b59de9f4f574035d737528db69",
+    "experiments/stl10_transfer/data.py": "74532195b1178aed918166ad2d7b3422da38ff19d74d79b0b748111b2b719d4e",
+    "experiments/public_scaling/engine.py": "d3923fbab9e40b97ffecb37cc19ef94fecfef83efbd6cfeaa6d9675fc650d1ed",
+    "experiments/public_scaling/certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f",
+    "experiments/public_scaling/protocol.py": "9b2c990f21ec62b1f52dc59de20ab3427f1cf14f47b7fb995c7bc79a2ba54d3c",
+    "experiments/public_scaling/codec.py": "582e351a61ead412ca8eece559d3d164184f8dae0ce384f0c5c0071087c91583",
+    "experiments/public_scaling/head.py": "2ae43abbbe4cb16d428ab1a2172cad756a491108d2ac1c5e59849d4d376275fa",
+    "experiments/private_workload/engine.py": "9649832819f624c642e0b978836d752e6adb24cafea65900d301414f0b65a35a",
+    "experiments/private_workload/sampling.py": "f836113f45b9d3e3613663e3c4adc4024d36604b73808c861eb7559a486abbed",
+    "experiments/private_workload/student.py": "bd3494b42188a2eb4a0b986835b2be60a767a56c2c0d469c59c4b3dcff9f262d",
+    "experiments/public_budget/student.py": "0f2f01afa5ef54264c178fc09c67d79c381aea73342198dd6bf6984b77743e77",
+    "experiments/private_prior/training.py": "7fce9617e87bdd5ff30b9416627dce28d4fe8ebc289396e57dfe9dabb12be5ac",
+    "experiments/local_public_lr/__init__.py": "4dd1be3d96d20d8010f9bff02b5901501d336a3cc1c5af4bb2a4ca05b547c4b5",
+    "experiments/local_public_lr/probes.py": "8cf9b3e133973f364325e8f94ddf55b65903f19f4b717187f20a255201f94b7c",
+    "experiments/low_capacity_diagnostic/probes.py": "82a987c9985d258e2c4e5c68c966e0225e5e4235105df6730b28ca348bdc6486",
+    "experiments/local_public_lr/design.py": "f7d06413fc564b69335288c2331af1052f3a4023a2b9af9249d9479bd761154c",
+    "experiments/private_prior_confirmation/fixture.py": "8b04370fe72e01813f2844cdd5ff9d2c3bf3501671a61ce474487bf256a72f7d",
+    "experiments/private_prior_confirmation/support.py": "099740a25b8acde09988e294ab3e315db22928c26d4fcd612287435394e5c154",
+    "experiments/private_prior_confirmation/report.py": "62b98106dc1c96d27aab51c55f39e74849b915fcddf6f3e78aeac02267b4c98e",
+    "experiments/private_prior_confirmation/run.py": "b2c4095c866f75aa60016be45d049a9128b87d40d605e1a995da1e7e5c513334",
+    "experiments/private_prior_confirmation/__init__.py": "e17ef39279e51e45f343a180616ee22eed94b769eebdd77db51d2fd769b4f1bb",
+    "experiments/private_prior_confirmation/PREREGISTRATION.md": "f9ca5511f72de7975d8163377b15ee67883e454e3d824176f0a7c4dd338eb5c4"
+  },
+  "runtime": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\anaconda\\python.exe",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.5.1",
+    "torch": "2.7.1+cu118",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas": [
+      {
+        "user_api": "blas",
+        "internal_api": "mkl",
+        "num_threads": 8,
+        "prefix": "mkl_rt",
+        "filepath": "D:\\anaconda\\Library\\bin\\mkl_rt.2.dll",
+        "version": "2023.1-Product",
+        "threading_layer": "intel"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 16,
+        "prefix": "vcomp",
+        "filepath": "D:\\anaconda\\vcomp140.dll",
+        "version": null
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "B",
+      "repeat": 0,
+      "block": 0,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "E",
+      "repeat": 0,
+      "block": 0,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "D",
+      "repeat": 0,
+      "block": 0,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "E",
+      "repeat": 1,
+      "block": 1,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "D",
+      "repeat": 1,
+      "block": 1,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "B",
+      "repeat": 1,
+      "block": 1,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "D",
+      "repeat": 2,
+      "block": 2,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "B",
+      "repeat": 2,
+      "block": 2,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1201",
+      "method": "E",
+      "repeat": 2,
+      "block": 2,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "B",
+      "repeat": 0,
+      "block": 3,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "E",
+      "repeat": 0,
+      "block": 3,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "D",
+      "repeat": 0,
+      "block": 3,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "E",
+      "repeat": 1,
+      "block": 4,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "D",
+      "repeat": 1,
+      "block": 4,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "B",
+      "repeat": 1,
+      "block": 4,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "D",
+      "repeat": 2,
+      "block": 5,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "B",
+      "repeat": 2,
+      "block": 5,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1201,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1201",
+      "method": "E",
+      "repeat": 2,
+      "block": 5,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "B",
+      "repeat": 0,
+      "block": 6,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "E",
+      "repeat": 0,
+      "block": 6,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "D",
+      "repeat": 0,
+      "block": 6,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "E",
+      "repeat": 1,
+      "block": 7,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "D",
+      "repeat": 1,
+      "block": 7,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "B",
+      "repeat": 1,
+      "block": 7,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "D",
+      "repeat": 2,
+      "block": 8,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "B",
+      "repeat": 2,
+      "block": 8,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1202",
+      "method": "E",
+      "repeat": 2,
+      "block": 8,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "B",
+      "repeat": 0,
+      "block": 9,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "E",
+      "repeat": 0,
+      "block": 9,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "D",
+      "repeat": 0,
+      "block": 9,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "E",
+      "repeat": 1,
+      "block": 10,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "D",
+      "repeat": 1,
+      "block": 10,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "B",
+      "repeat": 1,
+      "block": 10,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "D",
+      "repeat": 2,
+      "block": 11,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "B",
+      "repeat": 2,
+      "block": 11,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1202",
+      "method": "E",
+      "repeat": 2,
+      "block": 11,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "B",
+      "repeat": 0,
+      "block": 12,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "E",
+      "repeat": 0,
+      "block": 12,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "D",
+      "repeat": 0,
+      "block": 12,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "E",
+      "repeat": 1,
+      "block": 13,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "D",
+      "repeat": 1,
+      "block": 13,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "B",
+      "repeat": 1,
+      "block": 13,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "D",
+      "repeat": 2,
+      "block": 14,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "B",
+      "repeat": 2,
+      "block": 14,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "case_id": "strong_iid_seed1203",
+      "method": "E",
+      "repeat": 2,
+      "block": 14,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "B",
+      "repeat": 0,
+      "block": 15,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "E",
+      "repeat": 0,
+      "block": 15,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "D",
+      "repeat": 0,
+      "block": 15,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "E",
+      "repeat": 1,
+      "block": 16,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "D",
+      "repeat": 1,
+      "block": 16,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "B",
+      "repeat": 1,
+      "block": 16,
+      "position": 2,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "D",
+      "repeat": 2,
+      "block": 17,
+      "position": 0,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "B",
+      "repeat": 2,
+      "block": 17,
+      "position": 1,
+      "memory": false
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "case_id": "strong_dirichlet_0.1_seed1203",
+      "method": "E",
+      "repeat": 2,
+      "block": 17,
+      "position": 2,
+      "memory": false
+    }
+  ],
+  "inputs": {
+    "strong_iid_seed1201": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1201_strong_iid_c3c506fc9e108e6a",
+      "metadata_sha256": "172d3cb6c6e37a9383b0c0e17008cf5fba9c7ee5179a7f51c5e0c5737519ca1f"
+    },
+    "strong_dirichlet_0.1_seed1201": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1201_strong_dirichlet_0.1_d929218756cab19c",
+      "metadata_sha256": "9b45e2868be51af6664229a14a859a9ff343b0cff69896e0d116f75d053ef0f6"
+    },
+    "strong_iid_seed1202": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1202_strong_iid_81648a0ab07993cd",
+      "metadata_sha256": "dd17898ae0c80c51430fe0a5b135a5f25b542b2509eb11e54ed55baad5fc36f9"
+    },
+    "strong_dirichlet_0.1_seed1202": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1202_strong_dirichlet_0.1_554599af184bb60a",
+      "metadata_sha256": "7353b7c9dfa128de19976fe6021416dc2b61d073ac65efede583128a24c4f305"
+    },
+    "strong_iid_seed1203": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1203_strong_iid_5e71066041b911f8",
+      "metadata_sha256": "13b8090d8ff2d344c77cdfeacb0531cf9b99f90b932026e4ed76eb1a62ee3c7c"
+    },
+    "strong_dirichlet_0.1_seed1203": {
+      "path": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared\\seed_1203_strong_dirichlet_0.1_6e1683f3f683baa0",
+      "metadata_sha256": "2a72f51ca1a9eae94d1f9133c18ca2d0bd112c1fa0c5fb5557045fd18503c7c4"
+    }
+  },
+  "cache": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\private_prior_confirmation\\prepared",
+  "data_dir": "C:\\Users\\tjp\\Documents\\Codex\\2026-10-14\\new-chat\\experiments\\stl10_transfer\\data",
+  "download": false
+}
