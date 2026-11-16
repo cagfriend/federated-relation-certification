@@ -1,0 +1,31 @@
+{
+  "runs": 8,
+  "profiles": 8,
+  "rounds": 200,
+  "all_reference_anchors_passed": true,
+  "source_drift": [],
+  "exclusions": [],
+  "hashes": {
+    "runs": 8,
+    "files": {
+      "dirichlet_0.1_FedMKD.json": "4a5ca474d76032ad4295c2dd5bd256d1cd537b2ab158df63f211a38164a3b2eb",
+      "dirichlet_0.1_FLESD.json": "367726e05c4b1160bc944d5f101f5ea179cd9ce92ce538aec3aef8473f0a33a8",
+      "dirichlet_0.1_Hetero-SSFL.json": "d3a27682eada66ace87ee95f62edb3a33ec8a1923b2305779350060e486203c9",
+      "dirichlet_0.1_Ours.json": "50ae5a405a13ac29ac7206c02c4984404b17d2bf6d6d23e721a70b2ec63efcef",
+      "iid_FedMKD.json": "fbb904ea45671fa12c6dec055ebc69680417d56f74cd0ddb05026b83dcc3fd8e",
+      "iid_FLESD.json": "e80d5aeb600a630a372ddaa908b5dab822dd4153045b4d51b929ecc7bb208b03",
+      "iid_Hetero-SSFL.json": "88d199d131f95c897be6effd9bcd4818ea883b61bb39f4bb884b0890b5c11c3e",
+      "iid_Ours.json": "d2c1a791f109f513783c3c9c173c15d1ff835a55458453aa84127400d787c906"
+    },
+    "profiles": {
+      "dirichlet_0.1_FedMKD.json": "8da5c3503da3ea04c008b1912406dd32602c5950af950bdd6e00686537541d3a",
+      "dirichlet_0.1_FLESD.json": "393e50de5352fd33632121a251935c5fa176e2bd9c15c464f3b0667304f6f1dd",
+      "dirichlet_0.1_Hetero-SSFL.json": "6a72af98cdd9d70544c38e24bec82013525e04d53bef4773a90a658d594a8723",
+      "dirichlet_0.1_Ours.json": "c04d28a9f66a669950b25fb931ffb79f7de57a6d84650b621621530c2f34c6e2",
+      "iid_FedMKD.json": "b85025a59860567a8984ec346c10b07770458e39fceb160431c9d849e93ed236",
+      "iid_FLESD.json": "33b2f643c779010e174768076f0faa3648674a3faa9de9b73dcd17aba301b23a",
+      "iid_Hetero-SSFL.json": "4e7127a13512dce2b320d52d09812efcfb2bc745e3c8d023f1236cb50353d26c",
+      "iid_Ours.json": "ea75eea57a3de7dba3c77b2ab1b83e87ff7ddf56f128710568a0c0f1b5f043b6"
+    }
+  }
+}
