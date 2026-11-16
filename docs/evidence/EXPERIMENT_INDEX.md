@@ -624,3 +624,18 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 |边界|n=3每划分，保留计时变异，早期2case近单簇；未新增隔离内存/能耗测量|
 
 [预注册](../../experiments/private_prior_confirmation/PREREGISTRATION.md) · [报告](../../experiments/private_prior_confirmation/results_full/report.md) · [主审](../../outputs/private_prior_confirmation_review/REVIEW.md) · [独立Luna/high审阅](../../outputs/private_prior_confirmation_review/INDEPENDENT_REVIEW.md) · [审计脚本](../../outputs/private_prior_confirmation_review/audit.py) · [机器审计](../../outputs/private_prior_confirmation_review/audit.json) · [无损归档](../../archives/private_prior_confirmation_20261114.manifest.json)
+
+
+<a id="e33"></a>
+## E33 外部方法小规模对照与完整观测
+
+|项目|记录|
+|---|---|
+|矩阵|STL-10，seed1201，IID/α0.1；Ours/Hetero-SSFL/FLESD/FedMKD，8条各200轮；另8次独立MAC重放|
+|核验|原结果与补观测质量、最终参数和逐轮非计时统计一致；重放逐轮参数核对通过；614400关系检查零错误|
+|资源|含AE的Ours为6.151/2.925秒；外部85.518–112.922秒。Ours200轮矩阵量2.690/2.753 GMAC，外部1138.513–1669.778 GMAC；完整方法差异不是纯认证收益|
+|质量|后处理ACC为20.42%/18.00%，原生17.08%/16.22%；IID末轮有客户端最大簇98.2%、7空簇|
+|边界|外部小规模适配，单seed、不同编码器训练策略；MAC非全运算FLOPs；原始轨迹与源码本次未上传，仅发布摘要及绑定SHA|
+|下一步|随机与KMeans中心初始化对照；其它训练设置不变|
+
+[详细结果](EXTERNAL_PILOT_20261116.md) · [审计及SHA](EXTERNAL_PILOT_20261116_AUDIT.json) · [初始化计划](../HEAD_INITIALIZATION_PLAN.md)
