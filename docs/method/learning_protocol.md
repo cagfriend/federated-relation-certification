@@ -33,3 +33,10 @@ $$\mathcal L_{public}=-\frac1{|B_E|}\sum_{e\in B_E}\{\tau_e\log q_{c,e}+(1-\tau_
 公共全图生成与公共学生训练预算不同：固定步数实验仍生成约定图全部关系，但只消费边随机排列前缀的若干batch。全图遍历版则训练完整图。跨实验版本依原协议，不把某一版描述成所有实验默认。
 
 源码：[head.py](../../experiments/public_scaling/head.py)、[engine.py](../../experiments/public_scaling/engine.py)、[固定公共预算引擎](../../experiments/public_budget/engine.py)。
+
+
+## 2026-11-16 候选学习设置与历史基础协议的区别
+
+E34/E35将同次KMeans中心转换为线性头w_k=2c_k、b_k=-||c_k||²；E35另在私有SGD加入逐伪簇等权间隔保护。保护改变学习目标和参数轨迹，新增成本不算认证贡献；教师和公共BCE时序不变。
+
+初始化只能缓解，早期保护撤除后反弹，持续强保护也未充分修复client1。这些不是全部历史实验的默认设置。全客户端私有频数校正仅为下一候选，本轮对照尚未实现。[结论与边界](../evidence/COLLAPSE_INITIALIZATION_GUARD_20261116.md) · [下一步](../NEXT_EXPERIMENTS.md)。

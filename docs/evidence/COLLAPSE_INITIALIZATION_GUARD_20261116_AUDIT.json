@@ -1,0 +1,3794 @@
+{
+  "date": "2026-11-16",
+  "scope": "compact evidence and local-file SHA; raw logs and caches not uploaded",
+  "experiments": [
+    {
+      "name": "head_initialization",
+      "completed_sha256": "a4eece91390ff6c2e6f02d63d504930b2a7f16fa0f3508df7d49ea26e3668c9e",
+      "manifest_sha256": "ee15aeb67f2a76b7df205adbf842a6a6f51dfdad644290e563fb2a3336abb5ab",
+      "config": {
+        "preset": "pilot",
+        "seed": 1201,
+        "rounds": 200,
+        "widths": [
+          128,
+          128,
+          128,
+          256,
+          256,
+          256
+        ],
+        "capacities": [
+          100,
+          200,
+          300,
+          100,
+          200,
+          300
+        ],
+        "public_size": 512,
+        "test_size": 1000,
+        "local_batch": 64,
+        "public_batch": 64,
+        "public_steps": 2,
+        "lr": 0.001,
+        "alignment_weight": 1,
+        "global_width": 256,
+        "classes": 10,
+        "ae_epochs": 1,
+        "ae_lr": 0.001,
+        "head_lr": 0.1,
+        "private_batch": 128,
+        "relation_batch": 64,
+        "public_weights": [
+          0.125,
+          0.5,
+          0.5,
+          0.125,
+          0.5,
+          0.5
+        ],
+        "eval_every": 10,
+        "device": "cpu",
+        "threads": 1,
+        "partitions": [
+          "iid",
+          "dirichlet_0.1"
+        ]
+      },
+      "source_count": 73,
+      "runs": [
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers"
+          },
+          "file": "dirichlet_0.1_centers.json",
+          "sha256": "dc75ebd34213db8c9950ae190e7d79e43f2ce36e00ab36d2059ba3cc4d43ec9b",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.19,
+              "nmi": 0.064747879539068,
+              "ari": 0.025213445428845606,
+              "largest": 0.207,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.145,
+              "nmi": 0.030537190244471428,
+              "ari": 0.009614383102226176,
+              "largest": 0.653,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.189,
+              "nmi": 0.06241891570736236,
+              "ari": 0.016011644593053622,
+              "largest": 0.305,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.174,
+              "nmi": 0.061913892290311974,
+              "ari": 0.012289800089285293,
+              "largest": 0.436,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.174,
+              "nmi": 0.05705570276099211,
+              "ari": 0.02198697238899707,
+              "largest": 0.278,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 5,
+              "acc": 0.169,
+              "nmi": 0.05498200216903906,
+              "ari": 0.014417869190447491,
+              "largest": 0.353,
+              "occupied": 7,
+              "empty": 3
+            }
+          ],
+          "training_seconds": 2.2124878992326558,
+          "traffic": {
+            "down_bytes": 209350,
+            "control_setup_bytes": 267510,
+            "total_bytes": 389783,
+            "messages": 6010,
+            "up_bytes": 180433,
+            "vector_bytes": 122273,
+            "up_full_messages": 11,
+            "up_vector_bytes": 52113,
+            "down_full_messages": 5,
+            "down_vector_bytes": 70160,
+            "up_delta_messages": 613,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 376
+          },
+          "teacher_positive_final": [
+            0.09765625,
+            0.5234375,
+            0.25390625,
+            0.24609375,
+            0.2265625,
+            0.25
+          ],
+          "teacher_positive_last50_mean": [
+            0.100859375,
+            0.5234375,
+            0.26453125,
+            0.236484375,
+            0.23296875,
+            0.25921875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.684,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.173,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.672,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.309,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.343,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.357,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.653,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.278,
+                "occupied": 8
+              }
+            ]
+          },
+          "guard_seconds": 0
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "random"
+          },
+          "file": "dirichlet_0.1_random.json",
+          "sha256": "9fdd13b0db27acfbac785a505ef97f52d1375d0738f6e79dad1eeb63542ff42e",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.16,
+              "nmi": 0.04995310532085497,
+              "ari": 0.011035006951005955,
+              "largest": 0.619,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 1,
+              "acc": 0.143,
+              "nmi": 0.02757726013299408,
+              "ari": 0.009028684687709643,
+              "largest": 0.668,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.177,
+              "nmi": 0.04483439272417964,
+              "ari": 0.012038527541950013,
+              "largest": 0.34,
+              "occupied": 7,
+              "empty": 3
+            },
+            {
+              "client": 3,
+              "acc": 0.169,
+              "nmi": 0.06179446049666713,
+              "ari": 0.020777422219032435,
+              "largest": 0.442,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.158,
+              "nmi": 0.03773641243981804,
+              "ari": 0.012349127427794433,
+              "largest": 0.319,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 5,
+              "acc": 0.166,
+              "nmi": 0.04201244875109604,
+              "ari": 0.014233509912890428,
+              "largest": 0.366,
+              "occupied": 6,
+              "empty": 4
+            }
+          ],
+          "training_seconds": 2.3050239991862327,
+          "traffic": {
+            "down_bytes": 220880,
+            "control_setup_bytes": 267510,
+            "total_bytes": 403153,
+            "messages": 6010,
+            "up_bytes": 182273,
+            "vector_bytes": 135643,
+            "up_full_messages": 26,
+            "up_vector_bytes": 53953,
+            "down_full_messages": 30,
+            "down_vector_bytes": 81690,
+            "up_delta_messages": 729,
+            "up_unchanged_messages": 245,
+            "down_delta_messages": 970
+          },
+          "teacher_positive_final": [
+            0.4609375,
+            0.5234375,
+            0.25390625,
+            0.29296875,
+            0.2265625,
+            0.30859375
+          ],
+          "teacher_positive_last50_mean": [
+            0.506953125,
+            0.5234375,
+            0.283125,
+            0.40859375,
+            0.285,
+            0.301875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.778,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.911,
+                "occupied": 4
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.72,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.955,
+                "occupied": 3
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.69,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.86,
+                "occupied": 5
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.689,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.812,
+                "occupied": 5
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.668,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.319,
+                "occupied": 6
+              }
+            ]
+          },
+          "guard_seconds": 0
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers"
+          },
+          "file": "iid_centers.json",
+          "sha256": "3f03452b5434e80a3271cc42787e393b9b48b54669834a48de28281154b6ed65",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.223,
+              "nmi": 0.10162997700358435,
+              "ari": 0.0411538795644718,
+              "largest": 0.169,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.119,
+              "nmi": 0.014558274864974942,
+              "ari": 0.0008690512658554158,
+              "largest": 0.956,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.179,
+              "nmi": 0.07284467140247294,
+              "ari": 0.03310461300879103,
+              "largest": 0.401,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.199,
+              "nmi": 0.11982306542122714,
+              "ari": 0.05545282493358758,
+              "largest": 0.214,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.143,
+              "nmi": 0.04151259337544866,
+              "ari": 0.009246354568427562,
+              "largest": 0.616,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.199,
+              "nmi": 0.09250699326445823,
+              "ari": 0.02303439929038963,
+              "largest": 0.426,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 2.313329200667795,
+          "traffic": {
+            "down_bytes": 197370,
+            "control_setup_bytes": 267510,
+            "total_bytes": 375660,
+            "messages": 6010,
+            "up_bytes": 178290,
+            "vector_bytes": 108150,
+            "up_full_messages": 5,
+            "up_vector_bytes": 49970,
+            "down_full_messages": 5,
+            "down_vector_bytes": 58180,
+            "up_delta_messages": 417,
+            "down_delta_messages": 945,
+            "up_unchanged_messages": 578,
+            "down_unchanged_messages": 50
+          },
+          "teacher_positive_final": [
+            0.12109375,
+            0.95703125,
+            0.3359375,
+            0.15234375,
+            0.515625,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.12140625,
+            0.95890625,
+            0.349296875,
+            0.14984375,
+            0.51953125,
+            0.182890625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.992,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.539,
+                "occupied": 5
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.994,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.834,
+                "occupied": 2
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.984,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.77,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.983,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.766,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.956,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.616,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "random"
+          },
+          "file": "iid_random.json",
+          "sha256": "c50d7628cbbf187f1e703fd013a271926fd9ae8cf4bdaa38766d88b9e7d48807",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.22,
+              "nmi": 0.09868560326431038,
+              "ari": 0.03898104639659821,
+              "largest": 0.192,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 1,
+              "acc": 0.113,
+              "nmi": 0.00974408479576922,
+              "ari": 0.0002498429886149265,
+              "largest": 0.982,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.174,
+              "nmi": 0.06946722198358621,
+              "ari": 0.03175973125448744,
+              "largest": 0.435,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 3,
+              "acc": 0.207,
+              "nmi": 0.12128761231904918,
+              "ari": 0.0468087398816049,
+              "largest": 0.236,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 4,
+              "acc": 0.125,
+              "nmi": 0.02608742880419586,
+              "ari": 0.0029167897453166217,
+              "largest": 0.801,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 5,
+              "acc": 0.186,
+              "nmi": 0.0945247380701398,
+              "ari": 0.017569619662752053,
+              "largest": 0.506,
+              "occupied": 8,
+              "empty": 2
+            }
+          ],
+          "training_seconds": 3.529179000412114,
+          "traffic": {
+            "down_bytes": 198820,
+            "control_setup_bytes": 267510,
+            "total_bytes": 377070,
+            "messages": 6010,
+            "up_bytes": 178250,
+            "vector_bytes": 109560,
+            "up_full_messages": 16,
+            "up_vector_bytes": 49930,
+            "down_full_messages": 25,
+            "down_vector_bytes": 59630,
+            "up_unchanged_messages": 610,
+            "up_delta_messages": 374,
+            "down_delta_messages": 960,
+            "down_unchanged_messages": 15
+          },
+          "teacher_positive_final": [
+            0.1484375,
+            0.96875,
+            0.3828125,
+            0.1640625,
+            0.66015625,
+            0.2578125
+          ],
+          "teacher_positive_last50_mean": [
+            0.145625,
+            0.978046875,
+            0.378359375,
+            0.17625,
+            0.7371875,
+            0.316640625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 1,
+                "occupied": 1
+              },
+              {
+                "client": 4,
+                "largest": 0.917,
+                "occupied": 2
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 1,
+                "occupied": 1
+              },
+              {
+                "client": 4,
+                "largest": 1,
+                "occupied": 1
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.999,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 1,
+                "occupied": 1
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.999,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.999,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.982,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.801,
+                "occupied": 2
+              }
+            ]
+          },
+          "guard_seconds": 0
+        }
+      ]
+    },
+    {
+      "name": "early_cluster_guard",
+      "completed_sha256": "62a09c346bc995b38c99fbb0aa66b474009439732e6652de4393538b0669fa23",
+      "manifest_sha256": "128816d843bb90cd2a95e3c822398768eb68a47ba0ea8aefb1cc80b1512e5aa5",
+      "config": {
+        "preset": "pilot",
+        "seed": 1201,
+        "rounds": 200,
+        "widths": [
+          128,
+          128,
+          128,
+          256,
+          256,
+          256
+        ],
+        "capacities": [
+          100,
+          200,
+          300,
+          100,
+          200,
+          300
+        ],
+        "public_size": 512,
+        "test_size": 1000,
+        "local_batch": 64,
+        "public_batch": 64,
+        "public_steps": 2,
+        "lr": 0.001,
+        "alignment_weight": 1,
+        "global_width": 256,
+        "classes": 10,
+        "ae_epochs": 1,
+        "ae_lr": 0.001,
+        "head_lr": 0.1,
+        "private_batch": 128,
+        "relation_batch": 64,
+        "public_weights": [
+          0.125,
+          0.5,
+          0.5,
+          0.125,
+          0.5,
+          0.5
+        ],
+        "eval_every": 10,
+        "device": "cpu",
+        "threads": 1,
+        "partitions": [
+          "iid",
+          "dirichlet_0.1"
+        ]
+      },
+      "source_count": 78,
+      "runs": [
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "baseline",
+            "strength": 0,
+            "until": 0
+          },
+          "file": "dirichlet_0.1_baseline.json",
+          "sha256": "e945931636d0888bd934fc6e54b3204fe51b24221cdfed963fab3d81a4c037d9",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.19,
+              "nmi": 0.064747879539068,
+              "ari": 0.025213445428845606,
+              "largest": 0.207,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.145,
+              "nmi": 0.030537190244471428,
+              "ari": 0.009614383102226176,
+              "largest": 0.653,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.189,
+              "nmi": 0.06241891570736236,
+              "ari": 0.016011644593053622,
+              "largest": 0.305,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.174,
+              "nmi": 0.061913892290311974,
+              "ari": 0.012289800089285293,
+              "largest": 0.436,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.174,
+              "nmi": 0.05705570276099211,
+              "ari": 0.02198697238899707,
+              "largest": 0.278,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 5,
+              "acc": 0.169,
+              "nmi": 0.05498200216903906,
+              "ari": 0.014417869190447491,
+              "largest": 0.353,
+              "occupied": 7,
+              "empty": 3
+            }
+          ],
+          "training_seconds": 1.506443300691899,
+          "traffic": {
+            "down_bytes": 209350,
+            "control_setup_bytes": 267510,
+            "total_bytes": 389783,
+            "messages": 6010,
+            "up_bytes": 180433,
+            "vector_bytes": 122273,
+            "up_full_messages": 11,
+            "up_vector_bytes": 52113,
+            "down_full_messages": 5,
+            "down_vector_bytes": 70160,
+            "up_delta_messages": 613,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 376
+          },
+          "teacher_positive_final": [
+            0.09765625,
+            0.5234375,
+            0.25390625,
+            0.24609375,
+            0.2265625,
+            0.25
+          ],
+          "teacher_positive_last50_mean": [
+            0.100859375,
+            0.5234375,
+            0.26453125,
+            0.236484375,
+            0.23296875,
+            0.25921875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.684,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.173,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.672,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.309,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.343,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.357,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.653,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.278,
+                "occupied": 8
+              }
+            ]
+          },
+          "guard_seconds": 0
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "strong_10",
+            "strength": 1,
+            "until": 10
+          },
+          "file": "dirichlet_0.1_strong_10.json",
+          "sha256": "c981a1275f9afd09151ed33bb3185a0f1ac3d749adf2577b342a1c1557ed29b4",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.191,
+              "nmi": 0.06362810429049884,
+              "ari": 0.02480369827189156,
+              "largest": 0.201,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.145,
+              "nmi": 0.02992528483246797,
+              "ari": 0.009651648140051497,
+              "largest": 0.651,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.189,
+              "nmi": 0.06236785012799334,
+              "ari": 0.01595917110526493,
+              "largest": 0.303,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.173,
+              "nmi": 0.06304841182731205,
+              "ari": 0.012928274128420417,
+              "largest": 0.431,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.175,
+              "nmi": 0.055946327308243525,
+              "ari": 0.02213026029289699,
+              "largest": 0.272,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 5,
+              "acc": 0.168,
+              "nmi": 0.056744567653167446,
+              "ari": 0.0145541655325935,
+              "largest": 0.351,
+              "occupied": 8,
+              "empty": 2
+            }
+          ],
+          "training_seconds": 1.39258600078756,
+          "traffic": {
+            "down_bytes": 211115,
+            "control_setup_bytes": 267510,
+            "total_bytes": 391931,
+            "messages": 6010,
+            "up_bytes": 180816,
+            "vector_bytes": 124421,
+            "up_full_messages": 14,
+            "up_vector_bytes": 52496,
+            "down_full_messages": 30,
+            "down_vector_bytes": 71925,
+            "up_delta_messages": 635,
+            "down_delta_messages": 970,
+            "up_unchanged_messages": 351
+          },
+          "teacher_positive_final": [
+            0.09375,
+            0.5234375,
+            0.24609375,
+            0.23828125,
+            0.22265625,
+            0.2578125
+          ],
+          "teacher_positive_last50_mean": [
+            0.0990625,
+            0.5234375,
+            0.263125,
+            0.226484375,
+            0.229453125,
+            0.256328125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.535,
+                "occupied": 9
+              },
+              {
+                "client": 4,
+                "largest": 0.208,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.672,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.296,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.333,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.35,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.651,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.272,
+                "occupied": 8
+              }
+            ]
+          },
+          "guard_seconds": 0.012271300074644387
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "strong_100",
+            "strength": 1,
+            "until": 100
+          },
+          "file": "dirichlet_0.1_strong_100.json",
+          "sha256": "4470fa196ff8051ca729a5c250a80c1e87984af3f8d412db00739f8bafe8443e",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.196,
+              "nmi": 0.06527634515667985,
+              "ari": 0.025145281126796797,
+              "largest": 0.213,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.144,
+              "nmi": 0.029826007091115637,
+              "ari": 0.009552826670103397,
+              "largest": 0.647,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.186,
+              "nmi": 0.06026992738488505,
+              "ari": 0.015024102946529987,
+              "largest": 0.305,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.178,
+              "nmi": 0.06710770618687836,
+              "ari": 0.013429255030198078,
+              "largest": 0.417,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.182,
+              "nmi": 0.0619481296243254,
+              "ari": 0.025463484736171646,
+              "largest": 0.277,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 5,
+              "acc": 0.169,
+              "nmi": 0.05698817870440418,
+              "ari": 0.014002585406377643,
+              "largest": 0.343,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.618535898742266,
+          "traffic": {
+            "down_bytes": 237510,
+            "control_setup_bytes": 267510,
+            "total_bytes": 423525,
+            "messages": 6010,
+            "up_bytes": 186015,
+            "vector_bytes": 156015,
+            "up_full_messages": 94,
+            "up_vector_bytes": 57695,
+            "down_full_messages": 205,
+            "down_vector_bytes": 98320,
+            "up_delta_messages": 698,
+            "down_delta_messages": 795,
+            "up_unchanged_messages": 208
+          },
+          "teacher_positive_final": [
+            0.11328125,
+            0.515625,
+            0.265625,
+            0.21875,
+            0.20703125,
+            0.2421875
+          ],
+          "teacher_positive_last50_mean": [
+            0.120390625,
+            0.5171875,
+            0.26109375,
+            0.21546875,
+            0.207890625,
+            0.248046875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.535,
+                "occupied": 9
+              },
+              {
+                "client": 4,
+                "largest": 0.208,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.574,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.295,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.564,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.22,
+                "occupied": 10
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.647,
+                "occupied": 6
+              },
+              {
+                "client": 4,
+                "largest": 0.241,
+                "occupied": 10
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.647,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.277,
+                "occupied": 9
+              }
+            ]
+          },
+          "guard_seconds": 0.10990830103401095
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "strong_200",
+            "strength": 1,
+            "until": 200
+          },
+          "file": "dirichlet_0.1_strong_200.json",
+          "sha256": "a0f5f7d0bc073ca47318a92c04a9be6aa74325eb5c25396de103b4300a8a2414",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.182,
+              "nmi": 0.05035732994179989,
+              "ari": 0.01593058373891001,
+              "largest": 0.21,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.159,
+              "nmi": 0.051006064427692774,
+              "ari": 0.015644863217358737,
+              "largest": 0.53,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 2,
+              "acc": 0.204,
+              "nmi": 0.08579674366557932,
+              "ari": 0.026902671619627144,
+              "largest": 0.22,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 3,
+              "acc": 0.183,
+              "nmi": 0.0684245218783405,
+              "ari": 0.014311862354672763,
+              "largest": 0.451,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.207,
+              "nmi": 0.09876334821230137,
+              "ari": 0.04206623373942313,
+              "largest": 0.229,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 5,
+              "acc": 0.196,
+              "nmi": 0.07839507773223729,
+              "ari": 0.023651753641481327,
+              "largest": 0.202,
+              "occupied": 10,
+              "empty": 0
+            }
+          ],
+          "training_seconds": 1.7959176001604646,
+          "traffic": {
+            "down_bytes": 257370,
+            "control_setup_bytes": 267510,
+            "total_bytes": 446710,
+            "messages": 6010,
+            "up_bytes": 189340,
+            "vector_bytes": 179200,
+            "up_full_messages": 94,
+            "up_vector_bytes": 61020,
+            "down_full_messages": 205,
+            "down_vector_bytes": 118180,
+            "up_delta_messages": 884,
+            "down_delta_messages": 795,
+            "up_unchanged_messages": 22
+          },
+          "teacher_positive_final": [
+            0.1640625,
+            0.34375,
+            0.1484375,
+            0.25390625,
+            0.140625,
+            0.13671875
+          ],
+          "teacher_positive_last50_mean": [
+            0.162421875,
+            0.3553125,
+            0.143984375,
+            0.23296875,
+            0.13734375,
+            0.1434375
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.535,
+                "occupied": 9
+              },
+              {
+                "client": 4,
+                "largest": 0.208,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.574,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.295,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.564,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.22,
+                "occupied": 10
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.562,
+                "occupied": 10
+              },
+              {
+                "client": 4,
+                "largest": 0.238,
+                "occupied": 10
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.53,
+                "occupied": 9
+              },
+              {
+                "client": 4,
+                "largest": 0.229,
+                "occupied": 10
+              }
+            ]
+          },
+          "guard_seconds": 0.22986790089635178
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "strong_50",
+            "strength": 1,
+            "until": 50
+          },
+          "file": "dirichlet_0.1_strong_50.json",
+          "sha256": "2c1284fc3ebcf3ca60395373faa9698a6f1c402b67c766568f331ff0ef1fc41a",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.194,
+              "nmi": 0.06413509802551493,
+              "ari": 0.025282908165713387,
+              "largest": 0.213,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.144,
+              "nmi": 0.029208379171542218,
+              "ari": 0.00953658552876591,
+              "largest": 0.648,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.187,
+              "nmi": 0.060639248222066386,
+              "ari": 0.015504845479668827,
+              "largest": 0.304,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.179,
+              "nmi": 0.06638547333611214,
+              "ari": 0.014591606947487575,
+              "largest": 0.414,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.18,
+              "nmi": 0.06030902525081552,
+              "ari": 0.024777111228258958,
+              "largest": 0.276,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 5,
+              "acc": 0.172,
+              "nmi": 0.06080066620704885,
+              "ari": 0.014625006236273332,
+              "largest": 0.347,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.510138699610252,
+          "traffic": {
+            "down_bytes": 223640,
+            "control_setup_bytes": 267510,
+            "total_bytes": 407112,
+            "messages": 6010,
+            "up_bytes": 183472,
+            "vector_bytes": 139602,
+            "up_full_messages": 67,
+            "up_vector_bytes": 55152,
+            "down_full_messages": 175,
+            "down_vector_bytes": 84450,
+            "up_delta_messages": 641,
+            "down_delta_messages": 825,
+            "up_unchanged_messages": 292
+          },
+          "teacher_positive_final": [
+            0.109375,
+            0.515625,
+            0.25,
+            0.22265625,
+            0.21484375,
+            0.24609375
+          ],
+          "teacher_positive_last50_mean": [
+            0.11765625,
+            0.51765625,
+            0.264921875,
+            0.213984375,
+            0.224921875,
+            0.251875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.535,
+                "occupied": 9
+              },
+              {
+                "client": 4,
+                "largest": 0.208,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.574,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.295,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.663,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.275,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.305,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.648,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.276,
+                "occupied": 9
+              }
+            ]
+          },
+          "guard_seconds": 0.05468310083961114
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "weak_10",
+            "strength": 0.1,
+            "until": 10
+          },
+          "file": "dirichlet_0.1_weak_10.json",
+          "sha256": "cff7cf89b5b855b1e7c5af910ba7bab94dcdb39bcf26a484c3ca37ff4a108c9e",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.191,
+              "nmi": 0.06515775637836813,
+              "ari": 0.025474391866175988,
+              "largest": 0.205,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.145,
+              "nmi": 0.03076033514899775,
+              "ari": 0.00966394225005261,
+              "largest": 0.652,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.189,
+              "nmi": 0.06236785012799334,
+              "ari": 0.01595917110526493,
+              "largest": 0.303,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.175,
+              "nmi": 0.0629554639928371,
+              "ari": 0.012793293060146128,
+              "largest": 0.432,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.174,
+              "nmi": 0.05699869015994184,
+              "ari": 0.021859358472180866,
+              "largest": 0.276,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 5,
+              "acc": 0.169,
+              "nmi": 0.05511071099505336,
+              "ari": 0.014500816649035408,
+              "largest": 0.352,
+              "occupied": 7,
+              "empty": 3
+            }
+          ],
+          "training_seconds": 1.4516831004875712,
+          "traffic": {
+            "down_bytes": 209685,
+            "control_setup_bytes": 267510,
+            "total_bytes": 390168,
+            "messages": 6010,
+            "up_bytes": 180483,
+            "vector_bytes": 122658,
+            "up_full_messages": 11,
+            "up_vector_bytes": 52163,
+            "down_full_messages": 5,
+            "down_vector_bytes": 70495,
+            "up_delta_messages": 611,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 378
+          },
+          "teacher_positive_final": [
+            0.09765625,
+            0.5234375,
+            0.25,
+            0.2421875,
+            0.2265625,
+            0.25390625
+          ],
+          "teacher_positive_last50_mean": [
+            0.094765625,
+            0.5234375,
+            0.263984375,
+            0.23171875,
+            0.23234375,
+            0.257578125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.682,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.178,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.671,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.306,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.658,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.342,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.658,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.357,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.652,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.276,
+                "occupied": 8
+              }
+            ]
+          },
+          "guard_seconds": 0.010428800247609615
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "weak_100",
+            "strength": 0.1,
+            "until": 100
+          },
+          "file": "dirichlet_0.1_weak_100.json",
+          "sha256": "a4ac457f157b617f6ae51548b104dfc8a666a51e915bd96b315ceb041ed03667",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.192,
+              "nmi": 0.06211354530706165,
+              "ari": 0.023823411350680536,
+              "largest": 0.204,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.144,
+              "nmi": 0.029775293058035987,
+              "ari": 0.009584747217574272,
+              "largest": 0.647,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.188,
+              "nmi": 0.061618294746398565,
+              "ari": 0.015794979602157113,
+              "largest": 0.301,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.175,
+              "nmi": 0.06417159433351946,
+              "ari": 0.013020916433145253,
+              "largest": 0.428,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.178,
+              "nmi": 0.05868763211458763,
+              "ari": 0.02354427264025947,
+              "largest": 0.266,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 5,
+              "acc": 0.17,
+              "nmi": 0.057810339010402646,
+              "ari": 0.01454530923887821,
+              "largest": 0.346,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.567406098707579,
+          "traffic": {
+            "down_bytes": 211765,
+            "control_setup_bytes": 267510,
+            "total_bytes": 392569,
+            "messages": 6010,
+            "up_bytes": 180804,
+            "vector_bytes": 125059,
+            "up_full_messages": 16,
+            "up_vector_bytes": 52484,
+            "down_full_messages": 5,
+            "down_vector_bytes": 72575,
+            "up_delta_messages": 637,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 347
+          },
+          "teacher_positive_final": [
+            0.09375,
+            0.51953125,
+            0.2421875,
+            0.23828125,
+            0.20703125,
+            0.2421875
+          ],
+          "teacher_positive_last50_mean": [
+            0.0978125,
+            0.523671875,
+            0.261796875,
+            0.226875,
+            0.2221875,
+            0.250625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.682,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.178,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.671,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.22,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.661,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.289,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.661,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.277,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.647,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.266,
+                "occupied": 9
+              }
+            ]
+          },
+          "guard_seconds": 0.10809510014951229
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "weak_200",
+            "strength": 0.1,
+            "until": 200
+          },
+          "file": "dirichlet_0.1_weak_200.json",
+          "sha256": "8a372355fdb9550efcb939d69f1ce80e4bcb58c7e1a16efc02e6c389fd4faf0e",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.192,
+              "nmi": 0.056862652667942847,
+              "ari": 0.019996917248667305,
+              "largest": 0.19,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.147,
+              "nmi": 0.03326336100179384,
+              "ari": 0.010153234978514034,
+              "largest": 0.634,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 2,
+              "acc": 0.204,
+              "nmi": 0.07725522098748068,
+              "ari": 0.02070270054360007,
+              "largest": 0.253,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 3,
+              "acc": 0.187,
+              "nmi": 0.06893160313432778,
+              "ari": 0.017530069493368,
+              "largest": 0.392,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.18,
+              "nmi": 0.06135093741106983,
+              "ari": 0.024397797911216577,
+              "largest": 0.282,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 5,
+              "acc": 0.176,
+              "nmi": 0.06443815651649848,
+              "ari": 0.016338597241204133,
+              "largest": 0.275,
+              "occupied": 10,
+              "empty": 0
+            }
+          ],
+          "training_seconds": 1.663131999957841,
+          "traffic": {
+            "down_bytes": 212420,
+            "control_setup_bytes": 267510,
+            "total_bytes": 393354,
+            "messages": 6010,
+            "up_bytes": 180934,
+            "vector_bytes": 125844,
+            "up_full_messages": 16,
+            "up_vector_bytes": 52614,
+            "down_full_messages": 5,
+            "down_vector_bytes": 73230,
+            "up_delta_messages": 666,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 318
+          },
+          "teacher_positive_final": [
+            0.13671875,
+            0.484375,
+            0.2265625,
+            0.20703125,
+            0.1796875,
+            0.20703125
+          ],
+          "teacher_positive_last50_mean": [
+            0.12671875,
+            0.504609375,
+            0.23546875,
+            0.205390625,
+            0.183828125,
+            0.200546875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.682,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.178,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.671,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.22,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.661,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.289,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.661,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.276,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.634,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.282,
+                "occupied": 9
+              }
+            ]
+          },
+          "guard_seconds": 0.21947619871934876
+        },
+        {
+          "case": {
+            "partition": "dirichlet_0.1",
+            "initialization": "centers",
+            "setting": "weak_50",
+            "strength": 0.1,
+            "until": 50
+          },
+          "file": "dirichlet_0.1_weak_50.json",
+          "sha256": "5c274e7156de2a301578a795ce7227758521edeb625c46cc702c4016cea273ec",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.192,
+              "nmi": 0.06436955758642543,
+              "ari": 0.025262774950161056,
+              "largest": 0.201,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.145,
+              "nmi": 0.03002906800511513,
+              "ari": 0.009653460270548517,
+              "largest": 0.648,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.188,
+              "nmi": 0.062256850194560696,
+              "ari": 0.015807854061084637,
+              "largest": 0.303,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 3,
+              "acc": 0.174,
+              "nmi": 0.06449986310499703,
+              "ari": 0.012816710256553192,
+              "largest": 0.432,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 4,
+              "acc": 0.175,
+              "nmi": 0.05586257253025235,
+              "ari": 0.02214268602354314,
+              "largest": 0.271,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 5,
+              "acc": 0.17,
+              "nmi": 0.05937629763590412,
+              "ari": 0.014632240445592217,
+              "largest": 0.35,
+              "occupied": 8,
+              "empty": 2
+            }
+          ],
+          "training_seconds": 1.4408085009199567,
+          "traffic": {
+            "down_bytes": 211790,
+            "control_setup_bytes": 267510,
+            "total_bytes": 392626,
+            "messages": 6010,
+            "up_bytes": 180836,
+            "vector_bytes": 125116,
+            "up_full_messages": 16,
+            "up_vector_bytes": 52516,
+            "down_full_messages": 5,
+            "down_vector_bytes": 72600,
+            "up_delta_messages": 630,
+            "down_delta_messages": 995,
+            "up_unchanged_messages": 354
+          },
+          "teacher_positive_final": [
+            0.0859375,
+            0.52734375,
+            0.2421875,
+            0.2421875,
+            0.23046875,
+            0.24609375
+          ],
+          "teacher_positive_last50_mean": [
+            0.095859375,
+            0.523515625,
+            0.26296875,
+            0.228515625,
+            0.229453125,
+            0.255546875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.682,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.178,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.671,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.22,
+                "occupied": 9
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.659,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.312,
+                "occupied": 9
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.658,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.336,
+                "occupied": 9
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.648,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.271,
+                "occupied": 8
+              }
+            ]
+          },
+          "guard_seconds": 0.05361590109532699
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "baseline",
+            "strength": 0,
+            "until": 0
+          },
+          "file": "iid_baseline.json",
+          "sha256": "fab08f061211488a1ff5da5b2e663a72946991f31ac10f8b0aaa57923954111a",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.223,
+              "nmi": 0.10162997700358435,
+              "ari": 0.0411538795644718,
+              "largest": 0.169,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.119,
+              "nmi": 0.014558274864974942,
+              "ari": 0.0008690512658554158,
+              "largest": 0.956,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.179,
+              "nmi": 0.07284467140247294,
+              "ari": 0.03310461300879103,
+              "largest": 0.401,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.199,
+              "nmi": 0.11982306542122714,
+              "ari": 0.05545282493358758,
+              "largest": 0.214,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.143,
+              "nmi": 0.04151259337544866,
+              "ari": 0.009246354568427562,
+              "largest": 0.616,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.199,
+              "nmi": 0.09250699326445823,
+              "ari": 0.02303439929038963,
+              "largest": 0.426,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.4786528004333377,
+          "traffic": {
+            "down_bytes": 197370,
+            "control_setup_bytes": 267510,
+            "total_bytes": 375660,
+            "messages": 6010,
+            "up_bytes": 178290,
+            "vector_bytes": 108150,
+            "up_full_messages": 5,
+            "up_vector_bytes": 49970,
+            "down_full_messages": 5,
+            "down_vector_bytes": 58180,
+            "up_delta_messages": 417,
+            "down_delta_messages": 945,
+            "up_unchanged_messages": 578,
+            "down_unchanged_messages": 50
+          },
+          "teacher_positive_final": [
+            0.12109375,
+            0.95703125,
+            0.3359375,
+            0.15234375,
+            0.515625,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.12140625,
+            0.95890625,
+            0.349296875,
+            0.14984375,
+            0.51953125,
+            0.182890625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.992,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.539,
+                "occupied": 5
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.994,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.834,
+                "occupied": 2
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.984,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.77,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.983,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.766,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.956,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.616,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "strong_10",
+            "strength": 1,
+            "until": 10
+          },
+          "file": "iid_strong_10.json",
+          "sha256": "ed7b194a1178034be9dd4b4bbeed2a74633cd783073c6bf427fbca8ff641f47b",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.225,
+              "nmi": 0.10281393793666768,
+              "ari": 0.041729451797141,
+              "largest": 0.17,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.118,
+              "nmi": 0.011876940769277297,
+              "ari": 0.0007500912785787194,
+              "largest": 0.954,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.181,
+              "nmi": 0.07294243731854705,
+              "ari": 0.03259882388521416,
+              "largest": 0.398,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.201,
+              "nmi": 0.1200988432070012,
+              "ari": 0.055752520803113326,
+              "largest": 0.218,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.143,
+              "nmi": 0.04066746712182209,
+              "ari": 0.009198912468257875,
+              "largest": 0.617,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.197,
+              "nmi": 0.09237983153290337,
+              "ari": 0.022630134821589026,
+              "largest": 0.426,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.4536675000563264,
+          "traffic": {
+            "down_bytes": 199555,
+            "control_setup_bytes": 267510,
+            "total_bytes": 378195,
+            "messages": 6010,
+            "up_bytes": 178640,
+            "vector_bytes": 110685,
+            "up_full_messages": 13,
+            "up_vector_bytes": 50320,
+            "down_full_messages": 15,
+            "down_vector_bytes": 60365,
+            "up_delta_messages": 405,
+            "down_delta_messages": 930,
+            "up_unchanged_messages": 582,
+            "down_unchanged_messages": 55
+          },
+          "teacher_positive_final": [
+            0.12109375,
+            0.95703125,
+            0.3359375,
+            0.1484375,
+            0.51953125,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.12109375,
+            0.958515625,
+            0.34796875,
+            0.1496875,
+            0.52390625,
+            0.183203125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.824,
+                "occupied": 6
+              },
+              {
+                "client": 4,
+                "largest": 0.401,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.992,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.795,
+                "occupied": 2
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.984,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.762,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.982,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.765,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.954,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.617,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.011197199928574264
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "strong_100",
+            "strength": 1,
+            "until": 100
+          },
+          "file": "iid_strong_100.json",
+          "sha256": "1fc63230aa390f50b43f54dadabcf87003b80f770ece201ea5e42169c74bcaf5",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.229,
+              "nmi": 0.10280267019429175,
+              "ari": 0.043225528043687976,
+              "largest": 0.173,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.122,
+              "nmi": 0.016594513917836503,
+              "ari": 0.001056998703491297,
+              "largest": 0.938,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 2,
+              "acc": 0.188,
+              "nmi": 0.07386902489761818,
+              "ari": 0.03295179639945508,
+              "largest": 0.379,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.203,
+              "nmi": 0.12367238539305161,
+              "ari": 0.05747189714694167,
+              "largest": 0.209,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.138,
+              "nmi": 0.03356043652617215,
+              "ari": 0.0074894754150756524,
+              "largest": 0.637,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.196,
+              "nmi": 0.09365985287125803,
+              "ari": 0.020692838508687417,
+              "largest": 0.434,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.5514325010008179,
+          "traffic": {
+            "down_bytes": 214625,
+            "control_setup_bytes": 267510,
+            "total_bytes": 395909,
+            "messages": 6010,
+            "up_bytes": 181284,
+            "vector_bytes": 128399,
+            "up_full_messages": 24,
+            "up_vector_bytes": 52964,
+            "down_full_messages": 15,
+            "down_vector_bytes": 75435,
+            "up_delta_messages": 650,
+            "down_delta_messages": 980,
+            "up_unchanged_messages": 326,
+            "down_unchanged_messages": 5
+          },
+          "teacher_positive_final": [
+            0.12890625,
+            0.91796875,
+            0.32421875,
+            0.15625,
+            0.5234375,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.129453125,
+            0.931953125,
+            0.32734375,
+            0.155859375,
+            0.531875,
+            0.201015625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.824,
+                "occupied": 6
+              },
+              {
+                "client": 4,
+                "largest": 0.401,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.838,
+                "occupied": 7
+              },
+              {
+                "client": 4,
+                "largest": 0.314,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.823,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.336,
+                "occupied": 10
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.945,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.609,
+                "occupied": 8
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.938,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.637,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.10714960028417408
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "strong_200",
+            "strength": 1,
+            "until": 200
+          },
+          "file": "iid_strong_200.json",
+          "sha256": "1cc64ce256da943b18d94a376e7f2495b284757665cc0df8df12446dd7c226f1",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.223,
+              "nmi": 0.10829729741630913,
+              "ari": 0.04526230078870412,
+              "largest": 0.194,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.142,
+              "nmi": 0.04474873744863808,
+              "ari": 0.007935238838801796,
+              "largest": 0.796,
+              "occupied": 8,
+              "empty": 2
+            },
+            {
+              "client": 2,
+              "acc": 0.189,
+              "nmi": 0.07464677001814066,
+              "ari": 0.03259667475454348,
+              "largest": 0.308,
+              "occupied": 9,
+              "empty": 1
+            },
+            {
+              "client": 3,
+              "acc": 0.208,
+              "nmi": 0.1373715432319483,
+              "ari": 0.061820834687254723,
+              "largest": 0.257,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.208,
+              "nmi": 0.10914427604397656,
+              "ari": 0.04085748076043896,
+              "largest": 0.23,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 5,
+              "acc": 0.218,
+              "nmi": 0.11353512747387955,
+              "ari": 0.039180949518186,
+              "largest": 0.236,
+              "occupied": 10,
+              "empty": 0
+            }
+          ],
+          "training_seconds": 1.6988466995535418,
+          "traffic": {
+            "down_bytes": 222800,
+            "control_setup_bytes": 267510,
+            "total_bytes": 405509,
+            "messages": 6010,
+            "up_bytes": 182709,
+            "vector_bytes": 137999,
+            "up_full_messages": 25,
+            "up_vector_bytes": 54389,
+            "down_full_messages": 15,
+            "down_vector_bytes": 83610,
+            "up_delta_messages": 800,
+            "down_delta_messages": 985,
+            "up_unchanged_messages": 175
+          },
+          "teacher_positive_final": [
+            0.109375,
+            0.67578125,
+            0.25390625,
+            0.15625,
+            0.1640625,
+            0.109375
+          ],
+          "teacher_positive_last50_mean": [
+            0.10796875,
+            0.6871875,
+            0.258203125,
+            0.155078125,
+            0.174453125,
+            0.1103125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.824,
+                "occupied": 6
+              },
+              {
+                "client": 4,
+                "largest": 0.401,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.838,
+                "occupied": 7
+              },
+              {
+                "client": 4,
+                "largest": 0.314,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.823,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.336,
+                "occupied": 10
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.816,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.304,
+                "occupied": 10
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.796,
+                "occupied": 8
+              },
+              {
+                "client": 4,
+                "largest": 0.23,
+                "occupied": 10
+              }
+            ]
+          },
+          "guard_seconds": 0.2140361990313977
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "strong_50",
+            "strength": 1,
+            "until": 50
+          },
+          "file": "iid_strong_50.json",
+          "sha256": "a492b97cd6b6cbcd0980b29983890baa28eb349cf253ae4486694b001d34fb3b",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.226,
+              "nmi": 0.10131570267608137,
+              "ari": 0.041700155683318044,
+              "largest": 0.17,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.118,
+              "nmi": 0.009785034841408389,
+              "ari": 0.000792076176718195,
+              "largest": 0.947,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.186,
+              "nmi": 0.07377338588173663,
+              "ari": 0.03228876215745608,
+              "largest": 0.389,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.205,
+              "nmi": 0.1258266087762099,
+              "ari": 0.05700069518690736,
+              "largest": 0.217,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.142,
+              "nmi": 0.037858093852252105,
+              "ari": 0.008513510890259578,
+              "largest": 0.622,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.196,
+              "nmi": 0.09385639292040687,
+              "ari": 0.021876936041236177,
+              "largest": 0.43,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.4871192003483884,
+          "traffic": {
+            "down_bytes": 208320,
+            "control_setup_bytes": 267510,
+            "total_bytes": 388504,
+            "messages": 6010,
+            "up_bytes": 180184,
+            "vector_bytes": 120994,
+            "up_full_messages": 19,
+            "up_vector_bytes": 51864,
+            "down_full_messages": 15,
+            "down_vector_bytes": 69130,
+            "up_delta_messages": 525,
+            "down_delta_messages": 955,
+            "up_unchanged_messages": 456,
+            "down_unchanged_messages": 30
+          },
+          "teacher_positive_final": [
+            0.125,
+            0.9453125,
+            0.3359375,
+            0.15625,
+            0.52734375,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.126171875,
+            0.95453125,
+            0.33953125,
+            0.16203125,
+            0.533828125,
+            0.18875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.824,
+                "occupied": 6
+              },
+              {
+                "client": 4,
+                "largest": 0.401,
+                "occupied": 10
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.838,
+                "occupied": 7
+              },
+              {
+                "client": 4,
+                "largest": 0.314,
+                "occupied": 10
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.977,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.754,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.972,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.765,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.947,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.622,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.05482439906336367
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "weak_10",
+            "strength": 0.1,
+            "until": 10
+          },
+          "file": "iid_weak_10.json",
+          "sha256": "9152b25e670e7850f53df7509b1de84b58fa8ca1dcfaf99fb724d19e3edaa39a",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.224,
+              "nmi": 0.10179913300153591,
+              "ari": 0.04137282970992008,
+              "largest": 0.17,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.119,
+              "nmi": 0.014558274864974942,
+              "ari": 0.0008690512658554158,
+              "largest": 0.956,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.18,
+              "nmi": 0.0729708770825379,
+              "ari": 0.03295134110503149,
+              "largest": 0.4,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.202,
+              "nmi": 0.12052340441629404,
+              "ari": 0.05572390232695992,
+              "largest": 0.217,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.142,
+              "nmi": 0.0410392189349567,
+              "ari": 0.008954238330413972,
+              "largest": 0.617,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.199,
+              "nmi": 0.09270957875847058,
+              "ari": 0.023235080438184223,
+              "largest": 0.425,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.4246851003845222,
+          "traffic": {
+            "down_bytes": 196990,
+            "control_setup_bytes": 267510,
+            "total_bytes": 375217,
+            "messages": 6010,
+            "up_bytes": 178227,
+            "vector_bytes": 107707,
+            "up_full_messages": 5,
+            "up_vector_bytes": 49907,
+            "down_full_messages": 5,
+            "down_vector_bytes": 57800,
+            "up_delta_messages": 409,
+            "down_delta_messages": 945,
+            "up_unchanged_messages": 586,
+            "down_unchanged_messages": 50
+          },
+          "teacher_positive_final": [
+            0.12109375,
+            0.95703125,
+            0.3359375,
+            0.1484375,
+            0.5078125,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.12109375,
+            0.958671875,
+            0.34875,
+            0.15,
+            0.519609375,
+            0.182421875
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.988,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.482,
+                "occupied": 8
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.993,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.822,
+                "occupied": 2
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.984,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.766,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.982,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.766,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.956,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.617,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.010657799371983856
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "weak_100",
+            "strength": 0.1,
+            "until": 100
+          },
+          "file": "iid_weak_100.json",
+          "sha256": "a168f214b6c528ed7551d17e247c915c2554b2e7c8c8ac44492d0531cc80393a",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.226,
+              "nmi": 0.10166487054922788,
+              "ari": 0.041349231300459637,
+              "largest": 0.175,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.12,
+              "nmi": 0.01619337589449943,
+              "ari": 0.0008646980371634617,
+              "largest": 0.946,
+              "occupied": 3,
+              "empty": 7
+            },
+            {
+              "client": 2,
+              "acc": 0.185,
+              "nmi": 0.07336892293486112,
+              "ari": 0.03233484170678356,
+              "largest": 0.389,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.202,
+              "nmi": 0.12868753482226816,
+              "ari": 0.057686212325167956,
+              "largest": 0.214,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.143,
+              "nmi": 0.043117529289220254,
+              "ari": 0.008601160724420692,
+              "largest": 0.613,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.198,
+              "nmi": 0.09426150779439184,
+              "ari": 0.023454902980579128,
+              "largest": 0.421,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.5455814996967092,
+          "traffic": {
+            "down_bytes": 198340,
+            "control_setup_bytes": 267510,
+            "total_bytes": 376806,
+            "messages": 6010,
+            "up_bytes": 178466,
+            "vector_bytes": 109296,
+            "up_full_messages": 5,
+            "up_vector_bytes": 50146,
+            "down_full_messages": 5,
+            "down_vector_bytes": 59150,
+            "up_delta_messages": 444,
+            "down_delta_messages": 960,
+            "up_unchanged_messages": 551,
+            "down_unchanged_messages": 35
+          },
+          "teacher_positive_final": [
+            0.12890625,
+            0.9296875,
+            0.328125,
+            0.1484375,
+            0.49609375,
+            0.16796875
+          ],
+          "teacher_positive_last50_mean": [
+            0.12796875,
+            0.952265625,
+            0.3378125,
+            0.159765625,
+            0.5125,
+            0.178125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.988,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.482,
+                "occupied": 8
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.989,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.599,
+                "occupied": 4
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.97,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.488,
+                "occupied": 4
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.972,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.616,
+                "occupied": 4
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.946,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.613,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.1091373001690954
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "weak_200",
+            "strength": 0.1,
+            "until": 200
+          },
+          "file": "iid_weak_200.json",
+          "sha256": "36aede041aebe64e0f250b57e8cddd7dfed19c7cb6f3651ac694089c9222e489",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.219,
+              "nmi": 0.10347362534317887,
+              "ari": 0.04319541948372662,
+              "largest": 0.18,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.12,
+              "nmi": 0.015554398621356913,
+              "ari": 0.0011516140316165746,
+              "largest": 0.935,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 2,
+              "acc": 0.185,
+              "nmi": 0.07271216074476683,
+              "ari": 0.0337988270580958,
+              "largest": 0.369,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.208,
+              "nmi": 0.1339403116905627,
+              "ari": 0.05879429138793361,
+              "largest": 0.195,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.158,
+              "nmi": 0.07034972342055544,
+              "ari": 0.019177575069095874,
+              "largest": 0.466,
+              "occupied": 5,
+              "empty": 5
+            },
+            {
+              "client": 5,
+              "acc": 0.205,
+              "nmi": 0.10268533974389824,
+              "ari": 0.028980882758203326,
+              "largest": 0.37,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.6432422997895628,
+          "traffic": {
+            "down_bytes": 198115,
+            "control_setup_bytes": 267510,
+            "total_bytes": 376547,
+            "messages": 6010,
+            "up_bytes": 178432,
+            "vector_bytes": 109037,
+            "up_full_messages": 5,
+            "up_vector_bytes": 50112,
+            "down_full_messages": 5,
+            "down_vector_bytes": 58925,
+            "up_delta_messages": 441,
+            "down_delta_messages": 955,
+            "up_unchanged_messages": 554,
+            "down_unchanged_messages": 40
+          },
+          "teacher_positive_final": [
+            0.11328125,
+            0.9140625,
+            0.31640625,
+            0.16015625,
+            0.3828125,
+            0.14453125
+          ],
+          "teacher_positive_last50_mean": [
+            0.1171875,
+            0.9240625,
+            0.319453125,
+            0.154765625,
+            0.40140625,
+            0.150078125
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.988,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.482,
+                "occupied": 8
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.989,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.599,
+                "occupied": 4
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.97,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.488,
+                "occupied": 4
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.967,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.525,
+                "occupied": 4
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.935,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.466,
+                "occupied": 5
+              }
+            ]
+          },
+          "guard_seconds": 0.21282849897397682
+        },
+        {
+          "case": {
+            "partition": "iid",
+            "initialization": "centers",
+            "setting": "weak_50",
+            "strength": 0.1,
+            "until": 50
+          },
+          "file": "iid_weak_50.json",
+          "sha256": "7a285fb8f7dacdaab7c146154eb5a115f9503c92301445f3c2734c1b75d3c6ea",
+          "rounds": 200,
+          "diagnostic_events": 601,
+          "evaluations": 21,
+          "relations": 307200,
+          "mismatches": 0,
+          "final_clients": [
+            {
+              "client": 0,
+              "acc": 0.225,
+              "nmi": 0.10169704008147641,
+              "ari": 0.04134270197329145,
+              "largest": 0.17,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 1,
+              "acc": 0.118,
+              "nmi": 0.010687365119715022,
+              "ari": 0.0007943728708308656,
+              "largest": 0.95,
+              "occupied": 2,
+              "empty": 8
+            },
+            {
+              "client": 2,
+              "acc": 0.183,
+              "nmi": 0.07318184458429303,
+              "ari": 0.032431974345705786,
+              "largest": 0.393,
+              "occupied": 6,
+              "empty": 4
+            },
+            {
+              "client": 3,
+              "acc": 0.203,
+              "nmi": 0.12355370739034222,
+              "ari": 0.05653889773660233,
+              "largest": 0.217,
+              "occupied": 10,
+              "empty": 0
+            },
+            {
+              "client": 4,
+              "acc": 0.141,
+              "nmi": 0.041925914599146755,
+              "ari": 0.008674219454007273,
+              "largest": 0.618,
+              "occupied": 4,
+              "empty": 6
+            },
+            {
+              "client": 5,
+              "acc": 0.198,
+              "nmi": 0.09387525469065568,
+              "ari": 0.02346387520937788,
+              "largest": 0.422,
+              "occupied": 9,
+              "empty": 1
+            }
+          ],
+          "training_seconds": 1.4950007992447354,
+          "traffic": {
+            "down_bytes": 197880,
+            "control_setup_bytes": 267510,
+            "total_bytes": 376274,
+            "messages": 6010,
+            "up_bytes": 178394,
+            "vector_bytes": 108764,
+            "up_full_messages": 5,
+            "up_vector_bytes": 50074,
+            "down_full_messages": 5,
+            "down_vector_bytes": 58690,
+            "up_delta_messages": 435,
+            "down_delta_messages": 960,
+            "up_unchanged_messages": 560,
+            "down_unchanged_messages": 35
+          },
+          "teacher_positive_final": [
+            0.12109375,
+            0.95703125,
+            0.3359375,
+            0.1484375,
+            0.51171875,
+            0.1640625
+          ],
+          "teacher_positive_last50_mean": [
+            0.12109375,
+            0.958203125,
+            0.344453125,
+            0.1515625,
+            0.520390625,
+            0.18015625
+          ],
+          "shutdown_test_checkpoints": {
+            "10": [
+              {
+                "client": 1,
+                "largest": 0.988,
+                "occupied": 4
+              },
+              {
+                "client": 4,
+                "largest": 0.482,
+                "occupied": 8
+              }
+            ],
+            "50": [
+              {
+                "client": 1,
+                "largest": 0.989,
+                "occupied": 3
+              },
+              {
+                "client": 4,
+                "largest": 0.599,
+                "occupied": 4
+              }
+            ],
+            "100": [
+              {
+                "client": 1,
+                "largest": 0.982,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.74,
+                "occupied": 2
+              }
+            ],
+            "110": [
+              {
+                "client": 1,
+                "largest": 0.981,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.75,
+                "occupied": 2
+              }
+            ],
+            "200": [
+              {
+                "client": 1,
+                "largest": 0.95,
+                "occupied": 2
+              },
+              {
+                "client": 4,
+                "largest": 0.618,
+                "occupied": 4
+              }
+            ]
+          },
+          "guard_seconds": 0.054318801092449576
+        }
+      ]
+    }
+  ]
+}
