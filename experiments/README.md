@@ -17,6 +17,7 @@
 - [private_workload](private_workload/README.md)：私有头部样本预算。
 - [stl10_transfer](stl10_transfer/README.md)及后续STL-10包：复用上述核心，依赖各自准备/锚点。
 - [aggregator_recovery](aggregator_recovery/README.md)：独立合成关系协议，不是模型训练恢复。
+- [snapshot_external_comparison](snapshot_external_comparison/README.md)：STL-10 最新快照版与三种外部方法的 200 轮对照，以及间隔保护开销。包含正式结果与逐轮记录。
 
 其余包逐项列在完整台账，源目录不重新分组移动。[lr_compute](lr_compute/README.md)与[lr_repeat](lr_repeat/README.md)执行包、正式结果和审核已发布；详见[发布与复查说明](../docs/evidence/LOCAL_FOLLOWUPS.md)。旧开发验证记录不代表当前正式完成状态。
 

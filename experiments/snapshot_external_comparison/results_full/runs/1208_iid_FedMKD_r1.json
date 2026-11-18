@@ -1,0 +1,7785 @@
+{
+  "manifest_sha256": "8e5b12286a5fa057d180b18b9261b528c424f6eb0e671be6284c77f621250c75",
+  "case": {
+    "seed": 1208,
+    "partition": "iid",
+    "method": "FedMKD",
+    "repeat": 1
+  },
+  "cfg": {
+    "preset": "pilot",
+    "seed": 1208,
+    "rounds": 200,
+    "widths": [
+      128,
+      128,
+      128,
+      256,
+      256,
+      256
+    ],
+    "capacities": [
+      100,
+      200,
+      300,
+      100,
+      200,
+      300
+    ],
+    "public_size": 512,
+    "test_size": 1000,
+    "local_batch": 64,
+    "public_batch": 64,
+    "public_steps": 2,
+    "lr": 0.001,
+    "alignment_weight": 1.0,
+    "global_width": 256,
+    "classes": 10,
+    "ae_epochs": 1,
+    "ae_lr": 0.001,
+    "head_lr": 0.1,
+    "private_batch": 128,
+    "relation_batch": 64,
+    "public_weights": [
+      0.125,
+      0.5,
+      0.5,
+      0.125,
+      0.5,
+      0.5
+    ],
+    "eval_every": 10,
+    "device": "cpu",
+    "threads": 1,
+    "partitions": [
+      "iid",
+      "dirichlet_0.1"
+    ]
+  },
+  "input_files": {
+    "evaluation.pt": "5da1d7fbdaf9d007e4f1056cd14e1934f0f974381f70c05ca4a75660ae6491fd",
+    "initial.pt": "0bb1121c299ae19222ebc153dba3cdb5ae69da0dff3b8849ccd4f8928a7fdf24",
+    "train.pt": "ed7388394563b7cb623cbc3dfc94aff15409fead7f7dbcac4f9ae67dd299f7e7"
+  },
+  "initial_model_digest": "f0fb06f46372fd80f9bbfcb092476a822be472116ba4fd7733fa6db08fd5f1cc",
+  "ae_seconds": 0.26254770008381456,
+  "status": "completed",
+  "selection": [],
+  "selection_seconds": 0.0,
+  "selected_model_digest": "f0fb06f46372fd80f9bbfcb092476a822be472116ba4fd7733fa6db08fd5f1cc",
+  "setup_seconds": 0.008647100068628788,
+  "setup_timing": {
+    "compute_seconds": 0.008633799967356026,
+    "serialization_seconds": 0.0,
+    "aggregation_seconds": 0.0,
+    "other_seconds": 1.3300101272761822e-05
+  },
+  "method_seconds": 91.62899850134272,
+  "with_preparation_seconds": 91.89154620142654,
+  "rows": [
+    {
+      "round": 1,
+      "seconds": 2.402855799999088,
+      "timing": {
+        "compute_seconds": 2.3623391998698935,
+        "serialization_seconds": 0.037595000001601875,
+        "aggregation_seconds": 0.0028229999588802457,
+        "other_seconds": 9.860016871243715e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 2,
+      "seconds": 0.3530752999940887,
+      "timing": {
+        "compute_seconds": 0.3161866997834295,
+        "serialization_seconds": 0.03635770035907626,
+        "aggregation_seconds": 0.00044510001316666603,
+        "other_seconds": 8.579983841627836e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 3,
+      "seconds": 0.358359899953939,
+      "timing": {
+        "compute_seconds": 0.32073299994226545,
+        "serialization_seconds": 0.03721340000629425,
+        "aggregation_seconds": 0.00032350001856684685,
+        "other_seconds": 8.999998681247234e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 4,
+      "seconds": 0.34782149991951883,
+      "timing": {
+        "compute_seconds": 0.3108707001665607,
+        "serialization_seconds": 0.03653949988074601,
+        "aggregation_seconds": 0.0003252000315114856,
+        "other_seconds": 8.609984070062637e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 5,
+      "seconds": 0.3629220000002533,
+      "timing": {
+        "compute_seconds": 0.3237309999531135,
+        "serialization_seconds": 0.038793299812823534,
+        "aggregation_seconds": 0.00030859990511089563,
+        "other_seconds": 8.910032920539379e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 6,
+      "seconds": 0.3500513999024406,
+      "timing": {
+        "compute_seconds": 0.3119112001731992,
+        "serialization_seconds": 0.037751799914985895,
+        "aggregation_seconds": 0.00030230008997023106,
+        "other_seconds": 8.609972428530455e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 7,
+      "seconds": 0.3559888999443501,
+      "timing": {
+        "compute_seconds": 0.31911189993843436,
+        "serialization_seconds": 0.03647590009495616,
+        "aggregation_seconds": 0.00031430006492882967,
+        "other_seconds": 8.679984603077173e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 8,
+      "seconds": 0.3553711000131443,
+      "timing": {
+        "compute_seconds": 0.3180308002047241,
+        "serialization_seconds": 0.03692370024509728,
+        "aggregation_seconds": 0.0003263000398874283,
+        "other_seconds": 9.029952343553305e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 9,
+      "seconds": 0.34355940006207675,
+      "timing": {
+        "compute_seconds": 0.3065247000195086,
+        "serialization_seconds": 0.036645700107328594,
+        "aggregation_seconds": 0.00030800013337284327,
+        "other_seconds": 8.099980186671019e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 10,
+      "seconds": 0.3487837000284344,
+      "timing": {
+        "compute_seconds": 0.31096969987265766,
+        "serialization_seconds": 0.03740969975478947,
+        "aggregation_seconds": 0.00031809997744858265,
+        "other_seconds": 8.620042353868484e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 11,
+      "seconds": 0.35143050004262477,
+      "timing": {
+        "compute_seconds": 0.3144831000827253,
+        "serialization_seconds": 0.03637810016516596,
+        "aggregation_seconds": 0.00047640001866966486,
+        "other_seconds": 9.289977606385946e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 12,
+      "seconds": 0.3636279000202194,
+      "timing": {
+        "compute_seconds": 0.3258921999949962,
+        "serialization_seconds": 0.03733530000317842,
+        "aggregation_seconds": 0.00031239993404597044,
+        "other_seconds": 8.800008799880743e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 13,
+      "seconds": 0.35137779999058694,
+      "timing": {
+        "compute_seconds": 0.3147748002083972,
+        "serialization_seconds": 0.036213099607266486,
+        "aggregation_seconds": 0.00030809990130364895,
+        "other_seconds": 8.180027361959219e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 14,
+      "seconds": 0.3478655000217259,
+      "timing": {
+        "compute_seconds": 0.3109894000226632,
+        "serialization_seconds": 0.036478200228884816,
+        "aggregation_seconds": 0.0003151999553665519,
+        "other_seconds": 8.269981481134892e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 15,
+      "seconds": 0.3493543000658974,
+      "timing": {
+        "compute_seconds": 0.3125225998228416,
+        "serialization_seconds": 0.03642719972413033,
+        "aggregation_seconds": 0.0003179999766871333,
+        "other_seconds": 8.650054223835468e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 16,
+      "seconds": 0.34728930005803704,
+      "timing": {
+        "compute_seconds": 0.3102889998117462,
+        "serialization_seconds": 0.03658969979733229,
+        "aggregation_seconds": 0.00032730004750192165,
+        "other_seconds": 8.330040145665407e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 17,
+      "seconds": 0.3437290999572724,
+      "timing": {
+        "compute_seconds": 0.3066832002950832,
+        "serialization_seconds": 0.03666219988372177,
+        "aggregation_seconds": 0.0003053999971598387,
+        "other_seconds": 7.829978130757809e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 18,
+      "seconds": 0.361166900023818,
+      "timing": {
+        "compute_seconds": 0.3228662998881191,
+        "serialization_seconds": 0.037900400115177035,
+        "aggregation_seconds": 0.0003163999645039439,
+        "other_seconds": 8.380005601793528e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 19,
+      "seconds": 0.3562144000316039,
+      "timing": {
+        "compute_seconds": 0.31777870014775544,
+        "serialization_seconds": 0.038051199866458774,
+        "aggregation_seconds": 0.0002994000678882003,
+        "other_seconds": 8.509994950145483e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 20,
+      "seconds": 0.34688259998802096,
+      "timing": {
+        "compute_seconds": 0.3098336001858115,
+        "serialization_seconds": 0.036601200117729604,
+        "aggregation_seconds": 0.0003576999297365546,
+        "other_seconds": 9.009975474327803e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 21,
+      "seconds": 0.3629083000123501,
+      "timing": {
+        "compute_seconds": 0.3238243000814691,
+        "serialization_seconds": 0.03866880014538765,
+        "aggregation_seconds": 0.00032700004521757364,
+        "other_seconds": 8.819974027574062e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 22,
+      "seconds": 0.3609195000026375,
+      "timing": {
+        "compute_seconds": 0.3237228998914361,
+        "serialization_seconds": 0.03678530012257397,
+        "aggregation_seconds": 0.0003095000283792615,
+        "other_seconds": 0.00010179996024817228
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 23,
+      "seconds": 0.3611247999360785,
+      "timing": {
+        "compute_seconds": 0.3230643999995664,
+        "serialization_seconds": 0.03765420010313392,
+        "aggregation_seconds": 0.000314700067974627,
+        "other_seconds": 9.149976540356874e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 24,
+      "seconds": 0.3524607999715954,
+      "timing": {
+        "compute_seconds": 0.3143052998930216,
+        "serialization_seconds": 0.03767199988942593,
+        "aggregation_seconds": 0.0003964999923482537,
+        "other_seconds": 8.700019679963589e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 25,
+      "seconds": 0.3513399000512436,
+      "timing": {
+        "compute_seconds": 0.31437739985994995,
+        "serialization_seconds": 0.03657609992660582,
+        "aggregation_seconds": 0.0003037999849766493,
+        "other_seconds": 8.260027971118689e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 26,
+      "seconds": 0.3449497999390587,
+      "timing": {
+        "compute_seconds": 0.3082109004026279,
+        "serialization_seconds": 0.03632910002488643,
+        "aggregation_seconds": 0.00031759997364133596,
+        "other_seconds": 9.219953790307045e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 27,
+      "seconds": 0.37052720005158335,
+      "timing": {
+        "compute_seconds": 0.33262500003911555,
+        "serialization_seconds": 0.03750850004144013,
+        "aggregation_seconds": 0.0003081000177189708,
+        "other_seconds": 8.559995330870152e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 28,
+      "seconds": 0.3650311999954283,
+      "timing": {
+        "compute_seconds": 0.32675950007978827,
+        "serialization_seconds": 0.03787269990425557,
+        "aggregation_seconds": 0.0003108000382781029,
+        "other_seconds": 8.819997310638428e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 29,
+      "seconds": 0.37969840003643185,
+      "timing": {
+        "compute_seconds": 0.34035239974036813,
+        "serialization_seconds": 0.038926199777051806,
+        "aggregation_seconds": 0.0003114000428467989,
+        "other_seconds": 0.00010840047616511583
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 30,
+      "seconds": 0.36892520007677376,
+      "timing": {
+        "compute_seconds": 0.3307088998844847,
+        "serialization_seconds": 0.037818799959495664,
+        "aggregation_seconds": 0.00030960002914071083,
+        "other_seconds": 8.790020365267992e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 31,
+      "seconds": 0.34777310001663864,
+      "timing": {
+        "compute_seconds": 0.3110679999226704,
+        "serialization_seconds": 0.03631509991828352,
+        "aggregation_seconds": 0.00030449999030679464,
+        "other_seconds": 8.550018537789583e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 32,
+      "seconds": 0.3584176000440493,
+      "timing": {
+        "compute_seconds": 0.3198526999913156,
+        "serialization_seconds": 0.0381597998784855,
+        "aggregation_seconds": 0.00032230012584477663,
+        "other_seconds": 8.28000484034419e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 33,
+      "seconds": 0.36520160001236945,
+      "timing": {
+        "compute_seconds": 0.3257707997690886,
+        "serialization_seconds": 0.039041400072164834,
+        "aggregation_seconds": 0.000300800078548491,
+        "other_seconds": 8.860009256750345e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 34,
+      "seconds": 0.35268040001392365,
+      "timing": {
+        "compute_seconds": 0.31502489978447556,
+        "serialization_seconds": 0.03725609986577183,
+        "aggregation_seconds": 0.0003082000184804201,
+        "other_seconds": 9.120034519582987e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 35,
+      "seconds": 0.3452183000044897,
+      "timing": {
+        "compute_seconds": 0.3081332998117432,
+        "serialization_seconds": 0.036679400014691055,
+        "aggregation_seconds": 0.00031949998810887337,
+        "other_seconds": 8.610018994659185e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 36,
+      "seconds": 0.3604220999404788,
+      "timing": {
+        "compute_seconds": 0.3231451000319794,
+        "serialization_seconds": 0.03687519999220967,
+        "aggregation_seconds": 0.0003165999660268426,
+        "other_seconds": 8.519995026290417e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 37,
+      "seconds": 0.36853899993002415,
+      "timing": {
+        "compute_seconds": 0.32974729989655316,
+        "serialization_seconds": 0.03839600028004497,
+        "aggregation_seconds": 0.00031209993176162243,
+        "other_seconds": 8.359982166439295e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 38,
+      "seconds": 0.36662149999756366,
+      "timing": {
+        "compute_seconds": 0.3277841997332871,
+        "serialization_seconds": 0.03840759990271181,
+        "aggregation_seconds": 0.0003402999136596918,
+        "other_seconds": 8.940044790506363e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 39,
+      "seconds": 0.3505989999976009,
+      "timing": {
+        "compute_seconds": 0.31386289978399873,
+        "serialization_seconds": 0.03634710004553199,
+        "aggregation_seconds": 0.00030180008616298437,
+        "other_seconds": 8.720008190721273e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 40,
+      "seconds": 0.3477687999838963,
+      "timing": {
+        "compute_seconds": 0.3104194999905303,
+        "serialization_seconds": 0.03696439985651523,
+        "aggregation_seconds": 0.00030339998193085194,
+        "other_seconds": 8.150015491992235e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 41,
+      "seconds": 0.34655410004779696,
+      "timing": {
+        "compute_seconds": 0.30985139997210354,
+        "serialization_seconds": 0.03631669993046671,
+        "aggregation_seconds": 0.0003038999857380986,
+        "other_seconds": 8.210015948861837e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 42,
+      "seconds": 0.355812199995853,
+      "timing": {
+        "compute_seconds": 0.3186765002319589,
+        "serialization_seconds": 0.03673339996021241,
+        "aggregation_seconds": 0.00031560007482767105,
+        "other_seconds": 8.669972885400057e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 43,
+      "seconds": 0.3569933999096975,
+      "timing": {
+        "compute_seconds": 0.31919330009259284,
+        "serialization_seconds": 0.037408400094136596,
+        "aggregation_seconds": 0.00030859990511089563,
+        "other_seconds": 8.309981785714626e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 44,
+      "seconds": 0.35843210003804415,
+      "timing": {
+        "compute_seconds": 0.3206881998339668,
+        "serialization_seconds": 0.03734329994767904,
+        "aggregation_seconds": 0.00031519983895123005,
+        "other_seconds": 8.540041744709015e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 45,
+      "seconds": 0.3734036999521777,
+      "timing": {
+        "compute_seconds": 0.33421320014167577,
+        "serialization_seconds": 0.03877919993828982,
+        "aggregation_seconds": 0.00032410002313554287,
+        "other_seconds": 8.719984907656908e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 46,
+      "seconds": 0.35889439994934946,
+      "timing": {
+        "compute_seconds": 0.32045990019105375,
+        "serialization_seconds": 0.0380471998360008,
+        "aggregation_seconds": 0.00030289997812360525,
+        "other_seconds": 8.439994417130947e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 47,
+      "seconds": 0.3632262001046911,
+      "timing": {
+        "compute_seconds": 0.3255376002052799,
+        "serialization_seconds": 0.03729340003337711,
+        "aggregation_seconds": 0.0003100000321865082,
+        "other_seconds": 8.519983384758234e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 48,
+      "seconds": 0.3732171000447124,
+      "timing": {
+        "compute_seconds": 0.33460659987758845,
+        "serialization_seconds": 0.03816169989295304,
+        "aggregation_seconds": 0.0003627999685704708,
+        "other_seconds": 8.600030560046434e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 49,
+      "seconds": 0.3492317999480292,
+      "timing": {
+        "compute_seconds": 0.3123645002488047,
+        "serialization_seconds": 0.036477900110185146,
+        "aggregation_seconds": 0.00030610000248998404,
+        "other_seconds": 8.329958654940128e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 50,
+      "seconds": 0.34651120007038116,
+      "timing": {
+        "compute_seconds": 0.3092289003543556,
+        "serialization_seconds": 0.036891099880449474,
+        "aggregation_seconds": 0.00030750001315027475,
+        "other_seconds": 8.369982242584229e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 51,
+      "seconds": 0.3567521000513807,
+      "timing": {
+        "compute_seconds": 0.3192219000775367,
+        "serialization_seconds": 0.03713250032160431,
+        "aggregation_seconds": 0.00030940002761781216,
+        "other_seconds": 8.829962462186813e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 52,
+      "seconds": 0.41444889991544187,
+      "timing": {
+        "compute_seconds": 0.3691738003399223,
+        "serialization_seconds": 0.04477619973476976,
+        "aggregation_seconds": 0.0003880000440403819,
+        "other_seconds": 0.0001108997967094183
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 53,
+      "seconds": 0.42371699993964285,
+      "timing": {
+        "compute_seconds": 0.3814072000095621,
+        "serialization_seconds": 0.04182280006352812,
+        "aggregation_seconds": 0.00038680003490298986,
+        "other_seconds": 0.00010019983164966106
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 54,
+      "seconds": 0.43145830009598285,
+      "timing": {
+        "compute_seconds": 0.390564400004223,
+        "serialization_seconds": 0.040463500074110925,
+        "aggregation_seconds": 0.00032650004141032696,
+        "other_seconds": 0.00010389997623860836
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 55,
+      "seconds": 0.4071527000050992,
+      "timing": {
+        "compute_seconds": 0.3671593002509326,
+        "serialization_seconds": 0.03957829996943474,
+        "aggregation_seconds": 0.00032409990672022104,
+        "other_seconds": 9.099987801164389e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 56,
+      "seconds": 0.41492060001473874,
+      "timing": {
+        "compute_seconds": 0.3657794997561723,
+        "serialization_seconds": 0.04873670020606369,
+        "aggregation_seconds": 0.00030720001086592674,
+        "other_seconds": 9.720004163682461e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 57,
+      "seconds": 0.37259819998871535,
+      "timing": {
+        "compute_seconds": 0.333493500133045,
+        "serialization_seconds": 0.03870870009995997,
+        "aggregation_seconds": 0.00030660012271255255,
+        "other_seconds": 8.939963299781084e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 58,
+      "seconds": 0.3526546999346465,
+      "timing": {
+        "compute_seconds": 0.31568620016332716,
+        "serialization_seconds": 0.0365711998892948,
+        "aggregation_seconds": 0.0003157999599352479,
+        "other_seconds": 8.14999220892787e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 59,
+      "seconds": 0.38271339994389564,
+      "timing": {
+        "compute_seconds": 0.34235589986201376,
+        "serialization_seconds": 0.03992450004443526,
+        "aggregation_seconds": 0.0003380000125616789,
+        "other_seconds": 9.50000248849392e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 60,
+      "seconds": 0.35098830005154014,
+      "timing": {
+        "compute_seconds": 0.313712700153701,
+        "serialization_seconds": 0.03688149980735034,
+        "aggregation_seconds": 0.00030859990511089563,
+        "other_seconds": 8.550018537789583e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 61,
+      "seconds": 0.3610755999106914,
+      "timing": {
+        "compute_seconds": 0.32367419986985624,
+        "serialization_seconds": 0.0370029000332579,
+        "aggregation_seconds": 0.00031160004436969757,
+        "other_seconds": 8.68999632075429e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 62,
+      "seconds": 0.3588986999820918,
+      "timing": {
+        "compute_seconds": 0.3204660000046715,
+        "serialization_seconds": 0.03801960009150207,
+        "aggregation_seconds": 0.0003229000139981508,
+        "other_seconds": 9.019987192004919e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 63,
+      "seconds": 0.36758550000377,
+      "timing": {
+        "compute_seconds": 0.3288155001355335,
+        "serialization_seconds": 0.03831699991133064,
+        "aggregation_seconds": 0.00035559991374611855,
+        "other_seconds": 9.740004315972328e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 64,
+      "seconds": 0.3591703000711277,
+      "timing": {
+        "compute_seconds": 0.32183290005195886,
+        "serialization_seconds": 0.03695469978265464,
+        "aggregation_seconds": 0.0003011999651789665,
+        "other_seconds": 8.150027133524418e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 65,
+      "seconds": 0.35997370001859963,
+      "timing": {
+        "compute_seconds": 0.3221991000464186,
+        "serialization_seconds": 0.037368199904449284,
+        "aggregation_seconds": 0.0003220000071451068,
+        "other_seconds": 8.44000605866313e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 66,
+      "seconds": 0.35279080003965646,
+      "timing": {
+        "compute_seconds": 0.3160711999516934,
+        "serialization_seconds": 0.036329800146631896,
+        "aggregation_seconds": 0.00030800001695752144,
+        "other_seconds": 8.179992437362671e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 67,
+      "seconds": 0.3521688000764698,
+      "timing": {
+        "compute_seconds": 0.3143760997336358,
+        "serialization_seconds": 0.03739139984827489,
+        "aggregation_seconds": 0.0003127000527456403,
+        "other_seconds": 8.860044181346893e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 68,
+      "seconds": 0.3645156000275165,
+      "timing": {
+        "compute_seconds": 0.32601819990668446,
+        "serialization_seconds": 0.03807880019303411,
+        "aggregation_seconds": 0.0003260999219492078,
+        "other_seconds": 9.250000584870577e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 69,
+      "seconds": 0.35772189998533577,
+      "timing": {
+        "compute_seconds": 0.32044000015594065,
+        "serialization_seconds": 0.0368868998484686,
+        "aggregation_seconds": 0.0003087999066337943,
+        "other_seconds": 8.620007429271936e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 70,
+      "seconds": 0.37076319998595864,
+      "timing": {
+        "compute_seconds": 0.3318223999813199,
+        "serialization_seconds": 0.038511000107973814,
+        "aggregation_seconds": 0.00033760000951588154,
+        "other_seconds": 9.219988714903593e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 71,
+      "seconds": 0.3554427999770269,
+      "timing": {
+        "compute_seconds": 0.3181429002434015,
+        "serialization_seconds": 0.036815299768932164,
+        "aggregation_seconds": 0.0003977001179009676,
+        "other_seconds": 8.689984679222107e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 72,
+      "seconds": 0.3553664000937715,
+      "timing": {
+        "compute_seconds": 0.31800279987510294,
+        "serialization_seconds": 0.03697570040822029,
+        "aggregation_seconds": 0.0003037999849766493,
+        "other_seconds": 8.409982547163963e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 73,
+      "seconds": 0.35387629992328584,
+      "timing": {
+        "compute_seconds": 0.3172499999636784,
+        "serialization_seconds": 0.036225699819624424,
+        "aggregation_seconds": 0.0003171000862494111,
+        "other_seconds": 8.350005373358727e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 74,
+      "seconds": 0.3567009000107646,
+      "timing": {
+        "compute_seconds": 0.31727319955825806,
+        "serialization_seconds": 0.039014299982227385,
+        "aggregation_seconds": 0.00032409990672022104,
+        "other_seconds": 8.930056355893612e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 75,
+      "seconds": 0.38168830005452037,
+      "timing": {
+        "compute_seconds": 0.34328419994562864,
+        "serialization_seconds": 0.0379223998170346,
+        "aggregation_seconds": 0.0003891999367624521,
+        "other_seconds": 9.250035509467125e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 76,
+      "seconds": 0.3619070000713691,
+      "timing": {
+        "compute_seconds": 0.3233833003323525,
+        "serialization_seconds": 0.038125499966554344,
+        "aggregation_seconds": 0.00030939991120249033,
+        "other_seconds": 8.879986125975847e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 77,
+      "seconds": 0.36326579994056374,
+      "timing": {
+        "compute_seconds": 0.3250266999239102,
+        "serialization_seconds": 0.03784140001516789,
+        "aggregation_seconds": 0.00031049991957843304,
+        "other_seconds": 8.720008190721273e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 78,
+      "seconds": 0.3456284999847412,
+      "timing": {
+        "compute_seconds": 0.30879709986038506,
+        "serialization_seconds": 0.03643000032752752,
+        "aggregation_seconds": 0.00031849998049438,
+        "other_seconds": 8.289981633424759e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 79,
+      "seconds": 0.3516190000809729,
+      "timing": {
+        "compute_seconds": 0.3141178002115339,
+        "serialization_seconds": 0.037116500083357096,
+        "aggregation_seconds": 0.0003019999712705612,
+        "other_seconds": 8.269981481134892e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 80,
+      "seconds": 0.3580704000778496,
+      "timing": {
+        "compute_seconds": 0.32084390020463616,
+        "serialization_seconds": 0.036826099967584014,
+        "aggregation_seconds": 0.00031509995460510254,
+        "other_seconds": 8.52999510243535e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 81,
+      "seconds": 0.36920710001140833,
+      "timing": {
+        "compute_seconds": 0.33101559977512807,
+        "serialization_seconds": 0.03778539993800223,
+        "aggregation_seconds": 0.00031699996907263994,
+        "other_seconds": 8.910032920539379e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 82,
+      "seconds": 0.3654015000211075,
+      "timing": {
+        "compute_seconds": 0.32714960002340376,
+        "serialization_seconds": 0.037848099833354354,
+        "aggregation_seconds": 0.00031619996298104525,
+        "other_seconds": 8.760020136833191e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 83,
+      "seconds": 0.36076900002080947,
+      "timing": {
+        "compute_seconds": 0.3228511002380401,
+        "serialization_seconds": 0.03751649986952543,
+        "aggregation_seconds": 0.000314700067974627,
+        "other_seconds": 8.66998452693224e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 84,
+      "seconds": 0.34997320000547916,
+      "timing": {
+        "compute_seconds": 0.31291690026409924,
+        "serialization_seconds": 0.03667370043694973,
+        "aggregation_seconds": 0.00030010007321834564,
+        "other_seconds": 8.24992312118411e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 85,
+      "seconds": 0.3563812000211328,
+      "timing": {
+        "compute_seconds": 0.3187395998975262,
+        "serialization_seconds": 0.037250699824653566,
+        "aggregation_seconds": 0.0003037999849766493,
+        "other_seconds": 8.710031397640705e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 86,
+      "seconds": 0.3646725999424234,
+      "timing": {
+        "compute_seconds": 0.32677389995660633,
+        "serialization_seconds": 0.03750770026817918,
+        "aggregation_seconds": 0.00030610011890530586,
+        "other_seconds": 8.489959873259068e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 87,
+      "seconds": 0.3593351999297738,
+      "timing": {
+        "compute_seconds": 0.32111969985999167,
+        "serialization_seconds": 0.03781969996634871,
+        "aggregation_seconds": 0.0003082000184804201,
+        "other_seconds": 8.760008495301008e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 88,
+      "seconds": 0.3501146000344306,
+      "timing": {
+        "compute_seconds": 0.31293630006257445,
+        "serialization_seconds": 0.036775900167413056,
+        "aggregation_seconds": 0.0003146999515593052,
+        "other_seconds": 8.769985288381577e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 89,
+      "seconds": 0.3571853000903502,
+      "timing": {
+        "compute_seconds": 0.319986600195989,
+        "serialization_seconds": 0.03679719986394048,
+        "aggregation_seconds": 0.0003130000550299883,
+        "other_seconds": 8.849997539073229e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 90,
+      "seconds": 0.3511096000438556,
+      "timing": {
+        "compute_seconds": 0.3142847998533398,
+        "serialization_seconds": 0.036432999884709716,
+        "aggregation_seconds": 0.0003090999089181423,
+        "other_seconds": 8.270039688795805e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 91,
+      "seconds": 0.35092739993706346,
+      "timing": {
+        "compute_seconds": 0.31399999966379255,
+        "serialization_seconds": 0.03647720022127032,
+        "aggregation_seconds": 0.000358699937351048,
+        "other_seconds": 9.150011464953423e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 92,
+      "seconds": 0.36222929996438324,
+      "timing": {
+        "compute_seconds": 0.32424110011197627,
+        "serialization_seconds": 0.03755979996640235,
+        "aggregation_seconds": 0.0003356001107022166,
+        "other_seconds": 9.279977530241013e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 93,
+      "seconds": 0.35445500002242625,
+      "timing": {
+        "compute_seconds": 0.31713219976518303,
+        "serialization_seconds": 0.03693079994991422,
+        "aggregation_seconds": 0.000308999908156693,
+        "other_seconds": 8.300039917230606e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 94,
+      "seconds": 0.3575363999698311,
+      "timing": {
+        "compute_seconds": 0.31986769975628704,
+        "serialization_seconds": 0.03725410019978881,
+        "aggregation_seconds": 0.00032519991509616375,
+        "other_seconds": 8.940009865909815e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 95,
+      "seconds": 0.3606369999470189,
+      "timing": {
+        "compute_seconds": 0.32220570009667426,
+        "serialization_seconds": 0.03800360020250082,
+        "aggregation_seconds": 0.00033469998743385077,
+        "other_seconds": 9.299966040998697e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 96,
+      "seconds": 0.3459969999967143,
+      "timing": {
+        "compute_seconds": 0.3088441997533664,
+        "serialization_seconds": 0.036764100193977356,
+        "aggregation_seconds": 0.00030610011890530586,
+        "other_seconds": 8.25999304652214e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 97,
+      "seconds": 0.35061209998093545,
+      "timing": {
+        "compute_seconds": 0.31360329990275204,
+        "serialization_seconds": 0.03662510006688535,
+        "aggregation_seconds": 0.000301100080832839,
+        "other_seconds": 8.25999304652214e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 98,
+      "seconds": 0.3493393000680953,
+      "timing": {
+        "compute_seconds": 0.312170899938792,
+        "serialization_seconds": 0.03677460004109889,
+        "aggregation_seconds": 0.00031180004589259624,
+        "other_seconds": 8.200004231184721e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 99,
+      "seconds": 0.3725566000211984,
+      "timing": {
+        "compute_seconds": 0.3326709996908903,
+        "serialization_seconds": 0.03944859991315752,
+        "aggregation_seconds": 0.0003380000125616789,
+        "other_seconds": 9.900040458887815e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 100,
+      "seconds": 0.609686900046654,
+      "timing": {
+        "compute_seconds": 0.5517589998198673,
+        "serialization_seconds": 0.05725870013702661,
+        "aggregation_seconds": 0.000533799990080297,
+        "other_seconds": 0.0001354000996798277
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 101,
+      "seconds": 0.632062999997288,
+      "timing": {
+        "compute_seconds": 0.5785740002756938,
+        "serialization_seconds": 0.05285480013117194,
+        "aggregation_seconds": 0.0005149999633431435,
+        "other_seconds": 0.00011919962707906961
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 102,
+      "seconds": 0.5657273000106215,
+      "timing": {
+        "compute_seconds": 0.5080053999554366,
+        "serialization_seconds": 0.05707559967413545,
+        "aggregation_seconds": 0.0005039999959990382,
+        "other_seconds": 0.0001423003850504756
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 103,
+      "seconds": 0.56888529995922,
+      "timing": {
+        "compute_seconds": 0.5121022000676021,
+        "serialization_seconds": 0.056209599948488176,
+        "aggregation_seconds": 0.00044380000326782465,
+        "other_seconds": 0.00012969993986189365
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 104,
+      "seconds": 0.570981299970299,
+      "timing": {
+        "compute_seconds": 0.5162436997052282,
+        "serialization_seconds": 0.05405020003672689,
+        "aggregation_seconds": 0.0005487998714670539,
+        "other_seconds": 0.00013860035687685013
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 105,
+      "seconds": 0.5636029000161216,
+      "timing": {
+        "compute_seconds": 0.5109481001272798,
+        "serialization_seconds": 0.052137100021354854,
+        "aggregation_seconds": 0.00040310004260390997,
+        "other_seconds": 0.00011459982488304377
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 106,
+      "seconds": 0.5234277000417933,
+      "timing": {
+        "compute_seconds": 0.4733459003036842,
+        "serialization_seconds": 0.04959890036843717,
+        "aggregation_seconds": 0.0003834000090137124,
+        "other_seconds": 9.94993606582284e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 107,
+      "seconds": 0.47176830004900694,
+      "timing": {
+        "compute_seconds": 0.4230562000302598,
+        "serialization_seconds": 0.048250800115056336,
+        "aggregation_seconds": 0.0003621999640017748,
+        "other_seconds": 9.909993968904018e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 108,
+      "seconds": 0.5161243000766262,
+      "timing": {
+        "compute_seconds": 0.46686570008751005,
+        "serialization_seconds": 0.048742400016635656,
+        "aggregation_seconds": 0.0003997000167146325,
+        "other_seconds": 0.000116499955765903
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 109,
+      "seconds": 0.46288620005361736,
+      "timing": {
+        "compute_seconds": 0.41582150012254715,
+        "serialization_seconds": 0.046595199848525226,
+        "aggregation_seconds": 0.0003646999830380082,
+        "other_seconds": 0.00010480009950697422
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 110,
+      "seconds": 0.4782095999689773,
+      "timing": {
+        "compute_seconds": 0.4291622998425737,
+        "serialization_seconds": 0.04857489978894591,
+        "aggregation_seconds": 0.0003670001169666648,
+        "other_seconds": 0.00010540022049099207
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 111,
+      "seconds": 0.4691118000773713,
+      "timing": {
+        "compute_seconds": 0.42207790014799684,
+        "serialization_seconds": 0.04656410007737577,
+        "aggregation_seconds": 0.0003760000690817833,
+        "other_seconds": 9.37997829169035e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 112,
+      "seconds": 0.49531949998345226,
+      "timing": {
+        "compute_seconds": 0.44459810003172606,
+        "serialization_seconds": 0.05014319985639304,
+        "aggregation_seconds": 0.00046929996460676193,
+        "other_seconds": 0.00010890013072639704
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 113,
+      "seconds": 0.4624704000307247,
+      "timing": {
+        "compute_seconds": 0.41364930011332035,
+        "serialization_seconds": 0.048355599981732666,
+        "aggregation_seconds": 0.0003630000865086913,
+        "other_seconds": 0.00010249984916299582
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 114,
+      "seconds": 0.48990929999854416,
+      "timing": {
+        "compute_seconds": 0.43935520004015416,
+        "serialization_seconds": 0.050015200045891106,
+        "aggregation_seconds": 0.0004287998890504241,
+        "other_seconds": 0.00011010002344846725
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 115,
+      "seconds": 0.4755501000909135,
+      "timing": {
+        "compute_seconds": 0.42825779982376844,
+        "serialization_seconds": 0.04671710007824004,
+        "aggregation_seconds": 0.00047269987408071756,
+        "other_seconds": 0.00010250031482428312
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 116,
+      "seconds": 0.47873540001455694,
+      "timing": {
+        "compute_seconds": 0.4296553002204746,
+        "serialization_seconds": 0.048612400074489415,
+        "aggregation_seconds": 0.0003659999929368496,
+        "other_seconds": 0.00010169972665607929
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 117,
+      "seconds": 0.4942135999444872,
+      "timing": {
+        "compute_seconds": 0.44580760004464537,
+        "serialization_seconds": 0.047943999990820885,
+        "aggregation_seconds": 0.0003608000697568059,
+        "other_seconds": 0.00010119983926415443
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 118,
+      "seconds": 0.5021018000552431,
+      "timing": {
+        "compute_seconds": 0.4510939995525405,
+        "serialization_seconds": 0.05041899997740984,
+        "aggregation_seconds": 0.0004757000133395195,
+        "other_seconds": 0.00011310051195323467
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 119,
+      "seconds": 0.5545670000137761,
+      "timing": {
+        "compute_seconds": 0.49824360001366585,
+        "serialization_seconds": 0.0556922999676317,
+        "aggregation_seconds": 0.0004998000804334879,
+        "other_seconds": 0.00013129995204508305
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 120,
+      "seconds": 0.539599800016731,
+      "timing": {
+        "compute_seconds": 0.48557279992382973,
+        "serialization_seconds": 0.05343789991457015,
+        "aggregation_seconds": 0.0004555000923573971,
+        "other_seconds": 0.00013360008597373962
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 121,
+      "seconds": 0.5087685999460518,
+      "timing": {
+        "compute_seconds": 0.46050230017863214,
+        "serialization_seconds": 0.04777280008420348,
+        "aggregation_seconds": 0.0003856000257655978,
+        "other_seconds": 0.00010789965745061636
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 122,
+      "seconds": 0.4972086000489071,
+      "timing": {
+        "compute_seconds": 0.44711549999192357,
+        "serialization_seconds": 0.04965310008265078,
+        "aggregation_seconds": 0.00033629999961704016,
+        "other_seconds": 0.00010369997471570969
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 123,
+      "seconds": 0.47096179996151477,
+      "timing": {
+        "compute_seconds": 0.4233949998160824,
+        "serialization_seconds": 0.04710059962235391,
+        "aggregation_seconds": 0.0003695000195875764,
+        "other_seconds": 9.670050349086523e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 124,
+      "seconds": 0.4914390000049025,
+      "timing": {
+        "compute_seconds": 0.44193499989341944,
+        "serialization_seconds": 0.04898699966724962,
+        "aggregation_seconds": 0.0003989000106230378,
+        "other_seconds": 0.0001181004336103797
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 125,
+      "seconds": 0.5071234999923036,
+      "timing": {
+        "compute_seconds": 0.45725159998983145,
+        "serialization_seconds": 0.04936369997449219,
+        "aggregation_seconds": 0.0004045000532642007,
+        "other_seconds": 0.00010369997471570969
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 126,
+      "seconds": 0.4811790999956429,
+      "timing": {
+        "compute_seconds": 0.4316066001774743,
+        "serialization_seconds": 0.049046800006181,
+        "aggregation_seconds": 0.00042090006172657013,
+        "other_seconds": 0.00010479975026100874
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 127,
+      "seconds": 0.633631500066258,
+      "timing": {
+        "compute_seconds": 0.5738161999033764,
+        "serialization_seconds": 0.05916939990129322,
+        "aggregation_seconds": 0.0005016999784857035,
+        "other_seconds": 0.00014420028310269117
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 128,
+      "seconds": 0.5677473999094218,
+      "timing": {
+        "compute_seconds": 0.5145436002640054,
+        "serialization_seconds": 0.05263450019992888,
+        "aggregation_seconds": 0.00043780007399618626,
+        "other_seconds": 0.00013149937149137259
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 129,
+      "seconds": 0.6884544000495225,
+      "timing": {
+        "compute_seconds": 0.6303545999107882,
+        "serialization_seconds": 0.05737959989346564,
+        "aggregation_seconds": 0.0005692999111488461,
+        "other_seconds": 0.00015090033411979675
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 130,
+      "seconds": 0.6038875000085682,
+      "timing": {
+        "compute_seconds": 0.5474622003966942,
+        "serialization_seconds": 0.05575330043211579,
+        "aggregation_seconds": 0.0005354000022634864,
+        "other_seconds": 0.00013659917749464512
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 131,
+      "seconds": 0.5036071999929845,
+      "timing": {
+        "compute_seconds": 0.45505889994092286,
+        "serialization_seconds": 0.04807720019016415,
+        "aggregation_seconds": 0.0003594999434426427,
+        "other_seconds": 0.00011159991845488548
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 132,
+      "seconds": 0.5205659000203013,
+      "timing": {
+        "compute_seconds": 0.4668015001807362,
+        "serialization_seconds": 0.053254799684509635,
+        "aggregation_seconds": 0.0003890999360010028,
+        "other_seconds": 0.00012050021905452013
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 133,
+      "seconds": 0.5187020000303164,
+      "timing": {
+        "compute_seconds": 0.4685891999397427,
+        "serialization_seconds": 0.04953679977916181,
+        "aggregation_seconds": 0.00046250002924352884,
+        "other_seconds": 0.00011350028216838837
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 134,
+      "seconds": 0.5093262000009418,
+      "timing": {
+        "compute_seconds": 0.4602129003033042,
+        "serialization_seconds": 0.04862129990942776,
+        "aggregation_seconds": 0.0003855001414194703,
+        "other_seconds": 0.00010649964679032564
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 135,
+      "seconds": 0.49633949995040894,
+      "timing": {
+        "compute_seconds": 0.44539250002708286,
+        "serialization_seconds": 0.05032060015946627,
+        "aggregation_seconds": 0.0005051998887211084,
+        "other_seconds": 0.00012119987513870001
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 136,
+      "seconds": 0.5035796000156552,
+      "timing": {
+        "compute_seconds": 0.45190380001440644,
+        "serialization_seconds": 0.05108979973010719,
+        "aggregation_seconds": 0.00048129993956536055,
+        "other_seconds": 0.00010470033157616854
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 137,
+      "seconds": 0.5273794999811798,
+      "timing": {
+        "compute_seconds": 0.4757990996586159,
+        "serialization_seconds": 0.05097650014795363,
+        "aggregation_seconds": 0.00048500008415430784,
+        "other_seconds": 0.00011890009045600891
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 138,
+      "seconds": 0.5017478000372648,
+      "timing": {
+        "compute_seconds": 0.44841980026103556,
+        "serialization_seconds": 0.05287969997152686,
+        "aggregation_seconds": 0.0003386000171303749,
+        "other_seconds": 0.00010969978757202625
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 139,
+      "seconds": 0.5141413999954239,
+      "timing": {
+        "compute_seconds": 0.46446829999331385,
+        "serialization_seconds": 0.049225900205783546,
+        "aggregation_seconds": 0.0003386999014765024,
+        "other_seconds": 0.00010849989484995604
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 140,
+      "seconds": 0.5166699000401422,
+      "timing": {
+        "compute_seconds": 0.46599329984746873,
+        "serialization_seconds": 0.05017159983981401,
+        "aggregation_seconds": 0.0003925999626517296,
+        "other_seconds": 0.00011240039020776749
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 141,
+      "seconds": 0.5144041000166908,
+      "timing": {
+        "compute_seconds": 0.4634940001415089,
+        "serialization_seconds": 0.05037199996877462,
+        "aggregation_seconds": 0.00043000001460313797,
+        "other_seconds": 0.00010809989180415869
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 142,
+      "seconds": 0.5310434999410063,
+      "timing": {
+        "compute_seconds": 0.47492900025099516,
+        "serialization_seconds": 0.055535299819894135,
+        "aggregation_seconds": 0.0004608999006450176,
+        "other_seconds": 0.00011829996947199106
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 143,
+      "seconds": 0.5237728001084179,
+      "timing": {
+        "compute_seconds": 0.47158030013088137,
+        "serialization_seconds": 0.05169470014516264,
+        "aggregation_seconds": 0.0003860999131575227,
+        "other_seconds": 0.00011169991921633482
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 144,
+      "seconds": 0.5575310999993235,
+      "timing": {
+        "compute_seconds": 0.5020452998578548,
+        "serialization_seconds": 0.05498930043540895,
+        "aggregation_seconds": 0.00038790004327893257,
+        "other_seconds": 0.00010859966278076172
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 145,
+      "seconds": 0.5433226000750437,
+      "timing": {
+        "compute_seconds": 0.4900807002559304,
+        "serialization_seconds": 0.05260419985279441,
+        "aggregation_seconds": 0.0005131000652909279,
+        "other_seconds": 0.00012459990102797747
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 146,
+      "seconds": 0.5002324000233784,
+      "timing": {
+        "compute_seconds": 0.4501596001209691,
+        "serialization_seconds": 0.04960529995150864,
+        "aggregation_seconds": 0.00035429990384727716,
+        "other_seconds": 0.0001132000470533967
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 147,
+      "seconds": 0.509868299937807,
+      "timing": {
+        "compute_seconds": 0.45909330004360527,
+        "serialization_seconds": 0.0502857998944819,
+        "aggregation_seconds": 0.00038650003261864185,
+        "other_seconds": 0.00010269996710121632
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 148,
+      "seconds": 0.5246985999401659,
+      "timing": {
+        "compute_seconds": 0.4736525001935661,
+        "serialization_seconds": 0.05049119971226901,
+        "aggregation_seconds": 0.0004433998838067055,
+        "other_seconds": 0.0001115001505240798
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 149,
+      "seconds": 0.5782566999550909,
+      "timing": {
+        "compute_seconds": 0.5188712000381202,
+        "serialization_seconds": 0.05861189996358007,
+        "aggregation_seconds": 0.0006357000675052404,
+        "other_seconds": 0.00013789988588541746
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 150,
+      "seconds": 0.5408759000711143,
+      "timing": {
+        "compute_seconds": 0.4878432000987232,
+        "serialization_seconds": 0.052482300088740885,
+        "aggregation_seconds": 0.000435700174421072,
+        "other_seconds": 0.00011469970922917128
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 151,
+      "seconds": 0.5529514000518247,
+      "timing": {
+        "compute_seconds": 0.4997869998915121,
+        "serialization_seconds": 0.05260359973181039,
+        "aggregation_seconds": 0.0004463999066501856,
+        "other_seconds": 0.00011440052185207605
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 152,
+      "seconds": 0.5450855999952182,
+      "timing": {
+        "compute_seconds": 0.49156020022928715,
+        "serialization_seconds": 0.05300899990834296,
+        "aggregation_seconds": 0.0003963999915868044,
+        "other_seconds": 0.00011999986600130796
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 153,
+      "seconds": 0.5307168000144884,
+      "timing": {
+        "compute_seconds": 0.47844450001139194,
+        "serialization_seconds": 0.0516966002760455,
+        "aggregation_seconds": 0.00045689998660236597,
+        "other_seconds": 0.0001187997404485941
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 154,
+      "seconds": 0.6352004000218585,
+      "timing": {
+        "compute_seconds": 0.5754636998753995,
+        "serialization_seconds": 0.05906659993343055,
+        "aggregation_seconds": 0.0005402000388130546,
+        "other_seconds": 0.00012990017421543598
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 155,
+      "seconds": 0.765285599976778,
+      "timing": {
+        "compute_seconds": 0.7030390002764761,
+        "serialization_seconds": 0.061350699863396585,
+        "aggregation_seconds": 0.0007504000095650554,
+        "other_seconds": 0.00014549982734024525
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 156,
+      "seconds": 0.5951428000116721,
+      "timing": {
+        "compute_seconds": 0.5368649999145418,
+        "serialization_seconds": 0.057750800042413175,
+        "aggregation_seconds": 0.0004091000882908702,
+        "other_seconds": 0.00011789996642619371
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 157,
+      "seconds": 0.5553098999662325,
+      "timing": {
+        "compute_seconds": 0.5015590998809785,
+        "serialization_seconds": 0.05317820014897734,
+        "aggregation_seconds": 0.000444800010882318,
+        "other_seconds": 0.00012779992539435625
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 158,
+      "seconds": 0.5324918000260368,
+      "timing": {
+        "compute_seconds": 0.4796449998393655,
+        "serialization_seconds": 0.052336399792693555,
+        "aggregation_seconds": 0.00040090002585202456,
+        "other_seconds": 0.00010950036812573671
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 159,
+      "seconds": 0.544431300018914,
+      "timing": {
+        "compute_seconds": 0.49066970008425415,
+        "serialization_seconds": 0.05317100009415299,
+        "aggregation_seconds": 0.00047470012214034796,
+        "other_seconds": 0.00011589971836656332
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 160,
+      "seconds": 0.5294227000558749,
+      "timing": {
+        "compute_seconds": 0.4761659000068903,
+        "serialization_seconds": 0.05271629977505654,
+        "aggregation_seconds": 0.0004154999041929841,
+        "other_seconds": 0.00012500036973506212
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 161,
+      "seconds": 0.5396376000717282,
+      "timing": {
+        "compute_seconds": 0.488218599697575,
+        "serialization_seconds": 0.050878899986855686,
+        "aggregation_seconds": 0.0004190000472590327,
+        "other_seconds": 0.00012110034003853798
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 162,
+      "seconds": 0.5507568999892101,
+      "timing": {
+        "compute_seconds": 0.4962757001630962,
+        "serialization_seconds": 0.054012099863030016,
+        "aggregation_seconds": 0.00035069999285042286,
+        "other_seconds": 0.0001183999702334404
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 163,
+      "seconds": 0.5239139000186697,
+      "timing": {
+        "compute_seconds": 0.4730429000919685,
+        "serialization_seconds": 0.0504301997134462,
+        "aggregation_seconds": 0.00032450014259666204,
+        "other_seconds": 0.00011630007065832615
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 164,
+      "seconds": 0.5595205000136048,
+      "timing": {
+        "compute_seconds": 0.501991199911572,
+        "serialization_seconds": 0.05673799989745021,
+        "aggregation_seconds": 0.0006700999801978469,
+        "other_seconds": 0.00012120022438466549
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 165,
+      "seconds": 0.5240938999922946,
+      "timing": {
+        "compute_seconds": 0.47429039992857724,
+        "serialization_seconds": 0.04920399992261082,
+        "aggregation_seconds": 0.0004762000171467662,
+        "other_seconds": 0.00012330012395977974
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 166,
+      "seconds": 0.5453319000080228,
+      "timing": {
+        "compute_seconds": 0.49203029985073954,
+        "serialization_seconds": 0.052775900228880346,
+        "aggregation_seconds": 0.00040380004793405533,
+        "other_seconds": 0.00012189988046884537
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 167,
+      "seconds": 0.5333973000524566,
+      "timing": {
+        "compute_seconds": 0.4805005000671372,
+        "serialization_seconds": 0.05183120002038777,
+        "aggregation_seconds": 0.0009417999535799026,
+        "other_seconds": 0.0001238000113517046
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 168,
+      "seconds": 0.6080768000101671,
+      "timing": {
+        "compute_seconds": 0.5491254997905344,
+        "serialization_seconds": 0.0582645001122728,
+        "aggregation_seconds": 0.0005450000753626227,
+        "other_seconds": 0.00014180003199726343
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 169,
+      "seconds": 0.5677776999073103,
+      "timing": {
+        "compute_seconds": 0.5137485999148339,
+        "serialization_seconds": 0.053218800108879805,
+        "aggregation_seconds": 0.000682000070810318,
+        "other_seconds": 0.0001282998127862811
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 170,
+      "seconds": 0.5424425000092015,
+      "timing": {
+        "compute_seconds": 0.4895550002111122,
+        "serialization_seconds": 0.05230420012958348,
+        "aggregation_seconds": 0.00046690006274729967,
+        "other_seconds": 0.00011639960575848818
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 171,
+      "seconds": 0.537618900067173,
+      "timing": {
+        "compute_seconds": 0.4832570001017302,
+        "serialization_seconds": 0.053672000067308545,
+        "aggregation_seconds": 0.0005599000724032521,
+        "other_seconds": 0.00012999982573091984
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 172,
+      "seconds": 0.5274214000673965,
+      "timing": {
+        "compute_seconds": 0.4743128000991419,
+        "serialization_seconds": 0.05247509991750121,
+        "aggregation_seconds": 0.0005218000151216984,
+        "other_seconds": 0.00011170003563165665
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 173,
+      "seconds": 0.5066015999764204,
+      "timing": {
+        "compute_seconds": 0.4582788001280278,
+        "serialization_seconds": 0.04773480026051402,
+        "aggregation_seconds": 0.00047530001029372215,
+        "other_seconds": 0.00011269957758486271
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 174,
+      "seconds": 0.5621259999461472,
+      "timing": {
+        "compute_seconds": 0.5071143998065963,
+        "serialization_seconds": 0.05429369991179556,
+        "aggregation_seconds": 0.0005856999196112156,
+        "other_seconds": 0.00013220030814409256
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 175,
+      "seconds": 0.4922684000339359,
+      "timing": {
+        "compute_seconds": 0.4447744998615235,
+        "serialization_seconds": 0.04690240032505244,
+        "aggregation_seconds": 0.0004705999745056033,
+        "other_seconds": 0.000120899872854352
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 176,
+      "seconds": 0.46878240001387894,
+      "timing": {
+        "compute_seconds": 0.4215041999705136,
+        "serialization_seconds": 0.04672659980133176,
+        "aggregation_seconds": 0.0004425999941304326,
+        "other_seconds": 0.0001090002479031682
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 177,
+      "seconds": 0.5118014999898151,
+      "timing": {
+        "compute_seconds": 0.4590419001178816,
+        "serialization_seconds": 0.052193399984389544,
+        "aggregation_seconds": 0.0004550999728962779,
+        "other_seconds": 0.0001110999146476388
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 178,
+      "seconds": 0.5272720999782905,
+      "timing": {
+        "compute_seconds": 0.4761725002899766,
+        "serialization_seconds": 0.05047890020068735,
+        "aggregation_seconds": 0.00048649997916072607,
+        "other_seconds": 0.0001341995084658265
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 179,
+      "seconds": 0.5447530000237748,
+      "timing": {
+        "compute_seconds": 0.4912571001332253,
+        "serialization_seconds": 0.05288159986957908,
+        "aggregation_seconds": 0.0004980999510735273,
+        "other_seconds": 0.00011620006989687681
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 180,
+      "seconds": 0.5795893999747932,
+      "timing": {
+        "compute_seconds": 0.5222839000634849,
+        "serialization_seconds": 0.0563149998197332,
+        "aggregation_seconds": 0.0008681000908836722,
+        "other_seconds": 0.00012240000069141388
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 181,
+      "seconds": 0.6866340000415221,
+      "timing": {
+        "compute_seconds": 0.6241188000421971,
+        "serialization_seconds": 0.061861200141720474,
+        "aggregation_seconds": 0.0005374000174924731,
+        "other_seconds": 0.0001165998401120305
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 182,
+      "seconds": 0.5124783999053761,
+      "timing": {
+        "compute_seconds": 0.4521150004584342,
+        "serialization_seconds": 0.05985039996448904,
+        "aggregation_seconds": 0.00040829996578395367,
+        "other_seconds": 0.00010469951666891575
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 183,
+      "seconds": 0.5064877000404522,
+      "timing": {
+        "compute_seconds": 0.45089550013653934,
+        "serialization_seconds": 0.05509440018795431,
+        "aggregation_seconds": 0.00039469997864216566,
+        "other_seconds": 0.00010309973731637001
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 184,
+      "seconds": 0.5286062000086531,
+      "timing": {
+        "compute_seconds": 0.4757723000366241,
+        "serialization_seconds": 0.052310299943201244,
+        "aggregation_seconds": 0.0004124999977648258,
+        "other_seconds": 0.00011110003106296062
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 185,
+      "seconds": 0.495980600011535,
+      "timing": {
+        "compute_seconds": 0.44377380004152656,
+        "serialization_seconds": 0.051685300190001726,
+        "aggregation_seconds": 0.000403400044888258,
+        "other_seconds": 0.00011809973511844873
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 186,
+      "seconds": 0.5129254999337718,
+      "timing": {
+        "compute_seconds": 0.46010489971376956,
+        "serialization_seconds": 0.05225930002052337,
+        "aggregation_seconds": 0.0004428998799994588,
+        "other_seconds": 0.00011840031947940588
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 187,
+      "seconds": 0.5245957000879571,
+      "timing": {
+        "compute_seconds": 0.47175230004359037,
+        "serialization_seconds": 0.05228809977415949,
+        "aggregation_seconds": 0.0004472000291571021,
+        "other_seconds": 0.00010810024105012417
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 188,
+      "seconds": 0.5548501999583095,
+      "timing": {
+        "compute_seconds": 0.49361300002783537,
+        "serialization_seconds": 0.06073239981196821,
+        "aggregation_seconds": 0.0003974999999627471,
+        "other_seconds": 0.00010730011854320765
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 189,
+      "seconds": 0.5319802999729291,
+      "timing": {
+        "compute_seconds": 0.46871170005761087,
+        "serialization_seconds": 0.06268899992574006,
+        "aggregation_seconds": 0.00047740002628415823,
+        "other_seconds": 0.00010219996329396963
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 190,
+      "seconds": 0.5093407001113519,
+      "timing": {
+        "compute_seconds": 0.4491277001798153,
+        "serialization_seconds": 0.05964089999906719,
+        "aggregation_seconds": 0.00047090009320527315,
+        "other_seconds": 0.00010119983926415443
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 191,
+      "seconds": 0.5292383000487462,
+      "timing": {
+        "compute_seconds": 0.4640433001331985,
+        "serialization_seconds": 0.06461019988637418,
+        "aggregation_seconds": 0.00047889992129057646,
+        "other_seconds": 0.00010590010788291693
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 192,
+      "seconds": 0.6082580999936908,
+      "timing": {
+        "compute_seconds": 0.5360955002252012,
+        "serialization_seconds": 0.07150200009346008,
+        "aggregation_seconds": 0.0005414000479504466,
+        "other_seconds": 0.00011919962707906961
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 193,
+      "seconds": 0.5566530000651255,
+      "timing": {
+        "compute_seconds": 0.4952120000962168,
+        "serialization_seconds": 0.06082150025758892,
+        "aggregation_seconds": 0.0005074000218883157,
+        "other_seconds": 0.00011209968943148851
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 194,
+      "seconds": 0.5342115999665111,
+      "timing": {
+        "compute_seconds": 0.4695669001666829,
+        "serialization_seconds": 0.0640735998749733,
+        "aggregation_seconds": 0.00044279987923800945,
+        "other_seconds": 0.00012830004561692476
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 195,
+      "seconds": 0.4898770999861881,
+      "timing": {
+        "compute_seconds": 0.4303834999445826,
+        "serialization_seconds": 0.05897309991996735,
+        "aggregation_seconds": 0.0004260999849066138,
+        "other_seconds": 9.4400136731565e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 196,
+      "seconds": 0.5012674999888986,
+      "timing": {
+        "compute_seconds": 0.43806410022079945,
+        "serialization_seconds": 0.0626042002113536,
+        "aggregation_seconds": 0.0005003999685868621,
+        "other_seconds": 9.879958815872669e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 197,
+      "seconds": 0.49116670002695173,
+      "timing": {
+        "compute_seconds": 0.4359884000150487,
+        "serialization_seconds": 0.054626999772153795,
+        "aggregation_seconds": 0.00045489997137337923,
+        "other_seconds": 9.640026837587357e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 198,
+      "seconds": 0.48656029999256134,
+      "timing": {
+        "compute_seconds": 0.4283151002600789,
+        "serialization_seconds": 0.05777240020688623,
+        "aggregation_seconds": 0.0003717000363394618,
+        "other_seconds": 0.00010109948925673962
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 199,
+      "seconds": 0.4802240999415517,
+      "timing": {
+        "compute_seconds": 0.4222956000594422,
+        "serialization_seconds": 0.05739819968584925,
+        "aggregation_seconds": 0.0004246999742463231,
+        "other_seconds": 0.00010560022201389074
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    },
+    {
+      "round": 200,
+      "seconds": 0.4831823999993503,
+      "timing": {
+        "compute_seconds": 0.42767819995060563,
+        "serialization_seconds": 0.05485960026271641,
+        "aggregation_seconds": 0.0005525000160560012,
+        "other_seconds": 9.209976997226477e-05
+      },
+      "traffic_delta": {
+        "messages": 10,
+        "up_bytes": 12951637,
+        "down_bytes": 12951642,
+        "total_bytes": 25903279
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "round": 0,
+      "cumulative_method_seconds": 0.008647100068628788,
+      "cumulative_with_prep_seconds": 0.27119480015244335,
+      "cumulative_bytes": 0,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.192,
+          "nmi": 0.0923714572772048,
+          "ari": 0.03669242816457182,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.212,
+          "cluster_counts": [
+            23,
+            212,
+            124,
+            35,
+            89,
+            32,
+            33,
+            182,
+            155,
+            115
+          ],
+          "cluster_proportions": [
+            0.023,
+            0.212,
+            0.124,
+            0.035,
+            0.089,
+            0.032,
+            0.033,
+            0.182,
+            0.155,
+            0.115
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.137,
+          "nmi": 0.03995037178592368,
+          "ari": 0.0030227951605691266,
+          "occupied": 4,
+          "empty": 6,
+          "largest": 0.946,
+          "cluster_counts": [
+            15,
+            946,
+            35,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.015,
+            0.946,
+            0.035,
+            0.004,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.165,
+          "nmi": 0.04870187082266054,
+          "ari": 0.011480950487893864,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.348,
+          "cluster_counts": [
+            192,
+            151,
+            12,
+            30,
+            348,
+            79,
+            30,
+            14,
+            141,
+            3
+          ],
+          "cluster_proportions": [
+            0.192,
+            0.151,
+            0.012,
+            0.03,
+            0.348,
+            0.079,
+            0.03,
+            0.014,
+            0.141,
+            0.003
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.199,
+          "nmi": 0.10579673421408889,
+          "ari": 0.04271261832973699,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.275,
+          "cluster_counts": [
+            186,
+            275,
+            114,
+            87,
+            0,
+            1,
+            123,
+            10,
+            33,
+            171
+          ],
+          "cluster_proportions": [
+            0.186,
+            0.275,
+            0.114,
+            0.087,
+            0.0,
+            0.001,
+            0.123,
+            0.01,
+            0.033,
+            0.171
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.192,
+          "nmi": 0.0930244603787174,
+          "ari": 0.03309987148732683,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.218,
+          "cluster_counts": [
+            167,
+            218,
+            100,
+            82,
+            218,
+            55,
+            20,
+            52,
+            56,
+            32
+          ],
+          "cluster_proportions": [
+            0.167,
+            0.218,
+            0.1,
+            0.082,
+            0.218,
+            0.055,
+            0.02,
+            0.052,
+            0.056,
+            0.032
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.201,
+          "nmi": 0.09185283900677892,
+          "ari": 0.037845145157354265,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.265,
+          "cluster_counts": [
+            61,
+            133,
+            57,
+            144,
+            5,
+            32,
+            29,
+            265,
+            182,
+            92
+          ],
+          "cluster_proportions": [
+            0.061,
+            0.133,
+            0.057,
+            0.144,
+            0.005,
+            0.032,
+            0.029,
+            0.265,
+            0.182,
+            0.092
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18100000000000002,
+        "nmi": 0.07861628891422903,
+        "ari": 0.027475634797908818,
+        "occupied": 8.833333333333334,
+        "empty": 1.1666666666666667,
+        "largest": 0.3773333333333333
+      }
+    },
+    {
+      "round": 10,
+      "cumulative_method_seconds": 5.587436099885963,
+      "cumulative_with_prep_seconds": 5.8499837999697775,
+      "cumulative_bytes": 259032790,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.183,
+          "nmi": 0.08727347212037921,
+          "ari": 0.029368713840480946,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.361,
+          "cluster_counts": [
+            139,
+            361,
+            11,
+            183,
+            225,
+            26,
+            42,
+            8,
+            3,
+            2
+          ],
+          "cluster_proportions": [
+            0.139,
+            0.361,
+            0.011,
+            0.183,
+            0.225,
+            0.026,
+            0.042,
+            0.008,
+            0.003,
+            0.002
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.137,
+          "nmi": 0.03995037178592368,
+          "ari": 0.0030227951605691266,
+          "occupied": 4,
+          "empty": 6,
+          "largest": 0.946,
+          "cluster_counts": [
+            15,
+            946,
+            35,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.015,
+            0.946,
+            0.035,
+            0.004,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.159,
+          "nmi": 0.054835139730876746,
+          "ari": 0.012341407468890475,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.418,
+          "cluster_counts": [
+            221,
+            135,
+            8,
+            9,
+            418,
+            33,
+            18,
+            3,
+            34,
+            121
+          ],
+          "cluster_proportions": [
+            0.221,
+            0.135,
+            0.008,
+            0.009,
+            0.418,
+            0.033,
+            0.018,
+            0.003,
+            0.034,
+            0.121
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.223,
+          "nmi": 0.119462565087625,
+          "ari": 0.04964202875034741,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.242,
+          "cluster_counts": [
+            7,
+            242,
+            53,
+            124,
+            158,
+            218,
+            0,
+            98,
+            26,
+            74
+          ],
+          "cluster_proportions": [
+            0.007,
+            0.242,
+            0.053,
+            0.124,
+            0.158,
+            0.218,
+            0.0,
+            0.098,
+            0.026,
+            0.074
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.189,
+          "nmi": 0.09158700253097656,
+          "ari": 0.02864595233938609,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.202,
+          "cluster_counts": [
+            124,
+            163,
+            202,
+            88,
+            59,
+            53,
+            49,
+            23,
+            193,
+            46
+          ],
+          "cluster_proportions": [
+            0.124,
+            0.163,
+            0.202,
+            0.088,
+            0.059,
+            0.053,
+            0.049,
+            0.023,
+            0.193,
+            0.046
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.201,
+          "nmi": 0.10153754465419601,
+          "ari": 0.04261209223277356,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.248,
+          "cluster_counts": [
+            248,
+            41,
+            106,
+            28,
+            72,
+            47,
+            84,
+            124,
+            119,
+            131
+          ],
+          "cluster_proportions": [
+            0.248,
+            0.041,
+            0.106,
+            0.028,
+            0.072,
+            0.047,
+            0.084,
+            0.124,
+            0.119,
+            0.131
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18200000000000002,
+        "nmi": 0.0824410159849962,
+        "ari": 0.02760549829874127,
+        "occupied": 8.833333333333334,
+        "empty": 1.1666666666666667,
+        "largest": 0.4028333333333333
+      }
+    },
+    {
+      "round": 20,
+      "cumulative_method_seconds": 9.10637440008577,
+      "cumulative_with_prep_seconds": 9.368922100169584,
+      "cumulative_bytes": 518065580,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.193,
+          "nmi": 0.10055747200148017,
+          "ari": 0.03291330901440608,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.281,
+          "cluster_counts": [
+            131,
+            281,
+            194,
+            22,
+            99,
+            14,
+            129,
+            26,
+            103,
+            1
+          ],
+          "cluster_proportions": [
+            0.131,
+            0.281,
+            0.194,
+            0.022,
+            0.099,
+            0.014,
+            0.129,
+            0.026,
+            0.103,
+            0.001
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.137,
+          "nmi": 0.040086616440675606,
+          "ari": 0.0031550681194896686,
+          "occupied": 4,
+          "empty": 6,
+          "largest": 0.945,
+          "cluster_counts": [
+            16,
+            945,
+            35,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.016,
+            0.945,
+            0.035,
+            0.004,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.166,
+          "nmi": 0.04740050925282221,
+          "ari": 0.00807237980697145,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.314,
+          "cluster_counts": [
+            238,
+            50,
+            314,
+            6,
+            83,
+            11,
+            201,
+            13,
+            7,
+            77
+          ],
+          "cluster_proportions": [
+            0.238,
+            0.05,
+            0.314,
+            0.006,
+            0.083,
+            0.011,
+            0.201,
+            0.013,
+            0.007,
+            0.077
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.204,
+          "nmi": 0.11713230453713526,
+          "ari": 0.05145733298663109,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.343,
+          "cluster_counts": [
+            7,
+            194,
+            43,
+            108,
+            343,
+            0,
+            143,
+            95,
+            63,
+            4
+          ],
+          "cluster_proportions": [
+            0.007,
+            0.194,
+            0.043,
+            0.108,
+            0.343,
+            0.0,
+            0.143,
+            0.095,
+            0.063,
+            0.004
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.195,
+          "nmi": 0.0876227988488817,
+          "ari": 0.030678840578153236,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.205,
+          "cluster_counts": [
+            84,
+            156,
+            175,
+            91,
+            77,
+            205,
+            88,
+            10,
+            30,
+            84
+          ],
+          "cluster_proportions": [
+            0.084,
+            0.156,
+            0.175,
+            0.091,
+            0.077,
+            0.205,
+            0.088,
+            0.01,
+            0.03,
+            0.084
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.203,
+          "nmi": 0.10307624691099586,
+          "ari": 0.043812635734272964,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.246,
+          "cluster_counts": [
+            246,
+            38,
+            108,
+            37,
+            83,
+            46,
+            82,
+            119,
+            120,
+            121
+          ],
+          "cluster_proportions": [
+            0.246,
+            0.038,
+            0.108,
+            0.037,
+            0.083,
+            0.046,
+            0.082,
+            0.119,
+            0.12,
+            0.121
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18300000000000002,
+        "nmi": 0.08264599133199847,
+        "ari": 0.028348261039987416,
+        "occupied": 8.833333333333334,
+        "empty": 1.1666666666666667,
+        "largest": 0.389
+      }
+    },
+    {
+      "round": 30,
+      "cumulative_method_seconds": 12.72425950015895,
+      "cumulative_with_prep_seconds": 12.986807200242765,
+      "cumulative_bytes": 777098370,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.172,
+          "nmi": 0.09307095002947736,
+          "ari": 0.024410131805295932,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.247,
+          "cluster_counts": [
+            233,
+            140,
+            221,
+            247,
+            71,
+            6,
+            1,
+            33,
+            36,
+            12
+          ],
+          "cluster_proportions": [
+            0.233,
+            0.14,
+            0.221,
+            0.247,
+            0.071,
+            0.006,
+            0.001,
+            0.033,
+            0.036,
+            0.012
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.138,
+          "nmi": 0.046015271167729736,
+          "ari": 0.0035305434015694866,
+          "occupied": 5,
+          "empty": 5,
+          "largest": 0.912,
+          "cluster_counts": [
+            15,
+            912,
+            36,
+            35,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.015,
+            0.912,
+            0.036,
+            0.035,
+            0.002,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.177,
+          "nmi": 0.05034454088480287,
+          "ari": 0.012247942350892212,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.336,
+          "cluster_counts": [
+            105,
+            272,
+            11,
+            6,
+            10,
+            36,
+            102,
+            336,
+            12,
+            110
+          ],
+          "cluster_proportions": [
+            0.105,
+            0.272,
+            0.011,
+            0.006,
+            0.01,
+            0.036,
+            0.102,
+            0.336,
+            0.012,
+            0.11
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.201,
+          "nmi": 0.10687252360692558,
+          "ari": 0.047063210143017925,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.328,
+          "cluster_counts": [
+            6,
+            208,
+            96,
+            78,
+            328,
+            0,
+            81,
+            144,
+            56,
+            3
+          ],
+          "cluster_proportions": [
+            0.006,
+            0.208,
+            0.096,
+            0.078,
+            0.328,
+            0.0,
+            0.081,
+            0.144,
+            0.056,
+            0.003
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.188,
+          "nmi": 0.08683691527917108,
+          "ari": 0.03218550404663255,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.265,
+          "cluster_counts": [
+            14,
+            265,
+            131,
+            48,
+            58,
+            89,
+            79,
+            77,
+            99,
+            140
+          ],
+          "cluster_proportions": [
+            0.014,
+            0.265,
+            0.131,
+            0.048,
+            0.058,
+            0.089,
+            0.079,
+            0.077,
+            0.099,
+            0.14
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.207,
+          "nmi": 0.10778745584715431,
+          "ari": 0.045053856491005025,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.234,
+          "cluster_counts": [
+            82,
+            99,
+            140,
+            130,
+            92,
+            50,
+            123,
+            234,
+            7,
+            43
+          ],
+          "cluster_proportions": [
+            0.082,
+            0.099,
+            0.14,
+            0.13,
+            0.092,
+            0.05,
+            0.123,
+            0.234,
+            0.007,
+            0.043
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.1805,
+        "nmi": 0.08182127613587682,
+        "ari": 0.027415198039735522,
+        "occupied": 9.0,
+        "empty": 1.0,
+        "largest": 0.387
+      }
+    },
+    {
+      "round": 40,
+      "cumulative_method_seconds": 16.287500900099985,
+      "cumulative_with_prep_seconds": 16.5500486001838,
+      "cumulative_bytes": 1036131160,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.184,
+          "nmi": 0.08977537177080495,
+          "ari": 0.028160621736971637,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.233,
+          "cluster_counts": [
+            209,
+            159,
+            233,
+            185,
+            62,
+            66,
+            2,
+            26,
+            50,
+            8
+          ],
+          "cluster_proportions": [
+            0.209,
+            0.159,
+            0.233,
+            0.185,
+            0.062,
+            0.066,
+            0.002,
+            0.026,
+            0.05,
+            0.008
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.139,
+          "nmi": 0.04653803750658437,
+          "ari": 0.0034778575783057713,
+          "occupied": 5,
+          "empty": 5,
+          "largest": 0.896,
+          "cluster_counts": [
+            21,
+            896,
+            46,
+            35,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.021,
+            0.896,
+            0.046,
+            0.035,
+            0.002,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.171,
+          "nmi": 0.049050854154225346,
+          "ari": 0.010768873928728401,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.366,
+          "cluster_counts": [
+            136,
+            281,
+            12,
+            3,
+            7,
+            86,
+            91,
+            366,
+            15,
+            3
+          ],
+          "cluster_proportions": [
+            0.136,
+            0.281,
+            0.012,
+            0.003,
+            0.007,
+            0.086,
+            0.091,
+            0.366,
+            0.015,
+            0.003
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.203,
+          "nmi": 0.10584327592238331,
+          "ari": 0.046242003647431786,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.327,
+          "cluster_counts": [
+            6,
+            204,
+            93,
+            82,
+            327,
+            0,
+            82,
+            148,
+            55,
+            3
+          ],
+          "cluster_proportions": [
+            0.006,
+            0.204,
+            0.093,
+            0.082,
+            0.327,
+            0.0,
+            0.082,
+            0.148,
+            0.055,
+            0.003
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.21,
+          "nmi": 0.09495896500927688,
+          "ari": 0.03369773892637667,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.232,
+          "cluster_counts": [
+            157,
+            232,
+            60,
+            81,
+            151,
+            12,
+            126,
+            79,
+            47,
+            55
+          ],
+          "cluster_proportions": [
+            0.157,
+            0.232,
+            0.06,
+            0.081,
+            0.151,
+            0.012,
+            0.126,
+            0.079,
+            0.047,
+            0.055
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.10353019974397544,
+          "ari": 0.0434051753253382,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.236,
+          "cluster_counts": [
+            81,
+            94,
+            142,
+            135,
+            89,
+            46,
+            128,
+            236,
+            7,
+            42
+          ],
+          "cluster_proportions": [
+            0.081,
+            0.094,
+            0.142,
+            0.135,
+            0.089,
+            0.046,
+            0.128,
+            0.236,
+            0.007,
+            0.042
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18483333333333332,
+        "nmi": 0.08161611735120837,
+        "ari": 0.027625378523858744,
+        "occupied": 9.0,
+        "empty": 1.0,
+        "largest": 0.38166666666666665
+      }
+    },
+    {
+      "round": 50,
+      "cumulative_method_seconds": 19.869777100160718,
+      "cumulative_with_prep_seconds": 20.132324800244533,
+      "cumulative_bytes": 1295163950,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.195,
+          "nmi": 0.09017370423512713,
+          "ari": 0.031247944317377593,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.259,
+          "cluster_counts": [
+            176,
+            259,
+            26,
+            22,
+            58,
+            5,
+            38,
+            71,
+            145,
+            200
+          ],
+          "cluster_proportions": [
+            0.176,
+            0.259,
+            0.026,
+            0.022,
+            0.058,
+            0.005,
+            0.038,
+            0.071,
+            0.145,
+            0.2
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.143,
+          "nmi": 0.04888541384805373,
+          "ari": 0.003471653408197519,
+          "occupied": 5,
+          "empty": 5,
+          "largest": 0.892,
+          "cluster_counts": [
+            33,
+            892,
+            38,
+            35,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.033,
+            0.892,
+            0.038,
+            0.035,
+            0.0,
+            0.002,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.174,
+          "nmi": 0.051937130032007575,
+          "ari": 0.011700066453444952,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.343,
+          "cluster_counts": [
+            98,
+            103,
+            3,
+            343,
+            11,
+            15,
+            309,
+            102,
+            3,
+            13
+          ],
+          "cluster_proportions": [
+            0.098,
+            0.103,
+            0.003,
+            0.343,
+            0.011,
+            0.015,
+            0.309,
+            0.102,
+            0.003,
+            0.013
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.196,
+          "nmi": 0.10909124976770976,
+          "ari": 0.03526658346317319,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.283,
+          "cluster_counts": [
+            6,
+            283,
+            65,
+            0,
+            150,
+            144,
+            14,
+            84,
+            159,
+            95
+          ],
+          "cluster_proportions": [
+            0.006,
+            0.283,
+            0.065,
+            0.0,
+            0.15,
+            0.144,
+            0.014,
+            0.084,
+            0.159,
+            0.095
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.187,
+          "nmi": 0.09592469337040363,
+          "ari": 0.03347762085598532,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.216,
+          "cluster_counts": [
+            13,
+            216,
+            162,
+            47,
+            85,
+            111,
+            70,
+            18,
+            147,
+            131
+          ],
+          "cluster_proportions": [
+            0.013,
+            0.216,
+            0.162,
+            0.047,
+            0.085,
+            0.111,
+            0.07,
+            0.018,
+            0.147,
+            0.131
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.211,
+          "nmi": 0.1043609264891712,
+          "ari": 0.04553232410716552,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.241,
+          "cluster_counts": [
+            82,
+            83,
+            158,
+            133,
+            80,
+            45,
+            125,
+            241,
+            7,
+            46
+          ],
+          "cluster_proportions": [
+            0.082,
+            0.083,
+            0.158,
+            0.133,
+            0.08,
+            0.045,
+            0.125,
+            0.241,
+            0.007,
+            0.046
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18433333333333335,
+        "nmi": 0.08339551962374551,
+        "ari": 0.026782698767557348,
+        "occupied": 9.0,
+        "empty": 1.0,
+        "largest": 0.37233333333333335
+      }
+    },
+    {
+      "round": 60,
+      "cumulative_method_seconds": 23.7771813001018,
+      "cumulative_with_prep_seconds": 24.039729000185616,
+      "cumulative_bytes": 1554196740,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.187,
+          "nmi": 0.09439908318978445,
+          "ari": 0.03264854169651165,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.378,
+          "cluster_counts": [
+            196,
+            378,
+            39,
+            123,
+            47,
+            114,
+            5,
+            82,
+            5,
+            11
+          ],
+          "cluster_proportions": [
+            0.196,
+            0.378,
+            0.039,
+            0.123,
+            0.047,
+            0.114,
+            0.005,
+            0.082,
+            0.005,
+            0.011
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.144,
+          "nmi": 0.048329976333199895,
+          "ari": 0.0034643318834951748,
+          "occupied": 5,
+          "empty": 5,
+          "largest": 0.886,
+          "cluster_counts": [
+            36,
+            886,
+            41,
+            35,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.036,
+            0.886,
+            0.041,
+            0.035,
+            0.0,
+            0.002,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.172,
+          "nmi": 0.04829831956790996,
+          "ari": 0.010591854926532186,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.346,
+          "cluster_counts": [
+            95,
+            346,
+            3,
+            10,
+            10,
+            97,
+            336,
+            88,
+            1,
+            14
+          ],
+          "cluster_proportions": [
+            0.095,
+            0.346,
+            0.003,
+            0.01,
+            0.01,
+            0.097,
+            0.336,
+            0.088,
+            0.001,
+            0.014
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.205,
+          "nmi": 0.11275033759194925,
+          "ari": 0.04710542266713767,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.293,
+          "cluster_counts": [
+            182,
+            24,
+            0,
+            29,
+            101,
+            293,
+            38,
+            55,
+            228,
+            50
+          ],
+          "cluster_proportions": [
+            0.182,
+            0.024,
+            0.0,
+            0.029,
+            0.101,
+            0.293,
+            0.038,
+            0.055,
+            0.228,
+            0.05
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.189,
+          "nmi": 0.09730462348092751,
+          "ari": 0.034604693171800385,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.216,
+          "cluster_counts": [
+            13,
+            216,
+            166,
+            47,
+            86,
+            109,
+            72,
+            18,
+            143,
+            130
+          ],
+          "cluster_proportions": [
+            0.013,
+            0.216,
+            0.166,
+            0.047,
+            0.086,
+            0.109,
+            0.072,
+            0.018,
+            0.143,
+            0.13
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.206,
+          "nmi": 0.10486347881512802,
+          "ari": 0.04425506057096301,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.24,
+          "cluster_counts": [
+            11,
+            88,
+            110,
+            113,
+            52,
+            51,
+            81,
+            240,
+            129,
+            125
+          ],
+          "cluster_proportions": [
+            0.011,
+            0.088,
+            0.11,
+            0.113,
+            0.052,
+            0.051,
+            0.081,
+            0.24,
+            0.129,
+            0.125
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.1838333333333333,
+        "nmi": 0.08432430316314983,
+        "ari": 0.028778317486073346,
+        "occupied": 9.0,
+        "empty": 1.0,
+        "largest": 0.39316666666666666
+      }
+    },
+    {
+      "round": 70,
+      "cumulative_method_seconds": 27.38184540020302,
+      "cumulative_with_prep_seconds": 27.644393100286834,
+      "cumulative_bytes": 1813229530,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.19,
+          "nmi": 0.09398278132195914,
+          "ari": 0.02865953320373125,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.34,
+          "cluster_counts": [
+            216,
+            340,
+            22,
+            34,
+            0,
+            15,
+            9,
+            36,
+            200,
+            128
+          ],
+          "cluster_proportions": [
+            0.216,
+            0.34,
+            0.022,
+            0.034,
+            0.0,
+            0.015,
+            0.009,
+            0.036,
+            0.2,
+            0.128
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.146,
+          "nmi": 0.05061490499883187,
+          "ari": 0.004056449155220498,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.856,
+          "cluster_counts": [
+            35,
+            856,
+            73,
+            34,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.035,
+            0.856,
+            0.073,
+            0.034,
+            0.001,
+            0.0,
+            0.001,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.172,
+          "nmi": 0.0499281707819106,
+          "ari": 0.012383426625291079,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.37,
+          "cluster_counts": [
+            134,
+            61,
+            107,
+            3,
+            34,
+            9,
+            263,
+            5,
+            14,
+            370
+          ],
+          "cluster_proportions": [
+            0.134,
+            0.061,
+            0.107,
+            0.003,
+            0.034,
+            0.009,
+            0.263,
+            0.005,
+            0.014,
+            0.37
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.194,
+          "nmi": 0.10396943169453833,
+          "ari": 0.048963277107864786,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.328,
+          "cluster_counts": [
+            223,
+            113,
+            0,
+            32,
+            9,
+            95,
+            99,
+            100,
+            328,
+            1
+          ],
+          "cluster_proportions": [
+            0.223,
+            0.113,
+            0.0,
+            0.032,
+            0.009,
+            0.095,
+            0.099,
+            0.1,
+            0.328,
+            0.001
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.19,
+          "nmi": 0.09680700750786975,
+          "ari": 0.03472624985449903,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.234,
+          "cluster_counts": [
+            13,
+            234,
+            165,
+            45,
+            87,
+            94,
+            72,
+            17,
+            122,
+            151
+          ],
+          "cluster_proportions": [
+            0.013,
+            0.234,
+            0.165,
+            0.045,
+            0.087,
+            0.094,
+            0.072,
+            0.017,
+            0.122,
+            0.151
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.197,
+          "nmi": 0.1020953457192065,
+          "ari": 0.04400745524527056,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.243,
+          "cluster_counts": [
+            32,
+            243,
+            128,
+            87,
+            129,
+            51,
+            96,
+            142,
+            4,
+            88
+          ],
+          "cluster_proportions": [
+            0.032,
+            0.243,
+            0.128,
+            0.087,
+            0.129,
+            0.051,
+            0.096,
+            0.142,
+            0.004,
+            0.088
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.1815,
+        "nmi": 0.08289960700405269,
+        "ari": 0.02879939853197953,
+        "occupied": 9.0,
+        "empty": 1.0,
+        "largest": 0.39516666666666667
+      }
+    },
+    {
+      "round": 80,
+      "cumulative_method_seconds": 30.965410800417885,
+      "cumulative_with_prep_seconds": 31.2279585005017,
+      "cumulative_bytes": 2072262320,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.183,
+          "nmi": 0.0942594788516378,
+          "ari": 0.029566699001126677,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.32,
+          "cluster_counts": [
+            197,
+            320,
+            144,
+            114,
+            64,
+            36,
+            5,
+            26,
+            84,
+            10
+          ],
+          "cluster_proportions": [
+            0.197,
+            0.32,
+            0.144,
+            0.114,
+            0.064,
+            0.036,
+            0.005,
+            0.026,
+            0.084,
+            0.01
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.149,
+          "nmi": 0.049312113148680475,
+          "ari": 0.003601972404380824,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.856,
+          "cluster_counts": [
+            48,
+            856,
+            61,
+            33,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.048,
+            0.856,
+            0.061,
+            0.033,
+            0.001,
+            0.0,
+            0.001,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.165,
+          "nmi": 0.04957143283462388,
+          "ari": 0.011108488773386396,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.401,
+          "cluster_counts": [
+            137,
+            65,
+            13,
+            3,
+            241,
+            113,
+            9,
+            401,
+            15,
+            3
+          ],
+          "cluster_proportions": [
+            0.137,
+            0.065,
+            0.013,
+            0.003,
+            0.241,
+            0.113,
+            0.009,
+            0.401,
+            0.015,
+            0.003
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.192,
+          "nmi": 0.10342620772042174,
+          "ari": 0.048606340272986714,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.331,
+          "cluster_counts": [
+            222,
+            114,
+            0,
+            31,
+            9,
+            95,
+            99,
+            98,
+            331,
+            1
+          ],
+          "cluster_proportions": [
+            0.222,
+            0.114,
+            0.0,
+            0.031,
+            0.009,
+            0.095,
+            0.099,
+            0.098,
+            0.331,
+            0.001
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.188,
+          "nmi": 0.08837462165299922,
+          "ari": 0.030001561664125546,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.231,
+          "cluster_counts": [
+            11,
+            231,
+            26,
+            118,
+            69,
+            78,
+            74,
+            94,
+            174,
+            125
+          ],
+          "cluster_proportions": [
+            0.011,
+            0.231,
+            0.026,
+            0.118,
+            0.069,
+            0.078,
+            0.074,
+            0.094,
+            0.174,
+            0.125
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.197,
+          "nmi": 0.10234829436025968,
+          "ari": 0.04405086964271353,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.243,
+          "cluster_counts": [
+            31,
+            243,
+            128,
+            87,
+            129,
+            51,
+            97,
+            142,
+            4,
+            88
+          ],
+          "cluster_proportions": [
+            0.031,
+            0.243,
+            0.128,
+            0.087,
+            0.129,
+            0.051,
+            0.097,
+            0.142,
+            0.004,
+            0.088
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.17900000000000002,
+        "nmi": 0.08121535809477047,
+        "ari": 0.027822655293119947,
+        "occupied": 9.166666666666666,
+        "empty": 0.8333333333333334,
+        "largest": 0.39699999999999996
+      }
+    },
+    {
+      "round": 90,
+      "cumulative_method_seconds": 34.549560100538656,
+      "cumulative_with_prep_seconds": 34.81210780062247,
+      "cumulative_bytes": 2331295110,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.183,
+          "nmi": 0.09381057906166643,
+          "ari": 0.028641029011669497,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.331,
+          "cluster_counts": [
+            192,
+            331,
+            144,
+            112,
+            46,
+            35,
+            5,
+            26,
+            97,
+            12
+          ],
+          "cluster_proportions": [
+            0.192,
+            0.331,
+            0.144,
+            0.112,
+            0.046,
+            0.035,
+            0.005,
+            0.026,
+            0.097,
+            0.012
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.15,
+          "nmi": 0.046106338233339185,
+          "ari": 0.003918885916745893,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.834,
+          "cluster_counts": [
+            79,
+            0,
+            55,
+            30,
+            1,
+            0,
+            1,
+            834,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.079,
+            0.0,
+            0.055,
+            0.03,
+            0.001,
+            0.0,
+            0.001,
+            0.834,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.172,
+          "nmi": 0.048961415044263275,
+          "ari": 0.011968620072839576,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.333,
+          "cluster_counts": [
+            102,
+            333,
+            3,
+            3,
+            14,
+            97,
+            10,
+            308,
+            118,
+            12
+          ],
+          "cluster_proportions": [
+            0.102,
+            0.333,
+            0.003,
+            0.003,
+            0.014,
+            0.097,
+            0.01,
+            0.308,
+            0.118,
+            0.012
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.192,
+          "nmi": 0.1032189760728396,
+          "ari": 0.048570791199131776,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.331,
+          "cluster_counts": [
+            222,
+            113,
+            0,
+            31,
+            9,
+            95,
+            100,
+            98,
+            331,
+            1
+          ],
+          "cluster_proportions": [
+            0.222,
+            0.113,
+            0.0,
+            0.031,
+            0.009,
+            0.095,
+            0.1,
+            0.098,
+            0.331,
+            0.001
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.189,
+          "nmi": 0.08864320321678243,
+          "ari": 0.030187436027183063,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.231,
+          "cluster_counts": [
+            11,
+            231,
+            26,
+            120,
+            69,
+            79,
+            72,
+            94,
+            174,
+            124
+          ],
+          "cluster_proportions": [
+            0.011,
+            0.231,
+            0.026,
+            0.12,
+            0.069,
+            0.079,
+            0.072,
+            0.094,
+            0.174,
+            0.124
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.198,
+          "nmi": 0.10270772605567619,
+          "ari": 0.0444119166046326,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.245,
+          "cluster_counts": [
+            31,
+            245,
+            128,
+            87,
+            128,
+            51,
+            97,
+            141,
+            4,
+            88
+          ],
+          "cluster_proportions": [
+            0.031,
+            0.245,
+            0.128,
+            0.087,
+            0.128,
+            0.051,
+            0.097,
+            0.141,
+            0.004,
+            0.088
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18066666666666664,
+        "nmi": 0.08057470628076117,
+        "ari": 0.02794977980536707,
+        "occupied": 9.166666666666666,
+        "empty": 0.8333333333333334,
+        "largest": 0.3841666666666667
+      }
+    },
+    {
+      "round": 100,
+      "cumulative_method_seconds": 38.36353710049298,
+      "cumulative_with_prep_seconds": 38.62608480057679,
+      "cumulative_bytes": 2590327900,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.185,
+          "nmi": 0.09449261592140207,
+          "ari": 0.02921662627299252,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.335,
+          "cluster_counts": [
+            189,
+            335,
+            145,
+            109,
+            49,
+            35,
+            5,
+            26,
+            96,
+            11
+          ],
+          "cluster_proportions": [
+            0.189,
+            0.335,
+            0.145,
+            0.109,
+            0.049,
+            0.035,
+            0.005,
+            0.026,
+            0.096,
+            0.011
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.15,
+          "nmi": 0.05050088338409309,
+          "ari": 0.0030488586643217315,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.827,
+          "cluster_counts": [
+            85,
+            2,
+            42,
+            34,
+            7,
+            1,
+            1,
+            1,
+            827,
+            0
+          ],
+          "cluster_proportions": [
+            0.085,
+            0.002,
+            0.042,
+            0.034,
+            0.007,
+            0.001,
+            0.001,
+            0.001,
+            0.827,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.165,
+          "nmi": 0.048358974031010936,
+          "ari": 0.010592918065763122,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.406,
+          "cluster_counts": [
+            145,
+            60,
+            13,
+            3,
+            406,
+            118,
+            9,
+            231,
+            12,
+            3
+          ],
+          "cluster_proportions": [
+            0.145,
+            0.06,
+            0.013,
+            0.003,
+            0.406,
+            0.118,
+            0.009,
+            0.231,
+            0.012,
+            0.003
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10111679821815066,
+          "ari": 0.036160121484837326,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.277,
+          "cluster_counts": [
+            4,
+            277,
+            76,
+            0,
+            97,
+            277,
+            21,
+            27,
+            155,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.277,
+            0.076,
+            0.0,
+            0.097,
+            0.277,
+            0.021,
+            0.027,
+            0.155,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.198,
+          "nmi": 0.09675743088347745,
+          "ari": 0.030951505921100693,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.214,
+          "cluster_counts": [
+            111,
+            185,
+            78,
+            214,
+            58,
+            7,
+            68,
+            112,
+            128,
+            39
+          ],
+          "cluster_proportions": [
+            0.111,
+            0.185,
+            0.078,
+            0.214,
+            0.058,
+            0.007,
+            0.068,
+            0.112,
+            0.128,
+            0.039
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.09948984231667289,
+          "ari": 0.040044882764956324,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.205,
+          "cluster_counts": [
+            205,
+            53,
+            62,
+            24,
+            158,
+            139,
+            88,
+            63,
+            166,
+            42
+          ],
+          "cluster_proportions": [
+            0.205,
+            0.053,
+            0.062,
+            0.024,
+            0.158,
+            0.139,
+            0.088,
+            0.063,
+            0.166,
+            0.042
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18183333333333332,
+        "nmi": 0.08178609079246785,
+        "ari": 0.025002485528995286,
+        "occupied": 9.666666666666666,
+        "empty": 0.3333333333333333,
+        "largest": 0.37733333333333335
+      }
+    },
+    {
+      "round": 110,
+      "cumulative_method_seconds": 43.71721300063655,
+      "cumulative_with_prep_seconds": 43.97976070072036,
+      "cumulative_bytes": 2849360690,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.186,
+          "nmi": 0.0964705003320595,
+          "ari": 0.03068892538629742,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.334,
+          "cluster_counts": [
+            187,
+            334,
+            146,
+            106,
+            65,
+            37,
+            5,
+            29,
+            82,
+            9
+          ],
+          "cluster_proportions": [
+            0.187,
+            0.334,
+            0.146,
+            0.106,
+            0.065,
+            0.037,
+            0.005,
+            0.029,
+            0.082,
+            0.009
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.151,
+          "nmi": 0.04958704504204238,
+          "ari": 0.003813192320988185,
+          "occupied": 8,
+          "empty": 2,
+          "largest": 0.83,
+          "cluster_counts": [
+            95,
+            830,
+            33,
+            31,
+            7,
+            1,
+            1,
+            2,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.095,
+            0.83,
+            0.033,
+            0.031,
+            0.007,
+            0.001,
+            0.001,
+            0.002,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.171,
+          "nmi": 0.054089958318327976,
+          "ari": 0.013378173018230336,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.376,
+          "cluster_counts": [
+            62,
+            50,
+            376,
+            14,
+            3,
+            135,
+            9,
+            99,
+            240,
+            12
+          ],
+          "cluster_proportions": [
+            0.062,
+            0.05,
+            0.376,
+            0.014,
+            0.003,
+            0.135,
+            0.009,
+            0.099,
+            0.24,
+            0.012
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10137305578679726,
+          "ari": 0.03628227621274775,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.278,
+          "cluster_counts": [
+            4,
+            276,
+            76,
+            0,
+            97,
+            278,
+            21,
+            27,
+            155,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.276,
+            0.076,
+            0.0,
+            0.097,
+            0.278,
+            0.021,
+            0.027,
+            0.155,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.198,
+          "nmi": 0.0965600261284529,
+          "ari": 0.030883033052214997,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.215,
+          "cluster_counts": [
+            111,
+            184,
+            78,
+            215,
+            58,
+            7,
+            68,
+            112,
+            129,
+            38
+          ],
+          "cluster_proportions": [
+            0.111,
+            0.184,
+            0.078,
+            0.215,
+            0.058,
+            0.007,
+            0.068,
+            0.112,
+            0.129,
+            0.038
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.209,
+          "nmi": 0.11401295639977134,
+          "ari": 0.049211883859209764,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.242,
+          "cluster_counts": [
+            128,
+            49,
+            87,
+            32,
+            144,
+            39,
+            174,
+            4,
+            242,
+            101
+          ],
+          "cluster_proportions": [
+            0.128,
+            0.049,
+            0.087,
+            0.032,
+            0.144,
+            0.039,
+            0.174,
+            0.004,
+            0.242,
+            0.101
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18433333333333335,
+        "nmi": 0.08534892366790854,
+        "ari": 0.027376247308281407,
+        "occupied": 9.5,
+        "empty": 0.5,
+        "largest": 0.37916666666666665
+      }
+    },
+    {
+      "round": 120,
+      "cumulative_method_seconds": 48.67879170086235,
+      "cumulative_with_prep_seconds": 48.94133940094616,
+      "cumulative_bytes": 3108393480,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.197,
+          "nmi": 0.1001413274941257,
+          "ari": 0.03929522308490572,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.271,
+          "cluster_counts": [
+            98,
+            108,
+            101,
+            34,
+            271,
+            23,
+            173,
+            187,
+            5,
+            0
+          ],
+          "cluster_proportions": [
+            0.098,
+            0.108,
+            0.101,
+            0.034,
+            0.271,
+            0.023,
+            0.173,
+            0.187,
+            0.005,
+            0.0
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.152,
+          "nmi": 0.04630956892242882,
+          "ari": 0.003907423770631752,
+          "occupied": 8,
+          "empty": 2,
+          "largest": 0.763,
+          "cluster_counts": [
+            166,
+            763,
+            27,
+            32,
+            7,
+            1,
+            1,
+            3,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.166,
+            0.763,
+            0.027,
+            0.032,
+            0.007,
+            0.001,
+            0.001,
+            0.003,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.171,
+          "nmi": 0.05468687301508929,
+          "ari": 0.013853310264352978,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.381,
+          "cluster_counts": [
+            59,
+            50,
+            381,
+            14,
+            3,
+            140,
+            9,
+            101,
+            231,
+            12
+          ],
+          "cluster_proportions": [
+            0.059,
+            0.05,
+            0.381,
+            0.014,
+            0.003,
+            0.14,
+            0.009,
+            0.101,
+            0.231,
+            0.012
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10115529468847151,
+          "ari": 0.036079240100511834,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.277,
+          "cluster_counts": [
+            4,
+            277,
+            75,
+            0,
+            97,
+            277,
+            21,
+            27,
+            156,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.277,
+            0.075,
+            0.0,
+            0.097,
+            0.277,
+            0.021,
+            0.027,
+            0.156,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.198,
+          "nmi": 0.09965297630805577,
+          "ari": 0.031929670910587286,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.205,
+          "cluster_counts": [
+            120,
+            179,
+            78,
+            205,
+            56,
+            7,
+            67,
+            119,
+            131,
+            38
+          ],
+          "cluster_proportions": [
+            0.12,
+            0.179,
+            0.078,
+            0.205,
+            0.056,
+            0.007,
+            0.067,
+            0.119,
+            0.131,
+            0.038
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.198,
+          "nmi": 0.10165176180527724,
+          "ari": 0.041240540258584306,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.166,
+          "cluster_counts": [
+            22,
+            88,
+            166,
+            64,
+            121,
+            60,
+            47,
+            155,
+            137,
+            140
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.088,
+            0.166,
+            0.064,
+            0.121,
+            0.06,
+            0.047,
+            0.155,
+            0.137,
+            0.14
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.1845,
+        "nmi": 0.08393296703890805,
+        "ari": 0.02771756806492898,
+        "occupied": 9.333333333333334,
+        "empty": 0.6666666666666666,
+        "largest": 0.3438333333333334
+      }
+    },
+    {
+      "round": 130,
+      "cumulative_method_seconds": 54.12919310084544,
+      "cumulative_with_prep_seconds": 54.391740800929256,
+      "cumulative_bytes": 3367426270,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.184,
+          "nmi": 0.09758043265755957,
+          "ari": 0.03142297001582889,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.322,
+          "cluster_counts": [
+            186,
+            322,
+            162,
+            107,
+            65,
+            36,
+            5,
+            29,
+            79,
+            9
+          ],
+          "cluster_proportions": [
+            0.186,
+            0.322,
+            0.162,
+            0.107,
+            0.065,
+            0.036,
+            0.005,
+            0.029,
+            0.079,
+            0.009
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.149,
+          "nmi": 0.03908448218067011,
+          "ari": 0.0027714252438975546,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.721,
+          "cluster_counts": [
+            237,
+            0,
+            33,
+            3,
+            5,
+            1,
+            721,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.237,
+            0.0,
+            0.033,
+            0.003,
+            0.005,
+            0.001,
+            0.721,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.171,
+          "nmi": 0.05189695121662206,
+          "ari": 0.013560128634736185,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.334,
+          "cluster_counts": [
+            90,
+            119,
+            306,
+            334,
+            3,
+            10,
+            13,
+            112,
+            2,
+            11
+          ],
+          "cluster_proportions": [
+            0.09,
+            0.119,
+            0.306,
+            0.334,
+            0.003,
+            0.01,
+            0.013,
+            0.112,
+            0.002,
+            0.011
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10141159749929501,
+          "ari": 0.03620133492808183,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.278,
+          "cluster_counts": [
+            4,
+            276,
+            75,
+            0,
+            97,
+            278,
+            21,
+            27,
+            156,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.276,
+            0.075,
+            0.0,
+            0.097,
+            0.278,
+            0.021,
+            0.027,
+            0.156,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.198,
+          "nmi": 0.10015032662725945,
+          "ari": 0.03215771639697959,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.204,
+          "cluster_counts": [
+            120,
+            180,
+            78,
+            204,
+            56,
+            7,
+            67,
+            119,
+            131,
+            38
+          ],
+          "cluster_proportions": [
+            0.12,
+            0.18,
+            0.078,
+            0.204,
+            0.056,
+            0.007,
+            0.067,
+            0.119,
+            0.131,
+            0.038
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.201,
+          "nmi": 0.10133844450554569,
+          "ari": 0.040681469945628636,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.16,
+          "cluster_counts": [
+            24,
+            86,
+            155,
+            66,
+            128,
+            62,
+            48,
+            160,
+            126,
+            145
+          ],
+          "cluster_proportions": [
+            0.024,
+            0.086,
+            0.155,
+            0.066,
+            0.128,
+            0.062,
+            0.048,
+            0.16,
+            0.126,
+            0.145
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18233333333333335,
+        "nmi": 0.08191037244782531,
+        "ari": 0.02613250752752545,
+        "occupied": 9.166666666666666,
+        "empty": 0.8333333333333334,
+        "largest": 0.3365
+      }
+    },
+    {
+      "round": 140,
+      "cumulative_method_seconds": 59.24125210091006,
+      "cumulative_with_prep_seconds": 59.503799800993875,
+      "cumulative_bytes": 3626459060,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.185,
+          "nmi": 0.09786767496393944,
+          "ari": 0.03077825554818101,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.324,
+          "cluster_counts": [
+            186,
+            324,
+            161,
+            108,
+            65,
+            35,
+            5,
+            29,
+            77,
+            10
+          ],
+          "cluster_proportions": [
+            0.186,
+            0.324,
+            0.161,
+            0.108,
+            0.065,
+            0.035,
+            0.005,
+            0.029,
+            0.077,
+            0.01
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.147,
+          "nmi": 0.04122574779587999,
+          "ari": 0.0028031878044373,
+          "occupied": 7,
+          "empty": 3,
+          "largest": 0.644,
+          "cluster_counts": [
+            309,
+            8,
+            33,
+            3,
+            1,
+            2,
+            644,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.309,
+            0.008,
+            0.033,
+            0.003,
+            0.001,
+            0.002,
+            0.644,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.174,
+          "nmi": 0.050831173114831596,
+          "ari": 0.013233885939468455,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.337,
+          "cluster_counts": [
+            89,
+            114,
+            3,
+            337,
+            12,
+            10,
+            310,
+            114,
+            2,
+            9
+          ],
+          "cluster_proportions": [
+            0.089,
+            0.114,
+            0.003,
+            0.337,
+            0.012,
+            0.01,
+            0.31,
+            0.114,
+            0.002,
+            0.009
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10141159749929501,
+          "ari": 0.03620133492808183,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.278,
+          "cluster_counts": [
+            4,
+            276,
+            75,
+            0,
+            97,
+            278,
+            21,
+            27,
+            156,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.276,
+            0.075,
+            0.0,
+            0.097,
+            0.278,
+            0.021,
+            0.027,
+            0.156,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.197,
+          "nmi": 0.09526617142941629,
+          "ari": 0.029548509929028986,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.204,
+          "cluster_counts": [
+            119,
+            189,
+            74,
+            204,
+            59,
+            7,
+            60,
+            120,
+            130,
+            38
+          ],
+          "cluster_proportions": [
+            0.119,
+            0.189,
+            0.074,
+            0.204,
+            0.059,
+            0.007,
+            0.06,
+            0.12,
+            0.13,
+            0.038
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.09660581046903526,
+          "ari": 0.04083921842618817,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.22,
+          "cluster_counts": [
+            126,
+            39,
+            42,
+            131,
+            88,
+            101,
+            42,
+            71,
+            140,
+            220
+          ],
+          "cluster_proportions": [
+            0.126,
+            0.039,
+            0.042,
+            0.131,
+            0.088,
+            0.101,
+            0.042,
+            0.071,
+            0.14,
+            0.22
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18266666666666667,
+        "nmi": 0.08053469587873292,
+        "ari": 0.025567398762564295,
+        "occupied": 9.333333333333334,
+        "empty": 0.6666666666666666,
+        "largest": 0.3345
+      }
+    },
+    {
+      "round": 150,
+      "cumulative_method_seconds": 64.5652581009781,
+      "cumulative_with_prep_seconds": 64.82780580106191,
+      "cumulative_bytes": 3885491850,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.203,
+          "nmi": 0.10196809427995611,
+          "ari": 0.03648244688509881,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.27,
+          "cluster_counts": [
+            175,
+            225,
+            17,
+            29,
+            63,
+            5,
+            134,
+            72,
+            270,
+            10
+          ],
+          "cluster_proportions": [
+            0.175,
+            0.225,
+            0.017,
+            0.029,
+            0.063,
+            0.005,
+            0.134,
+            0.072,
+            0.27,
+            0.01
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.143,
+          "nmi": 0.035156424255400755,
+          "ari": 0.0026362258314806776,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.577,
+          "cluster_counts": [
+            382,
+            577,
+            33,
+            3,
+            1,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.382,
+            0.577,
+            0.033,
+            0.003,
+            0.001,
+            0.004,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.162,
+          "nmi": 0.047080587427148254,
+          "ari": 0.009487980833706527,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.411,
+          "cluster_counts": [
+            228,
+            411,
+            3,
+            2,
+            51,
+            177,
+            9,
+            102,
+            8,
+            9
+          ],
+          "cluster_proportions": [
+            0.228,
+            0.411,
+            0.003,
+            0.002,
+            0.051,
+            0.177,
+            0.009,
+            0.102,
+            0.008,
+            0.009
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10141159749929501,
+          "ari": 0.03620133492808183,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.278,
+          "cluster_counts": [
+            4,
+            276,
+            75,
+            0,
+            97,
+            278,
+            21,
+            27,
+            156,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.276,
+            0.075,
+            0.0,
+            0.097,
+            0.278,
+            0.021,
+            0.027,
+            0.156,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.187,
+          "nmi": 0.08951141760565397,
+          "ari": 0.030192523749800797,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.221,
+          "cluster_counts": [
+            11,
+            221,
+            26,
+            111,
+            68,
+            84,
+            92,
+            93,
+            168,
+            126
+          ],
+          "cluster_proportions": [
+            0.011,
+            0.221,
+            0.026,
+            0.111,
+            0.068,
+            0.084,
+            0.092,
+            0.093,
+            0.168,
+            0.126
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.09035769759212398,
+          "ari": 0.038164717955155386,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.215,
+          "cluster_counts": [
+            138,
+            43,
+            42,
+            125,
+            88,
+            97,
+            42,
+            66,
+            144,
+            215
+          ],
+          "cluster_proportions": [
+            0.138,
+            0.043,
+            0.042,
+            0.125,
+            0.088,
+            0.097,
+            0.042,
+            0.066,
+            0.144,
+            0.215
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18133333333333335,
+        "nmi": 0.07758096977659634,
+        "ari": 0.02552753836388734,
+        "occupied": 9.166666666666666,
+        "empty": 0.8333333333333334,
+        "largest": 0.3286666666666667
+      }
+    },
+    {
+      "round": 160,
+      "cumulative_method_seconds": 70.351296401117,
+      "cumulative_with_prep_seconds": 70.61384410120081,
+      "cumulative_bytes": 4144524640,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.203,
+          "nmi": 0.10229443368090171,
+          "ari": 0.036690907703692655,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.27,
+          "cluster_counts": [
+            178,
+            223,
+            17,
+            28,
+            64,
+            5,
+            134,
+            71,
+            270,
+            10
+          ],
+          "cluster_proportions": [
+            0.178,
+            0.223,
+            0.017,
+            0.028,
+            0.064,
+            0.005,
+            0.134,
+            0.071,
+            0.27,
+            0.01
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.149,
+          "nmi": 0.03702632992825016,
+          "ari": 0.003307562046956434,
+          "occupied": 7,
+          "empty": 3,
+          "largest": 0.508,
+          "cluster_counts": [
+            449,
+            2,
+            33,
+            3,
+            1,
+            4,
+            508,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.449,
+            0.002,
+            0.033,
+            0.003,
+            0.001,
+            0.004,
+            0.508,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.174,
+          "nmi": 0.050546576160943685,
+          "ari": 0.01279091889916659,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.34,
+          "cluster_counts": [
+            90,
+            114,
+            3,
+            340,
+            12,
+            10,
+            315,
+            107,
+            1,
+            8
+          ],
+          "cluster_proportions": [
+            0.09,
+            0.114,
+            0.003,
+            0.34,
+            0.012,
+            0.01,
+            0.315,
+            0.107,
+            0.001,
+            0.008
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.191,
+          "nmi": 0.10141159749929501,
+          "ari": 0.03620133492808183,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.278,
+          "cluster_counts": [
+            4,
+            276,
+            75,
+            0,
+            97,
+            278,
+            21,
+            27,
+            156,
+            66
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.276,
+            0.075,
+            0.0,
+            0.097,
+            0.278,
+            0.021,
+            0.027,
+            0.156,
+            0.066
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.19,
+          "nmi": 0.0863284977854834,
+          "ari": 0.03028672619541188,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.196,
+          "cluster_counts": [
+            104,
+            150,
+            90,
+            47,
+            196,
+            195,
+            40,
+            109,
+            58,
+            11
+          ],
+          "cluster_proportions": [
+            0.104,
+            0.15,
+            0.09,
+            0.047,
+            0.196,
+            0.195,
+            0.04,
+            0.109,
+            0.058,
+            0.011
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.10586504305366692,
+          "ari": 0.04347454103396761,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.236,
+          "cluster_counts": [
+            22,
+            87,
+            236,
+            79,
+            136,
+            42,
+            36,
+            48,
+            146,
+            168
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.087,
+            0.236,
+            0.079,
+            0.136,
+            0.042,
+            0.036,
+            0.048,
+            0.146,
+            0.168
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18483333333333332,
+        "nmi": 0.08057874635142348,
+        "ari": 0.02712533180121283,
+        "occupied": 9.333333333333334,
+        "empty": 0.6666666666666666,
+        "largest": 0.3046666666666667
+      }
+    },
+    {
+      "round": 170,
+      "cumulative_method_seconds": 75.84624540118966,
+      "cumulative_with_prep_seconds": 76.10879310127348,
+      "cumulative_bytes": 4403557430,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.198,
+          "nmi": 0.10731259476387628,
+          "ari": 0.04249453307521423,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.311,
+          "cluster_counts": [
+            168,
+            148,
+            19,
+            31,
+            311,
+            5,
+            107,
+            66,
+            56,
+            89
+          ],
+          "cluster_proportions": [
+            0.168,
+            0.148,
+            0.019,
+            0.031,
+            0.311,
+            0.005,
+            0.107,
+            0.066,
+            0.056,
+            0.089
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.149,
+          "nmi": 0.036124138960337934,
+          "ari": 0.003622307684140487,
+          "occupied": 6,
+          "empty": 4,
+          "largest": 0.526,
+          "cluster_counts": [
+            432,
+            526,
+            33,
+            3,
+            1,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cluster_proportions": [
+            0.432,
+            0.526,
+            0.033,
+            0.003,
+            0.001,
+            0.005,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.16,
+          "nmi": 0.04826856223863716,
+          "ari": 0.010945439255145763,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.374,
+          "cluster_counts": [
+            57,
+            374,
+            3,
+            9,
+            20,
+            8,
+            165,
+            135,
+            2,
+            227
+          ],
+          "cluster_proportions": [
+            0.057,
+            0.374,
+            0.003,
+            0.009,
+            0.02,
+            0.008,
+            0.165,
+            0.135,
+            0.002,
+            0.227
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.184,
+          "nmi": 0.09570682868822339,
+          "ari": 0.030725707781263357,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.309,
+          "cluster_counts": [
+            4,
+            281,
+            73,
+            0,
+            71,
+            309,
+            20,
+            26,
+            154,
+            62
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.281,
+            0.073,
+            0.0,
+            0.071,
+            0.309,
+            0.02,
+            0.026,
+            0.154,
+            0.062
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.187,
+          "nmi": 0.09990353317593842,
+          "ari": 0.03129419756666088,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.229,
+          "cluster_counts": [
+            221,
+            140,
+            39,
+            229,
+            36,
+            155,
+            30,
+            14,
+            74,
+            62
+          ],
+          "cluster_proportions": [
+            0.221,
+            0.14,
+            0.039,
+            0.229,
+            0.036,
+            0.155,
+            0.03,
+            0.014,
+            0.074,
+            0.062
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.10563693236119913,
+          "ari": 0.04351019343763723,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.236,
+          "cluster_counts": [
+            22,
+            86,
+            236,
+            79,
+            136,
+            42,
+            37,
+            48,
+            146,
+            168
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.086,
+            0.236,
+            0.079,
+            0.136,
+            0.042,
+            0.037,
+            0.048,
+            0.146,
+            0.168
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18000000000000002,
+        "nmi": 0.08215876503136872,
+        "ari": 0.027098729800010324,
+        "occupied": 9.166666666666666,
+        "empty": 0.8333333333333334,
+        "largest": 0.3308333333333333
+      }
+    },
+    {
+      "round": 180,
+      "cumulative_method_seconds": 81.10448010126129,
+      "cumulative_with_prep_seconds": 81.3670278013451,
+      "cumulative_bytes": 4662590220,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.208,
+          "nmi": 0.10361754436419314,
+          "ari": 0.03744846655839542,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.223,
+          "cluster_counts": [
+            175,
+            176,
+            22,
+            28,
+            128,
+            5,
+            101,
+            79,
+            63,
+            223
+          ],
+          "cluster_proportions": [
+            0.175,
+            0.176,
+            0.022,
+            0.028,
+            0.128,
+            0.005,
+            0.101,
+            0.079,
+            0.063,
+            0.223
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.152,
+          "nmi": 0.04456306415728454,
+          "ari": 0.004372730584909664,
+          "occupied": 8,
+          "empty": 2,
+          "largest": 0.524,
+          "cluster_counts": [
+            425,
+            524,
+            34,
+            3,
+            1,
+            5,
+            5,
+            0,
+            3,
+            0
+          ],
+          "cluster_proportions": [
+            0.425,
+            0.524,
+            0.034,
+            0.003,
+            0.001,
+            0.005,
+            0.005,
+            0.0,
+            0.003,
+            0.0
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.159,
+          "nmi": 0.04927389711568302,
+          "ari": 0.009711210342063223,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.391,
+          "cluster_counts": [
+            222,
+            51,
+            92,
+            3,
+            391,
+            8,
+            214,
+            1,
+            8,
+            10
+          ],
+          "cluster_proportions": [
+            0.222,
+            0.051,
+            0.092,
+            0.003,
+            0.391,
+            0.008,
+            0.214,
+            0.001,
+            0.008,
+            0.01
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.187,
+          "nmi": 0.09683215524439194,
+          "ari": 0.03304501511424264,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.302,
+          "cluster_counts": [
+            4,
+            279,
+            74,
+            0,
+            72,
+            302,
+            20,
+            27,
+            160,
+            62
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.279,
+            0.074,
+            0.0,
+            0.072,
+            0.302,
+            0.02,
+            0.027,
+            0.16,
+            0.062
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.196,
+          "nmi": 0.10157784934070767,
+          "ari": 0.03373428505654204,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.258,
+          "cluster_counts": [
+            125,
+            223,
+            73,
+            88,
+            62,
+            13,
+            258,
+            56,
+            23,
+            79
+          ],
+          "cluster_proportions": [
+            0.125,
+            0.223,
+            0.073,
+            0.088,
+            0.062,
+            0.013,
+            0.258,
+            0.056,
+            0.023,
+            0.079
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.202,
+          "nmi": 0.10563693236119913,
+          "ari": 0.04351019343763723,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.236,
+          "cluster_counts": [
+            22,
+            86,
+            236,
+            79,
+            136,
+            42,
+            37,
+            48,
+            146,
+            168
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.086,
+            0.236,
+            0.079,
+            0.136,
+            0.042,
+            0.037,
+            0.048,
+            0.146,
+            0.168
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18399999999999997,
+        "nmi": 0.0835835737639099,
+        "ari": 0.026970316848965035,
+        "occupied": 9.5,
+        "empty": 0.5,
+        "largest": 0.3223333333333333
+      }
+    },
+    {
+      "round": 190,
+      "cumulative_method_seconds": 86.46835940133315,
+      "cumulative_with_prep_seconds": 86.73090710141696,
+      "cumulative_bytes": 4921623010,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.19,
+          "nmi": 0.1084908826338145,
+          "ari": 0.04307743927053588,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.239,
+          "cluster_counts": [
+            169,
+            239,
+            23,
+            23,
+            227,
+            5,
+            110,
+            74,
+            33,
+            97
+          ],
+          "cluster_proportions": [
+            0.169,
+            0.239,
+            0.023,
+            0.023,
+            0.227,
+            0.005,
+            0.11,
+            0.074,
+            0.033,
+            0.097
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.15,
+          "nmi": 0.04659779381335041,
+          "ari": 0.0037619255526724184,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.5,
+          "cluster_counts": [
+            446,
+            500,
+            34,
+            3,
+            6,
+            1,
+            4,
+            4,
+            1,
+            1
+          ],
+          "cluster_proportions": [
+            0.446,
+            0.5,
+            0.034,
+            0.003,
+            0.006,
+            0.001,
+            0.004,
+            0.004,
+            0.001,
+            0.001
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.163,
+          "nmi": 0.052724543084273504,
+          "ari": 0.01179273700551353,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.384,
+          "cluster_counts": [
+            207,
+            34,
+            184,
+            3,
+            384,
+            8,
+            8,
+            5,
+            51,
+            116
+          ],
+          "cluster_proportions": [
+            0.207,
+            0.034,
+            0.184,
+            0.003,
+            0.384,
+            0.008,
+            0.008,
+            0.005,
+            0.051,
+            0.116
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.194,
+          "nmi": 0.08486684749130396,
+          "ari": 0.030921248226047526,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.376,
+          "cluster_counts": [
+            9,
+            376,
+            113,
+            133,
+            144,
+            0,
+            82,
+            5,
+            103,
+            35
+          ],
+          "cluster_proportions": [
+            0.009,
+            0.376,
+            0.113,
+            0.133,
+            0.144,
+            0.0,
+            0.082,
+            0.005,
+            0.103,
+            0.035
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.196,
+          "nmi": 0.10121440269652424,
+          "ari": 0.03347751974935921,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.259,
+          "cluster_counts": [
+            125,
+            223,
+            73,
+            88,
+            62,
+            13,
+            259,
+            56,
+            23,
+            78
+          ],
+          "cluster_proportions": [
+            0.125,
+            0.223,
+            0.073,
+            0.088,
+            0.062,
+            0.013,
+            0.259,
+            0.056,
+            0.023,
+            0.078
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.205,
+          "nmi": 0.10848877043828384,
+          "ari": 0.046005572648653376,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.239,
+          "cluster_counts": [
+            22,
+            87,
+            239,
+            86,
+            136,
+            42,
+            36,
+            48,
+            139,
+            165
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.087,
+            0.239,
+            0.086,
+            0.136,
+            0.042,
+            0.036,
+            0.048,
+            0.139,
+            0.165
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18300000000000002,
+        "nmi": 0.0837305400262584,
+        "ari": 0.028172740408796988,
+        "occupied": 9.833333333333334,
+        "empty": 0.16666666666666666,
+        "largest": 0.3328333333333333
+      }
+    },
+    {
+      "round": 200,
+      "cumulative_method_seconds": 91.62899850134272,
+      "cumulative_with_prep_seconds": 91.89154620142654,
+      "cumulative_bytes": 5180655800,
+      "clients": [
+        {
+          "client": 0,
+          "acc": 0.195,
+          "nmi": 0.10154971498996891,
+          "ari": 0.03407639306556593,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.203,
+          "cluster_counts": [
+            176,
+            203,
+            29,
+            25,
+            143,
+            5,
+            108,
+            74,
+            35,
+            202
+          ],
+          "cluster_proportions": [
+            0.176,
+            0.203,
+            0.029,
+            0.025,
+            0.143,
+            0.005,
+            0.108,
+            0.074,
+            0.035,
+            0.202
+          ]
+        },
+        {
+          "client": 1,
+          "acc": 0.15,
+          "nmi": 0.04727668674377859,
+          "ari": 0.003895399625272465,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.498,
+          "cluster_counts": [
+            447,
+            498,
+            34,
+            3,
+            6,
+            1,
+            4,
+            4,
+            2,
+            1
+          ],
+          "cluster_proportions": [
+            0.447,
+            0.498,
+            0.034,
+            0.003,
+            0.006,
+            0.001,
+            0.004,
+            0.004,
+            0.002,
+            0.001
+          ]
+        },
+        {
+          "client": 2,
+          "acc": 0.164,
+          "nmi": 0.05161343242786658,
+          "ari": 0.011405728318643156,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.368,
+          "cluster_counts": [
+            208,
+            38,
+            193,
+            3,
+            54,
+            368,
+            8,
+            8,
+            8,
+            112
+          ],
+          "cluster_proportions": [
+            0.208,
+            0.038,
+            0.193,
+            0.003,
+            0.054,
+            0.368,
+            0.008,
+            0.008,
+            0.008,
+            0.112
+          ]
+        },
+        {
+          "client": 3,
+          "acc": 0.188,
+          "nmi": 0.0973344413471146,
+          "ari": 0.033477041954496585,
+          "occupied": 9,
+          "empty": 1,
+          "largest": 0.301,
+          "cluster_counts": [
+            4,
+            279,
+            75,
+            0,
+            72,
+            301,
+            20,
+            27,
+            160,
+            62
+          ],
+          "cluster_proportions": [
+            0.004,
+            0.279,
+            0.075,
+            0.0,
+            0.072,
+            0.301,
+            0.02,
+            0.027,
+            0.16,
+            0.062
+          ]
+        },
+        {
+          "client": 4,
+          "acc": 0.188,
+          "nmi": 0.09845277470935322,
+          "ari": 0.031006266426432675,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.228,
+          "cluster_counts": [
+            221,
+            140,
+            39,
+            228,
+            36,
+            156,
+            30,
+            13,
+            74,
+            63
+          ],
+          "cluster_proportions": [
+            0.221,
+            0.14,
+            0.039,
+            0.228,
+            0.036,
+            0.156,
+            0.03,
+            0.013,
+            0.074,
+            0.063
+          ]
+        },
+        {
+          "client": 5,
+          "acc": 0.206,
+          "nmi": 0.10790642402060309,
+          "ari": 0.04560438839510279,
+          "occupied": 10,
+          "empty": 0,
+          "largest": 0.237,
+          "cluster_counts": [
+            22,
+            86,
+            237,
+            86,
+            136,
+            42,
+            37,
+            48,
+            143,
+            163
+          ],
+          "cluster_proportions": [
+            0.022,
+            0.086,
+            0.237,
+            0.086,
+            0.136,
+            0.042,
+            0.037,
+            0.048,
+            0.143,
+            0.163
+          ]
+        }
+      ],
+      "mean": {
+        "acc": 0.18183333333333332,
+        "nmi": 0.08402224570644751,
+        "ari": 0.026577536297585597,
+        "occupied": 9.833333333333334,
+        "empty": 0.16666666666666666,
+        "largest": 0.30583333333333335
+      }
+    }
+  ],
+  "traffic": {
+    "total_bytes": 5180655800,
+    "up_bytes": 2590327400,
+    "down_bytes": 2590328400,
+    "messages": 2000
+  },
+  "relation_audits": 0,
+  "initial_head_sources": null
+}

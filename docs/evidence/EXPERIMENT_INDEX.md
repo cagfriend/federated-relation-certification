@@ -694,3 +694,16 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 |边界|固定编码器、K10、中心初始化、全客户端私有频数校正、全程 0.5 保护。50% 门槛来自两组定向验证，附加准备开销待纳入正式计时|
 
 [方法](../method/encoder_snapshot_selection.md) · [程序与原始结果](../../experiments/encoder_early_stop/README.md)
+
+<a id="e38"></a>
+## E38 最新快照版与外部方法对照
+
+|项目|记录|
+|---|---|
+|矩阵|STL-10 四组，每组 200 轮。Hetero-SSFL、FLESD、FedMKD 各一条；Ours 的保护 0 和 0.5 各两次技术重复，共 28 次独立进程运行。|
+|质量|Ours-0.5 的统一 KMeans ACC 为 18.28%–21.50%，四组均高于 Hetero-SSFL 和 FedMKD，与 FLESD 相比一组领先、三组落后 0.43–1.17 个百分点。原生头四组末轮无单簇，最坏最大簇 45.1%。|
+|开销|0.5 保护降低四组末段教师同簇边率，训练净耗时增加 14.1%–18.5%。外部比较覆盖整套适配实现，包含编码器训练工作量差异。|
+|核验|28 份结果回执一致，逐次 200 轮与 21 个评估点；16 条 Ours 轨迹合计 4,915,200 次关系核对零错误。|
+|下一步|固定同一训练协议复测 B/E/D，继续监测原生头共簇和质量。|
+
+[审阅](SNAPSHOT_EXTERNAL_COMPARISON_20261118.md) · [实验包](../../experiments/snapshot_external_comparison/README.md) · [汇总](../../experiments/snapshot_external_comparison/results_full/report.md) · [后续实验](../NEXT_EXPERIMENTS.md)

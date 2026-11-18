@@ -10,8 +10,11 @@ experiments/public_scaling/prepared*/
 experiments/stl10_transfer/data/
 experiments/encoder_early_stop/results_*/cache/
 experiments/external_pilot/results_*/cache/
+experiments/snapshot_external_comparison/results_*/cache/
+experiments/snapshot_external_comparison/local_replays/
 local_replays/
 runs/
+!experiments/snapshot_external_comparison/results_full/runs/
 *.pt
 *.pth
 *.npy

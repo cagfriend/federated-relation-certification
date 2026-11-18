@@ -12,6 +12,7 @@ import json
 from collections import Counter
 
 import numpy as np
+from contextlib import nullcontext
 
 from .codec import (ACK, COMMIT, DELTA, DOWN, EMPTY, FULL, SETUP, UNKNOWN,
                     UP, DecodeError, Message, acknowledgement, check_ack,
@@ -115,12 +116,13 @@ class RelationProtocol:
             self.traffic.add(ack, 0, client)
             check_ack(ack, packet, sender=0)
 
-        if self.counts is None:
-            staged_counts = np.sum(proposed, axis=0, dtype=np.int64)
-        else:
-            staged_counts = self.counts.astype(np.int64)
-            for old, new in zip(self.server_relations, proposed):
-                staged_counts += new.astype(np.int64) - old.astype(np.int64)
+        with self.observer.phase('aggregation_seconds') if hasattr(self,'observer') else nullcontext():
+            if self.counts is None:
+                staged_counts = np.sum(proposed, axis=0, dtype=np.int64)
+            else:
+                staged_counts = self.counts.astype(np.int64)
+                for old, new in zip(self.server_relations, proposed):
+                    staged_counts += new.astype(np.int64) - old.astype(np.int64)
         if np.any(staged_counts < 0) or np.any(staged_counts > self.clients):
             raise ArithmeticError("Aggregate count outside membership bounds")
         staged_counts = staged_counts.astype(np.uint8)
