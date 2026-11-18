@@ -1,0 +1,4456 @@
+{
+  "runs": 12,
+  "comparisons": 3686400,
+  "mismatches": 0,
+  "sources_match": true,
+  "legacy_replay": true,
+  "summaries": [
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "corrected_guard_0.1",
+        "strength": 0.1,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.19316666666666668,
+        "nmi": 0.07725175349744674,
+        "ari": 0.026058277289121305,
+        "largest": 0.2763333333333333,
+        "empty": 0.16666666666666666
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.188,
+            "nmi": 0.05454652889454101,
+            "ari": 0.01918942515130636,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.19,
+            "cluster_counts": [
+              190,
+              59,
+              98,
+              152,
+              144,
+              153,
+              77,
+              7,
+              1,
+              119
+            ],
+            "cluster_proportions": [
+              0.19,
+              0.059,
+              0.098,
+              0.152,
+              0.144,
+              0.153,
+              0.077,
+              0.007,
+              0.001,
+              0.119
+            ]
+          },
+          "private_largest": 0.22,
+          "private_fit": 0.88,
+          "zero_recall": 0,
+          "min_recall": 0.6296296296296297,
+          "last50_private_largest": 0.22000000000000003,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.164,
+            "nmi": 0.04814096351417867,
+            "ari": 0.015452286997097735,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.488,
+            "cluster_counts": [
+              204,
+              2,
+              66,
+              57,
+              57,
+              488,
+              3,
+              43,
+              77,
+              3
+            ],
+            "cluster_proportions": [
+              0.204,
+              0.002,
+              0.066,
+              0.057,
+              0.057,
+              0.488,
+              0.003,
+              0.043,
+              0.077,
+              0.003
+            ]
+          },
+          "private_largest": 0.395,
+          "private_fit": 0.89,
+          "zero_recall": 0,
+          "min_recall": 0.1,
+          "last50_private_largest": 0.3961,
+          "private_stage": {
+            "largest": -0.0007000000000000006,
+            "privatepseudo_fit": 0.00040000000000000034
+          },
+          "public_stage": {
+            "largest": 0.0006000000000000005,
+            "privatepseudo_fit": -0.00030000000000000024
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.201,
+            "nmi": 0.08694531458112985,
+            "ari": 0.02582006071264405,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.201,
+            "cluster_counts": [
+              200,
+              49,
+              71,
+              90,
+              25,
+              79,
+              201,
+              82,
+              128,
+              75
+            ],
+            "cluster_proportions": [
+              0.2,
+              0.049,
+              0.071,
+              0.09,
+              0.025,
+              0.079,
+              0.201,
+              0.082,
+              0.128,
+              0.075
+            ]
+          },
+          "private_largest": 0.21333333333333335,
+          "private_fit": 0.86,
+          "zero_recall": 0,
+          "min_recall": 0.5777777777777777,
+          "last50_private_largest": 0.2074666666666667,
+          "private_stage": {
+            "largest": -0.000733333333333333,
+            "privatepseudo_fit": -0.00026666666666666836
+          },
+          "public_stage": {
+            "largest": 0.0005333333333333335,
+            "privatepseudo_fit": -0.00013333333333333198
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.187,
+            "nmi": 0.06955818069185955,
+            "ari": 0.017671518746641385,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.388,
+            "cluster_counts": [
+              38,
+              108,
+              223,
+              97,
+              65,
+              388,
+              33,
+              0,
+              1,
+              47
+            ],
+            "cluster_proportions": [
+              0.038,
+              0.108,
+              0.223,
+              0.097,
+              0.065,
+              0.388,
+              0.033,
+              0.0,
+              0.001,
+              0.047
+            ]
+          },
+          "private_largest": 0.26,
+          "private_fit": 0.95,
+          "zero_recall": 0,
+          "min_recall": 0.8333333333333334,
+          "last50_private_largest": 0.26,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.208,
+            "nmi": 0.11321433695711694,
+            "ari": 0.041006267358256764,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.228,
+            "cluster_counts": [
+              228,
+              38,
+              106,
+              90,
+              53,
+              37,
+              21,
+              206,
+              175,
+              46
+            ],
+            "cluster_proportions": [
+              0.228,
+              0.038,
+              0.106,
+              0.09,
+              0.053,
+              0.037,
+              0.021,
+              0.206,
+              0.175,
+              0.046
+            ]
+          },
+          "private_largest": 0.145,
+          "private_fit": 0.985,
+          "zero_recall": 0,
+          "min_recall": 0.9285714285714286,
+          "last50_private_largest": 0.1439,
+          "private_stage": {
+            "largest": -0.00019999999999999963,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.00019999999999999963,
+            "privatepseudo_fit": -0.00030000000000000024
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.211,
+            "nmi": 0.09110519634585443,
+            "ari": 0.037210104768781525,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.163,
+            "cluster_counts": [
+              163,
+              66,
+              33,
+              98,
+              134,
+              120,
+              88,
+              90,
+              80,
+              128
+            ],
+            "cluster_proportions": [
+              0.163,
+              0.066,
+              0.033,
+              0.098,
+              0.134,
+              0.12,
+              0.088,
+              0.09,
+              0.08,
+              0.128
+            ]
+          },
+          "private_largest": 0.16666666666666666,
+          "private_fit": 0.8833333333333333,
+          "zero_recall": 0,
+          "min_recall": 0.6875,
+          "last50_private_largest": 0.17966666666666664,
+          "private_stage": {
+            "largest": -0.0009333333333333332,
+            "privatepseudo_fit": 0.0012666666666666649
+          },
+          "public_stage": {
+            "largest": 0.00013333333333333307,
+            "privatepseudo_fit": -0.00026666666666666614
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.6877426995779388,
+        "generation_seconds": 0.2329610997112468,
+        "exchange_seconds": 0.283374099759385,
+        "public_seconds": 0.515762600232847,
+        "total": 1.725231499527581,
+        "guard": 0.222882300557103
+      },
+      "traffic": {
+        "down_bytes": 206095,
+        "control_setup_bytes": 267510,
+        "total_bytes": 386044,
+        "messages": 6010,
+        "up_bytes": 179949,
+        "vector_bytes": 118534,
+        "up_full_messages": 5,
+        "up_vector_bytes": 51629,
+        "down_full_messages": 5,
+        "down_vector_bytes": 66905,
+        "up_delta_messages": 783,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 212
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.37,
+            0.37
+          ],
+          "fit": [
+            1.0,
+            0.965,
+            0.965
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.145,
+            0.145
+          ],
+          "fit": [
+            1.0,
+            0.99,
+            0.99
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.1328125,
+        0.25,
+        0.1484375,
+        0.20703125,
+        0.171875,
+        0.11328125
+      ]
+    },
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "corrected_guard_0.5",
+        "strength": 0.5,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.1915,
+        "nmi": 0.07735451343918219,
+        "ari": 0.02584888674057384,
+        "largest": 0.2831666666666667,
+        "empty": 0.3333333333333333
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.187,
+            "nmi": 0.053593329737259124,
+            "ari": 0.0171735464401126,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.209,
+            "cluster_counts": [
+              172,
+              40,
+              96,
+              144,
+              161,
+              209,
+              57,
+              7,
+              1,
+              113
+            ],
+            "cluster_proportions": [
+              0.172,
+              0.04,
+              0.096,
+              0.144,
+              0.161,
+              0.209,
+              0.057,
+              0.007,
+              0.001,
+              0.113
+            ]
+          },
+          "private_largest": 0.25,
+          "private_fit": 0.98,
+          "zero_recall": 0,
+          "min_recall": 0.9259259259259259,
+          "last50_private_largest": 0.2452,
+          "private_stage": {
+            "largest": 0.00020000000000000017,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.161,
+            "nmi": 0.05058410443070998,
+            "ari": 0.015884470127014327,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.451,
+            "cluster_counts": [
+              188,
+              80,
+              73,
+              58,
+              81,
+              451,
+              2,
+              52,
+              11,
+              4
+            ],
+            "cluster_proportions": [
+              0.188,
+              0.08,
+              0.073,
+              0.058,
+              0.081,
+              0.451,
+              0.002,
+              0.052,
+              0.011,
+              0.004
+            ]
+          },
+          "private_largest": 0.365,
+          "private_fit": 0.92,
+          "zero_recall": 0,
+          "min_recall": 0.18181818181818182,
+          "last50_private_largest": 0.3649999999999999,
+          "private_stage": {
+            "largest": -0.00030000000000000024,
+            "privatepseudo_fit": 0.0005999999999999983
+          },
+          "public_stage": {
+            "largest": 0.00030000000000000024,
+            "privatepseudo_fit": -0.0005999999999999983
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.202,
+            "nmi": 0.0877929659832283,
+            "ari": 0.026982559628072972,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.188,
+            "cluster_counts": [
+              158,
+              44,
+              65,
+              125,
+              26,
+              78,
+              188,
+              73,
+              167,
+              76
+            ],
+            "cluster_proportions": [
+              0.158,
+              0.044,
+              0.065,
+              0.125,
+              0.026,
+              0.078,
+              0.188,
+              0.073,
+              0.167,
+              0.076
+            ]
+          },
+          "private_largest": 0.16666666666666666,
+          "private_fit": 0.9266666666666666,
+          "zero_recall": 0,
+          "min_recall": 0.6666666666666666,
+          "last50_private_largest": 0.16599999999999998,
+          "private_stage": {
+            "largest": -6.666666666666709e-05,
+            "privatepseudo_fit": -0.0011999999999999988
+          },
+          "public_stage": {
+            "largest": -6.666666666666653e-05,
+            "privatepseudo_fit": 0.0007999999999999985
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.184,
+            "nmi": 0.06872461355666722,
+            "ari": 0.016420637780495087,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.413,
+            "cluster_counts": [
+              28,
+              142,
+              231,
+              78,
+              51,
+              413,
+              24,
+              0,
+              0,
+              33
+            ],
+            "cluster_proportions": [
+              0.028,
+              0.142,
+              0.231,
+              0.078,
+              0.051,
+              0.413,
+              0.024,
+              0.0,
+              0.0,
+              0.033
+            ]
+          },
+          "private_largest": 0.27,
+          "private_fit": 0.97,
+          "zero_recall": 0,
+          "min_recall": 0.875,
+          "last50_private_largest": 0.27,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.209,
+            "nmi": 0.11733239968446173,
+            "ari": 0.04492525828736987,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.278,
+            "cluster_counts": [
+              278,
+              38,
+              95,
+              83,
+              60,
+              45,
+              26,
+              166,
+              165,
+              44
+            ],
+            "cluster_proportions": [
+              0.278,
+              0.038,
+              0.095,
+              0.083,
+              0.06,
+              0.045,
+              0.026,
+              0.166,
+              0.165,
+              0.044
+            ]
+          },
+          "private_largest": 0.15,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9285714285714286,
+          "last50_private_largest": 0.14850000000000002,
+          "private_stage": {
+            "largest": 0.00010000000000000009,
+            "privatepseudo_fit": -0.00010000000000000009
+          },
+          "public_stage": {
+            "largest": -0.00010000000000000009,
+            "privatepseudo_fit": 0.00010000000000000009
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.206,
+            "nmi": 0.08609966724276677,
+            "ari": 0.0337068481803782,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.16,
+            "cluster_counts": [
+              160,
+              57,
+              28,
+              127,
+              153,
+              121,
+              81,
+              90,
+              69,
+              114
+            ],
+            "cluster_proportions": [
+              0.16,
+              0.057,
+              0.028,
+              0.127,
+              0.153,
+              0.121,
+              0.081,
+              0.09,
+              0.069,
+              0.114
+            ]
+          },
+          "private_largest": 0.16333333333333333,
+          "private_fit": 0.9533333333333334,
+          "zero_recall": 0,
+          "min_recall": 0.8958333333333334,
+          "last50_private_largest": 0.1680666666666667,
+          "private_stage": {
+            "largest": -0.00046666666666666634,
+            "privatepseudo_fit": 0.0005333333333333346
+          },
+          "public_stage": {
+            "largest": 0.00013333333333333307,
+            "privatepseudo_fit": 6.666666666666599e-05
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.809059199935291,
+        "generation_seconds": 0.27106759999878705,
+        "exchange_seconds": 0.32365960034076124,
+        "public_seconds": 0.6049453994492069,
+        "total": 2.01441190042533,
+        "guard": 0.2593986015417613
+      },
+      "traffic": {
+        "down_bytes": 225255,
+        "control_setup_bytes": 267510,
+        "total_bytes": 408407,
+        "messages": 6010,
+        "up_bytes": 183152,
+        "vector_bytes": 140897,
+        "up_full_messages": 9,
+        "up_vector_bytes": 54832,
+        "down_full_messages": 5,
+        "down_vector_bytes": 86065,
+        "up_delta_messages": 911,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 80
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.395,
+            0.4
+          ],
+          "fit": [
+            1.0,
+            0.925,
+            0.92
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.145,
+            0.145
+          ],
+          "fit": [
+            1.0,
+            0.99,
+            0.99
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.16015625,
+        0.2265625,
+        0.125,
+        0.21484375,
+        0.19140625,
+        0.13671875
+      ]
+    },
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "corrected_guard_0",
+        "strength": 0.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.18933333333333333,
+        "nmi": 0.0759045512819569,
+        "ari": 0.02553433659108996,
+        "largest": 0.30933333333333335,
+        "empty": 0.3333333333333333
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.191,
+            "nmi": 0.0655095115275886,
+            "ari": 0.02560873703097951,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.206,
+            "cluster_counts": [
+              179,
+              58,
+              115,
+              206,
+              97,
+              90,
+              134,
+              7,
+              1,
+              113
+            ],
+            "cluster_proportions": [
+              0.179,
+              0.058,
+              0.115,
+              0.206,
+              0.097,
+              0.09,
+              0.134,
+              0.007,
+              0.001,
+              0.113
+            ]
+          },
+          "private_largest": 0.22,
+          "private_fit": 0.77,
+          "zero_recall": 0,
+          "min_recall": 0.4074074074074074,
+          "last50_private_largest": 0.22000000000000003,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.158,
+            "nmi": 0.045768011121162064,
+            "ari": 0.0163713577227284,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.496,
+            "cluster_counts": [
+              225,
+              31,
+              48,
+              76,
+              79,
+              496,
+              0,
+              15,
+              29,
+              1
+            ],
+            "cluster_proportions": [
+              0.225,
+              0.031,
+              0.048,
+              0.076,
+              0.079,
+              0.496,
+              0.0,
+              0.015,
+              0.029,
+              0.001
+            ]
+          },
+          "private_largest": 0.405,
+          "private_fit": 0.845,
+          "zero_recall": 3,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.4144000000000001,
+          "private_stage": {
+            "largest": -0.0006999999999999973,
+            "privatepseudo_fit": 0.0009000000000000008
+          },
+          "public_stage": {
+            "largest": 0.0003999999999999981,
+            "privatepseudo_fit": -0.0006000000000000005
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.202,
+            "nmi": 0.08167559656753563,
+            "ari": 0.022816365551082615,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.261,
+            "cluster_counts": [
+              261,
+              55,
+              82,
+              45,
+              23,
+              69,
+              200,
+              102,
+              82,
+              81
+            ],
+            "cluster_proportions": [
+              0.261,
+              0.055,
+              0.082,
+              0.045,
+              0.023,
+              0.069,
+              0.2,
+              0.102,
+              0.082,
+              0.081
+            ]
+          },
+          "private_largest": 0.25,
+          "private_fit": 0.76,
+          "zero_recall": 0,
+          "min_recall": 0.26666666666666666,
+          "last50_private_largest": 0.2577333333333333,
+          "private_stage": {
+            "largest": -0.000933333333333335,
+            "privatepseudo_fit": -0.00013333333333333198
+          },
+          "public_stage": {
+            "largest": 0.00046666666666666856,
+            "privatepseudo_fit": -0.00033333333333333435
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.177,
+            "nmi": 0.0632389702056612,
+            "ari": 0.01331412733289858,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.428,
+            "cluster_counts": [
+              4,
+              61,
+              228,
+              136,
+              72,
+              428,
+              24,
+              0,
+              1,
+              46
+            ],
+            "cluster_proportions": [
+              0.004,
+              0.061,
+              0.228,
+              0.136,
+              0.072,
+              0.428,
+              0.024,
+              0.0,
+              0.001,
+              0.046
+            ]
+          },
+          "private_largest": 0.29,
+          "private_fit": 0.88,
+          "zero_recall": 0,
+          "min_recall": 0.5833333333333334,
+          "last50_private_largest": 0.29,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.202,
+            "nmi": 0.1097757396934238,
+            "ari": 0.03849913890741836,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.302,
+            "cluster_counts": [
+              85,
+              31,
+              114,
+              99,
+              49,
+              31,
+              13,
+              302,
+              228,
+              48
+            ],
+            "cluster_proportions": [
+              0.085,
+              0.031,
+              0.114,
+              0.099,
+              0.049,
+              0.031,
+              0.013,
+              0.302,
+              0.228,
+              0.048
+            ]
+          },
+          "private_largest": 0.155,
+          "private_fit": 0.875,
+          "zero_recall": 0,
+          "min_recall": 0.42857142857142855,
+          "last50_private_largest": 0.1638,
+          "private_stage": {
+            "largest": -0.0007000000000000012,
+            "privatepseudo_fit": 0.0013000000000000012
+          },
+          "public_stage": {
+            "largest": 0.0007000000000000012,
+            "privatepseudo_fit": -0.0009000000000000008
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.206,
+            "nmi": 0.08945947857637011,
+            "ari": 0.0365962930014323,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.163,
+            "cluster_counts": [
+              163,
+              83,
+              61,
+              67,
+              91,
+              117,
+              105,
+              86,
+              67,
+              160
+            ],
+            "cluster_proportions": [
+              0.163,
+              0.083,
+              0.061,
+              0.067,
+              0.091,
+              0.117,
+              0.105,
+              0.086,
+              0.067,
+              0.16
+            ]
+          },
+          "private_largest": 0.17666666666666667,
+          "private_fit": 0.81,
+          "zero_recall": 0,
+          "min_recall": 0.48936170212765956,
+          "last50_private_largest": 0.19266666666666665,
+          "private_stage": {
+            "largest": -0.001066666666666667,
+            "privatepseudo_fit": 0.0010000000000000052
+          },
+          "public_stage": {
+            "largest": 0.00020000000000000017,
+            "privatepseudo_fit": -6.666666666667042e-05
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.4551047992426902,
+        "generation_seconds": 0.2364080996485427,
+        "exchange_seconds": 0.2689330002758652,
+        "public_seconds": 0.5258988998830318,
+        "total": 1.4918486995156854,
+        "guard": 0.0
+      },
+      "traffic": {
+        "down_bytes": 201950,
+        "control_setup_bytes": 267510,
+        "total_bytes": 381092,
+        "messages": 6010,
+        "up_bytes": 179142,
+        "vector_bytes": 113582,
+        "up_full_messages": 5,
+        "up_vector_bytes": 50822,
+        "down_full_messages": 5,
+        "down_vector_bytes": 62760,
+        "up_delta_messages": 624,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 371
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.37,
+            0.37
+          ],
+          "fit": [
+            1.0,
+            0.96,
+            0.96
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.145,
+            0.145
+          ],
+          "fit": [
+            1.0,
+            0.99,
+            0.99
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.109375,
+        0.28125,
+        0.1875,
+        0.234375,
+        0.1875,
+        0.1171875
+      ]
+    },
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "corrected_guard_1",
+        "strength": 1.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.19299999999999998,
+        "nmi": 0.07799458789002303,
+        "ari": 0.025698574231384164,
+        "largest": 0.29050000000000004,
+        "empty": 0.3333333333333333
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.185,
+            "nmi": 0.05356784101667713,
+            "ari": 0.016245228957321327,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.216,
+            "cluster_counts": [
+              172,
+              34,
+              83,
+              157,
+              169,
+              216,
+              59,
+              7,
+              2,
+              101
+            ],
+            "cluster_proportions": [
+              0.172,
+              0.034,
+              0.083,
+              0.157,
+              0.169,
+              0.216,
+              0.059,
+              0.007,
+              0.002,
+              0.101
+            ]
+          },
+          "private_largest": 0.26,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9629629629629629,
+          "last50_private_largest": 0.24600000000000002,
+          "private_stage": {
+            "largest": 0.00040000000000000034,
+            "privatepseudo_fit": 0.00040000000000000034
+          },
+          "public_stage": {
+            "largest": 0.00019999999999999963,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.162,
+            "nmi": 0.05125096798662564,
+            "ari": 0.016646335757752616,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.439,
+            "cluster_counts": [
+              180,
+              90,
+              78,
+              54,
+              89,
+              439,
+              2,
+              60,
+              5,
+              3
+            ],
+            "cluster_proportions": [
+              0.18,
+              0.09,
+              0.078,
+              0.054,
+              0.089,
+              0.439,
+              0.002,
+              0.06,
+              0.005,
+              0.003
+            ]
+          },
+          "private_largest": 0.355,
+          "private_fit": 0.905,
+          "zero_recall": 1,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.3567,
+          "private_stage": {
+            "largest": -0.00020000000000000017,
+            "privatepseudo_fit": 0.00010000000000000009
+          },
+          "public_stage": {
+            "largest": 0.00020000000000000017,
+            "privatepseudo_fit": -0.0005000000000000004
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.205,
+            "nmi": 0.08797965358167976,
+            "ari": 0.02774184864913602,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.188,
+            "cluster_counts": [
+              157,
+              42,
+              63,
+              122,
+              26,
+              82,
+              188,
+              73,
+              167,
+              80
+            ],
+            "cluster_proportions": [
+              0.157,
+              0.042,
+              0.063,
+              0.122,
+              0.026,
+              0.082,
+              0.188,
+              0.073,
+              0.167,
+              0.08
+            ]
+          },
+          "private_largest": 0.16333333333333333,
+          "private_fit": 0.93,
+          "zero_recall": 0,
+          "min_recall": 0.6888888888888889,
+          "last50_private_largest": 0.16433333333333336,
+          "private_stage": {
+            "largest": -0.00033333333333333435,
+            "privatepseudo_fit": -0.00086666666666666
+          },
+          "public_stage": {
+            "largest": 0.00013333333333333418,
+            "privatepseudo_fit": 0.0005999999999999939
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.182,
+            "nmi": 0.06670945478164043,
+            "ari": 0.013852822203023564,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.461,
+            "cluster_counts": [
+              29,
+              131,
+              203,
+              83,
+              40,
+              461,
+              10,
+              0,
+              0,
+              43
+            ],
+            "cluster_proportions": [
+              0.029,
+              0.131,
+              0.203,
+              0.083,
+              0.04,
+              0.461,
+              0.01,
+              0.0,
+              0.0,
+              0.043
+            ]
+          },
+          "private_largest": 0.27,
+          "private_fit": 0.98,
+          "zero_recall": 0,
+          "min_recall": 0.9166666666666666,
+          "last50_private_largest": 0.27,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.21,
+            "nmi": 0.11708777032175503,
+            "ari": 0.04547944470496217,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.276,
+            "cluster_counts": [
+              276,
+              41,
+              95,
+              82,
+              60,
+              45,
+              23,
+              164,
+              168,
+              46
+            ],
+            "cluster_proportions": [
+              0.276,
+              0.041,
+              0.095,
+              0.082,
+              0.06,
+              0.045,
+              0.023,
+              0.164,
+              0.168,
+              0.046
+            ]
+          },
+          "private_largest": 0.15,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9285714285714286,
+          "last50_private_largest": 0.14950000000000002,
+          "private_stage": {
+            "largest": 0.00010000000000000009,
+            "privatepseudo_fit": -0.00030000000000000024
+          },
+          "public_stage": {
+            "largest": -0.00010000000000000009,
+            "privatepseudo_fit": 0.00030000000000000024
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.214,
+            "nmi": 0.09137183965176021,
+            "ari": 0.034225765116109294,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.163,
+            "cluster_counts": [
+              159,
+              51,
+              30,
+              163,
+              154,
+              104,
+              79,
+              91,
+              61,
+              108
+            ],
+            "cluster_proportions": [
+              0.159,
+              0.051,
+              0.03,
+              0.163,
+              0.154,
+              0.104,
+              0.079,
+              0.091,
+              0.061,
+              0.108
+            ]
+          },
+          "private_largest": 0.16666666666666666,
+          "private_fit": 0.9566666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.9230769230769231,
+          "last50_private_largest": 0.1691333333333333,
+          "private_stage": {
+            "largest": -0.00026666666666666673,
+            "privatepseudo_fit": 0.00026666666666666614
+          },
+          "public_stage": {
+            "largest": 0.00013333333333333307,
+            "privatepseudo_fit": 0.0
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.9847591998404823,
+        "generation_seconds": 0.35339500079862773,
+        "exchange_seconds": 0.41541469981893897,
+        "public_seconds": 0.7337942001176998,
+        "total": 2.4947063006693497,
+        "guard": 0.3237210002844222
+      },
+      "traffic": {
+        "down_bytes": 255280,
+        "control_setup_bytes": 267510,
+        "total_bytes": 444115,
+        "messages": 6010,
+        "up_bytes": 188835,
+        "vector_bytes": 176605,
+        "up_full_messages": 71,
+        "up_vector_bytes": 60515,
+        "down_full_messages": 155,
+        "down_vector_bytes": 116090,
+        "up_delta_messages": 914,
+        "down_delta_messages": 845,
+        "up_unchanged_messages": 15
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.39,
+            0.39
+          ],
+          "fit": [
+            1.0,
+            0.885,
+            0.885
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.15,
+            0.15
+          ],
+          "fit": [
+            1.0,
+            0.955,
+            0.955
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.16796875,
+        0.21875,
+        0.12890625,
+        0.26171875,
+        0.19140625,
+        0.13671875
+      ]
+    },
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "corrected_guard_2",
+        "strength": 2.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.19216666666666668,
+        "nmi": 0.07687405960474351,
+        "ari": 0.025702793606988215,
+        "largest": 0.2886666666666667,
+        "empty": 0.3333333333333333
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.186,
+            "nmi": 0.04905775768069418,
+            "ari": 0.014659195303923078,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.21,
+            "cluster_counts": [
+              186,
+              30,
+              84,
+              168,
+              166,
+              210,
+              57,
+              5,
+              1,
+              93
+            ],
+            "cluster_proportions": [
+              0.186,
+              0.03,
+              0.084,
+              0.168,
+              0.166,
+              0.21,
+              0.057,
+              0.005,
+              0.001,
+              0.093
+            ]
+          },
+          "private_largest": 0.25,
+          "private_fit": 0.98,
+          "zero_recall": 0,
+          "min_recall": 0.9259259259259259,
+          "last50_private_largest": 0.25379999999999997,
+          "private_stage": {
+            "largest": 0.0003999999999999998,
+            "privatepseudo_fit": 0.0011999999999999988
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.163,
+            "nmi": 0.05261588940549753,
+            "ari": 0.016882412900533477,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.436,
+            "cluster_counts": [
+              181,
+              91,
+              108,
+              32,
+              68,
+              436,
+              4,
+              63,
+              13,
+              4
+            ],
+            "cluster_proportions": [
+              0.181,
+              0.091,
+              0.108,
+              0.032,
+              0.068,
+              0.436,
+              0.004,
+              0.063,
+              0.013,
+              0.004
+            ]
+          },
+          "private_largest": 0.355,
+          "private_fit": 0.89,
+          "zero_recall": 0,
+          "min_recall": 0.18181818181818182,
+          "last50_private_largest": 0.3579,
+          "private_stage": {
+            "largest": -0.00020000000000000017,
+            "privatepseudo_fit": -0.00040000000000000034
+          },
+          "public_stage": {
+            "largest": 0.00020000000000000017,
+            "privatepseudo_fit": -0.00030000000000000024
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.201,
+            "nmi": 0.08626962902431949,
+            "ari": 0.028115542777628566,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.2,
+            "cluster_counts": [
+              153,
+              42,
+              59,
+              112,
+              26,
+              90,
+              200,
+              70,
+              162,
+              86
+            ],
+            "cluster_proportions": [
+              0.153,
+              0.042,
+              0.059,
+              0.112,
+              0.026,
+              0.09,
+              0.2,
+              0.07,
+              0.162,
+              0.086
+            ]
+          },
+          "private_largest": 0.17,
+          "private_fit": 0.9233333333333333,
+          "zero_recall": 0,
+          "min_recall": 0.6444444444444445,
+          "last50_private_largest": 0.16946666666666665,
+          "private_stage": {
+            "largest": -0.0003333333333333338,
+            "privatepseudo_fit": -6.66666666666682e-05
+          },
+          "public_stage": {
+            "largest": 0.00020000000000000074,
+            "privatepseudo_fit": 0.00046666666666666856
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.189,
+            "nmi": 0.07535743633626937,
+            "ari": 0.021739034175645607,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.428,
+            "cluster_counts": [
+              13,
+              196,
+              208,
+              73,
+              38,
+              428,
+              10,
+              0,
+              0,
+              34
+            ],
+            "cluster_proportions": [
+              0.013,
+              0.196,
+              0.208,
+              0.073,
+              0.038,
+              0.428,
+              0.01,
+              0.0,
+              0.0,
+              0.034
+            ]
+          },
+          "private_largest": 0.27,
+          "private_fit": 1.0,
+          "zero_recall": 0,
+          "min_recall": 1.0,
+          "last50_private_largest": 0.271,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.206,
+            "nmi": 0.11304790489157991,
+            "ari": 0.04358469147283083,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.266,
+            "cluster_counts": [
+              266,
+              42,
+              85,
+              82,
+              57,
+              47,
+              22,
+              170,
+              171,
+              58
+            ],
+            "cluster_proportions": [
+              0.266,
+              0.042,
+              0.085,
+              0.082,
+              0.057,
+              0.047,
+              0.022,
+              0.17,
+              0.171,
+              0.058
+            ]
+          },
+          "private_largest": 0.145,
+          "private_fit": 0.995,
+          "zero_recall": 0,
+          "min_recall": 0.9523809523809523,
+          "last50_private_largest": 0.1475,
+          "private_stage": {
+            "largest": -0.00010000000000000009,
+            "privatepseudo_fit": -0.00010000000000000009
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.208,
+            "nmi": 0.08489574029010068,
+            "ari": 0.029235885011367733,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.192,
+            "cluster_counts": [
+              157,
+              45,
+              27,
+              192,
+              153,
+              96,
+              82,
+              91,
+              58,
+              99
+            ],
+            "cluster_proportions": [
+              0.157,
+              0.045,
+              0.027,
+              0.192,
+              0.153,
+              0.096,
+              0.082,
+              0.091,
+              0.058,
+              0.099
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 0.96,
+          "zero_recall": 0,
+          "min_recall": 0.9,
+          "last50_private_largest": 0.17433333333333334,
+          "private_stage": {
+            "largest": -0.0005333333333333323,
+            "privatepseudo_fit": 0.0007333333333333348
+          },
+          "public_stage": {
+            "largest": 0.0005333333333333323,
+            "privatepseudo_fit": -0.0001333333333333364
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.9625931000337005,
+        "generation_seconds": 0.41048169950954616,
+        "exchange_seconds": 0.40183129970682785,
+        "public_seconds": 0.7348327002837323,
+        "total": 2.5167407989501953,
+        "guard": 0.3109416985535063
+      },
+      "traffic": {
+        "down_bytes": 280855,
+        "control_setup_bytes": 267510,
+        "total_bytes": 476309,
+        "messages": 6010,
+        "up_bytes": 195454,
+        "vector_bytes": 208799,
+        "up_full_messages": 274,
+        "up_vector_bytes": 67134,
+        "down_full_messages": 800,
+        "down_vector_bytes": 141665,
+        "up_delta_messages": 726,
+        "down_delta_messages": 200
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.355,
+            0.355
+          ],
+          "fit": [
+            1.0,
+            0.875,
+            0.875
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.155,
+            0.155
+          ],
+          "fit": [
+            1.0,
+            0.91,
+            0.91
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.1640625,
+        0.20703125,
+        0.1328125,
+        0.25,
+        0.16796875,
+        0.14453125
+      ]
+    },
+    {
+      "case": {
+        "partition": "dirichlet_0.1",
+        "initialization": "centers",
+        "setting": "legacy_centers",
+        "strength": 0.0,
+        "until": 0,
+        "all_clients": false
+      },
+      "mean": {
+        "acc": 0.1735,
+        "nmi": 0.05527593045187416,
+        "ari": 0.016589019132142543,
+        "largest": 0.37200000000000005,
+        "empty": 2.6666666666666665
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.19,
+            "nmi": 0.064747879539068,
+            "ari": 0.025213445428845606,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.207,
+            "cluster_counts": [
+              184,
+              60,
+              114,
+              207,
+              97,
+              88,
+              124,
+              5,
+              1,
+              120
+            ],
+            "cluster_proportions": [
+              0.184,
+              0.06,
+              0.114,
+              0.207,
+              0.097,
+              0.088,
+              0.124,
+              0.005,
+              0.001,
+              0.12
+            ]
+          },
+          "private_largest": 0.22,
+          "private_fit": 0.78,
+          "zero_recall": 0,
+          "min_recall": 0.4074074074074074,
+          "last50_private_largest": 0.22000000000000003,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.145,
+            "nmi": 0.030537190244471428,
+            "ari": 0.009614383102226176,
+            "occupied": 3,
+            "empty": 7,
+            "largest": 0.653,
+            "cluster_counts": [
+              337,
+              0,
+              0,
+              0,
+              10,
+              653,
+              0,
+              0,
+              0,
+              0
+            ],
+            "cluster_proportions": [
+              0.337,
+              0.0,
+              0.0,
+              0.0,
+              0.01,
+              0.653,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "private_largest": 0.56,
+          "private_fit": 0.625,
+          "zero_recall": 8,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.5725999999999999,
+          "private_stage": {
+            "largest": 0.00030000000000000024,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": -0.0005999999999999983,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.189,
+            "nmi": 0.06241891570736236,
+            "ari": 0.016011644593053622,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.305,
+            "cluster_counts": [
+              305,
+              39,
+              19,
+              194,
+              6,
+              51,
+              227,
+              0,
+              159,
+              0
+            ],
+            "cluster_proportions": [
+              0.305,
+              0.039,
+              0.019,
+              0.194,
+              0.006,
+              0.051,
+              0.227,
+              0.0,
+              0.159,
+              0.0
+            ]
+          },
+          "private_largest": 0.2866666666666667,
+          "private_fit": 0.61,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.30346666666666666,
+          "private_stage": {
+            "largest": -0.0024666666666666604,
+            "privatepseudo_fit": 0.003066666666666662
+          },
+          "public_stage": {
+            "largest": 0.0015999999999999936,
+            "privatepseudo_fit": -0.0025333333333333297
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.174,
+            "nmi": 0.061913892290311974,
+            "ari": 0.012289800089285293,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.436,
+            "cluster_counts": [
+              4,
+              62,
+              237,
+              128,
+              69,
+              436,
+              17,
+              0,
+              0,
+              47
+            ],
+            "cluster_proportions": [
+              0.004,
+              0.062,
+              0.237,
+              0.128,
+              0.069,
+              0.436,
+              0.017,
+              0.0,
+              0.0,
+              0.047
+            ]
+          },
+          "private_largest": 0.29,
+          "private_fit": 0.88,
+          "zero_recall": 0,
+          "min_recall": 0.5833333333333334,
+          "last50_private_largest": 0.29,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.174,
+            "nmi": 0.05705570276099211,
+            "ari": 0.02198697238899707,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.278,
+            "cluster_counts": [
+              0,
+              85,
+              32,
+              150,
+              134,
+              23,
+              0,
+              43,
+              255,
+              278
+            ],
+            "cluster_proportions": [
+              0.0,
+              0.085,
+              0.032,
+              0.15,
+              0.134,
+              0.023,
+              0.0,
+              0.043,
+              0.255,
+              0.278
+            ]
+          },
+          "private_largest": 0.26,
+          "private_fit": 0.62,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.27160000000000006,
+          "private_stage": {
+            "largest": -0.001200000000000001,
+            "privatepseudo_fit": 0.0018000000000000017
+          },
+          "public_stage": {
+            "largest": 0.001100000000000001,
+            "privatepseudo_fit": -0.001200000000000001
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.169,
+            "nmi": 0.05498200216903906,
+            "ari": 0.014417869190447491,
+            "occupied": 7,
+            "empty": 3,
+            "largest": 0.353,
+            "cluster_counts": [
+              241,
+              8,
+              0,
+              353,
+              265,
+              0,
+              0,
+              111,
+              4,
+              18
+            ],
+            "cluster_proportions": [
+              0.241,
+              0.008,
+              0.0,
+              0.353,
+              0.265,
+              0.0,
+              0.0,
+              0.111,
+              0.004,
+              0.018
+            ]
+          },
+          "private_largest": 0.2833333333333333,
+          "private_fit": 0.5733333333333334,
+          "zero_recall": 4,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.31193333333333334,
+          "private_stage": {
+            "largest": -0.0017999999999999993,
+            "privatepseudo_fit": 0.0037999999999999957
+          },
+          "public_stage": {
+            "largest": 0.00046666666666666634,
+            "privatepseudo_fit": -0.002399999999999994
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.44142400013515726,
+        "generation_seconds": 0.23440609977114946,
+        "exchange_seconds": 0.2689903998398222,
+        "public_seconds": 0.521395800402388,
+        "total": 1.4718726993305609,
+        "guard": 0.0
+      },
+      "traffic": {
+        "down_bytes": 209350,
+        "control_setup_bytes": 267510,
+        "total_bytes": 389783,
+        "messages": 6010,
+        "up_bytes": 180433,
+        "vector_bytes": 122273,
+        "up_full_messages": 11,
+        "up_vector_bytes": 52113,
+        "down_full_messages": 5,
+        "down_vector_bytes": 70160,
+        "up_delta_messages": 613,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 376
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.355,
+            0.46,
+            0.46
+          ],
+          "fit": [
+            1.0,
+            0.825,
+            0.825
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.145,
+            0.15,
+            0.15
+          ],
+          "fit": [
+            1.0,
+            0.97,
+            0.97
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.09765625,
+        0.5234375,
+        0.25390625,
+        0.24609375,
+        0.2265625,
+        0.25
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "corrected_guard_0.1",
+        "strength": 0.1,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.20566666666666666,
+        "nmi": 0.09973310785479846,
+        "ari": 0.04194111968619028,
+        "largest": 0.2808333333333333,
+        "empty": 0.5
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.221,
+            "nmi": 0.10426705970632,
+            "ari": 0.0437675951263546,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.181,
+            "cluster_counts": [
+              181,
+              93,
+              138,
+              123,
+              126,
+              84,
+              131,
+              24,
+              89,
+              11
+            ],
+            "cluster_proportions": [
+              0.181,
+              0.093,
+              0.138,
+              0.123,
+              0.126,
+              0.084,
+              0.131,
+              0.024,
+              0.089,
+              0.011
+            ]
+          },
+          "private_largest": 0.17,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9444444444444444,
+          "last50_private_largest": 0.17,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.161,
+            "nmi": 0.04548822823752984,
+            "ari": 0.015388407751931569,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.656,
+            "cluster_counts": [
+              656,
+              102,
+              0,
+              47,
+              53,
+              2,
+              0,
+              49,
+              64,
+              27
+            ],
+            "cluster_proportions": [
+              0.656,
+              0.102,
+              0.0,
+              0.047,
+              0.053,
+              0.002,
+              0.0,
+              0.049,
+              0.064,
+              0.027
+            ]
+          },
+          "private_largest": 0.63,
+          "private_fit": 0.84,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.6264,
+          "private_stage": {
+            "largest": -0.0019000000000000017,
+            "privatepseudo_fit": 0.0041999999999999945
+          },
+          "public_stage": {
+            "largest": 0.0018000000000000017,
+            "privatepseudo_fit": -0.0034999999999999966
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.197,
+            "nmi": 0.07703304983426035,
+            "ari": 0.03407834339135602,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.308,
+            "cluster_counts": [
+              60,
+              47,
+              308,
+              103,
+              281,
+              56,
+              0,
+              36,
+              46,
+              63
+            ],
+            "cluster_proportions": [
+              0.06,
+              0.047,
+              0.308,
+              0.103,
+              0.281,
+              0.056,
+              0.0,
+              0.036,
+              0.046,
+              0.063
+            ]
+          },
+          "private_largest": 0.29,
+          "private_fit": 0.9566666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.75,
+          "last50_private_largest": 0.29,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00013333333333333418
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 6.666666666666599e-05
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.208,
+            "nmi": 0.13352083736787973,
+            "ari": 0.05921070969881741,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.187,
+            "cluster_counts": [
+              146,
+              187,
+              131,
+              147,
+              85,
+              186,
+              8,
+              45,
+              14,
+              51
+            ],
+            "cluster_proportions": [
+              0.146,
+              0.187,
+              0.131,
+              0.147,
+              0.085,
+              0.186,
+              0.008,
+              0.045,
+              0.014,
+              0.051
+            ]
+          },
+          "private_largest": 0.19,
+          "private_fit": 0.96,
+          "zero_recall": 0,
+          "min_recall": 0.8,
+          "last50_private_largest": 0.19199999999999995,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": -0.00020000000000000017,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.214,
+            "nmi": 0.11458969458554767,
+            "ari": 0.04700130806305943,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.162,
+            "cluster_counts": [
+              162,
+              142,
+              103,
+              88,
+              100,
+              94,
+              90,
+              158,
+              20,
+              43
+            ],
+            "cluster_proportions": [
+              0.162,
+              0.142,
+              0.103,
+              0.088,
+              0.1,
+              0.094,
+              0.09,
+              0.158,
+              0.02,
+              0.043
+            ]
+          },
+          "private_largest": 0.175,
+          "private_fit": 0.9,
+          "zero_recall": 0,
+          "min_recall": 0.8,
+          "last50_private_largest": 0.17999999999999997,
+          "private_stage": {
+            "largest": -0.00040000000000000034,
+            "privatepseudo_fit": -0.0008000000000000007
+          },
+          "public_stage": {
+            "largest": 0.00030000000000000024,
+            "privatepseudo_fit": 0.0009000000000000008
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.233,
+            "nmi": 0.12349977739725314,
+            "ari": 0.05220035408562263,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.191,
+            "cluster_counts": [
+              72,
+              110,
+              113,
+              75,
+              71,
+              88,
+              127,
+              67,
+              191,
+              86
+            ],
+            "cluster_proportions": [
+              0.072,
+              0.11,
+              0.113,
+              0.075,
+              0.071,
+              0.088,
+              0.127,
+              0.067,
+              0.191,
+              0.086
+            ]
+          },
+          "private_largest": 0.22,
+          "private_fit": 0.9333333333333333,
+          "zero_recall": 0,
+          "min_recall": 0.78125,
+          "last50_private_largest": 0.2236,
+          "private_stage": {
+            "largest": -0.00020000000000000074,
+            "privatepseudo_fit": 0.00013333333333333198
+          },
+          "public_stage": {
+            "largest": 0.00020000000000000074,
+            "privatepseudo_fit": 2.220446049250313e-18
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.6969626994687133,
+        "generation_seconds": 0.22870210011024028,
+        "exchange_seconds": 0.27390559983905405,
+        "public_seconds": 0.5294016000116244,
+        "total": 1.734494199277833,
+        "guard": 0.22483169956831262
+      },
+      "traffic": {
+        "down_bytes": 200070,
+        "control_setup_bytes": 267510,
+        "total_bytes": 378971,
+        "messages": 6010,
+        "up_bytes": 178901,
+        "vector_bytes": 111461,
+        "up_full_messages": 5,
+        "up_vector_bytes": 50581,
+        "down_full_messages": 5,
+        "down_vector_bytes": 60880,
+        "up_delta_messages": 645,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 350
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.575,
+            0.575
+          ],
+          "fit": [
+            1.0,
+            0.94,
+            0.94
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.2,
+            0.2
+          ],
+          "fit": [
+            1.0,
+            0.995,
+            0.995
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.11328125,
+        0.4609375,
+        0.234375,
+        0.15625,
+        0.125,
+        0.09375
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "corrected_guard_0.5",
+        "strength": 0.5,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.2055,
+        "nmi": 0.10060132586275167,
+        "ari": 0.041948064132546904,
+        "largest": 0.2826666666666667,
+        "empty": 0.3333333333333333
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.228,
+            "nmi": 0.10644851330010485,
+            "ari": 0.045197274614696095,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.172,
+            "cluster_counts": [
+              168,
+              88,
+              127,
+              172,
+              136,
+              78,
+              126,
+              18,
+              75,
+              12
+            ],
+            "cluster_proportions": [
+              0.168,
+              0.088,
+              0.127,
+              0.172,
+              0.136,
+              0.078,
+              0.126,
+              0.018,
+              0.075,
+              0.012
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 1.0,
+          "zero_recall": 0,
+          "min_recall": 1.0,
+          "last50_private_largest": 0.17999999999999997,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.161,
+            "nmi": 0.04795503015629149,
+            "ari": 0.01647235202463699,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.618,
+            "cluster_counts": [
+              618,
+              85,
+              16,
+              22,
+              25,
+              2,
+              0,
+              98,
+              92,
+              42
+            ],
+            "cluster_proportions": [
+              0.618,
+              0.085,
+              0.016,
+              0.022,
+              0.025,
+              0.002,
+              0.0,
+              0.098,
+              0.092,
+              0.042
+            ]
+          },
+          "private_largest": 0.575,
+          "private_fit": 0.895,
+          "zero_recall": 1,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.5828,
+          "private_stage": {
+            "largest": -0.0015000000000000013,
+            "privatepseudo_fit": 0.0026000000000000025
+          },
+          "public_stage": {
+            "largest": 0.001200000000000001,
+            "privatepseudo_fit": -0.0025000000000000022
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.194,
+            "nmi": 0.07591284386226817,
+            "ari": 0.03337479203173021,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.308,
+            "cluster_counts": [
+              60,
+              64,
+              308,
+              87,
+              275,
+              58,
+              0,
+              50,
+              37,
+              61
+            ],
+            "cluster_proportions": [
+              0.06,
+              0.064,
+              0.308,
+              0.087,
+              0.275,
+              0.058,
+              0.0,
+              0.05,
+              0.037,
+              0.061
+            ]
+          },
+          "private_largest": 0.28,
+          "private_fit": 0.9866666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.8888888888888888,
+          "last50_private_largest": 0.2799333333333333,
+          "private_stage": {
+            "largest": -0.00013333333333333198,
+            "privatepseudo_fit": 6.666666666666599e-05
+          },
+          "public_stage": {
+            "largest": 6.666666666666599e-05,
+            "privatepseudo_fit": 6.66666666666682e-05
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.205,
+            "nmi": 0.13742357723101337,
+            "ari": 0.061513313920860124,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.237,
+            "cluster_counts": [
+              140,
+              237,
+              130,
+              138,
+              81,
+              181,
+              5,
+              32,
+              5,
+              51
+            ],
+            "cluster_proportions": [
+              0.14,
+              0.237,
+              0.13,
+              0.138,
+              0.081,
+              0.181,
+              0.005,
+              0.032,
+              0.005,
+              0.051
+            ]
+          },
+          "private_largest": 0.2,
+          "private_fit": 0.98,
+          "zero_recall": 0,
+          "min_recall": 0.9090909090909091,
+          "last50_private_largest": 0.19999999999999996,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.213,
+            "nmi": 0.11427419650706992,
+            "ari": 0.044044991027395085,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.178,
+            "cluster_counts": [
+              149,
+              167,
+              97,
+              80,
+              86,
+              88,
+              90,
+              178,
+              32,
+              33
+            ],
+            "cluster_proportions": [
+              0.149,
+              0.167,
+              0.097,
+              0.08,
+              0.086,
+              0.088,
+              0.09,
+              0.178,
+              0.032,
+              0.033
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 0.955,
+          "zero_recall": 0,
+          "min_recall": 0.8780487804878049,
+          "last50_private_largest": 0.1856,
+          "private_stage": {
+            "largest": -0.00040000000000000034,
+            "privatepseudo_fit": -0.0010999999999999988
+          },
+          "public_stage": {
+            "largest": 0.00040000000000000034,
+            "privatepseudo_fit": 0.0010999999999999988
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.232,
+            "nmi": 0.12159379411976225,
+            "ari": 0.05108566117596293,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.183,
+            "cluster_counts": [
+              74,
+              106,
+              105,
+              70,
+              75,
+              84,
+              126,
+              96,
+              183,
+              81
+            ],
+            "cluster_proportions": [
+              0.074,
+              0.106,
+              0.105,
+              0.07,
+              0.075,
+              0.084,
+              0.126,
+              0.096,
+              0.183,
+              0.081
+            ]
+          },
+          "private_largest": 0.21666666666666667,
+          "private_fit": 0.9766666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.9111111111111111,
+          "last50_private_largest": 0.22186666666666668,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -6.666666666667042e-05
+          },
+          "public_stage": {
+            "largest": -6.666666666666653e-05,
+            "privatepseudo_fit": 0.0003333333333333366
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.6925019000773318,
+        "generation_seconds": 0.2313089002855122,
+        "exchange_seconds": 0.2814990000333637,
+        "public_seconds": 0.5205563000636175,
+        "total": 1.731243099551648,
+        "guard": 0.22483820229535922
+      },
+      "traffic": {
+        "down_bytes": 212715,
+        "control_setup_bytes": 267510,
+        "total_bytes": 393836,
+        "messages": 6010,
+        "up_bytes": 181121,
+        "vector_bytes": 126326,
+        "up_full_messages": 7,
+        "up_vector_bytes": 52801,
+        "down_full_messages": 5,
+        "down_vector_bytes": 73525,
+        "up_delta_messages": 774,
+        "down_delta_messages": 995,
+        "up_unchanged_messages": 219
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.645,
+            0.645
+          ],
+          "fit": [
+            1.0,
+            0.835,
+            0.835
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.19,
+            0.19
+          ],
+          "fit": [
+            1.0,
+            0.965,
+            0.96
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.1171875,
+        0.3984375,
+        0.2265625,
+        0.1484375,
+        0.12890625,
+        0.08203125
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "corrected_guard_0",
+        "strength": 0.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.20600000000000004,
+        "nmi": 0.09617651029847414,
+        "ari": 0.04107649203668938,
+        "largest": 0.2848333333333333,
+        "empty": 0.8333333333333334
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.225,
+            "nmi": 0.10186153042851567,
+            "ari": 0.04160779639782227,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.169,
+            "cluster_counts": [
+              169,
+              80,
+              152,
+              81,
+              103,
+              106,
+              134,
+              31,
+              138,
+              6
+            ],
+            "cluster_proportions": [
+              0.169,
+              0.08,
+              0.152,
+              0.081,
+              0.103,
+              0.106,
+              0.134,
+              0.031,
+              0.138,
+              0.006
+            ]
+          },
+          "private_largest": 0.17,
+          "private_fit": 0.93,
+          "zero_recall": 0,
+          "min_recall": 0.7222222222222222,
+          "last50_private_largest": 0.16080000000000003,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -0.0006000000000000005
+          },
+          "public_stage": {
+            "largest": 0.00040000000000000034,
+            "privatepseudo_fit": 0.0008000000000000007
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.162,
+            "nmi": 0.04647037759136103,
+            "ari": 0.016502020740553177,
+            "occupied": 6,
+            "empty": 4,
+            "largest": 0.67,
+            "cluster_counts": [
+              670,
+              90,
+              0,
+              9,
+              120,
+              0,
+              0,
+              69,
+              42,
+              0
+            ],
+            "cluster_proportions": [
+              0.67,
+              0.09,
+              0.0,
+              0.009,
+              0.12,
+              0.0,
+              0.0,
+              0.069,
+              0.042,
+              0.0
+            ]
+          },
+          "private_largest": 0.655,
+          "private_fit": 0.715,
+          "zero_recall": 5,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.6464,
+          "private_stage": {
+            "largest": -0.0016000000000000014,
+            "privatepseudo_fit": 0.0018999999999999972
+          },
+          "public_stage": {
+            "largest": 0.0015000000000000013,
+            "privatepseudo_fit": -0.001699999999999997
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.201,
+            "nmi": 0.08028460332148935,
+            "ari": 0.033934746434764886,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.308,
+            "cluster_counts": [
+              60,
+              15,
+              308,
+              114,
+              287,
+              55,
+              0,
+              25,
+              55,
+              81
+            ],
+            "cluster_proportions": [
+              0.06,
+              0.015,
+              0.308,
+              0.114,
+              0.287,
+              0.055,
+              0.0,
+              0.025,
+              0.055,
+              0.081
+            ]
+          },
+          "private_largest": 0.30666666666666664,
+          "private_fit": 0.8866666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.23076923076923078,
+          "last50_private_largest": 0.30693333333333334,
+          "private_stage": {
+            "largest": -0.00013333333333333418,
+            "privatepseudo_fit": 0.0005333333333333323
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -0.00026666666666666397
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.204,
+            "nmi": 0.11845536786255846,
+            "ari": 0.05474950481969394,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.21,
+            "cluster_counts": [
+              157,
+              132,
+              168,
+              210,
+              22,
+              160,
+              19,
+              55,
+              17,
+              60
+            ],
+            "cluster_proportions": [
+              0.157,
+              0.132,
+              0.168,
+              0.21,
+              0.022,
+              0.16,
+              0.019,
+              0.055,
+              0.017,
+              0.06
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 0.87,
+          "zero_recall": 0,
+          "min_recall": 0.4,
+          "last50_private_largest": 0.17999999999999997,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.215,
+            "nmi": 0.10834438195103657,
+            "ari": 0.04755148410455428,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.156,
+            "cluster_counts": [
+              156,
+              61,
+              124,
+              113,
+              152,
+              95,
+              94,
+              125,
+              3,
+              77
+            ],
+            "cluster_proportions": [
+              0.156,
+              0.061,
+              0.124,
+              0.113,
+              0.152,
+              0.095,
+              0.094,
+              0.125,
+              0.003,
+              0.077
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 0.785,
+          "zero_recall": 0,
+          "min_recall": 0.35,
+          "last50_private_largest": 0.17619999999999997,
+          "private_stage": {
+            "largest": 0.0004999999999999999,
+            "privatepseudo_fit": 0.0011999999999999988
+          },
+          "public_stage": {
+            "largest": -0.0003999999999999998,
+            "privatepseudo_fit": -0.0011999999999999988
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.229,
+            "nmi": 0.12164280063588379,
+            "ari": 0.05211339972274772,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.196,
+            "cluster_counts": [
+              64,
+              128,
+              129,
+              84,
+              60,
+              102,
+              112,
+              49,
+              196,
+              76
+            ],
+            "cluster_proportions": [
+              0.064,
+              0.128,
+              0.129,
+              0.084,
+              0.06,
+              0.102,
+              0.112,
+              0.049,
+              0.196,
+              0.076
+            ]
+          },
+          "private_largest": 0.22666666666666666,
+          "private_fit": 0.89,
+          "zero_recall": 0,
+          "min_recall": 0.46875,
+          "last50_private_largest": 0.22920000000000001,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00026666666666666614
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.5376635001739487,
+        "generation_seconds": 0.27437639969866723,
+        "exchange_seconds": 0.3106080000870861,
+        "public_seconds": 0.6354883997119032,
+        "total": 1.765113299828954,
+        "guard": 0.0
+      },
+      "traffic": {
+        "down_bytes": 197315,
+        "control_setup_bytes": 267510,
+        "total_bytes": 375684,
+        "messages": 6010,
+        "up_bytes": 178369,
+        "vector_bytes": 108174,
+        "up_full_messages": 5,
+        "up_vector_bytes": 50049,
+        "down_full_messages": 5,
+        "down_vector_bytes": 58125,
+        "up_delta_messages": 550,
+        "up_unchanged_messages": 445,
+        "down_delta_messages": 995
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.555,
+            0.555
+          ],
+          "fit": [
+            1.0,
+            0.97,
+            0.975
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.2,
+            0.2
+          ],
+          "fit": [
+            1.0,
+            0.99,
+            0.99
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.12109375,
+        0.49609375,
+        0.2421875,
+        0.15625,
+        0.125,
+        0.09375
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "corrected_guard_1",
+        "strength": 1.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.206,
+        "nmi": 0.10127825625411545,
+        "ari": 0.042547275110204924,
+        "largest": 0.289,
+        "empty": 0.5
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.225,
+            "nmi": 0.11017941134819885,
+            "ari": 0.046404084277971935,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.193,
+            "cluster_counts": [
+              160,
+              83,
+              120,
+              193,
+              134,
+              83,
+              125,
+              18,
+              72,
+              12
+            ],
+            "cluster_proportions": [
+              0.16,
+              0.083,
+              0.12,
+              0.193,
+              0.134,
+              0.083,
+              0.125,
+              0.018,
+              0.072,
+              0.012
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 1.0,
+          "zero_recall": 0,
+          "min_recall": 1.0,
+          "last50_private_largest": 0.17999999999999997,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.163,
+            "nmi": 0.04576870168844283,
+            "ari": 0.01665730510794134,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.618,
+            "cluster_counts": [
+              618,
+              116,
+              3,
+              32,
+              60,
+              5,
+              0,
+              88,
+              78,
+              0
+            ],
+            "cluster_proportions": [
+              0.618,
+              0.116,
+              0.003,
+              0.032,
+              0.06,
+              0.005,
+              0.0,
+              0.088,
+              0.078,
+              0.0
+            ]
+          },
+          "private_largest": 0.575,
+          "private_fit": 0.89,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.5733999999999999,
+          "private_stage": {
+            "largest": -0.0004999999999999983,
+            "privatepseudo_fit": 0.002100000000000002
+          },
+          "public_stage": {
+            "largest": 0.0004999999999999983,
+            "privatepseudo_fit": -0.001200000000000001
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.197,
+            "nmi": 0.07694697099879724,
+            "ari": 0.034183114821702554,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.308,
+            "cluster_counts": [
+              60,
+              61,
+              308,
+              84,
+              271,
+              62,
+              0,
+              50,
+              44,
+              60
+            ],
+            "cluster_proportions": [
+              0.06,
+              0.061,
+              0.308,
+              0.084,
+              0.271,
+              0.062,
+              0.0,
+              0.05,
+              0.044,
+              0.06
+            ]
+          },
+          "private_largest": 0.27666666666666667,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.8333333333333334,
+          "last50_private_largest": 0.2768,
+          "private_stage": {
+            "largest": -6.666666666666709e-05,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 6.666666666666599e-05
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.208,
+            "nmi": 0.13771243694785484,
+            "ari": 0.06194237959424351,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.26,
+            "cluster_counts": [
+              136,
+              260,
+              126,
+              138,
+              75,
+              173,
+              4,
+              33,
+              5,
+              50
+            ],
+            "cluster_proportions": [
+              0.136,
+              0.26,
+              0.126,
+              0.138,
+              0.075,
+              0.173,
+              0.004,
+              0.033,
+              0.005,
+              0.05
+            ]
+          },
+          "private_largest": 0.21,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9545454545454546,
+          "last50_private_largest": 0.2032,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.00019999999999999963,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.213,
+            "nmi": 0.11483075292352427,
+            "ari": 0.04443132160850422,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.18,
+            "cluster_counts": [
+              146,
+              165,
+              93,
+              79,
+              85,
+              92,
+              97,
+              180,
+              30,
+              33
+            ],
+            "cluster_proportions": [
+              0.146,
+              0.165,
+              0.093,
+              0.079,
+              0.085,
+              0.092,
+              0.097,
+              0.18,
+              0.03,
+              0.033
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 0.965,
+          "zero_recall": 0,
+          "min_recall": 0.8780487804878049,
+          "last50_private_largest": 0.1934,
+          "private_stage": {
+            "largest": -0.00030000000000000024,
+            "privatepseudo_fit": -0.0006000000000000005
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00030000000000000024
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.23,
+            "nmi": 0.12223126361787465,
+            "ari": 0.051665445250866006,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.175,
+            "cluster_counts": [
+              75,
+              112,
+              108,
+              68,
+              73,
+              82,
+              129,
+              100,
+              175,
+              78
+            ],
+            "cluster_proportions": [
+              0.075,
+              0.112,
+              0.108,
+              0.068,
+              0.073,
+              0.082,
+              0.129,
+              0.1,
+              0.175,
+              0.078
+            ]
+          },
+          "private_largest": 0.21333333333333335,
+          "private_fit": 0.9866666666666667,
+          "zero_recall": 0,
+          "min_recall": 0.9411764705882353,
+          "last50_private_largest": 0.2164666666666667,
+          "private_stage": {
+            "largest": -0.00013333333333333307,
+            "privatepseudo_fit": -0.00013333333333333198
+          },
+          "public_stage": {
+            "largest": 6.666666666666653e-05,
+            "privatepseudo_fit": 0.00026666666666666614
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.6861119997920468,
+        "generation_seconds": 0.23895339958835393,
+        "exchange_seconds": 0.2835472004371695,
+        "public_seconds": 0.5214566004578955,
+        "total": 1.7354353997507133,
+        "guard": 0.2214837979990989
+      },
+      "traffic": {
+        "down_bytes": 227220,
+        "control_setup_bytes": 267510,
+        "total_bytes": 410932,
+        "messages": 6010,
+        "up_bytes": 183712,
+        "vector_bytes": 143422,
+        "up_full_messages": 18,
+        "up_vector_bytes": 55392,
+        "down_full_messages": 5,
+        "down_vector_bytes": 88030,
+        "up_unchanged_messages": 169,
+        "up_delta_messages": 813,
+        "down_delta_messages": 995
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.68,
+            0.685
+          ],
+          "fit": [
+            1.0,
+            0.765,
+            0.77
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.19,
+            0.19
+          ],
+          "fit": [
+            1.0,
+            0.895,
+            0.895
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.11328125,
+        0.40234375,
+        0.2265625,
+        0.15625,
+        0.12890625,
+        0.08984375
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "corrected_guard_2",
+        "strength": 2.0,
+        "until": 200,
+        "all_clients": true
+      },
+      "mean": {
+        "acc": 0.2021666666666667,
+        "nmi": 0.10079298174141123,
+        "ari": 0.04168202335854062,
+        "largest": 0.2925,
+        "empty": 0.5
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.222,
+            "nmi": 0.10861691458606734,
+            "ari": 0.04414820702011821,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.21,
+            "cluster_counts": [
+              155,
+              81,
+              113,
+              210,
+              141,
+              83,
+              120,
+              17,
+              67,
+              13
+            ],
+            "cluster_proportions": [
+              0.155,
+              0.081,
+              0.113,
+              0.21,
+              0.141,
+              0.083,
+              0.12,
+              0.017,
+              0.067,
+              0.013
+            ]
+          },
+          "private_largest": 0.18,
+          "private_fit": 1.0,
+          "zero_recall": 0,
+          "min_recall": 1.0,
+          "last50_private_largest": 0.17999999999999997,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.159,
+            "nmi": 0.044896953561612225,
+            "ari": 0.01759121040130243,
+            "occupied": 8,
+            "empty": 2,
+            "largest": 0.602,
+            "cluster_counts": [
+              602,
+              93,
+              10,
+              43,
+              65,
+              1,
+              0,
+              94,
+              92,
+              0
+            ],
+            "cluster_proportions": [
+              0.602,
+              0.093,
+              0.01,
+              0.043,
+              0.065,
+              0.001,
+              0.0,
+              0.094,
+              0.092,
+              0.0
+            ]
+          },
+          "private_largest": 0.555,
+          "private_fit": 0.92,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.569,
+          "private_stage": {
+            "largest": -0.0009999999999999987,
+            "privatepseudo_fit": 0.0023999999999999976
+          },
+          "public_stage": {
+            "largest": 0.0005000000000000004,
+            "privatepseudo_fit": -0.0007999999999999962
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.189,
+            "nmi": 0.07478339095731085,
+            "ari": 0.03319760183655089,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.308,
+            "cluster_counts": [
+              60,
+              70,
+              308,
+              78,
+              270,
+              60,
+              0,
+              60,
+              45,
+              49
+            ],
+            "cluster_proportions": [
+              0.06,
+              0.07,
+              0.308,
+              0.078,
+              0.27,
+              0.06,
+              0.0,
+              0.06,
+              0.045,
+              0.049
+            ]
+          },
+          "private_largest": 0.27666666666666667,
+          "private_fit": 0.9733333333333334,
+          "zero_recall": 0,
+          "min_recall": 0.7777777777777778,
+          "last50_private_largest": 0.27666666666666667,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -0.00013333333333332976
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": -6.66666666666682e-05
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.204,
+            "nmi": 0.1394989223848874,
+            "ari": 0.061282730849409175,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.272,
+            "cluster_counts": [
+              138,
+              272,
+              125,
+              141,
+              56,
+              168,
+              3,
+              36,
+              6,
+              55
+            ],
+            "cluster_proportions": [
+              0.138,
+              0.272,
+              0.125,
+              0.141,
+              0.056,
+              0.168,
+              0.003,
+              0.036,
+              0.006,
+              0.055
+            ]
+          },
+          "private_largest": 0.21,
+          "private_fit": 0.99,
+          "zero_recall": 0,
+          "min_recall": 0.9545454545454546,
+          "last50_private_largest": 0.21180000000000004,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.211,
+            "nmi": 0.11741777764490027,
+            "ari": 0.04415474014568057,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.188,
+            "cluster_counts": [
+              125,
+              185,
+              91,
+              71,
+              90,
+              89,
+              106,
+              188,
+              27,
+              28
+            ],
+            "cluster_proportions": [
+              0.125,
+              0.185,
+              0.091,
+              0.071,
+              0.09,
+              0.089,
+              0.106,
+              0.188,
+              0.027,
+              0.028
+            ]
+          },
+          "private_largest": 0.205,
+          "private_fit": 0.935,
+          "zero_recall": 0,
+          "min_recall": 0.7317073170731707,
+          "last50_private_largest": 0.203,
+          "private_stage": {
+            "largest": 9.999999999999953e-05,
+            "privatepseudo_fit": -0.0016000000000000014
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0005000000000000026
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.228,
+            "nmi": 0.11954393131368933,
+            "ari": 0.04971764989818239,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.175,
+            "cluster_counts": [
+              74,
+              109,
+              111,
+              67,
+              76,
+              82,
+              128,
+              103,
+              175,
+              75
+            ],
+            "cluster_proportions": [
+              0.074,
+              0.109,
+              0.111,
+              0.067,
+              0.076,
+              0.082,
+              0.128,
+              0.103,
+              0.175,
+              0.075
+            ]
+          },
+          "private_largest": 0.21333333333333335,
+          "private_fit": 0.9933333333333333,
+          "zero_recall": 0,
+          "min_recall": 0.9411764705882353,
+          "last50_private_largest": 0.2148,
+          "private_stage": {
+            "largest": 6.666666666666653e-05,
+            "privatepseudo_fit": -0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": -0.00013333333333333307,
+            "privatepseudo_fit": 0.00026666666666666614
+          }
+        }
+      ],
+      "severe_test_instances": [],
+      "times": {
+        "private_seconds": 0.6872027995414101,
+        "generation_seconds": 0.25072069972520694,
+        "exchange_seconds": 0.2873148999642581,
+        "public_seconds": 0.5208677000482567,
+        "total": 1.7513083987869322,
+        "guard": 0.2231845999485813
+      },
+      "traffic": {
+        "down_bytes": 251545,
+        "control_setup_bytes": 267510,
+        "total_bytes": 440097,
+        "messages": 6010,
+        "up_bytes": 188552,
+        "vector_bytes": 172587,
+        "up_full_messages": 97,
+        "up_vector_bytes": 60232,
+        "down_full_messages": 165,
+        "down_vector_bytes": 112355,
+        "up_delta_messages": 847,
+        "down_delta_messages": 835,
+        "up_unchanged_messages": 56
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.53,
+            0.53
+          ],
+          "fit": [
+            1.0,
+            0.75,
+            0.75
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.21,
+            0.21
+          ],
+          "fit": [
+            1.0,
+            0.91,
+            0.91
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.11328125,
+        0.390625,
+        0.2265625,
+        0.16015625,
+        0.14453125,
+        0.09375
+      ]
+    },
+    {
+      "case": {
+        "partition": "iid",
+        "initialization": "centers",
+        "setting": "legacy_centers",
+        "strength": 0.0,
+        "until": 0,
+        "all_clients": false
+      },
+      "mean": {
+        "acc": 0.17700000000000002,
+        "nmi": 0.07381259588869438,
+        "ari": 0.02714352043858717,
+        "largest": 0.46366666666666667,
+        "empty": 3.1666666666666665
+      },
+      "clients": [
+        {
+          "client": 0,
+          "test": {
+            "acc": 0.223,
+            "nmi": 0.10162997700358435,
+            "ari": 0.0411538795644718,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.169,
+            "cluster_counts": [
+              169,
+              82,
+              152,
+              88,
+              104,
+              103,
+              139,
+              26,
+              135,
+              2
+            ],
+            "cluster_proportions": [
+              0.169,
+              0.082,
+              0.152,
+              0.088,
+              0.104,
+              0.103,
+              0.139,
+              0.026,
+              0.135,
+              0.002
+            ]
+          },
+          "private_largest": 0.16,
+          "private_fit": 0.94,
+          "zero_recall": 0,
+          "min_recall": 0.5,
+          "last50_private_largest": 0.16880000000000003,
+          "private_stage": {
+            "largest": 0.00020000000000000017,
+            "privatepseudo_fit": -0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": -0.00040000000000000034,
+            "privatepseudo_fit": 0.00020000000000000017
+          }
+        },
+        {
+          "client": 1,
+          "test": {
+            "acc": 0.119,
+            "nmi": 0.014558274864974942,
+            "ari": 0.0008690512658554158,
+            "occupied": 2,
+            "empty": 8,
+            "largest": 0.956,
+            "cluster_counts": [
+              956,
+              0,
+              0,
+              0,
+              44,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "cluster_proportions": [
+              0.956,
+              0.0,
+              0.0,
+              0.0,
+              0.044,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "private_largest": 0.94,
+          "private_fit": 0.605,
+          "zero_recall": 8,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.9470999999999998,
+          "private_stage": {
+            "largest": -0.0006000000000000005,
+            "privatepseudo_fit": 0.0006000000000000005
+          },
+          "public_stage": {
+            "largest": 0.00030000000000000024,
+            "privatepseudo_fit": -0.00030000000000000024
+          }
+        },
+        {
+          "client": 2,
+          "test": {
+            "acc": 0.179,
+            "nmi": 0.07284467140247294,
+            "ari": 0.03310461300879103,
+            "occupied": 6,
+            "empty": 4,
+            "largest": 0.401,
+            "cluster_counts": [
+              59,
+              0,
+              308,
+              177,
+              401,
+              11,
+              0,
+              0,
+              0,
+              44
+            ],
+            "cluster_proportions": [
+              0.059,
+              0.0,
+              0.308,
+              0.177,
+              0.401,
+              0.011,
+              0.0,
+              0.0,
+              0.0,
+              0.044
+            ]
+          },
+          "private_largest": 0.39666666666666667,
+          "private_fit": 0.7733333333333333,
+          "zero_recall": 4,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.4043333333333334,
+          "private_stage": {
+            "largest": -0.0005333333333333335,
+            "privatepseudo_fit": 0.0009333333333333327
+          },
+          "public_stage": {
+            "largest": 6.666666666666709e-05,
+            "privatepseudo_fit": -0.00013333333333333198
+          }
+        },
+        {
+          "client": 3,
+          "test": {
+            "acc": 0.199,
+            "nmi": 0.11982306542122714,
+            "ari": 0.05545282493358758,
+            "occupied": 10,
+            "empty": 0,
+            "largest": 0.214,
+            "cluster_counts": [
+              153,
+              137,
+              176,
+              214,
+              29,
+              164,
+              9,
+              47,
+              5,
+              66
+            ],
+            "cluster_proportions": [
+              0.153,
+              0.137,
+              0.176,
+              0.214,
+              0.029,
+              0.164,
+              0.009,
+              0.047,
+              0.005,
+              0.066
+            ]
+          },
+          "private_largest": 0.19,
+          "private_fit": 0.89,
+          "zero_recall": 0,
+          "min_recall": 0.6,
+          "last50_private_largest": 0.18999999999999997,
+          "private_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.00020000000000000017
+          },
+          "public_stage": {
+            "largest": 0.0,
+            "privatepseudo_fit": 0.0
+          }
+        },
+        {
+          "client": 4,
+          "test": {
+            "acc": 0.143,
+            "nmi": 0.04151259337544866,
+            "ari": 0.009246354568427562,
+            "occupied": 4,
+            "empty": 6,
+            "largest": 0.616,
+            "cluster_counts": [
+              616,
+              2,
+              18,
+              0,
+              0,
+              0,
+              0,
+              364,
+              0,
+              0
+            ],
+            "cluster_proportions": [
+              0.616,
+              0.002,
+              0.018,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.364,
+              0.0,
+              0.0
+            ]
+          },
+          "private_largest": 0.615,
+          "private_fit": 0.335,
+          "zero_recall": 8,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.6454,
+          "private_stage": {
+            "largest": -0.0105,
+            "privatepseudo_fit": 0.003100000000000003
+          },
+          "public_stage": {
+            "largest": 0.009000000000000001,
+            "privatepseudo_fit": -0.0026000000000000025
+          }
+        },
+        {
+          "client": 5,
+          "test": {
+            "acc": 0.199,
+            "nmi": 0.09250699326445823,
+            "ari": 0.02303439929038963,
+            "occupied": 9,
+            "empty": 1,
+            "largest": 0.426,
+            "cluster_counts": [
+              23,
+              88,
+              144,
+              68,
+              0,
+              87,
+              135,
+              28,
+              426,
+              1
+            ],
+            "cluster_proportions": [
+              0.023,
+              0.088,
+              0.144,
+              0.068,
+              0.0,
+              0.087,
+              0.135,
+              0.028,
+              0.426,
+              0.001
+            ]
+          },
+          "private_largest": 0.43333333333333335,
+          "private_fit": 0.5966666666666667,
+          "zero_recall": 2,
+          "min_recall": 0.0,
+          "last50_private_largest": 0.4498666666666667,
+          "private_stage": {
+            "largest": -0.004666666666666668,
+            "privatepseudo_fit": 0.0043999999999999925
+          },
+          "public_stage": {
+            "largest": 0.0038000000000000013,
+            "privatepseudo_fit": -0.0033333333333333257
+          }
+        }
+      ],
+      "severe_test_instances": [
+        [
+          10,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          60,
+          1
+        ],
+        [
+          70,
+          1
+        ]
+      ],
+      "times": {
+        "private_seconds": 0.5330846994183958,
+        "generation_seconds": 0.27239650004776195,
+        "exchange_seconds": 0.29266699973959476,
+        "public_seconds": 0.6473238003090955,
+        "total": 1.752586899092421,
+        "guard": 0.0
+      },
+      "traffic": {
+        "down_bytes": 197370,
+        "control_setup_bytes": 267510,
+        "total_bytes": 375660,
+        "messages": 6010,
+        "up_bytes": 178290,
+        "vector_bytes": 108150,
+        "up_full_messages": 5,
+        "up_vector_bytes": 49970,
+        "down_full_messages": 5,
+        "down_vector_bytes": 58180,
+        "up_delta_messages": 417,
+        "down_delta_messages": 945,
+        "up_unchanged_messages": 578,
+        "down_unchanged_messages": 50
+      },
+      "first_private": [
+        {
+          "client": 1,
+          "largest": [
+            0.56,
+            0.845,
+            0.845
+          ],
+          "fit": [
+            1.0,
+            0.69,
+            0.69
+          ]
+        },
+        {
+          "client": 4,
+          "largest": [
+            0.205,
+            0.26,
+            0.26
+          ],
+          "fit": [
+            1.0,
+            0.87,
+            0.86
+          ]
+        }
+      ],
+      "final_teacher": [
+        0.12109375,
+        0.95703125,
+        0.3359375,
+        0.15234375,
+        0.515625,
+        0.16796875
+      ]
+    }
+  ],
+  "formal_run_sha256": {
+    "dirichlet_0.1_corrected_guard_0.1.json": "df06225fbe88dc21eab7a22f175e1e2e3a03e2453348ddc09dcbd60ed954f564",
+    "dirichlet_0.1_corrected_guard_0.5.json": "606c57b506e71a16115e5f15738bb4f36ee2d09ea3111c0053fabab43206841e",
+    "dirichlet_0.1_corrected_guard_0.json": "0cc8da6aafc6bef1ad3018e677d2f9ac837bdbce1dc98c60fae160e9baee1520",
+    "dirichlet_0.1_corrected_guard_1.json": "86d26346ee01ebab46c66846750d69c5eca03fb9ff0ed12843842b0623905fee",
+    "dirichlet_0.1_corrected_guard_2.json": "2f3eee5010c292eb602da6b39a8087b515cd5f0a0f461c6eab709c63701d2582",
+    "dirichlet_0.1_legacy_centers.json": "0a7b11772c165b48e639fd6f8d006a8f415f8d3302584c0d2360a4338aa60593",
+    "iid_corrected_guard_0.1.json": "41f5cf4826cdbd71595bec6d4a6276c100f7a48bcdff5d0ba555148a2b02462d",
+    "iid_corrected_guard_0.5.json": "fe159cd341ec8eb38c680b2404d688d4317c56bf8d86efbede7a6e6b920e3ee9",
+    "iid_corrected_guard_0.json": "16ad3fb6f21d6b06c54d6d339a124998a2979235527587835d396d18dca7d011",
+    "iid_corrected_guard_1.json": "3534f44fcc71d34772cc812ff604a82cb4200eb418be6296ffbebeebbe2e68d2",
+    "iid_corrected_guard_2.json": "e3220fd0fe8dbf4851b1f8c57782ad75b76378c6d5184fdcc21bea343d97fdfc",
+    "iid_legacy_centers.json": "0f0a0c770e86b288aba596245cdda639974896a6fb91efcb55f990f92a80ff71"
+  }
+}
