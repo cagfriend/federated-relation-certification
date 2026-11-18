@@ -1,0 +1,19 @@
+{
+  "cases": [
+    [
+      1207,
+      "dirichlet_0.1"
+    ],
+    [
+      1208,
+      "iid"
+    ]
+  ],
+  "rounds": 200,
+  "concentration_limit": 0.5,
+  "acc_margin": 0.01,
+  "candidates": "All completed AE updates for clients whose terminal snapshot fails screening.",
+  "rank": "Prefer nonempty candidates within both maximum-cluster limits; minimize public pair numerator; later on ties.",
+  "script_sha256": "da0f92a035919f6387352ee521f70c1fd53c276399927349b40e6bd8c18bae31",
+  "prior_completed_sha256": "27bbe684adcede2452247965da7fd80236fa66abe3c4728d358943a5bd36189b"
+}

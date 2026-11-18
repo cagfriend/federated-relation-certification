@@ -1,0 +1,230 @@
+{
+  "pairs": [
+    {
+      "seed": 1202,
+      "partition": "iid",
+      "step3": {
+        "teacher_tail": 0.48046875,
+        "aggregate_tail": 0.19912109375,
+        "public_largest_tail": 0.666015625,
+        "test_largest_tail": 0.729,
+        "test_largest": 0.729,
+        "test_acc": 0.162,
+        "test_nmi": 0.0984579559180785,
+        "test_ari": 0.018414981023408335,
+        "private_macro_recall": 1.0,
+        "private_zero_recall": 0,
+        "network_acc": 0.1955,
+        "network_nmi": 0.10113149173410041,
+        "network_ari": 0.03790301231988622,
+        "severe_events": 0,
+        "bytes": 393687
+      },
+      "step4": {
+        "teacher_tail": 0.340234375,
+        "aggregate_tail": 0.17550455729166667,
+        "public_largest_tail": 0.55859375,
+        "test_largest_tail": 0.605,
+        "test_largest": 0.605,
+        "test_acc": 0.168,
+        "test_nmi": 0.10583789799441017,
+        "test_ari": 0.028332458458607525,
+        "private_macro_recall": 1.0,
+        "private_zero_recall": 0,
+        "network_acc": 0.19716666666666666,
+        "network_nmi": 0.10235869711132675,
+        "network_ari": 0.03972323397804251,
+        "severe_events": 0,
+        "bytes": 393481
+      },
+      "both_lower": false
+    },
+    {
+      "seed": 1202,
+      "partition": "dirichlet_0.1",
+      "step3": {
+        "teacher_tail": 0.120703125,
+        "aggregate_tail": 0.14684244791666667,
+        "public_largest_tail": 0.2248046875,
+        "test_largest_tail": 0.20274999999999999,
+        "test_largest": 0.205,
+        "test_acc": 0.186,
+        "test_nmi": 0.0747104645195539,
+        "test_ari": 0.02966733215258555,
+        "private_macro_recall": 0.9667973870101529,
+        "private_zero_recall": 0,
+        "network_acc": 0.19866666666666666,
+        "network_nmi": 0.08471302837053189,
+        "network_ari": 0.03292698304548215,
+        "severe_events": 0,
+        "bytes": 387753
+      },
+      "step4": {
+        "teacher_tail": 0.14599609375,
+        "aggregate_tail": 0.15096028645833334,
+        "public_largest_tail": 0.26005859375,
+        "test_largest_tail": 0.24875,
+        "test_largest": 0.25,
+        "test_acc": 0.205,
+        "test_nmi": 0.08903722102217906,
+        "test_ari": 0.032730146790266396,
+        "private_macro_recall": 0.9659523809523809,
+        "private_zero_recall": 0,
+        "network_acc": 0.20216666666666666,
+        "network_nmi": 0.08700106998754573,
+        "network_ari": 0.033480311816865,
+        "severe_events": 0,
+        "bytes": 397663
+      },
+      "both_lower": true
+    },
+    {
+      "seed": 1203,
+      "partition": "iid",
+      "step3": {
+        "teacher_tail": 0.13203125,
+        "aggregate_tail": 0.15107421875,
+        "public_largest_tail": 0.1900390625,
+        "test_largest_tail": 0.20125,
+        "test_largest": 0.196,
+        "test_acc": 0.202,
+        "test_nmi": 0.10560370324563592,
+        "test_ari": 0.03776270182807103,
+        "private_macro_recall": 0.9644609358895073,
+        "private_zero_recall": 0,
+        "network_acc": 0.21033333333333332,
+        "network_nmi": 0.11276936245564922,
+        "network_ari": 0.04444856582204302,
+        "severe_events": 0,
+        "bytes": 406388
+      },
+      "step4": {
+        "teacher_tail": 0.34990234375,
+        "aggregate_tail": 0.18763020833333333,
+        "public_largest_tail": 0.574755859375,
+        "test_largest_tail": 0.64425,
+        "test_largest": 0.649,
+        "test_acc": 0.173,
+        "test_nmi": 0.08185093987665068,
+        "test_ari": 0.013389285828932564,
+        "private_macro_recall": 0.9525925925925925,
+        "private_zero_recall": 0,
+        "network_acc": 0.2055,
+        "network_nmi": 0.1087644921831968,
+        "network_ari": 0.0403727876660129,
+        "severe_events": 0,
+        "bytes": 405977
+      },
+      "both_lower": true
+    },
+    {
+      "seed": 1203,
+      "partition": "dirichlet_0.1",
+      "step3": {
+        "teacher_tail": 0.12900390625,
+        "aggregate_tail": 0.19070638020833333,
+        "public_largest_tail": 0.206787109375,
+        "test_largest_tail": 0.19525,
+        "test_largest": 0.193,
+        "test_acc": 0.19,
+        "test_nmi": 0.07631472668361662,
+        "test_ari": 0.03932248806543488,
+        "private_macro_recall": 0.9764868421052632,
+        "private_zero_recall": 0,
+        "network_acc": 0.1825,
+        "network_nmi": 0.08683162128399091,
+        "network_ari": 0.029353667771920652,
+        "severe_events": 0,
+        "bytes": 411794
+      },
+      "step4": {
+        "teacher_tail": 0.6638671875,
+        "aggregate_tail": 0.28151041666666665,
+        "public_largest_tail": 0.794873046875,
+        "test_largest_tail": 0.8225,
+        "test_largest": 0.822,
+        "test_acc": 0.157,
+        "test_nmi": 0.06695008352611098,
+        "test_ari": 0.007220521314505886,
+        "private_macro_recall": 1.0,
+        "private_zero_recall": 0,
+        "network_acc": 0.176,
+        "network_nmi": 0.0853328278136704,
+        "network_ari": 0.023874797643833965,
+        "severe_events": 0,
+        "bytes": 412023
+      },
+      "both_lower": true
+    },
+    {
+      "seed": 1204,
+      "partition": "iid",
+      "step3": {
+        "teacher_tail": 0.12509765625,
+        "aggregate_tail": 0.13986002604166667,
+        "public_largest_tail": 0.179931640625,
+        "test_largest_tail": 0.21325,
+        "test_largest": 0.203,
+        "test_acc": 0.208,
+        "test_nmi": 0.12000788667372804,
+        "test_ari": 0.04628963927298194,
+        "private_macro_recall": 0.9894736842105263,
+        "private_zero_recall": 0,
+        "network_acc": 0.20783333333333331,
+        "network_nmi": 0.1070354534119866,
+        "network_ari": 0.046884805799668354,
+        "severe_events": 0,
+        "bytes": 404439
+      },
+      "step4": {
+        "teacher_tail": 0.30078125,
+        "aggregate_tail": 0.16964518229166667,
+        "public_largest_tail": 0.400390625,
+        "test_largest_tail": 0.4385,
+        "test_largest": 0.438,
+        "test_acc": 0.189,
+        "test_nmi": 0.10628018806229077,
+        "test_ari": 0.04561785990379419,
+        "private_macro_recall": 0.9975609756097561,
+        "private_zero_recall": 0,
+        "network_acc": 0.204,
+        "network_nmi": 0.10480723440042303,
+        "network_ari": 0.046871778816630384,
+        "severe_events": 0,
+        "bytes": 403143
+      },
+      "both_lower": true
+    }
+  ],
+  "failures": [
+    {
+      "seed": 1204,
+      "partition": "dirichlet_0.1",
+      "step": 4,
+      "reason": "Registered correction requires every pseudo cluster nonempty"
+    },
+    {
+      "seed": 1204,
+      "partition": "dirichlet_0.1",
+      "step": 3,
+      "reason": "Registered correction requires every pseudo cluster nonempty"
+    }
+  ],
+  "paired_wins": {
+    "dirichlet_0.1": 2,
+    "iid": 2
+  },
+  "relation_audits": 3072000,
+  "run_checksums": {
+    "1202_dirichlet_0.1_step3.json": "889be3be60f77ff53d2a9cb715912e382ff3d9615b39576ac7febb2304bb41c6",
+    "1202_dirichlet_0.1_step4.json": "820d49809881fc6a28a7e9a49b395f27038377a16243b14cb4da73089f233086",
+    "1202_iid_step3.json": "ca82162415a2546ede26e5fb4315af3810f330ebae90b8f0e2e3f896ae7b8bfa",
+    "1202_iid_step4.json": "dc296da7a2cdf14fedaea252664064c50791d7ab7be90ac8456d54b0f6f70ad1",
+    "1203_dirichlet_0.1_step3.json": "c850d3a21425466973ae3e7f37cd9558135e289e41ef131f464891d274a96b53",
+    "1203_dirichlet_0.1_step4.json": "ae493789a866d6bfb1f5c7198866d5003714c781df32b24bf04bfb36c077ce06",
+    "1203_iid_step3.json": "4338ff9a68eb62f4540e33f15e2f452d8178a2533d10f1cf457d130865fd850c",
+    "1203_iid_step4.json": "96e747e00e4071151f773263aa46e2182dc6f29fb3db5726734a52d172db51e8",
+    "1204_iid_step3.json": "276df6d6d8b5ffd16c1d9476a6df1314dd7220a785904aef6313d5aa161f056a",
+    "1204_iid_step4.json": "ef0ab781682514f3b80a2a5d84866b9b72004c38bfb76531acf0d92cfd65e273"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "seeds": [
+    1205,
+    1206,
+    1207,
+    1208,
+    1209
+  ],
+  "rounds": 200,
+  "tail_rounds": 40,
+  "target": 1,
+  "partitions": [
+    "iid",
+    "dirichlet_0.1"
+  ],
+  "candidates": [
+    3,
+    4
+  ],
+  "guard": 0.5,
+  "accuracy_drop_guard": 0.01,
+  "reference": 4,
+  "selector": "all private clusters nonempty; minimize public same-cluster pair count; later step on tie",
+  "recovery": {
+    "seed": 1204,
+    "partition": "dirichlet_0.1",
+    "target": 2,
+    "steps": [
+      2,
+      3
+    ],
+    "reference": 5
+  },
+  "script_sha256": "94ef9c1b336a76a8f8c483ef4e1bf9b343da3ee4d20c0761dc40fe67994bf924"
+}

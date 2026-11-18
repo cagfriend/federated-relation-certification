@@ -7,6 +7,10 @@ venv/
 experiments/real_iid/data/
 experiments/real_iid/prepared*/
 experiments/public_scaling/prepared*/
+experiments/stl10_transfer/data/
+experiments/encoder_early_stop/results_*/cache/
+experiments/external_pilot/results_*/cache/
+local_replays/
 runs/
 *.pt
 *.pth

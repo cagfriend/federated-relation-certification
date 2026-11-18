@@ -1,0 +1,24 @@
+{
+  "seeds": [
+    1202,
+    1203,
+    1204
+  ],
+  "rounds": 200,
+  "steps": [
+    4,
+    3
+  ],
+  "target_client": 1,
+  "guard": 0.5,
+  "data_bytes": {
+    "train_X.bin": 138240000,
+    "train_y.bin": 5000,
+    "unlabeled_X.bin": 2764800000,
+    "test_X.bin": 221184000,
+    "test_y.bin": 8000
+  },
+  "tail_start": 161,
+  "comparison": "step3 lower on both tail teacher rate and tail test largest",
+  "code_sha256": "efa8ea2acf73afc4fac94780b56734310eb36186cb42436524a58e03f0819f35"
+}

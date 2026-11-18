@@ -1,0 +1,83 @@
+{
+  "rounds": 40,
+  "target_client": 1,
+  "config": {
+    "preset": "pilot",
+    "seed": 1201,
+    "rounds": 200,
+    "widths": [
+      128,
+      128,
+      128,
+      256,
+      256,
+      256
+    ],
+    "capacities": [
+      100,
+      200,
+      300,
+      100,
+      200,
+      300
+    ],
+    "public_size": 512,
+    "test_size": 1000,
+    "local_batch": 64,
+    "public_batch": 64,
+    "public_steps": 2,
+    "lr": 0.001,
+    "alignment_weight": 1.0,
+    "global_width": 256,
+    "classes": 10,
+    "ae_epochs": 1,
+    "ae_lr": 0.001,
+    "head_lr": 0.1,
+    "private_batch": 128,
+    "relation_batch": 64,
+    "public_weights": [
+      0.125,
+      0.5,
+      0.5,
+      0.125,
+      0.5,
+      0.5
+    ],
+    "eval_every": 10,
+    "device": "cpu",
+    "threads": 1,
+    "partitions": [
+      "iid",
+      "dirichlet_0.1"
+    ]
+  },
+  "provenance": {
+    "iid": {
+      "cache_files": {
+        "evaluation.pt": "7a4326fb6f10eb1b973aca74c89c68d32fd31cea83585452da6c2d12c212819c",
+        "initial.pt": "d5014701c24774bdfe9e6a69b08d52bada2a3cee6c3e93d0af6041f04c7263c1",
+        "train.pt": "13775eadf25c2d524589720be442499a9938eb77b59d49cd85e5c6a2e03a1614"
+      },
+      "historical_run_sha256": "fe159cd341ec8eb38c680b2404d688d4317c56bf8d86efbede7a6e6b920e3ee9"
+    },
+    "dirichlet_0.1": {
+      "cache_files": {
+        "evaluation.pt": "7a4326fb6f10eb1b973aca74c89c68d32fd31cea83585452da6c2d12c212819c",
+        "initial.pt": "b33fa5ae335d49fe9c8372b31bd0bc52326d8abc291b5a7aaced2eeb9d3ce997",
+        "train.pt": "59896f814c17713289273d76f05bc14bf4b3cd7db59f0540ce5807c13ef1459f"
+      },
+      "historical_run_sha256": "606c57b506e71a16115e5f15738bb4f36ee2d09ea3111c0053fabab43206841e"
+    }
+  },
+  "probe_sha256": "350b452998229e1bdfd55e71f7648fae881c39456284d3f1f3a6b10b180c617b",
+  "reports": {
+    "report.md": "7bdbb6bf045c34ddbb2fb9a71c06fb52419dc2704afd3066c8bfc2a88ed26c58",
+    "pairs.csv": "0e26e3156fe10588ae1d76ff6e80d40b7166baf13265a4a7570c5f48865eef0b"
+  },
+  "runs": {
+    "iid_step4": "2f08ec3fa1c09837c499fbeb2f7a1defc4e6c293af476227da297ce380421f93",
+    "iid_step3": "067c2383d3a19832f7b284f3ad508473d1242a5f3cf6cb7b44312f279cdf0cc1",
+    "dirichlet_0.1_step4": "314e48048d51ef72274e0afff02d15da9ac0e578dc5ebc4c21362f93637a492b",
+    "dirichlet_0.1_step3": "bfbdf672aa07a1ba89989596e59958d6ac86751438124293f8cc294d46541b23"
+  }
+}
