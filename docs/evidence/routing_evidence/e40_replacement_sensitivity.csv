@@ -1,0 +1,13 @@
+cell,replaced_repeat,comparator,metric,savings_fraction,blocks_won
+1207_dirichlet_0.1_m4096,3,B,head_seconds,0.06646245184075583,2
+1207_dirichlet_0.1_m4096,3,B,generation_seconds,0.12898443598107556,3
+1207_dirichlet_0.1_m4096,3,B,with_preparation_seconds,0.05922712749502168,2
+1207_dirichlet_0.1_m4096,3,E,head_seconds,0.060134178301698205,2
+1207_dirichlet_0.1_m4096,3,E,generation_seconds,0.1459524285599747,3
+1207_dirichlet_0.1_m4096,3,E,with_preparation_seconds,0.05354825425909704,2
+1207_dirichlet_0.1_m16384,1,B,head_seconds,0.5082814558525367,2
+1207_dirichlet_0.1_m16384,1,B,generation_seconds,0.30163155946260767,2
+1207_dirichlet_0.1_m16384,1,B,with_preparation_seconds,0.49794918110616027,2
+1207_dirichlet_0.1_m16384,1,E,head_seconds,-0.036258656924063715,2
+1207_dirichlet_0.1_m16384,1,E,generation_seconds,-0.024798554907025316,2
+1207_dirichlet_0.1_m16384,1,E,with_preparation_seconds,-0.034739555518514376,2

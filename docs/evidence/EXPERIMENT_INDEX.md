@@ -704,6 +704,16 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 |质量|Ours-0.5 的统一 KMeans ACC 为 18.28%–21.50%，四组均高于 Hetero-SSFL 和 FedMKD，与 FLESD 相比一组领先、三组落后 0.43–1.17 个百分点。原生头四组末轮无单簇，最坏最大簇 45.1%。|
 |开销|0.5 保护降低四组末段教师同簇边率，训练净耗时增加 14.1%–18.5%。外部比较覆盖整套适配实现，包含编码器训练工作量差异。|
 |核验|28 份结果回执一致，逐次 200 轮与 21 个评估点；16 条 Ours 轨迹合计 4,915,200 次关系核对零错误。|
-|下一步|固定同一训练协议复测 B/E/D，继续监测原生头共簇和质量。|
+|后续|E39/E40 已完成同协议 B/E/D 与规模复测；当前转向精确选路。|
 
 [审阅](SNAPSHOT_EXTERNAL_COMPARISON_20261118.md) · [实验包](../../experiments/snapshot_external_comparison/README.md) · [汇总](../../experiments/snapshot_external_comparison/results_full/report.md) · [后续实验](../NEXT_EXPERIMENTS.md)
+
+<a id="e39"></a>
+## E39 快照协议下的固定 B/E/D 配对计时
+
+四个 E38 配置各 200 轮，M=512。12 条审计、36 次计时，3,686,400 次记录中的逐边检查零差异。D/B、D/E 的完整头部对照均未同时达到 3% 和两块胜出门槛。[审阅与异常](SNAPSHOT_CERTIFICATION_SCALING_20261119.md)
+
+<a id="e40"></a>
+## E40 公共图规模及指定计时块复测
+
+四配置、三档公共样本、36 条审计、108 次计时及 6 次补测。151,142,400 次记录中的逐边检查零差异。4096 档生成有一致收益，512、16384 有负收益；原始、复测及替换敏感性区分，休眠造成的极端省时不计作证据。[完整审阅](SNAPSHOT_CERTIFICATION_SCALING_20261119.md) · [选路实验设计](../ADAPTIVE_ROUTING_EXPERIMENT_PLAN.md)
