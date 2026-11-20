@@ -1,5 +1,22 @@
 # 复现入口与历史说明（2026-11-09重整）
 
+## 新增 STL-10 快照与选路入口
+
+[E38 快照比较](../experiments/snapshot_external_comparison/README.md) → [E39 同轨迹计时](../experiments/snapshot_certification_timing/README.md) → [E40 图规模](../experiments/snapshot_graph_scaling/README.md) → [E41 选路](../snapshot_routing/README.md)。
+
+新工作区可依次运行以下四个合成入口，并用新目录生成本机回执。正式运行需要本地 STL-10 原始数据及匹配的前序结果，按各实验说明设置路径。
+
+```powershell
+python -B -m experiments.snapshot_external_comparison.run --preset smoke --output runs/route_e38
+python -B -m experiments.snapshot_certification_timing.run --preset smoke --history runs/route_e38 --output runs/route_e39
+python -B -m experiments.snapshot_graph_scaling.run --preset smoke --history runs/route_e38 --timing-reference runs/route_e39 --output runs/route_e40
+python -B -m snapshot_routing.run --preset smoke --source runs/route_e40 --output runs/route_e41
+```
+
+可直接用[原始逐轮计时 ZIP](../archives/e41_routing_raw_records_20261120.zip)复算已发表的耗时。ZIP 保留日志原字节及回执，轨迹回执记录文件哈希。公开的[来源清单](evidence/e41_routing/provenance.json)移除了本机目录和主机名，原清单哈希供追溯。教师参数、特征和数据需要由本地前序运行生成。
+
+## 历史复现说明
+
 [代码台账](evidence/CODE_HISTORY.md)按本次远端基线列出每个实验实际存在的Python源码和Git blob SHA；历史命令并不意味着相应驱动仍存在。核心源码、预注册、结果、缓存标记及各类原始清单均未改动。
 
 新读者先看[首页最小运行](../README.md#代码与复现)和[实验代码导航](../experiments/README.md)。本次仅编辑文档，没有运行正式训练、下载数据或修改环境。以下原复现说明全文保留，版本化限制继续适用。

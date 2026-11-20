@@ -1,4 +1,6 @@
-# 实验总览入口（2026-11-09重整）
+# 实验总览与历史结果
+
+[当前结论与适用边界](RESULTS.md) · [E41 最新结果](evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [完整实验台账](evidence/EXPERIMENT_INDEX.md)
 
 请先读[结构化实验台账](evidence/EXPERIMENT_INDEX.md)：远端基线22个实验目录逐一记录，包含配置、问题、已验证内容、失败/异常、原报告、归档和源码状态。后续本地P1/P2的发布/完成状态另列，不将smoke当正式结果。
 

@@ -77,3 +77,6 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E32确认原始记录
 
 [恢复清单](private_prior_confirmation_20261114.manifest.json)记录6个case ZIP与54份完整JSON。恢复原路径可核验completed.json的60项。模型、数据和特征缓存不上传。
+## E41 精确选路计时归档
+
+[E41 原始记录](e41_routing_raw_records_20261120.zip)含 180 份逐轮结果及各自回执、12 份教师轨迹回执、规则和完成清单。逐轮 JSON 字节与正式运行一致。查看时将该 ZIP 解压至单独目录，教师特征和参数数组由复现入口生成。[审阅](../docs/evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [来源清单](../docs/evidence/e41_routing/provenance.json)

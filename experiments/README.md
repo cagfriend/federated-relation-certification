@@ -1,5 +1,12 @@
 # 实验代码导航
 
+## STL-10 快照协议与选路
+
+- [E38 快照外部比较](snapshot_external_comparison/README.md)提供学习协议及快照来源。
+- [E39 固定路径计时](snapshot_certification_timing/README.md)核对同轨迹 B/E/D。
+- [E40 公共规模对照](snapshot_graph_scaling/README.md)生成 E41 所需的审计和公共库。
+- [E41 本地选路](../snapshot_routing/README.md)重放 E40 教师轨迹，比较固定路径、静态表和短校准入口。
+
 全部配置、验证目标、结果、失败与异常处理见[实验台账](../docs/evidence/EXPERIMENT_INDEX.md)。实际源码清单及每文件Git blob SHA见[代码历史](../docs/evidence/CODE_HISTORY.md)。
 
 ## 运行前先确认
