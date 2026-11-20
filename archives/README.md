@@ -80,3 +80,7 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E41 精确选路计时归档
 
 [E41 原始记录](e41_routing_raw_records_20261120.zip)含 180 份逐轮结果及各自回执、12 份教师轨迹回执、规则和完成清单。逐轮 JSON 字节与正式运行一致。查看时将该 ZIP 解压至单独目录，教师特征和参数数组由复现入口生成。[审阅](../docs/evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [来源清单](../docs/evidence/e41_routing/provenance.json)
+
+## E42/E43 原始记录
+
+[E42 新种子重放](e42_confirmation_raw_records_20261120.zip)保存 162 次计时和教师轨迹回执。[E43 完整训练](e43_full_training_raw_records_20261120.zip)保存 18 次审计与 54 次正式计时和配对回执。分别解压到单独目录。教师特征、参数数组和预处理数据由实验入口在本地生成。[复现入口](../docs/REPRODUCIBILITY.md)

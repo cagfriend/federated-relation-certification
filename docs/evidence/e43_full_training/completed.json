@@ -1,0 +1,24 @@
+{
+  "manifest": "a7b45c0be5f89578553aaea866c30305edd5672d12c002653af02567c0458df3",
+  "audit": "b92001e8d2dce349cb3e40003e50e10c8dd9efba1547f51864662945af563b8b",
+  "blocks": {
+    "blocks/2021_iid_m4096_r1_a0.json": "43d03977fa2a0d90de78333b4fd4d991c02a260f6c4e1fbcc076eb10da9e875e",
+    "blocks/2021_iid_m4096_r2_a0.json": "8c581d215f183882e95c6cdbff8dd3e3c0128076060e09d433386e2a1d47e762",
+    "blocks/2021_iid_m4096_r3_a0.json": "147f691a59727a48f048721471a740fd2642edb14c5796db395ec45bfbfb42b2",
+    "blocks/2021_dirichlet_0.1_m4096_r1_a0.json": "07ddbe8e5dd3092756395dfc78b098c3dc878afe4a4d36cfa14e5ccc13c99d5b",
+    "blocks/2021_dirichlet_0.1_m4096_r2_a0.json": "64a2d34c9a20c6b7c3af84bf099982cda935967b247bea5ae57729ec943c38d7",
+    "blocks/2021_dirichlet_0.1_m4096_r3_a0.json": "5ed8af1c67879c948ae5f2d1497e83f30f26019c9e2d9826c1da81d12c406e70",
+    "blocks/2022_iid_m4096_r1_a0.json": "09e882babe161ecba6a45c71d07931f3cae085bbc9ed20bb6f4cf5f4983b7264",
+    "blocks/2022_iid_m4096_r2_a0.json": "72b7a8c100acdbccf4fcafca93e93eda1d2a69bbf10031199f83bc4993aca8d5",
+    "blocks/2022_iid_m4096_r3_a0.json": "7c8b3396553819809e9fd82fcac2564a58d8c1d8a48b1fee751bf9a89cd11632",
+    "blocks/2022_dirichlet_0.1_m4096_r1_a0.json": "52973af936cc33b96ba324b1f6e180b43321136a7e6482f6fec70141f18285d2",
+    "blocks/2022_dirichlet_0.1_m4096_r2_a0.json": "0323034e6b268dbeac1e091afe7bbb5c318e6ec4efcfbfe384acc7f4b7b1eb66",
+    "blocks/2022_dirichlet_0.1_m4096_r3_a0.json": "d6834440f60381132abd32cdf8a760ae7e4efb46a1b977c209b83a7d345c5158",
+    "blocks/2023_iid_m4096_r1_a0.json": "4f934eb4a8de199bca4606faecf7ceb1e21aa2f3628670ab9b13b5f89ff88504",
+    "blocks/2023_iid_m4096_r2_a0.json": "ea4be56c0dfb7884469ee86b93a99857a6a3cd85fb541cdf74d9b23c712b2bf3",
+    "blocks/2023_iid_m4096_r3_a0.json": "bab5636ac2b03484a2aa78a395a5c26f88b5a9e5368228ecfe82be7b3ca8b4de",
+    "blocks/2023_dirichlet_0.1_m4096_r1_a0.json": "8fccef50bfd7a4a0de1211126db84f9b4e13f9b16425f75ffab9ea722e4873d9",
+    "blocks/2023_dirichlet_0.1_m4096_r2_a0.json": "e4910fcc18db5328c77e51bf5b8d679d6e2197a6c0a461ccc513ae057fb6f75e",
+    "blocks/2023_dirichlet_0.1_m4096_r3_a0.json": "41a2269e972fc4bab70234e254eab00907262081a91c7a6ff13e5708966fb9c1"
+  }
+}

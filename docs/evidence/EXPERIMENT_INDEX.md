@@ -722,3 +722,13 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 ## E41 本地选路与精确生成成本边界
 
 复用 E40 的 12 条教师轨迹。B/E/D/S/C 共 180 次独立重放，755,712,000 次逐边检查零差异。固定 D 在 4096 档相对 B 节省 10.02%–26.29%，相对 E 节省 16.89%–19.47%；512、16384 档固定 B 更快。S 在大图有错选，C 正式试跑为零。[审阅](EXACT_ROUTING_BOUNDARY_20261120.md) · [逐格数据](e41_routing/boundaries.csv) · [代码](../../snapshot_routing/README.md) · [原始记录](../../archives/e41_routing_raw_records_20261120.zip)
+
+<a id="e42"></a>
+## E42 三档选路新种子确认
+
+三个新种子、两种划分、三档公共规模。18 条教师轨迹、162 次独立重放，680,140,800 次逐边核对零差异。受测三档采用 B/D/B 均达到预设的关系生成判据。[审阅](ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [逐格](e42_confirmation/cells.csv)
+
+<a id="e43"></a>
+## E43 M4096 完整头部训练
+
+18 条审计轨迹和 54 次正式计时。核对 44,236,800 条边零差异，头参数和通信相同。IID 的 D/B 3/3 达标、D/E 2/3 达标。强非 IID 两项均为 0/3，跨划分预设判据未通过。[审阅](ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [逐格对照](e43_full_training/comparisons.csv)

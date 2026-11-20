@@ -15,6 +15,17 @@ python -B -m snapshot_routing.run --preset smoke --source runs/route_e40 --outpu
 
 可直接用[原始逐轮计时 ZIP](../archives/e41_routing_raw_records_20261120.zip)复算已发表的耗时。ZIP 保留日志原字节及回执，轨迹回执记录文件哈希。公开的[来源清单](evidence/e41_routing/provenance.json)移除了本机目录和主机名，原清单哈希供追溯。教师参数、特征和数据需要由本地前序运行生成。
 
+## E42/E43 复现入口
+
+E42 从 STL-10 原始数据构建新种子的准备缓存、公共库与教师轨迹。E43 从同一次 E42 运行读取这些文件，复现选定编码器并执行完整训练。正式命令如下。
+
+```powershell
+python -B -m snapshot_routing.confirmation.run --preset full
+python -B -m snapshot_routing.full_training.run --preset full
+```
+
+两个入口都可用 `--preset smoke`。运行 E43 短测时，用 `--source outputs/snapshot_routing_confirmation_smoke` 指向刚生成的 E42 短测。可复核已发表计时的[原始记录与回执](../archives/README.md)。
+
 ## 历史复现说明
 
 [代码台账](evidence/CODE_HISTORY.md)按本次远端基线列出每个实验实际存在的Python源码和Git blob SHA；历史命令并不意味着相应驱动仍存在。核心源码、预注册、结果、缓存标记及各类原始清单均未改动。
