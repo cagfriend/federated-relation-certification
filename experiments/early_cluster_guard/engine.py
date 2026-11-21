@@ -4,7 +4,7 @@ import numpy as np
 from experiments.external_pilot.ours import Ours
 from experiments.private_prior.training import private_workload_epoch, CLIENTS, log_prior
 from experiments.public_scaling.head import ce_loss_grad
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 from experiments.public_budget.student import update
 from types import SimpleNamespace
 
@@ -69,7 +69,7 @@ class GuardedOurs(Ours):
         self.last_snapshot=[(h.w.copy(),h.b.copy()) for h in self.heads]
         for c,(w,b) in enumerate(self.last_snapshot):
             if rnd==1:
-                g=RelationGenerator(self.public[c],w,b,self.edges,'relation');self.generators.append(g)
+                g=make_generator(self.public[c],w,b,self.edges,'relation');self.generators.append(g)
                 relation=g.initial_relations;del g.initial_relations;points+=len(public)
             else:
                 relation,stat=self.generators[c].generate(w,b);points+=stat['forward_endpoints'];certified+=stat['certified_edges_before_refresh']

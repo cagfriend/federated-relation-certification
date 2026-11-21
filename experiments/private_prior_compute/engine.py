@@ -16,7 +16,7 @@ from experiments.quantity_heterogeneity import data as quantity_data
 from experiments.public_scaling.data import Prepared as CorePrepared
 from experiments.public_scaling.graphs import make_graph
 from experiments.public_scaling.engine import evaluate, heads_digest, audit, METHODS as MODES
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 from experiments.private_workload.engine import WorkloadMethod
 from experiments.private_workload.sampling import subset_digest
 from experiments.private_prior.training import private_workload_epoch
@@ -141,7 +141,7 @@ def _step(trainer, rnd, branch, public_weights, probe_indices, enable_probes):
         w, b = head.w.copy(), head.b.copy()
         snapshots.append((w, b))
         if rnd == 1:
-            generator = RelationGenerator(data.public[client], w, b, data.edges, MODES[trainer.name])
+            generator = make_generator(data.public[client], w, b, data.edges, MODES[trainer.name])
             trainer.generators.append(generator)
             relations.append(generator.initial_relations)
             del generator.initial_relations

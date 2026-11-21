@@ -1,5 +1,7 @@
 # 实验总览与历史结果
 
+当前 D 使用偏置净变化，旧 D 的已发表结果按原版本引用。[当前证据 E48/E49](evidence/ENDPOINT_BIAS_20261121.md) · [活动清单](NEXT_EXPERIMENTS.md)
+
 [当前结论与适用边界](RESULTS.md) · [E44/E45 计时归因和按需对照](evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [完整实验台账](evidence/EXPERIMENT_INDEX.md)
 
 请先读[结构化实验台账](evidence/EXPERIMENT_INDEX.md)：远端基线22个实验目录逐一记录，包含配置、问题、已验证内容、失败/异常、原报告、归档和源码状态。后续本地P1/P2的发布/完成状态另列，不将smoke当正式结果。

@@ -5,7 +5,7 @@ from time import perf_counter
 
 import numpy as np
 
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 from experiments.snapshot_certification_timing.design import require
 from experiments.snapshot_certification_timing.engine import MODES
 from experiments.snapshot_certification_timing.worker import battery, peak_bytes, suspend_clock
@@ -55,7 +55,7 @@ class ClientPath:
 
     def generate(self, method, w, b, rnd):
         if rnd == 0:
-            g = RelationGenerator(self.features, w, b, self.edges, MODES[method])
+            g = make_generator(self.features, w, b, self.edges, MODES[method])
             self.generators[method] = g
             relation = g.initial_relations
             del g.initial_relations

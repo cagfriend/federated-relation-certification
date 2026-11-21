@@ -1,5 +1,7 @@
 # 实现定位、优化归属与资源边界
 
+运行 D 由[生成入口](../../experiments/public_scaling/generation.py)选择[偏置净变化](../../experiments/public_scaling/endpoint_bias.py)。下表列出其复用的底层操作。
+
 |部件|当前实现与目的|代码|
 |---|---|---|
 |冻结表示|预训练后缓存特征，头部实验不反传编码器|[准备与引擎](../../experiments/public_scaling/engine.py)|

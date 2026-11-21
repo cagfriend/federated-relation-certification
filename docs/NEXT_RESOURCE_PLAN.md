@@ -1,6 +1,8 @@
 # 资源实验计划
 
-## 当前优先 数值边界修复与代价核验
+当前 D 使用偏置净变化，旧 D 的已发表结果按原版本引用。[当前证据 E48/E49](evidence/ENDPOINT_BIAS_20261121.md) · [活动清单](NEXT_EXPERIMENTS.md)
+
+## E48 之前的资源计划
 
 E47 的合成边界见证已复现。先修复前缀小增量丢失和相消条件下的回退一致性。正确性通过后，在 E42 的 4096 档用原配对口径测量额外缓存、回退比例及生成净耗时。[E47 反例](evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) · [任务顺序](NEXT_EXPERIMENTS.md)
 

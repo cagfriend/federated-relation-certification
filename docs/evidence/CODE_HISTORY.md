@@ -1,5 +1,7 @@
 # 历史代码与复现状态
 
+最新实验为 [E48 偏置数值对照与 E49 资源回放](ENDPOINT_BIAS_20261121.md)。E01–E47 按历史版本解释。
+
 盘点基线：[46b25e333228](https://github.com/cagfriend/federated-relation-certification/tree/46b25e333228d0adf3cc418566c63ede11686754)。以下是该提交实际存在的源码清单，不根据旧README命令猜测源码仍在。
 
 ## 读取规则

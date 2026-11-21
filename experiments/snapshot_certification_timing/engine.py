@@ -7,7 +7,7 @@ import numpy as np
 
 from experiments.private_corrected_guard.engine import CorrectedGuardOurs
 from experiments.public_budget.student import update
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 
 MODES = {'B': 'full', 'E': 'point', 'D': 'relation'}
 
@@ -28,7 +28,7 @@ class Engine(CorrectedGuardOurs):
         relations, endpoints, certified = [], [], []
         for c, (w, b) in enumerate(self.last_snapshot):
             if rnd == 1:
-                generator = RelationGenerator(self.public[c], w, b, self.edges, self.mode)
+                generator = make_generator(self.public[c], w, b, self.edges, self.mode)
                 self.generators.append(generator)
                 relation = generator.initial_relations
                 del generator.initial_relations

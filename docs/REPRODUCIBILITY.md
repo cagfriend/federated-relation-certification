@@ -1,5 +1,11 @@
 # 复现入口与历史说明（2026-11-09重整）
 
+当前 D 使用偏置净变化，旧 D 的已发表结果按原版本引用。[当前证据 E48/E49](evidence/ENDPOINT_BIAS_20261121.md) · [活动清单](NEXT_EXPERIMENTS.md)
+
+## 当前 D 与历史证据
+
+正常训练从 [make_generator](../experiments/public_scaling/generation.py) 选择偏置净变化 D。复现 E01–E47 归档数据使用相应实验记录的提交。要重建 E42 教师快照，可使用 [d7f4a58 的确认入口](https://github.com/cagfriend/federated-relation-certification/tree/d7f4a5800fde4534c0a89a979f9ddf4987a83636/snapshot_routing/confirmation)。E48/E49 的原始源码、正式输出和复现说明集中在[配对实验归档](evidence/ENDPOINT_BIAS_20261121.md)。
+
 ## 新增 STL-10 快照与选路入口
 
 [E38 快照比较](../experiments/snapshot_external_comparison/README.md) → [E39 同轨迹计时](../experiments/snapshot_certification_timing/README.md) → [E40 图规模](../experiments/snapshot_graph_scaling/README.md) → [E41 选路](../snapshot_routing/README.md)。

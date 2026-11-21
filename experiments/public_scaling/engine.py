@@ -7,7 +7,8 @@ from threadpoolctl import threadpool_info
 from scipy.optimize import linear_sum_assignment
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 
-from .certification import RelationGenerator, hard_relations
+from .certification import hard_relations
+from .generation import make_generator
 from .protocol import RelationProtocol
 from .head import Head, private_epoch, public_epoch
 from .data import Prepared
@@ -80,7 +81,7 @@ class Method:
                 w, b = head.w.copy(), head.b.copy()
                 snapshots.append((w, b))
                 if round_number == 1:
-                    generator = RelationGenerator(self.data.public[client], w, b,
+                    generator = make_generator(self.data.public[client], w, b,
                                                   self.data.edges, METHODS[self.name])
                     self.generators.append(generator)
                     relations.append(generator.initial_relations)

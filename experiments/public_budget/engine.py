@@ -6,7 +6,7 @@ from threadpoolctl import threadpool_info
 from experiments.public_scaling.data import Prepared
 from experiments.public_scaling.engine import Method,audit,evaluate,heads_digest,METHODS as MODES
 from experiments.public_scaling.head import private_epoch
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 from .design import METHODS
 from .student import update,schedule_digest,Coverage
 
@@ -24,7 +24,7 @@ class BudgetMethod(Method):
         for c,h in enumerate(self.heads):
             w,b=h.w.copy(),h.b.copy();snapshots.append((w,b))
             if rnd==1:
-                g=RelationGenerator(self.data.public[c],w,b,self.data.edges,MODES[self.name]);self.generators.append(g)
+                g=make_generator(self.data.public[c],w,b,self.data.edges,MODES[self.name]);self.generators.append(g)
                 relations.append(g.initial_relations);del g.initial_relations
                 statistics.append(dict(forward_endpoints=self.config.samples,certified_edges_before_refresh=0,candidate_entries=self.config.samples*self.config.classes))
             else:

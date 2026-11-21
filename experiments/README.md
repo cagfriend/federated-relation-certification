@@ -1,5 +1,7 @@
 # 实验代码导航
 
+当前浮点 D 从[生成入口](public_scaling/generation.py)进入。[数值对照](../snapshot_routing/bias_numerical/README.md) · [资源对照](../snapshot_routing/bias_resources/README.md)
+
 ## STL-10 快照协议与选路
 
 - [E38 快照外部比较](snapshot_external_comparison/README.md)提供学习协议及快照来源。

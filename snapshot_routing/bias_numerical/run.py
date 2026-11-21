@@ -89,7 +89,7 @@ def execute(out, preset):
             "Use an empty output directory")
     sources = [*sorted(PACKAGE.glob("*.py")), *sorted((PACKAGE.parent / "numerical_check").glob("*.py")),
                PACKAGE.parent / "report.py",
-               ROOT / "experiments/public_scaling/certification.py"]
+               ROOT / "experiments/public_scaling/certification.py", ROOT / "experiments/public_scaling/endpoint_bias.py"]
     manifest = out / "manifest.json"
     specs = [metadata(case) for case in cases]
     write(manifest, dict(preset=preset, fixtures=specs, environment=environment(),

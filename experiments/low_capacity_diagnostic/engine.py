@@ -12,7 +12,7 @@ from threadpoolctl import threadpool_info
 from experiments.quantity_heterogeneity import data as quantity_data
 from experiments.public_scaling.data import Prepared as CorePrepared
 from experiments.public_scaling.engine import evaluate, heads_digest, METHODS as MODES
-from experiments.public_scaling.certification import RelationGenerator
+from experiments.public_scaling.generation import make_generator
 from experiments.private_workload.engine import WorkloadMethod
 from experiments.private_workload.sampling import private_workload_epoch, subset_digest
 from experiments.private_workload.student import update, schedule_digest
@@ -103,7 +103,7 @@ def _step(trainer, rnd, branch, probe_indices, enable_probes):
         w, b = h.w.copy(), h.b.copy()
         snapshots.append((w, b))
         if rnd == 1:
-            generator = RelationGenerator(data.public[c], w, b, data.edges, MODES['B'])
+            generator = make_generator(data.public[c], w, b, data.edges, MODES['B'])
             trainer.generators.append(generator)
             relations.append(generator.initial_relations)
             del generator.initial_relations

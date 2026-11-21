@@ -46,7 +46,10 @@ def numerical_result(root):
     require(result["preset"] == "full" and result["manifest"] == sha(manifest),
             "Numerical prerequisite has the wrong matrix or manifest")
     hashes = read(manifest)["sources"]
-    require(all(hashes[name] == sha(ROOT / name) for name in NUMERICAL_SOURCES),
+    candidate = "snapshot_routing/bias_numerical/candidate.py"
+    core = "experiments/public_scaling/endpoint_bias.py"
+    expected = hashes.get(core, hashes[candidate])
+    require(expected == sha(ROOT / core) and hashes[NUMERICAL_SOURCES[0]] == sha(ROOT / NUMERICAL_SOURCES[0]),
             "The numerical audit used a different old or new D implementation")
     return dict(status="通过" if result["passed"] else "未通过", source=str(root),
                 completed_sha=sha(path), failures=result["failures"])
@@ -98,7 +101,7 @@ def execute(out, opts):
     traces = source_traces(opts.trace_root, cases, opts.preset)
     numerical = numerical_result(opts.numerical_output)
     sources = [*sorted(PACKAGE.glob("*.py")), PACKAGE / "README.md", PACKAGE.parent / "report.py",
-               *(ROOT / name for name in NUMERICAL_SOURCES)]
+               *(ROOT / name for name in NUMERICAL_SOURCES), ROOT / "experiments/public_scaling/endpoint_bias.py"]
     manifest = dict(preset=opts.preset, schedule=blocks, traces=traces, numerical=numerical,
                     sources={path.relative_to(ROOT).as_posix(): sha(path) for path in sources},
                     environment=environment())

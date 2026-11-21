@@ -8,7 +8,8 @@ from sklearn.cluster import KMeans
 from experiments.public_scaling.head import Head,probabilities
 from experiments.private_prior.training import private_workload_epoch
 from experiments.public_budget.student import update
-from experiments.public_scaling.certification import RelationGenerator,hard_relations,make_matching
+from experiments.public_scaling.certification import hard_relations, make_matching
+from experiments.public_scaling.generation import make_generator
 from experiments.public_scaling.protocol import RelationProtocol
 
 class Ours:
@@ -49,7 +50,7 @@ class Ours:
         self.last_snapshot=[(h.w.copy(),h.b.copy()) for h in self.heads]
         for c,(w,b) in enumerate(self.last_snapshot):
             if rnd==1:
-                g=RelationGenerator(self.public[c],w,b,self.edges,'relation');self.generators.append(g)
+                g=make_generator(self.public[c],w,b,self.edges,'relation');self.generators.append(g)
                 relation=g.initial_relations;del g.initial_relations;points+=len(public)
             else:
                 relation,stat=self.generators[c].generate(w,b);points+=stat['forward_endpoints'];certified+=stat['certified_edges_before_refresh']
