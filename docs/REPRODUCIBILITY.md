@@ -26,6 +26,18 @@ python -B -m snapshot_routing.full_training.run --preset full
 
 两个入口都可用 `--preset smoke`。运行 E43 短测时，用 `--source outputs/snapshot_routing_confirmation_smoke` 指向刚生成的 E42 短测。可复核已发表计时的[原始记录与回执](../archives/README.md)。
 
+## E44/E45 计时归因与按需对照
+
+E44 使用上述 E43 审计和 E42 的准备数据。E45 从 E42 校验过的输入运行全图和按需训练。E45 补测入口读取已封存的原始 E45 结果，按供电日志定位这次发布的三个特定块。
+
+```powershell
+python -B -m snapshot_routing.timing_diagnosis.run --preset full
+python -B -m snapshot_routing.on_demand.run --preset full
+python -B -m snapshot_routing.on_demand.retest.run --preset full
+```
+
+公开归档保留计时日志、供电采样、配对回执及审计摘要。原始特征、教师头与准备缓存由复现入口生成。[证据](evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
+
 ## 历史复现说明
 
 [代码台账](evidence/CODE_HISTORY.md)按本次远端基线列出每个实验实际存在的Python源码和Git blob SHA；历史命令并不意味着相应驱动仍存在。核心源码、预注册、结果、缓存标记及各类原始清单均未改动。

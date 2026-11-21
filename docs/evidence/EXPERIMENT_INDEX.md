@@ -732,3 +732,13 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 ## E43 M4096 完整头部训练
 
 18 条审计轨迹和 54 次正式计时。核对 44,236,800 条边零差异，头参数和通信相同。IID 的 D/B 3/3 达标、D/E 2/3 达标。强非 IID 两项均为 0/3，跨划分预设判据未通过。[审阅](ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [逐格对照](e43_full_training/comparisons.csv)
+
+<a id="e44"></a>
+## E44 完整头部计时归因
+
+三个配置、24 个运行块、96 次计时。两个强非 IID 配置相对 B 分别省 5.16% 和 4.94%，未检出稳定的非生成额外耗时。[计时归因](TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [阶段明细](e44_timing_diagnosis/stage_diagnosis.csv)
+
+<a id="e45"></a>
+## E45 只计算学生所需边的精确按需对照
+
+两个 2021 配置，八条审计轨迹、24 次原始计时和 12 次配对补测。学生更新相等，D 在 IID 最快，Demand 在强非 IID 最快。按需路径在当前消息协议下使用更多应用层字节。[审阅](TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [补测合并](e45_on_demand_retest/comparisons.csv)

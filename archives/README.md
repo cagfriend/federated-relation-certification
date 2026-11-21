@@ -84,3 +84,7 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E42/E43 原始记录
 
 [E42 新种子重放](e42_confirmation_raw_records_20261120.zip)保存 162 次计时和教师轨迹回执。[E43 完整训练](e43_full_training_raw_records_20261120.zip)保存 18 次审计与 54 次正式计时和配对回执。分别解压到单独目录。教师特征、参数数组和预处理数据由实验入口在本地生成。[复现入口](../docs/REPRODUCIBILITY.md)
+
+## E44/E45 原始记录
+
+[E44 阶段归因](e44_timing_diagnosis_raw_records_20261121.zip)保存 96 次计时。[E45 原始实验](e45_on_demand_raw_records_20261121.zip)保存八条审计与 24 次计时。[E45 补测](e45_on_demand_retest_raw_records_20261121.zip)保存 12 次独立计时和补测回执。分别解压到单独目录，结果与来源摘要见[审阅报告](../docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)。

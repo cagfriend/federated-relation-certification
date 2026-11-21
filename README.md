@@ -4,14 +4,14 @@
 
 主要贡献方向是：在相同学习目标和参数轨迹下，降低教师关系生成与相关资源开销。允许预先约定的小幅质量下降，不要求ACC提高；当前精确认证本身保持基线轨迹，质量变化主要来自预算、数据或学习设置改变。持续严重单簇仍须单独识别。
 
-**当前结果。** 新种子重放确认了三个公共样本档位的关系生成边界，512、4096、16384 分别用 B、D、B，18/18 格达到预设判据。4096 档的完整头部计时中，D 在 IID 下相对 B 节省 8.18%–10.57%，相对 E 有 2/3 格达标。强非 IID 的两项比较均为 0/3 达标。[E42/E43 审阅](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md)
+**当前结果。** 新种子重放确认了三个公共样本档位的关系生成边界，512、4096、16384 分别用 B、D、B，18/18 格达到预设判据。E44 计时归因中，两个受测的强非 IID 配置相对 B 各省约 5% 的完整头部耗时。E45 加入只提交学生所需关系的 Demand，2021 IID 中 D 最快，强非 IID 中 Demand 最快且使用更多应用层字节。[E42/E43](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [E44/E45](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
 
 ## 阅读导航
 
 |主题|入口|
 |---|---|
 |方法|[基础方法](#基础方法聚合什么如何训练) · [关系认证](#关系认证为什么不知道标签也能知道关系) · [通信与提交](#自适应传输什么时候发全量什么时候发变化) · [专题索引](docs/METHOD.md)|
-|当前结论|[结论与边界](docs/RESULTS.md) · [选路确认及完整训练结果](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md)|
+|当前结论|[结论与边界](docs/RESULTS.md) · [计时归因与按需对照](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)|
 |复现|[复现说明](docs/REPRODUCIBILITY.md) · [实验代码导航](experiments/README.md)|
 |计划|[待做实验](docs/NEXT_EXPERIMENTS.md) · [资源口径](docs/NEXT_RESOURCE_PLAN.md)|
 |历史证据|[完整实验台账](docs/evidence/EXPERIMENT_INDEX.md) · [源码台账](docs/evidence/CODE_HISTORY.md) · [原始记录归档](archives/README.md)|
@@ -152,7 +152,7 @@ B/E/D同目标、同编码，字节一致；**D在此基础上的收益来自计
 
 ### 1. 方法目标：省什么、怎样省、何时省
 
-当前主目标是**在相同硬关系、聚合目标及学习轨迹下，降低关系生成成本**。E41 的整种子留出用于筛查选路，E42 用新种子确认三个受测规模的关系生成边界。E43 在 4096 档测量了完整头部耗时，其中 IID 有可复现收益，强非 IID 仍待定位其阶段耗时差。[E41](docs/evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [E42/E43](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md)
+当前主目标是**在相同硬关系、聚合目标及学习轨迹下，降低关系生成成本**。E41/E42 定位三个规模的生成边界。E43 完整头部预设判据在 IID 下得到支持，强非 IID 未达门槛。E44 对两个强非 IID 配置继续配对后，相对 B 都观察到净省时。E45 加入按需目标范围，学生更新逐轮对齐。[E41](docs/evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [E42/E43](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [E44/E45](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
 
 |资源或阶段|省什么、怎样省|什么时候有收益|
 |---|---|---|
@@ -331,6 +331,7 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 |[engine.py](experiments/public_scaling/engine.py)|轮次时序、计时、oracle与参数摘要|
 |[快照实验与选路](snapshot_routing/README.md)|E39/E40 固定路径对照之后，重放 E41 的本地选路边界|
 |[独立确认](snapshot_routing/confirmation/README.md) · [完整头部训练](snapshot_routing/full_training/README.md)|E42 在新种子上测生成成本，E43 在相同种子上测完整头部耗时|
+|[计时归因](snapshot_routing/timing_diagnosis/README.md) · [按需对照](snapshot_routing/on_demand/README.md) · [定向补测](snapshot_routing/on_demand/retest/README.md)|E44 同方法波动与墙钟/CPU 时间，E45 按需训练和配对补测|
 |[实验代码导航](experiments/README.md)|各实验入口、依赖与历史源码状态|
 
 在克隆仓库根目录执行，避免`No module named experiments`：
