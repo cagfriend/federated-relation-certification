@@ -88,3 +88,7 @@ k_scaling_seed1001/1002/1003_raw_records_20261102.zip共72方法+12内存，根�
 ## E44/E45 原始记录
 
 [E44 阶段归因](e44_timing_diagnosis_raw_records_20261121.zip)保存 96 次计时。[E45 原始实验](e45_on_demand_raw_records_20261121.zip)保存八条审计与 24 次计时。[E45 补测](e45_on_demand_retest_raw_records_20261121.zip)保存 12 次独立计时和补测回执。分别解压到单独目录，结果与来源摘要见[审阅报告](../docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)。
+
+## E46/E47 原始记录
+
+[E46 机制消融](e46_mechanism_raw_records_20261121.zip)保存逐端逐轮计数与回执。[E47 浮点边界](e47_numerical_raw_records_20261121.zip)同时保存首次运行、全矩阵独立重跑、单例重跑及合成反例的完整输入。[审阅](../docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)

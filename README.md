@@ -6,12 +6,14 @@
 
 **当前结果。** 新种子重放确认了三个公共样本档位的关系生成边界，512、4096、16384 分别用 B、D、B，18/18 格达到预设判据。E44 计时归因中，两个受测的强非 IID 配置相对 B 各省约 5% 的完整头部耗时。E45 加入只提交学生所需关系的 Demand，2021 IID 中 D 最快，强非 IID 中 Demand 最快且使用更多应用层字节。[E42/E43](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [E44/E45](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
 
+**机制和正确性边界。** E46 中，D 采用 E 的候选集合仍可额外判定约 26% 的边。E47 在极端前缀累计和大数相消条件下复现 E/D 与全量 float64 B 的关系差异。实数证明和受测 STL-10 轨迹的逐边审计按各自范围使用。[机制图与浮点反例](docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)
+
 ## 阅读导航
 
 |主题|入口|
 |---|---|
 |方法|[基础方法](#基础方法聚合什么如何训练) · [关系认证](#关系认证为什么不知道标签也能知道关系) · [通信与提交](#自适应传输什么时候发全量什么时候发变化) · [专题索引](docs/METHOD.md)|
-|当前结论|[结论与边界](docs/RESULTS.md) · [计时归因与按需对照](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)|
+|当前结论|[结论与边界](docs/RESULTS.md) · [计时归因与按需对照](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [机制增量与浮点反例](docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)|
 |复现|[复现说明](docs/REPRODUCIBILITY.md) · [实验代码导航](experiments/README.md)|
 |计划|[待做实验](docs/NEXT_EXPERIMENTS.md) · [资源口径](docs/NEXT_RESOURCE_PLAN.md)|
 |历史证据|[完整实验台账](docs/evidence/EXPERIMENT_INDEX.md) · [源码台账](docs/evidence/CODE_HISTORY.md) · [原始记录归档](archives/README.md)|
@@ -108,7 +110,7 @@ $$B_{ik}^{(t)}=\|z_i\|_2\sum_{u=a_i+1}^{t}\|\Delta w_{h_i}^{(u)}-\Delta w_k^{(u)
 
 $$C_i^{(t)}=\{k:g_{ik}\le B_{ik}^{(t)}+\epsilon_{ik}\}.$$
 
-实数精确运算下真实赢家必在集合中；浮点实现加保守保护项并用oracle检查。候选不是概率，是“还不能排除”的集合。保留等号以处理平局。
+实数精确运算下真实赢家必在集合中。保留等号以处理平局。浮点实现使用经验保护项，逐边与全量计算核对受测轨迹。
 
 直观例子：旧分数为3.0、2.8、2.0、0.9，各竞争分差最多下降0.4，则簇2仍可能超过簇1，簇3/4可排除，候选为{1,2}。
 
@@ -127,7 +129,7 @@ $$C_i=C_j=\{k\}\ \Longrightarrow\ r_{ij}=1.$$
 
 **只有真实打分才刷新该样本参考。** 跳过多轮时不能只看最新一轮变化。下一教师快照相对上次教师快照的差还必须包含前一轮公共SGD与本轮私有SGD的净移动，不能在公共训练后错误重置参考。
 
-当前浮点保护不是完整IEEE证明；证书依赖固定特征和线性头，不能直接解冻编码器后继续使用旧界。[完整推导、复杂度与数值边界](docs/method/relation_certification.md)
+证书依赖固定特征和线性头。E47 的数值专项复现了极端前缀与相消下的浮点关系差异。[推导及适用条件](docs/method/relation_certification.md) · [首次差异与复现](docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)
 
 ## 自适应传输：什么时候发全量，什么时候发变化
 

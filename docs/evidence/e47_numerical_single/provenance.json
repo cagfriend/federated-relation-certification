@@ -1,0 +1,71 @@
+{
+  "preset": "full",
+  "fixtures": [
+    {
+      "name": "prefix_p54_n32",
+      "family": "long_prefix",
+      "rounds": 38,
+      "samples": 10,
+      "edges": 24,
+      "feature_width": 2,
+      "classes": 2,
+      "fixture_sha256": "07196cf5d4e57c5af533fe5a40926e3dc99bb8424f6181ca54b7e3f4751ce81e"
+    }
+  ],
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "torch": "2.7.1+cu118",
+    "sklearn": "1.5.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 16,
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "threadpools": [
+      {
+        "internal_api": "mkl",
+        "version": "2023.1-Product",
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "mkl_rt"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "vcomp"
+      }
+    ]
+  },
+  "sources": {
+    "snapshot_routing/numerical_check/audit.py": "494959c27e9a1760bff47c727f363324e03792513e90188cbf3012641e0f5d93",
+    "snapshot_routing/numerical_check/design.py": "a33e3f76ac0dd81564f8ea202c36237d9c0b3e1e9c64b8fdbdb05dcf9df7a199",
+    "snapshot_routing/numerical_check/run.py": "0640992d90c53aac403c9efbdbec009ad01e2e6ba9df2a15ef5c2fcd905005fe",
+    "snapshot_routing/numerical_check/README.md": "80d4e2c4a24b116d912c1a9505798367b521e7e3d8ebedd5f324cb1183f31b81",
+    "snapshot_routing/report.py": "9e7f5fe6583025eea2a72670c0465973351fd20b5fb040434b777d0a9805dfef",
+    "experiments/public_scaling/certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f"
+  },
+  "original_manifest_sha256": "0e5740317a1f8f23121eb72e442bf8e1ceaacca1f4a289cd615aa1382dd61280"
+}

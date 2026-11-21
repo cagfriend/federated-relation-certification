@@ -742,3 +742,13 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 ## E45 只计算学生所需边的精确按需对照
 
 两个 2021 配置，八条审计轨迹、24 次原始计时和 12 次配对补测。学生更新相等，D 在 IID 最快，Demand 在强非 IID 最快。按需路径在当前消息协议下使用更多应用层字节。[审阅](TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [补测合并](e45_on_demand_retest/comparisons.csv)
+
+<a id="e46"></a>
+## E46 D 相对 E 的机制消融
+
+18 个配置，151,142,400 次逐边核对零差异。在 E 的候选集合上，D 额外判定约 26% 的边。实际省端点量及缓存开销按规模、划分与种子报告，净耗时沿用 E42 配对计时。[机制与数值审阅](MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) · [机制图](e46_mechanism/mechanism.pdf)
+
+<a id="e47"></a>
+## E47 浮点边界反例及重跑
+
+13 个定向合成实例，79,386 次 E/D 对 B 的关系核对。五例有差异，全矩阵及累计前缀单例重跑一致。[审阅](MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) · [逐例](e47_numerical/cases.csv)

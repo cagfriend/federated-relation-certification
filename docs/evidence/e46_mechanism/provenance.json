@@ -1,0 +1,174 @@
+{
+  "preset": "full",
+  "reference": "1a3a52a2b6e8dc97d47241eafde489158548411507343b7231c67f9f6f3c9ee7",
+  "cases": [
+    {
+      "seed": 2021,
+      "partition": "iid",
+      "public_size": 512
+    },
+    {
+      "seed": 2021,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2021,
+      "partition": "iid",
+      "public_size": 16384
+    },
+    {
+      "seed": 2021,
+      "partition": "dirichlet_0.1",
+      "public_size": 512
+    },
+    {
+      "seed": 2021,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2021,
+      "partition": "dirichlet_0.1",
+      "public_size": 16384
+    },
+    {
+      "seed": 2022,
+      "partition": "iid",
+      "public_size": 512
+    },
+    {
+      "seed": 2022,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2022,
+      "partition": "iid",
+      "public_size": 16384
+    },
+    {
+      "seed": 2022,
+      "partition": "dirichlet_0.1",
+      "public_size": 512
+    },
+    {
+      "seed": 2022,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2022,
+      "partition": "dirichlet_0.1",
+      "public_size": 16384
+    },
+    {
+      "seed": 2023,
+      "partition": "iid",
+      "public_size": 512
+    },
+    {
+      "seed": 2023,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2023,
+      "partition": "iid",
+      "public_size": 16384
+    },
+    {
+      "seed": 2023,
+      "partition": "dirichlet_0.1",
+      "public_size": 512
+    },
+    {
+      "seed": 2023,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2023,
+      "partition": "dirichlet_0.1",
+      "public_size": 16384
+    }
+  ],
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "torch": "2.7.1+cu118",
+    "sklearn": "1.5.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 16,
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "threadpools": [
+      {
+        "internal_api": "mkl",
+        "version": "2023.1-Product",
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "mkl_rt"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "vcomp"
+      }
+    ]
+  },
+  "traces": {
+    "2021_iid_m512": "22ab347cde3bbca877143e3e366e310046c3d7a83c47b6481efe3ace59bf7bcb",
+    "2021_iid_m4096": "2395180f18ff434af863b1abf839ab9f81c80b5ec4c4ef3f040829bcf1193985",
+    "2021_iid_m16384": "c882c66cfea4466a6a2570a6f65c5fdc138501a61b62d6de4e542178473bf097",
+    "2021_dirichlet_0.1_m512": "a7c25a97936fa1ba67fdc765a970cac9821511e177c09898ce9168427a11b396",
+    "2021_dirichlet_0.1_m4096": "e74513d0bf33f9ab9b7d1c0edf64a6c29aea8876a384092ba37881967e97b009",
+    "2021_dirichlet_0.1_m16384": "96d95b9b464f36f86c9fc000c6aeb415ef4681be6d1aaebe1e57a7830b67e04a",
+    "2022_iid_m512": "dad5d469c10d5e38140d6ce1869cd08dca5a9f0c67f1bd7706882f5713966973",
+    "2022_iid_m4096": "2f0cc0a0383e0da3a6e52e582a2273d2e41666259ec62f30ece4b5d9dd33ec34",
+    "2022_iid_m16384": "460cdfacb283101265226c8e53ee7ed9b02b6e8876076fd3aa0fd94607a27735",
+    "2022_dirichlet_0.1_m512": "d168e12f6352ab4fd43ba39417961338846d7c47c55993935a4768df0ca2b1c4",
+    "2022_dirichlet_0.1_m4096": "16b3cb41f0a56df622da32f3eda09cd00e545c639bc9da4502bd50980e756e00",
+    "2022_dirichlet_0.1_m16384": "4cf2b944e132240a62cc13d0a55d8e2fe3ffe3b264d24035d39e7da67d7bbc17",
+    "2023_iid_m512": "92f69c7631d3b523a3f829836b41dfa47fb86baa7f53c596f9cc3c614fc32ac8",
+    "2023_iid_m4096": "7c6e70a206cf6eb8cd29ae0917266b7ad569b6140d227f03828f143a86178ceb",
+    "2023_iid_m16384": "7dc8ba4b1e820995fbedccacc80afa3a5471a5c4cb52e9b936266a2becbfb584",
+    "2023_dirichlet_0.1_m512": "656abcd9d70ab7f51ddffba119026677d15c9ab417ae73fd7dba6f251f25b2e4",
+    "2023_dirichlet_0.1_m4096": "a0fda0d8238997cbfbbb9abef3dbbea17e26f299058a3fcc12ce166681e834ed",
+    "2023_dirichlet_0.1_m16384": "6f83df3adb25d4e048d7d8b8ac1831772ab93c3395993d37967b0462cb28d458"
+  },
+  "package": {
+    "snapshot_routing/mechanism/replay.py": "af3d88906dd5bb20f702b7035f761bd3f2cdcf58bd479760cd78d918f3f52497",
+    "snapshot_routing/mechanism/report.py": "e893c4f81f3d6d6ee26ef4a2ae722d72a7216daa1182a4f1d4a619d4406c842d",
+    "snapshot_routing/mechanism/run.py": "ac6e41e7659a47b8663ba224a48910a42bb750f90b3dccdc248e6ef5755a036d",
+    "snapshot_routing/confirmation/run.py": "fcb635daeeb72d1272047e629447d45dfc1a3ab4cb8284afcac6c2c70fbc9188",
+    "snapshot_routing/replay.py": "dccb582774e71916adabe44c6432404a3d6b8e0264300618e36d901505bfadbd",
+    "snapshot_routing/report.py": "9e7f5fe6583025eea2a72670c0465973351fd20b5fb040434b777d0a9805dfef",
+    "experiments/public_scaling/certification.py": "840c7ca8645d38297ae6ff7209f0042591417d0408fe1d19a68266b38a7e267f"
+  },
+  "design_sha256": "515ae95e0afe413d288afa4a7153816d4328c320a8a93962c55d7d1f244610a2",
+  "original_manifest_sha256": "d6b2ea827f3c09ee700b88465898cd33cd03d14ec769078e95cdf284ddedb8d0"
+}

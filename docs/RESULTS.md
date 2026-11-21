@@ -5,6 +5,8 @@
 | 研究问题 | 当前结论 | 证据 |
 |---|---|---|
 | D 什么时候节省关系生成时间 | E42 的 4096 档六个配置均比 B 和 E 快，分别节省 12.34%–31.69% 和 11.86%–23.81%。 | [E42 配对](evidence/e42_confirmation/comparisons.csv) |
+| D 比 E 多认证了什么 | E46 在同一份 E 候选集合上额外判定约 26% 的边。各自使用连续缓存时，D 在三个规模相对 E 少重算约 42%–44% 的端点。 | [E46 机制图](evidence/e46_mechanism/mechanism.pdf) |
+| 浮点边界在哪里 | E47 的 13 个合成实例中，五个在大数相消或长前缀下出现 E/D 对全量 B 的关系差异，独立重跑结果一致。 | [E47 正式报告与反例](evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) |
 | 关系生成收益能否兑现到完整头部 | E43 的 4096 档，IID 中 D/B 有 3/3 格达标，完整头部省 8.18%–10.57%。D/E 有 2/3 格达标。强非 IID 中两项均为 0/3。 | [E43 完整报告](evidence/e43_full_training/report.md) |
 | 强非 IID 的差异是否持续 | E44 的两个受测配置相对 B 分别省 5.16% 和 4.94%，未检出持续的非生成额外耗时。 | [E44 分阶段](evidence/e44_timing_diagnosis/report.md) |
 | 只计算学生用到的边时如何选择 | E45 的 IID 配置 D 最快。强非 IID 中 Demand 比 D 省 10.56% 完整头部时间。当前显式按需协议累计字节增加，两格共享一个种子。 | [E45 合并结果](evidence/e45_on_demand_retest/report.md) |

@@ -38,6 +38,18 @@ python -B -m snapshot_routing.on_demand.retest.run --preset full
 
 公开归档保留计时日志、供电采样、配对回执及审计摘要。原始特征、教师头与准备缓存由复现入口生成。[证据](evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
 
+## E46/E47 机制与数值边界
+
+E46 关联 E42 的本地封存轨迹及独立计时。E47 直接构建合成小实例，并将出现差异的输入保存为复现见证。
+
+```powershell
+python -B -m snapshot_routing.mechanism.run --preset full
+python -B -m snapshot_routing.numerical_check.run --preset full
+python -B -m snapshot_routing.numerical_check.run --case prefix_p54_n32
+```
+
+[E46/E47 审阅](evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) · [原始档案](../archives/README.md)
+
 ## 历史复现说明
 
 [代码台账](evidence/CODE_HISTORY.md)按本次远端基线列出每个实验实际存在的Python源码和Git blob SHA；历史命令并不意味着相应驱动仍存在。核心源码、预注册、结果、缓存标记及各类原始清单均未改动。
