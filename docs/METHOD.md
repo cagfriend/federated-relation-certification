@@ -1,6 +1,6 @@
 # 方法阅读入口
 
-当前 D 使用偏置净变化，旧 D 的已发表结果按原版本引用。[当前证据 E48/E49](evidence/ENDPOINT_BIAS_20261121.md) · [活动清单](NEXT_EXPERIMENTS.md)
+主方法使用偏置净变化 D。权重区间与尺度检测合并版仅供显式正确性回退。历史结果按各自所用的实现引用。[当前证据 E50–E53](evidence/D_AND_NUMERICAL_FALLBACK_20261122.md) · [活动清单](NEXT_EXPERIMENTS.md)
 
 完整、自洽的方法说明现放在[仓库首页](../README.md)，包含公式、证明思路、基础代码和每轮时序。专题补充：[学习协议](method/learning_protocol.md)、[关系认证](method/relation_certification.md)、[通信](method/communication.md)、[实现定位](method/implementation.md)、[恢复范围](method/aggregation_recovery.md)、[单簇风险](method/stability.md)。
 

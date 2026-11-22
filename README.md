@@ -2,9 +2,9 @@
 
 客户端用公共无标签样本对的“是否同簇”表达本地知识。临时聚合者统计各客户端的判断，返回同簇比例，客户端在自己的模型上学习这些关系。**不平均模型参数，不要求不同客户端对齐簇编号。**
 
-主要贡献是在固定表示与教师快照下节省关系生成计算。当前 D 保留权重变化预算，直接计算竞争簇相对缓存赢家的偏置净变化。正常训练与快照回放使用新版。历史累计偏置 D 供显式比较和复现。[当前算法](docs/method/relation_certification.md) · [历史算法](docs/history/relation_certification_cumulative.md)
+主要贡献是在固定表示与教师快照下节省关系生成计算。主方法 D 累计类间权重变化预算，并直接计算竞争簇相对缓存赢家的偏置净变化。训练和性能对照默认使用这一版本。[主方法 D](docs/method/relation_certification.md) · [历史算法](docs/history/relation_certification_cumulative.md)
 
-**当前实测。** STL-10 的 18 个配置均减少重打分计算量，54 个配对的关系生成合计省时 8.41%，16/18 个配置的耗时中位数下降。IID 确认通过，强非 IID 有一格超出计时容差。21 个定向合成实例的错边从 15,354 降到 2,105，其中有 44 处新增。旧 D 的全头部计时与选路结论按原版本引用。[E48/E49 报告与复现](docs/evidence/ENDPOINT_BIAS_20261121.md)
+**当前实测。** 在 STL-10、M4096 的四组 IID 与强非 IID 配置中，D 相对全量生成 B 的完整头部省时 **7.71%–11.45%**，16 个配对全部更快。逐边审计 **9,830,400 次**零差异，学生目标、头参数及应用层通信逐轮一致。结果适用于固定表示和已测训练设置。[200 轮实测与复现](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md)
 
 ## 阅读导航
 
@@ -127,7 +127,7 @@ $$C_i=C_j=\{k\}\ \Longrightarrow\ r_{ij}=1.$$
 
 **只有真实打分才刷新该样本参考。** 跳过多轮时不能只看最新一轮变化。下一教师快照相对上次教师快照的差还必须包含前一轮公共SGD与本轮私有SGD的净移动，不能在公共训练后错误重置参考。
 
-证书依赖固定特征和线性头。E47 的数值专项复现了极端前缀与相消下的浮点关系差异。[推导及适用条件](docs/method/relation_certification.md) · [首次差异与复现](docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)
+证书依赖固定特征和线性头。极端的权重累计与分数相消可能造成浮点关系差异。遇到已知数值反例，可通过独立实验入口显式运行正确性回退。[推导及适用条件](docs/method/relation_certification.md) · [浮点边界与回退](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md#正确性回退)
 
 ## 自适应传输：什么时候发全量，什么时候发变化
 
@@ -265,7 +265,7 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 
 ## 已完成验证及其解释
 
-下列 E01–E47 按当时的实现解读。当前偏置净变化 D 的正式测试见 [E48 和 E49](docs/evidence/ENDPOINT_BIAS_20261121.md)。
+下列历史实验按当时的实现解读。当前偏置净变化 D 的选型依据见 [E48–E49](docs/evidence/ENDPOINT_BIAS_20261121.md)，完整训练、正确性回退及开销消融见 [E50–E53](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md)。
 
 **E38，快照筛选版外部对照。** 四配置、28 次各 200 轮的运行完成。开启 0.5 保护时，统一 KMeans 口径下 ACC 为 18.28%–21.50%，四组均高于 Hetero-SSFL 和 FedMKD，与 FLESD 相比一组领先、三组落后 0.43–1.17 个百分点。计入准备成本并取组内技术重复均值后，外部适配方法耗时约为本方案的 11.0–31.9 倍，包含冻结表示与持续编码器更新之间的工作量差异。16 条自身轨迹的 4,915,200 次关系核对零错误。[完整结果与计时边界](docs/evidence/SNAPSHOT_EXTERNAL_COMPARISON_20261118.md)
 
@@ -326,7 +326,8 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 
 |代码入口|作用|
 |---|---|
-|[当前生成入口](experiments/public_scaling/generation.py)|浮点 D 采用偏置净变化|
+|[当前生成入口](experiments/public_scaling/generation.py)|默认浮点 D 采用偏置净变化|
+|[新版 D 的完整头部对照](snapshot_routing/endpoint_bias_training/README.md)|E50 验证新版 D 相对 B 的训练时间和逐轮一致性|
 |[certification.py](experiments/public_scaling/certification.py)|候选集合、点/关系认证及回退|
 |[codec.py](experiments/public_scaling/codec.py)|实际位打包与自适应消息|
 |[protocol.py](experiments/public_scaling/protocol.py)|关系计数与提交|

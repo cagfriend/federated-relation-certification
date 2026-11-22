@@ -1,6 +1,6 @@
 # 精确关系生成的选路边界
 
-当前 D 的实验入口为[偏置数值边界](bias_numerical/README.md)和[快照资源比较](bias_resources/README.md)。以下为历史选路设计。
+当前偏置净变化 D 的正式训练入口见[完整头部对照](endpoint_bias_training/README.md)。[浮点边界和正确性回退](numerical_boundary/README.md)附有[回退版训练计时](guarded_training/README.md)和[开销消融](guard_cost/README.md)。[E48/E49 的两项偏置实验](../docs/evidence/ENDPOINT_BIAS_20261121.md)保留原版判定。以下为历史选路设计。
 
 以 E40 的 STL-10 冻结特征训练为参考。公共样本量取 512、4096、16384，对应匹配图 256、2048、8192 条边。每档沿用四个既有场景、两种头宽、六客户端、K=10、200 轮和固定的公共学生预算。不同规模各自使用其已审计的训练轨迹。实验包放在仓库根目录，以便已有 E40 续跑仍可使用原有的 experiments 源码清单。
 
