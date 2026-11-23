@@ -1,5 +1,16 @@
 # 复现入口与历史说明（2026-11-09重整）
 
+## E54–E55 复现
+
+STL-10 的同界比较需要本地 E42 结果和 STL-10 源数据。Fashion-MNIST 使用四份官方 IDX gzip 数据。两项实验均可用 `--preset smoke` 检查流程。
+
+```powershell
+python -B -m snapshot_routing.paired_boundaries.run --preset full
+python -B -m snapshot_routing.fashion_confirmation.run --preset full
+```
+
+[STL-10 输入与运行](../snapshot_routing/paired_boundaries/README.md) · [Fashion-MNIST 输入与运行](../snapshot_routing/fashion_confirmation/README.md) · [结果与原始归档](evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md)
+
 当前 D 使用偏置净变化，旧 D 的已发表结果按原版本引用。[当前证据 E48/E49](evidence/ENDPOINT_BIAS_20261121.md) · [活动清单](NEXT_EXPERIMENTS.md)
 
 ## 当前 D 与历史证据

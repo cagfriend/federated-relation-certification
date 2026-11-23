@@ -765,3 +765,12 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 |E51|权重累计、相消与回退数值验证|[数值判定与生成回放](e51_numerical_boundary/report.md)|
 |E52|当前 D 与回退版的 200 轮训练|[完整头部耗时与 ACC](e52_guarded_training/report.md)|
 |E53|权重区间与相消防护的开销消融|[四方法计时与阶段拆分](e53_guard_cost/report.md)|
+
+## E54–E55 同界基线与跨数据确认
+
+| 编号 | 实验 | 结论入口 |
+| --- | --- | --- |
+| E54 | STL-10 三档规模和新种子 M4096 的 B、同界 E、D 与 Demand 对照 | [报告](e54_paired_boundaries/report.md) |
+| E55 | Fashion-MNIST M4096 的 B、同界 E 与 D 对照 | [报告](e55_fashion_confirmation/report.md) |
+
+[证据汇总、源码入口和无损归档](MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md)

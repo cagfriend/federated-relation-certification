@@ -8,8 +8,10 @@ from experiments.public_scaling.certification import RelationGenerator
 class EndpointBiasGenerator(RelationGenerator):
     """Use signed rival-minus-winner bias changes while retaining the weight bound."""
 
-    def __init__(self, features, weights, bias, edges):
-        super().__init__(features, weights, bias, edges, "relation")
+    def __init__(self, features, weights, bias, edges, *, mode="relation"):
+        if mode not in ("relation", "point"):
+            raise ValueError("Endpoint bias bounds require relation or point certification")
+        super().__init__(features, weights, bias, edges, mode)
         # The inherited candidate/refresh code reads this table and its cached rows.
         # Here the table holds the current class-pair offset, with no history sum.
         np.subtract(bias[None, :], bias[:, None], out=self.bias_prefix)

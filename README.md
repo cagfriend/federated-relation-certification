@@ -4,7 +4,7 @@
 
 主要贡献是在固定表示与教师快照下节省关系生成计算。主方法 D 累计类间权重变化预算，并直接计算竞争簇相对缓存赢家的偏置净变化。训练和性能对照默认使用这一版本。[主方法 D](docs/method/relation_certification.md) · [历史算法](docs/history/relation_certification_cumulative.md)
 
-**当前实测。** 在 STL-10、M4096 的四组 IID 与强非 IID 配置中，D 相对全量生成 B 的完整头部省时 **7.71%–11.45%**，16 个配对全部更快。逐边审计 **9,830,400 次**零差异，学生目标、头参数及应用层通信逐轮一致。结果适用于固定表示和已测训练设置。[200 轮实测与复现](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md)
+**当前实测。** 在 STL-10 的 M4096 下，D 相对全量 B 的完整头部省时通过 IID 和强非 IID 的新种子确认，且在 12 组配置中均为平均耗时最低的全图方法。按需 Demand 在其中 11 组平均更快，应用层字节中位数比 D 高 29.6%。在 Fashion-MNIST 的 M4096 下，D 相对同界逐样本 E 的完整头部省时通过两种划分的确认，相对全量 B 的六组平均完整头部耗时更长。[E54–E55 结果和资源边界](docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md)
 
 ## 阅读导航
 

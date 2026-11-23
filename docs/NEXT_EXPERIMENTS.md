@@ -1,16 +1,8 @@
 # 当前待做实验
 
-主方法采用偏置净变化 D。E50 已确认当前 D 在 STL-10 的 M4096 配置上相对全量 B 的完整头部收益。E51–E53 已完成数值回退和开销定位。本清单聚焦论文主结论需要的两项验证。[最新证据](evidence/D_AND_NUMERICAL_FALLBACK_20261122.md)
+本轮两项高优先级实验已完成。
 
-## 1. STL-10 同场景基线比较与规模边界
+- **E54 STL-10 同场景基线比较与规模边界。** 三档规模覆盖全量 B、同界 E、当前 D 与 Demand，M4096 使用新种子确认。[正式报告](evidence/e54_paired_boundaries/report.md)
+- **E55 Fashion-MNIST 跨数据确认。** 固定 M4096，在 IID 与强非 IID 下比较 B、同界 E 与 D，覆盖关系生成与完整头部耗时。[正式报告](evidence/e55_fashion_confirmation/report.md)
 
-- 比较全量 B、采用相同偏置净变化界的逐样本认证 E、当前 D 和按需边 Demand。统一私有更新预算、公共学生步数、图和训练轮数。B、E、D 使用相同的全图协议，Demand 按学生实际消费的边生成目标。原版 E 的数据按对应实现引用。
-- 比较 M512、M4096、M16384，覆盖 IID 与强非 IID。以 M4096 为主确认场景，加入未参与选档的新种子，事先固定配对计时规则与达标判据。按规模、划分和头宽报告结果，技术重复在种子内汇总。
-- 主报完整头部耗时、省秒和省时比例，同时记录生成耗时、重打分端点、持久缓存、上下行应用层字节。逐轮核对 B、E、D 的全图关系与更新后头参数，并核对 Demand 的学生消费边、目标与更新后头参数。逐格报告最快路径及其代价。[已有按需对照](evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
-
-## 2. Fashion-MNIST 上确认当前 D 的计算收益
-
-- 复用已有 Fashion-MNIST 流程，预先固定一个公共库规模。IID 与强非 IID 各用三个配对种子，以同一训练预算比较全量 B、采用相同偏置净变化界的逐样本认证 E 和当前 D。
-- 逐轮核对关系、学生目标及头参数。报告关系生成和完整头部的配对耗时，并给出 B 的生成耗时占比，用于解释两项收益在第二数据集上的差异。
-
-[此前计划与完成记录](history/NEXT_EXPERIMENTS_before_endpoint_bias.md) · [实验索引](evidence/EXPERIMENT_INDEX.md)
+[当前结果与复现](evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md) · [此前计划与完成记录](history/NEXT_EXPERIMENTS_before_endpoint_bias.md) · [实验索引](evidence/EXPERIMENT_INDEX.md)
