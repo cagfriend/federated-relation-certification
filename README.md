@@ -1,347 +1,74 @@
 # 半分布式异构联邦聚类：精确关系生成与资源优化
 
-客户端用公共无标签样本对的“是否同簇”表达本地知识。临时聚合者统计各客户端的判断，返回同簇比例，客户端在自己的模型上学习这些关系。**不平均模型参数，不要求不同客户端对齐簇编号。**
+客户端在同一公共无标签样本图上交换「两个样本是否同簇」的判断。聚合者汇总判断并返回同簇比例，各客户端用自己的模型学习这些关系。客户端可使用不同宽度的表示和各自的簇编号。
 
-主要贡献是在固定表示与教师快照下节省关系生成计算。主方法 D 累计类间权重变化预算，并直接计算竞争簇相对缓存赢家的偏置净变化。训练和性能对照默认使用这一版本。[主方法 D](docs/method/relation_certification.md) · [历史算法](docs/history/relation_certification_cumulative.md)
-
-**当前实测。** 在 STL-10 的 M4096 下，D 相对全量 B 的完整头部省时通过 IID 和强非 IID 的新种子确认，且在 12 组配置中均为平均耗时最低的全图方法。E54 的显式 Demand 在其中 11 组平均更快，应用层字节中位数比 D 高 29.6%。在 Fashion-MNIST 的 M4096 下，E55 原版 D 相对同界逐样本 E 的完整头部省时通过两种划分的确认，相对全量 B 的六组平均完整头部耗时更长。E57 的缓冲区复用版 D 在三个 IID 新种子上比 B 省时 4.91%–8.21%，强非 IID 下平均耗时与 B 接近。[E54–E55 同界对照](docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md) · [E56–E57 耗时归因与复用确认](docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)
-
-**按需协议的选择。** 在受测 STL-10 M4096 配置中，仅聚合者重建请求比显式 Demand 少发 20.37% 应用层字节，11/12 组满足完整头部耗时门槛。需要保留每轮整图状态时使用全图 D。各端独立重建用于应用层字节优先的场景，其完整头部耗时比显式 Demand 增加 5.19%–10.54%。这些结果来自固定成员、串行 CPU 和内存消息实验。[E58–E59 结果](docs/evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md) · [协议选择与边界](docs/method/communication.md#按需关系协议)
+本项目的主要贡献是在**固定表示和教师快照**下减少生成硬关系所需的计算。全图方法 D 用样本的候选簇直接判定一部分边，只对未解决边的必要端点重算。实验在相同教师关系、学生目标和训练轨迹下比较成本。完整推导见[关系认证](docs/method/relation_certification.md)。
 
 ## 阅读导航
 
-|主题|入口|
-|---|---|
-|方法|[基础方法](#基础方法聚合什么如何训练) · [关系认证](#关系认证为什么不知道标签也能知道关系) · [通信与提交](#自适应传输什么时候发全量什么时候发变化) · [专题索引](docs/METHOD.md)|
-|当前结论|[结论与边界](docs/RESULTS.md) · [计时归因与按需对照](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md) · [机制增量与浮点反例](docs/evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md)|
-|复现|[复现说明](docs/REPRODUCIBILITY.md) · [实验代码导航](experiments/README.md)|
-|计划|[待做实验](docs/NEXT_EXPERIMENTS.md) · [资源口径](docs/NEXT_RESOURCE_PLAN.md)|
-|历史证据|[完整实验台账](docs/evidence/EXPERIMENT_INDEX.md) · [源码台账](docs/evidence/CODE_HISTORY.md) · [原始记录归档](archives/README.md)|
+[主要结果](#主要结果) · [基础方法](#基础方法聚合什么如何训练) · [适用边界](#适用范围与实现状态) · [代码与复现](#代码与复现) · [实验索引与历史](#实验索引与历史)
 
-## 适用范围与实现状态
+## 主要结果
 
-|层次|当前准确含义|
-|---|---|
-|原始框架|现有客户端中临时承担聚合职责，正常时维持，退出或掉线时再选举；模型和私有数据异构|
-|已验证学习实例|各客户端独立训练后冻结的异宽MLP编码器，加可训练线性聚类头；Fashion-MNIST与STL-10|
-|数据异构|IID、容量约束Dirichlet类别比例偏斜，以及N6总2400固定下的私有数量不均；各自证据范围单列|
-|主训练执行|CPU float64、单线程BLAS、客户端串行、固定leader0与成员、同步可靠内存消息|
-|恢复专项|独立合成关系上的序列化交接与恢复回放，尚未接入完整模型训练状态|
-|未作保证|任意可训练骨干、真实网络共识、全输入IEEE浮点正确性、普适省时或防坍缩|
+| 研究问题 | 已观察到的结果 | 证据 |
+| --- | --- | --- |
+| 全图 D 在 STL-10 上何时省时？ | M4096 下，D 对全量 B 的完整头部省时通过两种划分的新种子确认。12 个配置中，D 均为按平均耗时排序最快的全图方法。 | [E54 同界对照](docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md#e54-stl-10-的全图与按需对照) |
+| Fashion-MNIST 结果是否一致？ | E55 原版 D 对同界逐样本 E 的完整头部省时通过两种划分确认。对全量 B，六组平均完整头部耗时均更长。E57 缓冲区复用版 D 在三个 IID 新种子上对 B 省时 **4.91%–8.21%**，强非 IID 下平均耗时与 B 接近。 | [E55 对照](docs/evidence/e55_fashion_confirmation/report.md) · [E56–E57 归因与确认](docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md) |
+| 学生只使用部分边时，通信和时间如何取舍？ | E54 显式 Demand 在 11/12 组平均快于全图 D，应用层字节中位数高 29.6%。E59 仅聚合者重建比显式 Demand 少发 **20.37%** 字节，**11/12** 组通过完整头部耗时门槛。E58 各端独立重建少发 **48.20%** 字节，相对显式 Demand 完整头部增时 **5.19%–10.54%**。 | [E54 按需对照](docs/evidence/e54_paired_boundaries/report.md) · [E58–E59 通信与计时](docs/evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md) |
+| 计算优化是否改变学习质量？ | 已审计的同配置 B/E/D 轨迹中，关系、目标和训练更新一致。早期 STL-10 设置下三者均曾出现严重退化。E09 对跨客户端协作收益的预设主筛查未通过。 | [结论与边界](docs/RESULTS.md) · [单簇风险](docs/method/stability.md) · [E09](docs/evidence/EXPERIMENT_INDEX.md#e09) |
 
-CNN不是前提。“同模型家族不同宽度”是当前场景；接口不需要特征坐标一致，但现有实验不能直接证明任意模型家族都有效。当前位集合实现支持1–64簇，主协议支持2–255客户端。
-
-内容依据用户[原始TXT可读副本](docs/history/user_method_notes_20261109.utf8.txt)及当前实现整理。早期部分参数聚合、贡献度加权、复杂选举、邻域一致性等笔记保持为历史设想，没有冒充已实现机制。逐项对应见[来源映射](docs/history/SOURCE_MAP.md)。
+完整头部耗时包含方法初始化、私有头训练、教师生成、关系交换与公共头更新。共同预训练和特征准备、审计及评估另计。通信量按应用层序列化消息计账。不同协议、批次和工作负载的结果按原实验口径解释。[测量与实现说明](docs/method/implementation.md) · [完整结果](docs/RESULTS.md)
 
 ## 基础方法：聚合什么、如何训练
 
-### 1. 用关系表达本地知识
+各客户端先用私有无标签图像训练自编码器，冻结编码器后在本地特征上运行 KMeans，得到固定伪标签。历史基础协议采用随机头初始化，后续 STL-10 快照协议使用中心初始化和私有伪簇频数校正。[学习协议](docs/method/learning_protocol.md) · [编码器快照筛选](docs/method/encoder_snapshot_selection.md)
 
-设N个客户端，共同公共库 $U=\{x_1,\ldots,x_M\}$，固定样本对图 $G=(U,E)$。每条边e=(i,j)有稳定编号；原始公共样本身份与顺序也必须一致。
+固定公共图的样本身份、顺序和边编号。客户端 $c$ 用自己的教师头预测公共样本的标签 $y_{c,i}$，对边 $e=(i,j)$ 给出同簇判断 $r_{c,e}$。聚合者汇总为
 
-客户端c有自己的冻结编码器 $f_c$，特征 $z_{c,i}=f_c(x_i)\in\mathbb R^{d_c}$，可训练线性头 $W_c,b_c$。分数、预测与上传关系为
+$$r_{c,e}=\mathbf{1}[y_{c,i}=y_{c,j}],\qquad n_e=\sum_c r_{c,e},\qquad \tau_e=n_e/N.$$
 
-$$s_{c,i,k}=w_{c,k}^{\top}z_{c,i}+b_{c,k},\qquad y_{c,i}=\arg\max_k s_{c,i,k},$$
-$$r_{c,e}=\mathbf1[y_{c,i}=y_{c,j}].$$
+等权计数包含客户端自身。六个客户端中有四个判断同簇时，返回计数 4，学生使用软目标 $4/6$。模型参数、梯度和簇编号留在各端。
 
-例如一个客户端认为两个样本都属于本地簇2，另一个认为都属于本地簇7，它们上传的都是1。簇编号不对齐也能表达一致意见。不同客户端特征维度、头宽度不需要相同。
-
-同簇关系是本地训练结果在公共样本上的外显，不是私有数据贡献的无偏估计或质量分数。当前没有自动识别低质量客户端、分布互补性或贡献度加权。
-
-### 2. 聚合计数形成软目标
-
-$$n_e=\sum_{c=1}^{N}r_{c,e},\qquad \tau_e=\frac{n_e}{N}.$$
-
-六个客户端中四个判断同簇，目标就是4/6。当前等权聚合包含客户端自身，不是多数票硬阈值；线上包发送整数计数，客户端用比例训练。不同K从关系接口上可考虑，但当前配置内客户端共同使用K，未把跨客户端不同K当作已验证结果。
-
-### 3. 私有训练与公共训练
-
-初始化时，各客户端仅用私有无标签图像预训练自编码器，冻结后在本地特征上做一次KMeans得到固定伪标签 $\hat y$。历史基础协议的线性头由独立随机流初始化；2026-11-16另完成中心初始化与间隔保护候选对照，结论见[单簇风险与当前处理](#单簇风险与当前处理)，不将新候选改写为全部历史实验的设置。
-
-私有batch用交叉熵：
-
-$$p_{c,i}=\mathrm{softmax}(W_cz_{c,i}+b_c),\qquad
-\mathcal L_{private}=-\frac1{|B_p|}\sum_{i\in B_p}\log p_{c,i,\hat y_{c,i}}.$$
-
-公共batch用概率向量内积 $q_{c,e}=p_{c,i}^{\top}p_{c,j}$ 表示学生同簇概率，再学习聚合目标：
-
-$$\mathcal L_{public}=-\frac1{|B_E|}\sum_{e\in B_E}
-\left[\tau_e\log q_{c,e}+(1-\tau_e)\log(1-q_{c,e})\right].$$
-
-实现裁剪q至`[1e-12, 1-1e-12]`并使用对应导数，边两端都回传梯度。这是私有SGD之后再执行公共SGD的两阶段流程，不是模型平均。
-
-### 4. 每轮流程与时序
-
-1. 客户端用私有固定伪标签执行CE，更新本地头。
-2. 固定本轮教师快照，生成公共图上的全部硬关系。
-3. 相对最后已提交状态编码、上传；聚合者暂存并更新计数。
-4. 下发计数、完成版本与摘要校验后提交。
-5. 客户端按公共边batch提取唯一端点，用**当前学生头重新前向**，计算BCE及梯度，更新头。
-6. 保存提交状态及按规则更新的认证缓存，进入下一轮。
-
-固定公共步数版仍生成完整图，只用随机边排列的前几个batch训练学生；早期完整遍历版则训练整张图。教师计算和学生训练预算是两件事。
-
-“前向复用”准确指冻结特征复用和单个学生batch内端点去重。不能把教师硬标签、旧logits或前一个SGD批次的输出拿来替代当前学生前向。[学习时序与代码](docs/method/learning_protocol.md)
+每轮先用固定私有伪标签执行交叉熵更新，再冻结该轮教师快照并生成边关系。聚合者提交计数后，每个学生批次都用当前头重新前向。学生用两个端点的预测概率内积作为同簇概率，并以目标 $\tau_e$ 计算 BCE 后更新头。[每轮时序、损失和梯度](docs/method/learning_protocol.md) · [训练引擎](experiments/public_scaling/engine.py)
 
 ## 关系认证：为什么不知道标签，也能知道关系
 
-### 1. 相比基线改变哪里
+| 路径 | 教师关系生成 |
+| --- | --- |
+| **B · 全量打分** | 每个公共样本打分一次，再由标签生成整图边关系。 |
+| **E · 逐样本认证** | 用候选簇认证单个样本的标签，对非单例候选重算。 |
+| **D · 按边认证** | 用候选簇直接认证边关系，对未解决边所需的非单例端点去重后重算。 |
 
-|方法|本轮教师计算|上传与学习目标|
-|---|---|---|
-|B|全部M个公共样本各打分一次，再查图边|自适应编码与相同关系目标|
-|E|先认证每个样本标签，非单例样本重新打分|相同|
-|D|先直接认证边关系，仅重算未解决边上的必要端点|相同|
+固定特征 $z_i$ 时，样本上次真实打分的赢家和分差可以复用。当前 D 用类对权重变化的累计范数与类间偏置的有符号净变化约束分差，排除无法超越旧赢家的簇。实数精确运算下，保留平局即可使真实赢家落在候选集合中。
 
-B不是每条边重复运行模型；它已经每样本只算一次。D省的是其中可以避免的打分，不能用人为低效的B夸大收益。早期A=全量计算+完整传输、C=关系认证+完整传输，用于拆开编码和生成收益。
+若边的两端候选不相交，可直接判为异簇。若两端候选都是同一个单例，可直接判为同簇。比如候选分别为 $\{1,2\}$ 和 $\{3,4\}$ 时，D 可以确定这条边为异簇，E 仍需确定两个标签。只有真实打分才更新样本的缓存参考，下一次比较也会计入前一轮公共更新和本轮私有更新。[证书推导、公式与缓存规则](docs/method/relation_certification.md) · [默认生成入口](experiments/public_scaling/generation.py)
 
-### 2. 由参数变化得到候选簇集合
+<a name="自适应传输什么时候发全量什么时候发变化"></a>
+## 全图通信与按需协议
 
-为简洁省略客户端下标。样本i最后一次真实打分在教师快照 $a_i$，旧赢家为 $h_i$，缓存它相对每个簇k的分差：
+**全图 B/E/D** 共享自适应编码。首轮发送完整向量，随后按与最后已提交状态的实际编码包长度选择全量、差分或无变化确认。聚合者维护逐端关系与整数计数，在版本和摘要校验后推进提交参考。同轨迹下 B/E/D 字节相同。[编码与提交](docs/method/communication.md) · [消息编解码](experiments/public_scaling/codec.py)
 
-$$g_{ik}=s_{i,h_i}^{(a_i)}-s_{ik}^{(a_i)}.$$
+**Demand** 在各学生请求的并集上生成关系，按每端原有顺序返回本轮需要的计数。三种实现共享按需投票与目标返回流程，区别在请求和并集如何分发。
 
-冻结特征时，分差下降幅度可以用类对参数变化约束：
+| 场景 | 对应方案 |
+| --- | --- |
+| 每轮需要完整图的计数或已提交状态 | **全图 D**。 |
+| 聚合者无法提前重建学生请求 | **显式 Demand**。各端上传请求，聚合者广播并集。 |
+| 日程可共享，且要兼顾时间与通信 | **仅聚合者重建**。省去请求上传，保留并集广播。 |
+| 应用层字节优先，可以承担重复计算 | **各端独立重建**。各端由公共日程重建并集。 |
 
-$$B_{ik}^{(t)}=\|z_i\|_2\sum_{u=a_i+1}^{t}\|\Delta w_{h_i}^{(u)}-\Delta w_k^{(u)}\|_2
-+(b_k^{(t)}-b_{h_i}^{(t)})-(b_k^{(a_i)}-b_{h_i}^{(a_i)}).$$
+这些是已测工作负载下的选择条件。共享日程依赖一致的图、公共样本身份与顺序、固定成员、种子和采样器版本。[协议与选择边界](docs/method/communication.md#按需关系协议)
 
-这是Cauchy–Schwarz与三角不等式的直接结果。当前分差至少为 $g_{ik}-B_{ik}^{(t)}$；若它严格大于0，k不可能击败旧赢家。保留不能排除的簇：
+## 适用范围与实现状态
 
-$$C_i^{(t)}=\{k:g_{ik}\le B_{ik}^{(t)}+\epsilon_{ik}\}.$$
-
-实数精确运算下真实赢家必在集合中。保留等号以处理平局。浮点实现使用经验保护项，逐边与全量计算核对受测轨迹。
-
-直观例子：旧分数为3.0、2.8、2.0、0.9，各竞争分差最多下降0.4，则簇2仍可能超过簇1，簇3/4可排除，候选为{1,2}。
-
-### 3. 从候选集合直接确定边
-
-$$C_i\cap C_j=\varnothing\ \Longrightarrow\ r_{ij}=0,$$
-$$C_i=C_j=\{k\}\ \Longrightarrow\ r_{ij}=1.$$
-
-例如两端候选分别为{1,2}、{3,4}，具体标签尚未知，但必然不同簇；D不需要再打分，E还需要确定标签。两端都为{1,2}时则不能断言同簇。
-
-其余边收集候选非单例端点、去重后真实打分，再检查全部边已确定。认证不出来只会多算，不允许凭旧标签猜关系。
-
-### 4. 缓存必须遵守的规则
-
-每个样本保存上次真实打分的赢家、分差、特征范数、权重前缀参考行及类间偏置差参考行。权重预算通过前缀相减得到，偏置项直接取两次快照相对偏置的有符号差。
-
-**只有真实打分才刷新该样本参考。** 跳过多轮时不能只看最新一轮变化。下一教师快照相对上次教师快照的差还必须包含前一轮公共SGD与本轮私有SGD的净移动，不能在公共训练后错误重置参考。
-
-证书依赖固定特征和线性头。极端的权重累计与分数相消可能造成浮点关系差异。遇到已知数值反例，可通过独立实验入口显式运行正确性回退。[推导及适用条件](docs/method/relation_certification.md) · [浮点边界与回退](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md#正确性回退)
-
-## 自适应传输：什么时候发全量，什么时候发变化
-
-图边编号固定后，首次发完整关系；此后比较当前向量与最后已提交向量。上行发送变化边ID和新二值，下行发送变化边ID和新计数，无变化发送EMPTY确认。
-
-设L条边、m条变化，ID位宽 $b_I=\max(1,\lceil\log_2L\rceil)$，每值位宽 $b_V$，当前头H=48字节：
-
-$$S_{full}=H+\lceil Lb_V/8\rceil,\qquad
-S_{delta}=H+\lceil mb_I/8\rceil+\lceil mb_V/8\rceil.$$
-
-上行 $b_V=1$；下行为计数0…N所需位宽。L=8192时，上行完整payload为1024字节，100条变化的差分payload约176字节，而1000条变化约1750字节，应改发完整向量。
-
-因此实现每轮比较实际完整包与差分包长度：差分严格更小才发送，平局发全量。它自然实现“初期多用全量、稳定后多用差分”，也允许之后切回全量。**不是训练若干epoch后强制差分。**
-
-聚合者保留每客户端的已提交关系，按减旧加新更新计数。消息绑定图ID、任期和base/target版本，经过暂存、收包确认与提交摘要检查后才推进参考；ACK不等于提交。
-
-字节账包括图注册、上下行向量、ACK与COMMIT，排除预置原始公共图像/特征和网络层开销。leader自身不算网络发送。构造两种包也有成本，包含在方法阶段中。
-
-B/E/D同目标、同编码，字节一致；**D在此基础上的收益来自计算，不是额外通信压缩。** 自适应编码的字节收益需要和完整传输单独对照。[协议与编码细节](docs/method/communication.md)
-
-## 具体优化及成本边界
-
-### 1. 方法目标：省什么、怎样省、何时省
-
-当前主目标是**在相同硬关系、聚合目标及学习轨迹下，降低关系生成成本**。E41/E42 定位三个规模的生成边界。E43 完整头部预设判据在 IID 下得到支持，强非 IID 未达门槛。E44 对两个强非 IID 配置继续配对后，相对 B 都观察到净省时。E45 加入按需目标范围，学生更新逐轮对齐。[E41](docs/evidence/EXACT_ROUTING_BOUNDARY_20261120.md) · [E42/E43](docs/evidence/ROUTING_CONFIRMATION_AND_TRAINING_20261120.md) · [E44/E45](docs/evidence/TIMING_DIAGNOSIS_AND_DEMAND_20261121.md)
-
-|资源或阶段|省什么、怎样省|什么时候有收益|
-|---|---|---|
-|教师关系生成计算|用缓存分差与累计参数变化界排除不可能的簇；两端候选不相交时直接确定异簇，仅对未解决边的必要端点真实打分|候选集合仍较小、不同端点候选较易分离，省下的打分大于认证与边扫描成本|
-|完整头部训练耗时|沿用同一私有CE、公共BCE和交换流程，只减少其中的教师生成工作|生成原本占比较高；私有训练或公共学生更新占比过大时，整体省时被稀释|
-|应用层通信字节|自适应选择full/delta/empty，避免稳定关系反复全量发送|关系或计数变化足够稀疏；变化变密就回到全量。此收益相对完整传输，B/E/D之间字节相同|
-|内存与准备成本|认证复用缓存，但增加样本分差、候选集合与类对前缀状态|不是内存压缩方案；AE预训练、KMeans和冻结特征准备也不是D相对B/E节省的部分|
-
-**D比E多省的关键**：E需要确定单个样本的标签；D在标签仍有多个候选时，也可能已确定两点不同簇，因此可以少做一些真实打分。若多数未定标签都落在相交候选中，或边扫描、候选维护过重，这部分额外优势会缩小或消失。
-
-### 2. 当前实现采用的优化
-
-|优化|具体做法|收益及限制|
-|---|---|---|
-|固定特征|复用编码器输出，只训练头|避免反复编码；不是持续训练全网络的结果|
-|权重前缀与偏置净变化|权重累计预算加上类间偏置的有符号净增量|减少不必要的端点打分|
-|位集合|每候选簇对应uint64一位，用按位与判断相交|快，但当前K≤64|
-|必要端点去重|只打分未解决边上的非单例端点|减少教师矩阵乘法；仍需候选与边扫描|
-|学生batch去重|同batch重复端点只前向一次，梯度累加两端|所有方法共享，不能重复算作D增量|
-|自适应差分|实际序列化后比较包大小|变化稀疏时省字节；控制消息仍存在|
-|公共/私有预算|独立控制学生步数和私有头工作量|改变工作负载与学习轨迹，收益不归认证|
-
-### 3. 净收益与适用边界
-
-全量打分约 $O(MKd)$，类对预算维护约 $O(K^2d)$，候选约 $O(MK)$，边扫描约 $O(|E|)$。当前公共核心仍创建完整`K×K×d`临时数组，不能把分块预算写成已实现优化。D/E持久缓存大致随MK增长，通常比B更耗内存。
-
-完整收益取决于省掉的打分是否超过认证维护，以及生成阶段在训练中的占比。若生成原占比f，生成加速a倍，其他不变，则理想总加速为 $1/[(1-f)+f/a]$；实际还需计入协议、初始化与测量波动。因此生成大幅省时不自动意味着整个训练大幅省时。[实现与测量口径](docs/method/implementation.md)
-
-从成本结构看，较大的公共库或较宽的特征会提高全量教师打分成本，较稀疏的图可减少额外边扫描；较小的累计参数移动、较大的旧分差则更有利于缩小候选集合。这些是适用倾向，不是任一条件下的省时保证。反过来，更新过大、高K的类对维护、密图扫描，或私有/学生训练占比过高，都可能压低净收益；具体以同轨迹B/E/D实测为准。
-
-### 4. 历史累计偏置 D 的实验收益
-
-以下分别报告生成与完整头部口径，不把不同批次合并成统一“加速百分比”。省时比例为 $1-T_D/T_{\mathrm{参照}}$；重复实验按各自原协议汇总。
-
-|实验与口径|D相对全量B|D相对逐样本认证E|证据范围|
-|---|---|---|---|
-|[Fashion-MNIST首轮真实训练](experiments/real_iid/results_full/report.md)，三个配对seed的中位数|生成省68.88%，完整头部省4.49%；加共同准备后省3.25%|完整头部省1.27%，仅2/3 seed更快|说明生成大幅省时，也可能只带来较小整体收益|
-|[STL-10固定2步重复计时](experiments/stl10_repeat_confirmation/results_full/report.md)，先在seed内平均三次重复，再按划分取配对中位数|完整头部IID省38.79%、强非IID省39.53%|分别省10.71%、11.09%|两划分通过原预设判据；技术重复不增加独立seed数量|
-|[公共LR0.05的P2边界配置](outputs/lr_repeat_results_20261109/REVIEW.md)，四配置各三次技术重复的配对中位数|完整头部省25.93%–40.87%|省0.79%–8.47%，仅1/4配置达到原定3%门槛|不能宣称在高K或固定总量的较多客户端场景中稳定优于E|
-|[私有频数校正后的四环境](outputs/private_prior_compute_results_review/REVIEW.md)，seed1001/1002 × 两划分|生成省47.61%–51.65%，完整头部省35.25%–43.00%|生成省18.68%–22.04%，完整头部省10.31%–14.12%|每环境每方法一次，属于探索性资源证据，新增独立确认见E32|
-|[私有校正新seed确认](outputs/private_prior_confirmation_review/REVIEW.md)，3新seed × 两划分 × 三重复|完整头部IID省39.08%、强非IID省39.29%|分别省16.67%、12.45%，各3/3 seed更快|预定联合判据通过；每划分n=3，早期近单簇保留|
-
-E31私有校正探索批次中，第2–200轮D实际重算公共端点约14.76%–15.70%，E约21.98%–22.63%，B为100%；首次全量计算和缓存建立仍计入。完整头部口径包含方法初始化、私有头部训练、教师生成、交换、公共头部更新与轮次管理，排除AE/特征准备及计时外oracle、探针和评估。它不是从下载到训练结束的全流程墙钟，也不是实际并行网络系统的轮时延。
-
-通信另算：[早期合成主场景](experiments/overhead_benchmark/results_all/summary.csv)的三个seed中，自适应传输B相对完整传输A，累计应用层字节减少66.29%–66.59%（含该批次初始化与控制消息）；这是编码收益，不是D相对B/E的新增收益，也不包含公共原始图像/特征分发或网络层开销。E31批次B/E/D通信字节完全相同，D相对B的隔离进程峰值内存增加14.48%–14.50%，持久方法数组多约25.35 MiB，D与E接近。尚无能耗测量，不能由省时比例直接推出能耗节省。
-
-## 完整伪代码与基础实现示例
-
-```text
-准备：公共样本/图/编号一致；本地AE → 冻结特征 → 一次KMeans伪标签
-每轮：
-    各客户端：私有CE更新 → 复制教师快照
-    B：全量打分得到关系
-    E：样本候选认证 → 重算非单例点 → 得到关系
-    D：样本候选 → 边认证 → 重算未解决边的必要端点 → 得到关系
-    相对已提交参考编码full/delta/empty
-    聚合者：暂存各客户端关系 → 更新计数 → 下发 → 校验提交
-    各客户端：当前学生头在各公共边batch新鲜前向 → BCE → SGD
-    保留提交状态；教师缓存只按真实计算规则刷新
-```
-
-下面仅演示关系逻辑，候选集合必须由上面的证书合法产生；不能随意构造候选后跳过打分。正常生成入口见[generation.py](experiments/public_scaling/generation.py)。
-
-```python
-def certify_relation(left_candidates, right_candidates):
-    if left_candidates.isdisjoint(right_candidates):
-        return 0
-    if len(left_candidates) == len(right_candidates) == 1:
-        return int(left_candidates == right_candidates)
-    return None  # 需要真实教师计算，不猜测
-
-assert certify_relation({1, 2}, {3, 4}) == 0
-assert certify_relation({2}, {2}) == 1
-assert certify_relation({1, 2}, {1, 2}) is None
-```
-
-## 单簇风险与当前处理
-
-**2026-11-16，E34/E35已完成：** 中心初始化减少初始偏置和空簇，但不足以单独修复。IID client1第一次私有更新就使最大簇56%→84.5%，发生在任何公共更新之前。新增逐簇等权私有间隔保护后，持续强约束改善最明显；只保护前10/50/100轮会在撤除后重新集中：IID client1第100轮82.3%/8簇，关闭后第110轮94.5%/3簇。不能把“低于99%”当作充分健康。
-
-持续强保护的IID/α0.1最终最大簇占比均值33.68%/30.70%（基线46.37%/37.20%）、平均空簇均0.5；IID client1仍79.6%集中。原生ACC/NMI/ARI改善，但均属单seed探索；18条阶梯轨迹5,529,600次关系审计零错。本次头部耗时约增加15%–19%、通信约增加8%–15%，是描述性新增成本，不能算认证省算或受控性能确认。
-
-**E36 已完成：** 中心初始化后，在所有客户端的私有交叉熵中加入固定伪簇频数校正；教师、公共训练和测试继续用原始 logits。无保护时，IID/α=0.1 的 client1 末轮测试最大簇从 95.6%/65.3% 降到 67.0%/49.6%；加全程 0.5 保护后为 61.8%/45.1%。残余集中仍需解释，0 与 0.5 都保留为候选。[完整审阅](docs/evidence/PRIVATE_CORRECTED_GUARD_20261118.md)
-
-**当前处理。** 在 STL-10 冻结编码器协议中，先按客户端检查终点快照。私有 KMeans 缺簇，或私有、公共任一侧最大簇超过 50% 时，回查较早快照。优先选私有簇齐全且两侧最大簇均通过检查的候选，再按公共样本同簇概率从低到高排序。选定后冻结编码器、用中心初始化线性头，并对所有客户端的私有交叉熵做固定伪簇频数校正。公共更新沿用每轮两步。50% 是已测协议的筛查门槛，私有数据分布本身偏斜也可能触发。[方法与适用边界](docs/method/encoder_snapshot_selection.md)
-
-**间隔保护作为可选项。** E38 的四组 200 轮配对中，0.5 保护都降低了末段教师同簇边率，但原生头的最差客户端仅两组改善、一组持平、一组更集中，训练净耗时增加 14.1%–18.5%。开启保护时，四组末轮均无单簇客户端，最差客户端的原生最大簇占比最高仍达 45.1%。共簇继续作为质量护栏；后续优先验证精确关系生成选路。[对照结果](docs/evidence/SNAPSHOT_EXTERNAL_COMPARISON_20261118.md) · [后续实验](docs/NEXT_EXPERIMENTS.md)
-
-STL-10早期公共8步配置中，B/E/D关系和参数一致，但都出现严重退化。公共关系正例增多可能推动学生预测集中，集中预测又制造更多正例；较强公共更新会压过私有伪标签约束。这是与干预一致的解释，不是唯一根因证明。
-
-降低公共步数到2经长程确认后缓解了首批配置，但K64/N12扩展仍出现迟发失败。后续保持2步、私有学习率0.1，仅将`public_weight`降为0.5，即公共有效学习率0.05，当前8配置均通过预定结构、过程与NMI标准，适用的5项ACC副作用护栏通过。新增独立seed只有1101；早期短暂集中仍如实记录。
-
-降低步数的预算省算与D认证省算分开报告；学习目标或学习率改变后，须在新轨迹上重新比较B/E/D。已有稳定性结果适用于受测配置与轮数。[证据链与风险边界](docs/method/stability.md)
-
-**数量不均下的风险定位：** strong档每配置两个100张客户端严重退化，512/2048两种宽度均出现；中度两例是200张客户端。私有batch数由400张的4步降至100张的1步，公共仍2步。后续仅将两个小客户端的公共有效学习率调为0.0125、其余保持0.05，四条轨迹后期解除严格单簇，但第200轮C0/C3的公共同簇边仍有45.4%–83.0%。关闭公共更新后，小客户端仍出现明显集中；其私有KMeans伪标签分布较分散，说明私有头部学习也需要干预。[诊断与方法筛选](outputs/same_cluster_review_20261113/REVIEW.md)
-
-**当前新增处理为私有伪簇频数校正。** 对两个100张客户端C0/C3，先由固定的本地KMeans伪标签统计每簇频数`n_k`及总数`N`。仅在计算私有交叉熵时使用`logits_k + log(n_k / N)`，将所得梯度更新到原始分类头。教师判边、公共学生更新和测试评估均使用原始logits。其余四端沿用原私有交叉熵。校正频数仅保存在本地，每端缓存10个常数；全部伪簇非空是本次实现的适用条件。此轮沿用私有学习率0.1、C0/C3公共有效学习率0.0125、其余四端0.05，每端每轮公共更新仍为2步。[实现](experiments/private_prior/training.py) · [实验配置与判据](experiments/private_prior/PREREGISTRATION.md)
-
-**2026-11-13协作验证结果：** seed1001/1002 × IID/Dirichlet α=0.1的四条B轨迹各运行200轮，全部通过预定改善和质量护栏。C0/C3最后40轮的平均公共同簇边比例由63.4%–82.5%降至17.9%–22.9%；第200轮八个小端实例的测试最大簇占比为23.2%–37.6%。第20、40、……、200轮全部测试检查点均未出现单簇，末轮六端平均ACC相对各自配对参照提高0.91–2.20个百分点。此处同簇边比例衡量教师对公共样本对的判断，测试最大簇占比衡量测试样本分配，分别统计。
-
-早期风险仍需保留。seed1002的C0在IID前11轮、强非IID前7轮，教师同簇边比例仍≥95%；测试检查点也无法排除间隔内的瞬时退化。四个环境参与了选方案，该批结论属于探索性验证，新增独立确认见E32。频数校正改变了学习目标与参数轨迹，新轨迹上的B/E/D精确性和计算收益已完成四环境探索验证，见下方[已完成验证及其解释](#已完成验证及其解释)；新seed与重复确认现已完成，见[E32](docs/evidence/EXPERIMENT_INDEX.md#e32)。[结果复核](outputs/private_prior_results_review/REVIEW.md) · [正式结果](experiments/private_prior/results_full/report.md)
-
-2026-11-14新seed补充：六case晚期护栏全部通过，但IID1201及α0.1/1203的client1在第20轮最大簇仍达99.9625%/99.9875%。[复核](outputs/private_prior_confirmation_review/REVIEW.md)
-
-## 临时聚合者及恢复
-
-TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必每轮切换，退出或故障时再选。主训练目前固定client0，尚未部署真实选举与网络故障处理。
-
-独立恢复实验完成18组54条序列化回放，验证已提交关系状态恢复；累计通信优化未获支持：按需在线交接总字节约多0.17%，热备多9.3%–23.1%。可靠内存、已知存活名单和原子提交屏障是明确前提，完整模型/教师缓存恢复未接入训练。[恢复实现与限制](docs/method/aggregation_recovery.md)
-
-## 已完成验证及其解释
-
-下列历史实验按当时的实现解读。当前偏置净变化 D 的选型依据见 [E48–E49](docs/evidence/ENDPOINT_BIAS_20261121.md)，完整训练、正确性回退及开销消融见 [E50–E53](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md)。
-
-**E38，快照筛选版外部对照。** 四配置、28 次各 200 轮的运行完成。开启 0.5 保护时，统一 KMeans 口径下 ACC 为 18.28%–21.50%，四组均高于 Hetero-SSFL 和 FedMKD，与 FLESD 相比一组领先、三组落后 0.43–1.17 个百分点。计入准备成本并取组内技术重复均值后，外部适配方法耗时约为本方案的 11.0–31.9 倍，包含冻结表示与持续编码器更新之间的工作量差异。16 条自身轨迹的 4,915,200 次关系核对零错误。[完整结果与计时边界](docs/evidence/SNAPSHOT_EXTERNAL_COMPARISON_20261118.md)
-
-**E34/E35，初始化与阶梯分簇保护：** 4条初始化和18条阶梯轨迹均完成200轮；中心初始化缓解、持续保护进一步改善，撤除后反弹。仍有失败客户端及额外资源成本，不声明普适修复。[结果和下一步](docs/evidence/COLLAPSE_INITIALIZATION_GUARD_20261116.md)
-
-**E33，外部方法200轮补观测初验（2026-11-16）：** 4方法×IID/α0.1，8组训练及8组独立矩阵MAC重放均完成，Ours 614,400次关系检查零错误。含共同AE总耗时Ours为6.151/2.925秒，Hetero-SSFL为112.820/104.287秒，FLESD为85.518/88.745秒，FedMKD为103.475/112.922秒。差距同时包含冻结表示、训练目标、服务器工作和编码方式，不能全部归因于认证；MAC只覆盖主要矩阵运算。Ours原生ACC为17.08%/16.22%，后处理为20.42%/18.00%，偏簇风险仍保留。[完整数值与审阅](docs/evidence/EXTERNAL_PILOT_20261116.md) · [初始化原计划，现已完成](docs/HEAD_INITIALIZATION_PLAN.md)
-
-本节按研究问题统一整理，后续结果归入对应表格。E编号对应[完整实验台账](docs/evidence/EXPERIMENT_INDEX.md)，逐配置记录、失败结果、源码和归档均保留；不同学习设置与批次不混合挑选最好数值。省时的阶段口径与代表性幅度见上方[具体优化及成本边界](#具体优化及成本边界)。
-
-### 1. 精确性、认证机制与成本边界
-
-|验证问题|已完成验证与结果|解释边界|
-|---|---|---|
-|是否保持基线轨迹|多批真实及合成轨迹中，B/E/D关系、目标、损失、参数与评估一致；[E31](docs/evidence/EXPERIMENT_INDEX.md#e31)新增117,964,800次关系、157,286,400次候选检查，零错误|有限输入检查不是全输入浮点证明；精确保持也不代表基础学习目标健康|
-|更新幅度何时有利，[E01](docs/evidence/EXPERIMENT_INDEX.md#e01)|留出小更新档同时胜B/E；大更新时真实重算增多，可能更慢|合成scale不是学习率，不据此给出真实训练的统一阈值|
-|图密度与维护成本，[E04–E05](docs/evidence/EXPERIMENT_INDEX.md#e04)|degree4/8下D/E优势消失；成本分解支持认证维护抵消教师省算的解释|不能宣称图越密收益越大；插桩回放不替代完整训练测速|
-|动态选路，[E06](docs/evidence/EXPERIMENT_INDEX.md#e06)|当前adaptive未超过简单static，degree1反而慢约17.74%|保留负结果；不把动态选路写成已验证的进一步加速|
-
-### 2. 计算收益与规模扩展
-
-|实验组|已观察到的结果|解释边界|
-|---|---|---|
-|Fashion-MNIST公共规模，[E02–E03](docs/evidence/EXPERIMENT_INDEX.md#e03)|M4096→16384，D/B完整头部省约5.81%→11.39%|该组同时增加边数与公共学生步数；首轮真实IID与后续规模实验分开统计|
-|类别比例非IID，[E08](docs/evidence/EXPERIMENT_INDEX.md#e08)|9配置D/B头部均更快，D/E为8/9更快|近等容量类别偏斜，不覆盖私有数量不均|
-|固定公共预算及独立进程，[E10–E12](docs/evidence/EXPERIMENT_INDEX.md#e10)|固定8步进一步拆开公共规模与学生预算；插电补测后2048档IID/强非IID的D/B省24.28%/22.61%，D/E省5.73%/6.52%|原异常、不等重复数和暂停共同掩码保留；补测汇总不冒充原预注册确认，私有预算质量边界另列|
-|STL-10固定2步，[E17–E18](docs/evidence/EXPERIMENT_INDEX.md#e18)|计算迁移完成，重复计时IID的D/B省38.79%、D/E省10.71%；强非IID分别39.53%/11.09%|同seed技术重复，仍有较大机器波动；不与原8步退化结果混合|
-|簇数K与固定总量客户端数，[E19–E20](docs/evidence/EXPERIMENT_INDEX.md#e19)|K实验D/B为24/24更快；但K64强非IID的D/E中位慢1.47%。固定总量N12强非IID的D/E中位慢10.09%|保留负收益和单簇失败；真类别数仍10，改变K也改变伪目标。固定总量与固定每端容量分开解释|
-|LR0.05的P1/P2，[E23–E24](docs/evidence/EXPERIMENT_INDEX.md#e23)|P1：24方法+6隔离内存，D/B为8/8更快、D/E为7/8更快，K64/IID/1101慢0.33%。P2：36独立进程，配对中位D/B省25.93%–40.87%、D/E省0.79%–8.47%；相对E达到3%门槛及合取通过均仅1/4|关系、参数和质量精确复现，零关系错误；技术重复不是新seed。准备成本NA与不利边界继续保留。[P1报告](experiments/lr_compute/results_full/report.md) · [P2审核](outputs/lr_repeat_results_20261109/REVIEW.md)|
-|P3固定每端400张，[E25](docs/evidence/EXPERIMENT_INDEX.md#e25)|54主运行+12隔离内存；18/18配置D/B与D/E头部均更快，六组配对中位分别省35.39%–43.57%、6.27%–16.53%；D/B峰值内存增加9.8%–26.2%，通信相同|末轮18/18无严重退化，但9/18配置在20/40轮曾单簇或≥99%；每配置每方法一次，不替代P2重复确认。[审核](outputs/lr_client_scaling_results_20261110/REVIEW.md)|
-|私有数量不均，[E26](docs/evidence/EXPERIMENT_INDEX.md#e26)|54主运行+6内存；D/B为18/18更快、D/E为16/18更快，两个IID/seed1002负收益保留|equal/moderate/strong末轮严重退化分别0/6、2/6、6/6；轨迹精确一致，但退化配置不能包装为健康聚类扩展成功。[审核](outputs/quantity_heterogeneity_results_20261111/REVIEW.md)|
-|私有频数校正后的计算，[E31](docs/evidence/EXPERIMENT_INDEX.md#e31)|四环境12主运行+6隔离内存，精确保持E30新轨迹；D/B完整头部省35.25%–43.00%、D/E省10.31%–14.12%，通信相同；两个内存配置D/B峰值增加约14.5%|每环境每方法一次、两个既有seed，属于探索性资源证据。[审核](outputs/private_prior_compute_results_review/REVIEW.md)|
-|新seed及重复确认，[E32](docs/evidence/EXPERIMENT_INDEX.md#e32)|新seed1201/1202/1203 × 两划分 × B/E/D各3次重复，共54次独立进程完成。IID完整头部D/B、D/E中位省时39.08%/16.67%，强非IID为39.29%/12.45%；预定性能及质量条件全部通过，逐轮匹配各case全量B参考。|末40轮小端同簇边13.85%–24.50%，早期两例近单簇。[审核](outputs/private_prior_confirmation_review/REVIEW.md)|
-
-### 3. 学习设置、协作归因与单簇风险
-
-计算贡献以相同目标和轨迹下的成本比较为主，不要求ACC提高；持续严重单簇作为适用性失败单列。改变学习率、损失或预算后的质量与省时分别验证。
-
-|验证问题|已完成验证与结果|解释边界|
-|---|---|---|
-|跨客户端知识归因，[E09](docs/evidence/EXPERIMENT_INDEX.md#e09)|Aggregate相对Self/Shuffled的预设主筛查未通过|未确认稳定全面协作质量提升；保留负结果，不作为计算主贡献的前置要求|
-|私有预算，[E11](docs/evidence/EXPERIMENT_INDEX.md#e11)|2048较有利但存在质量护栏失败；1024质量不可接受|减私有预算改变学习轨迹，其省时不是认证贡献|
-|STL-10公共更新剂量，[E13–E16](docs/evidence/EXPERIMENT_INDEX.md#e13)|原8步12配置全部严重退化；诊断与公共1/2步长程确认完成，按预先规则选择2步|不能把退化轨迹包装为有效聚类迁移；降低公共预算的省算与认证分开报告|
-|公共有效学习率，[E21–E22](docs/evidence/EXPERIMENT_INDEX.md#e22)|0.05的8配置均通过结构、过程和NMI护栏，5项适用ACC副作用护栏通过；原0.1为5/8通过|有限配置恢复，不是普适防坍缩；E26随后证实数量不均下仍有风险|
-|低容量诊断，[E27](docs/evidence/EXPERIMENT_INDEX.md#e27)|4条40轮基线回放匹配旧轨迹，另8条200轮B诊断；private-only、全体公共LR0.0125各4/4通过160/180/200逐端解除严重退化检查|低LR小端最大簇仍最高97.89%，不等于充分健康；支持公共更新参与退化，未识别唯一根因，无认证省时结论。[审核](outputs/low_capacity_diagnostic_results_20261112/REVIEW.md)|
-|局部公共步幅及范围确认，[E28–E29](docs/evidence/EXPERIMENT_INDEX.md#e28)|仅100张C0/C3降至0.0125，其余保持0.05。首个IID探索通过；剩余三配置160/180/200共54项逐端检查全部通过|晚期解除持续严重退化，早期单簇与较高同簇比例仍存在；不是充分健康或防止坍缩保证，本阶段不作省时主张。[探索审核](outputs/local_public_lr_results_20261112/REVIEW.md) · [范围审核](outputs/local_public_lr_confirmation_results_20261113/REVIEW.md)|
-|私有伪簇频数校正，[E30](docs/evidence/EXPERIMENT_INDEX.md#e30)|四条B协作轨迹全部通过；保持既定学习率和更新预算，C0/C3末40轮平均同簇边由63.4%–82.5%降至17.9%–22.9%，末轮测试最大簇为23.2%–37.6%|两个既有seed的探索证据；早期7–11轮高度集中仍存在。校正改变学习目标，其后的认证成本单列E31。[审核](outputs/private_prior_results_review/REVIEW.md)|
-
-### 4. 传输与恢复协议
-
-|验证问题|已完成验证与结果|解释边界|
-|---|---|---|
-|自适应传输，[E01](docs/evidence/EXPERIMENT_INDEX.md#e01)|早期合成主场景相对完整传输累计应用层字节省66.29%–66.59%；同轨迹B/E/D通信一致|这是编码机制收益，非D的额外通信压缩；不含公共原始数据分发和网络层开销|
-|聚合者交接与恢复，[E07](docs/evidence/EXPERIMENT_INDEX.md#e07)|18组54条序列化回放通过正确性检查；按需在线交接总字节约多0.17%，热备多9.3%–23.1%，累计省通信未获支持|可靠内存交付、已知存活名单及原子提交屏障；未接入真实训练网络和完整模型/教师缓存恢复|
-
-尚待确认的主张与下一轮实验统一放在[后续计划](docs/NEXT_EXPERIMENTS.md)，发布与复查状态见[跟进记录](docs/evidence/LOCAL_FOLLOWUPS.md)。本节仅汇总已发布证据，不把准备中的实验或开发smoke算作正式验证。
+- **数据与模型。** Fashion-MNIST 和 STL-10 使用独立训练后冻结的异宽 MLP 编码器与可训练线性聚类头。已测数据异构涵盖 IID、容量约束的 Dirichlet 类别偏斜及固定总量下的私有数量不均。正式对照在同一配置内使用相同簇数。当前位集合实现支持 1–64 簇，主协议支持 2–255 客户端。[学习与异构设置](docs/method/learning_protocol.md)
+- **计算与数值。** 实数证书依赖冻结特征和线性头。已发表的浮点一致性限于受测轨迹，极端前缀累计与相消有已知反例。净省时依赖参数更新、候选规模、图密度及教师生成占总时间的比例，认证缓存会占用额外内存。[正确性回退](docs/evidence/D_AND_NUMERICAL_FALLBACK_20261122.md#正确性回退) · [成本与口径](docs/method/implementation.md)
+- **学习稳定性。** 快照筛选、中心初始化、私有伪簇频数校正和公共步数控制应用于对应的 STL-10 协议。间隔保护是可选项，仍需关注早期和最差客户端的簇集中。[快照筛选](docs/method/encoder_snapshot_selection.md) · [单簇风险与干预](docs/method/stability.md)
+- **执行与恢复。** 主训练采用 CPU float64、单线程 BLAS、固定聚合者和成员、可靠串行内存消息。临时聚合者选举和重新选举是框架设计。已有交接恢复证据来自独立合成回放，完整模型状态恢复和真实网络行为仍待验证。应用层字节不含公共数据分发和传输层开销。[聚合者与恢复](docs/method/aggregation_recovery.md) · [通信统计范围](docs/method/communication.md)
 
 ## 代码与复现
 
-|代码入口|作用|
-|---|---|
-|[当前生成入口](experiments/public_scaling/generation.py)|默认浮点 D 采用偏置净变化|
-|[新版 D 的完整头部对照](snapshot_routing/endpoint_bias_training/README.md)|E50 验证新版 D 相对 B 的训练时间和逐轮一致性|
-|[certification.py](experiments/public_scaling/certification.py)|候选集合、点/关系认证及回退|
-|[codec.py](experiments/public_scaling/codec.py)|实际位打包与自适应消息|
-|[protocol.py](experiments/public_scaling/protocol.py)|关系计数与提交|
-|[head.py](experiments/public_scaling/head.py)|私有CE、公共BCE解析梯度|
-|[engine.py](experiments/public_scaling/engine.py)|轮次时序、计时、oracle与参数摘要|
-|[快照实验与选路](snapshot_routing/README.md)|E39/E40 固定路径对照之后，重放 E41 的本地选路边界|
-|[独立确认](snapshot_routing/confirmation/README.md) · [完整头部训练](snapshot_routing/full_training/README.md)|E42 在新种子上测生成成本，E43 在相同种子上测完整头部耗时|
-|[计时归因](snapshot_routing/timing_diagnosis/README.md) · [按需对照](snapshot_routing/on_demand/README.md) · [定向补测](snapshot_routing/on_demand/retest/README.md)|E44 同方法波动与墙钟/CPU 时间，E45 按需训练和配对补测|
-|[各端重建](snapshot_routing/shared_schedule_demand/README.md) · [仅聚合者重建](snapshot_routing/leader_schedule_demand/README.md)|E58–E59 按需协议的通信拆账、完整头部计时和逐轮轨迹审计|
-|[实验代码导航](experiments/README.md)|各实验入口、依赖与历史源码状态|
-
-在克隆仓库根目录执行，避免`No module named experiments`：
+在克隆后的仓库根目录运行以下命令。最后一条是开发短测。正式结果使用各实验包的指定配置、输入和审计流程。
 
 ```powershell
 python -m pip install -r experiments/public_scaling/requirements.txt
@@ -349,16 +76,20 @@ python -m unittest experiments.public_scaling.test_scaling -v
 python -m experiments.public_scaling.run --preset smoke --suite all --download --output runs/smoke
 ```
 
-此命令只是开发smoke，不产生正式性能证据；本次文档重整没有启动训练。GPU用于编码器准备，正式头训练与认证是CPU单线程。原数据、模型和特征缓存未上传，旧结果常带原机绝对路径与冻结源码摘要；新机器不能直接resume历史缓存。
+| 入口 | 内容 |
+| --- | --- |
+| [完整复现说明](docs/REPRODUCIBILITY.md) · [实验代码导航](experiments/README.md) | 依赖、数据准备、历史缓存与重跑边界。 |
+| [E54 STL-10 同界对照](snapshot_routing/paired_boundaries/README.md) · [E55 Fashion-MNIST 确认](snapshot_routing/fashion_confirmation/README.md) | B、同界 E、D 与适用的按需对照。 |
+| [E56 阶段归因](snapshot_routing/fashion_generation_profile/README.md) · [E57 缓冲区复用](snapshot_routing/fashion_gather_optimization/README.md) | 特征收集开销、筛选和新种子确认。 |
+| [E58 各端重建](snapshot_routing/shared_schedule_demand/README.md) · [E59 仅聚合者重建](snapshot_routing/leader_schedule_demand/README.md) | 按需协议的通信拆账、完整头部计时与轨迹审计。 |
 
-部分旧驱动应用户要求已删除，原报告和归档保留；不能保证所有历史实验一键重跑。[复现边界](docs/REPRODUCIBILITY.md) · [历史源码及逐文件SHA](docs/evidence/CODE_HISTORY.md) · [无损归档与恢复](archives/README.md)
+原始数据、模型和特征缓存由复现流程准备。历史运行记录、部分已归档驱动的可用性和原机缓存要求见[历史源码台账](docs/evidence/CODE_HISTORY.md)与[原始记录归档](archives/README.md)。
 
-## 信息保留、来源和后续计划
+<a name="已完成验证及其解释"></a>
+<a name="信息保留来源和后续计划"></a>
+## 实验索引与历史
 
-- [原始TXT原件](docs/history/user_method_notes_20261109.original.txt)保留原字节；[UTF-8副本](docs/history/user_method_notes_20261109.utf8.txt)供GitHub阅读。旧20261029笔记也原样保留。
-- [原首页完整快照](docs/history/README_before_restructure_20261109.md)、[基线所有文件及Git blob SHA](docs/history/BASELINE_FILES.json)、[来源映射](docs/history/SOURCE_MAP.md)用于追溯。本次不删除任何原跟踪文件，不改冻结源码或结果。
-- [主张—证据对应](docs/evidence/CLAIMS.md)区分理论、实现、观察及未验证范围。
-- [后续实验计划](docs/NEXT_EXPERIMENTS.md)与[资源计划](docs/NEXT_RESOURCE_PLAN.md)已补P1/P2完成状态与下一步；原计划保留于[发布前快照](docs/history/NEXT_EXPERIMENTS_before_P2_20261109.md)。当前证据以实验台账和逐配置审核为准。
-
-TXT中的FLESD、CFD、LAG、L-SDFL、D-fedSD等描述作为[历史文献笔记](docs/history/user_method_notes_20261109.utf8.txt)保留。本次是方法与证据整理，未重新审定这些论文的全部技术比较，也不宣称已有完整新颖性排重。准确贡献定位是既有公共关系学习框架上的精确关系生成与实现成本优化。
-
+- **按问题审阅** · [结论与适用边界](docs/RESULTS.md) · [主张与证据对应](docs/evidence/CLAIMS.md) · [方法专题](docs/METHOD.md)。
+- **按实验编号审阅** · [实验与证据总索引](docs/evidence/EXPERIMENT_INDEX.md) · [原始记录归档](archives/README.md) · [后续实验](docs/NEXT_EXPERIMENTS.md)。
+- **追溯原有叙述** · [重整前的完整 README](https://github.com/cagfriend/federated-relation-certification/blob/9dc5c98290a9f986d1b420644efb4585c66748c2/README.md) · [历史累计偏置 D 的计时汇总](https://github.com/cagfriend/federated-relation-certification/blob/9dc5c98290a9f986d1b420644efb4585c66748c2/README.md#4-历史累计偏置-d-的实验收益) · [历史验证表与负结果](https://github.com/cagfriend/federated-relation-certification/blob/9dc5c98290a9f986d1b420644efb4585c66748c2/README.md#已完成验证及其解释) · [伪代码与示例](https://github.com/cagfriend/federated-relation-certification/blob/9dc5c98290a9f986d1b420644efb4585c66748c2/README.md#完整伪代码与基础实现示例)。
+- **追溯方法来源** · [原始方法笔记](docs/history/user_method_notes_20261109.utf8.txt) · [来源映射](docs/history/SOURCE_MAP.md) · [历史版本与快照](docs/history/README.md)。
