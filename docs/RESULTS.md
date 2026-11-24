@@ -14,7 +14,7 @@
 | 浮点边界在哪里 | E47 的 13 个合成实例中，五个在大数相消或长前缀下出现 E/D 对全量 B 的关系差异，独立重跑结果一致。 | [E47 正式报告与反例](evidence/MECHANISM_AND_NUMERICAL_BOUNDARY_20261121.md) |
 | 关系生成收益能否兑现到完整头部 | E43 的 4096 档，IID 中 D/B 有 3/3 格达标，完整头部省 8.18%–10.57%。D/E 有 2/3 格达标。强非 IID 中两项均为 0/3。 | [E43 完整报告](evidence/e43_full_training/report.md) |
 | 强非 IID 的差异是否持续 | E44 的两个受测配置相对 B 分别省 5.16% 和 4.94%，未检出持续的非生成额外耗时。 | [E44 分阶段](evidence/e44_timing_diagnosis/report.md) |
-| 只计算学生用到的边时如何选择 | E45 的 IID 配置 D 最快。强非 IID 中 Demand 比 D 省 10.56% 完整头部时间。当前显式按需协议累计字节增加，两格共享一个种子。 | [E45 合并结果](evidence/e45_on_demand_retest/report.md) |
+| 只计算学生用到的边时如何选择 | STL-10 M4096 上，仅聚合者重建比显式 Demand 少 20.37% 字节，11/12 格通过耗时门槛。相对全图 D，强非 IID 6/6 格达到省时门槛，3/6 格同时更省字节。各端重建比显式版少 48.20% 字节，完整头部增时 5.19%–10.54%。 | [E58–E59](evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md) · [协议选择](method/communication.md#按需关系协议) · [E45 历史对照](evidence/e45_on_demand_retest/report.md) |
 | 当前如何选路 | 三个受测规模的固定规则 B/D/B 在 E42 的 18/18 格达到关系生成判据。E41 的拟合表在大图出现错选，短校准在正式阶段零触发。 | [E42 逐格](evidence/e42_confirmation/cells.csv) · [E41 开发](evidence/EXACT_ROUTING_BOUNDARY_20261120.md) |
 | 省算的代价 | E41 的 D 在 4096 档持久认证数组约 6.29 MiB，在 16384 档约 24.85 MiB。通信编码收益来自全量和差分择短发送，同配置 B/E/D 传输字节相同。 | [E41 原始摘要](evidence/e41_routing/runs.csv) · [通信方法](method/communication.md) |
 | 聚类退化如何处理 | 当前 STL-10 快照协议使用中心初始化、私有伪簇频数校正、全程私有保护和受限公共更新。受测快照能缓解严重集中，实际簇占用继续按端监测。 | [稳定性](method/stability.md) · [E38](evidence/SNAPSHOT_EXTERNAL_COMPARISON_20261118.md) |

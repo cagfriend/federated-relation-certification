@@ -1,0 +1,1063 @@
+{
+  "preset": "full",
+  "source_manifest": "0c7769678f162df42412bdfb82955e10a7404cb39bcce79a615270db343a6ad0",
+  "source_completed": "472adc592baa2589bc5b4c50656d3d0ca01a84fca080e3ebfce75d52256ba032",
+  "cases": [
+    {
+      "seed": 2021,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2021,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2022,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2022,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2023,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2023,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2024,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2024,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2025,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2025,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    },
+    {
+      "seed": 2026,
+      "partition": "iid",
+      "public_size": 4096
+    },
+    {
+      "seed": 2026,
+      "partition": "dirichlet_0.1",
+      "public_size": 4096
+    }
+  ],
+  "blocks": [
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 1,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 2,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 3,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 4,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 5,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2024,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2025,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2026,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "LeaderDemand",
+        "D",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "LeaderDemand",
+        "Demand",
+        "D"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2021,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "D",
+        "Demand",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "D",
+        "LeaderDemand",
+        "Demand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2022,
+        "partition": "dirichlet_0.1",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "Demand",
+        "D",
+        "LeaderDemand"
+      ]
+    },
+    {
+      "case": {
+        "seed": 2023,
+        "partition": "iid",
+        "public_size": 4096
+      },
+      "repeat": 6,
+      "order": [
+        "Demand",
+        "LeaderDemand",
+        "D"
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4",
+    "torch": "2.7.1+cu118",
+    "sklearn": "1.5.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 16,
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "threadpools": [
+      {
+        "internal_api": "mkl",
+        "version": "2023.1-Product",
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "mkl_rt"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "libiomp"
+      },
+      {
+        "internal_api": "openmp",
+        "version": null,
+        "architecture": null,
+        "num_threads": 1,
+        "prefix": "vcomp"
+      }
+    ]
+  },
+  "head_margin_pct": 3.0,
+  "minimum_wins": 4,
+  "code": {
+    "snapshot_routing/leader_schedule_demand/protocol.py": "25d6413d8d512f99cd7475f3f98cd117b765dffe18f32196970353bdfd56424e",
+    "snapshot_routing/leader_schedule_demand/report.py": "08690811ec6daead1e349000b0b6f23d4f5bc5e4f76bf7da95e347e9912d4e9e",
+    "snapshot_routing/leader_schedule_demand/run.py": "dcf5d53419b258a19952703414c19b34962bf626e6c73d677a2a358734a0486d",
+    "snapshot_routing/leader_schedule_demand/test_protocol.py": "b3dd91b7836f148190defc108fd20211d4c380d8510f709e8f97c5df56d3e6bf",
+    "snapshot_routing/leader_schedule_demand/worker.py": "5f39445c3aa021bdbe852306cbedf584036b05a045df3a9343ffe8fab280cbe2",
+    "snapshot_routing/leader_schedule_demand/README.md": "be4acadbfdd728ce869defbbd9eca11be3009b6e7e3d953042191f04dc686ae6"
+  },
+  "original_manifest_sha256": "00248af4e31d6b2d94a194d793834f3732b961122f8efa43694901ca3d74bf0b"
+}

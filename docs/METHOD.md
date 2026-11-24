@@ -4,6 +4,8 @@
 
 完整、自洽的方法说明现放在[仓库首页](../README.md)，包含公式、证明思路、基础代码和每轮时序。专题补充：[学习协议](method/learning_protocol.md)、[关系认证](method/relation_certification.md)、[通信](method/communication.md)、[实现定位](method/implementation.md)、[恢复范围](method/aggregation_recovery.md)、[单簇风险](method/stability.md)。
 
+仅需学生本轮所用边、且日程可共享时，受测 STL-10 M4096 场景优先考虑仅聚合者重建的按需协议。全图认证仍使用 D。[协议选择与边界](method/communication.md#按需关系协议)
+
 以下为原文件完整保留内容。它按历史阶段追加，其中“当前”“下一步”和固定K等描述对应原段落日期，不能覆盖新版状态；原文不删除，数值和依据仍可追溯。当前任务以活动清单为准。
 
 ---

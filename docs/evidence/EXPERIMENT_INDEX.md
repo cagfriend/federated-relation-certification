@@ -1,6 +1,6 @@
 # 实验与证据总索引
 
-最新实验为 [E56–E57 Fashion-MNIST 耗时归因与缓冲区复用确认](FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)。[E50–E53 默认 D 的完整训练与正确性回退](D_AND_NUMERICAL_FALLBACK_20261122.md)和 [E48/E49 偏置数值对照与资源回放](ENDPOINT_BIAS_20261121.md)按原验收口径解释。
+最新实验为 [E58–E59 STL-10 按需通信与日程重建](DEMAND_SCHEDULE_PROTOCOLS_20261124.md)。[E56–E57 Fashion-MNIST 耗时归因与缓冲区复用确认](FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)和此前实验按各自口径解释。
 
 本次按远端基线 `46b25e333228` 逐目录整理。原报告、原始记录、预注册、审阅及源码不移动、不改写。
 
@@ -783,3 +783,12 @@ B=全量教师关系生成，E=逐样本认证，D=关系认证；三者使用�
 | E57 | 特征收集方式筛选及新种子完整头部对照 | [筛选](e57_fashion_gather_optimization/screening/report.md) · [确认](e57_fashion_gather_optimization/confirmation/report.md) |
 
 [证据汇总、源码入口和无损归档](FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)
+
+## E58–E59 STL-10 按需通信与日程重建
+
+| 编号 | 实验 | 结论入口 |
+| --- | --- | --- |
+| E58 | 各端重建请求并集与显式 Demand、全图 D 的对照 | [报告](e58_shared_schedule_demand/report.md) |
+| E59 | 仅聚合者重建请求并保留并集广播的对照 | [报告](e59_leader_schedule_demand/report.md) |
+
+[证据汇总、源码入口和无损归档](DEMAND_SCHEDULE_PROTOCOLS_20261124.md)

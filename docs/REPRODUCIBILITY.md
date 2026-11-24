@@ -1,5 +1,16 @@
 # 复现入口与历史说明（2026-11-09重整）
 
+## E58–E59 复现
+
+E58 需要已完成的 E42 目录与对应的官方 STL-10 二进制数据。E59 使用 E58 的本地已完成输出及其引用的准备资产。两轮均有合成短测。
+
+```powershell
+python -B -m snapshot_routing.shared_schedule_demand.run --preset full --confirmation $e42 --data-dir $stl10
+python -B -m snapshot_routing.leader_schedule_demand.run --preset full
+```
+
+[E58 输入与运行](../snapshot_routing/shared_schedule_demand/README.md) · [E59 复用与运行](../snapshot_routing/leader_schedule_demand/README.md) · [结果和原始归档](evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md)
+
 ## E56–E57 复现
 
 在仓库根目录执行。两项实验均使用官方 Fashion-MNIST 的四份 IDX gzip 数据，路径可通过 `--data-dir` 指定。E57 默认复用 E56 已校验的开发缓存。

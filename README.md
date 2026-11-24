@@ -4,7 +4,9 @@
 
 主要贡献是在固定表示与教师快照下节省关系生成计算。主方法 D 累计类间权重变化预算，并直接计算竞争簇相对缓存赢家的偏置净变化。训练和性能对照默认使用这一版本。[主方法 D](docs/method/relation_certification.md) · [历史算法](docs/history/relation_certification_cumulative.md)
 
-**当前实测。** 在 STL-10 的 M4096 下，D 相对全量 B 的完整头部省时通过 IID 和强非 IID 的新种子确认，且在 12 组配置中均为平均耗时最低的全图方法。按需 Demand 在其中 11 组平均更快，应用层字节中位数比 D 高 29.6%。在 Fashion-MNIST 的 M4096 下，E55 原版 D 相对同界逐样本 E 的完整头部省时通过两种划分的确认，相对全量 B 的六组平均完整头部耗时更长。E57 的缓冲区复用版 D 在三个 IID 新种子上比 B 省时 4.91%–8.21%，强非 IID 下平均耗时与 B 接近。[E54–E55 同界对照](docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md) · [E56–E57 耗时归因与复用确认](docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)
+**当前实测。** 在 STL-10 的 M4096 下，D 相对全量 B 的完整头部省时通过 IID 和强非 IID 的新种子确认，且在 12 组配置中均为平均耗时最低的全图方法。E54 的显式 Demand 在其中 11 组平均更快，应用层字节中位数比 D 高 29.6%。在 Fashion-MNIST 的 M4096 下，E55 原版 D 相对同界逐样本 E 的完整头部省时通过两种划分的确认，相对全量 B 的六组平均完整头部耗时更长。E57 的缓冲区复用版 D 在三个 IID 新种子上比 B 省时 4.91%–8.21%，强非 IID 下平均耗时与 B 接近。[E54–E55 同界对照](docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md) · [E56–E57 耗时归因与复用确认](docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)
+
+**按需协议的选择。** 在受测 STL-10 M4096 配置中，仅聚合者重建请求比显式 Demand 少发 20.37% 应用层字节，11/12 组满足完整头部耗时门槛。需要保留每轮整图状态时使用全图 D。各端独立重建用于应用层字节优先的场景，其完整头部耗时比显式 Demand 增加 5.19%–10.54%。这些结果来自固定成员、串行 CPU 和内存消息实验。[E58–E59 结果](docs/evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md) · [协议选择与边界](docs/method/communication.md#按需关系协议)
 
 ## 阅读导航
 
@@ -336,6 +338,7 @@ TXT中的半分布式指从现有客户端选临时聚合者，平稳时不必�
 |[快照实验与选路](snapshot_routing/README.md)|E39/E40 固定路径对照之后，重放 E41 的本地选路边界|
 |[独立确认](snapshot_routing/confirmation/README.md) · [完整头部训练](snapshot_routing/full_training/README.md)|E42 在新种子上测生成成本，E43 在相同种子上测完整头部耗时|
 |[计时归因](snapshot_routing/timing_diagnosis/README.md) · [按需对照](snapshot_routing/on_demand/README.md) · [定向补测](snapshot_routing/on_demand/retest/README.md)|E44 同方法波动与墙钟/CPU 时间，E45 按需训练和配对补测|
+|[各端重建](snapshot_routing/shared_schedule_demand/README.md) · [仅聚合者重建](snapshot_routing/leader_schedule_demand/README.md)|E58–E59 按需协议的通信拆账、完整头部计时和逐轮轨迹审计|
 |[实验代码导航](experiments/README.md)|各实验入口、依赖与历史源码状态|
 
 在克隆仓库根目录执行，避免`No module named experiments`：

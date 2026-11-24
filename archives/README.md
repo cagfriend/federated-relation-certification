@@ -1,5 +1,7 @@
 # 原始逐轮记录归档
 
+E58 和 E59 的逐运行记录、审计、通信拆账和报告各使用一份 `tar.xz` 无损归档。公开来源保留原执行清单的 SHA-256，模型和样本库由本地复现生成。[解包方式和成员清单](../docs/evidence/DEMAND_SCHEDULE_PROTOCOLS_20261124.md#复现与原始记录)
+
 E56 和 E57 各使用一份 `tar.xz` 无损归档，保留逐运行记录和结果回执。公开来源清单含原执行清单的 SHA-256 及源码和输入指纹。解包方式及成员清单见[证据和归档入口](../docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md#原始记录)。
 
 E54 和 E55 各使用一份 `tar.xz` 无损归档。原始 JSON、CSV 和 Markdown 字节及回执均保留。解包方式及各成员的 SHA-256 见[证据和归档入口](../docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md#原始记录)。
