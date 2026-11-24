@@ -1,5 +1,16 @@
 # 复现入口与历史说明（2026-11-09重整）
 
+## E56–E57 复现
+
+在仓库根目录执行。两项实验均使用官方 Fashion-MNIST 的四份 IDX gzip 数据，路径可通过 `--data-dir` 指定。E57 默认复用 E56 已校验的开发缓存。
+
+```powershell
+python -B -m snapshot_routing.fashion_generation_profile.run --preset full
+python -B -m snapshot_routing.fashion_gather_optimization.run --preset full
+```
+
+[耗时归因入口](../snapshot_routing/fashion_generation_profile/README.md) · [缓冲区复用入口](../snapshot_routing/fashion_gather_optimization/README.md) · [结果与原始归档](evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md)
+
 ## E54–E55 复现
 
 STL-10 的同界比较需要本地 E42 结果和 STL-10 源数据。Fashion-MNIST 使用四份官方 IDX gzip 数据。两项实验均可用 `--preset smoke` 检查流程。

@@ -14,6 +14,8 @@ experiments/snapshot_external_comparison/results_*/cache/
 experiments/snapshot_external_comparison/local_replays/
 local_replays/
 outputs/snapshot_routing_*/
+outputs/fashion_generation_profile_*/
+outputs/fashion_gather_optimization_*/
 experiments/snapshot_certification_timing/results_*/
 experiments/snapshot_graph_scaling/results_*/
 runs/

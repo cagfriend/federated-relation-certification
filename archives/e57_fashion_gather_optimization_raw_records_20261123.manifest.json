@@ -1,0 +1,1375 @@
+{
+  "archive": "e57_fashion_gather_optimization_raw_records_20261123.tar.xz",
+  "bytes": 2713972,
+  "sha256": "96231a0431633f313522c7259f9c4a9b5cc8f76d7d020792d454d9f400eb572e",
+  "members": {
+    "outputs/fashion_gather_optimization_full/completed.json": {
+      "bytes": 6113,
+      "sha256": "5729af973a6d139eaf6f60bb14cb6856f63e9b5752507892e522082f946ef4d2"
+    },
+    "outputs/fashion_gather_optimization_full/completed.sha256.json": {
+      "bytes": 84,
+      "sha256": "7acc4e5f5afe55230a5b352a7e0b5e9ffe0b009fa9cd43925e85551b33b5b3dc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_1_0.json": {
+      "bytes": 492,
+      "sha256": "d1aeadd4760e5f41ad326befea6fb788bf860bddbab6a27033f93ac108c14d44"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "db67bbaca1ab21a9b3922a12687d42d4e0bc6189d0b212a714e3f56322749261"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_2_0.json": {
+      "bytes": 492,
+      "sha256": "3da384f76afc9f828486f480999375bd99489131d4f720e1b6843d92b572226e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "6549102f3e9528de70bcfb46a981a9ec348548789810dd072e1fa3fe2af8818f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_3_0.json": {
+      "bytes": 492,
+      "sha256": "d36e638bc485ee971b2811680725fdb3164a2ee42519dad00f00b177cb0ae382"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "293071c4a389e1367d516caacf411219e6067f0000aad28492466033484b5c0f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_4_0.json": {
+      "bytes": 492,
+      "sha256": "fcd962fce4e4d4933b1068e97538f3f30b9a34891a82bcecc1d269670146cb58"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "d67aedc81218f8cad161ba0f143bc0b02c96b1418e4f71ba2196f280994c8c77"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_5_0.json": {
+      "bytes": 492,
+      "sha256": "8f4b5f7cf7ba9ff38470c4aa820e80e993ea3c9bb765efb75b50017d57243e19"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "64a4f13372115627c21b23b53e4da21c10b2f73aa0d9c56c73b103683f08af6f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_6_0.json": {
+      "bytes": 492,
+      "sha256": "596b56ba8fec975dab76334d773cef04614e9007e28159991a150bc51e527315"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_dirichlet_0.1_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "44a2a321d7288c4eaea7e20b27a40af433003eb89d4eb054b29e68aba905bff1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_1_0.json": {
+      "bytes": 482,
+      "sha256": "a9ef6e72284faeeadc89e5623043c11bba5e5edaff455f98a7bd3bb2b7bdeae1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "28c7d41d9f106496ea8432f41d1e53cbf79830dc4df2968237115608b93de108"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_2_0.json": {
+      "bytes": 482,
+      "sha256": "8c8a19290fbb3ae1f35c7346c71a306ba31d68aba3ac3dd65fb934a9669203e5"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "944d8790e9ae34dc7ae67c33317c91f671feb4e85b71aeaf42843b0dd622f012"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_3_0.json": {
+      "bytes": 482,
+      "sha256": "39c68f3d04a2569739dbeaea8877683646d5bce5f4c192ceffefac185e3a4527"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "7ff370d2f5568bc60b1a11fa718efe0810ab1830e51e2e1f171d773f1579d501"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_4_0.json": {
+      "bytes": 482,
+      "sha256": "098714da107319492c3158acf80351a746f393ae1a20900d598ed7582653662a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "285dd418ac9e95449f435388e88eabf924423daf5c62312ae73181049036fc46"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_5_0.json": {
+      "bytes": 482,
+      "sha256": "9a3c359d27d8348c029a471d4a19ce1b78e3e5d98718ff9d96ec18037cd0f7ed"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "45c308c16043fc1ec9fbbb7eaaa1191efa5590665e4a3d4c851721b262ec45ec"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_6_0.json": {
+      "bytes": 482,
+      "sha256": "cf066c4e9a8f0d129e90de8ebe9bedd238cf0613d79cb8190a2b40dc1da248ea"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3111_iid_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "4a08c4c082af8c9d7fc4744256ea8e7ca7158e423b646388e43b7185f625c66d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_1_0.json": {
+      "bytes": 492,
+      "sha256": "6bf82616fba3153b259ba63461d40a2431626e6c9218582c6d2a55e138b49a38"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "560dae0fa5f2458fbdeba94157bfe4229772ab5ef7235f2b299d94e8d0e23230"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_2_0.json": {
+      "bytes": 492,
+      "sha256": "395e65370cf76227777b244f7707921b6844520a2af180a2810158737ca0d7be"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "0db0558cd6ea61e2c25c5a8fba319ed10f8ba76c3398c3dbff97ee4384bc48f3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_3_0.json": {
+      "bytes": 492,
+      "sha256": "f6e07d7b9e3938f4b5f23d53bf793daa4529a78315c5a9e77780098422ba8f6f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "bb5aba56459935ebea6d78afbae5270c0a8abc6c136cd3191005ff5c4ad158b1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_4_0.json": {
+      "bytes": 492,
+      "sha256": "7c00a4090540bb0470148ab4104470a41a4023a11e17b8226fc2a49f0007bd12"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "9c018a5f26844cc10038515376c3bd3630d658fb6fc0876f0afa606983121cc3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_5_0.json": {
+      "bytes": 492,
+      "sha256": "0179842302eae57ea1912ced719f40c19fc237fba68de32ced888a1e9a9e1fba"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "3d91e6457571ae136652ad07d1be744c8606458bb935e8b951550dd9b3954c20"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_6_0.json": {
+      "bytes": 492,
+      "sha256": "6696b5bf475dcfd2db2217801b6ecf097e555672f0c728951f719f4bfe85740c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_dirichlet_0.1_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "f68e2fed31c60b8b3d43bcb870cc7dc1fa61d18480a47ef3034a1066f04589fd"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_1_0.json": {
+      "bytes": 482,
+      "sha256": "25685ff3c386d7b2e9c6c9027021b884ab495a2bc94ef90e0004786f329d79ae"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "9a4dc40646cd01b6a080fe205de92c71bc4a941fca0299f9ef46af1c9917587c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_2_0.json": {
+      "bytes": 482,
+      "sha256": "5835cdfd71f933007f984c8294e6461e5e264d534ac3fabd6f62d86b941b2748"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "0a3d9b2c95ef4b3590188479d1d83347444d69b524b2c48b69b9c11121a6decc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_3_0.json": {
+      "bytes": 482,
+      "sha256": "1e0e6fe2f2d2c0628317d64b24556dac92911dca9c3c2857376ba60accadf0df"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "34cc7fac95e9ad776fa6f80d39c3e7b2739349536dafc75bbaeea30275ce0aeb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_4_0.json": {
+      "bytes": 482,
+      "sha256": "dd814219d9cd1369cf0cfd4f473466a7ab95ba7efc52f883cd48b6fd1de0e693"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "1f9f0b079beea24232145a7691ae8b2aade9cafee9b7db7afebb8d10a730b4db"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_5_0.json": {
+      "bytes": 482,
+      "sha256": "dbb956719ef4166172b0fbd9b16b0888c3ffb51c46495e708525280350cb5bdf"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "2206cbc77992e04a688bc4b01abaab80c8e43a0871f2eafdc0a6ad9c874b8c61"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_6_0.json": {
+      "bytes": 482,
+      "sha256": "5ae243a2e11cde42b28c498f9b947511f8f5be5a515e1a0a3f9cc66c06c2c750"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3112_iid_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "fbb560f97b991de17d557b334a625e64859081b865fea173438ba6ba25b263d0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_1_0.json": {
+      "bytes": 492,
+      "sha256": "150799041123495c0133a96c6068a3745a99217f34519a205f241cd034bba8ef"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "c6319cfc69a5cc751dc530457a4351396aacdbfc3932191e2f0caf1b8a62c6a0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_2_0.json": {
+      "bytes": 492,
+      "sha256": "a31cb9df906fea1a8ced477e992aac2521527f4bfde1e8506f0f8868826b3097"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "6c9485513cb3355f04986f1fd9e0ce1b13a8c9bb4696b052a6a70240cfd33819"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_3_0.json": {
+      "bytes": 492,
+      "sha256": "22900e37d8300850503e005e3a0e7c4c75df4fa20ddc11f9ea2753fbd926ae09"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "4405d3e8442b955a18cfe8e24e3ae95251090e7d031c9da706da0af4fd04f009"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_4_0.json": {
+      "bytes": 492,
+      "sha256": "42f73d2592e200dbfdd16f1a122a3b9f44e10b863955ea29d1677d6fbe873ad3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "225035236f68b2a6f8ba13534015d4bd143f34aeda2a23bdea926b7cf0eebb8f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_5_0.json": {
+      "bytes": 492,
+      "sha256": "0774726e3cf5bc8580cfefdff67acce04f319abd8c4a5fe9497dc34aee23ba19"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "c87b35a71c332713fcbf310ff119cc54e1c034c3e6b3686e3b6bf5d6e0f0efbe"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_6_0.json": {
+      "bytes": 492,
+      "sha256": "440c86e52383e8cfe07df1ac9cfa1a11e97f4b5c69b85c185aec96ba1c04de32"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_dirichlet_0.1_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "14e6105ff4986a777dcec5e38fda2d0eedd06c75f64be0f3107e04e3612750bc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_1_0.json": {
+      "bytes": 482,
+      "sha256": "f980f171b5046b98ecf5f32703676088fadce140fa29f02f2530a5c60d216cfc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "1695ca2922403a9bcfe2d72bd1f314c27eda8425f80aa07f603ff7a068a5870a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_2_0.json": {
+      "bytes": 482,
+      "sha256": "e703820e84a0e6da2c7881c18822453ebcd4f703948b01e1a67b73b541e5391b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "310b6609319094d85c396665ef6e3cb95b70129b4d6e7808e1f5e3ea2dafc517"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_3_0.json": {
+      "bytes": 482,
+      "sha256": "864ad033cc623d011bafd635b9f2ac429bf9548106f649fb5fc6de062e880b4c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "7cf268ab5ebd056aa1b2d4529e2f67c2a499c02b777766227eec6a0d54f58b5d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_4_0.json": {
+      "bytes": 482,
+      "sha256": "6a1d320f0482b813cd8a6ce5acf1bc1aba500f6ac08ada16723c93b7bb5fc910"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "ef95420f7a10af7860412a5e7eeeeff1e7b1ab26cd60c025f2ee4f0a1b86cb10"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_5_0.json": {
+      "bytes": 482,
+      "sha256": "eaf54dd45728386f8a80df8a7912b7c747acd33662cd9b2b168b23f1d173bfd2"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_5_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "5294c1171ad51acd6f19099ef68f8cc4a18878639cfe92eaa344f58e44f0f77f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_6_0.json": {
+      "bytes": 482,
+      "sha256": "dae743157bebb53be05aee589b4bfb7d83fafcd219667289a7accd66366eca76"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/blocks/3113_iid_6_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "59336fabac0c568f82110ef6189a3d6c14a523fd1a298ff747e15eb1af67a2dc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/paired_blocks.csv": {
+      "bytes": 8794,
+      "sha256": "d5cf3c6eca14f8560a4209119feb7a93704c1231745ec08152501961477f5112"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/report.md": {
+      "bytes": 1180,
+      "sha256": "2368903278555620d0ed76da64074d6a7d9aa5c03d606ffe159e7ff05100968d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 656991,
+      "sha256": "35860be1cf0deba818c44ff7d2688c2d2bad5e82d3e83ae17247d1923e81e201"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "01c8440138ca501ab4ce5a018de82e7892047959cb37c4df5f052c1312b54de5"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_D.json": {
+      "bytes": 1012757,
+      "sha256": "bb94f035e06a432861142fb202ea5418469538c8c959e76bd29412d357073599"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "de92ad2ac746638b7b42b0e3851b48cb123933efa81c3ebeed2550af71b64e8b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_optimized.json": {
+      "bytes": 1012771,
+      "sha256": "aa964890888e55db07150c534b8f65434559d73cd4ce8d7a022958a5d94f2df8"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "37ef7959cc873b8845ba03c2dc522281169379956d8d21b9e8551b70ab4fd8b7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 647975,
+      "sha256": "c81008a776f82e4684a840625fdfedb3ddf57da2510cd40975a3d6e4317e38ac"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "97dc2c3eff628ebc7cf26c8ea4744fb3cb5e8deb973f29b0389145c5e13bc214"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 648018,
+      "sha256": "ae41a0dc070bb4f9a0d1618f08d117c5cf2dadc3ea6284eac8f1854c60478f03"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "82b1c72c89b7c8baa83141098004a75c13db4f4429eb529ec5834de63bb19caf"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_optimized.json": {
+      "bytes": 648051,
+      "sha256": "17f9ed5250b9175c042bfec769b09e20a4a2ba7ef8fefbd7f0036d45ed4e973a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "a1561928e0fa564c3c95e5cfab346d16949af66226610fc103057f688bc2511b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 647901,
+      "sha256": "538b51e4ec0c83a004bb6bd73b04a18bd65dc7240b0f1fdaeb3ed498dddf1eb2"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "1a0446bfd90e8a9caf0d2aabf24be62b366dfc3112356488d86b054b40321b8f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 647959,
+      "sha256": "2be103b7f44a883ab49f930bf927323af331b8d9c690e15fab9f89f585a1ad47"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "acd397d9c74835698bcd9e8cf06b3211ff16ea6880de821b154afdcf1f9d4134"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_optimized.json": {
+      "bytes": 647791,
+      "sha256": "1ed03abb82d7f41fb9b6ffe44471944bffa37f87e383e6dd0ff3305addf7142c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "127f98dc9a445f56af353c4011c41fab1ab7891ffceff2ac310b350381b5a111"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 648037,
+      "sha256": "5a68eeb71de30cf4a41c2148777f5eae28d5756bb6bc92976a9dd9650adb92f7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "aa7be45ef65c0d53ab0535886d3919697a710e84a7d129e57eea2964fc3d99a7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 647976,
+      "sha256": "9f1f477512f9d3c870592207ddf9e8fe1039f1aa1064ff1bf6ad37e3f04384b0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "e42949ed94e9cfd84195012c7e89cdad8d800169754cbc1eff715eab312161d7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_optimized.json": {
+      "bytes": 648003,
+      "sha256": "b983e1d864f9cc9937f108534b7aecac86170c66f2429d8ddf07b0b94682303e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "273558d607f2a5d8f4c75f3cea4eb8d630d07a4975fef6d9015e637a9f03b9b0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 647952,
+      "sha256": "3dc0bf3f63671a3706fc5ef6d0ed1ead5d875b0d5efc00bd70159696ea5c5ecd"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "aa72448de95504bd5ad22206c431ea90240c7ed530f5110e1798b30279afe53e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 647974,
+      "sha256": "c4d354547498a68b540c16b510807845fd19947ed2653f04332ef48bc6af33ae"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "8a68e40bdfe830abb5f5da26f760eba4666a75af9b96bafe09def2d67de81192"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_optimized.json": {
+      "bytes": 648000,
+      "sha256": "66b7b390bc95b502b16af27feb4e9a602e665da729601ba7bddaeb7cceeb74af"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "14b6235b41349363e74f9515c482204599a5e2aecc3c558a0b559d544fd34323"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_B.json": {
+      "bytes": 648022,
+      "sha256": "2a3980177986ba8d3a9630adab451c2d84fe779bffb225b342a4ca071cd36dd1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6e609be8ec145d7ed548f5b17171069a931216565c90eda4783264a3cbaea79e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_D.json": {
+      "bytes": 648029,
+      "sha256": "ba10cbd4e8eacf643ed4281bd3528207cce465fb75343424dea77d28301340b4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "36d5ec16b721ef515eaa285447f69961053084d3575b9f219c16b0b8bf0505c0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_optimized.json": {
+      "bytes": 648055,
+      "sha256": "365b238a866dc14c378cc1aa2aae6b5e8e2c64c269893bc59e6591eafeb8cffb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "795895b312c1dbb8471aadd3b64c3398bda77df159cb247b3c1cf0ba03677ac8"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_B.json": {
+      "bytes": 648001,
+      "sha256": "c096c65d021104f2980ca5bc9a640389635429a3a7a6209aa209d371db4366aa"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "b502bdd7ecbe2021918aa316a631b59312fa0b55bc0505f9cfb2ae2d4fd9ac86"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_D.json": {
+      "bytes": 647985,
+      "sha256": "dd5158aa3388b0d220eda82d8186486b05d4b561b9a807029f3cc8b2f670f8df"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "eca80fee1dae60028e7f1efbd8e3cad7fd0e8bc585c24914f6cce1d15938643d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_optimized.json": {
+      "bytes": 647939,
+      "sha256": "ffca7111f58dc7177169d967d696feab7de8bb281d8ea44f5204bd7aaeaab5ec"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_dirichlet_0.1_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "3d9710e516d2e719c3cd5ad698c50de1fc6f69ead63015658455a9139a909b57"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_B.json": {
+      "bytes": 659995,
+      "sha256": "9f4bde118de22380dc575599f2df3ff3bd257a5e821e2f0a4273331a3a3658b7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "c8926f1a7efd3035935e7f259e6cefb198a306ba651b2d015ffdf44be92b93b7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_D.json": {
+      "bytes": 1015658,
+      "sha256": "03b64f8af12d2767fdecd3f5c8fc6909334f3e10f627d4ebb959a5b53a0c85ac"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "ff4fce7f3dc0d37af9d27b5384f3838650b36aed9013f2fd6be81fac29a796c7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_optimized.json": {
+      "bytes": 1015656,
+      "sha256": "9cebf1f08e6cb33ee7167e11e50885134d7a1d743162d146dc2ef5b445b6d768"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "f42fc62862546798acffaeefdf6e72ed3e43c0c0d6f2c26afbac394557117a83"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_B.json": {
+      "bytes": 650665,
+      "sha256": "f3e55f5cbcb6e62484a979c9425847daf26e7456f710ef96d3aa30e7fe614136"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "570c1ddb3779eda72dcc691222a7252bce3c530e9606fa6cd33006deaaa3feab"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_D.json": {
+      "bytes": 650696,
+      "sha256": "26ec852e059f642f80b40fd94e6c05b638167555c3739ae44086864c5ac6e9f0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "43d21fcc6278499136f3e83e3abf17cbe909e1bf90f70453c82c529181d8e878"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_optimized.json": {
+      "bytes": 650730,
+      "sha256": "a7f75955df9d62e607ec5e44f118d7883bc0991f5a21f3ff0f850d149b5d4e20"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "421fec327d0ab5b1b920f1e272db26d72565cf86c57e42305b0aca4a15f680ea"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_B.json": {
+      "bytes": 650665,
+      "sha256": "18fa63c7562b67df4e395ea3e809c15a317c87e01c3494c1d5bf76a0d5f1d888"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "a3e850a65c772fff046c422dad90d214978f6aa874c5ee6628c4a021e008dd22"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_D.json": {
+      "bytes": 650636,
+      "sha256": "29c691991a11cb3a0c5b2845273019fa27e6fe088e20f10defbb639b466a2d17"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "fb65347127bf37c36371c184a669ab209cc388b3647558953841d1171df69fd6"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_optimized.json": {
+      "bytes": 650678,
+      "sha256": "78c995e23cd319bc8235e106953505da1a12a036a4daf977a4ed0886b031d2f2"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "b20a6da532fcc7528a57e80b428752094aa0ba49eb567367d1f9de437382d349"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_B.json": {
+      "bytes": 650715,
+      "sha256": "b1bec31fa1c7152921492e6b203d485c6bcfe37b8f2c25b68543d7fb439aef1d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "fb6774abaca94334f64c37a2ffbfa1cab36aa841d5a7687d802c1139adfba897"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_D.json": {
+      "bytes": 650710,
+      "sha256": "f058606c7082bb779022e9a8b77e7b4789226fdfd2db27ded26a6670e60b8f08"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "28ffd3028d97fde2798a3c4a0764b751b96d44f5b61bceb70be253cc86dcca20"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_optimized.json": {
+      "bytes": 650745,
+      "sha256": "b064df0b3b4f159a431245e6aededc93463ce95464c8ad1de0c8176a44fe3736"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "545770dba3b24e7dbc171346390c1ab8561ac24ebf7260a3dad267f7e3b8756d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_B.json": {
+      "bytes": 650714,
+      "sha256": "d97e9386e7009698c0744e5143bd47597b858382f2d642ca6c555604151b3f86"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "002ab6447b6bb59a6e4741f64fae44e39a2879d1cceeccfc0e0f10b78006d333"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_D.json": {
+      "bytes": 650703,
+      "sha256": "2e10926f48f4286ca025613df6de1c27e26ac1accf5752859e9da1a14e00f47a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "bf8aae1d6a4025b9b9088c1a860cebaeb53b80b62c08f77efdad7558c8b80796"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_optimized.json": {
+      "bytes": 650722,
+      "sha256": "915f3a0d82df31a1a67818df21ed144b0ebd5cbcd219698444e297a5e7c08bd2"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "4207f356199e3aa37d26b5a8c3945c659d15252673eba53771021dfd1ef1f26f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_B.json": {
+      "bytes": 650736,
+      "sha256": "24943813e33a7d8da6024eb6d7b4362080dbf4fb20d14075d0c2a94a430bb2bc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "9ac2e29b8d738048e854b90c2ab883638c86217eb3d0ada27e89e1b80762db5d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_D.json": {
+      "bytes": 650676,
+      "sha256": "766015c60ffeab7606e677c3c97180ef5e80b4d9927b3c34e8c1efa905d6b990"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "0be0db6188cfc2c770518414c14cdca6b1de7cdbbe20fc28a93d3e4516b83dd1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_optimized.json": {
+      "bytes": 650730,
+      "sha256": "ec5aee7b2b747ff6c280b3dc2afdb4ac670365ddddfd82e2cf05798ea88fa973"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "ebe9bddeb6014e1552bdc664313f32075cb0655c14db424f83861862191b7da8"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_B.json": {
+      "bytes": 650705,
+      "sha256": "e65597e94bfc07e45f48e81466a5bf588a392d7281645e9d102c6dcb5b2eceac"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "bca98e6a589bb50bcad9503e49f75a9e0e17e035cf4eeb23ee40546efb776ea3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_D.json": {
+      "bytes": 650693,
+      "sha256": "1d28af8f6ccb77d63b827cc12658b30c5c1a8b3cabad41225b9e43db1a3edca4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "bd425b4d5b58f5a6f5ab4e8512219f73ec009455d6a2cbca1fd7cf3f18469008"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_optimized.json": {
+      "bytes": 650708,
+      "sha256": "bffd32404f42e1fda33baee6b925d078b3b23b1ae5010a037da95019c7628eeb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3111_iid_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "1b3c992fd85d38e7fd1285e439fd0201ca4ba16cb1a56d3dbb39834f13780106"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 653701,
+      "sha256": "9ceeb57c9840180d30d6976ecd78e3c3fa024cf21abdc2836f58414ee8b00497"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "69e4e6dbfd38fcab23be9173d7d4b0027debcbe40b30a238fcf19418b9e2da63"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_D.json": {
+      "bytes": 1009601,
+      "sha256": "5a4700258c52c0d9364387b0bba060efecf40dbbc256b8b317a747ec7c365fec"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "5e37a12860226720c37ad5078788ba511a34272b4f5dd6069690a56c3f270b98"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_optimized.json": {
+      "bytes": 1009633,
+      "sha256": "838fd4da3ee819866268254c4a8402d3081474779d27c2b81dd4031f3b6d86ec"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "4a6e54a228d3459fe46a3406133cc406b98f74d32cc620e9647e3c4d6e137e1a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 644705,
+      "sha256": "1f5a5214d8fc835b1013ff4ba971675e85b1dadc902b1f601a87df5cea6dd4d7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6f9847a3e0344b54cc90805d465c8ab4b84c96354bd0d60cad4243f1d74b3b94"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 644699,
+      "sha256": "b6345d847c3a76134db68077f8d485ef9db44b1d80b34d39a58752646d501775"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "4e704c02ddc7017d4f3c432d5ac4721d4648d3c505101b9fa5b50f5f4c6584bd"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_optimized.json": {
+      "bytes": 644728,
+      "sha256": "622ad2da4d67304b806992f56f8cfc59d94a7175361f04c91752342047beacf4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "a8a5f1381d5e466b8113c3d2b45ea91e0c9ccda0ce2c5b63056aa7e42d9bb43c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 644684,
+      "sha256": "914c19ed2b38cd905a96c8832668e9456e2aeb9b2104b617de6011fa6d6d3b9d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "a716ff45aa81fc76603a5d431c8f56931ffb94db239c21117f56b749cd76ec2a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 644650,
+      "sha256": "4f42017e179724147960735bd4c1212de1d266ccad82220dee24d95ea8f7df26"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "d5af3ed59a25662dfa972c735eb4ba035460fbd6e00b23702e84d3212d3ba6b3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_optimized.json": {
+      "bytes": 644705,
+      "sha256": "d51552774685d36a1c131416407ec6d83f36c8cf3bd528f5b27a44b9007182b1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "a4a239734b1987b8185f3fb24ffe2a8ee3f90cce2de3f6ad24ceee2c022b4149"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 644728,
+      "sha256": "db9057168b838f0d911fb043d46c201765a543b292af97bc5f4a46faf287bd2f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "8dc79e8138a68b08ebaaa65b945be4d93d40c2fd8d0251cca2d15a8a90d319c0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 644617,
+      "sha256": "d387d3578638293ce3d5a7298910882ae4574eff304a75eb8aed7b44ed3339e7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "898cc8f4ba0d735bcf3525765d5d1aa77d60d95995892b22a57cdad6703c2c1c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_optimized.json": {
+      "bytes": 644743,
+      "sha256": "f3e0b89d0380ad268c5a101779f8e518062064ee875224af0f96f48ae2a09957"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "b7f56bdc89101d9142b6702135ed5a024c0023867201a86461dd714dc374fabc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 644704,
+      "sha256": "48de274c9138191eefebdfa2fa61dda0fc800f58835b9423f0b1388ed72e9a75"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6f3f82dd5e13d2a76e8dd3201de6367e4a9bf934cc9ca2b055c3f38ee26d686b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 644671,
+      "sha256": "98e79d7dbe7662e82167a7cbd27523da84a7d9734f78f8c63a9250ffa6957c18"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "ddaf28783b2bf0f139d9e4e8290eab2ba70df7d32249c8880e797847f0421dfa"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_optimized.json": {
+      "bytes": 644701,
+      "sha256": "e5a9887849a8b6a505d8e5228e9be50a6b961a3e325725f47c322164ab04dad3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "941a6efec7a5c62951af21a196f4ae4af174d37dc353d7ad0ee7dcd5d5f5ecd9"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_B.json": {
+      "bytes": 644706,
+      "sha256": "78e072f339e80bbec3ead6089b3a65a183141571173efc497365e1535a5ec88f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "e3c911bf4f87630cab20b6e913b3b5bbb68326c9987d40c7648fcda7375c1f41"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_D.json": {
+      "bytes": 644683,
+      "sha256": "48f43c3b40941a374a3bc42e73adebcfa63773ec8e52b0634cfd663ef45cbcba"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "51c1c6497420b95279ebcdebce017ae9d3af55b50d8c0a15a2184cb7f085405c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_optimized.json": {
+      "bytes": 644732,
+      "sha256": "a0a625e8f2afbcdb7aa2c7a89084e136d317a2ddd2bd1abc6b30a639f19650ab"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "f56ebd4d06a9c6b47e26cdbfcab6be94a75f683889b18286935e95c6495f3443"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_B.json": {
+      "bytes": 644702,
+      "sha256": "731e3e1c5a93465ea76c96bd57db0e8df6bd44e4824c2b497b7998535ca9e6b2"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "bfd6249472dfd86d6dd99e45ccc5b793f7153e4501edc9cbb1ed08f60a5c97f5"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_D.json": {
+      "bytes": 644661,
+      "sha256": "5f57a6717bb7db2aa3ac0e6642bb004169435694d7ec7dc8bb439ae5a559fc7e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "26a394e2ca4414b8dca75f09a90fda216c583d21d90b09ca1c48bd8923c3e65d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_optimized.json": {
+      "bytes": 644700,
+      "sha256": "6fe3f6439837b39eb159da9732a15e49898dfe2056aee531a08c05134aa07f05"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_dirichlet_0.1_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "ecf2f839bed40783509851cc0deec959b14868ecd09b6a6774b36956bfbd378d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_B.json": {
+      "bytes": 659511,
+      "sha256": "01ed60159f3997070e1f0506ba4754524c8ca67f208c7b63e380310bc44c1c3a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "62344c2377b6887cc40eba3082cd82e7e6aabb5c8ad6f60c0f6e8cc93d287f15"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_D.json": {
+      "bytes": 1015144,
+      "sha256": "b723dccc0bd43553021c3e207ad0bebd7f7c85f6f556a09831f842c3288978a3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "3b87086ac0079b439f50398a669ece8572e8086f5e24efbb26ad32ee0f6b2bae"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_optimized.json": {
+      "bytes": 1015160,
+      "sha256": "d4815a3cc4df26c07f69d2c304fdf88db59c001a0a69ea4f703db8573aa16063"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "4a88bcab045d00b56182a31a8d6fbe09a58cd84b0a16d20295f11ca5d5b6293d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_B.json": {
+      "bytes": 650350,
+      "sha256": "562ecffc4155243f1683fde7bc2e68fc58a92a36ab5d1274bf277cc80f5fdd67"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "fddb65a03668ff9984df683e113813368b7b6106ae479732939e0ba7701956e0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_D.json": {
+      "bytes": 650407,
+      "sha256": "e1fdd730463de84d17d5c9f9e472e84ed787738ac694f4a739769101ac30f7d8"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "6687aeb38c6eeafb6f43976346e6d18c1d39023e56d6db892c9eea69c7e7c0fc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_optimized.json": {
+      "bytes": 650415,
+      "sha256": "d0490b89c563502efa490646ea3ffcb1d8c96ff864709aa852285cfbcc71fc56"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "d6edf1b5fe0ef17927d0af673ab8df1e315f82d4061aa7e2045a8d47d5fe08af"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_B.json": {
+      "bytes": 650144,
+      "sha256": "ac41e1ddf1103a963e7a96fc55c1e501cd93c79d36dd47928aa4ab8c2fad670d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "37af7c21738a8c5c5be4bcf819e0d4adceb31ea42bbc6d114b8d3770d7cfa72f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_D.json": {
+      "bytes": 650175,
+      "sha256": "d85cc7963eb0caa70ec7cf65cf0ce82be26e4e35c0b617f97b9db245081db3fb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "e01fcec5b6d4f55cf7d2d1aeef623d20f00116782d2bf46e2133fba55a759606"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_optimized.json": {
+      "bytes": 650174,
+      "sha256": "8f84a47f095a19726894ce4199674d5137caeda9dd6d86a2ddcc0858a93f7fff"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "91ff59795d9f471926cd700704eb0fa87123d5372452311e0f7268330a1ec461"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_B.json": {
+      "bytes": 650308,
+      "sha256": "045a5ef5b84d56343b98a6e06f4b7b7f7734f4e1358e487f22174007e712f809"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "1586002aad03a77eb14ac33c2fe36b288a5df8a8782c30131695608d1457c571"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_D.json": {
+      "bytes": 650345,
+      "sha256": "1a84fb930043cb2a518c25d1cc803d8b6b0f56bb9ef29daed581d1ffb9a9aaae"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "96df4c6d418afa8118f76e47c28f7740f395a048c1c2239ba79e95bf52d09d40"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_optimized.json": {
+      "bytes": 650371,
+      "sha256": "5091866ab5ba20edd804d7c0474436e84fa77d700b4d904a4bdceb0129448f22"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "35ac9279736c395e19167bae1510d680d403571d741ba63ffa1f5989e2ed3f47"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_B.json": {
+      "bytes": 650371,
+      "sha256": "953c2b00b4ea45d9abb035fe8aae7ddddbf8f95c6ee0d86130e57f1b49ec070a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "845ea0f59e8ac65886460192a790da74fe2a9250d20eec5bc1ade4e021476cf7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_D.json": {
+      "bytes": 650391,
+      "sha256": "6a9ce63c2f55ebd6d7746695ee43435e17ce2a794b207a7a429f0226027452f4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "e45d90e494ca6cab0f627d46f7c2d4161d13c3dff1d1dd8698b92951da42ac4f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_optimized.json": {
+      "bytes": 650409,
+      "sha256": "af8233a97a3d835d5dfc39f6899fd537c977374d7df8d7326eb7d7c155a66c27"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "e319b40ef29897eebc5325deb6f47f1a6149d6cdf67dd7e754241139b364b904"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_B.json": {
+      "bytes": 650363,
+      "sha256": "e54cfe6824c1a5a9273eb1b3fd43af2b76b48f26f59876efd7df553ecd4bc88c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "9c4290c9e3bd48f7bacde1642272e82bbfd37922185767e3457da5f2fc5d4ae6"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_D.json": {
+      "bytes": 650362,
+      "sha256": "af2f3dc392750235c8f6bc60c178d13f158841d6f0378db4e7ea0997a12de36b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "f62326f3264859c0945ec90debf19a84f9732142a8242b2d5bea448b355b6e14"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_optimized.json": {
+      "bytes": 650399,
+      "sha256": "10397c096a26af57f1b012f168ae36900495b2b01921c057af0a8a5e196e53ca"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "1c724a7c1a135e27ccd467e65ff016d14f7a5073892f17d1b01feb5ec5b2bea3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_B.json": {
+      "bytes": 650363,
+      "sha256": "fa50842e50cb4c3bbb9e0235645b1073c07e3685cca46d80e9ff825e481c7f10"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "5f1a1a7063335ceafc7c49f3347b89b14220ca5de7166ca5a2e90309b367426f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_D.json": {
+      "bytes": 650356,
+      "sha256": "70df7d0a07e9711c3f3720cfdd8c037555f1873c4299a1dd615ed9dbb4277b3b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "0bf4397fbe6b4e980e135cd7d1936812f55067f8559b8b1a8c7749e8422e3311"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_optimized.json": {
+      "bytes": 650353,
+      "sha256": "98442e3ba043f9201722de3e4950acba9ba21777137d2e1c2e7ddb8d5669434b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3112_iid_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "1fdac37b4368f0798e8467dbae37e4c78940be8d0b1804f24411ce8f616d6628"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 652702,
+      "sha256": "1264030358d36c20272ecb36938e57772bc2e7c0203ffea4b471d836cfdd5338"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "76ce917a488d42b3094ad46ec1ec4f9a6363909ab19082d3f702da363d1bcfae"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_D.json": {
+      "bytes": 1008728,
+      "sha256": "816517d85d35877181ebc699d2bf38677d5edd05de6c42c4eab3a52307185a4d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "ab3f3b15adc64120bd0f59d19c59bb30699cfcd0cc2c46d5542b88678cb6e649"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_optimized.json": {
+      "bytes": 1008741,
+      "sha256": "9097b33f37f7a9b67379418cfa81577b82399d3fe52d674765f1535eed08d688"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "8245dc099247ab44e821d4935d9441baa0d8398f9c61816ff233113275d25583"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 643890,
+      "sha256": "0aa3d17d72cdd2633ae762a28ef884682e450519df4555bf50acc177c5364e1f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "ea7fa8f69d9afd62e85f0037e10d12849496fef5d4e61ce81963bec1b7211ab4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 643910,
+      "sha256": "74e96915d37ef54e23252056217425e295f0a023987905c41f9cc066528c63a7"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "01b9480a7a1786430185a7a1434cd7b11a2e56fa7b8e0aa700a0568387c5f5f0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_optimized.json": {
+      "bytes": 643917,
+      "sha256": "d6ad617e9eacd1092131f3e7be839208f5279a7aba6892750a67cbfdf7b4f4a0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "05425382287747bce40fe924f7d39b5bbb3ea458d09d51e35d22eb5de9ef8c7e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 643854,
+      "sha256": "364f0032b9df7e005bed72bef695eccf41e57b2e37b2bf025f6f75a8e9b1ac8a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "bc8063e992d44c1e13c0cf2d0fe745ba81196c288ca5260294fe8a32d392125d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 643820,
+      "sha256": "afe202403965fea2443d4c4187c95a13a75bae895a9cb31a61c87c4eafb5cb26"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "87fec586b59dd7f639d67d26eaf2df082c0b7264bf0987203baf2787f38aba30"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_optimized.json": {
+      "bytes": 643913,
+      "sha256": "39e5781e18eb3dc333ae86faf3cd3df412782ce581af5a356811ef8fa663e6da"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "16f5e49ba13669c79e699b46d93e42ad1715a700cde94801a62ad1f3615c6aeb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 643908,
+      "sha256": "4bd0f6efb8dc47896abd98c6c6e4f99664bf22b581cb0eddc4841d79342d7837"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "00880638c17d31bca50c2aedc202cf767cbcbefedde22eb4b2b9683451eb7077"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 643857,
+      "sha256": "9e963c10257ce974dcac58fd7e93e68c25c527f0726fddcd185b1d468f89a8a4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "a77564dc29a184593926c621a0e024a9fee27cd16cb5247b0ef169c25c127d43"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_optimized.json": {
+      "bytes": 643905,
+      "sha256": "77dae17c3e0d5d85ec9d5abca7cf2343eca53b49acc6f4fb1508549138f8c930"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "18652fe5ca63938cfd9b84c815003b14fd734a0d81398e5b4eab4900805f6758"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 643909,
+      "sha256": "55b6294eae9f70a8d5b3e1d9dcd6162175330b14149704a062687dbf1cc51a7b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "0fbae3085af4601fd9bdd65905c4d2d86c7de40c22e2776a5ec19f4f3030edeb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 643875,
+      "sha256": "472b54774294f79230c6baeaeaca60afd4afec017f1997a5ba85d2cedff82797"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "ac72e3be051aec55ab05c1c823a01b0ec233a5f75f59716a68fd63c3a5519c18"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_optimized.json": {
+      "bytes": 643960,
+      "sha256": "ac632c83c05a6a581566d8d741a7050fcb79fa14f5adaaa94746f4c9a0fe5801"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "c4c8fc13e35fdb8343df5c9f7e33b1c370ea5ce121823eb8dce633e5e355ae9f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_B.json": {
+      "bytes": 643909,
+      "sha256": "1b53585069df07196c8b0ff3898a36cf3dfa0e224c08ae1183c6fea6b366ee18"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "45dc6713a65c7b065dc50a1d28194bcbe47745e72b9560c1310f07a0cfbbc0f0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_D.json": {
+      "bytes": 643868,
+      "sha256": "834162b770fa9e39f5eeadb66c4267aaad72425dd1e6a1d502cccacd2da254de"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "65345ac1bb5fefe2a9016fc656de00e84571503d5818fca4a4c49da47274c5ed"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_optimized.json": {
+      "bytes": 643926,
+      "sha256": "88ea1e99a2b5f817b1e368d06ee2e8ef240f1fa7714823ba5474fa45eaf9e761"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "7c61966213ab2c20d0dddcf14f5dd1d179343409476f06188fae3dd79811a205"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_B.json": {
+      "bytes": 643886,
+      "sha256": "3ba05b64bfb4e00ccbe851359e582ac34bb2f46413eacbcc81cc9d49ef3250ca"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6d299e35afae6d3cbef4c72a34c01f1a9fa7cdade1300f110357362c42ebf834"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_D.json": {
+      "bytes": 643870,
+      "sha256": "bb75ffdadee10133f7a03ff8e030f4417c687ac41620ba0f71fc045fa123d0a4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "6f569e1ec4a2e821ca037c13e31c54ce2d4aeb5ce2eeca776b88059286ff58e1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_optimized.json": {
+      "bytes": 643895,
+      "sha256": "382d5d6c731df68f63aac3fd8592fce5d1ae1dabcba3e1989c1d56e0405c233c"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_dirichlet_0.1_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "5bc865c34d4af715b9c416a6dcfe9d78cb87f72cae1e0615f36c15573b4c3bd4"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_B.json": {
+      "bytes": 660017,
+      "sha256": "b496b76db5a6e859e9ccf7110176f60ec8d68e72cbc4da30b614ac45bae95e09"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "15476a51563fe3a5fc5b4285c11ceca04e8fb94548af639148b2725234aca609"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_D.json": {
+      "bytes": 1015595,
+      "sha256": "2985846366f344a742384cc73abc386d175d0dcb3b8c586fd51ec311c4973407"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "321cd894cf8bf247fc75d938da7cb0552123b7eaed808565679865963a572fa1"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_optimized.json": {
+      "bytes": 1015628,
+      "sha256": "d4d0131d56a685c4478749b07f0050f49db155f9845384f8d7c1251306dfa74f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_audit_0_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "d59104619f9d634a97f7784677ad5827246c9575c67b1d7fb8051a492efc9c04"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_B.json": {
+      "bytes": 650814,
+      "sha256": "282dca8d42f1e46a01f62df73cef4f653c1937948d036b3d7d24eccb35022154"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "f8f3f405ce6d12736a1edff471d9ce3e453cc48d260e18547f2abe4af99927f9"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_D.json": {
+      "bytes": 650820,
+      "sha256": "84c3c8f7f3fb41d9bdf66a8df17d9cad974107165fcaaed31c6303ed5cad92ea"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "0ac3ff15d12da039ac8e2dadba8ea40df85b5360eb26e53ae7a4e8ae51c6f4d3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_optimized.json": {
+      "bytes": 650832,
+      "sha256": "94e420c9482d28aa1a7f464ac2049d6006039701b531b9001569bff5af2942f3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_1_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "c4fc82717350ffe2c74eea54ae824e4448b2c5cc1f84c61908b906d20df6ff8e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_B.json": {
+      "bytes": 650815,
+      "sha256": "4c4ddabbdd27ac7b6c72f92603ad2a4fd3d569ae4355fef7f34cda0347745c11"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "b5aaede4f055909f7a966247c3349043953f5ddc213e3e23cfea57fbb4e68767"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_D.json": {
+      "bytes": 650770,
+      "sha256": "b5c7668a5bd2d845e85f11260ce6bee762b115718834a0001c63140f73bfaaa5"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "34f91a687694cb8764387fb210c08610ec922e805b044b4da1ebb6e933372c03"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_optimized.json": {
+      "bytes": 650837,
+      "sha256": "34421bd2599d39c2a69d22e90068e85181f850f097ad03edf26b5ba1e360d46e"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_2_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "08364c59354cd4cf7aa69585f6f9f5454bdee3490df20f150ce217c9a80844cc"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_B.json": {
+      "bytes": 650800,
+      "sha256": "d46194899772567a561280828717a1e815fc42548ae813e3b6fefe7dd5f79f39"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "af4d1821f29dfe00f13d9d0da8d52258afc553a1fb614f2ba6b609a69748bde0"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_D.json": {
+      "bytes": 650826,
+      "sha256": "a2a50cf6400607afeeec28bbc365fcc2875cca8bdaba22376ed58d69a739d825"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "8c403eb236ed854d0d4be2159dd24d32518ca57b51b69e92a3b4465a533c2021"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_optimized.json": {
+      "bytes": 650848,
+      "sha256": "14c13a57c436d94a360eaef896da3f7a732eabacea2c904ec1d702f477ad4237"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_3_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "94c3a6f903e353ecb2a317756a7dd3c7d852a6115ab611fed492eb3dd260dfeb"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_B.json": {
+      "bytes": 650778,
+      "sha256": "a9f033c5fdc854e7f7bfd47d78bb7bd8a3add505defbebcf3b40c0b802f2082f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6485b47716639fa0f7ca451a27757276dd5e1b6120fe77b2fd9987124ce7638a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_D.json": {
+      "bytes": 650783,
+      "sha256": "d70e98ce940426d7f71f2d2f33c89bda6eb7a80813ec3e6edb757670479ebfa3"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "8c60685086bb893d88d6ee964eac87ad71add050bea854e49c0cc851eb7e161b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_optimized.json": {
+      "bytes": 650842,
+      "sha256": "fe064c8846666ea04ef242bb8d7a9e47947ac4f6fe14b23159c784e2fb79b018"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_4_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "b8923864028ce0d9f2810853cb84ab139126e9518b64474beae671c6d4f81f6f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_B.json": {
+      "bytes": 650799,
+      "sha256": "4ff07049e01c26905ee0cd19d03bb82815db65e9990a5565debde6ebd34dda5f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "e80a9b9207e63af337ee7679db4b29d954c850ad151ff4650b841df96e97904a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_D.json": {
+      "bytes": 650815,
+      "sha256": "8e8e2125ebc88e1cfb47d40b7427e8a7f626ad59ecc557d79bb0c8759c8d0b1a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "b86fd09e20a2a29294be23da7fb636ea81c9edafcc652697e6abe036acce443d"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_optimized.json": {
+      "bytes": 650827,
+      "sha256": "8e8dd22906b022a677d70650053b19d147482bc0a8c584b3ebb6833ebc1df25f"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_5_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "ba38932c5edae26b66ff6f53bedeb282e11eaa45b177bd5a9a89cbc12354152b"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_B.json": {
+      "bytes": 650738,
+      "sha256": "acbde0763f5876fef347cfa174f905e598bffc5333ba101af1eb115ce0195947"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "11c75a60982cf5aef9f2a3981cba92b6ae8eb25e4c873e7f0edcdb693f042b3a"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_D.json": {
+      "bytes": 650797,
+      "sha256": "9ce812c19032adf8667b08adef745a756bb8151142b8392f5daf46b8f66a43ef"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "180e8e0e4f82d2487bd0cd6892cf6b64e828a8457ee3d3b09e376e273c3c9c55"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_optimized.json": {
+      "bytes": 650852,
+      "sha256": "d62dfdf916a887e5f95482cb88102142019c39a0fec54f3543b04a55313e71df"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs/3113_iid_timing_6_0_optimized.sha256.json": {
+      "bytes": 84,
+      "sha256": "ea800fea0658fbb1de991c258949911688aa08e9c5d5250e4d5915036b9b2e37"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/runs.csv": {
+      "bytes": 34094,
+      "sha256": "ee8edbed0e70444af47e78268c8f962701bbd93c95f5adfb9194b43e0ba2ac04"
+    },
+    "outputs/fashion_gather_optimization_full/confirmation/seeds.csv": {
+      "bytes": 1582,
+      "sha256": "e77e88abb5b2ea0af9661f129b250c30a592a7be9958163285061aad577d0727"
+    },
+    "outputs/fashion_gather_optimization_full/screening/replays.csv": {
+      "bytes": 7093,
+      "sha256": "24a3887cff746df778413fe9fb9c138afb8e317434ee7c99a0fe89998e2cd714"
+    },
+    "outputs/fashion_gather_optimization_full/screening/report.md": {
+      "bytes": 743,
+      "sha256": "721ffa5171a801c7f5eb21302b77028733c85625cfeed3f642262a688644b7f4"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3101_dirichlet_0.1_replay_0_0_D.json": {
+      "bytes": 36424,
+      "sha256": "8a1a499114e8f99099b234e628cf5d0396791d09f4bf17a81e2fabe45cf1e6ed"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3101_dirichlet_0.1_replay_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "421248504b8f1b6249233bbc00473609e1c3c9f94822e2d2e389dd5ba9b111a6"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3102_dirichlet_0.1_replay_0_0_D.json": {
+      "bytes": 36454,
+      "sha256": "d81adf174982dccaf80b5e71f67be34b52c2ef8a986baaffd8b70b6284cdc963"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3102_dirichlet_0.1_replay_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "19c95cede0cd4f3aed35b8232de26e86c25e3609195db1fe812c07f188eaf801"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3103_dirichlet_0.1_replay_0_0_D.json": {
+      "bytes": 36432,
+      "sha256": "4592944a7e27086a1da726e8200f2d5776bca18b2b765914b067e36f38b5a34b"
+    },
+    "outputs/fashion_gather_optimization_full/screening/runs/3103_dirichlet_0.1_replay_0_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "7b1b0d43ace2c6ceb7558421ca10fbddbd724bfe840038ab635074971c5d709c"
+    },
+    "outputs/fashion_gather_optimization_full/screening/seeds.csv": {
+      "bytes": 664,
+      "sha256": "372e97fdfd55ed16084bfe22385cd92b21c4e4b7aa134660bf343765be6057af"
+    },
+    "outputs/fashion_gather_optimization_full/screening/selection.json": {
+      "bytes": 817,
+      "sha256": "faa36c8cf1167950efd38b0e43e0f499e6dcb073c7c7201693d2ef3da605430f"
+    },
+    "outputs/fashion_gather_optimization_full/screening/selection.sha256.json": {
+      "bytes": 84,
+      "sha256": "2b66c7206cb20333170f7c3572e898bf86c46d7731235dca7d4893f59f1a8b5a"
+    },
+    "outputs/fashion_gather_optimization_full/screening/strata.csv": {
+      "bytes": 42717,
+      "sha256": "492d158dfb969dbea5065987b2dbd6af65b89200a1c35f6ef904bb848d776828"
+    }
+  }
+}

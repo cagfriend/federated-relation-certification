@@ -1,5 +1,7 @@
 # 原始逐轮记录归档
 
+E56 和 E57 各使用一份 `tar.xz` 无损归档，保留逐运行记录和结果回执。公开来源清单含原执行清单的 SHA-256 及源码和输入指纹。解包方式及成员清单见[证据和归档入口](../docs/evidence/FASHION_MNIST_GATHER_OPTIMIZATION_20261123.md#原始记录)。
+
 E54 和 E55 各使用一份 `tar.xz` 无损归档。原始 JSON、CSV 和 Markdown 字节及回执均保留。解包方式及各成员的 SHA-256 见[证据和归档入口](../docs/evidence/MATCHED_BASELINES_AND_FASHION_MNIST_20261123.md#原始记录)。
 
 E48/E49 的无损 ZIP、逐例报告与运行说明见[偏置净变化实验归档](../docs/evidence/ENDPOINT_BIAS_20261121.md)。

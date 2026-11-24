@@ -1,0 +1,799 @@
+{
+  "archive": "e56_fashion_generation_profile_raw_records_20261123.tar.xz",
+  "bytes": 2907244,
+  "sha256": "f54f52240577844dc4bc1ddefd4995e3afcc63b5f24067a0c5134bc36313a472",
+  "members": {
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_profile_1_0.json": {
+      "bytes": 328,
+      "sha256": "773e7290bb3fa2691210495c8c079ec0b280592d5fccc899ef19cbca1dc08fe5"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "994ba039e9a583347c949893241c7d8ea554d28bfb247dd51cb028e405702468"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_1_0.json": {
+      "bytes": 327,
+      "sha256": "1f655f3685adf3f6c062ea26aa163fc5433fc89527ce1c632be875b151c504a9"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "88a6d0da396b5a0d3d3afa2d425f06d183c5db29b37f3969cfb0b8d9f5a09f06"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_2_0.json": {
+      "bytes": 327,
+      "sha256": "70bacd336b1acd5a48fb46752414fcc0829b9a8dffb4c540d46c79e6094a2e4a"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "30e7f5516d8013fb5f649c6fd8664aa769d44b58a81ff34feb2b00ddcb9292b5"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_3_0.json": {
+      "bytes": 327,
+      "sha256": "884ae3f056472a47d8ebd51f778d8abecb1d7226fda022c3a05d4de2982c5245"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "bebf948078f433ecc719e1df5507a7adc1d99dd6a4f2976c858aa0fbfe7f2a73"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_4_0.json": {
+      "bytes": 327,
+      "sha256": "f909f3e31b581651a631f3540ff972b4bd9b32a031355031f715e2f461b3ade0"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_dirichlet_0.1_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "bd6b12a134dbf8b4d361648a7f56de140171b46a7075188d87e0c52134d656cc"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_profile_1_0.json": {
+      "bytes": 318,
+      "sha256": "a5fb32a33ef8f400aabc38bccb6167f807fbd5b299e0f5f7ea1061a87953191d"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "dced595ab3b2f58c628982bf6c6cbbefa8ede3c78018aee1cca7bbd66d065c5f"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_1_0.json": {
+      "bytes": 317,
+      "sha256": "55cb6d2935dd3f3a756ad64ea46e37c1c7881af23545d844ed2e724028e8348d"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "cfbae90adef759878d2825227ad26536be3137e6549ca6bcb80ba74c5fa0e491"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_2_0.json": {
+      "bytes": 317,
+      "sha256": "1bd039ec339cc8f1dcbb28960ca7dc80c4fb2255b50a56baab764ea6807887ff"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "df0937da4663c05e8548ecc6fed862c1a7c746f5f7d1087c1858120a5c71685b"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_3_0.json": {
+      "bytes": 317,
+      "sha256": "313ac213752c5fceaf28c87125fc3fffc6184f049e873ad98b20558459c3736a"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "85ddb4936bde8c923a73d636de1b121d7dc95a975e8eddb8b37b496e0a1b8210"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_4_0.json": {
+      "bytes": 317,
+      "sha256": "1828293ed76f49bcef67ef126912331b59e9eda0b8a70e5b123188e1730ee576"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3101_iid_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "5a5d3728664776c3b025bbf9da1fdc5bdb69fa5de51cdda2438ef5c0939ea27d"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_profile_1_0.json": {
+      "bytes": 328,
+      "sha256": "55c18e008e3116d4f1d0cbaaded2100e523aa75bacf3a1dd3053f36e18fe0c05"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "bc144910253bdc2b5764661d6adcadc5d41baf383bab143448869742b69a19f4"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_1_0.json": {
+      "bytes": 327,
+      "sha256": "21a4dbe4afd5d953dd08614f8640a787360fd3d085fc60add7b4542fa985b52b"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "3aa8b1e730d8f891cc53dcfb7370069adf6d1f8b31ea4d25fd0b64ce361fd7e2"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_2_0.json": {
+      "bytes": 327,
+      "sha256": "d2bf0912a15439ac86222ec4cc66dda57e74a7b987c55ca120067da0529a4695"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "f0659618222b492fec204606d7e44025e91896670574a61031729139e9cd361b"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_3_0.json": {
+      "bytes": 327,
+      "sha256": "de21a40428f502b7637d1050a48ca8239e3f42dade4b5c215dbfa3273953634d"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "967e75bc527bd6f1be202b760330d098123e25fd85e5deaed14c3fdaab90e5f5"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_4_0.json": {
+      "bytes": 327,
+      "sha256": "795a68248e05f809fb7ba766194e341b8c2b55813c30d5d53bd705c93800afd4"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_dirichlet_0.1_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "8237b226e33b3b91b14791319854d755ebaf7ef7416cbc93346b60085cf84cec"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_profile_1_0.json": {
+      "bytes": 318,
+      "sha256": "a64cc6c84ae14b05612a6c054a1e229cdf5adf9a9739a9aba7a1d0394b279a1e"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "9e0200105cf3ab482578a1c9b2a075d6e99d6bcf71de2a3e19e1d3d7db7373ea"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_1_0.json": {
+      "bytes": 317,
+      "sha256": "83cd693b4045c10a2be0052bd39d2c96cea0afcb06037a2244e407ed0e3390df"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "c9eb6f05b15d98938f6cc0607d89da60e7a935b5585de940fe2ebb274d6fc70e"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_2_0.json": {
+      "bytes": 317,
+      "sha256": "b7225eec46feed7ed00436b4c043db5f424d807a89b66fb8198cecb0b08338b2"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "08c1da7c787ba2b67e17c04436ca155175b48111dee12bc6831379ec9484ffb2"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_3_0.json": {
+      "bytes": 317,
+      "sha256": "ee169b33a13722ea91074087e9b3c2cbf9b763ef3abefff6c2c6cb1a3612173e"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "4782577fb92273195e4d666d5a26ac612d4270031721c26dbadcb47ab3844768"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_4_0.json": {
+      "bytes": 317,
+      "sha256": "0928627a68a12406154a6f02fa5858082897376a0155abbd898e868c2d33d33d"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3102_iid_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "e861d28e2d36371ccddb8dc2ca8e2142eeb951e1804c93f4f2ed8068d64d9cde"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_profile_1_0.json": {
+      "bytes": 328,
+      "sha256": "20ad8ec90d0482a11e3316055919cc088a2e8463744a1654849103103d051e4a"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "e2a7635014296d8c634f2b3c8ed00fdd8de838d8fae2a6cb13645bf4f53e0ddd"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_1_0.json": {
+      "bytes": 327,
+      "sha256": "8e4a63eb5ea26205c87c5d857258b3136f8e52e924c37852adbef29c6e069bc6"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "7fc8773763b04525981f41e89a6c410642b8f5b40e5617ad263935494f525ca5"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_2_0.json": {
+      "bytes": 327,
+      "sha256": "9f96f7aed1565b89ddd7c1f2f2d4c13fcbcf024161c13f52b833d95e8cd3d7ca"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "f646c9b8cc69f6f455c496f0e072841d5662a9ae74b70808175263e813bb364a"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_3_0.json": {
+      "bytes": 327,
+      "sha256": "2447dc814024999c2dd3819c839d6b0959e3b155f6f6e9a2a4d9bc299c9bcfd1"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "4863ad662dcf5d054d87d10a75b927b43a90778e29becade09d269419753c47b"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_4_0.json": {
+      "bytes": 327,
+      "sha256": "0a9f934eecbdf923791c0b74b1e981a1b7b3c9b17a7a676e17daa4682c7a42ff"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_dirichlet_0.1_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "d0f2f58170e83478a8c0f6891d39b508ef2892823cdc75b5a8e3717357fe8776"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_profile_1_0.json": {
+      "bytes": 318,
+      "sha256": "d82f2f15dcd8d2a2355bc97c4d25597e5b6867d43e9ebd9073dbda2505f7f2a4"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_profile_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "14f24b2b8580f409ba5a7213921329bbe6852f6243a596076095a2e5a5058501"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_1_0.json": {
+      "bytes": 317,
+      "sha256": "b7bf51efc4af47a53c04d8d651367f8ec41cb57eb1ca9cd5858169cab219f91f"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_1_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "35c1f3eea4062d867b9b0b6883b17883b7bd1f9c2466f4dbc46fb85f2317536c"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_2_0.json": {
+      "bytes": 317,
+      "sha256": "1c68d80d1a13490fd4ced621fa0f8859605dbbdfcab94338be346333ebe55688"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_2_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "928afbe891b9b17f1adf45ff47a32feed5c80787d104c1f842bea1854ae010f4"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_3_0.json": {
+      "bytes": 317,
+      "sha256": "6c906a3a0f8a8d2601cb67db48fa80083d7f48198b40aeb979000cb918c29070"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_3_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "9597d5db3cd7f8302baa07668ab06f894e0388febeeeee353908b0f22a35be40"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_4_0.json": {
+      "bytes": 317,
+      "sha256": "500e9af6db0fe17b10d376dbb29726ce2c8b0a316f8d408d77bedf9ec44731b7"
+    },
+    "outputs/fashion_generation_profile_full/blocks/3103_iid_timing_4_0.sha256.json": {
+      "bytes": 84,
+      "sha256": "16c021ce9c43d89d95d32159a6450937e331d7be342399d7ea4e013d09789f01"
+    },
+    "outputs/fashion_generation_profile_full/completed.json": {
+      "bytes": 4585,
+      "sha256": "f20aeddaf87ec1ecd354bd18f6f7d6036e5fec519f5ee7d3a0a3382d9118e9e0"
+    },
+    "outputs/fashion_generation_profile_full/completed.sha256.json": {
+      "bytes": 84,
+      "sha256": "786a9e0a2170fa36ab92cf1c316684700d291ded171b04393d4b56a377c65f28"
+    },
+    "outputs/fashion_generation_profile_full/diagnostics.csv": {
+      "bytes": 1239,
+      "sha256": "73981e0c592b6e2afdc3898898270624670256ca159c1baf5765ac73dc99e9cd"
+    },
+    "outputs/fashion_generation_profile_full/paired_blocks.csv": {
+      "bytes": 4693,
+      "sha256": "82141578625a99e646527e23e9a62928cf6b5c03f84123a0ad67a2ebce68145d"
+    },
+    "outputs/fashion_generation_profile_full/phases.csv": {
+      "bytes": 3547924,
+      "sha256": "324019b2b9d7c1854519fee39328ddc7c9afee8263fad5231002b6bfd6c2ef51"
+    },
+    "outputs/fashion_generation_profile_full/report.md": {
+      "bytes": 1497,
+      "sha256": "4c8cd2b51938f8aaa7446b492e012c3923efa26f1ae0db9847b5ebd1930dd52c"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 652838,
+      "sha256": "103c0ecded2d956eae737ccf91a85f5d635e16d7aa8aabcc2aea510f40a0bd11"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "72c936cb9c5336e308b2dd720253202a058a9f690f3d1d848adb783e3cbec4f1"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_profile_1_0_B.json": {
+      "bytes": 1400395,
+      "sha256": "98b84e405a420fdcdeaec440636f565897ffef43e6b901eddfa900f3a623c606"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "4eb705a4926d5a52f9f7664c3110c6c31a1c7ee8cdfefbec312f2987fa6f4b57"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_profile_1_0_D.json": {
+      "bytes": 1556652,
+      "sha256": "ee4c8ff35595c908c0ecbaf551e85e451e23ade382e4c86c4df45a04f20ccf6a"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "24c902e8f65eb6748052644674b9f22184a144a33540e909209cbfab18c64f91"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 643796,
+      "sha256": "ca586c291b0f629c613593a16f3159c26bee1c90a16aff7d3825ca3697d1bb6a"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "16cff4d5366e281776bc572abf1dabeef8e3e5e8f7b3e81bc3007f91e8403f14"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 643820,
+      "sha256": "7f7cb70c9d9c4973568f45a0253788be8904d0887351e31c41f4c171fba5a942"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "25644f0f7bdcbda97fe4515811bf3c4fab6ad05fd3f167bb0015ca78d0cf818f"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 643826,
+      "sha256": "2dcf42434ea3104fc7824f28a1ca17eada6d3e821e9664d813a90ba34af3d001"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "a8ed8632933334d42a8584cadd28b14c5901d9e22bcc1c82fe19c55a027c480b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 643788,
+      "sha256": "6e66fc6e61f9dd0c962a52169be41297e2acac58a05c75e0737c088425c0078b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "a956d65ba814dc93928983c0d7656c51b42b0782956aed816f24974c6371622d"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 643826,
+      "sha256": "95dac2e0b419a62a0ce38213ecb182c8654206ab8b57f67b058b46afc2127f4c"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "0c533bfa46eff3d0ae946ba26d9cbfd7859b4a553cb80ea326b06a295d5d67c7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 643788,
+      "sha256": "dd7e1bda4f1921288d6c5fa01a6da384a2e4593bbea41937600d28cdb235ae95"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "1bab7bbb59b82a6582cacbba125884353c7c2e0dd878f500946cc9bccb7514d7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 643804,
+      "sha256": "86e24046b814daebbeefdbde8a0551557d390e6484e0975225be27508a330e1e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "6618a8819230c8b629510b0ad9c2d31eb245dc06dd36798773bd9376b06317ca"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 643752,
+      "sha256": "c7ac2820a058fdc9cd6efbc478407c2d97ae71e108da21b242999d97ac6f361c"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "066823b73a7bd5556eba960f10cb87984de60a1dbc0163fc9a68a770b182d7e6"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_audit_0_0_B.json": {
+      "bytes": 660234,
+      "sha256": "019d3ee8295a05dc5b1dda55342c26ed5f8459290b3a245f5695280886464868"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "2f680a5568b0762a9a6f3ce94c8576f6f170a644b54a7c6b9522a896058fbf08"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_profile_1_0_B.json": {
+      "bytes": 1407643,
+      "sha256": "f760296423e8a52b8e27f5f48d47f83f57b9fcad9a30b77ffda2fb7aae25405b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "77a39cc4d86d0a78d1d6ac631a422ac9e57dfaa3b64849de86eb77432dfe75c4"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_profile_1_0_D.json": {
+      "bytes": 1563006,
+      "sha256": "c46e4758c057f6c775b6e74d8daec182d5955d2a9ef5b8c5374ab10eecfd364e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "5041f837af4d585437d738dc61d6e4583b4ff0b10e4833cabf076300b84de66b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_1_0_B.json": {
+      "bytes": 651009,
+      "sha256": "06335f54f9146f774d921e38e58165a04918ddfbff0dc792089daa8395020032"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "7271a636eb37eba9206b79f19a2d4e55a5de3655fc8f8babcb3a32412ee003e7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_1_0_D.json": {
+      "bytes": 650990,
+      "sha256": "9be2ca7cec3b3506db1f6d4a303ec2bf94177da7b1b9133cc22aa62bfd0700e9"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "82332367026844fff807407722dccf96524bd835a75ea616f9b4a46a7cb3726c"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_2_0_B.json": {
+      "bytes": 650992,
+      "sha256": "267088824841c2d06e8f1de6660924cdb1ccc51b8de0489e129ea865e63f6a5f"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "1075fa375ac424bea1f5267cba7a4f1176d9fc0b632bf8a8484f427ca3cc107e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_2_0_D.json": {
+      "bytes": 650964,
+      "sha256": "edf3a578801fc498e35aa24d5b25f2de58a44364fa4a22632f4ba336557146e9"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "ad8b594221be312771d06fe564224e5360a33647b330e6eb8507f9d454dad66e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_3_0_B.json": {
+      "bytes": 650814,
+      "sha256": "6c1db703708cf7441e3f37559c0a5b6a67d498315f2590e360ee9e2091a9edbf"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "a22986aef7909693b62f6ca288615500cddd479a23003b3ed990f6093ce963e2"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_3_0_D.json": {
+      "bytes": 650961,
+      "sha256": "2e641f679299b6d324cf0db15fbfeba3ed3c5bf6d59016876b842b09e79da1c6"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "07994534422ebe693a46fa3922c8d59e4e06290d1131b874d6874a27651e7e61"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_4_0_B.json": {
+      "bytes": 650986,
+      "sha256": "d55e2c0a2ed82594ba6c2dac59b774e8f7faf9197c46fcaca6772b9b258b4934"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "81b3c0e9717e41c5e8b51859ed5d50bf93af24beb3781bf4b7c5d5777a2dbe4a"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_4_0_D.json": {
+      "bytes": 650938,
+      "sha256": "515231ebf18d6b5f59625617d810f6408ecbab7a181d8c9400456c84f62de07b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3101_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "768a982a87a99b1f6d911b4f333e483aeec82ea26c622707b4e39896e11d80da"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 657107,
+      "sha256": "49ac2b1bb078652e9ca18f79396058fa1a33883b67fda2e36f289947406a0e1a"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "fa917cd7390cf1734b2994b81c2df78ef49292ff6a2cf0ab8893a32eae24282b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_profile_1_0_B.json": {
+      "bytes": 1404754,
+      "sha256": "53ba2d1e4f17b29d637558b5ba5df7e705aaefefb22e072e86d0a3083d80061c"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "a7a748c1d8ec7dfeca69a9b299454cd7b393e5ed0507740b725d48dfbad54258"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_profile_1_0_D.json": {
+      "bytes": 1560404,
+      "sha256": "630a48211465d8d6366e14d7daefcaa8fe50340cf9e6f190900a0672b8f4b77e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "7bbabf4c5ae86bf63011a84b839d5df42076444a1200900b68dad33b859997aa"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 648066,
+      "sha256": "c0d1d129333eb8dce37862d465149077d925e99dd57c21b6fbba791a8e243751"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "745ccca4e55d2bafa382821af64e366120100fc093d7cc49d0565566966ce444"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 648039,
+      "sha256": "e103f34e8f303611636d37963da1d60c2111fe772d8b0d3836a378fab9ac4c60"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "50fc0b246e188c976c62816d64027e1995fd3f3f53c05de09941203be63d9b39"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 648078,
+      "sha256": "19dd14b45f8aa78ade4128143aa31615a6dc0ba52d7b5e8472d551516f6d1842"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "7111e1ddd6b370996fd3c70ae3ab1f9098777f453e7b8de9ed8e1efc774c8311"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 648046,
+      "sha256": "03862e09a60ea1fcb9e0037d7e316cbd9b7da92d25611a2aa927953d18896d5b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "aa5b9681f79d6ccf9b578aa00ae8975fc8abef8092b7f5b14e0db5931188d92f"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 648055,
+      "sha256": "1cb89ada8b013a9a0b8395e9aead867dba66c5c29c9aa829c8c55eba66de9748"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "bc575ae2e26564102ceb900e844d928f601a8a57a5469ec9c1edb5127c013cfa"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 648079,
+      "sha256": "db389c90bfa9f33100295bd675bb848f9c76bf3f1bd25ac0c8dd5e60afde59e4"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "a9b0a04bb5c88647de8804803461ab85caf384dc3a81b708f9e866b0d663c065"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 648054,
+      "sha256": "682548a238b33f0f2b58fd859223388eb7eaefdd0ca58961e8253ab60c57ece7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "4c2eabd4d94f8f48ff0b17292af689b41e6b50cb9a005b38009c2d2d7d81067b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 648062,
+      "sha256": "cde281c286e45805433ee2f54796f7ad69de1d595c19b985eb2ec7c3901782c1"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "515a912eb87480c4bfc57238a7dca8e908e473658603bc4654b19be5e53b54c0"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_audit_0_0_B.json": {
+      "bytes": 660130,
+      "sha256": "1ec99d9d1ed0ba341b192fd90f1285ae7769eac61e7ba80158bff6f42f3faad1"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "d53a5f65b1fe84d5dc3d6cdc96b1e563325c05e8624d8a5816b4dece76068f43"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_profile_1_0_B.json": {
+      "bytes": 1407589,
+      "sha256": "7f587cfc20f669c643aa579ef4a0d4fd1182c42b8d6c4dbcf0cdfd82e4a11c40"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "5f13fc1d8d683e5109e66a76c89f6dc5357ec61d5092ae639c009d8114923528"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_profile_1_0_D.json": {
+      "bytes": 1563257,
+      "sha256": "22bdcfef456a22365d6acf37de31d14841147cbc74a749fdc16dcbccdbfad1c4"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "546d32372e79cf8b9242dfb20b733711b1e2ce6f0d0820826d7940cbeaa08e44"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_1_0_B.json": {
+      "bytes": 650992,
+      "sha256": "fefc9a5dbf080f65fcb30aa72cc350713c04db98f02cb23297d3f100bed67655"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "85b255fbce7c8bb5654d069875479fe9ef5fbff3efd958264ec514aa957b566b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_1_0_D.json": {
+      "bytes": 650980,
+      "sha256": "b95d6adf9dc7b1fba959e8e5b30e18af5dd8d24e9b3e579dc5a2307e141261bf"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "541678c8ae754e45c13edcea82c1c4959a2be4a320e9dc2d3cac7a59934ad220"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_2_0_B.json": {
+      "bytes": 650865,
+      "sha256": "e762a3850cb50a13d3997acfdfcc9fb82b4b1ff145413fe9256c54d65eb276c7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "5825d910009825b5c5c1c3faff1ca5fdb15349811f25e18968d974d19cfe4cc5"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_2_0_D.json": {
+      "bytes": 650999,
+      "sha256": "1d9156799a5ca2f0879d78938d0b226855ffdfb8a1ecf833034453d5c83e8f3f"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "44b6d530f9a9e89af27cead72000560bdfdc34bde8c4de01a357dc8aa702cbce"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_3_0_B.json": {
+      "bytes": 650939,
+      "sha256": "eb93c70e1375b31ebf60e52e05f847155ae77555a9911c25441c5029a65922ff"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "61be6b6608e97ab3d4f5e963ba1e53fd6ddde16a7067487a043e43cfa7006057"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_3_0_D.json": {
+      "bytes": 650969,
+      "sha256": "c308756151f589672a3dc9287e5ae304cec81edbfd2e4e0500bb8886487e049e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "0bc198d16dbd49ba4f02697b03ca8e79376810ff377976cb4c722f3dfb9e8209"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_4_0_B.json": {
+      "bytes": 650981,
+      "sha256": "dd162d36dd1e366c135a3c5da88f782c5e8f7a550d2ae9a7425bf8cbcb16b047"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "52a0127f8371843aaa272ff107a832b94ab7f45f598b0c010ac654065da9b527"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_4_0_D.json": {
+      "bytes": 650992,
+      "sha256": "f75437f332799756b0f7fa6af71a9139591c3aa65685829c7e5575f5f5ba9658"
+    },
+    "outputs/fashion_generation_profile_full/runs/3102_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "f08a764d674cb65e7258757ad09b80195ce9af7e8d98567cdd83a657f9874f69"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_audit_0_0_B.json": {
+      "bytes": 652845,
+      "sha256": "2e8c775b619654a1afe47b9371afec10cba41072a5935fe824255f44792482b6"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "c0f6eae942f70d03b38dda360be6e48caba0fc7d8a6e4870a4d96f6bd6934644"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_profile_1_0_B.json": {
+      "bytes": 1400343,
+      "sha256": "b7f56aad6843cc1a390f8ca1956d4fd1c181d4733b555400ae7422b0438dd115"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "13f4c72db66bac261f67a2fbdf93ecdc5490fc294ef53d83a2e3dab29f510b39"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_profile_1_0_D.json": {
+      "bytes": 1556192,
+      "sha256": "89a9d0aadf1e0302c564e5cfdde7093df2b750dda5642543878459f6221f61f3"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "7e8b8e0ea8385c247312ed27cff076ccdce875822d539a1aca92d827ed38a143"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_1_0_B.json": {
+      "bytes": 643825,
+      "sha256": "f7ade5f956604fa3563dce224bca67342b0c74f0752815c5204f6174fd95d035"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "cbcbadd2624c5907bf3ec1a1c80e3186e273a0e3f72ba9f54cfeb7a52c733542"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_1_0_D.json": {
+      "bytes": 643789,
+      "sha256": "87ad1c668ae6ebc0115d5d46235515fe91c8a9310e7c7c0338c4e1de6d2cf375"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "b1510ba133e859edf4ea07c8631fba01527be157d608a06f730510359481296e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_2_0_B.json": {
+      "bytes": 643821,
+      "sha256": "a1ed04313c154eb63f5dcd46a5d2075616f8ae48dc94855f21422adb76a6bd2d"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "1e23f93f9566decb269d4c33c7298f95e569bf92d48a076022f86ad87b974249"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_2_0_D.json": {
+      "bytes": 643800,
+      "sha256": "6b1d42b5418970f7d3f0aac64b2d502f41a363e10315fbd55bec31e5880ac8b4"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "46c09604225bda37c684c826a120f9ba253a9e973af440f0581b4e54ecdf0b3d"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_3_0_B.json": {
+      "bytes": 643774,
+      "sha256": "ef2b13ed78c26727b7cadb67a98fb9ddc7719fb3f55e00bbc2d49fc13f3979ff"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "e1a15864365af572184934541aa71afa5c609f71d1f1c767a04dd89b8b3744c1"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_3_0_D.json": {
+      "bytes": 643796,
+      "sha256": "5dbb8b2436b0e76a8b77f855e860f7782111c3cb641780156735d0947aee274a"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "f862ef63bd453ef701743c254c0692aa673826e6bb80dd0c220d71aa6400dd94"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_4_0_B.json": {
+      "bytes": 643761,
+      "sha256": "9f2d7d0513d98cb3ea90c6dbcee9e0e702df5bea110fbcb4a96dde614040326e"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "dbbed8bb2d368b4cccf848bd363792555178a03b1199d938bc29186cf058e6f5"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_4_0_D.json": {
+      "bytes": 643777,
+      "sha256": "69e91ea241bfdf4247bd718076e3df38c9dd8d5e9129c2a2eaa024bf68c40c20"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_dirichlet_0.1_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "bdc5578cfe4090ca4e31397545765e0ea5270b5d01ea83f012a016271f3a622f"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_audit_0_0_B.json": {
+      "bytes": 659827,
+      "sha256": "7ee89337290482e30aaca062e9ac2abb6ff195681596eec50e3117e1727240b7"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_audit_0_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "52290e8a8d1f35ee81ab962ef9bb8f697f3d519ee52ddcfd01ee175b88a9a316"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_profile_1_0_B.json": {
+      "bytes": 1407268,
+      "sha256": "a7d8a54f4e4fedf2986d32c8bcd80427111cd8a6a28b33f2e3c9246f6a620b18"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_profile_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "193f11774eb92b37efde219a7432ea529bffdbf512b0de84da4aac8ed8f0ff84"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_profile_1_0_D.json": {
+      "bytes": 1562563,
+      "sha256": "beaf9c99a95db8161ac023f8915a7339450ba8a4c971deb92917c66dbfdfc9f9"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_profile_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "a778331ba609fe6d5f9ac107efc5041731c7da3153723f0c844ff2a94d7ca83d"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_1_0_B.json": {
+      "bytes": 650694,
+      "sha256": "a143d8e24d0f85420f9d92d4b6f564b6a2a62f62733f11e189bbc29333f8a820"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_1_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "9d69cec2729d90c0c2841a724a02247b0d59a802cafc51077d2b363426020a9b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_1_0_D.json": {
+      "bytes": 650658,
+      "sha256": "83d39003f1465bee20dcd3bda946c41d7cee67ca8ac713ffd98be61b5768156b"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_1_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "bff3c8a0fc2acc4289124762ca7cd7a54543a95297a777edb07a9eed8fe46bd4"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_2_0_B.json": {
+      "bytes": 650635,
+      "sha256": "d6d6e74e62e11f2cb4dff78babc1f73119f16a5702678859b434f9e83fb21968"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_2_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "5837599ba8b382b952cb7b549a6644876dd269c70c63a73b24dee273a3694aed"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_2_0_D.json": {
+      "bytes": 650667,
+      "sha256": "8b8ebc9fd0b6f15ffef1e4aedcefffd841023ff1b6ee882e9bd4b9fdc3846df8"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_2_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "e0536315d4af2dc73b4666e7e40354cc5a51bbf806ace4c57ad90ea3c5b31bcd"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_3_0_B.json": {
+      "bytes": 650707,
+      "sha256": "7d5697da6fa5f5d12ed244979d161fe2b0781298e64ab3e1e8e12032c74b352d"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_3_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "d1674e3e61577b3a26136117db9d398d25a1cf8d74f6ed489e253b1c628a0768"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_3_0_D.json": {
+      "bytes": 650660,
+      "sha256": "7369f6bb106d4b4a88e269b67373f71fb25e152d88702394a55b26e4face1fe0"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_3_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "b6764fd757430fc8502888126425d2fbf1b775f570ccf07f2d2fbee586214309"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_4_0_B.json": {
+      "bytes": 650688,
+      "sha256": "0b09b9238594be07f2b3ec8d0364a9dbcf8a94797ecfd5a026b0804b90033671"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_4_0_B.sha256.json": {
+      "bytes": 84,
+      "sha256": "9eb449ca73b60af84503a43f7e4b3e1232bdb50762d2f9cc288706bf9f90b7dc"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_4_0_D.json": {
+      "bytes": 650691,
+      "sha256": "2dc6314a416ef6e582093f284c9e0f4077e696ca88a37c4a1bae20a0056748ab"
+    },
+    "outputs/fashion_generation_profile_full/runs/3103_iid_timing_4_0_D.sha256.json": {
+      "bytes": 84,
+      "sha256": "e0693745a9bb8caeafe06ef2f0d3470208e196f3c3c0fbded8e810e31da227b4"
+    }
+  }
+}

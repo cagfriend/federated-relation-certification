@@ -1,0 +1,16 @@
+{
+  "manifest": "e229ac3a542c56416e5e777c23b79fa38b5f58a098c8cf42b636bc5c59ca94bd",
+  "status": "screen_passed",
+  "candidate": "take_reuse",
+  "runs": {
+    "3101_dirichlet_0.1": "8a1a499114e8f99099b234e628cf5d0396791d09f4bf17a81e2fabe45cf1e6ed",
+    "3102_dirichlet_0.1": "d81adf174982dccaf80b5e71f67be34b52c2ef8a986baaffd8b70b6284cdc963",
+    "3103_dirichlet_0.1": "4592944a7e27086a1da726e8200f2d5776bca18b2b765914b067e36f38b5a34b"
+  },
+  "reports": {
+    "seeds.csv": "372e97fdfd55ed16084bfe22385cd92b21c4e4b7aa134660bf343765be6057af",
+    "replays.csv": "24a3887cff746df778413fe9fb9c138afb8e317434ee7c99a0fe89998e2cd714",
+    "strata.csv": "492d158dfb969dbea5065987b2dbd6af65b89200a1c35f6ef904bb848d776828",
+    "report.md": "721ffa5171a801c7f5eb21302b77028733c85625cfeed3f642262a688644b7f4"
+  }
+}
